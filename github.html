@@ -19,9 +19,11 @@
 
     </head>
     <body>
-        This page describes the open source projects on 
+        <p>This page describes the open source projects on 
         <a href=http://people.cs.uchicago.edu/~mrocklin>Matthew Rocklin's</a>
-        github page
+        github page. 
+        <p> If you'd prefer you can just go directly to 
+        <a href=http://github.com/mrocklin>the standad github page</a>.
         <ul>
             <li> Projects started by me:
             <ul>
@@ -33,12 +35,10 @@
             complexity of using BLAS and LAPACK into an easily expressible
             mathematical language.
             <li> 
-            <a href=http://github.com/mrocklin/ShallowWater/>Shallow Water</a>: 
-            A time dependent solver for the Shallow Water equations. This code
-            uses numpy or Theano for low level computation. It was designed to
-            demonstrate how mathematical solvers can be written clearly in a
-            high-level language and use libraries for efficient low-level
-            computation. 
+            <a href=http://github.com/mrocklin/ape/>APE</a>: 
+            Static scheduling of array operations onto heterogeneous hardware.
+            Wraps an MPI layer around the Theano project. Uses tompkins (see
+            below) for scheduling.
             <li>
             <a href=http://github.com/mrocklin/tompkins/>tompkins</a>: 
             A scheduler for computations on heterogeneous architectures
@@ -49,6 +49,13 @@
             Section and equation numbers are included. Uses the pulp library to 
             describe the ILP. 
             <li> 
+            <li> 
+            <a href=http://github.com/mrocklin/ShallowWater/>Shallow Water</a>: 
+            A time dependent solver for the Shallow Water equations. This code
+            uses numpy or Theano for low level computation. It was designed to
+            demonstrate how mathematical solvers can be written clearly in a
+            high-level language and use libraries for efficient low-level
+            computation. 
             <a href=http://github.com/mrocklin/mailFeed>mailFeed</a>:
             A simple Python library to automate the collection of e-mail from a
             remote server. 
@@ -66,8 +73,8 @@
             <li> <a href=http://github.com/mrocklin/theano>Theano</a>:
             A library that bridges the symbolics-numerics gap. They self-style
             themselves as a "Math Compiler." My contributions to this project
-            so far are trivial. I list it here because it is important in my
-            current research. 
+            so far are trivial. I list it here because it is important to the
+            APE project.
         </ul>
     </ul>
 
