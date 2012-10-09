@@ -1,29 +1,29 @@
-body {
+body, html {
 	margin:0;
 	padding:0;
 	border:0;			/* This removes the border around the viewport in old versions of IE */
 	width:100%;
-	background:#fff;
-	min-width:600px;		/* Minimum width of layout - remove line if not required */
-					/* The min-width property does not work in old versions of Internet Explorer */
-	font-size:90%;
+    font-family: helvetica, sans-serif;
+    font-size: small;
+} 
+#header {
+	border-bottom:1px solid #000;
+    padding: 0;
 }
 a {
-	color:#369;
+	color:#147;
 }
 a:hover {
 	color:#000;
 	background:#eee;
 	text-decoration:none;
 }
-h1, h2, h3 {
-	margin:.8em 0 .2em 0;
-	padding:0;
+.centercolumn a:hover {
+	color:#000;
+	background:#fff;
+	text-decoration:none;
 }
-p {
-	margin:.4em 0 .8em 0;
-	padding:0;
-}
+
 img {
 	margin:10px 0 5px;
 }
@@ -32,61 +32,23 @@ img {
 	padding-top:10px;
 }
 
-/* Header styles */
-#header {
-	clear:both;
-	float:left;
-	width:100%;
+code{
+    font-size : 13;
+    font-family : monospace;
 }
-#header {
-	border-bottom:1px solid #000;
+
+.leftcolumn img{
+    width: 100%;
 }
-#header p,
-#header h1,
-#header h2 {
-	padding:.4em 15px 0 15px;
-	margin:0;
-}
-#header ul {
+.rightcolumn ul{
 	clear:left;
 	float:left;
 	width:100%;
 	list-style:none;
-	margin:10px 0 0 0;
-	padding:0;
+	margin: 0px 0px 20px 0px;
+	padding:5px;
 }
-#header ul li {
-	display:inline;
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-#header ul li a {
-	display:block;
-	float:left;
-	margin:0 0 0 1px;
-	padding:3px 10px;
-	text-align:center;
-	background:#eee;
-	color:#000;
-	text-decoration:none;
-	position:relative;
-	left:15px;
-	line-height:1.3em;
-}
-#header ul li a:hover {
-	background:#369;
-	color:#fff;
-}
-#header ul li a.active,
-#header ul li a.active:hover {
-	color:#fff;
-	background:#000;
-	font-weight:bold;
-}
-#header ul li a span {
-	display:block;
-}
+
 /* 'widths' sub menu */
 #layoutdims {
 	clear:both;
@@ -123,7 +85,7 @@ img {
 }
 /* 3 Column settings */
 .threecol {
-	background:#eee;		/* right column background colour */
+	background:#f0f0f0;		/* right column background colour */
 }
 .threecol .colmid {
 	right:25%;			/* width of the right column */
@@ -131,7 +93,7 @@ img {
 }
 .threecol .colleft {
 	right:50%;			/* width of the middle column */
-	background:#f4f4f4;	/* left column background colour */
+	background:#f0f0f0;	/* left column background colour */
 }
 .threecol .centercolumn {
 	width:46%;			/* width of center column content (column width minus padding on either side) */
@@ -152,6 +114,7 @@ img {
 	float:left;
 	width:100%;
 	border-top:1px solid #000;
+    font-color: #ccc;
 }
 #footer p {
 	padding:10px;

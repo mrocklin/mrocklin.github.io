@@ -1,0 +1,59 @@
+<html>
+  <head>
+	<title>Matthew Rocklin</title>
+	<meta name="generator" content="BBEdit 6.5.3">
+    <meta name="google-site-verification" content="kiHXwB1qYeATO6GmyV9Q6T8E9cA1-VJKmJ2CPY2sIF8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18218894-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css"
+           media="screen"/>
+
+  </head>
+  <body>
+
+<div id="header">
+</div>
+
+<div class="colmask threecol">
+<div class="colmid">
+<div class="colleft">
+<div class="centercolumn">
+  <!-- Column 2 start -->
+  <h1> {{ page.title }} </h1>
+  {{ content }}
+  <!-- Column 2 end -->
+</div>
+<div class="leftcolumn">
+  <!-- Column 1 start -->
+  {% capture leftbar %}{% include leftbar.md %}{% endcapture %}
+  {{ leftbar | markdownify }}
+  <!-- Column 1 end -->
+</div>
+<div class="rightcolumn">
+  <!-- Column 3 start -->
+  {% capture rightbar %}{% include rightbar.md %}{% endcapture %}
+  {{ rightbar | markdownify }}
+  <!-- Column 3 end -->
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+  {% capture footer %}{% include footer.md %}{% endcapture %}
+  {{ footer | markdownify }}
+</div>
+
+</body>
+</html>
