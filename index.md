@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Interests
 ---
 
-### Research Interests
+### Research 
 
 I am broadly interested in scientific computing. I have a favorite
 problem which I use to generate thoughts on automation. I think about
@@ -34,7 +35,7 @@ astronomy, and gravitation.
 
 * * * * *
 
-### Teaching Philosophy
+### Teaching
 
 There exists an imbalance between computer science and the physical,
 life, and social sciences. The maturity of solutions in computer science
@@ -50,8 +51,10 @@ the Summer.
 
 * * * * *
 
-### Personal Interests
+### Personal 
 
 I'm fond of the outdoors. I enjoy cycling, hiking, and rock climbing. I
 also participate in a [weekly Ultimate Frisbee game here in Hyde
 Park](http://mrocklin.github.com/hpfrisbee), all are welcome.
+
+* * * * *

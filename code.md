@@ -10,8 +10,7 @@ be slightly out of date.
 If you'd prefer you can just go directly to [the standard github
 page](http://github.com/mrocklin).
 
-Projects started by me
-----------------------
+### Projects started by me
 
 -   [APE](http://github.com/mrocklin/ape/): Static scheduling of
     array operations onto heterogeneous hardware. Wraps an MPI layer
@@ -49,8 +48,7 @@ Projects started by me
     projects that analyze github. Mostly an exercise in large-graph
     interactions.
 
-Projects to which I contribute
-------------------------------
+### Projects to which I contribute
 
 -   [SymPy](http://github.com/mrocklin/sympy): A symbolic
     mathematics library within Python. Similar to Mathematica or
