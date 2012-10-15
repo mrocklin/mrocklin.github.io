@@ -4,7 +4,7 @@ body, html {
 	border:0;			/* This removes the border around the viewport in old versions of IE */
 	width:100%;
     font-family: helvetica, sans-serif;
-    font-size: small;
+    font-size: 14;
 } 
 #header {
 	border-bottom:1px solid #000;
