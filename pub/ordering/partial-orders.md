@@ -48,7 +48,7 @@ Partial Orders and Comparator functions
 
 A DAG is equivalent to a partial order. A partial order can be completely described by a comparator function. Comparator functions are widely known in programming communities and serve as a good interface between scientific programmers and scheduling algorithms.
 
-```Python
+~~~~~~~~~~~ Python
     def dependence(a, b):
         """ A cmp function for nodes in a graph - does a depend on b?
 
@@ -59,11 +59,11 @@ A DAG is equivalent to a partial order. A partial order can be completely descri
         if depends((a, b)): return  1
         if depends((b, a)): return -1
         return 0
-```
+~~~~~~~~~~~ 
 
 The communication/computation overlap dag shown above is highly symmetric. It consists of three groups. Each element within a group is ordered equivalently to the others in the group and has a clear ordering relative to the others. This pattern is indicative of a *total order*. Total orders are equivalent to sort-key functions. The sort-key function for the communication-computation overlap is defined below. 
 
-```Python
+~~~~~~~~~~Python
 def mpi_send_wait_key(a):
     """ Wait as long as possible on Waits, Start Send/Recvs early """
     if isinstance(a.op, (MPIRecvWait, MPISendWait)):
@@ -71,18 +71,18 @@ def mpi_send_wait_key(a):
     if isinstance(a.op, (MPIRecv, MPISend)):
         return -1
     return 0
-```
+~~~~~~~~~~
 
 and the key for "lower tags first" is here
 
-``` python
+~~~~~~~~~~ Python
 def mpi_tag_key(a):
     """ Break MPI ties by using the variable tag - prefer lower tags first """
     if isinstance(a.op, (MPISend, MPIRecv, MPIRecvWait, MPISendWait)):
         return a.op.tag
     else:
         return 0
-```
+~~~~~~~~~~
 
 Once we have a general system to convert a sequence of comparator functions into an ordering the asynchronous communication problem was easy. 
 We have reduced the problem of ordering computations to maximize communication/computation overlap and eliminate deadlocks to these three small functions, each of which is accessible to a programmer who is not familiar with DAG scheduling.
