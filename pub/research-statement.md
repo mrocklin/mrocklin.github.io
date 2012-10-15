@@ -3,6 +3,8 @@ title: Research Statement
 layout: default
 ---
 
+**This is a work in progress. In particular, not all of it is true yet**
+
 The goal of my research is to promote independent development of mathematical and algorithmic solutions in scientific computing. Problems in this domain require a depth of scientific, mathematical, and computational expertise which are hard to find in combination in a single individual. My research endeavors to separate the scientific computing problem so that experts in each of these fields may contribute independently without close collaboration with the others. 
 
 This is hard. Problems in scientific computing have very high performance standards, and often require tight integration between mathematical and algorithmic programmers. I have identified and developed a few separations in this field which allow for increased separability with minimal performance degradation. The projects listed below were designed to be composed to solve the problem of uncertainty propagation when used together but to also be generally applicable to other domains.
