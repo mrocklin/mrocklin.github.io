@@ -1,18 +1,18 @@
 
 ### Professional
 
-*   [Research Interests](index.html)
-*   [Publications](publications.html)
+*   [Research Interests](/)
+*   [Publications](/publications.html)
 *   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf) 
 
 ### Code
 
 *   [Public code on GitHub](http://github.com/mrocklin/)
-*   [Brief Descriptions of those projects](code.html)
+*   [Brief Descriptions of those projects](/code.html)
 
 ### Personal
 
-*   [Current location](latitude.html)
+*   [Current location](/latitude.html)
 *   [Twitter feed](https://twitter.com/#!/mrocklin)
 *   [Google+ feed](https://plus.google.com/u/0/109882876523836932473/posts)
 *   I participate in a few stack exchanges: 
