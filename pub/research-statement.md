@@ -12,7 +12,7 @@ This is hard. Problems in scientific computing have very high performance standa
 Array Primitives
 ----------------
 
-The majority of time spent in scientific applications is spent in the manipulation of arrays. Algorithmically matrix operations are well studied, highly optimized on a variety of architectures, and very regular/predictable. Mathematically linear algebra is known by many mathematical programmers and benefits from a rich theory. For many (but not all) of the projects listed below we restrict ourselves to a reduced programming paradigm that uses only bulk array operations as primitives. 
+The majority of time spent in scientific applications is spent in the manipulation of arrays. Algorithmically matrix operations are well studied, highly optimized on a variety of architectures, and very regular/predictable. Mathematically linear algebra is known by many mathematical programmers and benefits from a rich theory. For many (but not all) of the projects listed below I restrict myself to a reduced programming paradigm that uses only bulk array operations as primitives. 
 
 Array operations form a set of primitives which can describe many engineering and scientific computations with very little complexity and very little loss of programmer expressivity. Applications like the Kalman filter, PDE solvers, and common optimization algorithms can all be written with 10-100 operations. This reduced description enables the use of exhaustive NP-hard algorithms that were infeasible when considering these problems when written in general languages.
 
@@ -34,22 +34,22 @@ DAG Ordering
 
 We often represent general computations as a DAG where nodes are tasks and edges represent data dependencies. When this DAG is run on a single sequential machine we must select the order in which the tasks are run. In general there are several valid orders that satisfy the data dependencies. When some jobs are asynchronous (as happens when communication with other computers is considered) then the order in which jobs are executed can significantly impact runtime. 
 
-I solve this problem by posing and solving a more general problem. We want our orderings to satisfy a sequence of desires. The desires for the asynchronous problems above might be 
+I solve this problem by posing and solving a more general problem. We want our orderings to satisfy a sequence of desires. The desires for the asynchronous problem above might be 
 
 1. Satisfy data dependencies 
 2. Run asynchronous jobs as early as possible and blocking waits as late as possible
 3. Avoid deadlocks
 
-Each desire can be expressed as a separate DAG. We merge these DAGs (collect as many dependencies/edges as possible) while still maintaining the DAG property. I show how this formulation leads to reasonable orderings which overlap communication and computation and avoid deadlocks automatically.
+Each desire can be expressed as a separate DAG. Algorithmically the communication-compiutation overlap problem can be reduced to the optimal merger of a sequence of DAGs in such a way that maintains the acyclic property. I show how this formulation leads to reasonable orderings which overlap communication and computation and avoid deadlocks automatically.
 
-The method to describe and conditionally merge DAGs is far more general than asynchronous communication however. We could express other desires, such as the desire to free memory as early as possible, just as easily. I expose this multi-dag ordering mechanism to mathematical programmers in the Theano project, allowing for a high-level description of ordering policy. This enables rapid prototyping and experimentation of different policies.
+The method to describe and conditionally merge DAGs is more general than asynchronous communication. We could express other desires, such as the desire to free memory as early as possible, just as easily. I expose this multi-dag ordering mechanism to mathematical programmers in the Theano project, allowing for a high-level description of ordering policy. This enables rapid prototyping and experimentation of different policies.
 
 Matrix Expressions
 ------------------
 
-I have created a small language to describe and reason about matrix expressions mathematically. In contrast to numeric systems this project reasons about the mathematical qualities of matrices and linear operators. By enabling a computer to infer properties such as symmetry, positive definiteness, and poor conditioning, I am able to generate better informed numeric code. 
+I have created a small language to describe and reason about matrix expressions mathematically. In contrast to numeric systems this project reasons about the mathematical qualities of matrices and linear operators. By enabling a computer to infer properties such as symmetry, positive definiteness, and conditioning, I am able to generate better informed numeric code. 
 
-In particular I translate matrix expressions into BLAS and LAPACk programs. These libraries contain different routines for different mathematical contexts (such as a more efficient routine that may be used when a matrix is symmetric). Despite being highly optimized BLAS and LAPACK are rarely used by novice scientific programmers due to a challenging interface. Additionally the specialized routines are rarely used even by expert programmers because it is challenging to consistently reason mathematically and numerically at the same time. By generating mathematically informed code I pose that we can gain a fair fraction on top of expert code and an order of magnitude over novice code.
+In particular I translate matrix expressions into BLAS and LAPACK programs. These libraries contain different routines for different mathematical contexts (such as a more efficient multiply routine that may be used when a matrix is symmetric). Despite being highly optimized BLAS and LAPACK are rarely used by novice scientific programmers due to a challenging interface. Additionally the specialized routines are rarely used even by expert programmers because it is challenging to consistently reason mathematically and numerically at the same time. By generating mathematically informed code I pose that we can gain a fair fraction on top of expert code and an order of magnitude over novice code.
 
 Stats
 -----
