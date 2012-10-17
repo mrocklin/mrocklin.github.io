@@ -60,7 +60,7 @@ Given variables :math:`\mu` and :math:`\Sigma` represent the mean and variance o
 
 .. math:: 
 
-    \mu` = 
+    \mu' = 
     \begin{smallmatrix}
         \mu + \Sigma H^T \left(R + H \Sigma H^T\right)^{-1} 
         \left(  H \mu - data\right)
@@ -68,7 +68,7 @@ Given variables :math:`\mu` and :math:`\Sigma` represent the mean and variance o
 
 .. math:: 
 
-    \Sigma` = 
+    \Sigma' = 
     \begin{smallmatrix}
         \left(\mathbb{I} - 
         \Sigma H^T \left(R + H \Sigma H^T\right)^{-1} H\right) \Sigma
@@ -80,3 +80,17 @@ Networks
 --------
 
 Parallel computations of this sort are often implemented by an expert for a particular architecture. Because we have separated the scheduling problem we can describe our computations separately from the hardware on which they will run. We may now explore both spaces independently.
+
+We consider each of these computations on a variety of networks
+
+1.  A single CPU-GPU pair
+2.  A local machine with distant access to a small cluster
+3.  A small cluster of machines, some of which have GPUs
+
+These networks are common in moderate performace computing settings and stress the heterogeneity of both compute devices and interconnects.
+
+
+Outreach
+--------
+
+We provide interfaces for this project to popular computing libraries in the Python scientific computing ecosystem.
