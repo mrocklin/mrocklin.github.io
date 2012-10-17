@@ -27,7 +27,7 @@ Computers also have a mature understanding of linear algebra. Libraries like BLA
 
 .. code-block:: C
 
-    void kalman(float[] mu, float[] Sigma, float[] H, float[] R, float[] data)
+    void kalman(float[] mu, float[] Sigma, float[] H, float[] R, float[] data, float[] out_mu, float[] out_Sigma)
     {
     ...
     }
@@ -44,7 +44,7 @@ Given that ``A`` and ``B`` are matrices and that ``A`` is symmetric we can reaso
 Simplification
 --------------
 
-Given the ability to reason about matrix properties we can also encode several special simplifications that only exist in certain contexts for example
+Given the ability to reason about matrix properties we can also encode several special simplifications that only exist in certain contexts
 
 .. :math:
     
@@ -52,10 +52,30 @@ Given the ability to reason about matrix properties we can also encode several s
 
 Simplifications like this allow us to reduce the complexity of the computation before generating code. These simplifications are orthogonal to simplifications performed by standard compilers.
 
+Encoding Linear Algebra
+-----------------------
+
+We attemt to encode te expert knowledge necessary for automated numerical linear algebra. While the field is mature the knowledge within it does not lend itself to a highly structured description in code. Additionally, any system that does encode the logic of linear algebra should be accessible to other mathematicians so that they can extend and verify its correctness.
+
+With these goals in mind we encode the rules of linear algera into a logical programming framework so that rules like 
+
+    XY is symmetric if X is symmetric and Y is symmetric
+
+exist independently from how these logical rules are applied in the expression. This separates the mathematical code from algorithmic code allowing verification of one without deep understanding of the other.
+
+Non-Confluence
+--------------
+
+There are multiple equally valid programs to compute a single matrix expression. For example when computing :math:`X\cdot Y\cdot Z` we can order the multiplies in two ways :math:`(X\cdot Y)\cdot Z` or :math:`X\cdot (Y\cdot Z)`. Alternatively when implementing a backsolve we must first factor the matrix. We may choose to peform a QR decompision or a LU decomposition with equal validity. In different contexts, either depending on the inputs or on the hardware one choice may be prefered.
+
+We can step through all possibilities by implementing branching rules. If we have a cost model we can select the optimal program. 
+
+We may also perform a guided search through this space with dynamic programming.
+
 Code Generation
 ---------------
 
-Finally from a simplified computation and set of known facts we can generate BLAS/LAPACK code.
+Finally from a simplified computation, a set of known facts, and a cost model we can generate BLAS/LAPACK code.
 
 Outreach
 --------
