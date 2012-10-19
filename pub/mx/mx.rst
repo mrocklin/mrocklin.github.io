@@ -27,12 +27,13 @@ Computers also have a mature understanding of linear algebra. Libraries like BLA
 
 .. code-block:: C
 
-    void kalman(float[] mu, float[] Sigma, float[] H, float[] R, float[] data, float[] out_mu, float[] out_Sigma)
+    void kalman(float[] mu, float[] Sigma, float[] H, float[] R, 
+                float[] data, float[] out_mu, float[] out_Sigma)
     {
     ...
     }
 
-In the ``C`` code there are routines like ``GEMM`` and ``SYMM``. Each of these routines performs a matrix multiply but ``SYMM`` is a more efficient routine that can be applied only when one of its arguments is symmetric. While the code above is far more compact than a naive implementation, the BLAS and LAPACK interfaces remain challenging for non-expert users. Even expert users may neglect to use ``SYMM`` instead of ``GEMM``. This may be because the added complexity of a wider interface or because they have forgotten or were never aware that ``Sigma`` was symmetric.
+In the ``C`` code there are routines like ``GEMM`` and ``SYMM``. Each of these routines performs a matrix multiply but ``SYMM`` is a more efficient routine that can be applied only when one of its arguments is symmetric. While the code above is far more compact than a naive implementation, the BLAS and LAPACK interfaces remain challenging for non-expert users. Even expert users may neglect to use specialized routines like ``SYMM`` instead of general routines like ``GEMM``. This may be because the added complexity of a wider interface or because they have forgotten or were never aware that ``Sigma`` was symmetric.
 
 In this project we build a translator from matrix expressions to BLAS/LAPACK code.
 
@@ -66,11 +67,11 @@ exist independently from how these logical rules are applied in the expression. 
 Non-Confluence
 --------------
 
-There are multiple equally valid programs to compute a single matrix expression. For example when computing :math:`X\cdot Y\cdot Z` we can order the multiplies in two ways :math:`(X\cdot Y)\cdot Z` or :math:`X\cdot (Y\cdot Z)`. Alternatively when implementing a backsolve we must first factor the matrix. We may choose to peform a QR decompision or a LU decomposition with equal validity. In different contexts, either depending on the inputs or on the hardware one choice may be prefered.
+There are multiple equally valid programs to compute a single matrix expression. For example when computing :math:`X\cdot Y\cdot Z` we can order the multiplies in two ways :math:`(X\cdot Y)\cdot Z` or :math:`X\cdot (Y\cdot Z)` . Alternatively when implementing a backsolve we must first factor the matrix. We may choose to peform a QR decompision or a LU decomposition with equal validity. In different contexts, either depending on the inputs or on the hardware, one set of choices may yield preferred results.
 
 We can step through all possibilities by implementing branching rules. If we have a cost model we can select the optimal program. 
 
-We may also perform a guided search through this space with dynamic programming.
+If the number of branchings is large search through this space may be a substantial computation. We implement techniques to perform a guided search through this space.
 
 Code Generation
 ---------------
@@ -80,4 +81,4 @@ Finally from a simplified computation, a set of known facts, and a cost model we
 Outreach
 --------
 
-This system was translated to the Python project SymPy and offers full integration into the standard scientific computing stack. A matrix problem can be described, simplified, printed into C code, compiled and linked to a Python function transparently within an interactive session. This function can then be called using NumPy arrays, providing substantial speedups above traditional code.
+This system was translated from a logical programming language to the Python project ``SymPy`` and offers full integration into the standard scientific computing stack. A matrix problem can be described, simplified, printed into C code, compiled and linked to a Python function transparently within an interactive session. This function can then be called using NumPy arrays, providing substantial speedups above traditional code.
