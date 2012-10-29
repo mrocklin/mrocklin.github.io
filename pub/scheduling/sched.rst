@@ -98,7 +98,6 @@ We consider each of these computations on a variety of networks
 
 These networks are common in moderate performace computing settings and stress the heterogeneity of both compute devices and interconnects.
 
-
 Outreach
 --------
 
