@@ -16,14 +16,6 @@ The majority of time spent in scientific applications is spent in the manipulati
 
 Array operations form a set of primitives which can describe many engineering and scientific computations with very little complexity and very little loss of programmer expressivity. Applications like the Kalman filter, PDE solvers, and common optimization algorithms can all be written with 10-100 operations. This reduced description enables the use of NP-hard algorithms that were infeasible when considering these problems when written in general languages.
 
-### A Language, Theano
-
-My work provides general infrastructure to any computation described as a DAG. For experimentation we use a front-end provided by the Theano project. Theano presents a MatLab like language to the user and delivers a convenient DAG form as output. Separately, Theano also performs standard compiler optimizations (loop fusion, common subexpressions, ...) and conveniently delivers both CPU and GPU implementations of many array operations. I use Theano for the following purposes:
-
-1. As an input language
-2. As a compiler of some optimizations (i.e. loop fusion)
-3. As a code generator for local low-level array code on CPUs and GPUs
-
 Scheduling
 ----------
 
@@ -65,3 +57,8 @@ Each of these projects is designed to encapsulate exactly one body of expert kno
 
 1. Enable reuse and give moderately high performance computing to a wider audience.
 2. Enable contributions from that wider audience back to HPC
+
+Userbase Penetration
+--------------------
+
+This work is well integrated into open source projects with large communities. I have a small but growing userbase generating feedback.
