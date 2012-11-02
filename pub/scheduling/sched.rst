@@ -46,6 +46,15 @@ In this work we show how a variety of computational kernels can be described wit
 
 describe a few computations with array primitive operations, schedule them on a variety of networks using two static scheduling algorithms and run and
 
+Background - Static Scheduling onto Heterogeneous Architecture 
+--------------------------------------------------------------
+
+List Scheduling
+~~~~~~~~~~~~~~~
+
+Integer Programming Solution
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Computations
 ------------
 
@@ -88,7 +97,6 @@ We consider each of these computations on a variety of networks
 3.  A small cluster of machines, some of which have GPUs
 
 These networks are common in moderate performace computing settings and stress the heterogeneity of both compute devices and interconnects.
-
 
 Outreach
 --------
