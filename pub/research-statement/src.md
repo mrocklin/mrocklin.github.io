@@ -1,6 +1,6 @@
 The goal of my research is to promote independent development of mathematical and algorithmic solutions in scientific computing.  Problems in this domain require a depth of scientific, mathematical, and computational expertise which are hard to find in combination in an individual.  My research endeavors to separate the scientific computing problem so that experts in each of these fields may contribute independently without close collaboration with the others.  
 
-This is hard. Problems in scientific computing often have high performance standards requiring tight integration between mathematical and algorithmic code.  My work focuses around the array programming, an effective abstraction layer between algorithmic and mathematical code.  The following is a sequence of independent projects which may be used together to describe and solve standard numerical problems 
+This is hard. Problems in scientific computing often have high performance standards requiring tight integration between mathematical and algorithmic code.  My work focuses around array programming, an effective abstraction layer between algorithmic and mathematical code.  The following is a sequence of independent projects which may be used together to describe and solve standard numerical problems.
 
 
 Compiling Matrix Expressions into BLAS/LAPACK Calls
