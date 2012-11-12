@@ -2,6 +2,7 @@
 ### Professional
 
 *   [Research Interests](/)
+*   [Research Statement](/pub/research-statement/research-statement.pdf)
 *   [Publications](/publications.html)
 *   [Technical Blog](/blog/)
 *   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf) 
