@@ -50,5 +50,7 @@ title: Publications
 -   US Patent 7620209: [*Method and apparatus for dynamic space-time
     imaging system*](http://www.google.com/patents/US20060082590)
 
+I publish my work at a finer, and more frequent scale at my [technical blog](/blog/).  Additionally the [source code](http://github.com/mrocklin/) for many projects is released long before written works are published.
+
 [My Publication Profile on
 Mendeley](http://www.mendeley.com/profiles/matthew-rocklin/)
