@@ -22,11 +22,12 @@ think about how to automatically
 -   Expose simple and expressive programming interfaces suitable to
     mathematical users
 
-More broadly I am interested in non-linear dynamics, numerical linear
-algebra, automated high performance computation, and complex systems.
+More broadly I am interested in numerical linear algebra, automated high performance computing, non-linear dynamics, and complex systems.
 
-I also do work finding structure in large real-world complex networks.
+I also investigate structure in large real-world complex networks.
 This is completely separate from my scientific computing work.
+
+I am a programmer.  My code is [open source](http://github.com/mrocklin) and my recent workflow is [published online](/blog/).
 
 My background is in physics and engineering. Historically I have been
 interested in [structured light
