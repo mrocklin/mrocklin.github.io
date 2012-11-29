@@ -15,9 +15,10 @@ title: Publications
 
 #### Conference Proceedings
 
--   M. Rocklin, [*Symbolic Statistics with SymPy*](
+-   M. Rocklin, [*Uncertainty Modeling with SymPy Stats*](
     http://people.cs.uchicago.edu/~mrocklin/tempspace/
-    scipy2012-sympystats-paper.pdf) SciPy 2012
+    scipy2012-sympystats-paper.pdf) SciPy 2012, 
+    [*video*](http://www.youtube.com/watch?v=27su3TQ3BvQ)
 -   M. Rocklin, A. Pinar, [*Computing an Aggregate Edge-Weight Function
     for Clustering Graphs with Multiple Edge
     Types.*](http://arxiv.org/pdf/1103.0368) Algorithms and Models for
