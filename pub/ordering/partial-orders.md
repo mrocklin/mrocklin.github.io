@@ -7,15 +7,20 @@ Consider the local MPI computation below
 
 ![A computation](mpi-po.pdf)
 
-Each node in this graph is some task that must be performed. The graph contains computations `add-5`, `times-2`, `dot`, `solve` and communication `Recv1`, `RecvWait1`, etc.... The edges specify dependencies between tasks. A job may not be run until all jobs to which it points are completed. Some jobs are communication jobs. `Recv` and `Send` are asynchronous and finish immediately, their corresponding `Wait` jobs block until the transmission is complete.
+Each node in this graph is some task that must be performed. The graph contains
+computations `A, B, C, D` and communication `Recv1`, `RecvWait1`, etc.... The edges specify dependencies between tasks. A job may not be run until all jobs to which it points are completed. Some jobs are communication jobs. `Recv` and `Send` are asynchronous and finish immediately, their corresponding `Wait` jobs block until the transmission is complete.
 
 On a sequential machine we need to run these jobs in some order. A valid order can be found by performing a topological sort on the graph. Note that there are many valid orders. Two are produced below.
 
-    Order 1: R1 RW1 R2 RW2 *2 +5 dot solve S1 SW1
+    Order 1: R1 RW1 R2 RW2 A B C D S1 SW1
 
-    Order 2: R2 R1 RW2 *2 S1 RW1 +5 dot solve SW1
+    Order 2: R2 R1 RW2 B S1 RW1 A C D SW1
 
-In a purely sequential environment the order is inconsequential as long as it satisfies the dependences of the DAG. Because we have asynchronous operations `S1, R1, R2` the order does matter. In order 1 notice that `Send1` (`S1`) is called just before `SendWait1` (`SW1`). We start and then wait on the transfer. In order 2 `S1` and `SW1` are separated by the operations `RW1, +5, dot, solve`. In this ordering the communication happens in the background while these computational tasks execute. Due to this overlap the runtime of the wait node `SW1` will be shorter, reducing the total runtime of the computation.
+In a purely sequential environment the order is inconsequential as long as it
+satisfies the dependences of the DAG. Because we have asynchronous operations
+`S1, R1, R2` the order does matter. In order 1 notice that `Send1` (`S1`) is
+called just before `SendWait1` (`SW1`). We start and then wait on the transfer.
+In order 2 `S1` and `SW1` are separated by the operations `RW1, A, C, D`. In this ordering the communication happens in the background while these computational tasks execute. Due to this overlap the runtime of the wait node `SW1` will be shorter, reducing the total runtime of the computation.
 
 Order 1 is the naive ordering. Order 2 attempts to maximize communication computation overlap. How can we obtain orderings like 2 given a DAG?
 
@@ -33,7 +38,7 @@ while still satisfying our original data dependence DAG
 
 ![Data dependence DAG](mpi-po.pdf)
 
-In general this is impossible. For example notice that in the communication overlap DAG `times-2` depends on `S1` but that in the data dependence DAG `S1` depends on `times-2`. The desire that sends happen before computation must defer to the need to maintain data dependence (`Send` is sending the results of `times-2` so it must come afterwards). In general the communication overlap DAG defers to the data dependence DAG.
+In general this is impossible. For example notice that in the communication overlap DAG `B` depends on `S1` but that in the data dependence DAG `S1` depends on `B`. The desire that sends happen before computation must defer to the need to maintain data dependence (`Send` is sending the results of `B` so it must come afterwards). In general the communication overlap DAG defers to the data dependence DAG.
 
 We may choose to add more DAGs representing different desires. For example we may choose to execute MPI Sends and Recvs with lower tags first. If all compute nodes adhere to this convention then we remove potential deadlock situations.
 
