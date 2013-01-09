@@ -5,7 +5,9 @@ pdf: partial-orders.tex mpi-po.pdf comp-comm.pdf
 	pdflatex partial-orders.tex
 
 html: partial-orders.md mpi-po.png comp-comm.png
-	pandoc --mathjax partial-orders.md -o partial-orders.html --standalone
+	cat partial-orders.md | \
+		sed -e 's/\.pdf)/.png)/' | \
+		pandoc --mathjax -o partial-orders.html --standalone
 
 mpi-po.pdf: mpi-po.dot
 	dot -Tpdf mpi-po.dot -o mpi-po.pdf
