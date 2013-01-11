@@ -12,6 +12,8 @@ page](http://github.com/mrocklin).
 
 ### Projects started by me
 
+-   [LogPy](http://github.com/logpy/logpy): Logic programming in Python.  An
+    implementation of miniKanren.
 -   [APE](http://github.com/mrocklin/ape/): Static scheduling of
     array operations onto heterogeneous hardware. Wraps an MPI layer
     around the Theano project. Uses tompkins (see below) for
