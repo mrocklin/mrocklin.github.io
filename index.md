@@ -54,8 +54,6 @@ the Summer.
 
 ### Personal 
 
-I'm fond of the outdoors. I enjoy cycling, hiking, and rock climbing. I
-also participate in a [weekly Ultimate Frisbee game here in Hyde
-Park](http://mrocklin.github.com/hpfrisbee), all are welcome.
+I'm fond of the outdoors. I enjoy cycling, hiking, and rock climbing. I also organize a [community ultimate frisbee game](http://mrocklin.github.com/hpfrisbee) here in Hyde Park, all are welcome.
 
 * * * * *
