@@ -3,6 +3,18 @@ layout: default
 title: Publications 
 ---
 
+#### Working titles 
+
+My thesis contains substantial completed yet unpublished work.  It can be
+separated into the following three papers.
+
+-   M. Rocklin, *Static Scheduling of Array Operations onto Heterogeneous 
+    Architectures*
+-   M. Rocklin, *Automated Reasoning on Matrix Expressions for LAPACK Code
+    Generation*
+-   M. Rocklin, *Declarative Ordering Policies with Applications to 
+    Asynchronous Communication*
+
 #### Journal Papers
 
 -   M. Rocklin, A. Pinar [*On Clustering on Graphs with Multiple Edge
