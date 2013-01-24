@@ -4,12 +4,10 @@ Matthew Rocklin
 
 ![Matthew Rocklin](/trainselfphoto_small.jpg)
 
+Ph.D Student 
 
 [University of Chicago<br>
 Computer Science Department](http://cs.uchicago.edu/)
-
-Ph.D Student 
-
 
 mrocklin cs uchicago edu
 
