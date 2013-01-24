@@ -2,15 +2,15 @@
 Matthew Rocklin
 ===============
 
-Ph.D Student 
+![Matthew Rocklin](/trainselfphoto_small.jpg)
+
 
 [University of Chicago<br>
 Computer Science Department](http://cs.uchicago.edu/)
 
-![Matthew Rocklin](/trainselfphoto_small.jpg)
+Ph.D Student 
 
-### Contact
 
-E-mail: mrocklin cs uchicago edu
+mrocklin cs uchicago edu
 
-Office: Ryerson 162C
+Ryerson 162C
