@@ -5,9 +5,12 @@ title: Interests
 
 ### Research 
 
-I am broadly interested in scientific computing. I have a favorite
-problem which I use to generate thoughts on automation. I think about
-the domain problem of
+I am broadly interested in *mathematical software engineering*.  That is I am
+interested in studying and improving how mathematicians and domain scientists
+develop and distribute software.
+
+I have a favorite problem which I use to generate thoughts on automation. I 
+think about the domain problem of
 
 -   Numerical methods for uncertainty propagation in dynamical systems
 
