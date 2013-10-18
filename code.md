@@ -1,6 +1,6 @@
 ---
-layout: default 
-title: Open source code 
+layout: default
+title: Open source code
 ---
 
 This page describes the open source projects on [Matthew
@@ -12,6 +12,8 @@ page](http://github.com/mrocklin).
 
 ### Projects started by me
 
+-   [PyToolz](http://toolz.readthedocs.org/): A functional standard library for
+    Python.
 -   [LogPy](http://github.com/logpy/logpy): Logic programming in Python.  An
     implementation of miniKanren.
 -   [APE](http://github.com/mrocklin/ape/): Static scheduling of
