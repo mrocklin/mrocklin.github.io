@@ -1,18 +1,18 @@
 ---
-layout: default 
-title: Publications 
+layout: default
+title: Publications
 ---
 
-#### Working titles 
+#### Working titles
 
 My thesis contains substantial completed yet unpublished work.  It can be
 separated into the following three papers.
 
--   M. Rocklin, *Static Scheduling of Array Operations onto Heterogeneous 
+-   M. Rocklin, *Static Scheduling of Array Operations onto Heterogeneous
     Architectures*
 -   M. Rocklin, *Automated Reasoning on Matrix Expressions for LAPACK Code
     Generation*
--   M. Rocklin, *Declarative Ordering Policies with Applications to 
+-   M. Rocklin, *Declarative Ordering Policies with Applications to
     Asynchronous Communication*
 
 #### Journal Papers
@@ -29,7 +29,7 @@ separated into the following three papers.
 
 -   M. Rocklin, [*Uncertainty Modeling with SymPy Stats*](
     http://people.cs.uchicago.edu/~mrocklin/tempspace/
-    scipy2012-sympystats-paper.pdf) SciPy 2012, 
+    scipy2012-sympystats-paper.pdf) SciPy 2012,
     [*video*](http://www.youtube.com/watch?v=27su3TQ3BvQ)
 -   M. Rocklin, A. Pinar, [*Computing an Aggregate Edge-Weight Function
     for Clustering Graphs with Multiple Edge
@@ -64,3 +64,15 @@ separated into the following three papers.
     imaging system*](http://www.google.com/patents/US20060082590)
 
 I publish my work at a finer, and more frequent scale at my [technical blog](/blog/).  Additionally the [source code](http://github.com/mrocklin/) for many projects is released long before written works are published.
+
+### Talks
+
+I often give talks at academic/programming conferences.  Some of these are
+recorded and available online
+
+*   [Uncertainty Modeling with SymPy.stats at SciPy 2012](http://www.youtube.com/watch?v=27su3TQ3BvQ)
+*   [Matrix Expresions at SciPy 2013](http://pyvideo.org/video/2028/matrix-expressions-and-blaslapack-scipy-2013-pr)
+*   [Functional Python at PyData NYC 2013](https://vimeo.com/80096814)
+*   A surprisingly popular lightning talk [Packages Considered
+    Slightly Harmful](https://www.youtube.com/watch?v=ywHqIEv3xXg) at SciPy
+    2013. Starts at 6:13
