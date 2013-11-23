@@ -3,39 +3,38 @@ layout: default
 title: Interests
 ---
 
-### Research 
+We increasingly find that computational and programming concerns limit progress
+more than do challenges within application domain itself.  I work to correct
+this imbalance through a combination of academic research, open source software
+development, and teaching.
 
-I am broadly interested in *mathematical software engineering*.  That is I am
-interested in studying and improving how mathematicians and domain scientists
-develop and distribute software.
 
-I have a favorite problem which I use to generate thoughts on automation. I 
-think about the domain problem of
+### Current Research
 
--   Numerical methods for uncertainty propagation in dynamical systems
+My current work at Sandia National Labs is on algorithmic development in large
+complex networks.
 
-and attempt to solve it in an automated and high level way. My goal is
-not to solve this single problem but rather to isolate and automate many
-of the decisions experts make in developing a solution. Specifically I
-think about how to automatically
 
--   Simplify and compile linear algebraic expressions
--   Statically schedule array expressions onto heterogeneous
-    architectures
--   Expose simple and expressive programming interfaces suitable to
-    mathematical users
+### General Research
 
-More broadly I am interested in numerical linear algebra, automated high performance computing, non-linear dynamics, and complex systems.
+I am broadly interested in *mathematical software engineering*.  That is I
+study and improve how mathematicians and domain scientists develop and
+distribute software.  My goal is not to solve any particular single problem but
+rather to isolate and automate many of the decisions experts make in developing
+a solution.
 
-I also investigate structure in large real-world complex networks.
-This is completely separate from my scientific computing work.
 
-I am a programmer.  My code is [open source](http://github.com/mrocklin) and my recent workflow is [published online](/blog/).
+### Software Development
+
+I write code.  I also think about how we write code as a community.  My work is
+usually [open source](http://github.com/mrocklin) and my recent workflow and
+thoughts are frequently [published online](/blog/).
+
+
+### Background
 
 My background is in physics and engineering. Historically I have been
-interested in [structured light
-scanning](http://en.wikipedia.org/wiki/Structured-light_3D_scanner),
-astronomy, and gravitation.
+interested in structured light scanning astronomy, and gravitation.
 
 * * * * *
 
@@ -47,16 +46,10 @@ has outpaced the knowledge of computational methods in these domains.
 This is despite their relevance in today's dominant issues.
 
 Because of this imbalance I prefer to teach methods courses in technical
-fields outside of computer science. I traditionally serve as lab
-instructor for
+fields outside of computer science. While at UChicago I traditionally served as
+lab instructor for
 [CMSC-12100](http://www.cs.uchicago.edu/courses/description/CMSC/12100/9999-12-31%2000:00:00.00).
-I lecture a [similar course](http://matthewrocklin.com/cmsc15200) during
-the Summer.
-
-* * * * *
-
-### Personal 
-
-I'm fond of the outdoors. I enjoy cycling, hiking, and rock climbing. I also organize a [community ultimate frisbee game](http://mrocklin.github.com/hpfrisbee) here in Hyde Park, all are welcome.
+and lectured a [similar course](http://matthewrocklin.com/cmsc15200) during the
+Summer.
 
 * * * * *
