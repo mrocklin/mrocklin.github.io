@@ -14,6 +14,9 @@ development, and teaching.
 My current work at Sandia National Labs is on algorithmic development in large
 complex networks.
 
+This work benefits from my simultaneous open source work on
+[PyToolz](http://toolz.readthedocs.org/), a functional standard library for Python.
+
 
 ### General Research
 
@@ -22,6 +25,9 @@ study and improve how mathematicians and domain scientists develop and
 distribute software.  My goal is not to solve any particular single problem but
 rather to isolate and automate many of the decisions experts make in developing
 a solution.
+
+This work benefits from my involvement in the [SymPy](http://sympy.org/)
+library for symbolic computer algebra.
 
 
 ### Software Development
