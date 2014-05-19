@@ -4,7 +4,7 @@ title: Interests
 ---
 
 We increasingly find that computational and programming concerns limit progress
-more than do challenges within application domain itself.  I work to correct
+more than do challenges within application domains.  I work to correct
 this imbalance through a combination of academic research, open source software
 development, and teaching.
 
@@ -40,7 +40,7 @@ thoughts are frequently [published online](/blog/).
 ### Background
 
 My background is in physics and engineering. Historically I have been
-interested in structured light scanning astronomy, and gravitation.
+interested in structured light scanning, astronomy, and gravitation.
 
 * * * * *
 
