@@ -4,5 +4,6 @@ Matthew Rocklin
 
 ![Matthew Rocklin](/trainselfphoto_small.jpg)
 
-Postdoctoral Researcher at [Sandia National Labs](http://www.sandia.gov/)
+I develop [Blaze](http://blaze.pydata.org/) for [Continuum Analytics](http://continuum.io)
 
+You may be looking for my [blog](/blog/).
