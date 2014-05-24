@@ -3,17 +3,6 @@ layout: default
 title: Publications
 ---
 
-#### Working titles
-
-My thesis contains substantial completed yet unpublished work.  It can be
-separated into the following three papers.
-
--   M. Rocklin, *Static Scheduling of Array Operations onto Heterogeneous
-    Architectures*
--   M. Rocklin, *Automated Reasoning on Matrix Expressions for LAPACK Code
-    Generation*
--   M. Rocklin, *Declarative Ordering Policies with Applications to
-    Asynchronous Communication*
 
 #### Journal Papers
 
@@ -39,19 +28,22 @@ separated into the following three papers.
     Edge Types*](https://csmr.ca.sandia.gov/~apinar/papers/waw11.pdf)
     Algorithms and Models for the Web-Graph, 2011
 
-#### Magazine Style
+#### Theses
+
+-   M. Rocklin, *Modular Generation of Scientific Software*, republished
+    (with better formatting) as [*Mathematically Informed Linear Algebra Codes
+    Through Term Rewriting*](http://people.cs.uchicago.edu/~mrocklin/storage/dissertation.pdf), 2013, PhD dissertation, University of Chicago.
+-   M. Rocklin, [Uncertainty Quantification and Sensitivity Analysis in
+    Dynamical Systems](http://people.cs.uchicago.edu/~mrocklin/masters.html),
+    2011, Masters thesis, University of Chicago.
+
+
+#### Other
 
 -   M. Rocklin, A. Terrel: [Symbolic Statistics with
     SymPy](http://origin-www.computer.org/csdl/mags/cs/2012/03/mcs2012030088-abs.html),
     Computing in Science and Engineering, vol. 14, no. 3, pp. 88-93,
     May-June 2012
-
-#### Other
-
--   M. Rocklin, [Uncertainty Quantification and Sensitivity Analysis in
-    Dynamical
-    Systems](http://people.cs.uchicago.edu/~mrocklin/masters.html),
-    2011, a masters thesis
 -   M. Rocklin, A Pinar, [*Spectral Generation and Latent Community
     Structure of Multiweighted
     Networks*](http://people.cs.uchicago.edu/~mrocklin/papers/winPaper.pdf),
@@ -63,7 +55,8 @@ separated into the following three papers.
 -   US Patent 7620209: [*Method and apparatus for dynamic space-time
     imaging system*](http://www.google.com/patents/US20060082590)
 
-I publish my work at a finer, and more frequent scale at my [technical blog](/blog/).  Additionally the [source code](http://github.com/mrocklin/) for many projects is released long before written works are published.
+I publish my work at a finer and more frequent scale at my [technical blog](/blog/).  Additionally the [source code](http://github.com/mrocklin/) for many projects is released long before written works are published.
+
 
 ### Talks
 
