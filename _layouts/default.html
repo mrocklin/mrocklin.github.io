@@ -16,8 +16,25 @@
        })();
 
      </script>
-     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css"
-           media="screen"/>
+
+     <!-- The following three sections are taken from the Skeleton Project
+     See www.getskeleton.com , Copyright 2011, Dave Gamache, MIT License-->
+	 <!-- Mobile Specific Metas - taken from Skeleton
+     ================================================== -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	 <!-- CSS - taken from Skeleton
+     ================================================== -->
+     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/base.css"/>
+     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/skeleton.css"/>
+     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/layout.css"/>
+
+    <!-- Favicons - taken from Skeleton
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
   </head>
   <body>
@@ -25,36 +42,20 @@
 <div id="header">
 </div>
 
-<div class="colmask threecol">
-<div class="colmid">
-<div class="colleft">
-<div class="centercolumn">
-  <!-- Column 2 start -->
-  <h2> {{ page.title }} </h2>
-  <hr>
-  {{ content }}
-  <!-- Column 2 end -->
-</div>
-<div class="leftcolumn">
-  <!-- Column 1 start -->
-  {% capture leftbar %}{% include leftbar.md %}{% endcapture %}
-  {{ leftbar | markdownify }}
-  <!-- Column 1 end -->
-</div>
-<div class="rightcolumn">
-  <!-- Column 3 start -->
-  {% capture rightbar %}{% include rightbar.md %}{% endcapture %}
-  {{ rightbar | markdownify }}
-  <!-- Column 3 end -->
-</div>
-</div>
-</div>
-</div>
+<div class="container">
+  <div class="one-third column">
+    {% capture leftbar %}{% include leftbar.md %}{% endcapture %}
+    {{ leftbar | markdownify }}
+    {% capture rightbar %}{% include rightbar.md %}{% endcapture %}
+    {{ rightbar | markdownify }}
+  </div>
 
-<div id="footer">
-  {% capture footer %}{% include footer.md %}{% endcapture %}
-  {{ footer | markdownify }}
-</div>
+  <div class="two-thirds column">
+    <h2> {{ page.title }} </h2>
+    <hr>
+    {{ content }}
+  </div>
+</div><!-- container -->
 
 </body>
 </html>
