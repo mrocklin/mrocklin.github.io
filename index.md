@@ -3,8 +3,7 @@ layout: default
 title: Research
 ---
 
-Programming often limits research more than the fundamental domain
-challenges.<br>
+Programming often limits research more than fundamental domain challenges.<br>
 I work to correct this imbalance through academic research, software
 development, and teaching.
 
@@ -15,17 +14,17 @@ I study how domain scientists develop and distribute software.  My goal is not
 to solve any particular problem but rather to isolate, automate, and distribute
 the decisions experts make in developing solutions.
 
-I focus on numerics, complex networks, and computer algebra.  I automate
-through compilers and the construction of domain specific languages.
+I focus on the domains of numerics, complex networks, and computer algebra as
+well as general data analytics.  I automate through compilers and the
+construction of domain specific languages.
 
 
 ### Software Development
 
 I contribute within the numeric Python ecosystem. I also maintain a few
-functional programming libraries.
-
-My work is usually [open source](http://github.com/mrocklin) and my recent
-workflow and thoughts are frequently [published online](/blog/).
+functional programming libraries. My work is usually [open
+source](http://github.com/mrocklin) and my recent workflow and thoughts are
+frequently [published online](/blog/).
 
 
 ### Teaching
