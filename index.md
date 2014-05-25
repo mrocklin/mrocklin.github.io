@@ -1,55 +1,39 @@
 ---
 layout: default
-title: Interests
+title: Research
 ---
 
-We increasingly find that computational and programming concerns limit progress
-more than do challenges within application domains.  I work to correct
-this imbalance through a combination of academic research, open source software
+Programming often limits research more than the fundamental domain
+challenges.<br>
+I work to correct this imbalance through academic research, software
 development, and teaching.
 
 
-### Current Research
+### Interests
 
-My current work at Sandia National Labs is on algorithmic development in large
-complex networks.
+I study how domain scientists develop and distribute software.  My goal is not
+to solve any particular problem but rather to isolate, automate, and distribute
+the decisions experts make in developing solutions.
 
-This work benefits from my simultaneous open source work on
-[PyToolz](http://toolz.readthedocs.org/), a functional standard library for Python.
-
-
-### General Research
-
-I am broadly interested in *mathematical software engineering*.  That is I
-study and improve how mathematicians and domain scientists develop and
-distribute software.  My goal is not to solve any particular single problem but
-rather to isolate and automate many of the decisions experts make in developing
-a solution.
-
-This work benefits from my involvement in the [SymPy](http://sympy.org/)
-library for symbolic computer algebra.
+I focus on numerics, complex networks, and computer algebra.  I automate
+through compilers and the construction of domain specific languages.
 
 
 ### Software Development
 
-I write code.  I also think about how we write code as a community.  My work is
-usually [open source](http://github.com/mrocklin) and my recent workflow and
-thoughts are frequently [published online](/blog/).
+I contribute within the numeric Python ecosystem. I also maintain a few
+functional programming libraries.
 
+My work is usually [open source](http://github.com/mrocklin) and my recent
+workflow and thoughts are frequently [published online](/blog/).
 
-### Background
-
-My background is in physics and engineering. Historically I have been
-interested in structured light scanning, astronomy, and gravitation.
-
-* * * * *
 
 ### Teaching
 
 There exists an imbalance between computer science and the physical,
 life, and social sciences. The maturity of solutions in computer science
 has outpaced the knowledge of computational methods in these domains.
-This is despite their relevance in today's dominant issues.
+This is despite their relevance in todays dominant issues.
 
 Because of this imbalance I prefer to teach methods courses in technical
 fields outside of computer science. While at UChicago I traditionally served as

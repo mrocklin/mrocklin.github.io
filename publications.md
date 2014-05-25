@@ -3,6 +3,7 @@ layout: default
 title: Publications
 ---
 
+These days I mostly publish software.  I used to publish papers; here they are.
 
 #### Journal Papers
 
@@ -56,16 +57,3 @@ title: Publications
     imaging system*](http://www.google.com/patents/US20060082590)
 
 I publish my work at a finer and more frequent scale at my [technical blog](/blog/).  Additionally the [source code](http://github.com/mrocklin/) for many projects is released long before written works are published.
-
-
-### Talks
-
-I often give talks at academic/programming conferences.  Some of these are
-recorded and available online
-
-*   [Uncertainty Modeling with SymPy.stats at SciPy 2012](http://www.youtube.com/watch?v=27su3TQ3BvQ)
-*   [Matrix Expresions at SciPy 2013](http://pyvideo.org/video/2028/matrix-expressions-and-blaslapack-scipy-2013-pr)
-*   [Functional Python at PyData NYC 2013](https://vimeo.com/80096814)
-*   A surprisingly popular lightning talk [Packages Considered
-    Slightly Harmful](https://www.youtube.com/watch?v=ywHqIEv3xXg) at SciPy
-    2013. Starts at 6:13

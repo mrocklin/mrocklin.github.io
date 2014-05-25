@@ -13,6 +13,7 @@ Matthew Rocklin
 
 *   [Research Interests](/)
 *   [Publications](/publications.html)
+*   [Talks](/talks.html)
 *   [Technical Blog](/blog/)
 *   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf)
 *   [GitHub](http://github.com/mrocklin/)
