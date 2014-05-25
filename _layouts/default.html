@@ -43,14 +43,20 @@
 </div>
 
 <div class="container">
+
+  <div class="sixteen columns">
+    <h1 class="remove-bottom" style="margin-top:
+      40px">Matthew Rocklin - {{ page.title }} </h1>
+    <h5><it>Computational Scientist, also person.</it></h5>
+    <hr />
+  </div>
+
   <div class="one-third column">
     {% capture leftbar %}{% include leftbar.md %}{% endcapture %}
     {{ leftbar | markdownify }}
   </div>
 
   <div class="two-thirds column">
-    <h2> {{ page.title }} </h2>
-    <hr>
     {{ content }}
   </div>
 </div><!-- container -->
