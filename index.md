@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Research
+title: Interests
 ---
 
 Programming often limits research more than fundamental domain challenges.<br>
@@ -8,7 +8,7 @@ I work to correct this imbalance through academic research, software
 development, and teaching.
 
 
-### Interests
+### Research
 
 I study how domain scientists develop and distribute software.  My goal is not
 to solve any particular problem but rather to isolate, automate, and distribute

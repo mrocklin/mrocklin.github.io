@@ -1,5 +1,5 @@
 
-*   [Research Interests](/)
+*   [Interests](/)
 *   [Publications](/publications.html)
 *   [Talks](/talks.html)
 *   [Bio](/bio.html)
