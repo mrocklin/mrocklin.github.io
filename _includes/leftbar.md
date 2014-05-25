@@ -1,9 +1,26 @@
 
 Matthew Rocklin
-===============
+---------------
 
-![Matthew Rocklin](/trainselfphoto_small.jpg)
 
-I develop [Blaze](http://blaze.pydata.org/) for [Continuum Analytics](http://continuum.io)
+<p><img src="/trainselfphoto_small.jpg"
+        alt="Matthew Rocklin"
+        width="100%" /></p>
 
-You may be looking for my [blog](/blog/).
+*Computational Scientist,<br>
+  newly minted PhD,<br>
+  also person.*
+
+*   [Research Interests](/)
+*   [Publications](/publications.html)
+*   [Technical Blog](/blog/)
+*   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf)
+*   [GitHub](http://github.com/mrocklin/)
+
+### Recent Work
+
+*   [Blaze](http://blaze.pydata.org/)
+*   [PyToolz](http://toolz.readthedocs.org/en/latest/)
+*   [SymPy](http://sympy.org)
+*   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
+*   [LogPy](https://github.com/logpy/logpy)
