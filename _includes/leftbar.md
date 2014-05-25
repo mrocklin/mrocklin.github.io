@@ -1,19 +1,8 @@
 
-Matthew Rocklin
----------------
-
-
-<p><img src="/trainselfphoto_small.jpg"
-        alt="Matthew Rocklin"
-        width="100%" /></p>
-
-*Computational Scientist,<br>
-  newly minted PhD,<br>
-  also person.*
-
 *   [Research Interests](/)
 *   [Publications](/publications.html)
 *   [Talks](/talks.html)
+*   [Bio](/bio.html)
 *   [Technical Blog](/blog/)
 *   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf)
 *   [GitHub](http://github.com/mrocklin/)
