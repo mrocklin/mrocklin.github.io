@@ -12,3 +12,5 @@ recorded and available online
 *   A surprisingly popular lightning talk [Packages Considered
     Slightly Harmful](https://www.youtube.com/watch?v=ywHqIEv3xXg) at SciPy
     2013. Starts at 6:13
+*   [Taking Control: Enabling Mathematicians and Scientists at SciPy 2014](https://www.youtube.com/watch?v=QldxygVVj-s)
+*   [Blaze: Foundations for Array Oriented Computing at SciPy 2014](https://www.youtube.com/watch?v=9HPR-1PdZUk)
