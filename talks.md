@@ -15,3 +15,8 @@ recorded and available online
 *   [Functional Performance with Core Data Structures at PyData Silicon Valley 2014](https://www.youtube.com/watch?v=PpBK4zIaFLE)
 *   [Taking Control: Enabling Mathematicians and Scientists at SciPy 2014](https://www.youtube.com/watch?v=QldxygVVj-s)
 *   [Blaze: Foundations for Array Oriented Computing at SciPy 2014](https://www.youtube.com/watch?v=9HPR-1PdZUk)
+*   SymPy Tutorial - Parts
+[1](https://www.youtube.com/watch?v=Lgp442bibDM),
+[2](https://www.youtube.com/watch?v=_PTe10whFKo),
+[3](https://www.youtube.com/watch?v=qleGSnrnxgc),
+and [4](https://www.youtube.com/watch?v=04AGOl1P2U4),  SciPy 2014
