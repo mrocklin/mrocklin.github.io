@@ -20,3 +20,4 @@ recorded and available online
 [2](https://www.youtube.com/watch?v=_PTe10whFKo),
 [3](https://www.youtube.com/watch?v=qleGSnrnxgc),
 and [4](https://www.youtube.com/watch?v=04AGOl1P2U4),  SciPy 2014
+*   [Slides from SFPython meetup on Blaze](http://matthewrocklin.com/slides/sfpython-blaze.html)
