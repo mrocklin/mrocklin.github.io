@@ -9,7 +9,7 @@
 
 ### Recent Work
 
-I currently work for [Continuum Analytics](http://continuum.io/)
+I work for [Continuum Analytics](http://continuum.io/)
 
 *   [Blaze](http://blaze.pydata.org/)
 *   [Dask](http://dask.readthedocs.org/)
