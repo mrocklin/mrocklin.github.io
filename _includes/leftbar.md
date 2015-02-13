@@ -9,8 +9,11 @@
 
 ### Recent Work
 
+I currently work for [Continuum Analytics](http://continuum.io/)
+
 *   [Blaze](http://blaze.pydata.org/)
+*   [Dask](http://dask.readthedocs.org/)
+*   [into](http://into.readthedocs.org/)
 *   [PyToolz](http://toolz.readthedocs.org/en/latest/)
 *   [SymPy](http://sympy.org)
 *   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
-*   [LogPy](https://github.com/logpy/logpy)
