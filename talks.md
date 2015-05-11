@@ -6,18 +6,24 @@ title: Talks
 I often give talks at academic/programming conferences.  Some of these are
 recorded and available online
 
-*   [Uncertainty Modeling with SymPy.stats at SciPy 2012](http://www.youtube.com/watch?v=27su3TQ3BvQ)
-*   [Matrix Expresions at SciPy 2013](http://pyvideo.org/video/2028/matrix-expressions-and-blaslapack-scipy-2013-pr)
-*   A surprisingly popular lightning talk [Packages Considered
-    Slightly Harmful](https://www.youtube.com/watch?v=ywHqIEv3xXg) at SciPy
-    2013. Starts at 6:13
-*   [Functional Python at PyData NYC 2013](https://vimeo.com/80096814)
-*   [Functional Performance with Core Data Structures at PyData Silicon Valley 2014](https://www.youtube.com/watch?v=PpBK4zIaFLE)
-*   [Taking Control: Enabling Mathematicians and Scientists at SciPy 2014](https://www.youtube.com/watch?v=QldxygVVj-s)
-*   [Blaze: Foundations for Array Oriented Computing at SciPy 2014](https://www.youtube.com/watch?v=9HPR-1PdZUk)
+*   Extending the Numeric Python ecosystem beyond in-memory computing (Keynote)
+    -- [Machine Learning and Open Source Software workshop](https://mloss.org/workshop/icml15/)
+    at [ICML](http://icml.cc/2015/) -- July 2015. Lille, France
+*   TBA (Keynote) - [PyData Berlin 2015](http://pydata.org/berlin2015/)
+*   [Out-of-core computations with dask.array](https://sea.ucar.edu/event/out-core-computations-blaze)
+    -- UCAR Software Engineering Assembly April 2015.
+*   [Slides from SFPython meetup on Blaze](http://matthewrocklin.com/slides/sfpython-blaze.html)
 *   SymPy Tutorial - Parts
 [1](https://www.youtube.com/watch?v=Lgp442bibDM),
 [2](https://www.youtube.com/watch?v=_PTe10whFKo),
 [3](https://www.youtube.com/watch?v=qleGSnrnxgc),
 and [4](https://www.youtube.com/watch?v=04AGOl1P2U4),  SciPy 2014
-*   [Slides from SFPython meetup on Blaze](http://matthewrocklin.com/slides/sfpython-blaze.html)
+*   [Blaze: Foundations for Array Oriented Computing at SciPy 2014](https://www.youtube.com/watch?v=9HPR-1PdZUk)
+*   [Taking Control: Enabling Mathematicians and Scientists at SciPy 2014](https://www.youtube.com/watch?v=QldxygVVj-s)
+*   [Functional Performance with Core Data Structures at PyData Silicon Valley 2014](https://www.youtube.com/watch?v=PpBK4zIaFLE)
+*   [Functional Python at PyData NYC 2013](https://vimeo.com/80096814)
+*   A surprisingly popular lightning talk [Packages Considered
+    Slightly Harmful](https://www.youtube.com/watch?v=ywHqIEv3xXg) at SciPy
+    2013. Starts at 6:13
+*   [Matrix Expresions at SciPy 2013](http://pyvideo.org/video/2028/matrix-expressions-and-blaslapack-scipy-2013-pr)
+*   [Uncertainty Modeling with SymPy.stats at SciPy 2012](http://www.youtube.com/watch?v=27su3TQ3BvQ)
