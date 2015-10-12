@@ -6,18 +6,22 @@ title: Talks
 I often give talks at academic/programming conferences.  Some of these are
 recorded and available online
 
+*   [Dask Tutorial](https://www.youtube.com/watch?v=ieW3G7ZzRZ0)
+    -- [materials](https://github.com/blaze/dask-tutorial)
+    -- [PyData Seattle, 2015](http://seattle.pydata.org/)
 *   Extending the Numeric Python ecosystem beyond in-memory computing (Keynote)
-    -- [Machine Learning and Open Source Software workshop](https://mloss.org/workshop/icml15/)
-    at [ICML](http://icml.cc/2015/) -- July 2015. Lille, France
-*   TBA (Keynote) - [PyData Berlin 2015](http://pydata.org/berlin2015/)
+    -- [Machine Learning and Open Source Software workshop](https://mloss.org/workshop/icml15/) at [ICML](http://icml.cc/2015/)
+    -- July 2015. Lille, France
+*   [Dask Arrays - Python's Relationship with Parallelism](https://youtu.be/HLME2WKTJJ8?t=300) (Keynote)
+    -- [PyData Berlin 2015](http://pydata.org/berlin2015/)
 *   [Out-of-core computations with dask.array](https://sea.ucar.edu/event/out-core-computations-blaze)
     -- UCAR Software Engineering Assembly April 2015.
 *   [Slides from SFPython meetup on Blaze](http://matthewrocklin.com/slides/sfpython-blaze.html)
 *   SymPy Tutorial - Parts
-[1](https://www.youtube.com/watch?v=Lgp442bibDM),
-[2](https://www.youtube.com/watch?v=_PTe10whFKo),
-[3](https://www.youtube.com/watch?v=qleGSnrnxgc),
-and [4](https://www.youtube.com/watch?v=04AGOl1P2U4),  SciPy 2014
+    [1](https://www.youtube.com/watch?v=Lgp442bibDM),
+    [2](https://www.youtube.com/watch?v=_PTe10whFKo),
+    [3](https://www.youtube.com/watch?v=qleGSnrnxgc),
+    and [4](https://www.youtube.com/watch?v=04AGOl1P2U4),  SciPy 2014
 *   [Blaze: Foundations for Array Oriented Computing at SciPy 2014](https://www.youtube.com/watch?v=9HPR-1PdZUk)
 *   [Taking Control: Enabling Mathematicians and Scientists at SciPy 2014](https://www.youtube.com/watch?v=QldxygVVj-s)
 *   [Functional Performance with Core Data Structures at PyData Silicon Valley 2014](https://www.youtube.com/watch?v=PpBK4zIaFLE)
