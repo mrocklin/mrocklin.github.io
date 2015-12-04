@@ -9,7 +9,7 @@ recorded and available online
 *   [Dask Tutorial](https://www.youtube.com/watch?v=ieW3G7ZzRZ0)
     -- [materials](https://github.com/blaze/dask-tutorial)
     -- [PyData Seattle, 2015](http://seattle.pydata.org/)
-*   Extending the Numeric Python ecosystem beyond in-memory computing (Keynote)
+*   [Extending the Numeric Python ecosystem beyond in-memory computing (Keynote)](http://k4webcast.mediasite.com/Mediasite/Play/4216268dc28148c89d8b6e4eba1ad6e51d)
     -- [Machine Learning and Open Source Software workshop](https://mloss.org/workshop/icml15/) at [ICML](http://icml.cc/2015/)
     -- July 2015. Lille, France
 *   [Dask Arrays - Python's Relationship with Parallelism](https://youtu.be/HLME2WKTJJ8?t=300) (Keynote)
