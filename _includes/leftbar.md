@@ -11,9 +11,10 @@
 
 I work for [Continuum Analytics](http://continuum.io/)
 
+*   [Distributed](http://distributed.readthedocs.org/)
 *   [Dask](http://dask.pydata.org/)
+*   [SymPy](http://sympy.org)
+*   [PyToolz](http://toolz.readthedocs.org/en/latest/)
+*   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
 *   [Blaze](http://blaze.pydata.org/)
 *   [odo](http://odo.readthedocs.org/)
-*   [PyToolz](http://toolz.readthedocs.org/en/latest/)
-*   [SymPy](http://sympy.org)
-*   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
