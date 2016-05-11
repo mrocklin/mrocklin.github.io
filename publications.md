@@ -41,6 +41,8 @@ These days I mostly publish software.  I used to publish papers; here they are.
 
 #### Other
 
+-   The Theano Development Team: [*Theano: A Python framework for fast
+    computation of mathematical expressions*](http://arxiv.org/abs/1605.02688)
 -   M. Rocklin, A. Terrel: [Symbolic Statistics with
     SymPy](http://origin-www.computer.org/csdl/mags/cs/2012/03/mcs2012030088-abs.html),
     Computing in Science and Engineering, vol. 14, no. 3, pp. 88-93,
