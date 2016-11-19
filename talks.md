@@ -6,6 +6,9 @@ title: Talks
 I often give talks at academic/programming conferences.  Some of these are
 recorded and available online
 
+*   [Dask Scheduling](https://www.youtube.com/watch?v=EEfI-11itn0) -- PyData DC, October 2016
+*   [Parallel Python Tutorial](https://www.youtube.com/watch?v=5Md_sSsN51k) -- Scipy, July 2016
+*   [Dask](https://www.youtube.com/watch?v=PAGjm4BMKlk) - SciPy, July 2016
 *   [Dask Tutorial](https://www.youtube.com/watch?v=ieW3G7ZzRZ0)
     -- [materials](https://github.com/blaze/dask-tutorial)
     -- [PyData Seattle, 2015](http://seattle.pydata.org/)
