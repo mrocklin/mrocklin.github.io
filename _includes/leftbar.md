@@ -4,7 +4,7 @@
 *   [Talks](/talks.html)
 *   [Bio](/bio.html)
 *   [Technical Blog](/blog/)
-*   [Resume](http://people.cs.uchicago.edu/~mrocklin/mrocklin-cv.pdf)
+*   [Resume](https://github.com/mrocklin/cv/blob/master/mrocklin-cv.pdf)
 *   [GitHub](http://github.com/mrocklin/)
 
 ### Recent Work
