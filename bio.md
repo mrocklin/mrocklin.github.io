@@ -12,7 +12,7 @@ title: Bio
 I grew up in San Juan Capistrano, a town by the beach in Southern California,
 and was fortunate to be raised by two loving parents, alongside two sisters.
 
-I now live in lovely Oakland, California.
+I now live in Brooklyn, New York.
 
 ### Academic
 
