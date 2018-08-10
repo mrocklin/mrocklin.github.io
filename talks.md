@@ -6,6 +6,7 @@ title: Talks
 I often give talks at academic and programming conferences.
 Some of these are recorded and available online:
 
+-   [Scientific Computing with Google Cloud Platform: Experiences from the Trenches in Particle Physics and Earth Sciences](https://cloud.withgoogle.com/next18/sf/sessions/session/156666) -- Google Next, July 2018
 -   Dask: Parallelizing the Python Data Ecosystem with Task Scheduling -- Keynote, International Conference on Data Engineering, IEEE ICDE, April 2018
 -   [Pangeo: An open source big data science platform](https://www.youtube.com/watch?v=mDrjGxaXQT4) -- Earth System Information Partners (ESIP) January 2018
 -   Scaling Scientific Python -- Keynote American Meteorological Society, Python Symposium, January 2018
