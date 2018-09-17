@@ -5,9 +5,9 @@ title: Bio
 
 
 <img src="/trainselfphoto_small.jpg"
-        alt="Matthew Rocklin"
-        width="50%"
-        align="right"/>
+     alt="Matthew Rocklin"
+     width="50%"
+     align="right"/>
 
 I grew up in San Juan Capistrano, a town by the beach in Southern California,
 and was fortunate to be raised by two loving parents, alongside two sisters.
@@ -16,15 +16,15 @@ I now live in Brooklyn, New York.
 
 ### Academic
 
-I attended university at UC Berkeley as a Physics/Math/Astronmy student.  I
+I attended university at UC Berkeley as a Physics/Math/Astronomy student.  I
 worked at a local engineering firm while in university and for the Physics
 department shortly after graduation.  I joined the Computer Science department
 at the University of Chicago as a PhD student from 2008-2013 where I was
 advised by Todd Dupont and Ridg Scott.
 
-After a brief stint at Sandia National Labs I joined Continuum Analytics, a
+After a brief stint at Sandia National Labs I joined Anaconda, a
 for-profit company behind the open source numeric Python ecosystem.  I am still
-at Continuum, working primarily on the Blaze project.
+at Anaconda, working primarily on the Dask project.
 
 
 ### Personal

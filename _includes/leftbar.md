@@ -9,12 +9,10 @@
 
 ### Recent Work
 
-I work for [Continuum Analytics](http://continuum.io/)
+I work for [Anaconda](http://anaconda.com)
 
+*   [Dask](http://dask.org/)
 *   [Distributed](http://distributed.readthedocs.org/)
-*   [Dask](http://dask.pydata.org/)
 *   [SymPy](http://sympy.org)
 *   [PyToolz](http://toolz.readthedocs.org/en/latest/)
 *   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
-*   [Blaze](http://blaze.pydata.org/)
-*   [odo](http://odo.readthedocs.org/)

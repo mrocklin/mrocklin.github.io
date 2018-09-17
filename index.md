@@ -3,42 +3,25 @@ layout: default
 title: Interests
 ---
 
-Programming often limits research more than fundamental domain challenges.<br>
-I work to correct this imbalance through academic research, software
-development, and teaching.
+I build and maintain parallel computing infrastructure for Python’s open source
+ecosystem. This is part of a broader effort to increase accessibility of
+numerical methods to science and policy practitioners.
 
 
-### Research
+### Work
 
-I study how domain scientists develop and distribute software.  My goal is not
-to solve any particular problem but rather to isolate, automate, and distribute
-the decisions experts make in developing solutions.
+I coordinate and maintain several libraries within Python’s numeric computing
+ecosystem, particularly around efficient and scalable computing.
 
-I focus on the domains of numerics, complex networks, and computer algebra as
-well as general data analytics.  I automate through compilers and the
-construction of domain specific languages.
+I am primarily known for my work on [Dask](https://dask.org), a library for
+scalable computing with dynamic task scheduling.  Dask combines a high-speed
+task scheduler with parallel algorithms to scale exisitng Python libraries like
+Numpy, Pandas, and Scikit-Learn.
 
+More generally though I work with other core developers within the ecosystem to
+promote the general health and efficiency. I contribute to and maintain dozens
+of libraries. A more complete record of my contribution is available on GitHub:
+[github.com/mrocklin](https://github.com/mrocklin).
 
-### Software Development
+I write frequently about my work at [matthewrocklin.com/blog](https://matthewrocklin.com/blog).
 
-I contribute within the numeric Python ecosystem. I also maintain a few
-functional programming libraries. My work is usually [open
-source](http://github.com/mrocklin) and my recent workflow and thoughts are
-frequently [published online](/blog/).
-
-
-### Teaching
-
-There exists an imbalance between computer science and the physical,
-life, and social sciences. The maturity of solutions in computer science
-has outpaced the knowledge of computational methods in these domains.
-This is despite their relevance in todays dominant issues.
-
-Because of this imbalance I prefer to teach methods courses in technical
-fields outside of computer science. While at UChicago I traditionally served as
-lab instructor for
-[CMSC-12100](http://www.cs.uchicago.edu/courses/description/CMSC/12100/9999-12-31%2000:00:00.00).
-and lectured a [similar course](http://matthewrocklin.com/cmsc15200) during the
-Summer.
-
-* * * * *
