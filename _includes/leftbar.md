@@ -1,3 +1,6 @@
+Matthew Rocklin
+---------------
+
 *   [Summary](/)
 *   [Blog](/blog/)
 *   [Recorded Talks](/talks.html)
