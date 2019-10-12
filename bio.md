@@ -4,7 +4,7 @@ title: Bio
 ---
 
 
-<img src="/trainselfphoto_small.jpg"
+<img src="/headshot-midres.jpg"
      alt="Matthew Rocklin"
      width="50%"
      align="right"/>
