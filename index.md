@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Summary
 ---
 
 I build and maintain open source software for Python’s data science ecosystem.

@@ -1,7 +1,6 @@
 *   [Summary](/)
-*   [Blog](/blog/)
-*   [Recorded Talks](/talks.html)
 *   [About me](/bio.html)
+*   [Blog](/blog/)
 
 ### Recent Work
 
