@@ -1,18 +1,12 @@
-
-*   [Interests](/)
-*   [Publications](/publications.html)
-*   [Talks](/talks.html)
-*   [Bio](/bio.html)
-*   [Technical Blog](/blog/)
-*   [Resume](https://github.com/mrocklin/cv/blob/master/mrocklin-cv.pdf)
-*   [GitHub](http://github.com/mrocklin/)
+*   [Summary](/)
+*   [Blog](/blog/)
+*   [Recorded Talks](/talks.html)
+*   [About me](/bio.html)
 
 ### Recent Work
 
-I work for [Anaconda](http://anaconda.com)
+I work for [NVIDIA](http://nvidia.com)
 
 *   [Dask](http://dask.org/)
-*   [Distributed](http://distributed.readthedocs.org/)
-*   [SymPy](http://sympy.org)
-*   [PyToolz](http://toolz.readthedocs.org/en/latest/)
-*   [Multiple Dispatch](http://multiple-dispatch.readthedocs.org/en/latest/)
+*   [Related projects](https://github.com/dask)
+*   [PyData](https://pydata.org)

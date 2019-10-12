@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Interests
 ---
 
-I build and maintain parallel computing infrastructure for Python’s open source
-ecosystem. This is part of a broader effort to increase accessibility of
-numerical methods to science and policy practitioners.
+I build and maintain open source software for Python’s data science ecosystem.
+This is part of a broader effort to increase accessibility to computation,
+accelerate science, and enable more informed policy decisions.
 
 
 ### Work
