@@ -27,9 +27,12 @@ After a brief stint at Sandia National Labs I joined Anaconda,
 a for-profit company behind the open source numeric Python ecosystem where I
 worked on many projects, but mostly [Dask](https://dask.org), a library for
 parallel computing in Python.
-Then, after five years at Anaconda I moved to NVIDIA, where I lead a team of
+Then, after five years at Anaconda I moved to NVIDIA, where I led a team of
 developers working on Dask, and enabling accelerated computing within Python
 more generally.
+
+Today I run [Coiled](https://coiled.io) a company whose mission is to provide
+accessibility to scalable computing to everyone.
 
 ### Personal
 
