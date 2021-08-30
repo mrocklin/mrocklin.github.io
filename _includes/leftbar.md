@@ -1,8 +1,9 @@
 *   [Summary](/)
 *   [About me](/bio.html)
 *   [Blog](/blog/)
--   [Twitter](https://twitter.com/mrocklin)
--   [Video](https://www.youtube.com/c/coiled)
+*   [Twitter](https://twitter.com/mrocklin)
+*   [GitHub](https://github.com/mrocklin)
+*   [LinkedIn](https://www.linkedin.com/in/matthew-rocklin-461b4323/)
 
 ### Recent Work
 
