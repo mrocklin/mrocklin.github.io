@@ -30,6 +30,7 @@ html_theme_options = {
   "google_analytics_id": "",
   "navbar_end": ["search-field.html", "theme-switcher", "navbar-icon-links"],
   "page_sidebar_items": [],
+  "footer_items": ["copyright"],
 }
 
 html_favicon = "_static/favicon.ico"
