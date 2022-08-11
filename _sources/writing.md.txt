@@ -1,7 +1,7 @@
 # Writings
 
 This collects the more frequently read and meaningful things that I've written
-over the last ten years.
+over the last few years.
 
 If you want, you can also see them in [chronological order](https://matthewrocklin.com/blog) with other writings at my historical blog.
 
@@ -12,6 +12,15 @@ If you want, you can also see them in [chronological order](https://matthewrockl
 :glob:
 
 engineering/*
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Programming
+:glob:
+
+programming/*
 ```
 
 ```{toctree}
