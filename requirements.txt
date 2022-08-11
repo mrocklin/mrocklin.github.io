@@ -1,0 +1,11 @@
+ablog
+docutils
+myst_nb
+MyST-Parser
+pydata-sphinx-theme
+sphinx
+sphinx-autobuild
+sphinx-panels
+sphinxcontrib-bibtex
+sphinxext-opengraph
+sphinxext-rediraffe
