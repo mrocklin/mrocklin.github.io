@@ -37,6 +37,6 @@ writing in the modern era.
 :maxdepth: 2
 :hidden:
 
-content/index
+writing
 Old Blog <https://matthewrocklin.com/blog>
 ```

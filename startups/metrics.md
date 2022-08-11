@@ -1,9 +1,9 @@
 ---
-title: Bad Metrics
+title: Metrics
 date: 2020-10-28
 ---
 
-# Bad Metrics
+# Metrics
 
 Common open source software (OSS) / venture capital (VC) metrics are flawed.
 This surprises no one; metrics are hard.
