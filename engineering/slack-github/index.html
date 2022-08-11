@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Why I Avoid Slack" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="engineering/slack-github/" />
+  
+<meta property="og:description" content="I avoid interacting on Slack, especially for technical conversations around open source software. Instead, I encourage colleagues to have technical and design conversations on GitHub, or some other..." />
+  
+    <title>Why I Avoid Slack &#8212; Matthew Rocklin</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Tech Leads" href="../technical-lead/" />
+    <link rel="prev" title="Dictionaries v. Objects" href="../shared-abstractions/" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None"> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Working Notes"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Matthew Rocklin</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../writing/">
+  Writings
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://matthewrocklin.com/blog">
+  Old Blog
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mrocklin/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/mrocklin" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Engineering
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../avoid-indirection/">
+   Avoid Indirection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../biased-benchmarks/">
+   Biased Benchmarks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../engineers-and-sales/">
+   Listen to Sell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fast-review/">
+   Small Scope Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../maintainer/">
+   Maintainers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../minimal-bug-reports/">
+   Craft Minimal Bug Reports
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scipy-mission/">
+   SciPy Mission
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../senior-engineer/">
+   Senior Engineers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../shared-abstractions/">
+   Dictionaries v. Objects
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Why I Avoid Slack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../technical-lead/">
+   Tech Leads
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-dumb-code/">
+   Write Dumb Code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-tests/">
+   Write Tests
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Startups
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/metrics/">
+   Metrics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/over-grown/">
+   Over Grown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/startup-revenue/">
+   Revenue Types
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Writing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/brevity/">
+   Short Attention Span
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/tweet/">
+   Ideal Tweet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/write-short-blogposts/">
+   Short Blogposts
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+
+              <article class="bd-article" role="main">
+                 <section id="why-i-avoid-slack">
+<h1>Why I Avoid Slack<a class="headerlink" href="#why-i-avoid-slack" title="Permalink to this headline">#</a></h1>
+<p>I avoid interacting on Slack, especially for technical conversations around
+open source software.  Instead, I encourage colleagues to have technical and
+design conversations on GitHub, or some other system that is public, permanent,
+searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
+(DRY) I’m writing up these thoughts as a blogpost.</p>
+<p>Slack is a great tool.  Slack is a great way for colleagues within an
+institution or group to communicate real-time with chat, voice, or video.
+Slack is probably the most polished of the enterprise chat tools, and today is
+something that probably most companies and collaborations should use.</p>
+<p>However internal real-time chat systems are, I think, bad for productivity
+generally, especially for public open source software maintenance.  Real-time
+chat systems make everyone feel productive (it’s fun to have a face-paced
+technical conversation with colleagues), but do relatively little for long-term
+community consensus building, particularly when the users and developers of a
+project span a variety of institutions and a long range of time.</p>
+<p>Here are some more reasons in-depth why I prefer conversation on GitHub rather
+than Slack.  I prefer GitHub because I want to …</p>
+<ol class="arabic">
+<li><p><strong>Engage collaborators</strong> that aren’t on our Slack</p>
+<ol class="arabic">
+<li><p>External collaborators may have the <em>answers</em> that we need.  Having the
+conversation in a private place means that we can’t ask them for their
+help, or, if we do eventually need to ask them for help, we need to
+summarize the entire conversation that we’ve had privately, which
+wastes time.</p>
+<p>Individual open source maintainers often don’t know the answers that
+people ask, but they do know how to redirect to someone who does.
+More often than not, that person is in another institution.  If you ask
+your question on GitHub this redirection is easy.</p>
+</li>
+<li><p>External collaborators may have <em>questions or context</em> that we need.
+Their questions and experience can help us create a better product than
+we’re capable of producing with only our in-house expertise.</p>
+<p>Most important problems are useful across many organizations, while
+solutions built within one organization are often overly-specific to
+the needs of that organization.  By getting broader context, OSS has a
+much higher likelihood of success.</p>
+</li>
+<li><p>External collaborators are much more likely to <em>buy in</em> to whatever we
+come up with if they were able to see the reasoning behind it and
+participate during that conversation.</p>
+<a class="reference internal image-reference" href="https://imgs.xkcd.com/comics/standards.png"><img alt="https://imgs.xkcd.com/comics/standards.png" src="https://imgs.xkcd.com/comics/standards.png" style="width: 70%;" /></a>
+<p>If you open the design process to the creators and users of the
+previous 14 standards, the 15th standard has a much higher probability
+of actually being used.</p>
+</li>
+</ol>
+<p>As we adopt community maintained open source software, the team we work
+with extends beyond our institution, and beyond the people who listen in to
+all of our institution’s Slack conversations.</p>
+</li>
+<li><p><strong>Record the conversation</strong> in case participants change in the future.</p>
+<p>Most development efforts change hands over time.  We may work on this
+project today, but next month some of us will probably move on to other
+projects and new people will arrive.  These new developers ask questions
+about why something was done and there are one of two answers, depending on
+whether the conversation was on Slack or GitHub:</p>
+<ul class="simple">
+<li><p><strong>Slack</strong>: We had a conversation about this a while ago and decided
+that it was the right course of action.  Just go with it.</p></li>
+<li><p><strong>GitHub</strong>: Go look at Issue #1234 and you’ll be able to see the
+reasoning why, who had which opinions, and whether or not your concern
+was raised there.  If your concern wasn’t raised there then we can
+easily pick up that thread of conversation on GitHub a year later
+(this happens all the time in long running OSS projects).</p></li>
+</ul>
+<p>Even in the same group we often find that people repeat the same
+conversations.  If there is an obvious place for that conversation, and you
+need to scroll through previous comments, then it’s far less likely that
+people will have to repeat themselves.</p>
+</li>
+<li><p><strong>Serve the silent majority</strong> of users who search the web for answers to
+their questions or bugs.</p>
+<p>On Slack, maintainers get asked the same questions daily.  We have people
+ask for “a few minutes of our time” every few minutes.  We strongly prefer
+to answer questions once in a place where future users can find the answer
+from a web search.  This includes people outside the company, but also
+people within the company.</p>
+<p>Maintainers are much happier devoting a lot of time to craft a high quality
+answer to questions if those questions and answers can help others in the
+future.  I personally spend a lot of time crafting answers on Stack
+Overflow, while I usually ignore questions on chat systems.  Want a good
+answer?  Pose a <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports">good
+question</a>
+in a public place.</p>
+</li>
+<li><p><strong>Encourage thoughtful discourse</strong>.
+Because GitHub is a permanent record it forces people to think more before
+they write.  This is hard on casual conversation, yes, but we’re not here
+for casual conversation.  Asking people to spend a minute crafting comments
+generally results in a conversation that is higher functioning, more
+concise, and much easier to review later.</p></li>
+<li><p><strong>Cross reference issues</strong>.
+Slack is siloed.  It doesn’t allow people to cross reference people or
+conversations across Slacks.  OSS maintainers get invited to literally
+dozens of Slack organizations.  It is not feasible to manage dozens of
+Slack tabs and different siloed organziations.</p>
+<p>GitHub is public and conversations across different projects can easily
+cross reference each other.  This encourages collaboration between projects
+and avoids wheel-reinvention.</p>
+</li>
+</ol>
+<p>Slack is the easy choice.  It’s so much easier just to open up a one-on-one
+conversation with someone, chat with them for a bit, get your answer, and feel
+like you’ve had a productive experience.  It feels good, but is rarely the
+correct choice long term, especially when you add up how many times that same
+conversation occurs.  Putting in a bit more effort and starting (or
+continuing!) a well-posed conversation in a public issue tracker like GitHub is
+likely better for your project and for your teammates long term.</p>
+<p>I still love Slack for inter-personal contact.  It’s great for chatting with
+teammates, checking in to see how people are doing emotionally, or sharing
+pictures about our lives.  Professionally I think it’s also a good place for
+internal teams to do daily check-ins and sometimes to arrange short-term
+priorities.  Slack has many great uses, but I think that in-depth technical
+conversation and long-term planning aren’t among them.</p>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../shared-abstractions/" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Dictionaries v. Objects</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../technical-lead/" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Tech Leads</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, Matthew Rocklin.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

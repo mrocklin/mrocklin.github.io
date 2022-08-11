@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Over Grown" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="startups/over-grown/" />
+  
+<meta property="og:description" content="I’ve intentionally shrunk Coiled from 40 to 20 people. This was painful, but we’re moving faster as a result. This article talks a little about the context around this. Common failure mode for star..." />
+  
+    <title>Over Grown &#8212; Matthew Rocklin</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Revenue Types" href="../startup-revenue/" />
+    <link rel="prev" title="Metrics" href="../metrics/" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None"> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Working Notes"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Matthew Rocklin</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../writing/">
+  Writings
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://matthewrocklin.com/blog">
+  Old Blog
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mrocklin/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/mrocklin" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Engineering
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/avoid-indirection/">
+   Avoid Indirection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/biased-benchmarks/">
+   Biased Benchmarks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/engineers-and-sales/">
+   Listen to Sell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/fast-review/">
+   Small Scope Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/maintainer/">
+   Maintainers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/minimal-bug-reports/">
+   Craft Minimal Bug Reports
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/scipy-mission/">
+   SciPy Mission
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/senior-engineer/">
+   Senior Engineers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/shared-abstractions/">
+   Dictionaries v. Objects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/slack-github/">
+   Why I Avoid Slack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/technical-lead/">
+   Tech Leads
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/write-dumb-code/">
+   Write Dumb Code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../engineering/write-tests/">
+   Write Tests
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Startups
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../metrics/">
+   Metrics
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Over Grown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../startup-revenue/">
+   Revenue Types
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Writing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/brevity/">
+   Short Attention Span
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/tweet/">
+   Ideal Tweet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/write-short-blogposts/">
+   Short Blogposts
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+
+              <article class="bd-article" role="main">
+                 <section id="over-grown">
+<h1>Over Grown<a class="headerlink" href="#over-grown" title="Permalink to this headline">#</a></h1>
+<p>I’ve intentionally shrunk Coiled from 40 to 20 people.
+This was painful, but we’re moving faster as a result.
+This article talks a little about the context around this.</p>
+<section id="common-failure-mode-for-startups">
+<h2>Common failure mode for startups<a class="headerlink" href="#common-failure-mode-for-startups" title="Permalink to this headline">#</a></h2>
+<p>First, let’s acknowledge a common trope for startups:</p>
+<ol class="arabic simple">
+<li><p>Innovate to modest success</p></li>
+<li><p>Raise a large venture round</p></li>
+<li><p>Fail to deliver</p></li>
+<li><p>Experience financial stress</p></li>
+<li><p>Contract</p></li>
+</ol>
+<p>This isn’t our story, but it would have been given time.
+I’m fearful that it will be the story for many startups that raised
+during the funding boom last year.</p>
+</section>
+<section id="startups-over-raised-last-year">
+<h2>Startups over-raised last year<a class="headerlink" href="#startups-over-raised-last-year" title="Permalink to this headline">#</a></h2>
+<p>Last year funding was easy.
+Many of us raised generous rounds,
+probably well before we could use the cash.</p>
+<p>We hired lots of smart people thinking that more smart people would make us go
+faster.  This wasn’t my experience.  My experience was that adding more smart
+people was bad in two ways:</p>
+<ol class="arabic simple">
+<li><p>Increased inertia making it harder to perform the rapid pivoting that’s necessary for a young company</p></li>
+<li><p>Increased intra-organizational burden, creating lots of work to integrate many working cultures</p></li>
+</ol>
+</section>
+<section id="innovation-is-king-large-organizations-don-t-innovate-well">
+<h2>Innovation is king.  Large organizations don’t innovate well.<a class="headerlink" href="#innovation-is-king-large-organizations-don-t-innovate-well" title="Permalink to this headline">#</a></h2>
+<p>We’ve all experienced this personally.  When we walk down a street with a
+single friend we walk quickly, even if we need to navigate around an obstacle
+like a construction site.  When we walk down the same street with a gang of
+many friends we’re slow, and a construction site can become insurmountable.</p>
+<p>Early stage startups are like navigating an entire city under construction,
+everyone needs to be able to pivot together at a moment’s notice.  Large groups
+require a lot of social work in order to pivot.  This work can become
+debilitating.</p>
+</section>
+<section id="fortunately-we-did-this-early">
+<h2>Fortunately we did this early<a class="headerlink" href="#fortunately-we-did-this-early" title="Permalink to this headline">#</a></h2>
+<p>We’re back at large-seed size with a generous many-year runway.
+We’re open to hiring folks, but only if we actively need their skillset and if
+we think that they’re a good culture fit for early-stage work (self-directed
+broadly-skilled folks).
+We’re not so interested in additional funding just now, we’ve got plenty of cash.</p>
+</section>
+<section id="back-to-work">
+<h2>Back to work<a class="headerlink" href="#back-to-work" title="Permalink to this headline">#</a></h2>
+<p>My calendar is clear of meetings, the team is aligned, and I am glad to be back
+to thinking about users, technology, and communication.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../metrics/" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Metrics</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../startup-revenue/" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Revenue Types</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, Matthew Rocklin.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

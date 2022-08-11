@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Senior Engineers" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="engineering/senior-engineer/" />
+  
+<meta property="og:description" content="Software development is both a highly technical and a highly creative process. Programmers are reasonably proud of their abilities and experience, much in the same way that expert artists or artisa..." />
+  
+    <title>Senior Engineers &#8212; Matthew Rocklin</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Dictionaries v. Objects" href="../shared-abstractions/" />
+    <link rel="prev" title="SciPy Mission" href="../scipy-mission/" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None"> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Working Notes"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Matthew Rocklin</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../writing/">
+  Writings
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://matthewrocklin.com/blog">
+  Old Blog
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mrocklin/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/mrocklin" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Engineering
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../avoid-indirection/">
+   Avoid Indirection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../biased-benchmarks/">
+   Biased Benchmarks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../engineers-and-sales/">
+   Listen to Sell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fast-review/">
+   Small Scope Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../maintainer/">
+   Maintainers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../minimal-bug-reports/">
+   Craft Minimal Bug Reports
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scipy-mission/">
+   SciPy Mission
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Senior Engineers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../shared-abstractions/">
+   Dictionaries v. Objects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../slack-github/">
+   Why I Avoid Slack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../technical-lead/">
+   Tech Leads
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-dumb-code/">
+   Write Dumb Code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-tests/">
+   Write Tests
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Startups
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/metrics/">
+   Metrics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/over-grown/">
+   Over Grown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/startup-revenue/">
+   Revenue Types
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Writing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/brevity/">
+   Short Attention Span
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/tweet/">
+   Ideal Tweet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/write-short-blogposts/">
+   Short Blogposts
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+
+              <article class="bd-article" role="main">
+                 <section id="senior-engineers">
+<h1>Senior Engineers<a class="headerlink" href="#senior-engineers" title="Permalink to this headline">#</a></h1>
+<p>Software development is both a highly technical and a highly creative process.
+Programmers are reasonably proud of their abilities and experience,
+much in the same way that expert artists or artisans can be proud of their work.</p>
+<p>Unfortunately, like art, there is no obvious scale on which to measure programmers.
+We throw around terms like “junior engineer” and “senior engineer” on job
+titles and resumes, but there isn’t a clear definition for these terms.
+If you look online you’ll find a variety of definitions from a variety of
+bloggers.  This article is one such blogpost.</p>
+<p>In this post I lay out my criteria for senior engineers.
+As with many posts like this, it will mostly focus on non-technical aspects of the job.</p>
+<p>For the lazy, I’ll summarize this post in the following sections. Senior engineers …</p>
+<ul class="simple">
+<li><p>Are technically skilled</p></li>
+<li><p>Handle vague requirements</p></li>
+<li><p>Seek to understand context</p></li>
+<li><p>Connect with stakeholders</p></li>
+<li><p>Take ownership and talk back</p></li>
+<li><p>Communicate regularly</p></li>
+<li><p>Handle uncertainty, and are comfortable with failure</p></li>
+<li><p>Ask for help</p></li>
+<li><p>Take vacations</p></li>
+</ul>
+<section id="are-technically-skilled">
+<h2>Are technically skilled<a class="headerlink" href="#are-technically-skilled" title="Permalink to this headline">#</a></h2>
+<p>First, senior engineers need to be able to program well.
+This has less to do with understanding language constructs and frameworks
+(these are traits by which we judge junior engineers)
+and is more about designing systems that can be easily reasoned about,
+maintained, and extended by junior engineers into the future.</p>
+<p><em>Senior engineers can design and implement boring solutions to complex problems.</em></p>
+<p>Now, that that’s out of the way,
+let’s get on to the non-technical aspects of senior engineering.</p>
+</section>
+<section id="handle-vague-requirements">
+<h2>Handle vague requirements<a class="headerlink" href="#handle-vague-requirements" title="Permalink to this headline">#</a></h2>
+<p>The more senior you are in an organization,
+the more vague and poorly-specified your tasks become.</p>
+<ul>
+<li><p>Junior engineers get tasks like</p>
+<p><em>“Run this specific benchmark on this component of our platform.
+Then try swapping out algorithm X for Y and report back the results”</em></p>
+</li>
+<li><p>Senior engineers get tasks like</p>
+<p><em>“Please figure out why the platform is slow and fix it”</em></p>
+</li>
+</ul>
+<p>Junior engineers are more actively managed,
+while senior engineers are trusted to figure things out on their own,
+reliably come to a decent solution decently quickly
+without someone guiding their way.</p>
+</section>
+<section id="seek-to-understand-context">
+<h2>Seek to understand context<a class="headerlink" href="#seek-to-understand-context" title="Permalink to this headline">#</a></h2>
+<p>To achieve this,
+senior engineers acknowledge their own ignorance of the situation,
+seek out others to help them understand the context in which their work matters.</p>
+<ul>
+<li><p>So given a task like</p>
+<p><em>“Please figure out why the platform is slow and fix it”</em></p>
+</li>
+<li><p>They understand that this was actually</p>
+<p><em>“Someone somewhere is complaining about performance.
+Figure out who this was, what will make them happy,
+and while you’re at it
+see if there is anything we should be concerned about long term”</em></p>
+</li>
+</ul>
+<p>Senior engineers seek to understand the context of the task given to them so
+that they can resolve underlying issues efficiently.</p>
+</section>
+<section id="connect-with-stakeholders">
+<h2>Connect with Stakeholders<a class="headerlink" href="#connect-with-stakeholders" title="Permalink to this headline">#</a></h2>
+<p>To do this, a senior engineer reaches out to other stakeholders.
+This might be the people who raised the issue/ticket,
+the people who are most affected by it,
+or even just someone they know personally who is well informed about this sort of problem.</p>
+<p>The engineer then seeks to learn more about the problem so that they can design
+an efficient plan to solve it.</p>
+<p>So for original task above:</p>
+<ul class="simple">
+<li><p><em>“Please figure out why the platform is slow and fix it”</em></p></li>
+</ul>
+<p>they might first ask their colleagues why it’s important that things are fast.
+Maybe it’s just frustrating users that they don’t know how long things will take,
+and so actually the solution to this problem is to implement a progress bar,
+rather than dive into optimizing code,
+which, while fun, likely isn’t the best use of time.</p>
+<p>The proposed solution given by the manager is often wrong.
+That’s ok, senior engineers identify the root problem so that they
+can develop a more effective solution.</p>
+</section>
+<section id="take-ownership-and-talk-back">
+<h2>Take ownership and talk back<a class="headerlink" href="#take-ownership-and-talk-back" title="Permalink to this headline">#</a></h2>
+<p>A senior engineer should feel comfortable disagreeing with their manager and peers when constructive.
+They understand that they have been trusted with this problem,
+and the they are likely the person who has the most time to focus on it.
+They will quickly become the expert here and know more than their managers,
+who are often distracted and make incorrect judgements about these vague tasks.
+Managers are often juggling many things and so often make mistakes.</p>
+<p>As a senior engineer learns more they naturally take control of the problem,
+both technically and socially,
+and handle communication with the broader team.</p>
+</section>
+<section id="communicate-regularly">
+<h2>Communicate regularly<a class="headerlink" href="#communicate-regularly" title="Permalink to this headline">#</a></h2>
+<p>As the senior engineer takes control,
+they communicate with the relevant stakeholders about what is going on.
+This is both to allow other people to plan around the engineer’s work,
+and also to verify that the plans of the engineer remain valid as things inevitably change.
+This communication might be sending out update e-mails,
+updating issues/tickets,
+or reaching out to known stakeholders directly in one-on-one conversations.
+They don’t ask for permission to do these things,
+they just go ahead if they think that it’s probably the right thing to do.</p>
+</section>
+<section id="handle-uncertainty-and-fail-comfortably">
+<h2>Handle uncertainty, and fail comfortably<a class="headerlink" href="#handle-uncertainty-and-fail-comfortably" title="Permalink to this headline">#</a></h2>
+<p>Senior engineers are given positions of ownership over difficult problems.
+They are placed in positions where they are likely to fail.</p>
+<p>This is ok.  They know that they will survive.
+While a junior engineer might be mortified at making a public mistake,
+a senior engineer is self-assure and has enough reputation to fail safely.
+No one is perfect, and no one can do everything right all the time, especially
+when operating on their own.</p>
+</section>
+<section id="ask-for-help">
+<h2>Ask for help<a class="headerlink" href="#ask-for-help" title="Permalink to this headline">#</a></h2>
+<p>Senior engineers engage peers in the company when necessary to help them
+accomplish larger tasks.
+Probably most of the task that they were given is well within their expertise,
+but there may be some parts that they know they’re not going to be efficient at.
+To resolve this, senior engineers know how to ask for short term resources
+within their company, and are comfortable doing so, especially when it’s likely
+to be more cost effective for the institution.</p>
+<p>So in our example maybe the backend engineer who is building a progress bar
+identifies that they need a little bit of front-end work to make the bar
+integrate well into the visual design of the broader product.
+The senior engineer has learned the process to ask for this help from peers,
+including peers from very different teams.</p>
+</section>
+<section id="take-vacations">
+<h2>Take Vacations<a class="headerlink" href="#take-vacations" title="Permalink to this headline">#</a></h2>
+<p>Senior engineers have been around long enough to realize that
+they work and live better when they are well rested.</p>
+<p>They also know not to get stressed out by any particular problem,
+even if that problem seems critical at the time.</p>
+<p>The senior engineer works a comfortable number of hours during the week,
+and makes sure to take solid chunks of vacation time to help them clear their head,
+and invest in their life and mental health.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
+<p>Senior engineers are trusted to get things done.
+For larger and more vaguely defined tasks this requires
+technical, organizational, and emotional maturity.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../scipy-mission/" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">SciPy Mission</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../shared-abstractions/" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Dictionaries v. Objects</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, Matthew Rocklin.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>

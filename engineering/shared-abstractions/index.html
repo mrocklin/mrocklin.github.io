@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Dictionaries v. Objects" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="engineering/shared-abstractions/" />
+  
+<meta property="og:description" content="a story of shared abstractions Shannon Behrens recently published a brief post on the use of dictionaries and objects to store named data. He raised the following question: At what point do we tran..." />
+  
+    <title>Dictionaries v. Objects &#8212; Matthew Rocklin</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Why I Avoid Slack" href="../slack-github/" />
+    <link rel="prev" title="Senior Engineers" href="../senior-engineer/" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None"> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Working Notes"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Matthew Rocklin</p>
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../writing/">
+  Writings
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://matthewrocklin.com/blog">
+  Old Blog
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mrocklin/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/mrocklin" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Engineering
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../avoid-indirection/">
+   Avoid Indirection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../biased-benchmarks/">
+   Biased Benchmarks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../engineers-and-sales/">
+   Listen to Sell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fast-review/">
+   Small Scope Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../maintainer/">
+   Maintainers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../minimal-bug-reports/">
+   Craft Minimal Bug Reports
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scipy-mission/">
+   SciPy Mission
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../senior-engineer/">
+   Senior Engineers
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dictionaries v. Objects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../slack-github/">
+   Why I Avoid Slack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../technical-lead/">
+   Tech Leads
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-dumb-code/">
+   Write Dumb Code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../write-tests/">
+   Write Tests
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Startups
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/metrics/">
+   Metrics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/over-grown/">
+   Over Grown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/startup-revenue/">
+   Revenue Types
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Writing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/brevity/">
+   Short Attention Span
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/tweet/">
+   Ideal Tweet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../writing/write-short-blogposts/">
+   Short Blogposts
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+
+              <article class="bd-article" role="main">
+                 <section id="dictionaries-v-objects">
+<h1>Dictionaries v. Objects<a class="headerlink" href="#dictionaries-v-objects" title="Permalink to this headline">#</a></h1>
+<p><em>a story of shared abstractions</em></p>
+<p>Shannon Behrens recently published a <a class="reference external" href="http://jjinux.blogspot.com/2013/08/python-dicts-vs-classes.html">brief post</a> on the use of dictionaries and objects to store named data.  He raised the following question:</p>
+<p><em>At what point do we transition from core data representations like <code class="docutils literal notranslate"><span class="pre">dicts</span></code> to custom data representations with custom classes?</em></p>
+<p>Choices in data representation interest me quite a bit.  I think that the mechanisms we choose to store and share data strongly impact the longevity of the code that we write.</p>
+<p>Let’s borrow Shannon’s book example to compare two common options of data representation</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot; Book object &quot;</span>                                 <span class="s2">&quot; Plain Dictionary &quot;</span>
+
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">authors</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">isbn</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">authors</span> <span class="o">=</span> <span class="n">authors</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">isbn</span> <span class="o">=</span> <span class="n">isbn</span>
+                                                <span class="n">book</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">book</span> <span class="o">=</span> <span class="n">Book</span><span class="p">([</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span>                        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span>
+            <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span>                        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;9780062113450&quot;</span><span class="p">)</span>                        <span class="s2">&quot;isbn&quot;</span><span class="p">:</span> <span class="s2">&quot;9780062113450&quot;</span>
+                                                <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Shannon advocates that you should “Keep it Simple” (right) for simple data structures but that, once things become more complex, you should transition to an object (left).</p>
+<p>I think that most Python programmers would agree with this sentiment.  It’s unclear (and thus interesting) exactly when this transition occurs though.  Personally I use core data structures (like <code class="docutils literal notranslate"><span class="pre">dict</span></code>) to represent almost all of my data.  I create new classes very rarely.  I follow this practice because I believe in the principle of shared abstractions.  I’ll explain what I mean in a moment.</p>
+<section id="advantages-of-objects">
+<h2>Advantages of Objects<a class="headerlink" href="#advantages-of-objects" title="Permalink to this headline">#</a></h2>
+<p>To start, lets state some of the virtues of objects (this is a very incomplete list.)</p>
+<ul>
+<li><p>Historically they’re just more commonly used for complex data.  It’s important to maintain coding standards that existing programmers find comfortable.</p></li>
+<li><p>The attribute syntax is a lot nicer.  Compare the following syntax to access an attribute:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;authors&quot;</span><span class="p">]</span>      <span class="c1"># 11 characters to get attribute, 4 of them awkward to type</span>
+<span class="n">book</span><span class="o">.</span><span class="n">authors</span>         <span class="c1">#  8 characters to get attribute, all of them common</span>
+</pre></div>
+</div>
+</li>
+<li><p>We can add functionality/methods to the objects in a controlled namespace.  For example</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">book</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>         <span class="o">.</span><span class="n">open</span> <span class="n">clearly</span> <span class="n">belongs</span> <span class="n">to</span> <span class="n">book</span>
+<span class="nb">open</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>          <span class="nb">open</span> <span class="n">conflicts</span> <span class="k">with</span> <span class="n">standard</span> <span class="n">Python</span> <span class="n">function</span> <span class="n">to</span> <span class="nb">open</span> <span class="n">a</span> <span class="n">file</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>The attribute syntax note is convenient but not a game-changer.  The ability to associate a set of functions with the object (and reuse these functions on inherited classes) is really where objects shine.  To emulate this behavior with core data structures you need to respect namespaces</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bookpy</span>
+<span class="n">bookpy</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And culturally many of us (myself included) are pretty bad at this.</p>
+</section>
+<section id="advantages-of-dicts">
+<h2>Advantages of Dicts<a class="headerlink" href="#advantages-of-dicts" title="Permalink to this headline">#</a></h2>
+<p>There are some small advantages to using dicts like the following</p>
+<ul class="simple">
+<li><p>Literal syntax, we can jump right in and write down dicts without setting up a class first.</p></li>
+<li><p>Efficient implementation (dicts are <em>really</em> fast)</p></li>
+</ul>
+<p>But, like the object attribute syntax these are merely convenient.</p>
+<p>The major reason to prefer core data structures is that they are an abstraction shared among all Python programmers.  As a result you can depend on standard code to <em>just work</em> on your data.</p>
+<p>For example we can serialize our data into JSON if, for example, we wanted to serialize it and send it over the internet.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">book</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;isbn&quot;</span><span class="p">:</span> <span class="s2">&quot;9780062113450&quot;</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+<span class="go">&#39;{&quot;title&quot;: &quot;American Gods&quot;, &quot;isbn&quot;: &quot;9780062113450&quot;, &quot;authors&quot;: [&quot;Neil Gaiman&quot;]}&#39;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">json</span></code> library fails to transform our <code class="docutils literal notranslate"><span class="pre">book</span></code> object however.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">book</span> <span class="o">=</span> <span class="n">Book</span><span class="p">([</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span> <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span> <span class="s2">&quot;9780062113450&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+<span class="go">TypeError: &lt;__main__.Book object at 0x10e4410&gt; is not JSON serializable</span>
+</pre></div>
+</div>
+<p>This is to be expected.  The <code class="docutils literal notranslate"><span class="pre">json</span></code> library developers have not seen our Book class.  No one has but us.</p>
+<p>While we may not think we need <code class="docutils literal notranslate"><span class="pre">json</span></code> encoding it’s likely that if our project succeeds then someone will want to send our objects over the internet.  The decision to make a custom class shuts our project off from the rest of the development ecosystem.</p>
+<p>Custom classes inhibit interoperation with other libraries.  This limits growth out to unanticipated applications.  This is particularly tragic because our field thrives on connecting isolated components.  Shared abstractions serve as the connection links, like the regular bumps and divots in LEGO pieces.  Shared abstractions allow us to connect cool modules to create novel cool projects with ease.  Otherwise we’re stuck hacking together missing technology (like a <code class="docutils literal notranslate"><span class="pre">Book.write_json</span></code> method) when perfectly adequate solutions (like <code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>) already exist.</p>
+<p>This example isn’t restricted to JSON encoding, in general we’re going to have to hack something together every time we want the Book objects to interact with foreign code.  This problem compounds as we begin to rely on more and more external projects.</p>
+</section>
+<section id="custom-shared-abstractions">
+<h2>Custom Shared Abstractions<a class="headerlink" href="#custom-shared-abstractions" title="Permalink to this headline">#</a></h2>
+<p>Sometimes building custom classes is worth it.  This is certainly the case when you have a large developer base that can all agree on exactly the interface they want to use.  LEGO piece bumps aren’t the right fit for everyone.  If you have a large community you can establish other cool interfaces (like Lincoln Logs or Tinker Toys) but only if you have sufficient market power to do so.  No one buys the off-brand LEGOs that don’t quite fit.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> object is a perfect example of a custom class that has become a shared abstraction for the entire scientific computing ecosystem.  Object orientation provided convenient syntax and intelligent method handling of <code class="docutils literal notranslate"><span class="pre">numpy.ndarrays</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy.matrix</span></code>.  I think that these features were key to this module’s wide adoption/success and a clear win for the object oriented crowd.</p>
+<p>In short, I think that new classes are really awesome but only in really rare cases.  They should be used sparingly.  If you’re developing for the Librarian Developers of the World then by all means, make an awesome, fully featured book class; otherwise try sticking with core data structures.  You’ll be happy later on as you leverage standard libraries for unanticipated applications.</p>
+</section>
+<section id="best-of-both-worlds-or-fancy-solutions">
+<h2>Best of Both Worlds (or, Fancy Solutions)<a class="headerlink" href="#best-of-both-worlds-or-fancy-solutions" title="Permalink to this headline">#</a></h2>
+<p>You can implement shared abstractions on top of custom classes.  For example you can implement the <code class="docutils literal notranslate"><span class="pre">iterable</span></code> abstraction by implementing an <code class="docutils literal notranslate"><span class="pre">__iter__</span></code> method on your class, allowing other foreign modules to leverage your custom data type without any trouble.  The <code class="docutils literal notranslate"><span class="pre">namedtuple</span></code> function in <code class="docutils literal notranslate"><span class="pre">collections</span></code> might be a good fit for the <code class="docutils literal notranslate"><span class="pre">book</span></code> application above.</p>
+<p>Also, it’s worth noting that JavaScript handles this problem in a curious way.  Objects and dictionaries are equivalent.  It’s an interesting direction and something I suspect we could hack together in Python as well.</p>
+<p>Finally, most objects in Python actually <em>are</em> just dictionaries.  You can always operate on the <code class="docutils literal notranslate"><span class="pre">object.__dict__</span></code> attribute.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </article>
+              
+
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../senior-engineer/" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Senior Engineers</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../slack-github/" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Why I Avoid Slack</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2022, Matthew Rocklin.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
