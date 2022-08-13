@@ -27,7 +27,7 @@ html_theme_options = {
   "github_url": "https://github.com/mrocklin/",
   "twitter_url": "https://twitter.com/mrocklin",
   "search_bar_text": "Search ...",
-  "google_analytics_id": "UA-18218894-4",
+  "google_analytics_id": "UA-18218894-1",
   "navbar_end": ["search-field.html", "theme-switcher", "navbar-icon-links"],
   "page_sidebar_items": [],
   "footer_items": ["copyright"],
