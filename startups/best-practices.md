@@ -1,0 +1,212 @@
+---
+title: Best Practices
+date: 2022-09-05
+---
+
+Best Practices
+==============
+
+Background
+----------
+
+After doing a pretty good job building an open source project and community,I started a company and made many mistakes.
+
+Today, some folks walking along the same path ask for my advice.
+This article encodes some of that advice.
+It is intended for technical founders who have no experience making companies.
+
+Most Advice is Wrong
+--------------------
+
+Many people will offer you advice:
+
+-   Investors
+-   Angel investors
+-   Business partners
+-   Fractional CTO/CMO/COO/CRO folks
+-   Other founders (like me)
+
+We're all mostly wrong.  That's not because we're dumb (we're mostly not dumb)
+but our experiences were valid for our situations, and they probably don't
+transfer over to yours.
+
+Early stage companies are all pretty unique, and it may be that there isn't a
+lot of transferability of knowledge.  Unfortunately, the wisest person
+for your situation is probably yourself.  You're going to feel pretty lost
+(that's ok, you are) but you should probably just follow your gut most of the
+time.
+
+Given that, you should read and then quickly discount most of the advice below.
+
+
+On Hiring
+---------
+
+### Hire Experienced Folks
+
+You should certainly employ folks though, and you should listen to them.
+They should all be smart.  You don't want any interns or junior folks.  No one
+on your team has time to grow them.  And besides, you'd be doing them a
+disservice, early stage startups are a horrible place to start a career.
+Junior folks need structure.  You want people who are smarter than you.
+
+You've succeeded in finding someone when you can say "Oh, so-and-so has that
+problem, I don't need to think about it anymore."
+
+### Hire Nimble Folks
+
+So hire experienced people, but avoid people who have a plan.
+Your first ten plans will fail.  You need people who can acknowledge failure
+quickly.
+
+Some experienced people make a living by going into early companies and running
+a well-known playbook.  This will be great for a month and then it will be
+wrong, but these people won't want to deviate from their playbook that
+frequently.
+
+You want people who are intellectually excited about pivoting once a month.
+
+### Hire Independent Folks
+
+Some people want to be told what to do.  They'll ask questions like "OK, what
+are my goals for the quarter".  These people are used to much more structure
+than you'll be ready to give to them.
+
+You want to hire people who can look at the entire situation and can come up
+with and change their own goals after chatting casually with you.
+You can't be dragging them along the entire time.
+
+### Hire Small
+
+A team of five gets along well together.
+A team of thirty has a variety of issues:
+
+-   personality conflicts
+-   differences in culture
+-   they can't all fit in a room
+-   they need management structure (and will then start to care about titles
+    and such)
+
+Given that you're going to fail ten times before you find the right path, it's
+best to keep the team pretty small.  They won't go as far, but it'll be way
+easier to bring everyone along as you explore the space.
+
+It's like walking down the street with friends.  Two people can walk pretty
+quickly, but thirty people walk really slowly.  When there is some obstruction
+in the way (like a construction site) it's really hard to redirect the group of
+thirty effectively while the group of two just naturally decides how to deviate
+without needing to speak verbally.
+
+Stay small until you have actual revenue that you think you can scale.
+Staying small will also enable you to pay for really good people.
+One really good person is worth more than five ok people, which is worth more
+than fifty junior people.
+
+### Hire Consistent Culture
+
+Do you care mostly about ...
+
+-   Making money?
+-   Changing the world?
+-   Building a diverse and inclusive workplace?
+
+Pick one.  Make sure that everyone else on the early stage team with hiring
+authority picks the same one.  Otherwise you'll have to fire a bunch of people
+down the road.
+
+### Fire People
+
+This is a hard lesson to learn, but you'll know that you'll need to fire
+someone, and then you'll try for a few more months to make it work.  This will
+be bad for everyone and so very bad for the company.
+
+Fire early.  It'll suck, but everyone (including the firee) will feel better
+afterwards.
+
+Investors
+---------
+
+### Take the Money
+
+Investors may be offering you more money than you need.  That's ok.
+Take the money.  Money is useful.  It can be turned into good people, time to
+relax and regroup, experimentation, offloading dumb problems onto contractors.
+Don't worry about being overvalued.  Don't worry about overly high expectations.
+Just take the money.
+
+### VCs primary value is money
+
+They will offer you a variety of help in starting out.  This help may have some
+value, but not much.  It's easy to find advice.  Their experts are smart, but
+they don't know your business well and so you'll outgrow them in a couple of
+months.
+
+### Choose people who understand your space
+
+Even though they won't be able to help you, it's really nice to have people who
+understand what you're doing so that you don't have to explain everything to
+them.  This, in my experience, is the primary value of very smart investors.
+
+
+Authenticity and Mental Health
+------------------------------
+
+### There's no recipe to being a CEO
+
+Often folks feel stressed because they feel like they often need to behave in a
+certain way:
+
+1.  You must know what you're doing
+2.  You must present optimism to the team and to the world
+3.  ...
+
+Fuck that.  No one can do that.  That's the sort of unreasonably high
+expectations that lead to burnout for you and corrosive behavior to the team.
+
+You're a human, and you've been a pretty successful human up until this point.
+You should probably keep doing whatever you were doing.  There's no reason to
+change your behavior.  Instead, change the company to suit you.
+
+
+### Optimize for yourself
+
+You're going to be the bottleneck of your company.
+It's ok if you optimize for yourself.
+
+Hate Slack?  Push the company to mailing lists and Github.
+Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings?
+
+You're being selfish and that's ok.  It's also probably what's best for the company.
+
+
+Voice
+-----
+
+### Branding
+
+Hire a group for this.  Your investors will have contacts.  Pay those
+contractors a bunch (like $50-100k).
+
+### Messaging
+
+Do this yourself.  You can find people to hire to do this, but you'll spend a
+bunch of your time explaining things to them, having them translate your words
+poorly to a lower common denominator, and then spend a bunch more time trying
+to change things.
+
+It's easier and better if you do this yourself for a while, and learn whatever
+you need along the way.
+
+
+Scale
+-----
+
+A common refrain we hear is "but this won't scale".  This applies to early
+contracts, early product ideas, technology choices, and so on.  It's ok, your
+job is to build something, not to build something scalable.  *Eventually* the
+thing will need to scale, but you don't need to do that first.
+
+Tesla started with the Tesla Roadster, a fully electric sports car that cost
+around $250,000.  About 2,500 were ever made.  First build a thing, then build
+a thing that scales.  Building a thing that scales right from the start reduces
+your chances of eventual success.
