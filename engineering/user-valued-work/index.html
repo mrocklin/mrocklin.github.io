@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Tech Leads" />
+<meta property="og:title" content="User Valued Work" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="engineering/technical-lead/" />
+<meta property="og:url" content="engineering/user-valued-work/" />
   
-<meta property="og:description" content="What is a technical lead?: Tech lead is a role for senior engineers that provides some of the leverage of management, while avoiding most of the administrative burden. It’s a fun role. This post ta..." />
+<meta property="og:description" content="We often need to balance prioritization between internal-facing work and user-facing work. It’s helpful to distinguish between these. User-valued work: This is work that directly affects users. It ..." />
   
-    <title>Tech Leads &#8212; Matthew Rocklin</title>
+    <title>User Valued Work &#8212; Matthew Rocklin</title>
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
   document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
@@ -63,8 +63,8 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="User Valued Work" href="../user-valued-work/" />
-    <link rel="prev" title="Why I Avoid Slack" href="../slack-github/" /> 
+    <link rel="next" title="Avoid Indirection" href="../../programming/avoid-indirection/" />
+    <link rel="prev" title="Tech Leads" href="../technical-lead/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None"> 
 <link
@@ -235,13 +235,13 @@
    Why I Avoid Slack
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../technical-lead/">
    Tech Leads
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../user-valued-work/">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    User Valued Work
   </a>
  </li>
@@ -362,151 +362,45 @@
               
 
               <article class="bd-article" role="main">
-                 <section id="tech-leads">
-<h1>Tech Leads<a class="headerlink" href="#tech-leads" title="Permalink to this headline">#</a></h1>
-<section id="what-is-a-technical-lead">
-<h2>What is a technical lead?<a class="headerlink" href="#what-is-a-technical-lead" title="Permalink to this headline">#</a></h2>
-<p>Tech lead is a role for senior engineers that provides some of the leverage of
-management, while avoiding most of the administrative burden.  It’s a fun role.
-This post talks about some positive behaviors to think about should you find
-yourself in this role.</p>
-<p>As the name suggests, tech leads <em>lead</em> larger technical efforts.
-They work with a team, but typically don’t formally manage anyone.
-The team looks up to them and it’s their job to steer the effort technically,
-while typically only using the soft power of generally knowing what they’re
-doing.</p>
-<p>It’s a really fun role.  I spent most of my time as a tech lead while at Anaconda, and serve
-in that capacity to some extent in OSS communities.  I wanted to share some of
-the positive behaviors that I think make for a good tech lead.</p>
-<p>So, what can a good tech lead do?</p>
-</section>
-<section id="tech-lead-behaviors">
-<h2>Tech lead behaviors<a class="headerlink" href="#tech-lead-behaviors" title="Permalink to this headline">#</a></h2>
-<ul>
-<li><p><strong>Solve Hard Problems</strong>: as a start, you have to be an excellent developer.
-You’re going to have to rescue your teammates from difficult bugs,
-and tackle the core bits of whatever you’re building.</p>
-<p>But if you want to solve hard problems then stay a senior engineer.
-Technical leadership is about guiding rather than executing</p>
-</li>
-<li><p><strong>Avoid Hard Problems</strong>: save your team time by pointing them towards
-simple solutions when they suffice.</p>
-<p>A team lead has to provide paths to solutions that the rest of the team can
-easily implement.  Finding easy solutions is hard.</p>
-<p>A team lead often has to say <em>“OK, I can see that your solution works well,
-but I wonder if we can make it simpler by doing X.  This will probably help
-down the line with future maintenance.”</em></p>
-</li>
-<li><p><strong>Avoid Technical Debt</strong>: leading a large effort is like playing chess.
-You make individual moves, but you think ahead about the ramifications of
-those moves.</p>
-<p>If the team has to spend time dealing with, or paying down technical debt
-then that’s your fault.  You should think about simple and extensible designs,
-so that your teammates can solve individual problems that robustly lead to
-an efficient solution.</p>
-</li>
-<li><p><strong>Break large problems down into small ones</strong>: building something
-yourself is easy.  Breaking down a large thing into small things that many
-people can develop on at once in parallel is hard and requires thoughtful
-design.</p>
-<p>In some sense, a technical lead is able to realize the “mythical man-month”
-by finding a path through the problem that exposes enough concurrency to
-enable acceleration through parallelism.</p>
-</li>
-<li><p><strong>Scope problems for your team:</strong> a small amount of scoping and support
-work from you can
-often save your teammates long hours of work.  This can take many forms:</p>
-<ul class="simple">
-<li><p>Presenting a problem in context</p></li>
-<li><p>Provide a recommended approach, and pointers to relevant pieces of the
-code</p></li>
-<li><p>Tests that you think should pass that encode important behavior or make
-the API clear</p></li>
-</ul>
-<p>As you know, a lot of software development time is spent understanding
-design, and exploring wrong paths.  You’re probably faster at this than
-your teammates, and so it’s a highly productive activity for you.
-By providing enough detail up-front you can reduce uncertainty, stress, and
-delays from your teammates’ work, which they will appreciate.</p>
-</li>
-<li><p><strong>Know your team:</strong> In order to properly scope and describe tasks for your
-teammates you need to know their technical capabilities and preferences
-pretty well.  This arises in two components:</p>
+                 <section id="user-valued-work">
+<h1>User Valued Work<a class="headerlink" href="#user-valued-work" title="Permalink to this headline">#</a></h1>
+<p>We often need to balance prioritization between internal-facing work and
+user-facing work.  It’s helpful to distinguish between these.</p>
+<section id="id1">
+<h2>User-valued work<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>This is work that directly affects users.  It solves their pain and gives them
+a delightful experience.  It includes work like the following:</p>
 <ol class="arabic simple">
-<li><p>You can match problems to teammates based on interest.  People do a
-better job on problems that excite them.</p></li>
-<li><p>You can provide more or less detail based on their experience with
-these kinds of problems.</p></li>
+<li><p>Features that solve user pain</p></li>
+<li><p>Features that delight users</p></li>
+<li><p>Documentation that many people read and engage with</p></li>
+<li><p>Directly answering user questions</p></li>
 </ol>
-</li>
-<li><p><strong>Explain your thought process:</strong> It’s not enough to say “here is a test
-and a design, please implement it”.  Remember that you’re not in charge of
-anyone here.  Instead, you lead by providing explanation and context on why
-you think a certain path is best.</p>
-<ul>
-<li><p><strong>Bad:</strong> Please use algorithm X here rather than Y.</p></li>
-<li><p><strong>Good:</strong> I suspect that algorithm Y here will not perform well when we
-have many users.  I think that it’s O(n^2), which is fine for the test
-cases that we have here, but given that we’re expecting 10k
-simultaneous users and the cost here seems to be about 5us, this turns
-into <code class="docutils literal notranslate"><span class="pre">5us</span> <span class="pre">*</span> <span class="pre">10k</span> <span class="pre">**</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">10</span> <span class="pre">minutes</span></code></p>
-<p>Instead, I think that algorithm X might be a better fit.  It’s a bit
-slower when we have very few users, but should scale much better.</p>
-</li>
-</ul>
-<p>There are a couple of reasons for this.  First, keep in mind that you’re
-not in charge.  Overly aggressive tech-leads are unpleasant to work with.</p>
-<p>Second, you’re supposed to teach your understanding of the system onto
-your coworkers, and help them progress professionally.</p>
-</li>
-<li><p><strong>Advocate for teammates:</strong> tech leads are unique in that they</p>
-<ol class="arabic simple">
-<li><p>have respect and clout in the company</p></li>
-<li><p>have a lot of direct experience with individual engineers</p></li>
-<li><p>aren’t technically responsible for anyone</p></li>
-</ol>
-<p>As a result they are often the best source of information about who is
-doing well.  While you don’t have direct budget authority to give raises or
-promotions, you do have <em>soft power</em> and can advocate for great teammates.</p>
-<p>Conversely, you also know when someone isn’t working out in the team,
-and can work to address problems quickly before they become serious issues.</p>
-<p>A tech lead is like a cool aunt/uncle.  People say things to them that they
-wouldn’t say to siblings or parents, and they’re disconnected enough to
-easily give insightful feedback.</p>
-</li>
-<li><p><strong>Communicate directly to stakeholders:</strong> a good tech lead
-can talk directly to other parts of the company (product, sales, marketing).
-They’re also often called in to deal with important clients.</p>
-<p>Because of this, tech leads need to be able to turn on a certain level of
-professionalism, and also understand the non-technical needs of others.
-They need to understand why the work that they do is important to people.</p>
-</li>
-<li><p><strong>Listen, and avoid ego:</strong> because of this, tech leads need to listen,
-and have very little ego when it comes to technical work
-(I personally need to work on this).</p>
-<p>Rockstar developers tend to make poor tech-leads (but awesome senior engineers).</p>
-<p>Instead the best tech leads I know are able to tell you what course of
-action they think is best one minute, and then have their mind changed
-entirely the next minute.  This is often developed with age, or with
-experience working on technical projects where they are wrong (which
-happens often if you pay attention).</p>
-</li>
-<li><p><strong>Respect senior engineers:</strong> Tech leads often work alongside other senior
-engineers who may have more experience as developers, but don’t care to
-direct the work of others.  It’s important to remember that these people
-are often smarter than you, and seek their technical opinion.</p></li>
-<li><p><strong>Respect junior engineers:</strong> Tech leads often dispense critical feedback
-about code to junior engineers.  This puts them at risk of appearing to be
-jerks.  Good tech leads study human management skills, and how to deliver
-feedback in particular.</p></li>
-</ul>
 </section>
-<section id="oss-maintainers-make-good-tech-leads">
-<h2>OSS Maintainers make good Tech Leads<a class="headerlink" href="#oss-maintainers-make-good-tech-leads" title="Permalink to this headline">#</a></h2>
-<p>The role of having a lot of technical context, trying to direct many others
-along a shared technical vision, but not actually having authority over anyone
-is a role familiar to many OSS maintainers.  There is excellent cross-over
-between these two positions.</p>
+<section id="developer-valued-work">
+<h2>Developer-valued work<a class="headerlink" href="#developer-valued-work" title="Permalink to this headline">#</a></h2>
+<p>This is work that mostly developers see.</p>
+<ol class="arabic simple">
+<li><p>Paying down technical debt</p></li>
+<li><p>Fixing CI</p></li>
+<li><p>Writing well thought out technical documentation, even if it isn’t widely read</p></li>
+<li><p>Discovering bugs or problems in the system</p></li>
+<li><p>Writing design documents</p></li>
+<li><p>Developing features behind a feature flag</p></li>
+<li><p>Developing features but not releasing them or releasing them only very recently so that most users don’t have them yet</p></li>
+</ol>
+<p>Developer valued work is also valuable, but only in that it makes us faster in
+delivering user-valued work to users.</p>
+</section>
+<section id="timing-and-judgement">
+<h2>Timing and Judgement<a class="headerlink" href="#timing-and-judgement" title="Permalink to this headline">#</a></h2>
+<p>We are judged as a team on user-valued work in the long term.
+Developer-valued work is good, but only in service of user-valued work.
+It’s great to do developer-valued work for a week or a month, but beyond that
+it comes into question.</p>
+<p>In a professional context when upper-management judges the performance of a
+team, user-valued changes are typically what matter.  This typically matches
+how the public judges the work as well.</p>
 </section>
 </section>
 
@@ -522,17 +416,17 @@ between these two positions.</p>
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../slack-github/" title="previous page">
+  <a class='left-prev' id="prev-link" href="../technical-lead/" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Why I Avoid Slack</p>
+          <p class="prev-next-title">Tech Leads</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../user-valued-work/" title="next page">
+  <a class='right-next' id="next-link" href="../../programming/avoid-indirection/" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">User Valued Work</p>
+      <p class="prev-next-title">Avoid Indirection</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
