@@ -188,8 +188,9 @@ If you're successful then you're going to be the bottleneck of your company.
 It's ok if you optimize for yourself.
 
 -   Hate Slack?  Push the company to mailing lists and Github.
--   Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings?
+-   Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings.
 -   Want to take some time off?  Define a vacation policy that suits your needs.
+-   Want to go to the beach?  Schedule the next offsite near the water.
 
 You're being selfish and that's ok.  It's also probably what's best for the company.
 
@@ -200,14 +201,14 @@ Voice
 ### Branding
 
 Hire a group for this.  Your investors will have contacts.  Pay those
-contractors a bunch (like $50-100k).
+contractors well.
 
 ### Messaging
 
-Do this yourself.  You can find people to hire to do this, but you'll spend a
-bunch of your time explaining things to them, having them translate your words
-poorly to a lower common denominator, and then spend a bunch more time
-struggling to make them right.
+Do this yourself.  You can find people to do this for you, but you'll spend a
+bunch of your time and energy explaining things to them, having them translate
+your words poorly to a lower common denominator, and then spend a bunch more
+time and energy struggling to make those words right.
 
 It's easier and better if you do this yourself for a while, and learn whatever
 you need along the way.
@@ -217,16 +218,17 @@ Scale
 -----
 
 A common refrain we hear is "but this won't scale".  This applies to early
-sales contracts, early product ideas, technology choices, and so on.  It's ok,
-your job is to build something, not to build something scalable.  *Eventually*
-the thing will need to scale, but you don't need to do that first.
+sales contracts, product ideas, technology choices, and so on.  It's ok.
+Your first job is to build something, not to build something scalable.
+*Eventually* the thing will need to scale, but you don't need to do that yet.
 
-Tesla started with the Tesla Roadster, a fully electric sports car that cost
-around $250,000.  About 2,500 were ever made.  This product didn't scale.  The
+Example: Tesla started with the Roadster, a fully electric sports car that cost
+$250,000.  About 2,500 were ever made.  This product didn't scale.  The
 market of people willing to pay that much for a car is small, and the
 manufacturing process wasn't smooth.  It didn't matter though, it allowed the
 company to experiment and iterate quickly so that they could then produce the
-Model 3.  It's ok to start out by building the Roadster.
+Model 3 and think about scaling issues.
 
+It's ok to start out by just building the Roadster.
 First build a thing, then build a thing that scales.
 Building a thing that scales right from the start reduces your chance of eventual success.
