@@ -1,9 +1,9 @@
 ablog
 docutils
 myst_nb
-MyST-Parser
-pydata-sphinx-theme
-sphinx
+MyST-Parser==0.18.0
+pydata-sphinx-theme==0.9.0
+sphinx==5.1.1
 sphinx-autobuild
 sphinx-panels
 sphinxcontrib-bibtex
