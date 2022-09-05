@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
 <meta property="og:title" content="Revenue Types" />
   
@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -45,6 +45,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -66,7 +67,7 @@
     <link rel="next" title="Uncertainty" href="../uncertainty/" />
     <link rel="prev" title="Over Grown" href="../over-grown/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None"> 
+<meta name="docsearch:language" content="en"> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -295,6 +296,11 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../best-practices/">
+   Best Practices
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../metrics/">
    Metrics
   </a>
@@ -363,7 +369,7 @@
 
               <article class="bd-article" role="main">
                  <section id="revenue-types">
-<h1>Revenue Types<a class="headerlink" href="#revenue-types" title="Permalink to this headline">#</a></h1>
+<h1>Revenue Types<a class="headerlink" href="#revenue-types" title="Permalink to this heading">#</a></h1>
 <p>VC funded startups are weird.
 They (rightly) care more about valuation than about revenue.
 Valuation depends on revenue, but only on very certain kinds of revenue.</p>
@@ -377,7 +383,7 @@ This blog goes through a variety of different kinds of revenue that I think are
 different kinds of good and bad.  Throughout these examples I draw from on my
 single experience selling open source software in the data infrastructure space.</p>
 <section id="consulting-services">
-<h2>Consulting Services<a class="headerlink" href="#consulting-services" title="Permalink to this headline">#</a></h2>
+<h2>Consulting Services<a class="headerlink" href="#consulting-services" title="Permalink to this heading">#</a></h2>
 <p><em>Customer: Please join my team and help us use your software to solve our problem</em></p>
 <ul class="simple">
 <li><p>Not Scalable</p></li>
@@ -394,7 +400,7 @@ intentionally).</p>
 <em>$1000/hr</em>.</p>
 </section>
 <section id="funded-development">
-<h2>Funded Development<a class="headerlink" href="#funded-development" title="Permalink to this headline">#</a></h2>
+<h2>Funded Development<a class="headerlink" href="#funded-development" title="Permalink to this heading">#</a></h2>
 <p><em>Customer: I love your software.  Can I pay you to add a feature?</em></p>
 <ul class="simple">
 <li><p>Not scalable</p></li>
@@ -412,7 +418,7 @@ not a team that needs to be dependably employed)</p>
 <em>$50,000</em> to <em>$1,000,000</em>.</p>
 </section>
 <section id="support">
-<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">#</a></h2>
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this heading">#</a></h2>
 <p><em>Customer: I want insurance that things won’t break</em></p>
 <ul class="simple">
 <li><p>Pretty Scalable</p></li>
@@ -435,7 +441,7 @@ business people that this is ARR, despite the fact that it’s definitely
 annually recurring revenue.</p>
 </section>
 <section id="product-hard-to-deploy">
-<h2>Product (hard to deploy)<a class="headerlink" href="#product-hard-to-deploy" title="Permalink to this headline">#</a></h2>
+<h2>Product (hard to deploy)<a class="headerlink" href="#product-hard-to-deploy" title="Permalink to this heading">#</a></h2>
 <p><em>Customer: I want your product, but need it in my environment, like Cloudera</em></p>
 <ul class="simple">
 <li><p>Pretty Scalable</p></li>
@@ -456,7 +462,7 @@ Technologies like Kubernetes and “on-prem cloud” reduce (but don’t elimina
 this pain.</p>
 </section>
 <section id="product-cloud-saas">
-<h2>Product (cloud SaaS)<a class="headerlink" href="#product-cloud-saas" title="Permalink to this headline">#</a></h2>
+<h2>Product (cloud SaaS)<a class="headerlink" href="#product-cloud-saas" title="Permalink to this heading">#</a></h2>
 <p><em>Customer: I want your product, and don’t mind if you see my data, like Snowflake</em></p>
 <ul class="simple">
 <li><p>Very Scalable</p></li>
@@ -472,7 +478,7 @@ some sectors (SMBs, non-sensitive industries) but harder in others (Large
 Enterprise, finance, government, etc.).</p>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>Money is good.  Dependability is good.  Learning is good.</p>
 <p>All of these activities are good in some ways and bad in others.  Rather than
 say services are bad and product is good we should be asking questions about

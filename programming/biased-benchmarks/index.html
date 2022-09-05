@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
 <meta property="og:title" content="Biased Benchmarks" />
   
@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -45,6 +45,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -66,7 +67,7 @@
     <link rel="next" title="Small Scope Reviews" href="../fast-review/" />
     <link rel="prev" title="Avoid Indirection" href="../avoid-indirection/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None"> 
+<meta name="docsearch:language" content="en"> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -295,6 +296,11 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/best-practices/">
+   Best Practices
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../startups/metrics/">
    Metrics
   </a>
@@ -363,14 +369,14 @@
 
               <article class="bd-article" role="main">
                  <section id="biased-benchmarks">
-<h1>Biased Benchmarks<a class="headerlink" href="#biased-benchmarks" title="Permalink to this headline">#</a></h1>
+<h1>Biased Benchmarks<a class="headerlink" href="#biased-benchmarks" title="Permalink to this heading">#</a></h1>
 <p><em>honesty is hard</em></p>
 <p><em>This work is supported by <a class="reference external" href="http://continuum.io">Continuum Analytics</a>
 the <a class="reference external" href="http://www.darpa.mil/program/XDATA">XDATA Program</a>
 and the Data Driven Discovery Initiative from the <a class="reference external" href="https://www.moore.org/">Moore
 Foundation</a>.</em></p>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>Performing benchmarks to compare software is surprisingly difficult to do
 fairly, even assuming the best intentions of the author.  Technical developers
 can fall victim to a few natural human failings:</p>
@@ -385,7 +391,7 @@ can fall victim to a few natural human failings:</p>
 working on comparing Dask and Spark Dataframes.</p>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>Last week I started comparing performance between Dask Dataframes (a project
 that I maintain) and Spark Dataframes (the current standard).  My initial
 results showed that Dask.dataframes were overall <em>much</em> faster, somewhere like
@@ -406,7 +412,7 @@ I recommend <a class="reference external" href="http://www.npr.org/sections/mone
 Podcast</a>.</p>
 </section>
 <section id="skewed-objectives">
-<h2>Skewed Objectives<a class="headerlink" href="#skewed-objectives" title="Permalink to this headline">#</a></h2>
+<h2>Skewed Objectives<a class="headerlink" href="#skewed-objectives" title="Permalink to this heading">#</a></h2>
 <p><em>Feature X is so important.  I wonder how the competition fares?</em></p>
 <p>Every project is developed with different applications in mind and so has
 different strengths and weaknesses.  If we approach a benchmark caring only
@@ -430,7 +436,7 @@ performance here either way will likely lead to misguided conclusions.</p>
 claim to support Parquet well, and use that as the basis for comparison.</p>
 </section>
 <section id="skewed-experience">
-<h2>Skewed Experience<a class="headerlink" href="#skewed-experience" title="Permalink to this headline">#</a></h2>
+<h2>Skewed Experience<a class="headerlink" href="#skewed-experience" title="Permalink to this heading">#</a></h2>
 <p><em>Whoa, this other project has a lot of configuration parameters!  Let’s just use
 the defaults.</em></p>
 <p>Software is often easy to set up, but often requires experience to set up
@@ -459,7 +465,7 @@ to definitely say that you’re not doing things in a dumb way.</p>
 primarily uses the other system.</p>
 </section>
 <section id="preference-towards-strengths">
-<h2>Preference towards strengths<a class="headerlink" href="#preference-towards-strengths" title="Permalink to this headline">#</a></h2>
+<h2>Preference towards strengths<a class="headerlink" href="#preference-towards-strengths" title="Permalink to this heading">#</a></h2>
 <p><em>Oh hey, we’re doing <strong>really</strong> well here.  This is great!  Let’s dive into this a
 bit more.</em></p>
 <p>It feels great to see your project doing well.  This emotional pleasure
@@ -473,7 +479,7 @@ fails we should take that as an opportunity to raise an issue for future
 (though not current) development.</p>
 </section>
 <section id="tuning-during-experimentation">
-<h2>Tuning during experimentation<a class="headerlink" href="#tuning-during-experimentation" title="Permalink to this headline">#</a></h2>
+<h2>Tuning during experimentation<a class="headerlink" href="#tuning-during-experimentation" title="Permalink to this heading">#</a></h2>
 <p><em>Oh, I know why this is slow.  One sec, let me change something in the code.</em></p>
 <p>I’m doing this right now.  Dask dataframe shuffles are generally slower than
 Spark dataframe shuffles.  On numeric data this used to be around a 2x
@@ -494,7 +500,7 @@ gives the incorrect impression that the entire project has been optimized to
 that level.</p>
 </section>
 <section id="omission">
-<h2>Omission<a class="headerlink" href="#omission" title="Permalink to this headline">#</a></h2>
+<h2>Omission<a class="headerlink" href="#omission" title="Permalink to this heading">#</a></h2>
 <p><em>So, this didn’t go as planned.  Let’s wait a few months until the next release.</em></p>
 <p>There is no motivation to publish negative results.  Unless of course you’ve
 just written a blogpost announcing that you plan to release benchmarks in the
@@ -505,7 +511,7 @@ community.  And we all talk about open source community driven software, so
 these should be welcome.</p>
 </section>
 <section id="straight-up-bias">
-<h2>Straight up bias<a class="headerlink" href="#straight-up-bias" title="Permalink to this headline">#</a></h2>
+<h2>Straight up bias<a class="headerlink" href="#straight-up-bias" title="Permalink to this heading">#</a></h2>
 <p><em>Look, we’re not in grad-school any more.  We’ve got to convince companies to
 actually use this stuff.</em></p>
 <p>Everything we’ve discussed so far assumes best intentions, and that the author is

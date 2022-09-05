@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
 <meta property="og:title" content="Write Dumb Code" />
   
@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -45,6 +45,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -66,7 +67,7 @@
     <link rel="next" title="Write Tests" href="../write-tests/" />
     <link rel="prev" title="Dictionaries v. Objects" href="../shared-abstractions/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None"> 
+<meta name="docsearch:language" content="en"> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -295,6 +296,11 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/best-practices/">
+   Best Practices
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../startups/metrics/">
    Metrics
   </a>
@@ -363,7 +369,7 @@
 
               <article class="bd-article" role="main">
                  <section id="write-dumb-code">
-<h1>Write Dumb Code<a class="headerlink" href="#write-dumb-code" title="Permalink to this headline">#</a></h1>
+<h1>Write Dumb Code<a class="headerlink" href="#write-dumb-code" title="Permalink to this heading">#</a></h1>
 <p><em>The best way you can contribute to an open source project is to remove lines of code from it.</em>
 <em>We should endeavor to write code that a novice programmer can easily
 understand without explanation or that a maintainer can understand without
@@ -400,7 +406,7 @@ extent, but somehow we forget them when we go to contribute to a new project.
 The instinct to <em>contribute by building</em> and to <em>demonstrate sophistication</em>
 often take over.</p>
 <section id="software-is-a-cost">
-<h2>Software is a cost<a class="headerlink" href="#software-is-a-cost" title="Permalink to this headline">#</a></h2>
+<h2>Software is a cost<a class="headerlink" href="#software-is-a-cost" title="Permalink to this heading">#</a></h2>
 <p>Every line that you write costs people time.  It costs you time to write it of
 course, but you are willing to make this personal sacrifice.  However this code
 also costs the reviewers their time to understand it.  It costs future
@@ -414,7 +420,7 @@ less code is a hard, but it is a burden that you take on yourself to lighten
 the burdens of others.</p>
 </section>
 <section id="complex-technologies-are-harder-to-maintain">
-<h2>Complex technologies are harder to maintain<a class="headerlink" href="#complex-technologies-are-harder-to-maintain" title="Permalink to this headline">#</a></h2>
+<h2>Complex technologies are harder to maintain<a class="headerlink" href="#complex-technologies-are-harder-to-maintain" title="Permalink to this heading">#</a></h2>
 <p>As students, we demonstrate merit by using increasingly advanced technologies.
 Our measure of worth depends on our ability to use functions, then classes,
 then higher order functions, then monads, etc. in public projects.  We show off
@@ -435,7 +441,7 @@ cool tricks.  Instead, you can demonstrate your value by solving a problem in a
 simple way that enables everyone on your team to contribute in the future.</p>
 </section>
 <section id="but-moderation-of-course">
-<h2>But moderation, of course<a class="headerlink" href="#but-moderation-of-course" title="Permalink to this headline">#</a></h2>
+<h2>But moderation, of course<a class="headerlink" href="#but-moderation-of-course" title="Permalink to this heading">#</a></h2>
 <p>That being said, over-adherence to the “build things with simple tools” dogma
 can be counter productive.  Often a recursive solution can be much simpler than
 a for-loop solution and often times using a Class or a Monad is the right

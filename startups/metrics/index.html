@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
 <meta property="og:title" content="Metrics" />
   
@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -45,6 +45,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -64,9 +65,9 @@
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
     <link rel="next" title="Over Grown" href="../over-grown/" />
-    <link rel="prev" title="Write Tests" href="../../programming/write-tests/" /> 
+    <link rel="prev" title="Best Practices" href="../best-practices/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None"> 
+<meta name="docsearch:language" content="en"> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -294,6 +295,11 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../best-practices/">
+   Best Practices
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Metrics
@@ -363,7 +369,7 @@
 
               <article class="bd-article" role="main">
                  <section id="metrics">
-<h1>Metrics<a class="headerlink" href="#metrics" title="Permalink to this headline">#</a></h1>
+<h1>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h1>
 <p>Common open source software (OSS) / venture capital (VC) metrics are flawed.
 This surprises no one; metrics are hard.</p>
 <p>Since <a class="reference external" href="https://coiled.io">starting a company</a>
@@ -373,7 +379,7 @@ I’ve had many conversations on this topic.
 I’d like to share two prototypical conversations that show the need for nuance below.
 One about hockey stick growth, and the other about GitHub stars.</p>
 <section id="startup-founder-asks-about-hockey-stick-growth">
-<h2>Startup Founder asks about Hockey Stick Growth<a class="headerlink" href="#startup-founder-asks-about-hockey-stick-growth" title="Permalink to this headline">#</a></h2>
+<h2>Startup Founder asks about Hockey Stick Growth<a class="headerlink" href="#startup-founder-asks-about-hockey-stick-growth" title="Permalink to this heading">#</a></h2>
 <p>Another startup founder wanted to drive adoption to his product by creating an
 open source project that quickly took off and was curious about how to rapidly
 get project-market fit.</p>
@@ -401,7 +407,7 @@ understanding between the user and developer communities.</p>
 Hockey-stick growth we can call this <strong>Scimitar growth</strong>?  :)</p>
 </section>
 <section id="venture-capitalist-asks-about-github-stars">
-<h2>Venture Capitalist asks about Github Stars<a class="headerlink" href="#venture-capitalist-asks-about-github-stars" title="Permalink to this headline">#</a></h2>
+<h2>Venture Capitalist asks about Github Stars<a class="headerlink" href="#venture-capitalist-asks-about-github-stars" title="Permalink to this heading">#</a></h2>
 <p>In another conversation a VC investor trying to evaluate Dask’s popularity asks
 about GitHub stars.</p>
 <ul>
@@ -432,7 +438,7 @@ expertise in distributed systems and business acumen.</p>
 <p>Still, the star metric makes me less-than-happy.  It’s a measure of hype, not of use, or of utility.</p>
 </section>
 <section id="thoughts">
-<h2>Thoughts<a class="headerlink" href="#thoughts" title="Permalink to this headline">#</a></h2>
+<h2>Thoughts<a class="headerlink" href="#thoughts" title="Permalink to this heading">#</a></h2>
 <p>In the specific case of Dask, hockey stick growth among users is no longer
 possible.  We’ve reached <em>user</em> penetration that’s already pretty high (the 5%
 number is for <em>all</em> Python users, including web developers, and people who will
@@ -466,11 +472,11 @@ more community-supportive behaviors.</p>
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../../programming/write-tests/" title="previous page">
+  <a class='left-prev' id="prev-link" href="../best-practices/" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Write Tests</p>
+          <p class="prev-next-title">Best Practices</p>
       </div>
   </a>
   <a class='right-next' id="next-link" href="../over-grown/" title="next page">

@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
 <meta property="og:title" content="Avoid Indirection" />
   
@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -45,6 +45,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -66,7 +67,7 @@
     <link rel="next" title="Biased Benchmarks" href="../biased-benchmarks/" />
     <link rel="prev" title="User Valued Work" href="../../engineering/user-valued-work/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None"> 
+<meta name="docsearch:language" content="en"> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -295,6 +296,11 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../../startups/best-practices/">
+   Best Practices
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../startups/metrics/">
    Metrics
   </a>
@@ -363,14 +369,14 @@
 
               <article class="bd-article" role="main">
                  <section id="avoid-indirection">
-<h1>Avoid Indirection<a class="headerlink" href="#avoid-indirection" title="Permalink to this headline">#</a></h1>
+<h1>Avoid Indirection<a class="headerlink" href="#avoid-indirection" title="Permalink to this heading">#</a></h1>
 <p>This post argues for avoiding indirection in community code.</p>
 <section id="we-are-taught-to-hide-away-details">
-<h2>We are taught to hide away details<a class="headerlink" href="#we-are-taught-to-hide-away-details" title="Permalink to this headline">#</a></h2>
+<h2>We are taught to hide away details<a class="headerlink" href="#we-are-taught-to-hide-away-details" title="Permalink to this heading">#</a></h2>
 <p>I often see code where authors abstract away details by placing them in some
 external function.  Here is a toy example:</p>
 <section id="before-indirection">
-<h3>Before indirection<a class="headerlink" href="#before-indirection" title="Permalink to this headline">#</a></h3>
+<h3>Before indirection<a class="headerlink" href="#before-indirection" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
 
 <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">):</span>
@@ -379,7 +385,7 @@ external function.  Here is a toy example:</p>
 </div>
 </section>
 <section id="after-indirection">
-<h3>After indirection<a class="headerlink" href="#after-indirection" title="Permalink to this headline">#</a></h3>
+<h3>After indirection<a class="headerlink" href="#after-indirection" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
 
 <span class="k">if</span> <span class="n">is_foolike</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -412,7 +418,7 @@ move on.</p>
 </section>
 </section>
 <section id="the-case-to-avoid-indirection">
-<h2>The case to avoid indirection<a class="headerlink" href="#the-case-to-avoid-indirection" title="Permalink to this headline">#</a></h2>
+<h2>The case to avoid indirection<a class="headerlink" href="#the-case-to-avoid-indirection" title="Permalink to this heading">#</a></h2>
 <p>However, there is also a cost to this behavior.
 When a new reader encounters this code,
 they need to jump between many function definitions in many files.
@@ -442,7 +448,7 @@ code than is original development.  Because of this, I often encourage
 developers to avoid abstraction, and “please inline this function definition”.</p>
 </section>
 <section id="but-functions-are-still-a-good-idea">
-<h2>But functions are still a good idea<a class="headerlink" href="#but-functions-are-still-a-good-idea" title="Permalink to this headline">#</a></h2>
+<h2>But functions are still a good idea<a class="headerlink" href="#but-functions-are-still-a-good-idea" title="Permalink to this heading">#</a></h2>
 <p>Just to be clear,
 there are plenty of reasons to separate complex logic into multiple functions,
 particularly when there is repetition,
@@ -452,7 +458,7 @@ There is some balance to find here.</p>
 that is felt more acutely by everyone reading the code except the original author.</p>
 </section>
 <section id="further-reading">
-<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">#</a></h2>
+<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
 <p>This post extends the broad theme in the post <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/27/write-dumb-code">Write Dumb Code</a></p>
 </section>
 </section>
