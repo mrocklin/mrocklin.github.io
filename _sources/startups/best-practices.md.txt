@@ -9,9 +9,9 @@ Best Practices
 Background
 ----------
 
-After doing a pretty good job building an open source project and community,I started a company and made many mistakes.
+After building an open source project, I then started a company and made many mistakes.
 
-Today, some folks walking along the same path ask for my advice.
+Today, some folks walking along the same path foolishly ask for my advice.
 This article encodes some of that advice.
 It is intended for technical founders who have no experience making companies.
 
@@ -34,9 +34,9 @@ Early stage companies are all pretty unique, and it may be that there isn't a
 lot of transferability of knowledge.  Unfortunately, the wisest person
 for your situation is probably yourself.  You're going to feel pretty lost
 (that's ok, you are) but you should probably just follow your gut most of the
-time.
+time and see where that takes you.
 
-Given that, you should read and then quickly discount most of the advice below.
+Given that, I encourage you to read and then discount the advice below.
 
 
 On Hiring
@@ -45,24 +45,28 @@ On Hiring
 ### Hire Experienced Folks
 
 You should certainly employ folks though, and you should listen to them.
-They should all be smart.  You don't want any interns or junior folks.  No one
-on your team has time to grow them.  And besides, you'd be doing them a
-disservice, early stage startups are a horrible place to start a career.
-Junior folks need structure.  You want people who are smarter than you.
+They should all be smart; ideally smarter than you.
+
+You don't want any interns or junior folks.  No one on your team has time to
+grow them.  You'd be doing them a disservice; early stage startups
+are a horrible place to start a career.  Junior folks need structure.  You want
+people who are smarter than you.
 
 You've succeeded in finding someone when you can say "Oh, so-and-so has that
 problem, I don't need to think about it anymore."
 
 ### Hire Nimble Folks
 
-So hire experienced people, but avoid people who have a plan.
+So hire experienced people, hire people with opinions, but avoid people who have a plan.
 Your first ten plans will fail.  You need people who can acknowledge failure
-quickly.
+quickly and move on.
 
 Some experienced people make a living by going into early companies and running
 a well-known playbook.  This will be great for a month and then it will be
 wrong, but these people won't want to deviate from their playbook that
-frequently.
+frequently.  These playbooks will sound enticing; they allow you to offload
+responsibility for a time to an expert.  This is a lie though, you're still on
+the hook.
 
 You want people who are intellectually excited about pivoting once a month.
 
@@ -74,7 +78,7 @@ than you'll be ready to give to them.
 
 You want to hire people who can look at the entire situation and can come up
 with and change their own goals after chatting casually with you.
-You can't be dragging them along the entire time.
+You can't be guiding them the entire time.
 
 ### Hire Small
 
@@ -86,6 +90,9 @@ A team of thirty has a variety of issues:
 -   they can't all fit in a room
 -   they need management structure (and will then start to care about titles
     and such)
+
+Before long you'll find that instead of solving important problems you're
+spending all of your time managing a group of people.
 
 Given that you're going to fail ten times before you find the right path, it's
 best to keep the team pretty small.  They won't go as far, but it'll be way
@@ -99,8 +106,10 @@ without needing to speak verbally.
 
 Stay small until you have actual revenue that you think you can scale.
 Staying small will also enable you to pay for really good people.
-One really good person is worth more than five ok people, which is worth more
+One really good person is worth more than five ok people, which are worth
+infinitely more than fifty junior people.  You individually are probably faster
 than fifty junior people.
+
 
 ### Hire Consistent Culture
 
@@ -110,8 +119,10 @@ Do you care mostly about ...
 -   Changing the world?
 -   Building a diverse and inclusive workplace?
 
-Pick one.  Make sure that everyone else on the early stage team with hiring
-authority picks the same one.  Otherwise you'll have to fire a bunch of people
+Pick one.
+
+Make sure that everyone with hiring authority on the early team picks the same one.
+Otherwise you'll have to fire a bunch of people
 down the road.
 
 ### Fire People
