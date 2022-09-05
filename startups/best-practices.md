@@ -9,11 +9,12 @@ Best Practices
 Background
 ----------
 
-After building an open source project, I then started a company and made many mistakes.
+After building a successful open source project I then started a company and made many mistakes.
 
-Today, some folks walking along the same path foolishly ask for my advice.
+Some folks on this path foolishly ask for my advice.
 This article encodes some of that advice.
-It is intended for technical founders who have no experience making companies.
+
+It is intended for technical founders who have no experience building companies.
 
 Most Advice is Wrong
 --------------------
@@ -34,9 +35,10 @@ Early stage companies are all pretty unique, and it may be that there isn't a
 lot of transferability of knowledge.  Unfortunately, the wisest person
 for your situation is probably yourself.  You're going to feel pretty lost
 (that's ok, you are) but you should probably just follow your gut most of the
-time and see where that takes you.
+time and see where that takes you.  Trying to integrate advice from lots of
+generic advisors invariably leads to mediocrity, which is death in early stage.
 
-Given that, I encourage you to read and then discount the advice below.
+Given that, I encourage you to read and then discount my advice below.
 
 
 On Hiring
@@ -89,7 +91,7 @@ A team of thirty has a variety of issues:
 -   differences in culture
 -   they can't all fit in a room
 -   they need management structure (and will then start to care about titles
-    and such)
+    and hierarchy and such)
 
 Before long you'll find that instead of solving important problems you're
 spending all of your time managing a group of people.
@@ -99,10 +101,9 @@ best to keep the team pretty small.  They won't go as far, but it'll be way
 easier to bring everyone along as you explore the space.
 
 It's like walking down the street with friends.  Two people can walk pretty
-quickly, but thirty people walk really slowly.  When there is some obstruction
-in the way (like a construction site) it's really hard to redirect the group of
-thirty effectively while the group of two just naturally decides how to deviate
-without needing to speak verbally.
+quickly even around obstacles, but thirty people walk really slowly and get
+bogged down with unexpected obstructions occur.  It's just hard to redirect the
+group of thirty without *a lot* of emotional work.
 
 Stay small until you have actual revenue that you think you can scale.
 Staying small will also enable you to pay for really good people.
@@ -121,9 +122,8 @@ Do you care mostly about ...
 
 Pick one.
 
-Make sure that everyone with hiring authority on the early team picks the same one.
-Otherwise you'll have to fire a bunch of people
-down the road.
+Then make sure that everyone with hiring authority on the early team picks the same one.
+Otherwise you'll have to fire a bunch of people down the road.
 
 ### Fire People
 
@@ -131,7 +131,7 @@ This is a hard lesson to learn, but you'll know that you'll need to fire
 someone, and then you'll try for a few more months to make it work.  This will
 be bad for everyone and so very bad for the company.
 
-Fire early.  It'll suck, but everyone (including the firee) will feel better
+Fire early.  It'll suck, but everyone (including the firee) will be better
 afterwards.
 
 Investors
@@ -141,22 +141,23 @@ Investors
 
 Investors may be offering you more money than you need.  That's ok.
 Take the money.  Money is useful.  It can be turned into good people, time to
-relax and regroup, experimentation, offloading dumb problems onto contractors.
+relax and regroup, experimentation, offloading dumb problems onto contractors,
+firing troublesome customers, etc..
 Don't worry about being overvalued.  Don't worry about overly high expectations.
 Just take the money.
 
 ### VCs primary value is money
 
-They will offer you a variety of help in starting out.  This help may have some
-value, but not much.  It's easy to find advice.  Their experts are smart, but
-they don't know your business well and so you'll outgrow them in a couple of
-months.
+They will claim to add value in various ways (introductions, operating
+partners, etc..)  This help may have some value, but not much.  Their experts
+are smart, but they don't know your business well and so you'll outgrow them in
+a couple of months.
 
 ### Choose people who understand your space
 
 Even though they won't be able to help you, it's really nice to have people who
 understand what you're doing so that you don't have to explain everything to
-them.  This, in my experience, is the primary value of very smart investors.
+them.
 
 
 Authenticity and Mental Health
@@ -167,25 +168,28 @@ Authenticity and Mental Health
 Often folks feel stressed because they feel like they often need to behave in a
 certain way:
 
-1.  You must know what you're doing
-2.  You must present optimism to the team and to the world
-3.  ...
+1.  You must have a coherent vision for the future
+2.  You must have a solid plan to execute on that vision
+3.  You must present optimism to the team and to the world of your irrefutable
+    success
 
-Fuck that.  No one can do that.  That's the sort of unreasonably high
+Screw that.  No sane person has that much foresight/confidence.  Most startups
+fail, including probably yours.  This is the sort of unreasonably high
 expectations that lead to burnout for you and corrosive behavior to the team.
 
 You're a human, and you've been a pretty successful human up until this point.
-You should probably keep doing whatever you were doing.  There's no reason to
-change your behavior.  Instead, change the company to suit you.
+You should probably keep doing whatever it was were doing before.  There's no
+reason to change your behavior.  Instead, change the company to suit you.
 
 
 ### Optimize for yourself
 
-You're going to be the bottleneck of your company.
+If you're successful then you're going to be the bottleneck of your company.
 It's ok if you optimize for yourself.
 
-Hate Slack?  Push the company to mailing lists and Github.
-Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings?
+-   Hate Slack?  Push the company to mailing lists and Github.
+-   Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings?
+-   Want to take some time off?  Define a vacation policy that suits your needs.
 
 You're being selfish and that's ok.  It's also probably what's best for the company.
 
@@ -202,8 +206,8 @@ contractors a bunch (like $50-100k).
 
 Do this yourself.  You can find people to hire to do this, but you'll spend a
 bunch of your time explaining things to them, having them translate your words
-poorly to a lower common denominator, and then spend a bunch more time trying
-to change things.
+poorly to a lower common denominator, and then spend a bunch more time
+struggling to make them right.
 
 It's easier and better if you do this yourself for a while, and learn whatever
 you need along the way.
@@ -213,11 +217,16 @@ Scale
 -----
 
 A common refrain we hear is "but this won't scale".  This applies to early
-contracts, early product ideas, technology choices, and so on.  It's ok, your
-job is to build something, not to build something scalable.  *Eventually* the
-thing will need to scale, but you don't need to do that first.
+sales contracts, early product ideas, technology choices, and so on.  It's ok,
+your job is to build something, not to build something scalable.  *Eventually*
+the thing will need to scale, but you don't need to do that first.
 
 Tesla started with the Tesla Roadster, a fully electric sports car that cost
-around $250,000.  About 2,500 were ever made.  First build a thing, then build
-a thing that scales.  Building a thing that scales right from the start reduces
-your chances of eventual success.
+around $250,000.  About 2,500 were ever made.  This product didn't scale.  The
+market of people willing to pay that much for a car is small, and the
+manufacturing process wasn't smooth.  It didn't matter though, it allowed the
+company to experiment and iterate quickly so that they could then produce the
+Model 3.  It's ok to start out by building the Roadster.
+
+First build a thing, then build a thing that scales.
+Building a thing that scales right from the start reduces your chance of eventual success.
