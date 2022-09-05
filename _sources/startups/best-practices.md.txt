@@ -9,11 +9,12 @@ Best Practices
 Background
 ----------
 
-After building a successful open source project, I then started a company and made many mistakes.
+After building a successful open source project I then started a company and made many mistakes.
 
-Some folks walking along the same path foolishly ask for my advice.
+Some folks on this path foolishly ask for my advice.
 This article encodes some of that advice.
-It is intended for technical founders who have no experience making companies.
+
+It is intended for technical founders who have no experience building companies.
 
 Most Advice is Wrong
 --------------------
@@ -34,9 +35,10 @@ Early stage companies are all pretty unique, and it may be that there isn't a
 lot of transferability of knowledge.  Unfortunately, the wisest person
 for your situation is probably yourself.  You're going to feel pretty lost
 (that's ok, you are) but you should probably just follow your gut most of the
-time and see where that takes you.
+time and see where that takes you.  Trying to integrate advice from lots of
+generic advisors invariably leads to mediocrity, which is death in early stage.
 
-Given that, I encourage you to read and then discount the advice below.
+Given that, I encourage you to read and then discount my advice below.
 
 
 On Hiring
@@ -129,7 +131,7 @@ This is a hard lesson to learn, but you'll know that you'll need to fire
 someone, and then you'll try for a few more months to make it work.  This will
 be bad for everyone and so very bad for the company.
 
-Fire early.  It'll suck, but everyone (including the firee) will feel better
+Fire early.  It'll suck, but everyone (including the firee) will be better
 afterwards.
 
 Investors
@@ -139,16 +141,17 @@ Investors
 
 Investors may be offering you more money than you need.  That's ok.
 Take the money.  Money is useful.  It can be turned into good people, time to
-relax and regroup, experimentation, offloading dumb problems onto contractors.
+relax and regroup, experimentation, offloading dumb problems onto contractors,
+firing troublesome customers, etc..
 Don't worry about being overvalued.  Don't worry about overly high expectations.
 Just take the money.
 
 ### VCs primary value is money
 
-They will offer you a variety of help in starting out.  This help may have some
-value, but not much.  It's easy to find advice.  Their experts are smart, but
-they don't know your business well and so you'll outgrow them in a couple of
-months.
+They will claim to add value in various ways (introductions, operating
+partners, etc..)  This help may have some value, but not much.  Their experts
+are smart, but they don't know your business well and so you'll outgrow them in
+a couple of months.
 
 ### Choose people who understand your space
 
@@ -165,13 +168,14 @@ Authenticity and Mental Health
 Often folks feel stressed because they feel like they often need to behave in a
 certain way:
 
-1.  You must know what you're doing
-2.  You must present optimism to the team and to the world
-3.  You must have a coherent vision for the future
+1.  You must have a coherent vision for the future
+2.  You must have a solid plan to execute on that vision
+3.  You must present optimism to the team and to the world of your irrefutable
+    success
 
-Screw that.  No sane person has that much confidence.  Most startups fail,
-including yours.  This is the sort of unreasonably high expectations that lead
-to burnout for you and corrosive behavior to the team.
+Screw that.  No sane person has that much foresight/confidence.  Most startups
+fail, including probably yours.  This is the sort of unreasonably high
+expectations that lead to burnout for you and corrosive behavior to the team.
 
 You're a human, and you've been a pretty successful human up until this point.
 You should probably keep doing whatever it was were doing before.  There's no
@@ -180,7 +184,7 @@ reason to change your behavior.  Instead, change the company to suit you.
 
 ### Optimize for yourself
 
-You're going to be the bottleneck of your company.
+If you're successful then you're going to be the bottleneck of your company.
 It's ok if you optimize for yourself.
 
 -   Hate Slack?  Push the company to mailing lists and Github.
