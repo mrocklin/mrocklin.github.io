@@ -118,7 +118,7 @@ Do you care mostly about ...
 
 -   Making money?
 -   Changing the world?
--   Building a diverse and inclusive workplace?
+-   Building the best working culture?
 
 Pick one.
 
@@ -212,6 +212,10 @@ time and energy struggling to make those words right.
 
 It's easier and better if you do this yourself for a while, and learn whatever
 you need along the way.
+
+
+Competition
+-----------
 
 
 Scale
