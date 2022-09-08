@@ -108,8 +108,9 @@ group of thirty without *a lot* of emotional work.
 Stay small until you have actual revenue that you think you can scale.
 Staying small will also enable you to pay for really good people.
 One really good person is worth more than five ok people, which are worth
-infinitely more than fifty junior people.  You individually are probably faster
-than fifty junior people.
+infinitely more than fifty junior people.
+
+You individually are probably faster than fifty junior people.
 
 
 ### Hire Consistent Culture
@@ -148,10 +149,11 @@ Just take the money.
 
 ### VCs primary value is money
 
-They will claim to add value in various ways (introductions, operating
-partners, etc..)  This help may have some value, but not much.  Their experts
-are smart, but they don't know your business well and so you'll outgrow them in
-a couple of months.
+VCs are smart, but they're also diffuse and thinking about many companies at
+once.  They're good to talk to and to make introductions, but that's mostly
+it.  Their experts are smart, but they don't know your business well and so
+you shouldn't depend on them to solve your problems.  You'll outgrow them in a
+few months.
 
 ### Choose people who understand your space
 
@@ -168,8 +170,8 @@ Authenticity and Mental Health
 Often folks feel stressed because they feel like they often need to behave in a
 certain way:
 
-1.  You must have a coherent vision for the future
-2.  You must have a solid plan to execute on that vision
+1.  You must have a clear and inspiring vision several years into the future
+2.  You must know exactly how to execute on that vision
 3.  You must present optimism to the team and to the world of your irrefutable
     success
 
@@ -179,7 +181,7 @@ expectations that lead to burnout for you and corrosive behavior to the team.
 
 You're a human, and you've been a pretty successful human up until this point.
 You should probably keep doing whatever it was were doing before.  There's no
-reason to change your behavior.  Instead, change the company to suit you.
+reason to completely change your behavior.  Instead, change the company to suit you.
 
 
 ### Optimize for yourself
