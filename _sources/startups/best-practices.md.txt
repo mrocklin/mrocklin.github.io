@@ -102,7 +102,7 @@ easier to bring everyone along as you explore the space.
 
 It's like walking down the street with friends.  Two people can walk pretty
 quickly even around obstacles, but thirty people walk really slowly and get
-bogged down with unexpected obstructions occur.  It's just hard to redirect the
+bogged down when unexpected obstructions occur.  It's just hard to redirect the
 group of thirty without *a lot* of emotional work.
 
 Stay small until you have actual revenue that you think you can scale.
@@ -218,6 +218,24 @@ you need along the way.
 
 Competition
 -----------
+
+You are your biggest competitor.  You're likely to slow yourself down far more
+than any other entity.
+
+### Early competitors pivot quickly
+
+Early stage companies shift a lot.  It's likely that who you perceive to be
+your biggest competitor will shift considerably every few months.  This is
+because both you and they will be pivoting rapidly.
+
+Given this, you shouldn't optimize around them too much.
+
+### You're a small slice of a growing pie
+
+Activity in a space is good.  Conversation is good.
+It's sometimes harder to convince people to care about a problem than it is to
+convince them that your solution solves this problem well.  Competition helps
+here.
 
 
 Scale
