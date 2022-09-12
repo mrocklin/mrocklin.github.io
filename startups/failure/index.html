@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Write Dumb Code" />
+<meta property="og:title" content="Failure" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="programming/write-dumb-code/" />
+<meta property="og:url" content="startups/failure/" />
   
-<meta property="og:description" content="The best way you can contribute to an open source project is to remove lines of code from it. We should endeavor to write code that a novice programmer can easily understand without explanation or ..." />
+<meta property="og:description" content="Most startups fail, and yet most CEOs project inevitable success. What gives? I can explain this in one of two ways: Most CEOs are crazy, Most CEOs are lie. It’s probably a little bit of both. CEOs..." />
   
-    <title>Write Dumb Code &#8212; Matthew Rocklin</title>
+    <title>Failure &#8212; Matthew Rocklin</title>
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
   document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
@@ -64,8 +64,8 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="Write Tests" href="../write-tests/" />
-    <link rel="prev" title="Dictionaries v. Objects" href="../shared-abstractions/" /> 
+    <link rel="next" title="Metrics" href="../metrics/" />
+    <link rel="prev" title="Best Practices" href="../best-practices/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="en"> 
 <link
@@ -252,39 +252,39 @@
   Programming
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../avoid-indirection/">
+  <a class="reference internal" href="../../programming/avoid-indirection/">
    Avoid Indirection
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../biased-benchmarks/">
+  <a class="reference internal" href="../../programming/biased-benchmarks/">
    Biased Benchmarks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../fast-review/">
+  <a class="reference internal" href="../../programming/fast-review/">
    Small Scope Reviews
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../minimal-bug-reports/">
+  <a class="reference internal" href="../../programming/minimal-bug-reports/">
    Craft Minimal Bug Reports
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../shared-abstractions/">
+  <a class="reference internal" href="../../programming/shared-abstractions/">
    Dictionaries v. Objects
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../programming/write-dumb-code/">
    Write Dumb Code
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../write-tests/">
+  <a class="reference internal" href="../../programming/write-tests/">
    Write Tests
   </a>
  </li>
@@ -294,39 +294,39 @@
   Startups
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/best-practices/">
+  <a class="reference internal" href="../best-practices/">
    Best Practices
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/failure/">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Failure
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/metrics/">
+  <a class="reference internal" href="../metrics/">
    Metrics
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/offsites/">
+  <a class="reference internal" href="../offsites/">
    Offsites
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/over-grown/">
+  <a class="reference internal" href="../over-grown/">
    Over Grown
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/startup-revenue/">
+  <a class="reference internal" href="../startup-revenue/">
    Revenue Types
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../startups/uncertainty/">
+  <a class="reference internal" href="../uncertainty/">
    Uncertainty
   </a>
  </li>
@@ -378,86 +378,38 @@
               
 
               <article class="bd-article" role="main">
-                 <section id="write-dumb-code">
-<h1>Write Dumb Code<a class="headerlink" href="#write-dumb-code" title="Permalink to this heading">#</a></h1>
-<p><em>The best way you can contribute to an open source project is to remove lines of code from it.</em>
-<em>We should endeavor to write code that a novice programmer can easily
-understand without explanation or that a maintainer can understand without
-significant time investment.</em></p>
-<p>As students we attempt increasingly challenging problems with increasingly
-sophisticated technologies.  We first learn loops, then functions, then
-classes, etc..  We are praised as we ascend this hierarchy, writing longer
-programs with more advanced technology.  We learn that experienced programmers
-use monads while new programmers use for loops.</p>
-<p>Then we graduate and find a job or open source project to work on with others.
-We search for something that we can add, and implement a solution pridefully,
-using the all the tricks that we learned in school.</p>
-<p><em>Ah ha! I can extend this project to do X!  And I can use inheritance here!  Excellent!</em></p>
-<p>We implement this feature and feel accomplished, and with good reason.
-Programming in real systems is no small accomplishment.  This was certainly my
-experience.  I was excited to write code and proud that I could show off all of
-the things that I knew how to do to the world.  As evidence of my historical
-love of programming technology, here is a <a class="reference external" href="https://github.com/mrocklin/matrix-algebra">linear algebra
-language</a> built with a another
-meta-programming language.  Notice that no one has touched this code in several
-years.</p>
-<p>However after maintaining code a bit more I now think somewhat differently.</p>
+                 <section id="failure">
+<h1>Failure<a class="headerlink" href="#failure" title="Permalink to this heading">#</a></h1>
+<p>Most startups fail, and yet most CEOs project inevitable success.  What gives?</p>
+<p>I can explain this in one of two ways:</p>
 <ol class="arabic simple">
-<li><p>We should not seek to build software.  Software is the currency that we pay
-to solve problems, which is our actual goal.  We should endeavor to build
-as little software as possible to solve our problems.</p></li>
-<li><p>We should use technologies that are as simple as possible, so that as many
-people as possible can use and extend them without needing to understand
-our advanced techniques.  We should use advanced techniques only when we
-are not smart enough to figure out how to use more common techniques.</p></li>
+<li><p>Most CEOs are crazy</p></li>
+<li><p>Most CEOs are lie</p></li>
 </ol>
-<p>Neither of these points are novel.  Most people I meet agree with them to some
-extent, but somehow we forget them when we go to contribute to a new project.
-The instinct to <em>contribute by building</em> and to <em>demonstrate sophistication</em>
-often take over.</p>
-<section id="software-is-a-cost">
-<h2>Software is a cost<a class="headerlink" href="#software-is-a-cost" title="Permalink to this heading">#</a></h2>
-<p>Every line that you write costs people time.  It costs you time to write it of
-course, but you are willing to make this personal sacrifice.  However this code
-also costs the reviewers their time to understand it.  It costs future
-maintainers and developers their time as they fix and modify your code.  They
-could be spending this time outside in the sunshine or with their family.</p>
-<p>So when you add code to a project you should feel meek.  It should feel as
-though you are eating with your family and there isn’t enough food on the
-table.  You should take only what you need and no more.  The people with you
-will respect you for your efforts to restrict yourself.  Solving problems with
-less code is a hard, but it is a burden that you take on yourself to lighten
-the burdens of others.</p>
+<p>It’s probably a little bit of both.  CEOs have had some success and expect it
+to continue.  CEOs are also strongly pressured to convey enthusiasm, both to
+the world and to their employees, even if slightly dishonest.</p>
+<p>This isn’t necessarily bad.
+People prefer working in a context of promised success.
+Failure and uncertainty are really hard to deal with psychologically.</p>
+<section id="psychological-cost-of-uncertainty">
+<h2>Psychological cost of uncertainty<a class="headerlink" href="#psychological-cost-of-uncertainty" title="Permalink to this heading">#</a></h2>
+<p>There is a psychological cost to uncertainty or possible failure that someone
+in the organization has to pay.  Either it’s …</p>
+<ol class="arabic simple">
+<li><p>The CEO, who swallows that uncertainty, spins it, and lies a little bit to
+the team, telling everyone that everything will be ok.</p></li>
+<li><p>The team, who accept that their work may fail and deal with it.</p></li>
+</ol>
 </section>
-<section id="complex-technologies-are-harder-to-maintain">
-<h2>Complex technologies are harder to maintain<a class="headerlink" href="#complex-technologies-are-harder-to-maintain" title="Permalink to this heading">#</a></h2>
-<p>As students, we demonstrate merit by using increasingly advanced technologies.
-Our measure of worth depends on our ability to use functions, then classes,
-then higher order functions, then monads, etc. in public projects.  We show off
-our solutions to our peers and feel pride or shame according to our
-sophistication.</p>
-<p>However when working with a team to solve problems in the world the situation
-is reversed.  Now we strive to solve problems with code that is as simple as
-possible.  When we solve a problem simply we enable junior programmers to
-extend our solution to solve other problems.  Simple code enables others and
-boosts our impact.  We demonstrate our value by solving hard problems with only
-basic techniques.</p>
-<p><em>Look! I replaced this recursive function with a for loop and it still does
-everything that we need it to.  I know it’s not as clever, but I noticed that
-the interns were having trouble with it and I thought that this change might
-help.</em></p>
-<p>If you are a good programmer then you don’t need to demonstrate that you know
-cool tricks.  Instead, you can demonstrate your value by solving a problem in a
-simple way that enables everyone on your team to contribute in the future.</p>
-</section>
-<section id="but-moderation-of-course">
-<h2>But moderation, of course<a class="headerlink" href="#but-moderation-of-course" title="Permalink to this heading">#</a></h2>
-<p>That being said, over-adherence to the “build things with simple tools” dogma
-can be counter productive.  Often a recursive solution can be much simpler than
-a for-loop solution and often times using a Class or a Monad is the right
-approach.  But we should be mindful when using these technologies that we are
-building for ourselves our own system; a system with which others have had no
-experience.</p>
+<section id="personal-choice">
+<h2>Personal Choice<a class="headerlink" href="#personal-choice" title="Permalink to this heading">#</a></h2>
+<p>I try to be an honest person.  This isn’t due to any kind of ethics; I just
+find dishonesty to be emotionally very stressful.  I live a better life when I
+don’t hold anything back.</p>
+<p>This often has negative consequences,
+but overall it filters for colleagues who have a frank and realistic view of the world,
+which I appreciate.</p>
 </section>
 </section>
 
@@ -473,17 +425,17 @@ experience.</p>
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../shared-abstractions/" title="previous page">
+  <a class='left-prev' id="prev-link" href="../best-practices/" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Dictionaries v. Objects</p>
+          <p class="prev-next-title">Best Practices</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../write-tests/" title="next page">
+  <a class='right-next' id="next-link" href="../metrics/" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Write Tests</p>
+      <p class="prev-next-title">Metrics</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
