@@ -24,8 +24,6 @@ I am primarily known for [Dask](https://dask.org), a library for scalable comput
 
 I also run a startup company [Coiled](https://coiled.io).
 
-I work on projects that make research and education more effective, efficient, inclusive, and transparent. I also believe that it's important for open source technical projects to have healthy and inclusive _communities_ behind them.
-
 ```
 
 ## What is on this site?
