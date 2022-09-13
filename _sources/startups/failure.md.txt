@@ -6,7 +6,7 @@ Most startups fail, and yet most CEOs project inevitable success.  What gives?
 I can explain this in one of two ways:
 
 1.  Most CEOs are crazy
-2.  Most CEOs are lie
+2.  Most CEOs are lying
 
 It's probably a little bit of both.  CEOs have had some success and expect it
 to continue.  CEOs are also strongly pressured to convey enthusiasm, both to
