@@ -21,7 +21,8 @@ but not great at helping teams work through challenging problems,
 either technical or social.
 Over time remote teams accrue some alignment debt and interpersonal friction.
 Offsites are useful at rapidly paying down that debt,
-and aligning the team so that everyone can go off again and work mostly-independently afterwards.
+and aligning the team so that everyone can go off again and work remotely
+without expensive coordination.
 
 The rest of this article discusses how I've been running offsites.
 
@@ -37,16 +38,17 @@ Smaller groups can also assemble far more rapidly,
 allowing you to use offsites to handle emergent issues.
 
 Ideally, offsites are also an opportunity to bring people together from
-different teams.  I prefer mission-based offsites rather than team-based
-offsites.
+different teams.  I personally prefer mission-based offsites rather than
+team-based offsites.
 
 Mission
 -------
 
 It's useful for an offsite to have a specific goal that can be solved.
+
 Ideally this is something that everyone present immediately recognizes as a
 pain in their side.  This also has to be something that can be resolved either
-at the offsite or shortly after the offsite requiring no further communication.
+at the offsite or shortly after the offsite without requiring significant coordination.
 It's powerful to have the group leave with a sense of accomplishment.
 
 Even if the primary goal of the offsite is to align the team emotionally and
@@ -57,10 +59,12 @@ Small Teams and Rapid Iteration
 
 When solving a difficult problem I expect to fail a few times.
 That's ok, failing is good for learning, and once you've learned it's often the
-case that you can find the 10x faster solution.
+case that you can find a 10x faster solution to the same problem.
 
 Because of this, I tend to avoid pre-structured agendas and large team meetings.
-Instead, for me offsites are about getting a group to iterate quickly on a larger topic.
+Those assume that I know what I'm doing, and I don't.
+Instead, for me offsites are about getting a group of smart people
+to iterate quickly on a larger topic.
 Tactically, I do this with the following process:
 
 1.  Get together as a large group for 20 minutes for a broad conversation
@@ -79,12 +83,12 @@ of a larger objective during the offsite, which I've found has good success.
 There are two anti-patterns that naturally evolve that we need to call out
 explicitly and work against
 
-1.  Large group conversations
+1.  Large group conversations during work periods
 
     People naturally congregate into larger and larger groups.  They feel
     productive listening in on a large conversation, but this means that
     they're only exploring one thread rather than several.  I like letting
-    these go on for a little bit (10-20 minutes) but then breaking people up
+    these go on for a little bit (10-30 minutes) but then breaking people up
     again.
 
 2.  Large multi-session efforts
@@ -116,7 +120,6 @@ company's responsibility to provide a beautiful and engaging venue to
 compensate for the difficulty.
 
 I prefer large organic spaces, like renting out a large house by a lake or ocean.
-I also prefer cooking group meals rather than going out to restaurants.
 This provides a more familial rather than professional ambiance, which I
 prefer.
 
