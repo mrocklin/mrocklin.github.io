@@ -150,10 +150,10 @@ Just take the money.
 ### VCs primary value is money
 
 VCs are smart, but they're also diffuse and thinking about many companies at
-once.  They're good to talk to and to make introductions, but that's mostly
-it.  Their experts are smart, but they don't know your business well and so
-you shouldn't depend on them to solve your problems.  You'll outgrow them in a
-few months.
+once.  They're good to talk to to get broad perspective and also to make
+introductions, but their primary value is the money that they bring.  Their
+operating experts are smart, but they don't know your business well as well as
+you do and so you shouldn't depend on them to solve your problems.
 
 ### Choose people who understand your space
 
