@@ -31,6 +31,13 @@ html_theme_options = {
   "navbar_end": ["search-field.html", "theme-switcher", "navbar-icon-links"],
   "page_sidebar_items": [],
   "footer_items": ["copyright"],
+  "icon_links": [
+      {
+        "name": "Mastodon",
+        "url": "https://fosstodon.org/@mrocklin",
+        "icon": "fa-brands fa-mastodon",
+    },
+      ],
 }
 
 html_favicon = "_static/favicon.ico"
