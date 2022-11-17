@@ -38,3 +38,4 @@ writing in the modern era.
 writing
 Old Blog <https://matthewrocklin.com/blog>
 ```
+<a rel="me" href="https://fosstodon.org/@mrocklin"> </a>
