@@ -7,5 +7,5 @@ sphinx==5.3.0
 sphinx-autobuild
 sphinx-panels
 sphinxcontrib-bibtex
-sphinxext-opengraph
+sphinxext-opengraph==0.6
 sphinxext-rediraffe
