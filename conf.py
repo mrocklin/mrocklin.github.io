@@ -1,8 +1,8 @@
 # -- Project information -----------------------------------------------------
 
-project = 'Matthew Rocklin'
-copyright = '2022, Matthew Rocklin'
-author = 'Matthew Rocklin'
+project = "Matthew Rocklin"
+copyright = "2022, Matthew Rocklin"
+author = "Matthew Rocklin"
 
 # -- General configuration ---------------------------------------------------
 
@@ -15,34 +15,42 @@ extensions = [
     "sphinxext.rediraffe",
 ]
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', "*import_posts*", "**/pandoc_ipynb/inputs/*", ".nox/*", "README.md"]
+templates_path = ["_templates"]
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    "*import_posts*",
+    "**/pandoc_ipynb/inputs/*",
+    ".nox/*",
+    "README.md",
+]
 
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-  "github_url": "https://github.com/mrocklin/",
-  "twitter_url": "https://twitter.com/mrocklin",
-  "search_bar_text": "Search ...",
-  "google_analytics_id": "UA-18218894-1",
-  "navbar_end": ["search-field.html", "theme-switcher", "navbar-icon-links"],
-  "page_sidebar_items": [],
-  "footer_items": ["copyright"],
-  "icon_links": [
-      {
-        "name": "Mastodon",
-        "url": "https://fosstodon.org/@mrocklin",
-        "icon": "fa-brands fa-mastodon",
-    },
-      ],
+    "github_url": "https://github.com/mrocklin/",
+    "twitter_url": "https://twitter.com/mrocklin",
+    "search_bar_text": "Search ...",
+    "google_analytics_id": "UA-18218894-1",
+    "navbar_end": ["search-field.html", "theme-switcher", "navbar-icon-links"],
+    "page_sidebar_items": [],
+    "footer_items": ["copyright"],
+    "icon_links": [
+        {
+            "name": "Mastodon",
+            "url": "https://fosstodon.org/@mrocklin",
+            "icon": "fa-brands fa-mastodon",
+        },
+    ],
 }
 
 html_favicon = "_static/favicon.ico"
 html_title = "Matthew Rocklin"
-html_static_path = ['_static']
+html_static_path = ["_static"]
 html_extra_path = ["feed.xml"]
 html_sidebars = {
     "index": ["hello.html"],
@@ -50,9 +58,9 @@ html_sidebars = {
     "publications": ["sidebar-nav-bs.html"],
     "projects": ["hello.html"],
     "talks": ["hello.html"],
-    "posts/*": ['postcard.html', 'recentposts.html'],
-    "blog": ['tagcloud.html'],
-    "blog/**": ['postcard.html', 'recentposts.html']
+    "posts/*": ["postcard.html", "recentposts.html"],
+    "blog": ["tagcloud.html"],
+    "blog/**": ["postcard.html", "recentposts.html"],
 }
 blog_baseurl = "https://matthewrocklin.com"
 blog_title = "Working Notes"
@@ -87,10 +95,11 @@ myst_enable_extensions = [
 jupyter_execute_notebooks = "off"
 
 rediraffe_redirects = {
-      # "blog/work/2022/07/25/startup-revenue": "posts/startup-revenue.md",
+    # "blog/work/2022/07/25/startup-revenue": "posts/startup-revenue.md",
 }
 for k, v in list(rediraffe_redirects.items()):
     rediraffe_redirects[k + ".html"] = v
+
 
 def setup(app):
     app.add_css_file("custom.css")
