@@ -37,6 +37,9 @@ moving forward.  One might respond as follows:
     By not removing it we're rejecting the improvements we could make by being
     more efficient and nimble.
 
+Making these decisions often comes down to determining the ratio of current to
+future users you have, and how much you value future users.
+
 Valuing Future Users
 --------------------
 
@@ -58,9 +61,12 @@ Evolve Into Stability
 
 Stability does have inherent value though.  Being the project that existing
 users can rely on long-term is useful.  My sense is that most project should
-start off with a strong bias towards dynamism and having broad impact, and then
-should eventually crystallize and become more stable, and then should eventually
-die.
+start off with a strong bias towards dynamism and having broad impact,
+especially when the current user count is far smaller than the potential user
+count.  And then, as the project becomes more adopted, it should crystallize
+and become more stable.
 
 If your project is young and has captured only a small fraction of the
-possible userbase then I think that stability bias is not an optimal strategy.
+possible userbase then I think that one should embrace dynamism and rapid
+evolution over stability.  This will, over time, improve overall user
+satisfaction.
