@@ -54,6 +54,7 @@ And my calendar for this last week (I write this on Friday).  It's full:
 
 <img src="/images/calendar-full.png" width="100%">
 
+I still *meet with people* but now these meetings are important.
 By Friday next week I expect my calendar for next week (first image) to be just as full as my
 calendar for this week (second image).
 
@@ -88,8 +89,8 @@ This experience taught me to question how I work.
 
 Before, I spent my day in regular meetings because that's how people say you
 should run a business.  After I changed successfully I learned to trust common
-practice less, and instead trust my own judgment more.  Maybe this is the way
-*most* people work, maybe it's even an effective way for most people, but it
+practice less, and trust my own judgment more.  Maybe this was the way
+*most* people work, maybe it was even an *effective* way for most people, but it
 certainly wasn't an effective way for *me* to work.
 
 After realizing the potential for improvement over common practice, I felt free
