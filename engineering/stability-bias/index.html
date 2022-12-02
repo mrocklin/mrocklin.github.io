@@ -12,7 +12,7 @@
   
 <meta property="og:url" content="engineering/stability-bias.html" />
   
-<meta property="og:description" content="We often optimize more for current users than future users. Stability often arises as a concern when proposing changes: We’re seeing some performance regressions so we shouldn’t release, This API c..." />
+<meta property="og:description" content="We often optimize more for current users than future users. Stability often arises as a concern when proposing changes. I often hear statements like the following: We’re seeing some performance reg..." />
   
     <title>Stability Bias &#8212; Matthew Rocklin</title>
   
@@ -444,21 +444,22 @@
                <section id="stability-bias">
 <h1>Stability Bias<a class="headerlink" href="#stability-bias" title="Permalink to this heading">#</a></h1>
 <p>We often optimize more for current users than future users.</p>
-<p>Stability often arises as a concern when proposing changes:</p>
+<p>Stability often arises as a concern when proposing changes.  I often hear
+statements like the following:</p>
 <ul class="simple">
 <li><p><em>We’re seeing some performance regressions so we shouldn’t release</em></p></li>
-<li><p><em>This API change might confuse existing users</em></p></li>
+<li><p><em>We shouldn’t include this breaking API change because it might confuse existing users</em></p></li>
 <li><p><em>We can’t remove that feature because it’s used by group X</em></p></li>
 </ul>
 <p>These statements are common in managing software and are often used to motivate
 not deviating from the stable norm.  However, they discount the benefits of
-moving forward.</p>
+moving forward.  One might respond as follows:</p>
 <ul>
 <li><p><strong>Concern:</strong> <em>We’re seeing some performance regressions so we shouldn’t release</em></p>
 <p><strong>Response:</strong> We’re also seeing many more performance enhancements.
 By not releasing we’re accepting regressions in reverse.</p>
 </li>
-<li><p><strong>Concern:</strong> <em>This API change might confuse existing users</em></p>
+<li><p><strong>Concern:</strong> <em>We shouldn’t include this breaking API change because it might confuse existing users</em></p>
 <p><strong>Response:</strong> But this API is confusing as it is.
 By not making this change we’re making things confusing for new and future
 users.</p>
@@ -472,7 +473,8 @@ more efficient and nimble.</p>
 <section id="valuing-future-users">
 <h2>Valuing Future Users<a class="headerlink" href="#valuing-future-users" title="Permalink to this heading">#</a></h2>
 <p>Most design decisions include some trade-off.  Mostly I want people to weigh
-and value future users when making these calculations.</p>
+and value future users when making these calculations.  This isn’t easy or
+natural to do.</p>
 <p>Stability mindsets mostly value current users.  This is a common mindset
 because we get much of our perspective from current users.  Future users don’t
 have much of a voice.</p>

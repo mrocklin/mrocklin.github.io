@@ -9,22 +9,23 @@ Stability Bias
 
 We often optimize more for current users than future users.
 
-Stability often arises as a concern when proposing changes:
+Stability often arises as a concern when proposing changes.  I often hear
+statements like the following:
 
 -   *We're seeing some performance regressions so we shouldn't release*
--   *This API change might confuse existing users*
+-   *We shouldn't include this breaking API change because it might confuse existing users*
 -   *We can't remove that feature because it's used by group X*
 
 These statements are common in managing software and are often used to motivate
 not deviating from the stable norm.  However, they discount the benefits of
-moving forward.
+moving forward.  One might respond as follows:
 
 -   **Concern:** *We're seeing some performance regressions so we shouldn't release*
 
     **Response:** We're also seeing many more performance enhancements.
     By not releasing we're accepting regressions in reverse.
 
--   **Concern:** *This API change might confuse existing users*
+-   **Concern:** *We shouldn't include this breaking API change because it might confuse existing users*
 
     **Response:** But this API is confusing as it is.
     By not making this change we're making things confusing for new and future
@@ -40,7 +41,8 @@ Valuing Future Users
 --------------------
 
 Most design decisions include some trade-off.  Mostly I want people to weigh
-and value future users when making these calculations.
+and value future users when making these calculations.  This isn't easy or
+natural to do.
 
 Stability mindsets mostly value current users.  This is a common mindset
 because we get much of our perspective from current users.  Future users don't
