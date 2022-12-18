@@ -17,6 +17,8 @@ professional interviewer, and tweaked things to my liking.
 
 One of our investors saw the setup and made the quip "Oh, HD is the new tall" which I quite liked.  Tall people have an unfair advantage when it comes to perceived authority.  HD is like that, but anyone with around $2000 and a day's time to set everything up can achieve it.
 
+<img src="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0">
+
 Camera
 ------
 
