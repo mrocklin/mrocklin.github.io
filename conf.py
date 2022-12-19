@@ -88,7 +88,7 @@ myst_enable_extensions = [
 # bibtex_bibfiles = ["_static/works.bib"]
 
 # OpenGraph config
-# ogp_site_url = "https://predictablynoisy.com"
+ogp_site_url = "https://matthewrocklin.com"
 # ogp_image = "https://predictablynoisy.com/_static/profile-bw.png"
 
 # Temporarily stored as off until we fix it
