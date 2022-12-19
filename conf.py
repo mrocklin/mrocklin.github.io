@@ -89,7 +89,7 @@ myst_enable_extensions = [
 
 # OpenGraph config
 ogp_site_url = "https://matthewrocklin.com"
-# ogp_image = "https://predictablynoisy.com/_static/profile-bw.png"
+ogp_image = "https://matthewrocklin.com/_static/profile.jpb"
 
 # Temporarily stored as off until we fix it
 jupyter_execute_notebooks = "off"
