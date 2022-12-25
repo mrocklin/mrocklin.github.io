@@ -47,11 +47,11 @@ own trail without hesitation.
 Said differently, you're suffering imposter syndrome. That's appropriate.  You
 are under-qualified and you don't know how to do your job.  However, neither
 does anyone else!  Your job is new!  No one has ever done what you're tasked
-with in the environment that you find yourself today.  You might as well do the
-best you can, knowing that no else is likely to do a better job.
+with in your current environment.  You might as well do the best you can,
+knowing that no else is likely to do a better job.
 
-Knowing that other people are wrong can remove paralysis and free you to think
-clearly.
+Knowing that others are wrong can remove paralysis and free you to think
+more clearly.
 
 
 ## Observe, Think, Change
