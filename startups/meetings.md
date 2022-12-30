@@ -3,7 +3,6 @@ title: Meetings
 date: 2022-12-02
 blogpost: true
 author: Matthew Rocklin
-image: 2
 ---
 
 Meetings
@@ -51,11 +50,11 @@ that I choose week-by-week to push forward what I'm working on.
 
 Here is my calendar for next week.  It's a blank slate:
 
-![Test one two](/images/calendar-empty.png)
+<img src="/images/calendar-empty.png" width="100%">
 
 And my calendar for this last week (I write this on Friday).  It's full:
 
-![Test one two](/images/calendar-full.png)
+<img src="/images/calendar-full.png" width="100%">
 
 I still *meet with people* but now these meetings are important.
 By Friday next week I expect my calendar for next week (first image) to be just as full as my
