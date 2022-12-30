@@ -2,6 +2,8 @@
 title: Dictionaries v. Objects
 description: a story of shared abstractions
 date:  2013-09-02
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Dictionaries v. Objects

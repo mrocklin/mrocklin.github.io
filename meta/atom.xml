@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://matthewrocklin.com</id>
+  <title>Working Notes</title>
+  <updated>2022-12-30T22:50:07.898197+00:00</updated>
+  <link href="https://matthewrocklin.com"/>
+  <link href="https://matthewrocklin.com/meta/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
+    <id>https://matthewrocklin.com/programming/shared-abstractions/</id>
+    <title>Dictionaries v. Objects</title>
+    <updated>2013-09-02T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;em&gt;a story of shared abstractions&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Shannon Behrens recently published a &lt;a class="reference external" href="http://jjinux.blogspot.com/2013/08/python-dicts-vs-classes.html"&gt;brief post&lt;/a&gt; on the use of dictionaries and objects to store named data.  He raised the following question:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/shared-abstractions/" rel="alternate"/>
+    <summary>a story of shared abstractionsShannon Behrens recently published a brief post on the use of dictionaries and objects to store named data.  He raised the following question:</summary>
+    <published>2013-09-02T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/write-tests/</id>
+    <title>Write Tests</title>
+    <updated>2016-02-08T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Tests are important for community driven open source software.
+This post contains brief reasons why you should test your code, particularly if
+you submit changes to existing open source projects.&lt;/p&gt;
+&lt;p&gt;A test is an extra piece of code to verify the correctness of the code we
+actually care about.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/write-tests/" rel="alternate"/>
+    <summary>Tests are important for community driven open source software.
+This post contains brief reasons why you should test your code, particularly if
+you submit changes to existing open source projects.A test is an extra piece of code to verify the correctness of the code we
+actually care about.</summary>
+    <published>2016-02-08T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/biased-benchmarks/</id>
+    <title>Biased Benchmarks</title>
+    <updated>2017-03-09T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;em&gt;honesty is hard&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This work is supported by &lt;a class="reference external" href="http://continuum.io"&gt;Continuum Analytics&lt;/a&gt;
+the &lt;a class="reference external" href="http://www.darpa.mil/program/XDATA"&gt;XDATA Program&lt;/a&gt;
+and the Data Driven Discovery Initiative from the &lt;a class="reference external" href="https://www.moore.org/"&gt;Moore
+Foundation&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/biased-benchmarks/" rel="alternate"/>
+    <summary>honesty is hardThis work is supported by Continuum Analytics
+the XDATA Program
+and the Data Driven Discovery Initiative from the Moore
+Foundation.</summary>
+    <published>2017-03-09T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/write-dumb-code/</id>
+    <title>Write Dumb Code</title>
+    <updated>2018-01-27T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;em&gt;The best way you can contribute to an open source project is to remove lines of code from it.&lt;/em&gt;
+&lt;em&gt;We should endeavor to write code that a novice programmer can easily
+understand without explanation or that a maintainer can understand without
+significant time investment.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As students we attempt increasingly challenging problems with increasingly
+sophisticated technologies.  We first learn loops, then functions, then
+classes, etc..  We are praised as we ascend this hierarchy, writing longer
+programs with more advanced technology.  We learn that experienced programmers
+use monads while new programmers use for loops.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/write-dumb-code/" rel="alternate"/>
+    <summary>The best way you can contribute to an open source project is to remove lines of code from it.
+We should endeavor to write code that a novice programmer can easily
+understand without explanation or that a maintainer can understand without
+significant time investment.As students we attempt increasingly challenging problems with increasingly
+sophisticated technologies.  We first learn loops, then functions, then
+classes, etc..  We are praised as we ascend this hierarchy, writing longer
+programs with more advanced technology.  We learn that experienced programmers
+use monads while new programmers use for loops.</summary>
+    <published>2018-01-27T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/minimal-bug-reports/</id>
+    <title>Craft Minimal Bug Reports</title>
+    <updated>2018-02-28T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Following up on a post on &lt;a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users"&gt;supporting users in open source&lt;/a&gt;
+this post lists some suggestions on how to ask a maintainer to help you with a problem.&lt;/p&gt;
+&lt;p&gt;You don’t have to follow these suggestions.  They are optional.
+They make it more likely that a project maintainer will spend time helping you.
+It’s important to remember that their willingness to support you for free is optional too.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/minimal-bug-reports/" rel="alternate"/>
+    <summary>Following up on a post on supporting users in open source
+this post lists some suggestions on how to ask a maintainer to help you with a problem.You don’t have to follow these suggestions.  They are optional.
+They make it more likely that a project maintainer will spend time helping you.
+It’s important to remember that their willingness to support you for free is optional too.</summary>
+    <category term="Programming" label="Programming"/>
+    <category term="Python" label="Python"/>
+    <category term="scipy" label="scipy"/>
+    <published>2018-02-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/slack-github/</id>
+    <title>Why I Avoid Slack</title>
+    <updated>2019-02-28T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I avoid interacting on Slack, especially for technical conversations around
+open source software.  Instead, I encourage colleagues to have technical and
+design conversations on GitHub, or some other system that is public, permanent,
+searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
+(DRY) I’m writing up these thoughts as a blogpost.&lt;/p&gt;
+&lt;p&gt;Slack is a great tool.  Slack is a great way for colleagues within an
+institution or group to communicate real-time with chat, voice, or video.
+Slack is probably the most polished of the enterprise chat tools, and today is
+something that probably most companies and collaborations should use.&lt;/p&gt;
+&lt;img alt="https://imgs.xkcd.com/comics/standards.png" src="https://imgs.xkcd.com/comics/standards.png" style="width: 70%;" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/slack-github/" rel="alternate"/>
+    <summary>I avoid interacting on Slack, especially for technical conversations around
+open source software.  Instead, I encourage colleagues to have technical and
+design conversations on GitHub, or some other system that is public, permanent,
+searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
+(DRY) I’m writing up these thoughts as a blogpost.Slack is a great tool.  Slack is a great way for colleagues within an
+institution or group to communicate real-time with chat, voice, or video.
+Slack is probably the most polished of the enterprise chat tools, and today is
+something that probably most companies and collaborations should use.</summary>
+    <published>2019-02-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/maintainer/</id>
+    <title>Maintainers</title>
+    <updated>2019-05-18T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;What are the expectations and best practices for maintainers of open source software libraries?
+How can we do this better?&lt;/p&gt;
+&lt;p&gt;This post frames the discussion and then follows with best practices based on my personal experience and opinions.  &lt;em&gt;I make no claim that these are correct.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/maintainer/" rel="alternate"/>
+    <summary>What are the expectations and best practices for maintainers of open source software libraries?
+How can we do this better?This post frames the discussion and then follows with best practices based on my personal experience and opinions.  I make no claim that these are correct.</summary>
+    <published>2019-05-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/avoid-indirection/</id>
+    <title>Avoid Indirection</title>
+    <updated>2019-06-23T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;This post argues for avoiding indirection in community code.&lt;/p&gt;
+&lt;p&gt;I often see code where authors abstract away details by placing them in some
+external function.  Here is a toy example:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/avoid-indirection/" rel="alternate"/>
+    <summary>This post argues for avoiding indirection in community code.I often see code where authors abstract away details by placing them in some
+external function.  Here is a toy example:</summary>
+    <published>2019-06-23T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/writing/write-short-blogposts/</id>
+    <title>Short Blogposts</title>
+    <updated>2019-06-25T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I encourage my colleagues to write blogposts more frequently.
+This is for a few reasons:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It informs your broader community what you’re up to, and allows that community to communicate back to you quickly.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/writing/write-short-blogposts/" rel="alternate"/>
+    <summary>I encourage my colleagues to write blogposts more frequently.
+This is for a few reasons:It informs your broader community what you’re up to, and allows that community to communicate back to you quickly.</summary>
+    <published>2019-06-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/senior-engineer/</id>
+    <title>Senior Engineers</title>
+    <updated>2019-11-09T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Software development is both a highly technical and a highly creative process.
+Programmers are reasonably proud of their abilities and experience,
+much in the same way that expert artists or artisans can be proud of their work.&lt;/p&gt;
+&lt;p&gt;Unfortunately, like art, there is no obvious scale on which to measure programmers.
+We throw around terms like “junior engineer” and “senior engineer” on job
+titles and resumes, but there isn’t a clear definition for these terms.
+If you look online you’ll find a variety of definitions from a variety of
+bloggers.  This article is one such blogpost.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/senior-engineer/" rel="alternate"/>
+    <summary>Software development is both a highly technical and a highly creative process.
+Programmers are reasonably proud of their abilities and experience,
+much in the same way that expert artists or artisans can be proud of their work.Unfortunately, like art, there is no obvious scale on which to measure programmers.
+We throw around terms like “junior engineer” and “senior engineer” on job
+titles and resumes, but there isn’t a clear definition for these terms.
+If you look online you’ll find a variety of definitions from a variety of
+bloggers.  This article is one such blogpost.</summary>
+    <published>2019-11-09T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/engineers-and-sales/</id>
+    <title>Listen to sell</title>
+    <updated>2019-12-05T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;strong&gt;Engineer:&lt;/strong&gt; &lt;em&gt;Hey Boss, what should I know to more effectively sell our product?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boss:&lt;/strong&gt; &lt;em&gt;Resist the urge to answer technical questions&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/engineers-and-sales/" rel="alternate"/>
+    <summary>Engineer: Hey Boss, what should I know to more effectively sell our product?Boss: Resist the urge to answer technical questions</summary>
+    <published>2019-12-05T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/writing/brevity/</id>
+    <title>Short attention span</title>
+    <updated>2020-07-13T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Speaking truth is easy.  Getting people to listen is hard.&lt;/p&gt;
+&lt;p&gt;This post talks about communicating effectively to a short attention span.
+It lays out practical writing style advice to respect the reader through brevity.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/writing/brevity/" rel="alternate"/>
+    <summary>Speaking truth is easy.  Getting people to listen is hard.This post talks about communicating effectively to a short attention span.
+It lays out practical writing style advice to respect the reader through brevity.</summary>
+    <published>2020-07-13T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/writing/tweet/</id>
+    <title>Ideal Tweet</title>
+    <updated>2020-08-18T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Tweets, like all writing, should respect the reader through brevity and structure.&lt;/p&gt;
+&lt;p&gt;First, I’m mostly talking about professional tweets, and less about pictures of
+family outings, cute cats, or hilarious memes.  If that’s how you use Twitter,
+then please disregard this post (or make fun of it with a hilarious meme).&lt;/p&gt;
+&lt;img alt="https://matthewrocklin.com/blog/images/tweet-video.png" src="https://matthewrocklin.com/blog/images/tweet-video.png" style="width: 50%;" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/writing/tweet/" rel="alternate"/>
+    <summary>Tweets, like all writing, should respect the reader through brevity and structure.First, I’m mostly talking about professional tweets, and less about pictures of
+family outings, cute cats, or hilarious memes.  If that’s how you use Twitter,
+then please disregard this post (or make fun of it with a hilarious meme).</summary>
+    <published>2020-08-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/metrics/</id>
+    <title>Metrics</title>
+    <updated>2020-10-28T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Common open source software (OSS) / venture capital (VC) metrics are flawed.
+This surprises no one; metrics are hard.&lt;/p&gt;
+&lt;p&gt;Since &lt;a class="reference external" href="https://coiled.io"&gt;starting a company&lt;/a&gt;
+around a pre-existing community OSS project,
+&lt;a class="reference external" href="https://dask.org"&gt;Dask&lt;/a&gt;,
+I’ve had many conversations on this topic.
+I’d like to share two prototypical conversations that show the need for nuance below.
+One about hockey stick growth, and the other about GitHub stars.&lt;/p&gt;
+&lt;img alt="Dask weekly users on documentation" src="https://blog.dask.org/images/dask-weekly-users.png" style="width: 100%;" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/metrics/" rel="alternate"/>
+    <summary>Common open source software (OSS) / venture capital (VC) metrics are flawed.
+This surprises no one; metrics are hard.Since starting a company
+around a pre-existing community OSS project,
+Dask,
+I’ve had many conversations on this topic.
+I’d like to share two prototypical conversations that show the need for nuance below.
+One about hockey stick growth, and the other about GitHub stars.Dask weekly users on documentation</summary>
+    <published>2020-10-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/technical-lead/</id>
+    <title>Tech Leads</title>
+    <updated>2021-06-24T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Tech lead is a role for senior engineers that provides some of the leverage of
+management, while avoiding most of the administrative burden.  It’s a fun role.
+This post talks about some positive behaviors to think about should you find
+yourself in this role.&lt;/p&gt;
+&lt;p&gt;As the name suggests, tech leads &lt;em&gt;lead&lt;/em&gt; larger technical efforts.
+They work with a team, but typically don’t formally manage anyone.
+The team looks up to them and it’s their job to steer the effort technically,
+while typically only using the soft power of generally knowing what they’re
+doing.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/technical-lead/" rel="alternate"/>
+    <summary>Tech lead is a role for senior engineers that provides some of the leverage of
+management, while avoiding most of the administrative burden.  It’s a fun role.
+This post talks about some positive behaviors to think about should you find
+yourself in this role.As the name suggests, tech leads lead larger technical efforts.
+They work with a team, but typically don’t formally manage anyone.
+The team looks up to them and it’s their job to steer the effort technically,
+while typically only using the soft power of generally knowing what they’re
+doing.</summary>
+    <published>2021-06-24T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/programming/fast-review/</id>
+    <title>Small Scope Reviews</title>
+    <updated>2022-03-26T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;This is a &lt;a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts"&gt;fast blogpost&lt;/a&gt; please excuse the brevity.&lt;/p&gt;
+&lt;p&gt;A fast review and merge cycle is incredibly valuable&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/programming/fast-review/" rel="alternate"/>
+    <summary>This is a fast blogpost please excuse the brevity.A fast review and merge cycle is incredibly valuable</summary>
+    <published>2022-03-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/startup-revenue/</id>
+    <title>Revenue Types</title>
+    <updated>2022-07-25T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;VC funded startups are weird.
+They (rightly) care more about valuation than about revenue.
+Valuation depends on revenue, but only on very certain kinds of revenue.&lt;/p&gt;
+&lt;p&gt;The simplified version of this is that there are two kinds of revenue:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/startup-revenue/" rel="alternate"/>
+    <summary>VC funded startups are weird.
+They (rightly) care more about valuation than about revenue.
+Valuation depends on revenue, but only on very certain kinds of revenue.The simplified version of this is that there are two kinds of revenue:</summary>
+    <published>2022-07-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/over-grown/</id>
+    <title>Over Grown</title>
+    <updated>2022-08-09T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I’ve intentionally shrunk Coiled from 40 to 20 people.
+This was painful, but we’re moving faster as a result.
+This article talks a little about the context around this.&lt;/p&gt;
+&lt;p&gt;First, let’s acknowledge a common trope for startups:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/over-grown/" rel="alternate"/>
+    <summary>I’ve intentionally shrunk Coiled from 40 to 20 people.
+This was painful, but we’re moving faster as a result.
+This article talks a little about the context around this.First, let’s acknowledge a common trope for startups:</summary>
+    <published>2022-08-09T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/user-valued-work/</id>
+    <title>User Valued Work</title>
+    <updated>2022-08-24T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;We often need to balance prioritization between user-facing work and internal
+or developer-facing work.  It’s helpful to distinguish between these in
+conversations of prioritization and measuring success.&lt;/p&gt;
+&lt;p&gt;This is work that directly affects users.  It solves their pain and gives them
+a delightful experience.  It includes work like the following:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/user-valued-work/" rel="alternate"/>
+    <summary>We often need to balance prioritization between user-facing work and internal
+or developer-facing work.  It’s helpful to distinguish between these in
+conversations of prioritization and measuring success.This is work that directly affects users.  It solves their pain and gives them
+a delightful experience.  It includes work like the following:</summary>
+    <published>2022-08-24T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/best-practices/</id>
+    <title>Best Practices</title>
+    <updated>2022-09-05T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;After building a successful open source project I then started a company and made many mistakes.&lt;/p&gt;
+&lt;p&gt;Some folks on this path foolishly ask for my advice.
+This article encodes some of that advice.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/best-practices/" rel="alternate"/>
+    <summary>After building a successful open source project I then started a company and made many mistakes.Some folks on this path foolishly ask for my advice.
+This article encodes some of that advice.</summary>
+    <published>2022-09-05T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/failure/</id>
+    <title>Failure</title>
+    <updated>2022-09-05T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Most startups fail, and yet most CEOs project inevitable success.  What gives?&lt;/p&gt;
+&lt;p&gt;I can explain this in one of two ways:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/failure/" rel="alternate"/>
+    <summary>Most startups fail, and yet most CEOs project inevitable success.  What gives?I can explain this in one of two ways:</summary>
+    <published>2022-09-05T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/offsites/</id>
+    <title>Offsites</title>
+    <updated>2022-09-12T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I love remote work, but sometimes it sucks.  Offsites can help.&lt;/p&gt;
+&lt;p&gt;Remote work empowers people to shape their work to fit their life.
+It also lets people focus on important work for long periods of time.
+Remote work is great for individual productivity,
+but makes iterating with colleagues expensive.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/offsites/" rel="alternate"/>
+    <summary>I love remote work, but sometimes it sucks.  Offsites can help.Remote work empowers people to shape their work to fit their life.
+It also lets people focus on important work for long periods of time.
+Remote work is great for individual productivity,
+but makes iterating with colleagues expensive.</summary>
+    <published>2022-09-12T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/meetings/</id>
+    <title>Meetings</title>
+    <updated>2022-12-02T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I cancelled all my regular meetings and logged off of Slack.  It has made a
+huge difference.&lt;/p&gt;
+&lt;p&gt;This article goes into why and how I made this change as well as the results on
+my mental health and performance at the company.&lt;/p&gt;
+&lt;img alt="../_images/calendar-empty.png" src="../_images/calendar-empty.png" style="width: 100%;" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/meetings/" rel="alternate"/>
+    <summary>I cancelled all my regular meetings and logged off of Slack.  It has made a
+huge difference.This article goes into why and how I made this change as well as the results on
+my mental health and performance at the company.</summary>
+    <published>2022-12-02T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/engineering/stability-bias/</id>
+    <title>Stability Bias</title>
+    <updated>2022-12-02T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;We often optimize more for current users than future users.&lt;/p&gt;
+&lt;p&gt;Stability often arises as a concern when proposing changes.  I often hear
+statements like the following:&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/engineering/stability-bias/" rel="alternate"/>
+    <summary>We often optimize more for current users than future users.Stability often arises as a concern when proposing changes.  I often hear
+statements like the following:</summary>
+    <published>2022-12-02T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/writing/audio-visual/</id>
+    <title>Audio-Visual Setup</title>
+    <updated>2022-12-18T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;em&gt;HD is the new tall&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How we present ourselves has unreasonable effectiveness on how our message is perceived.  Aesthetic qualities can, unfairly, be translated into a greater sense of authority.&lt;/p&gt;
+&lt;img alt="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" src="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/writing/audio-visual/" rel="alternate"/>
+    <summary>HD is the new tallHow we present ourselves has unreasonable effectiveness on how our message is perceived.  Aesthetic qualities can, unfairly, be translated into a greater sense of authority.</summary>
+    <published>2022-12-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/startups/think/</id>
+    <title>Think for yourself</title>
+    <updated>2022-12-26T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;&lt;em&gt;No one knows how to do your job.  Look for answers from within, not without.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In highly dynamic environments (tech, startups, zombie apocalypse) there is no
+historical set of rules that “just work”.  Your best bet is to question
+everything, apply rational thought, and course correct shamelessly.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://matthewrocklin.com/startups/think/" rel="alternate"/>
+    <summary>No one knows how to do your job.  Look for answers from within, not without.In highly dynamic environments (tech, startups, zombie apocalypse) there is no
+historical set of rules that “just work”.  Your best bet is to question
+everything, apply rational thought, and course correct shamelessly.</summary>
+    <published>2022-12-26T00:00:00+00:00</published>
+  </entry>
+</feed>

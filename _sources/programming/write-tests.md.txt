@@ -1,6 +1,8 @@
 ---
 title: Write Tests
 date: 2016-02-08
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Write Tests

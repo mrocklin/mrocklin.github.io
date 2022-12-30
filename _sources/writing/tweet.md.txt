@@ -1,6 +1,8 @@
 ---
 title: Ideal Tweet
 date: 2020-08-18
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Ideal Tweet

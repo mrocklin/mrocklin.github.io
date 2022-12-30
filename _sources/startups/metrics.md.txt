@@ -1,6 +1,8 @@
 ---
 title: Metrics
 date: 2020-10-28
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Metrics

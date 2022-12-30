@@ -2,6 +2,8 @@
 title: Audio-Visual Setup
 date: 2022-12-18
 description: HD is the new tall
+blogpost: true
+author: Matthew Rocklin
 ---
 
 Audio-Visual Setup

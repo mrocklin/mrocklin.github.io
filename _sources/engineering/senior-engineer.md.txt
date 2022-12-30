@@ -1,7 +1,8 @@
 ---
 title: Senior Engineers
-author: Matthew Rocklin
 date: 2019-11-09
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Senior Engineers

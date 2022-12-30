@@ -1,3 +1,10 @@
+---
+title: Failure
+date: 2022-09-05
+blogpost: true
+author: Matthew Rocklin
+---
+
 Failure
 =======
 

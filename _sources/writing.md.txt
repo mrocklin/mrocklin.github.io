@@ -8,24 +8,6 @@ If you want, you can also see them in [chronological order](https://matthewrockl
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Engineering
-:glob:
-
-engineering/*
-```
-
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Programming
-:glob:
-
-programming/*
-```
-
-```{toctree}
-:maxdepth: 1
-:hidden:
 :caption: Startups
 :glob:
 
@@ -39,4 +21,22 @@ startups/*
 :glob:
 
 writing/*
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Engineering
+:glob:
+
+engineering/*
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Programming
+:glob:
+
+programming/*
 ```

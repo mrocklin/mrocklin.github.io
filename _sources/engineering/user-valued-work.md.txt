@@ -1,6 +1,8 @@
 ---
 title: User Valued Work
 date: 2022-08-24
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # User Valued Work
