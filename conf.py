@@ -63,7 +63,7 @@ html_sidebars = {
     "blog/**": ["postcard.html", "recentposts.html"],
 }
 blog_baseurl = "https://matthewrocklin.com"
-blog_title = "Working Notes"
+blog_title = "Matthew Rocklin's Working Notes"
 blog_path = "meta"
 fontawesome_included = True
 blog_post_pattern = "posts/*"
