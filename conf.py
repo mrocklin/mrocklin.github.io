@@ -64,7 +64,7 @@ html_sidebars = {
 }
 blog_baseurl = "https://matthewrocklin.com"
 blog_title = "Working Notes"
-blog_path = "blog"
+blog_path = "meta"
 fontawesome_included = True
 blog_post_pattern = "posts/*"
 post_redirect_refresh = 1

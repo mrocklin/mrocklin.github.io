@@ -2,6 +2,8 @@
 title: SciPy Mission
 tagline:
 tags: []
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # SciPy Mission

@@ -2,6 +2,8 @@
 title: Avoid Indirection
 tagline: for human readability
 date: 2019-06-23
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Avoid Indirection

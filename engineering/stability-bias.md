@@ -2,6 +2,8 @@
 title: Stability Bias
 tagline: Optimizing for past and future users
 date: 2022-12-02
+blogpost: true
+author: Matthew Rocklin
 ---
 
 Stability Bias

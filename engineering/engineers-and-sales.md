@@ -2,6 +2,8 @@
 title: Listen to sell
 tagline: A practical tip for for engineers in sales calls
 date: 2019-12-05
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Listen to Sell

@@ -2,6 +2,8 @@
 title: Craft Minimal Bug Reports
 tags: [Programming, scipy, Python]
 date: 2018-02-28
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Craft Minimal Bug Reports

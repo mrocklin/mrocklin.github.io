@@ -2,6 +2,8 @@
 title: Biased Benchmarks
 description: Honesty is hard
 date: 2017-03-09
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Biased Benchmarks

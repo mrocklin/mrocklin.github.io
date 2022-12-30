@@ -1,6 +1,8 @@
 ---
 title: Write Dumb Code
 date: 2018-01-27
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Write Dumb Code

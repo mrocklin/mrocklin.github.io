@@ -1,6 +1,8 @@
 ---
 title: Revenue Types
 date: 2022-07-25
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Revenue Types

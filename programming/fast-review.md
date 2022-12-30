@@ -2,6 +2,8 @@
 title: Small Scope Reviews
 tagline: The secret to happy devs
 date: 2022-03-26
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Small Scope Reviews

@@ -1,6 +1,8 @@
 ---
 title: Over Grown
 date: 2022-08-09
+blogpost: true
+author: Matthew Rocklin
 ---
 
 # Over Grown
