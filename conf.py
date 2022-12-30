@@ -70,6 +70,7 @@ blog_post_pattern = "posts/*"
 post_redirect_refresh = 1
 post_auto_image = 1
 post_auto_excerpt = 2
+blog_feed_fulltext = True
 
 html_extra_path = []
 
