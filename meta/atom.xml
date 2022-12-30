@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2022-12-30T23:16:50.700791+00:00</updated>
+  <updated>2022-12-30T23:22:15.677914+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/meta/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -3261,9 +3261,9 @@ more curiosity about the company and engaged much more deeply.&lt;/p&gt;
 &lt;p&gt;My calendar is now full of meetings again.  But these meetings are meetings
 that I choose week-by-week to push forward what I’m working on.&lt;/p&gt;
 &lt;p&gt;Here is my calendar for next week.  It’s a blank slate:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Test one two" src="../_images/calendar-empty.png" /&gt;&lt;/p&gt;
+&lt;img alt="../_images/calendar-empty.png" src="../_images/calendar-empty.png" style="width: 100%;" /&gt;
 &lt;p&gt;And my calendar for this last week (I write this on Friday).  It’s full:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Test one two" src="../_images/calendar-full.png" /&gt;&lt;/p&gt;
+&lt;img alt="../_images/calendar-full.png" src="../_images/calendar-full.png" style="width: 100%;" /&gt;
 &lt;p&gt;I still &lt;em&gt;meet with people&lt;/em&gt; but now these meetings are important.
 By Friday next week I expect my calendar for next week (first image) to be just as full as my
 calendar for this week (second image).&lt;/p&gt;
@@ -3307,7 +3307,7 @@ begin experimenting heavily.&lt;/p&gt;
     <link href="https://matthewrocklin.com/startups/meetings/" rel="alternate"/>
     <summary>I cancelled all my regular meetings and logged off of Slack.  It has made a
 huge difference.This article goes into why and how I made this change as well as the results on
-my mental health and performance at the company.Test one two</summary>
+my mental health and performance at the company.</summary>
     <published>2022-12-02T00:00:00+00:00</published>
   </entry>
   <entry>
