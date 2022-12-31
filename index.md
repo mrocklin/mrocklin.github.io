@@ -29,7 +29,7 @@ I also run a startup company [Coiled](https://coiled.io).
 Mostly short-form ramblings on open source, software engineering, startups, and
 writing in the modern era.
 
-<a href="writing.html" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
+<a href="writing/" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
 
 ```{toctree}
 :maxdepth: 2
