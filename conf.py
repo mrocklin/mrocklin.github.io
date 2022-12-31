@@ -45,7 +45,7 @@ html_theme_options = {
             "icon": "fa-brands fa-mastodon",
         },
     ],
-    "analytics": {"google_analytics_id": "UA-18218894-1"},
+    "analytics": {"google_analytics_id": "G-ZCP1VCVST7"},
 }
 
 html_favicon = "_static/favicon.ico"
