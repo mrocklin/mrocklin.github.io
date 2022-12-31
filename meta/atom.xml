@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2022-12-31T21:20:49.853065+00:00</updated>
+  <updated>2022-12-31T21:22:41.192481+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/meta/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
