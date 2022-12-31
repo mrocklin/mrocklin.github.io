@@ -70,6 +70,7 @@ blog_post_pattern = "posts/*"
 post_redirect_refresh = 1
 post_auto_image = 1
 post_auto_excerpt = 1
+post_show_prev_next = False
 blog_feed_fulltext = True
 blog_authors = {
     "Matthew Rocklin": ("Matthew Rocklin", "https://matthewrocklin.com"),
