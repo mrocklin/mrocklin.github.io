@@ -31,10 +31,10 @@ For a trivial example, maybe I decide to add a type annotation to a function:
 ```diff
 -def ensure_bytes(s):
 +def ensure_bytes(s) -> bytes:
-     """Turn string or bytes to bytes
+     """ Turn string or bytes to bytes
 
      >>> ensure_bytes('123')
-    b"123"
+     b"123"
 ```
 
 Awesome.  This takes me less than two minutes to make the fix and open a pull
@@ -49,10 +49,10 @@ following suggestion:
 ```diff
 -def ensure_bytes(s):
 +def ensure_bytes(s) -> bytes | None:
-     """Turn string or bytes to bytes
+     """ Turn string or bytes to bytes
 
      >>> ensure_bytes('123')
-    b"123"
+     b"123"
 ```
 
 This is great!  They helped me to understand the problem better, and avoid
@@ -70,12 +70,12 @@ change the docstring to reflect the ambiguous typing.
 ```diff
 -def ensure_bytes(s):
 +def ensure_bytes(s: str | bytes | None) -> bytes | None:
-     """Turn string or bytes to bytes
+     """ Turn string or bytes to bytes
 
      Except if the input is none, in which case it passes through
 
      >>> ensure_bytes('123')
-    b"123"
+     b"123"
 ```
 
 This is a good idea!  Someone should do this!  However, I don't think that it
