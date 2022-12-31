@@ -475,10 +475,10 @@ against all of the other work that can get done.</p></li>
 For a trivial example, maybe I decide to add a type annotation to a function:</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
 <span class="gi">+def ensure_bytes(s) -&gt; bytes:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot;Turn string or bytes to bytes<span class="w"></span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
 
 <span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>   b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
 </pre></div>
 </div>
 <p>Awesome.  This takes me less than two minutes to make the fix and open a pull
@@ -491,10 +491,10 @@ that this function can also return <code class="docutils literal notranslate"><s
 following suggestion:</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
 <span class="gi">+def ensure_bytes(s) -&gt; bytes | None:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot;Turn string or bytes to bytes<span class="w"></span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
 
 <span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>   b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
 </pre></div>
 </div>
 <p>This is great!  They helped me to understand the problem better, and avoid
@@ -510,12 +510,12 @@ make sure that things are correct.</p>
 change the docstring to reflect the ambiguous typing.</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
 <span class="gi">+def ensure_bytes(s: str | bytes | None) -&gt; bytes | None:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot;Turn string or bytes to bytes<span class="w"></span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
 
 <span class="w"> </span>    Except if the input is none, in which case it passes through<span class="w"></span>
 
 <span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>   b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
 </pre></div>
 </div>
 <p>This is a good idea!  Someone should do this!  However, I don’t think that it

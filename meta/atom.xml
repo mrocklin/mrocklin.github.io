@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2022-12-31T21:25:28.202946+00:00</updated>
+  <updated>2022-12-31T21:28:26.868302+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/meta/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -2378,10 +2378,10 @@ against all of the other work that can get done.&lt;/p&gt;&lt;/li&gt;
 For a trivial example, maybe I decide to add a type annotation to a function:&lt;/p&gt;
 &lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot;Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;   b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Awesome.  This takes me less than two minutes to make the fix and open a pull
@@ -2394,10 +2394,10 @@ that this function can also return &lt;code class="docutils literal notranslate"
 following suggestion:&lt;/p&gt;
 &lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes | None:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot;Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;   b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;This is great!  They helped me to understand the problem better, and avoid
@@ -2413,12 +2413,12 @@ make sure that things are correct.&lt;/p&gt;
 change the docstring to reflect the ambiguous typing.&lt;/p&gt;
 &lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="gi"&gt;+def ensure_bytes(s: str | bytes | None) -&amp;gt; bytes | None:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot;Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt; &lt;/span&gt;    Except if the input is none, in which case it passes through&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;   b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;This is a good idea!  Someone should do this!  However, I don’t think that it
