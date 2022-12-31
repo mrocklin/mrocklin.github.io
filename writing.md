@@ -1,9 +1,11 @@
 # Writings
 
-This collects the more frequently read and meaningful things that I've written
-over the last few years.
-
-If you want, you can also see them in [chronological order](https://matthewrocklin.com/blog) with other writings at my historical blog.
+```{postlist} 50
+---
+format: "{title}"
+excerpts: True
+---
+```
 
 ```{toctree}
 :maxdepth: 1
