@@ -3,6 +3,7 @@ title: Meetings
 date: 2022-12-02
 blogpost: true
 author: Matthew Rocklin
+image: 2
 ---
 
 Meetings
