@@ -4,6 +4,7 @@ tagline: Brevity is the soul of wit
 date: 2020-07-13
 blogpost: true
 author: Matthew Rocklin
+category: writing
 ---
 
 # Short Attention Span

@@ -4,6 +4,7 @@ tagline: Optimizing for past and future users
 date: 2022-12-02
 blogpost: true
 author: Matthew Rocklin
+category: engineering
 ---
 
 Stability Bias

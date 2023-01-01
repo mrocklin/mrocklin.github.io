@@ -4,6 +4,7 @@ tagline:
 tags: []
 blogpost: true
 author: Matthew Rocklin
+category: engineering
 ---
 
 # SciPy Mission

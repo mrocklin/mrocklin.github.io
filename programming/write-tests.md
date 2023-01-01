@@ -3,6 +3,7 @@ title: Write Tests
 date: 2016-02-08
 blogpost: true
 author: Matthew Rocklin
+category: programming
 ---
 
 # Write Tests

@@ -3,6 +3,7 @@ title: Offsites
 date: 2022-09-12
 blogpost: true
 author: Matthew Rocklin
+category: startups
 ---
 
 Offsites

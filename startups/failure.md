@@ -3,6 +3,7 @@ title: Failure
 date: 2022-09-05
 blogpost: true
 author: Matthew Rocklin
+category: startups
 ---
 
 Failure

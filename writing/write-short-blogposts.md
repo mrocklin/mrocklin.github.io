@@ -4,6 +4,7 @@ tagline: reducing expectations for the win
 date: 2019-06-25
 blogpost: true
 author: Matthew Rocklin
+category: writing
 ---
 
 # Short Blogposts

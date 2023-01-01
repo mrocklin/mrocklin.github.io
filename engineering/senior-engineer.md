@@ -3,6 +3,7 @@ title: Senior Engineers
 date: 2019-11-09
 blogpost: true
 author: Matthew Rocklin
+category: engineering
 ---
 
 # Senior Engineers

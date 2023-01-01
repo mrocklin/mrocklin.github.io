@@ -3,6 +3,7 @@ title: Maintainers
 date: 2019-05-18
 blogpost: true
 author: Matthew Rocklin
+category: engineering
 ---
 
 # Maintainers

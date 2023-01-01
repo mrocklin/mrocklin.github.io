@@ -4,6 +4,7 @@ date: 2022-12-18
 description: HD is the new tall
 blogpost: true
 author: Matthew Rocklin
+category: writing
 ---
 
 Audio-Visual Setup

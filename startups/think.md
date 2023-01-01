@@ -3,6 +3,7 @@ title: Think for yourself
 tagline: ...
 date: 2022-12-26
 blogpost: true
+category: startups
 author: Matthew Rocklin
 ---
 

@@ -4,6 +4,7 @@ tagline: The secret to happy devs
 date: 2022-03-26
 blogpost: true
 author: Matthew Rocklin
+category: programming
 ---
 
 # Small Scope Reviews

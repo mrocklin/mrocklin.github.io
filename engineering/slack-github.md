@@ -3,6 +3,7 @@ title: Why I Avoid Slack
 date: 2019-02-28
 blogpost: true
 author: Matthew Rocklin
+category: engineering
 ---
 
 # Why I Avoid Slack

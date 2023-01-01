@@ -4,6 +4,7 @@ description: Honesty is hard
 date: 2017-03-09
 blogpost: true
 author: Matthew Rocklin
+category: programming
 ---
 
 # Biased Benchmarks
