@@ -28,7 +28,7 @@ I also run a startup company [Coiled](https://coiled.io).
 
 <hr/>
 
-<a href="writing/" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
+<a href="writing.html" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
 
 ```{toctree}
 :maxdepth: 2

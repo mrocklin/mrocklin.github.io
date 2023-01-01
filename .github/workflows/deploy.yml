@@ -28,7 +28,7 @@ jobs:
     # Build the book
     - name: Build the site
       run: |
-        make dirhtml
+        make html
 
     # If we've pushed to main, push the book's HTML to github-pages
     - if: ${{ github.ref == 'refs/heads/main' }}
@@ -36,5 +36,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.5.9
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/dirhtml
+        publish_dir: ./_build/html
         cname: matthewrocklin.com
