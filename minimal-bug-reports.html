@@ -504,14 +504,15 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 <h3>Do<a class="headerlink" href="#do" title="Permalink to this heading">#</a></h3>
 <p>You should be able to copy-paste the following to get enough of my data to cause the problem:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;balance&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">1432.32</span><span class="p">,</span> <span class="mf">10.43</span><span class="p">,</span> <span class="mf">30000.00</span><span class="p">],</span>
-                   <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">2424</span><span class="p">,</span> <span class="mi">251</span><span class="p">],</span>
-                   <span class="s1">&#39;proxy-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">525</span><span class="p">,</span> <span class="mi">1525</span><span class="p">,</span> <span class="mi">2542</span><span class="p">],</span>
-                   <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">525</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span>
-                   <span class="o">...</span>
-                   <span class="p">})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;balance&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">1432.32</span><span class="p">,</span> <span class="mf">10.43</span><span class="p">,</span> <span class="mf">30000.00</span><span class="p">],</span>
+    <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">2424</span><span class="p">,</span> <span class="mi">251</span><span class="p">],</span>
+    <span class="s1">&#39;proxy-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">525</span><span class="p">,</span> <span class="mi">1525</span><span class="p">,</span> <span class="mi">2542</span><span class="p">],</span>
+    <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">525</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span>
+    <span class="o">...</span>
+<span class="p">})</span>
 </pre></div>
 </div>
 </section>
@@ -527,14 +528,15 @@ or random data.</p>
 <h3>Don’t<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Here is enough of my data to reproduce the problem</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;balance&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">1432.32</span><span class="p">,</span> <span class="mf">10.43</span><span class="p">,</span> <span class="mf">30000.00</span><span class="p">],</span>
-                   <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">2424</span><span class="p">,</span> <span class="mi">251</span><span class="p">],</span>
-                   <span class="s1">&#39;proxy-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">525</span><span class="p">,</span> <span class="mi">1525</span><span class="p">,</span> <span class="mi">2542</span><span class="p">],</span>
-                   <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">525</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span>
-                   <span class="o">...</span>
-                   <span class="p">})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;balance&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">1432.32</span><span class="p">,</span> <span class="mf">10.43</span><span class="p">,</span> <span class="mf">30000.00</span><span class="p">],</span>
+    <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">2424</span><span class="p">,</span> <span class="mi">251</span><span class="p">],</span>
+    <span class="s1">&#39;proxy-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">525</span><span class="p">,</span> <span class="mi">1525</span><span class="p">,</span> <span class="mi">2542</span><span class="p">],</span>
+    <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">525</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span>
+    <span class="o">...</span>
+<span class="p">})</span>
 </pre></div>
 </div>
 </section>
@@ -545,9 +547,11 @@ but we can reproduce the problem with this simpler dataset.
 Notice that the dates are <em>out of order</em> in this data (2000-01-02 comes after 2000-01-03).
 I found that this was critical to reproducing the error.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-                   <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">]</span>
+<span class="p">})</span>
 </pre></div>
 </div>
 <p>As we shrink down our example problem we often discover a lot about what causes the problem.
@@ -566,8 +570,10 @@ or descriptive of the types within?</p>
 <section id="id3">
 <h3>Do<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;datetime&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;datetime&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="p">})</span>
 </pre></div>
 </div>
 </section>
@@ -731,6 +737,27 @@ how they like to support users.</p>
 
 <div class="section">
     
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="write-dumb-code.html">
+      <i class="fa fa-arrow-circle-left"></i> Write Dumb Code
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="slack-github.html">
+      Why I Avoid Slack <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
   
 </div>
 

@@ -69,14 +69,15 @@ You should be able to copy-paste the following to get enough of my data to cause
 
 ```python
 import pandas as pd
-df = pd.DataFrame({'account-start': ['2017-02-03', '2017-03-03', '2017-01-01'],
-                   'client': ['Alice Anders', 'Bob Baker', 'Charlie Chaplin'],
-                   'balance': [-1432.32, 10.43, 30000.00],
-                   'db-id': [1234, 2424, 251],
-                   'proxy-id': [525, 1525, 2542],
-                   'rank': [52, 525, 32],
-                   ...
-                   })
+df = pd.DataFrame({
+    'account-start': ['2017-02-03', '2017-03-03', '2017-01-01'],
+    'client': ['Alice Anders', 'Bob Baker', 'Charlie Chaplin'],
+    'balance': [-1432.32, 10.43, 30000.00],
+    'db-id': [1234, 2424, 251],
+    'proxy-id': [525, 1525, 2542],
+    'rank': [52, 525, 32],
+    ...
+})
 ```
 
 
@@ -97,14 +98,15 @@ Here is enough of my data to reproduce the problem
 
 ```python
 import pandas as pd
-df = pd.DataFrame({'account-start': ['2017-02-03', '2017-03-03', '2017-01-01'],
-                   'client': ['Alice Anders', 'Bob Baker', 'Charlie Chaplin'],
-                   'balance': [-1432.32, 10.43, 30000.00],
-                   'db-id': [1234, 2424, 251],
-                   'proxy-id': [525, 1525, 2542],
-                   'rank': [52, 525, 32],
-                   ...
-                   })
+df = pd.DataFrame({
+    'account-start': ['2017-02-03', '2017-03-03', '2017-01-01'],
+    'client': ['Alice Anders', 'Bob Baker', 'Charlie Chaplin'],
+    'balance': [-1432.32, 10.43, 30000.00],
+    'db-id': [1234, 2424, 251],
+    'proxy-id': [525, 1525, 2542],
+    'rank': [52, 525, 32],
+    ...
+})
 ```
 
 ### Do
@@ -116,9 +118,11 @@ I found that this was critical to reproducing the error.
 
 ```python
 import pandas as pd
-df = pd.DataFrame({'account-start': ['2000-01-01', '2000-01-03', '2000-01-02'],
-                   'db-id': [1, 2, 3],
-                   'name': ['Alice', 'Bob', 'Charlie'})
+df = pd.DataFrame({
+    'account-start': ['2000-01-01', '2000-01-03', '2000-01-02'],
+    'db-id': [1, 2, 3],
+    'name': ['Alice', 'Bob', 'Charlie']
+})
 ```
 
 As we shrink down our example problem we often discover a lot about what causes the problem.
@@ -142,8 +146,10 @@ or descriptive of the types within?
 
 ```python
 import pandas as pd
-df = pd.DataFrame({'datetime': ['2000-01-03', '2000-01-02'],
-                   'id': [1, 2]})
+df = pd.DataFrame({
+    'datetime': ['2000-01-03', '2000-01-02'],
+    'id': [1, 2]
+})
 ```
 
 
