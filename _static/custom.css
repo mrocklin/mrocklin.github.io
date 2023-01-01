@@ -104,7 +104,7 @@ div.timeline div.entry.right::after {
 }
 
 pre {
-  background-color: #ffffff00;
+  border: 0px;
 }
 
 nav.bd-links li>a {
