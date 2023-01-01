@@ -1,4 +1,4 @@
-ablog=0.10.33
+ablog==0.10.33
 docutils
 myst_nb
 MyST-Parser==0.18.1
