@@ -106,3 +106,7 @@ div.timeline div.entry.right::after {
 pre {
   background-color: #ffffff00;
 }
+
+nav.bd-links li>a {
+  padding: 0
+}
