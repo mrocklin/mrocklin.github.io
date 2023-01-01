@@ -24,14 +24,11 @@ Minimal Complete Verifiable Examples
 
 I strongly recommend following Stack Overflow's guidelines on [Minimal Complete Verifiable Exmamples](https://stackoverflow.com/help/mcve).  I'll include brief highlights here:
 
-> ... code should be ...
+*... code should be ...*
 
-> -  Minimal – Use as little code as possible that still produces the same problem
-
-> -  Complete – Provide all parts needed to reproduce the problem
-
-> -  Verifiable – Test the code you're about to provide to make sure it reproduces the problem
-
+-  *Minimal – Use as little code as possible that still produces the same problem*
+-  *Complete – Provide all parts needed to reproduce the problem*
+-  *Verifiable – Test the code you're about to provide to make sure it reproduces the problem*
 
 Lets be clear, this is *hard* and takes time.
 
