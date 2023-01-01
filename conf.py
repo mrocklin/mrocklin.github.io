@@ -54,13 +54,7 @@ html_static_path = ["_static"]
 html_extra_path = ["feed.xml"]
 html_sidebars = {
     "index": ["hello.html"],
-    "about": ["hello.html"],
-    "publications": ["sidebar-nav-bs.html"],
-    "projects": ["hello.html"],
-    "talks": ["hello.html"],
-    "posts/*": ["postcard.html", "recentposts.html"],
-    "blog": ["tagcloud.html"],
-    "blog/**": ["postcard.html", "recentposts.html"],
+    "*": ["sidebar.html"],
 }
 blog_baseurl = "https://matthewrocklin.com"
 blog_title = "Matthew Rocklin's Working Notes"
@@ -100,11 +94,8 @@ ogp_image = "https://matthewrocklin.com/_static/profile.jpg"
 jupyter_execute_notebooks = "off"
 
 rediraffe_redirects = {
-    # "blog/work/2022/07/25/startup-revenue": "posts/startup-revenue.md",
+    "startups/best-practices": "startup-best-practices",
 }
-for k, v in list(rediraffe_redirects.items()):
-    rediraffe_redirects[k + ".html"] = v
-
 
 def setup(app):
     app.add_css_file("custom.css")
