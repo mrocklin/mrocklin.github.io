@@ -1,4 +1,4 @@
-# Writings
+# Articles
 
 ```{postlist} 50
 ---

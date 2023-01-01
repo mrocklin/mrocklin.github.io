@@ -28,13 +28,13 @@ I also run a startup company [Coiled](https://coiled.io).
 
 <hr/>
 
-<a href="writing.html" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
+<a href="articles.html" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Read Blog</a>
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
 
-writing
+articles
 Old Blog <https://matthewrocklin.com/blog>
 ```
 
