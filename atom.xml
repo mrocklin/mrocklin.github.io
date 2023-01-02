@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-01T03:47:46.904689+00:00</updated>
+  <updated>2023-01-02T19:42:01.786970+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -2370,12 +2370,12 @@ against all of the other work that can get done.&lt;/p&gt;&lt;/li&gt;
 &lt;h2&gt;Example&lt;/h2&gt;
 &lt;p&gt;As an OSS developer I use many projects, and when I see a simple problem in a project that I can fix quickly, I like to fix it.
 For a trivial example, maybe I decide to add a type annotation to a function:&lt;/p&gt;
-&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;
+&lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes:&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes
 
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Awesome.  This takes me less than two minutes to make the fix and open a pull
@@ -2386,12 +2386,12 @@ request.  I can fire this off and proceed with my normal work.&lt;/p&gt;
 &lt;p&gt;On review, someone might helpfully mention that I actually made a mistake, and
 that this function can also return &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;None&lt;/span&gt;&lt;/code&gt; in some cases.  They make the
 following suggestion:&lt;/p&gt;
-&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes | None:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;
+&lt;span class="gi"&gt;+def ensure_bytes(s) -&amp;gt; bytes | None:&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes
 
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;This is great!  They helped me to understand the problem better, and avoid
@@ -2405,14 +2405,14 @@ make sure that things are correct.&lt;/p&gt;
 &lt;h2&gt;Non-critical review&lt;/h2&gt;
 &lt;p&gt;Another reviewer then arrives and suggests that I also type the inputs, and
 change the docstring to reflect the ambiguous typing.&lt;/p&gt;
-&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="gi"&gt;+def ensure_bytes(s: str | bytes | None) -&amp;gt; bytes | None:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight-diff notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gd"&gt;-def ensure_bytes(s):&lt;/span&gt;
+&lt;span class="gi"&gt;+def ensure_bytes(s: str | bytes | None) -&amp;gt; bytes | None:&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;quot;&amp;quot;&amp;quot; Turn string or bytes to bytes
 
-&lt;span class="w"&gt; &lt;/span&gt;    Except if the input is none, in which case it passes through&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    Except if the input is none, in which case it passes through
 
-&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;    &amp;gt;&amp;gt;&amp;gt; ensure_bytes(&amp;#39;123&amp;#39;)
+&lt;span class="w"&gt; &lt;/span&gt;    b&amp;quot;123&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;This is a good idea!  Someone should do this!  However, I don’t think that it
@@ -3472,5 +3472,26 @@ shamelessly.&lt;/p&gt;
     <link href="https://matthewrocklin.com/think.html" rel="alternate"/>
     <summary>No one knows how to do your job.  Look for answers from within, not without.</summary>
     <published>2022-12-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/test.html</id>
+    <title>Test post</title>
+    <updated>2023-01-02T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="test-post"&gt;
+
+&lt;p&gt;You shouldn’t ever see this post.&lt;/p&gt;
+&lt;p&gt;Not ever.&lt;/p&gt;
+&lt;section id="well-actually"&gt;
+&lt;h2&gt;Well actually&lt;/h2&gt;
+&lt;p&gt;Well actually if it’s January 2nd 2023 around noon US Pacific time then maybe.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/test.html" rel="alternate"/>
+    <summary>You shouldn’t ever see this post.</summary>
+    <published>2023-01-02T00:00:00+00:00</published>
   </entry>
 </feed>

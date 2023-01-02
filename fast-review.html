@@ -476,12 +476,12 @@ against all of the other work that can get done.</p></li>
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
 <p>As an OSS developer I use many projects, and when I see a simple problem in a project that I can fix quickly, I like to fix it.
 For a trivial example, maybe I decide to add a type annotation to a function:</p>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
-<span class="gi">+def ensure_bytes(s) -&gt; bytes:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span>
+<span class="gi">+def ensure_bytes(s) -&gt; bytes:</span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes
 
-<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)
+<span class="w"> </span>    b&quot;123&quot;
 </pre></div>
 </div>
 <p>Awesome.  This takes me less than two minutes to make the fix and open a pull
@@ -492,12 +492,12 @@ request.  I can fire this off and proceed with my normal work.</p>
 <p>On review, someone might helpfully mention that I actually made a mistake, and
 that this function can also return <code class="docutils literal notranslate"><span class="pre">None</span></code> in some cases.  They make the
 following suggestion:</p>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
-<span class="gi">+def ensure_bytes(s) -&gt; bytes | None:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span>
+<span class="gi">+def ensure_bytes(s) -&gt; bytes | None:</span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes
 
-<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)
+<span class="w"> </span>    b&quot;123&quot;
 </pre></div>
 </div>
 <p>This is great!  They helped me to understand the problem better, and avoid
@@ -511,14 +511,14 @@ make sure that things are correct.</p>
 <h2>Non-critical review<a class="headerlink" href="#non-critical-review" title="Permalink to this heading">#</a></h2>
 <p>Another reviewer then arrives and suggests that I also type the inputs, and
 change the docstring to reflect the ambiguous typing.</p>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span><span class="w"></span>
-<span class="gi">+def ensure_bytes(s: str | bytes | None) -&gt; bytes | None:</span><span class="w"></span>
-<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes<span class="w"></span>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span>
+<span class="gi">+def ensure_bytes(s: str | bytes | None) -&gt; bytes | None:</span>
+<span class="w"> </span>    &quot;&quot;&quot; Turn string or bytes to bytes
 
-<span class="w"> </span>    Except if the input is none, in which case it passes through<span class="w"></span>
+<span class="w"> </span>    Except if the input is none, in which case it passes through
 
-<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)<span class="w"></span>
-<span class="w"> </span>    b&quot;123&quot;<span class="w"></span>
+<span class="w"> </span>    &gt;&gt;&gt; ensure_bytes(&#39;123&#39;)
+<span class="w"> </span>    b&quot;123&quot;
 </pre></div>
 </div>
 <p>This is a good idea!  Someone should do this!  However, I don’t think that it
