@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-02T19:42:01.786970+00:00</updated>
+  <updated>2023-01-02T19:50:35.208642+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -3472,26 +3472,5 @@ shamelessly.&lt;/p&gt;
     <link href="https://matthewrocklin.com/think.html" rel="alternate"/>
     <summary>No one knows how to do your job.  Look for answers from within, not without.</summary>
     <published>2022-12-26T00:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>https://matthewrocklin.com/test.html</id>
-    <title>Test post</title>
-    <updated>2023-01-02T00:00:00+00:00</updated>
-    <author>
-      <name>Matthew Rocklin</name>
-    </author>
-    <content type="html">&lt;section id="test-post"&gt;
-
-&lt;p&gt;You shouldn’t ever see this post.&lt;/p&gt;
-&lt;p&gt;Not ever.&lt;/p&gt;
-&lt;section id="well-actually"&gt;
-&lt;h2&gt;Well actually&lt;/h2&gt;
-&lt;p&gt;Well actually if it’s January 2nd 2023 around noon US Pacific time then maybe.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="https://matthewrocklin.com/test.html" rel="alternate"/>
-    <summary>You shouldn’t ever see this post.</summary>
-    <published>2023-01-02T00:00:00+00:00</published>
   </entry>
 </feed>
