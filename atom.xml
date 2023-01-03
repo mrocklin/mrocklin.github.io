@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-02T19:50:35.208642+00:00</updated>
+  <updated>2023-01-03T15:56:06.516426+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -3472,5 +3472,188 @@ shamelessly.&lt;/p&gt;
     <link href="https://matthewrocklin.com/think.html" rel="alternate"/>
     <summary>No one knows how to do your job.  Look for answers from within, not without.</summary>
     <published>2022-12-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/redesign-blog.html</id>
+    <title>Rethinking My Website and Blog</title>
+    <updated>2023-01-02T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="rethinking-my-website-and-blog"&gt;
+
+&lt;p&gt;&lt;em&gt;How we read and write shapes how we think&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Twitter chaos made us rethink our engagement on the web.
+Personally, I felt smarter and happier pre-Twitter.
+During this period I engaged by reading and writing blogs.
+I drifted away from my practice of blogging,
+but I’m intentionally turning back to that direction.&lt;/p&gt;
+&lt;p&gt;With this in mind I rebuilt my personal website and blog.
+This article discusses the reasoning behind the new design.&lt;/p&gt;
+&lt;p&gt;I had a few objectives in this transition:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Optimize for slightly longer attention spans&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mix evergreen and timely content&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Flatten organizational hierarchy&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Experiment with automation to integrate with social media&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section id="motivation"&gt;
+&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;section id="why-i-stopped-blogging"&gt;
+&lt;h3&gt;Why I Stopped Blogging&lt;/h3&gt;
+&lt;p&gt;I used to blog a lot more,
+but I stopped for a few reasons:&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p&gt;My Twitter follower count increased, encouraging me to engage directly there&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I grew multiple blogging venues (personal blog, community project blog, company blog)
+which had longer review periods and delays, which discouraged writing&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I find that I write 10x more if publication is instantaneous&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;My blogging infrastructure was embarrassingly out of date&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;this was ancient, didn’t have https, metadata for social sharing, good style, etc..&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But I miss it for a few reasons&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="longer-attention-spans"&gt;
+&lt;h3&gt;Longer Attention Spans&lt;/h3&gt;
+&lt;p&gt;I write &lt;a class="reference internal" href="write-short-blogposts.html#write-short-blogposts"&gt;&lt;span class="std std-ref"&gt;short posts&lt;/span&gt;&lt;/a&gt; to a &lt;a class="reference internal" href="brevity.html#brevity"&gt;&lt;span class="std std-ref"&gt;short attention span&lt;/span&gt;&lt;/a&gt;.
+However, I think that the 280 character limit of Twitter goes too far.
+Twitter encourages punchy communication devoid of depth or complex thinking and
+forces lots of skimming.  I feel that my brain is largely inactive when on the web.
+&lt;strong&gt;I’m pushing against this.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’d like to author more thoughtful content.
+I’d like to encourage readers towards deeper thought.
+Blogging helps.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="evergreen-content"&gt;
+&lt;h3&gt;Evergreen content&lt;/h3&gt;
+&lt;p&gt;I frequently point colleagues to posts I wrote years ago.
+Here are a few:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="slack-github.html#slack-github"&gt;&lt;span class="std std-ref"&gt;Why I Avoid Slack&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="minimal-bug-reports.html#minimal-bug-reports"&gt;&lt;span class="std std-ref"&gt;Minimal Bug Reports&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="biased-benchmarks.html#biased-benchmarks"&gt;&lt;span class="std std-ref"&gt;Biased Benchmarks&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="avoid-indirection.html#avoid-indirection"&gt;&lt;span class="std std-ref"&gt;Avoid Indirection&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And also some more recent posts I’ve made:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="startup-best-practices.html#startup-best-practices"&gt;&lt;span class="std std-ref"&gt;Startup Best Practices&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="startup-revenue.html#startup-revenue"&gt;&lt;span class="std std-ref"&gt;Startup Revenue&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="meetings.html#meetings"&gt;&lt;span class="std std-ref"&gt;Meetings&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I value these posts 100x more than any Tweet because I get continuous value from them.
+I’ve shared these manually with hundreds of people,
+and they get plenty of traffic from strangers.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="new-blog-implementation"&gt;
+&lt;h2&gt;New Blog Implementation&lt;/h2&gt;
+&lt;p&gt;I have a new website and blog! 🎉&lt;/p&gt;
+&lt;p&gt;Source lives at
+&lt;a class="github reference external" href="https://github.com/mrocklin/mrocklin.github.io"&gt;mrocklin/mrocklin.github.io&lt;/a&gt; and is hosted at &lt;a class="reference external" href="https://matthewrocklin.com"&gt;https://matthewrocklin.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are a few choices I made.  Let’s go through them and why.&lt;/p&gt;
+&lt;section id="basics-sphinx-and-markdown"&gt;
+&lt;h3&gt;Basics: Sphinx and Markdown&lt;/h3&gt;
+&lt;p&gt;I am most familiar with Markdown to author documents and Sphinx to render them.
+I stole my baseline implementation from
+&lt;a class="reference external" href="https://chrisholdgraf.com"&gt;Chris Holdgraf&lt;/a&gt;.
+This uses various technologies like the
+&lt;a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme"&gt;PyData Sphinx Theme&lt;/a&gt;,
+&lt;a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/"&gt;MyST&lt;/a&gt;
+and &lt;a class="reference external" href="https://ablog.readthedocs.io/en/stable/"&gt;ablog&lt;/a&gt;,
+which I’ll &lt;a class="reference external" href="https://matthewrocklin.com/atom.xml"&gt;let Chris
+describe&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="blog-posts-timely-v-docs-evergreen"&gt;
+&lt;h3&gt;Blog posts (timely) v. Docs (evergreen)&lt;/h3&gt;
+&lt;p&gt;Looking at my old blog there are two different categories of articles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Timely:&lt;/strong&gt; One-off content describing a recent experiment or thought that I wanted to
+share right away&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://matthewrocklin.com/blog/work/2018/12/17/gpu-python-challenges"&gt;First Impressions of GPUs and PyData&lt;/a&gt; published my first week after moving to NVIDIA&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://matthewrocklin.com/blog/work/2018/06/14/dask-0.18.0"&gt;Dask Release 0.18&lt;/a&gt; (there are many of these)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Evergreen:&lt;/strong&gt; Deeper thoughts where I’m trying to communicate with / teach colleagues&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="maintainer.html#maintainer"&gt;&lt;span class="std std-ref"&gt;Role of a maintainer&lt;/span&gt;&lt;/a&gt; aimed at people taking on
+developer/reviewer/maintainer roles in OSS&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="avoid-indirection.html#avoid-indirection"&gt;&lt;span class="std std-ref"&gt;Avoid Indirection&lt;/span&gt;&lt;/a&gt; aimed at contributors to OSS
+projects.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both categories are important to how I work, but are typically served
+differently.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Timely/ephemeral content is well served by blog infrastructure with chronological ordering, tags, and RSS feeds.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Evergreen/educational content is well served by a layout more similar to the documentation of a software
+project.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I want both.  I have both.&lt;/p&gt;
+&lt;p&gt;If you’re reading this on my website you’ll see a sidebar to the left, similar
+to what you would find in the documentation for a software project.  This
+sidebar lays out the evergreen content.  New posts don’t go here automatically,
+I have to place them in the sidebar intentionally.  This whole site could be
+seen as &lt;strong&gt;“documentation to working with matt”.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At the same time, every post does have appropriate blog metadata to be included
+in the top-level &lt;a class="reference internal" href="articles.html"&gt;&lt;span class="doc std std-doc"&gt;articles/&lt;/span&gt;&lt;/a&gt; page, which lists things
+chronologically, as well as the &lt;a class="reference external" href="https://matthewrocklin.com/atom.xml"&gt;Atom/RSS feed&lt;/a&gt;.
+It’s like a documentation site where every new page gets an RSS entry.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="atom-rss-feed"&gt;
+&lt;h3&gt;Atom/RSS Feed&lt;/h3&gt;
+&lt;p&gt;I miss Google Reader.  This technology encouraged people to read and share
+long-form articles.  It made the content and sharing primary while
+commenting/liking was an after thought.&lt;/p&gt;
+&lt;p&gt;I don’t use an RSS feed reader today, but I’d like to start again.
+I know that others do and so I’m resurrecting an Atom/RSS feed is at
+&lt;a class="reference external" href="https://matthewrocklin.com/atom.xml"&gt;https://matthewrocklin.com/atom.xml&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="flat-directory-structure"&gt;
+&lt;h3&gt;Flat directory structure&lt;/h3&gt;
+&lt;p&gt;One of the things I disliked about my Jekyll blog (and lots of static site
+generator default configurations) was the focus on chronology and dates in
+titles and URLs.  URLs looked like this:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;https://matthewrocklin.com/blog/work/2022/07/19/scipy-mission&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I then shaped this site to be in categories with URLs like the following:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;https://matthewrocklin.com/engineering/scipy-mission&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don’t care about the dates of things that I read.
+They just get in the way.
+But then I realized that I didn’t care about categories either,
+and so now everything is just flat.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://matthewrocklin.com/scipy-mission"&gt;https://matthewrocklin.com/scipy-mission&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a reader you probably don’t care (you got here by clicking a link) but
+flat structures appeal to me personally.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="automated-social-sharing"&gt;
+&lt;h3&gt;Automated Social Sharing&lt;/h3&gt;
+&lt;p&gt;I’ve hooked up &lt;a class="reference external" href="https://ifttt.com/"&gt;IFFTT&lt;/a&gt; to Twitter and LinkedIn.
+I haven’t found a good Mastodon solution yet.&lt;/p&gt;
+&lt;p&gt;The results here aren’t as good as I would do for Twitter, but it does mean I don’t have to log in.
+Also, I never used to engage at all on LinkedIn, and so this will help greatly over there.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="final-thoughts"&gt;
+&lt;h2&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;This is an experiment.  It may fail!  That’s ok!&lt;/p&gt;
+&lt;p&gt;People should experiment more with how they communicate.
+I encourage you to give your own communication habits some consideration.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/redesign-blog.html" rel="alternate"/>
+    <summary>How we read and write shapes how we think</summary>
+    <published>2023-01-02T00:00:00+00:00</published>
   </entry>
 </feed>
