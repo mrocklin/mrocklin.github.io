@@ -100,8 +100,8 @@ This uses various technologies like the
 [PyData Sphinx Theme](https://github.com/pydata/pydata-sphinx-theme),
 [MyST](https://myst-parser.readthedocs.io/en/latest/)
 and [ablog](https://ablog.readthedocs.io/en/stable/),
-which I'll [let Chris
-describe](https://matthewrocklin.com/atom.xml).
+which
+I'll [let Chris describe](https://chrisholdgraf.com/blog/2020/sphinx-blogging/).
 
 ### Blog posts (timely) v. Docs (evergreen)
 
