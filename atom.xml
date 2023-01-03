@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-03T17:47:46.484468+00:00</updated>
+  <updated>2023-01-03T18:48:18.397468+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -3638,7 +3638,7 @@ flat structures appeal to me personally.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="automated-social-sharing"&gt;
 &lt;h3&gt;Automated Social Sharing&lt;/h3&gt;
-&lt;p&gt;I’ve hooked up &lt;a class="reference external" href="https://ifttt.com/"&gt;IFFTT&lt;/a&gt; to Twitter and LinkedIn.
+&lt;p&gt;I’ve hooked up &lt;a class="reference external" href="https://ifttt.com/"&gt;IFTTT&lt;/a&gt; to Twitter and LinkedIn.
 I haven’t found a good Mastodon solution yet.&lt;/p&gt;
 &lt;p&gt;The results here aren’t as good as I would do for Twitter, but it does mean I don’t have to log in.
 Also, I never used to engage at all on LinkedIn, and so this will help greatly over there.&lt;/p&gt;
