@@ -3,6 +3,8 @@
 {% block docs_body %}
 {{ super() }}
 
+{% if pagename != 'index' %}
+
 <script src="https://giscus.app/client.js"
         data-repo="mrocklin/mrocklin.github.io"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
@@ -18,5 +20,7 @@
         crossorigin="anonymous"
         async>
 </script>
+
+{% endif %}
 
 {% endblock %}
