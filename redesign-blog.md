@@ -177,7 +177,7 @@ flat structures appeal to me personally.
 
 ### Automated Social Sharing
 
-I've hooked up [IFFTT](https://ifttt.com/) to Twitter and LinkedIn.
+I've hooked up [IFTTT](https://ifttt.com/) to Twitter and LinkedIn.
 I haven't found a good Mastodon solution yet.
 
 The results here aren't as good as I would do for Twitter, but it does mean I don't have to log in.
