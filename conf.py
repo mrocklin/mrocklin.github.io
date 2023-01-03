@@ -46,6 +46,8 @@ html_theme_options = {
         },
     ],
     "analytics": {"google_analytics_id": "G-ZCP1VCVST7"},
+    "secondary_sidebar_items": [],
+
 }
 
 html_favicon = "_static/favicon.ico"
