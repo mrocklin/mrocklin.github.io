@@ -7,9 +7,6 @@ author: Matthew Rocklin
 category: writing
 ---
 
-Audio-Visual Setup
-==================
-
 *HD is the new tall*
 
 How we present ourselves has unreasonable effectiveness on how our message is perceived.  Aesthetic qualities can, unfairly, be translated into a greater sense of authority.

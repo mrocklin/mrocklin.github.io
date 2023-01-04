@@ -6,8 +6,6 @@ author: Matthew Rocklin
 category: engineering
 ---
 
-# Senior Engineers
-
 Software development is both a highly technical and a highly creative process.
 Programmers are reasonably proud of their abilities and experience,
 much in the same way that expert artists or artisans can be proud of their work.

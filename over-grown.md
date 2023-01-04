@@ -6,8 +6,6 @@ author: Matthew Rocklin
 category: startups
 ---
 
-# Over Grown
-
 I've intentionally shrunk Coiled from 40 to 20 people.
 This was painful, but we're moving faster as a result.
 This article talks a little about the context around this.

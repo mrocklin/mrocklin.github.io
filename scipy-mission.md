@@ -1,13 +1,12 @@
 ---
 title: SciPy Mission
+date: 2022-08-01
 tagline:
 tags: []
 blogpost: true
 author: Matthew Rocklin
 category: engineering
 ---
-
-# SciPy Mission
 
 We just returned from the annual SciPy conference full of energy as usual.
 This conference is unique because it includes core maintainers from most of the

@@ -6,9 +6,6 @@ author: Matthew Rocklin
 category: startups
 ---
 
-Best Practices
-==============
-
 After building a successful open source project I then started a company and made many mistakes.
 
 Some folks on this path foolishly ask for my advice.

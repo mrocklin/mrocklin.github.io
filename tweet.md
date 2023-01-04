@@ -6,8 +6,6 @@ author: Matthew Rocklin
 category: writing
 ---
 
-# Ideal Tweet
-
 Tweets, like all writing, should respect the reader through brevity and structure.
 
 ## Caveats

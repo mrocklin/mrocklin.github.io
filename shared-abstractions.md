@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: programming
 ---
 
-# Dictionaries v. Objects
-
 *a story of shared abstractions*
 
 Shannon Behrens recently published a [brief post](http://jjinux.blogspot.com/2013/08/python-dicts-vs-classes.html) on the use of dictionaries and objects to store named data.  He raised the following question:
