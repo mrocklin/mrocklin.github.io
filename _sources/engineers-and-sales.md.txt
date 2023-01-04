@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: engineering
 ---
 
-# Listen to Sell
-
 -  **Engineer:** *Hey Boss, what should I know to more effectively sell our product?*
 -  **Boss:** *Resist the urge to answer technical questions*
 

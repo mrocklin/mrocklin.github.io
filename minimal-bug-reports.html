@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<meta property="og:title" content="Craft Minimal Bug Reports" />
+<meta property="og:title" content="Minimal Complete Verifiable Examples" />
   
 <meta property="og:type" content="website" />
   
@@ -16,9 +16,9 @@
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Craft Minimal Bug Reports" />
+<meta property="og:image:alt" content="Minimal Complete Verifiable Examples" />
   
-    <title>Craft Minimal Bug Reports &#8212; Matthew Rocklin</title>
+    <title>Minimal Complete Verifiable Examples &#8212; Matthew Rocklin</title>
   
   
   
@@ -453,11 +453,12 @@
             </div>
             
             
+<h1> Craft Minimal Bug Reports </h1>
+<p> <i>2018-02-28</i></p>
+
 
             <article class="bd-article" role="main">
-               <section id="craft-minimal-bug-reports">
-<h1>Craft Minimal Bug Reports<a class="headerlink" href="#craft-minimal-bug-reports" title="Permalink to this heading">#</a></h1>
-<p>Following up on a post on <a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">supporting users in open source</a>
+               <p>Following up on a post on <a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">supporting users in open source</a>
 this post lists some suggestions on how to ask a maintainer to help you with a problem.</p>
 <p>You don’t have to follow these suggestions.  They are optional.
 They make it more likely that a project maintainer will spend time helping you.
@@ -465,7 +466,7 @@ It’s important to remember that their willingness to support you for free is o
 <p>Crafting minimal bug reports is essential for the life and maintenance of community-driven open source projects.
 Doing this well is an incredible service to the community.</p>
 <section id="minimal-complete-verifiable-examples">
-<h2>Minimal Complete Verifiable Examples<a class="headerlink" href="#minimal-complete-verifiable-examples" title="Permalink to this heading">#</a></h2>
+<h1>Minimal Complete Verifiable Examples<a class="headerlink" href="#minimal-complete-verifiable-examples" title="Permalink to this heading">#</a></h1>
 <p>I strongly recommend following Stack Overflow’s guidelines on <a class="reference external" href="https://stackoverflow.com/help/mcve">Minimal Complete Verifiable Exmamples</a>.  I’ll include brief highlights here:</p>
 <p><em>… code should be …</em></p>
 <ul class="simple">
@@ -485,12 +486,12 @@ This post clarifies a few common issues.</p>
 <p>As an running example I’m going to use Pandas dataframe problems.</p>
 </section>
 <section id="don-t-post-data">
-<h2>Don’t post data<a class="headerlink" href="#don-t-post-data" title="Permalink to this heading">#</a></h2>
+<h1>Don’t post data<a class="headerlink" href="#don-t-post-data" title="Permalink to this heading">#</a></h1>
 <p>You shouldn’t post the file that you’re working with.
 Instead, try to see if you can reproduce the problem with just a few lines of data rather than the whole thing.</p>
 <p>Having to download a file, unzip it, etc. make it much less likely that someone will actually run your example in their free time.</p>
 <section id="don-t">
-<h3>Don’t<a class="headerlink" href="#don-t" title="Permalink to this heading">#</a></h3>
+<h2>Don’t<a class="headerlink" href="#don-t" title="Permalink to this heading">#</a></h2>
 <p>I’ve uploaded my data to Dropbox and you can get it here: <span class="xref myst">my-data.csv.gz</span></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;my-data.csv.gz&#39;</span><span class="p">)</span>
@@ -498,7 +499,7 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 </div>
 </section>
 <section id="do">
-<h3>Do<a class="headerlink" href="#do" title="Permalink to this heading">#</a></h3>
+<h2>Do<a class="headerlink" href="#do" title="Permalink to this heading">#</a></h2>
 <p>You should be able to copy-paste the following to get enough of my data to cause the problem:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -515,14 +516,14 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 </section>
 </section>
 <section id="actually-don-t-include-your-data-at-all">
-<h2>Actually don’t include your data at all<a class="headerlink" href="#actually-don-t-include-your-data-at-all" title="Permalink to this heading">#</a></h2>
+<h1>Actually don’t include your data at all<a class="headerlink" href="#actually-don-t-include-your-data-at-all" title="Permalink to this heading">#</a></h1>
 <p>Actually, your data probably has lots of information that is very specific to
 your application.  Your eyes gloss over it but a maintainer doesn’t know what
 is relevant and what isn’t, so it will take them time to digest it if you
 include it.  Instead see if you can reproduce your same failure with artificial
 or random data.</p>
 <section id="id1">
-<h3>Don’t<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h2>Don’t<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>Here is enough of my data to reproduce the problem</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -538,7 +539,7 @@ or random data.</p>
 </div>
 </section>
 <section id="id2">
-<h3>Do<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h2>Do<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>My actual problem is about finding the best ranked employee over a certain time period,
 but we can reproduce the problem with this simpler dataset.
 Notice that the dates are <em>out of order</em> in this data (2000-01-02 comes after 2000-01-03).
@@ -557,7 +558,7 @@ and something that only the question-asker is capable of doing efficiently.</p>
 </section>
 </section>
 <section id="see-how-small-you-can-make-things">
-<h2>See how small you can make things<a class="headerlink" href="#see-how-small-you-can-make-things" title="Permalink to this heading">#</a></h2>
+<h1>See how small you can make things<a class="headerlink" href="#see-how-small-you-can-make-things" title="Permalink to this heading">#</a></h1>
 <p>To make it even easier, see how small you can make your data.
 For example if working with tabular data (like Pandas),
 then how many columns do you actually need to reproduce the failure?
@@ -565,7 +566,7 @@ How many rows do you actually need to reproduce the failure?
 Do the columns need to be named as you have them now or could they be just “A” and “B”
 or descriptive of the types within?</p>
 <section id="id3">
-<h3>Do<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h2>Do<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;datetime&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
@@ -576,13 +577,13 @@ or descriptive of the types within?</p>
 </section>
 </section>
 <section id="remove-unnecessary-steps">
-<h2>Remove unnecessary steps<a class="headerlink" href="#remove-unnecessary-steps" title="Permalink to this heading">#</a></h2>
+<h1>Remove unnecessary steps<a class="headerlink" href="#remove-unnecessary-steps" title="Permalink to this heading">#</a></h1>
 <p>Is every line in your example absolutely necessary to reproduce the error?
 If you’re able to delete a line of code then please do.
 Because you already understand your problem you are <em>much more efficient</em> at doing this than the maintainer is.
 They probably know more about the tool, but you know more about your code.</p>
 <section id="id4">
-<h3>Don’t<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h2>Don’t<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>The groupby step below is raising a warning that I don’t understand</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 
@@ -594,7 +595,7 @@ They probably know more about the tool, but you know more about your code.</p>
 </div>
 </section>
 <section id="id5">
-<h3>Do<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h2>Do<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
 <p>The groupby step below is raising a warning that I don’t understand</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 
@@ -604,7 +605,7 @@ They probably know more about the tool, but you know more about your code.</p>
 </section>
 </section>
 <section id="use-syntax-highlighting">
-<h2>Use Syntax Highlighting<a class="headerlink" href="#use-syntax-highlighting" title="Permalink to this heading">#</a></h2>
+<h1>Use Syntax Highlighting<a class="headerlink" href="#use-syntax-highlighting" title="Permalink to this heading">#</a></h1>
 <p>When using Github you can enclose code blocks in triple-backticks (the
 character on the top-left of your keyboard on US-standard QWERTY keyboards).
 It looks like this:</p>
@@ -615,11 +616,11 @@ x = 1
 </div>
 </section>
 <section id="provide-complete-tracebacks">
-<h2>Provide complete tracebacks<a class="headerlink" href="#provide-complete-tracebacks" title="Permalink to this heading">#</a></h2>
+<h1>Provide complete tracebacks<a class="headerlink" href="#provide-complete-tracebacks" title="Permalink to this heading">#</a></h1>
 <p>You know all of that stuff between your code and the exception that is hard to
 make sense of?  You should include it.</p>
 <section id="id6">
-<h3>Don’t<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h2>Don’t<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>I get a ZeroDivisionError from the following code:
 
 ```python
@@ -632,7 +633,7 @@ div(1, 0)
 </div>
 </section>
 <section id="id7">
-<h3>Do<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h2>Do<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>I get a ZeroDivisionError from the following code:
 
 ```python
@@ -689,7 +690,7 @@ ZeroDivisionError: division by zero
 </div>
 </section>
 <section id="ask-questions-in-public-places">
-<h3>Ask Questions in Public Places<a class="headerlink" href="#ask-questions-in-public-places" title="Permalink to this heading">#</a></h3>
+<h2>Ask Questions in Public Places<a class="headerlink" href="#ask-questions-in-public-places" title="Permalink to this heading">#</a></h2>
 <p>When raising issues you often have a few possible locations:</p>
 <ol class="arabic simple">
 <li><p>GitHub issue tracker</p></li>
@@ -712,7 +713,7 @@ users who will have a similar problem in the future, see your well-crafted bug
 report, and learn from the resulting conversation.</p>
 </section>
 <section id="my-personal-preferences">
-<h3>My personal preferences<a class="headerlink" href="#my-personal-preferences" title="Permalink to this heading">#</a></h3>
+<h2>My personal preferences<a class="headerlink" href="#my-personal-preferences" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>For user questions like “What is the right way to do X?” I prefer Stack Overflow.</p></li>
 <li><p>For bug reports like “I did X, I’m pretty confident that it should work, but I
@@ -730,7 +731,6 @@ You should check the documentation of the project you’re dealing with to learn
 how they like to support users.</p>
 </section>
 </section>
-</section>
 
 <div class="section">
     
@@ -746,8 +746,8 @@ how they like to support users.</p>
   <span>&nbsp;</span>
   <span style="float: right">
      
-    <a href="slack-github.html">
-      Why I Avoid Slack <i
+    <a href="maintainer.html">
+      Maintainers <i
         class="fa fa-arrow-circle-right"
       ></i
       >

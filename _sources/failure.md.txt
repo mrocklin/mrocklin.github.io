@@ -6,9 +6,6 @@ author: Matthew Rocklin
 category: startups
 ---
 
-Failure
-=======
-
 Most startups fail, and yet most CEOs project inevitable success.  What gives?
 
 I can explain this in one of two ways:

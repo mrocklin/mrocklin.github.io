@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: programming
 ---
 
-# Craft Minimal Bug Reports
-
 Following up on a post on [supporting users in open source](https://matthewrocklin.com/blog/work/2016/08/25/supporting-users)
 this post lists some suggestions on how to ask a maintainer to help you with a problem.
 

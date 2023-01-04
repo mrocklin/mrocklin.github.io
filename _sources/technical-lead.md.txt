@@ -6,9 +6,6 @@ author: Matthew Rocklin
 category: engineering
 ---
 
-# Tech Leads
-
-
 What is a technical lead?
 -------------------------
 

@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: writing
 ---
 
-# Short Attention Span
-
 Speaking truth is easy.  Getting people to listen is hard.
 
 

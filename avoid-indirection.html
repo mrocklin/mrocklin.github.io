@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<meta property="og:title" content="Avoid Indirection" />
+<meta property="og:title" content="We are taught to hide away details" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="https://matthewrocklin.com/avoid-indirection.html" />
   
-<meta property="og:description" content="This post argues for avoiding indirection in community code. We are taught to hide away details: I often see code where authors abstract away details by placing them in some external function. Here..." />
+<meta property="og:description" content="This post argues for avoiding indirection in community code. I often see code where authors abstract away details by placing them in some external function. Here is a toy example: Before indirectio..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Avoid Indirection" />
+<meta property="og:image:alt" content="We are taught to hide away details" />
   
-    <title>Avoid Indirection &#8212; Matthew Rocklin</title>
+    <title>We are taught to hide away details &#8212; Matthew Rocklin</title>
   
   
   
@@ -453,17 +453,18 @@
             </div>
             
             
+<h1> Avoid Indirection </h1>
+<p> <i>2019-06-23</i></p>
+
 
             <article class="bd-article" role="main">
-               <section id="avoid-indirection">
-<h1>Avoid Indirection<a class="headerlink" href="#avoid-indirection" title="Permalink to this heading">#</a></h1>
-<p>This post argues for avoiding indirection in community code.</p>
+               <p>This post argues for avoiding indirection in community code.</p>
 <section id="we-are-taught-to-hide-away-details">
-<h2>We are taught to hide away details<a class="headerlink" href="#we-are-taught-to-hide-away-details" title="Permalink to this heading">#</a></h2>
+<h1>We are taught to hide away details<a class="headerlink" href="#we-are-taught-to-hide-away-details" title="Permalink to this heading">#</a></h1>
 <p>I often see code where authors abstract away details by placing them in some
 external function.  Here is a toy example:</p>
 <section id="before-indirection">
-<h3>Before indirection<a class="headerlink" href="#before-indirection" title="Permalink to this heading">#</a></h3>
+<h2>Before indirection<a class="headerlink" href="#before-indirection" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
 
 <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">):</span>
@@ -472,7 +473,7 @@ external function.  Here is a toy example:</p>
 </div>
 </section>
 <section id="after-indirection">
-<h3>After indirection<a class="headerlink" href="#after-indirection" title="Permalink to this heading">#</a></h3>
+<h2>After indirection<a class="headerlink" href="#after-indirection" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
 
 <span class="k">if</span> <span class="n">is_foolike</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -505,7 +506,7 @@ move on.</p>
 </section>
 </section>
 <section id="the-case-to-avoid-indirection">
-<h2>The case to avoid indirection<a class="headerlink" href="#the-case-to-avoid-indirection" title="Permalink to this heading">#</a></h2>
+<h1>The case to avoid indirection<a class="headerlink" href="#the-case-to-avoid-indirection" title="Permalink to this heading">#</a></h1>
 <p>However, there is also a cost to this behavior.
 When a new reader encounters this code,
 they need to jump between many function definitions in many files.
@@ -535,7 +536,7 @@ code than is original development.  Because of this, I often encourage
 developers to avoid abstraction, and “please inline this function definition”.</p>
 </section>
 <section id="but-functions-are-still-a-good-idea">
-<h2>But functions are still a good idea<a class="headerlink" href="#but-functions-are-still-a-good-idea" title="Permalink to this heading">#</a></h2>
+<h1>But functions are still a good idea<a class="headerlink" href="#but-functions-are-still-a-good-idea" title="Permalink to this heading">#</a></h1>
 <p>Just to be clear,
 there are plenty of reasons to separate complex logic into multiple functions,
 particularly when there is repetition,
@@ -545,9 +546,8 @@ There is some balance to find here.</p>
 that is felt more acutely by everyone reading the code except the original author.</p>
 </section>
 <section id="further-reading">
-<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
+<h1>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h1>
 <p>This post extends the broad theme in the post <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/27/write-dumb-code">Write Dumb Code</a></p>
-</section>
 </section>
 
 <div class="section">

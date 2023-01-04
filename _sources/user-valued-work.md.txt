@@ -6,8 +6,6 @@ author: Matthew Rocklin
 category: engineering
 ---
 
-# User Valued Work
-
 We often need to balance prioritization between user-facing work and internal
 or developer-facing work.  It's helpful to distinguish between these in
 conversations of prioritization and measuring success.

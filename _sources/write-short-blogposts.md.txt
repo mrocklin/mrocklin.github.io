@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: writing
 ---
 
-# Short Blogposts
-
 I encourage my colleagues to write blogposts more frequently.
 This is for a few reasons:
 

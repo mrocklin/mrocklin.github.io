@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<meta property="og:title" content="Small Scope Reviews" />
+<meta property="og:title" content="Summary" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="https://matthewrocklin.com/fast-review.html" />
   
-<meta property="og:description" content="This is a fast blogpost please excuse the brevity. Summary: A fast review and merge cycle is incredibly valuable, When reviewing, consider highlighting which comments are obligatory because they st..." />
+<meta property="og:description" content="This is a fast blogpost please excuse the brevity. A fast review and merge cycle is incredibly valuable, When reviewing, consider highlighting which comments are obligatory because they stop some r..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Small Scope Reviews" />
+<meta property="og:image:alt" content="Summary" />
   
-    <title>Small Scope Reviews &#8212; Matthew Rocklin</title>
+    <title>Summary &#8212; Matthew Rocklin</title>
   
   
   
@@ -453,13 +453,14 @@
             </div>
             
             
+<h1> Small Scope Reviews </h1>
+<p> <i>2022-03-26</i></p>
+
 
             <article class="bd-article" role="main">
-               <section id="small-scope-reviews">
-<h1>Small Scope Reviews<a class="headerlink" href="#small-scope-reviews" title="Permalink to this heading">#</a></h1>
-<p>This is a <a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts">fast blogpost</a> please excuse the brevity.</p>
+               <p>This is a <a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts">fast blogpost</a> please excuse the brevity.</p>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>A fast review and merge cycle is incredibly valuable</p></li>
 <li><p>When reviewing, consider highlighting which comments are obligatory because
@@ -470,7 +471,7 @@ against all of the other work that can get done.</p></li>
 </ul>
 </section>
 <section id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
+<h1>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h1>
 <p>As an OSS developer I use many projects, and when I see a simple problem in a project that I can fix quickly, I like to fix it.
 For a trivial example, maybe I decide to add a type annotation to a function:</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span>
@@ -485,7 +486,7 @@ For a trivial example, maybe I decide to add a type annotation to a function:</p
 request.  I can fire this off and proceed with my normal work.</p>
 </section>
 <section id="critical-review">
-<h2>Critical review<a class="headerlink" href="#critical-review" title="Permalink to this heading">#</a></h2>
+<h1>Critical review<a class="headerlink" href="#critical-review" title="Permalink to this heading">#</a></h1>
 <p>On review, someone might helpfully mention that I actually made a mistake, and
 that this function can also return <code class="docutils literal notranslate"><span class="pre">None</span></code> in some cases.  They make the
 following suggestion:</p>
@@ -505,7 +506,7 @@ stopping my normal work to do this, but it makes total sense.  We need to
 make sure that things are correct.</p>
 </section>
 <section id="non-critical-review">
-<h2>Non-critical review<a class="headerlink" href="#non-critical-review" title="Permalink to this heading">#</a></h2>
+<h1>Non-critical review<a class="headerlink" href="#non-critical-review" title="Permalink to this heading">#</a></h1>
 <p>Another reviewer then arrives and suggests that I also type the inputs, and
 change the docstring to reflect the ambiguous typing.</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">-def ensure_bytes(s):</span>
@@ -524,7 +525,7 @@ more of a distraction.</p>
 <p>Maybe I do this anyway (it’s not hard) but I’m probably less likely to come back here in the future.</p>
 </section>
 <section id="distinguish-between-critical-bugs-and-nice-to-have-enhancements">
-<h2>Distinguish between critical bugs and nice-to-have enhancements<a class="headerlink" href="#distinguish-between-critical-bugs-and-nice-to-have-enhancements" title="Permalink to this heading">#</a></h2>
+<h1>Distinguish between critical bugs and nice-to-have enhancements<a class="headerlink" href="#distinguish-between-critical-bugs-and-nice-to-have-enhancements" title="Permalink to this heading">#</a></h1>
 <p>It’s great to make suggestions on PRs for enhancements or how things might be
 improved.  However, we should always remember to mark them as optional for PR
 authors.</p>
@@ -532,7 +533,7 @@ authors.</p>
 improvements are already in.</p>
 </section>
 <section id="prioritize-ruthlessly">
-<h2>Prioritize ruthlessly<a class="headerlink" href="#prioritize-ruthlessly" title="Permalink to this heading">#</a></h2>
+<h1>Prioritize ruthlessly<a class="headerlink" href="#prioritize-ruthlessly" title="Permalink to this heading">#</a></h1>
 <p>However, when we switch out of review mode, and into authoring mode, we might
 realize that the enhancements aren’t actually as important as what we were
 planning to work on.  If they’re not something that we’re likely to prioritize
@@ -548,7 +549,7 @@ we’re using our time wisely, but we often forget about this prioritization
 process when we enter review mode.</p>
 </section>
 <section id="parable">
-<h2>Parable<a class="headerlink" href="#parable" title="Permalink to this heading">#</a></h2>
+<h1>Parable<a class="headerlink" href="#parable" title="Permalink to this heading">#</a></h1>
 <p>Imagine that you need to travel from home into the city.  It’s a long distance but
 a beautiful day outside, and so you decide to walk.  You’re moving quickly so
 that you can get there and back before sunset.</p>
@@ -573,7 +574,7 @@ fully understand your situation and indeed encourage you on your way, perhaps
 even pointing you to a bus line that you didn’t know existed.</p>
 </section>
 <section id="id1">
-<h2>Summary<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h1>Summary<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <p>As we as OSS developers shift to doing professional open source maintenance we
 need to shift how we think a little.  Open source is amazing at having strong
 impact, and at collaboration, but often lacks the focus or direction of
@@ -584,7 +585,6 @@ of scope creep, and often in directions that are not primary foci of the team.</
 <p>Fast PRs also feel great, we should do more of those, if we can keep them safe.</p>
 <p><em>Total write time: 21 minutes</em></p>
 <p><em>Total edit and publish time: 2 minutes</em></p>
-</section>
 </section>
 
 <div class="section">

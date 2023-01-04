@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: programming
 ---
 
-# Biased Benchmarks
-
 *honesty is hard*
 
 *This work is supported by [Continuum Analytics](http://continuum.io)

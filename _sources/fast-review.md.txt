@@ -7,8 +7,6 @@ author: Matthew Rocklin
 category: programming
 ---
 
-# Small Scope Reviews
-
 This is a [fast blogpost](https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts) please excuse the brevity.
 
 Summary
