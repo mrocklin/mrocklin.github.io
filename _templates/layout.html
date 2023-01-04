@@ -7,7 +7,7 @@
 {%- endif %}
 
 {%- if meta is mapping and "date" in meta %}
-<p> <i>{{meta.get("date") }}</i></p>
+<p> <i> Originally authored {{meta.get("date") }}</i></p>
 {%- endif %}
 
 {{ super() }}
