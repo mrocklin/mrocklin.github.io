@@ -1,5 +1,15 @@
   <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+
+{%- if meta is mapping and "date" in meta %}
+<p aria-level="2" class="caption" role="heading">
+  <span class="caption-text">
+    <i>Originally authored {{meta.get("date") }}</i>
+  </span>
+</p>
+<hr/>
+{%- endif %}
+
   <p class="bd-links__title" role="heading" aria-level="1">
     Best Of
   </p>
