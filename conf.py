@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 
-project = "Matthew Rocklin"
+project = "Matthew Rocklin's Working Notes"
 copyright = "2022, Matthew Rocklin"
 author = "Matthew Rocklin"
 
@@ -73,6 +73,8 @@ blog_authors = {
 }
 
 html_extra_path = []
+
+ogp_use_first_image = True
 
 
 # Panels config
