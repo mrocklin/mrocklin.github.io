@@ -74,8 +74,6 @@ blog_authors = {
 
 html_extra_path = []
 
-ogp_use_first_image = True
-
 
 # Panels config
 panels_add_bootstrap_css = False
