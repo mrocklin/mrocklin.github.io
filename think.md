@@ -59,7 +59,7 @@ more clearly.
 *You're smart.  You have a brain.  Use it.*
 
 Instead, question your situation, make a rational decision, and start moving
-forward.  Assess frequently, own to being wrong, and course correct
+forward.  Assess frequently, own up to being wrong, and course correct
 shamelessly.
 
 This is hard work!  This is also your job.
