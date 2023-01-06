@@ -1,5 +1,6 @@
 ---
 title: Think for yourself
+og:title: Think for yourself
 tagline: ...
 date: 2022-12-26
 blogpost: true

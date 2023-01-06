@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-06T20:56:20.878208+00:00</updated>
+  <updated>2023-01-06T21:26:31.631351+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -3871,7 +3871,7 @@ so that you don’t have to deal with batteries&lt;/p&gt;&lt;/li&gt;
 historical set of rules that “just work”.  Your best bet is to question
 everything, apply rational thought, and course correct shamelessly.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 17)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 18)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;section id="background"&gt;
@@ -3888,7 +3888,7 @@ too.  The more quickly you grow, the more frequently you find yourself unsure
 of how to act.  It makes sense to research and ask for advice, but my
 experience is that you shouldn’t weigh historical advice too heavily.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 34)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 35)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -3909,7 +3909,7 @@ knowing that no else is likely to do a better job.&lt;/p&gt;
 &lt;p&gt;Knowing that others are wrong can remove paralysis and free you to think
 more clearly.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 57)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/think.md&lt;/span&gt;, line 58)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -3949,7 +3949,7 @@ This article discusses the reasoning behind the new design.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Experiment with automation to integrate with social media&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 27)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 28)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;section id="motivation"&gt;
@@ -4001,7 +4001,7 @@ Here are a few:&lt;/p&gt;
 I’ve shared these manually with hundreds of people,
 and they get plenty of traffic from strangers.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 80)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 81)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -4102,7 +4102,7 @@ I haven’t found a good Mastodon solution yet.&lt;/p&gt;
 &lt;p&gt;The results here aren’t as good as I would do for Twitter, but it does mean I don’t have to log in.
 Also, I never used to engage at all on LinkedIn, and so this will help greatly over there.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 183)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/redesign-blog.md&lt;/span&gt;, line 184)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;

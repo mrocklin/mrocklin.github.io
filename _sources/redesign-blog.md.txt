@@ -1,5 +1,6 @@
 ---
 title: Rethinking My Website and Blog
+og:title: Rethinking My Website and Blog
 date: 2023-01-02
 blogpost: true
 author: Matthew Rocklin
