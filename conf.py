@@ -44,6 +44,11 @@ html_theme_options = {
             "url": "https://fosstodon.org/@mrocklin",
             "icon": "fa-brands fa-mastodon",
         },
+        {
+            "name": "Atom Feed",
+            "url": "https://matthewrocklin.com/atom.xml",
+            "icon": "fa-solid fa-rss"
+        }
     ],
     "analytics": {"google_analytics_id": "G-ZCP1VCVST7"},
     "secondary_sidebar_items": [],
