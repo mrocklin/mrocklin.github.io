@@ -5,3 +5,4 @@ _build
 */.ipynb_checkpoints/*
 .tox
 .nox
+.idea/
