@@ -1,5 +1,6 @@
 ---
-title: Revenue Types
+title: Revenue
+og:title: Startup Revenue
 date: 2022-07-25
 blogpost: true
 author: Matthew Rocklin
