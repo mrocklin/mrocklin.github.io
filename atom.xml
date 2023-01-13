@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-11T07:55:45.940755+00:00</updated>
+  <updated>2023-01-13T14:42:11.831169+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -2592,7 +2592,7 @@ of scope creep, and often in directions that are not primary foci of the team.&l
   </entry>
   <entry>
     <id>https://matthewrocklin.com/startup-revenue.html</id>
-    <title>Revenue Types</title>
+    <title>Revenue</title>
     <updated>2022-07-25T00:00:00+00:00</updated>
     <author>
       <name>Matthew Rocklin</name>
@@ -2610,7 +2610,7 @@ This blog goes through a variety of different kinds of revenue that I think are
 different kinds of good and bad.  Throughout these examples I draw from on my
 single experience selling open source software in the data infrastructure space.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 24)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 25)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;section id="consulting-services"&gt;
@@ -2630,7 +2630,7 @@ intentionally).&lt;/p&gt;
 &lt;p&gt;Typically these contracts are hourly.  I’ve seen rates anywhere from &lt;em&gt;$150/hr&lt;/em&gt; to
 &lt;em&gt;$1000/hr&lt;/em&gt;.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 44)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 45)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -2652,7 +2652,7 @@ not a team that needs to be dependably employed)&lt;/p&gt;
 &lt;p&gt;Typically these are one-off fixed-price contracts.  I’ve seen contracts from
 &lt;em&gt;$50,000&lt;/em&gt; to &lt;em&gt;$1,000,000&lt;/em&gt;.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 65)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 66)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -2679,7 +2679,7 @@ this nature are doable between larger companies.  I typically have to convince
 business people that this is ARR, despite the fact that it’s definitely
 annually recurring revenue.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 91)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 92)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -2704,7 +2704,7 @@ may not have permissions to touch that software directly, etc..&lt;/p&gt;
 Technologies like Kubernetes and “on-prem cloud” reduce (but don’t eliminate)
 this pain.&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 115)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 116)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
@@ -2724,7 +2724,7 @@ convincing customers that your internal systems are safe.  This will be easy in
 some sectors (SMBs, non-sensitive industries) but harder in others (Large
 Enterprise, finance, government, etc.).&lt;/p&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 132)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/startup-revenue.md&lt;/span&gt;, line 133)&lt;/p&gt;
 &lt;p&gt;Document headings start at H2, not H1 [myst.header]&lt;/p&gt;
 &lt;/aside&gt;
 &lt;/section&gt;
