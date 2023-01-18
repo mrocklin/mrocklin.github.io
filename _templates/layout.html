@@ -1,18 +1,9 @@
 {%- extends "pydata_sphinx_theme/layout.html" %}
 
 {%- block htmltitle %}
-
-{%- if meta is mapping and "title" in meta %}
-<title>{{ meta.get("title")|striptags|e }}{{ titlesuffix }}</title>
-{%- endif %}
-
 {%- endblock %}
 
 {% block docs_body %}
-
-{%- if meta is mapping and "title" in meta %}
-<h1> {{ meta.get("title") }} </h1>
-{%- endif %}
 
 {{ super() }}
 

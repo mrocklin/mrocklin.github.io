@@ -6,6 +6,9 @@ author: Matthew Rocklin
 category: programming
 ---
 
+Write Tests
+===========
+
 Tests are important for community driven open source software.
 This post contains brief reasons why you should test your code, particularly if
 you submit changes to existing open source projects.

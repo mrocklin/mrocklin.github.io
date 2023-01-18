@@ -7,6 +7,9 @@ author: Matthew Rocklin
 category: engineering
 ---
 
+Stability Bias
+==============
+
 We often optimize more for current users than future users.
 
 Stability often arises as a concern when proposing changes.  I often hear

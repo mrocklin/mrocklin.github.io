@@ -1,10 +1,13 @@
 ---
-title: Metrics
+title: Startup Metrics
 date: 2020-10-28
 blogpost: true
 author: Matthew Rocklin
 category: startups
 ---
+
+Startup Metrics
+===============
 
 Common open source software (OSS) / venture capital (VC) metrics are flawed.
 This surprises no one; metrics are hard.

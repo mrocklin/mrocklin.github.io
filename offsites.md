@@ -6,6 +6,9 @@ author: Matthew Rocklin
 category: startups
 ---
 
+Offsites
+========
+
 I love remote work, but sometimes it sucks.  Offsites can help.
 
 Motivation

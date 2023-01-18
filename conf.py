@@ -103,6 +103,7 @@ jupyter_execute_notebooks = "off"
 rediraffe_redirects = {
     "startups/best-practices": "startup-best-practices",
     "programming/minimal-bug-reports": "minimal-bug-reports",
+    "programming/minimal-bug-reports/index": "minimal-bug-reports/",
 }
 
 def setup(app):
