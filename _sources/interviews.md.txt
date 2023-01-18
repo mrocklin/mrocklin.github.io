@@ -7,6 +7,9 @@ author: Matthew Rocklin
 category: startups
 ---
 
+Interviews
+==========
+
 Interviewing is hard.  It's also important to do well.
 
 A good/bad match can be transformative/terrible for both the company and the

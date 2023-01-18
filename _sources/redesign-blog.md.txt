@@ -7,6 +7,9 @@ author: Matthew Rocklin
 category: writing
 ---
 
+Rethinking My Website and Blog
+==============================
+
 *How we read and write shapes how we think*
 
 Twitter chaos made us rethink our engagement on the web.

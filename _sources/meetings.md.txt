@@ -7,6 +7,9 @@ category: startups
 image: 2
 ---
 
+Meetings
+========
+
 I cancelled all my regular meetings and logged off of Slack.  It has made a
 huge difference.
 

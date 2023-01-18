@@ -8,6 +8,9 @@ author: Matthew Rocklin
 category: engineering
 ---
 
+SciPy Mission
+=============
+
 We just returned from the annual SciPy conference full of energy as usual.
 This conference is unique because it includes core maintainers from most of the
 core Python data projects (Jupyter, Pandas, Numpy, Scikit-Learn, Dask, Xarray,

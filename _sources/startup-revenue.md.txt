@@ -7,6 +7,9 @@ author: Matthew Rocklin
 category: startups
 ---
 
+Revenue
+=======
+
 VC funded startups are weird.
 They (rightly) care more about valuation than about revenue.
 Valuation depends on revenue, but only on very certain kinds of revenue.

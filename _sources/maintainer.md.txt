@@ -6,6 +6,9 @@ author: Matthew Rocklin
 category: engineering
 ---
 
+Maintainers
+===========
+
 What are the expectations and best practices for maintainers of open source software libraries?
 How can we do this better?
 

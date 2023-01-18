@@ -6,6 +6,9 @@ author: Matthew Rocklin
 category: engineering
 ---
 
+Why I Avoid Slack
+=================
+
 I avoid interacting on Slack, especially for technical conversations around
 open source software.  Instead, I encourage colleagues to have technical and
 design conversations on GitHub, or some other system that is public, permanent,

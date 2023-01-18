@@ -8,6 +8,9 @@ category: startups
 author: Matthew Rocklin
 ---
 
+Think for Yourself
+==================
+
 *No one knows how to do your job.  Look for answers from within, not without.*
 
 In highly dynamic environments (tech, startups, zombie apocalypse) there is no

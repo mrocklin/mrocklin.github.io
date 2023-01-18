@@ -6,19 +6,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<meta property="og:title" content="Why we don’t test." />
+<meta property="og:title" content="Write Tests" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="https://matthewrocklin.com/write-tests.html" />
   
-<meta property="og:description" content="Tests are important for community driven open source software. This post contains brief reasons why you should test your code, particularly if you submit changes to existing open source projects. A..." />
+<meta property="og:description" content="Tests are important for community driven open source software. This post contains brief reasons why you should test your code, particularly if you submit changes to existing open source projects. W..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Why we don’t test." />
+<meta property="og:image:alt" content="Write Tests" />
   
-<title>Write Tests &#8212; Matthew Rocklin</title>
   
   
   
@@ -482,15 +481,16 @@
             </div>
             
             
-<h1> Write Tests </h1>
 
 
             <article class="bd-article" role="main">
-               <p>Tests are important for community driven open source software.
+               <section id="write-tests">
+<h1>Write Tests<a class="headerlink" href="#write-tests" title="Permalink to this heading">#</a></h1>
+<p>Tests are important for community driven open source software.
 This post contains brief reasons why you should test your code, particularly if
 you submit changes to existing open source projects.</p>
 <section id="why-we-don-t-test">
-<h1>Why we don’t test.<a class="headerlink" href="#why-we-don-t-test" title="Permalink to this heading">#</a></h1>
+<h2>Why we don’t test.<a class="headerlink" href="#why-we-don-t-test" title="Permalink to this heading">#</a></h2>
 <p>A test is an extra piece of code to verify the correctness of the code we
 actually care about.</p>
 <p>If we know that our function works then the test code is extraneous.  Because
@@ -507,14 +507,14 @@ people collaborating over long periods of time then your tests become more
 important.  Your tests will likely outlive your source-code several times over.</p>
 </section>
 <section id="why-we-test">
-<h1>Why we test<a class="headerlink" href="#why-we-test" title="Permalink to this heading">#</a></h1>
+<h2>Why we test<a class="headerlink" href="#why-we-test" title="Permalink to this heading">#</a></h2>
 <p>Usually we motivate testing by emphasizing the importance of verifying
 present-day correctness, similar to <a class="reference external" href="https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system">double entry
 bookkeeping</a>.
 Verifying correctness <em>is</em> valuable, but there are several other reasons that
 are just as valuable.</p>
 <section id="establish-interfaces">
-<h2>Establish interfaces<a class="headerlink" href="#establish-interfaces" title="Permalink to this heading">#</a></h2>
+<h3>Establish interfaces<a class="headerlink" href="#establish-interfaces" title="Permalink to this heading">#</a></h3>
 <p>Write basic interface tests before you write code.  This formally establishes
 and enforces the goals of your work and forces you to think at a high-level
 before you dive into low-level details.</p>
@@ -522,7 +522,7 @@ before you dive into low-level details.</p>
 This requires mental discipline.</p>
 </section>
 <section id="communicate-with-colleagues">
-<h2>Communicate with colleagues<a class="headerlink" href="#communicate-with-colleagues" title="Permalink to this heading">#</a></h2>
+<h3>Communicate with colleagues<a class="headerlink" href="#communicate-with-colleagues" title="Permalink to this heading">#</a></h3>
 <p>You can share these high-level tests with colleagues to make sure everyone is
 on the same page before writing a solution.  It’s far easier to understand a
 function from its tests than from its source code.  Providing clean tests is a
@@ -530,7 +530,7 @@ great courtesy to your reviewers and co-workers.  This sharing process can
 happen before you invest time in writing source code.</p>
 </section>
 <section id="reduce-maintenance-burden">
-<h2>Reduce maintenance burden<a class="headerlink" href="#reduce-maintenance-burden" title="Permalink to this heading">#</a></h2>
+<h3>Reduce maintenance burden<a class="headerlink" href="#reduce-maintenance-burden" title="Permalink to this heading">#</a></h3>
 <p>If you spend ten hours developing a contribution to a project, the project
 maintainers will likely spend forty hours maintaining that contribution in the
 future, especially if it is a new feature that expands the project scope rather
@@ -538,20 +538,20 @@ than a bug fix.  Tests dramatically help to reduce maintenance burden.  We
 emphasize this in the following two points.</p>
 </section>
 <section id="guard-against-future-developers">
-<h2>Guard against future developers<a class="headerlink" href="#guard-against-future-developers" title="Permalink to this heading">#</a></h2>
+<h3>Guard against future developers<a class="headerlink" href="#guard-against-future-developers" title="Permalink to this heading">#</a></h3>
 <p>Future developers will change your code.  They will not perfectly understand
 your original intention and so will introduce bugs.  Your tests guard against
 these well-meaning but imperfectly informed future developers.</p>
 </section>
 <section id="guard-against-complex-interactions">
-<h2>Guard against complex interactions<a class="headerlink" href="#guard-against-complex-interactions" title="Permalink to this heading">#</a></h2>
+<h3>Guard against complex interactions<a class="headerlink" href="#guard-against-complex-interactions" title="Permalink to this heading">#</a></h3>
 <p>In a complex project your function likely depends on hundreds of other
 functions and interfaces throughout the project.  These change all the time.
 Tests raise a red flag whenever a proposed change would alter your
 contribution.</p>
 </section>
 <section id="enable-refactoring">
-<h2>Enable refactoring<a class="headerlink" href="#enable-refactoring" title="Permalink to this heading">#</a></h2>
+<h3>Enable refactoring<a class="headerlink" href="#enable-refactoring" title="Permalink to this heading">#</a></h3>
 <p>Software projects occasionally undergo significant internal changes.  This
 often requires a small number of developers to drastically change all parts of
 the code at once.  This is really only feasible if all relevant parts of the
@@ -562,14 +562,14 @@ from a primary Jupyter developer:</p>
 <p><em>–&#64;minrk</em></p>
 </section>
 <section id="ensure-current-correctness">
-<h2>Ensure current correctness<a class="headerlink" href="#ensure-current-correctness" title="Permalink to this heading">#</a></h2>
+<h3>Ensure current correctness<a class="headerlink" href="#ensure-current-correctness" title="Permalink to this heading">#</a></h3>
 <p>Tests ensure that the code you’ve just written is correct today for the use
 cases you’ve thought about.  When you write nice tests you always find flaws in
 your existing solution that you wouldn’t have found otherwise.</p>
 <p>This is the common argument usually presented in defense of testing.</p>
 </section>
 <section id="think-adversarially">
-<h2>Think adversarially<a class="headerlink" href="#think-adversarially" title="Permalink to this heading">#</a></h2>
+<h3>Think adversarially<a class="headerlink" href="#think-adversarially" title="Permalink to this heading">#</a></h3>
 <p>Writing tests is a good time to think adversarially about your problem.  What
 happens if I give a very large input here?  How about a negative number?  Oh,
 what happens if the user enters a value of the wrong type; do they get a
@@ -578,7 +578,7 @@ initial problem but they are important, especially if our code reaches
 end-users.</p>
 </section>
 <section id="force-good-design">
-<h2>Force good design<a class="headerlink" href="#force-good-design" title="Permalink to this heading">#</a></h2>
+<h3>Force good design<a class="headerlink" href="#force-good-design" title="Permalink to this heading">#</a></h3>
 <p>Easy-to-test code separates application logic from hard-to-test components like
 databases or network connections.  The burden of testing encourages us to
 separate complex code from complex infrastructure so that we can test each
@@ -586,20 +586,20 @@ component in isolation.  This separation promotes future code health as well as
 improved testing.</p>
 </section>
 <section id="testing-is-easy">
-<h2>Testing is easy<a class="headerlink" href="#testing-is-easy" title="Permalink to this heading">#</a></h2>
+<h3>Testing is easy<a class="headerlink" href="#testing-is-easy" title="Permalink to this heading">#</a></h3>
 <p>A single test that exercises the common case just once probably catches 70% of
 the failures.  This probably isn’t sufficient for most open-source projects but
 it’s comforting to know that your first few steps into testing are always the
 most productive.</p>
 </section>
 <section id="testing-is-hard">
-<h2>Testing is hard<a class="headerlink" href="#testing-is-hard" title="Permalink to this heading">#</a></h2>
+<h3>Testing is hard<a class="headerlink" href="#testing-is-hard" title="Permalink to this heading">#</a></h3>
 <p>Good test suites take time and thought but they’re very important.  Defining
 the correct behavior for a complex system is just as worthwhile as designing
 its implementation.</p>
 </section>
 <section id="interactive-feedback">
-<h2>Interactive feedback<a class="headerlink" href="#interactive-feedback" title="Permalink to this heading">#</a></h2>
+<h3>Interactive feedback<a class="headerlink" href="#interactive-feedback" title="Permalink to this heading">#</a></h3>
 <p>Verifying correctness by interactive sessions can take a long time for complex
 functions.  We restart our interpreter and reenter the same setup code
 repeatedly.  A quick test automates this process, often providing feedback in
@@ -609,7 +609,7 @@ as we write and save code.  Continuous feedback during coding is incredibly
 productive.</p>
 </section>
 <section id="social-pressure">
-<h2>Social pressure<a class="headerlink" href="#social-pressure" title="Permalink to this heading">#</a></h2>
+<h3>Social pressure<a class="headerlink" href="#social-pressure" title="Permalink to this heading">#</a></h3>
 <p>Finally, there is social pressure.  Few mature open source software projects
 will accept untested contributions and it is generally considered a faux pas to
 submit a contribution without tests.  If you have to write tests then you might
@@ -620,9 +620,10 @@ agree on the statement of the problem, gives you rapid interactive feedback in
 a stressful situation, and gives you an air of professionalism.</p>
 </section>
 <section id="acknowledgments">
-<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this heading">#</a></h2>
+<h3>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this heading">#</a></h3>
 <p>This post is thanks in part to discussions with
 <a class="reference external" href="https://github.com/martindurant">Martin Durant</a>.</p>
+</section>
 </section>
 </section>
 

@@ -7,6 +7,9 @@ author: Matthew Rocklin
 category: programming
 ---
 
+Avoid Indirection
+=================
+
 This post argues for avoiding indirection in community code.
 
 We are taught to hide away details
