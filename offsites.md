@@ -155,9 +155,34 @@ following morning allowing people to fly off that afternoon (or stay the extra
 day in the beautiful location).
 
 
+Mix Structured and Unstructured Time
+------------------------------------
+
+I abhor waste due to scheduling.  As a result I typically run a pretty tight
+event.  This means tracking everyone's work, redirecting people, staying on
+task, and breaking up large meandering conversations.
+
+Eventually the attendees rebel, and rightly so.  It's also important to build
+in some unstructured time for folks to explore on their own.  This happens
+naturally in the mornings and evenings, but it's also ok to spend an afternoon
+on intentionally unstructured efforts.
+
+
 Invite Visitors
 ---------------
 
-Investors or collaborators in the area may want to join for a time.  I'd
-encourage you to start the first day with just the team, but adding people over
-time can be energizing.
+Investors, collaborators, or ex-teammates in the area may want to join for a
+time.  I'd encourage you to start the first day with just the team, but adding
+people over time can be energizing.
+
+Feedback
+--------
+
+It's good to get feedback from the team so that you can iterate and improve.
+I've done this in two ways:
+
+1.  Send a form afterwards (google forms is simple) with a couple of simple
+    questions like "What did you like?", "What could improve?", and "Other
+    suggestions?" with an option to add your name
+
+2.  Spend ten minutes at the end of the offiste discussing things as a group.
