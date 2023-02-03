@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-01-31T21:26:02.789207+00:00</updated>
+  <updated>2023-02-03T13:12:37.369911+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4003,5 +4003,272 @@ last interview&lt;/p&gt;&lt;/li&gt;
     <link href="https://matthewrocklin.com/interviews.html" rel="alternate"/>
     <summary>Interviewing is hard.  It’s also important to do well.</summary>
     <published>2023-01-06T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/saas-gtm.html</id>
+    <title>SaaS Go-to-Market</title>
+    <updated>2023-02-01T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="saas-go-to-market"&gt;
+
+&lt;p&gt;Where are we on product and GTM?  What are some open questions and what should
+we do to improve?&lt;/p&gt;
+&lt;p&gt;This article gives a snapshot of where Coiled (Dask company) is on product
+development and sales and marketing / Go-to-Market (GTM).  It’s mostly written
+with internal audience in mind, but should also be helpful for other early
+stage tech/SaaS companies as an example.&lt;/p&gt;
+&lt;section id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Our product is now good enough that when people try it, they like it,
+eventually use more, and pay us real amounts of money.  🎉&lt;/p&gt;
+&lt;p&gt;But we don’t have many of these customers.  😔&lt;/p&gt;
+&lt;p&gt;How do we get more? 🤔&lt;/p&gt;
+&lt;p&gt;How did we get into this situation?  What should we do from here?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="history"&gt;
+&lt;h2&gt;History&lt;/h2&gt;
+&lt;p&gt;For the first couple years of the company, the product kinda sucked.  That’s
+ok!  We were still a baby company learning how to walk.  At the time we also
+had a mature sales organization that did its best to sell this kinda-sucky
+product.  This was inefficient and frustrating for all involved.&lt;/p&gt;
+&lt;p&gt;In May of last year we let go of the sales team, and a couple months later we
+let go of the the folks in marketing who owned voice/messaging (this wasn’t
+particularly strong either).  We became very engineering-forward as a company.
+The platform team became staffed only by very senior engineers who had full
+agency.&lt;/p&gt;
+&lt;p&gt;This was great!  Our product evolved quickly, our Twitter account stopped
+sounding spammy, and our website started to make sense!&lt;/p&gt;
+&lt;p&gt;What’s more, platform users started to use us more, and became happier.  Usage
+ticked up a couple months later and really started to take off recently as we
+spread within organizations.&lt;/p&gt;
+&lt;img alt="_images/example-customer-usage.png" src="_images/example-customer-usage.png" /&gt;
+&lt;p&gt;Whereas previously we were unbalanced with a bad product and good sales, now we
+have a good product and relatively little sales experience in the company.
+What should we do?  Try to go back to our previous state?  Maybe / maybe not.
+Let’s explore our options.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="customer-profile"&gt;
+&lt;h2&gt;Customer Profile&lt;/h2&gt;
+&lt;p&gt;The kind of GTM engine we build depends on the market that we’re going after.
+This affects how we market ourselves, how we price the product, and what kind
+of sales team we build:&lt;/p&gt;
+&lt;p&gt;What choices do we have?  Mostly we break down this choice by company/team size:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Individuals:&lt;/strong&gt; we target individual data professionals to use our platform,
+kinda like Github does&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Marketing:&lt;/strong&gt; highly technical online content, maybe some events, focusing
+on ease of use and accelerating work&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Pricing:&lt;/strong&gt; mostly free with a possibility of swiping a credit card for up
+to a few hundred dollars a month (typically the budget for individual
+data professionals)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sales:&lt;/strong&gt; no sales team, must be self-serve (we can’t hand-hold
+individuals, and sales teams will want commissions)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Small teams:&lt;/strong&gt; we serve small teams of data professionals, talking mostly
+to the team lead, who cares mostly about getting work done, but also has to
+justify costs&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Marketing:&lt;/strong&gt; a mix of highly technical content with some business value
+thrown in as well&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Pricing:&lt;/strong&gt; free tier is useful for trials, but we expect to charge a few
+thousand a month, either with a corporate card or with a purchase order
+(typically the budget for a team lead without getting higher approval)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sales:&lt;/strong&gt; maybe rely on a self-serve motion to get people in the door,
+and then try to sell them to pre-commit to greater usage with
+discounted rates.  This requires a lightweight sales team attached to
+a product that can sell itself.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enterprise:&lt;/strong&gt; we target entire companies, probably talking to some IT
+architect, or a CTO.  They care about accelerating the company, and also
+about costs, security, and generally not causing a panic.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Marketing:&lt;/strong&gt; focus on business value with a simpler technical message.
+Some online content but direct outreach.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Pricing:&lt;/strong&gt; $100,000-$1,000,000s, probably after a POC and with some
+healthy support contract thrown in&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sales:&lt;/strong&gt; this is a high contact sales process that takes many months.
+This requires a sizable and expensive team working full time on chasing
+down new deals and working those deals to completion.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As a company we could play at any of these levels.  Dask has great community
+adoption and could leverage those users into a strong individual userbase (like
+GitHub).  Alternatively, we’re also heavily used inside of large organizations
+(banks, government, healthcare, etc.) that are used to paying millions of
+dollars for a product like ours, and so an Enterprise play could also make
+sense.&lt;/p&gt;
+&lt;p&gt;Which market we go after affects our choices about sales and marketing.  What
+do we choose?&lt;/p&gt;
+&lt;p&gt;Most of the money is in large enterprise sales.  It’s hard to find a company in
+our space (data infrastructure) bringing in hundreds of millions of dollars
+where most of that money doesn’t come from large enterprise contracts.  We have
+a few of these already, mostly focused around &lt;a class="reference external" href="https://www.coiled.io/blog/enterprise-dask-support"&gt;Dask
+support&lt;/a&gt;, and we like them.&lt;/p&gt;
+&lt;p&gt;However, selling into these companies has a long lead time, long iteration
+cycles, and poor visibility/learning due to stringent security.  For this
+reason, we’ve focused on the less lucrative, but more informative individual
+and small teams groups.  This allows us to focus on a cloud SaaS product, which
+gives us a lot of visibility into usage, which we leverage to accelerate
+product velocity.&lt;/p&gt;
+&lt;p&gt;Our thesis is that by starting with small teams we can more rapidly iterate
+towards a delightful experience, which we can then pivot to larger enterprise
+for real money.  Will that work?  🤷 I think so?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="what-team-is-best"&gt;
+&lt;h2&gt;What team is best?&lt;/h2&gt;
+&lt;p&gt;Given this focus on individuals and small teams, what kind of GTM team do we
+need?  Our previous sales team had SDRs, account executives, sales engineers,
+customer support, customer success managers, and more.  This team made lots of
+sense for a large enterprise sales motion, but it may not make as much sense
+for individuals (no sense) and small teams (maybe some sense).&lt;/p&gt;
+&lt;section id="what-did-we-like-about-our-old-team"&gt;
+&lt;h3&gt;What did we like about our old team?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Outreach:&lt;/strong&gt; They reached out directly to potential customers&lt;/p&gt;
+&lt;p&gt;Our marketing at the time was not good (it’s still not good).  Lots of
+people said “Of course we love Dask, but who’s Coiled?”.  The sales team,
+through direct outreach, was able to shore us up a bit here.&lt;/p&gt;
+&lt;p&gt;This feels like a bandaid though.  Our marketing should be doing outreach for us.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt; They explained our product to customers&lt;/p&gt;
+&lt;p&gt;Same as above, we didn’t describe ourselves well, and so prospects had a
+bunch of questions like “do you deploy in my cloud”, “are you secure”,
+“how does this compare to Databricks?”, and “how much will this cost me?”
+which our sales representatives were able to answer and bring people in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Onboarding:&lt;/strong&gt; They helped customers onboard to the platform&lt;/p&gt;
+&lt;p&gt;The platform had issues, and the sales engineers were able to set things up
+for the customers so that they could onboard and actually use the product.&lt;/p&gt;
+&lt;p&gt;This is mostly handled today with the product (it’s much better) or with
+light touches from the engineering team itself.  I think that it’s good for
+the engineers to have this direct access.  I don’t think that I would want
+to change this today.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Customer Success:&lt;/strong&gt; They helped customers use the platform to solve business problems&lt;/p&gt;
+&lt;p&gt;Once the platform is running well for the customer, and they start really
+banging away with Dask, they eventually run into some problem with Dask or
+the PyData system generally.&lt;/p&gt;
+&lt;p&gt;We don’t have a good answer for this today, and could become better.  Our
+OSS Dask engineers are asking for more customer exposure, and this could be
+a good fit, as long as we figure out how to make it informative rather than
+distracting, which is hard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Tracking:&lt;/strong&gt; They were organized about all of the prospects and customers and who needed
+what to move along&lt;/p&gt;
+&lt;p&gt;There are lots of people using this platform, and we’re not mature enough
+where everyone gets to their ideal state (using us as much as possible as
+efficiently as possible) without help (really, no product is this mature).
+The sales team was somewhat organized here.&lt;/p&gt;
+&lt;p&gt;We don’t have a good solution for this today.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Closing:&lt;/strong&gt; They navigated organizations to find buyers&lt;/p&gt;
+&lt;p&gt;When an individual without purchasing power arrives, the sales team was
+good at saying “Do you have the ability to buy our product?  No?  Who does?
+Can I ask you to set up an introduction?” and then once the sale was
+complete they helped to hound the customer’s internal bureaucracy to make
+sure that money flowed through.&lt;/p&gt;
+&lt;p&gt;This is less important for small team sales than for enterprise customers,
+but there is still non-trivial value.  Today I / our director of finance
+does this.  It’s been ok but not great.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="focus-on-marketing"&gt;
+&lt;h3&gt;Focus on Marketing&lt;/h3&gt;
+&lt;p&gt;A lot of the tasks above should have been automated (outreach, explanation,
+onboarding), but they weren’t.  We used people/conversations as a replacement
+for technology/writing.&lt;/p&gt;
+&lt;p&gt;Mostly, we lacked a strong product marketing function and made up for it with a
+lot of hands-on outreach and explaining.  I’m entirely in-favor of doing
+hands-on work to learn, but we didn’t then translate those learnings into
+long-term assets that help &lt;em&gt;everyone&lt;/em&gt; understand the value that we provide
+without having to tell them one-by-one.&lt;/p&gt;
+&lt;p&gt;Because of this experience, this time around I’d like to focus on on product
+marketing, this includes assets like …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Architecture diagrams / videos&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Build vs buy comparisons in a few common situations (individual, small
+team, larger more active team) and how we’re always the better choice&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Our Security model and FAQ about data privacy&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Common use cases&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even if we were to hire out a sales leader for more outreach/tracking/closing
+I’d want to have these things first.  Otherwise I think our newly hired sales
+leader would be be spinning their wheels (and those are very expensive wheels).&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="question-self-serve-or-direct-sales"&gt;
+&lt;h2&gt;Question: self-serve or direct sales?&lt;/h2&gt;
+&lt;p&gt;I like the idea of self-serve.  The story goes like this, a user …:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Learns about our product&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Uses our product for free and loves it&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Uses it enough to start paying money and can do that easily in the product
+with a credit card&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Uses it even more, to the extent where they need to get authorization and
+have an actual conversation&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples of this motion include GitHub, AWS, and Atlassian.  It’s great because
+you can focus on building an amazing user experience, rather than focusing all
+of your energy and money on sales.&lt;/p&gt;
+&lt;p&gt;In principle this sounds great!  It speaks to my inner-engineer and
+community-oriented mindset.  However, almost no company in our space makes most
+of their money this way.  Most companies do direct outreach and sell a complete
+package to companies from the start.  The self-serve nature of the product ends
+up being useful for companies to quickly do proof-of-concept (POC) work, and
+for students, but that’s it.&lt;/p&gt;
+&lt;p&gt;Self-serve feels right, but imprudent.  This is still an open question for me.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="question-straight-to-enterprise"&gt;
+&lt;h2&gt;Question: Straight to Enterprise?&lt;/h2&gt;
+&lt;p&gt;Big companies use Dask.  We’re not like other early stage tech companies that
+are trying to get their name out there.  We regularly turn away big companies
+with lots of cash looking for a self-managed Dask management platform.  Maybe
+we should stop turning them away, and instead lean into this?&lt;/p&gt;
+&lt;p&gt;This goes against the common wisdom of the day which says “go cloud”, “go
+broad”, and “go managed” which, from a learning and velocity perspective, I
+like.  But it does with the timeless wisdom of “go where the money is”.&lt;/p&gt;
+&lt;p&gt;I intend to stay with Cloud SaaS, which kind of precludes Enterprise until we
+get a lot more mature / trusted.  However we’ll experiment with deploying our
+platform in a self-managed way in a couple of friendly customers to see what
+the experience is like.  This is an experiment and a distraction from focus,
+but I think a good one if we can do it well with the right partners.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="who-to-hire"&gt;
+&lt;h2&gt;Who to hire?&lt;/h2&gt;
+&lt;p&gt;Right now three of us in the company think broadly about the entire GTM strategy:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;me&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;product owner / engineering manager&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;finance director&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s good for the three of us to have this exposure (it informs how we do our
+normal jobs) but we’re all also pretty busy, and so are doing a suboptimal job
+of the GTM work.&lt;/p&gt;
+&lt;p&gt;I think I want to hire a single high performing individual who can flex between
+product marketing and some salesmanship, as well as be organized and creative.
+Over time, once they’re successful, they’ll hire a team around them.&lt;/p&gt;
+&lt;p&gt;How do we find such a wonderful person?  Classic sales roles are typically not
+sufficiently technical for a product like ours, and they tend to be a bit more
+mechanical.  Classic marketers tend to be creative, but lack the technical
+and sales experience.  Maybe a product marketing manager or a product manager?
+Our ideal GTM role doesn’t fit into any traditional job description.  Probably
+I’m looking for someone who has done a couple of these jobs, and is used to
+&lt;a class="reference internal" href="think.html#think"&gt;&lt;span class="std std-ref"&gt;early stage thinking&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Right now I’m talking to lots of people.  Do you know of someone like this?
+Please put us in touch!&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/saas-gtm.html" rel="alternate"/>
+    <summary>Where are we on product and GTM?  What are some open questions and what should
+we do to improve?</summary>
+    <published>2023-02-01T00:00:00+00:00</published>
   </entry>
 </feed>

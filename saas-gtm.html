@@ -6,17 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-<meta property="og:title" content="Articles" />
+<meta property="og:title" content="SaaS Go-to-Market" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/articles.html" />
+<meta property="og:url" content="https://matthewrocklin.com/saas-gtm.html" />
   
-<meta property="og:description" content="SaaS Go-to-Market Where are we on product and GTM? What are some open questions and what should we do to improve?, How I Conduct an Interview Interviewing is hard. It’s also important to do well., ..." />
+<meta property="og:description" content="Where are we on product and GTM? What are some open questions and what should we do to improve? This article gives a snapshot of where Coiled (Dask company) is on product development and sales and ..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Articles" />
+<meta property="og:image:alt" content="SaaS Go-to-Market" />
   
   
   
@@ -60,11 +60,10 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'articles';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'saas-gtm';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Matthew Rocklin" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en"> 
 <link
@@ -169,8 +168,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -301,8 +300,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -399,6 +398,12 @@
   <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item">  <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+<p aria-level="2" class="caption" role="heading">
+  <span class="caption-text">
+    <i>Originally authored 2023-02-01</i>
+  </span>
+</p>
+<hr/>
 
   <p class="bd-links__title" role="heading" aria-level="1">
     Best Of
@@ -479,141 +484,278 @@
 
 
             <article class="bd-article" role="main">
-               <section id="articles">
-<h1>Articles<a class="headerlink" href="#articles" title="Permalink to this heading">#</a></h1>
-<ul class="postlist-style-none postlist">
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="saas-gtm.html">SaaS Go-to-Market</a></p>
-<p class="ablog-post-excerpt">Where are we on product and GTM?  What are some open questions and what should
+               <section id="saas-go-to-market">
+<h1>SaaS Go-to-Market<a class="headerlink" href="#saas-go-to-market" title="Permalink to this heading">#</a></h1>
+<p>Where are we on product and GTM?  What are some open questions and what should
 we do to improve?</p>
-<img alt="_images/example-customer-usage.png" class="ablog-post-excerpt" src="_images/example-customer-usage.png" />
+<p>This article gives a snapshot of where Coiled (Dask company) is on product
+development and sales and marketing / Go-to-Market (GTM).  It’s mostly written
+with internal audience in mind, but should also be helpful for other early
+stage tech/SaaS companies as an example.</p>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>Our product is now good enough that when people try it, they like it,
+eventually use more, and pay us real amounts of money.  🎉</p>
+<p>But we don’t have many of these customers.  😔</p>
+<p>How do we get more? 🤔</p>
+<p>How did we get into this situation?  What should we do from here?</p>
+</section>
+<section id="history">
+<h2>History<a class="headerlink" href="#history" title="Permalink to this heading">#</a></h2>
+<p>For the first couple years of the company, the product kinda sucked.  That’s
+ok!  We were still a baby company learning how to walk.  At the time we also
+had a mature sales organization that did its best to sell this kinda-sucky
+product.  This was inefficient and frustrating for all involved.</p>
+<p>In May of last year we let go of the sales team, and a couple months later we
+let go of the the folks in marketing who owned voice/messaging (this wasn’t
+particularly strong either).  We became very engineering-forward as a company.
+The platform team became staffed only by very senior engineers who had full
+agency.</p>
+<p>This was great!  Our product evolved quickly, our Twitter account stopped
+sounding spammy, and our website started to make sense!</p>
+<p>What’s more, platform users started to use us more, and became happier.  Usage
+ticked up a couple months later and really started to take off recently as we
+spread within organizations.</p>
+<img alt="_images/example-customer-usage.png" src="_images/example-customer-usage.png" />
+<p>Whereas previously we were unbalanced with a bad product and good sales, now we
+have a good product and relatively little sales experience in the company.
+What should we do?  Try to go back to our previous state?  Maybe / maybe not.
+Let’s explore our options.</p>
+</section>
+<section id="customer-profile">
+<h2>Customer Profile<a class="headerlink" href="#customer-profile" title="Permalink to this heading">#</a></h2>
+<p>The kind of GTM engine we build depends on the market that we’re going after.
+This affects how we market ourselves, how we price the product, and what kind
+of sales team we build:</p>
+<p>What choices do we have?  Mostly we break down this choice by company/team size:</p>
+<ol class="arabic simple">
+<li><p><strong>Individuals:</strong> we target individual data professionals to use our platform,
+kinda like Github does</p>
+<ul class="simple">
+<li><p><strong>Marketing:</strong> highly technical online content, maybe some events, focusing
+on ease of use and accelerating work</p></li>
+<li><p><strong>Pricing:</strong> mostly free with a possibility of swiping a credit card for up
+to a few hundred dollars a month (typically the budget for individual
+data professionals)</p></li>
+<li><p><strong>Sales:</strong> no sales team, must be self-serve (we can’t hand-hold
+individuals, and sales teams will want commissions)</p></li>
+</ul>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="interviews.html">How I Conduct an Interview</a></p>
-<p class="ablog-post-excerpt">Interviewing is hard.  It’s also important to do well.</p>
+<li><p><strong>Small teams:</strong> we serve small teams of data professionals, talking mostly
+to the team lead, who cares mostly about getting work done, but also has to
+justify costs</p>
+<ul class="simple">
+<li><p><strong>Marketing:</strong> a mix of highly technical content with some business value
+thrown in as well</p></li>
+<li><p><strong>Pricing:</strong> free tier is useful for trials, but we expect to charge a few
+thousand a month, either with a corporate card or with a purchase order
+(typically the budget for a team lead without getting higher approval)</p></li>
+<li><p><strong>Sales:</strong> maybe rely on a self-serve motion to get people in the door,
+and then try to sell them to pre-commit to greater usage with
+discounted rates.  This requires a lightweight sales team attached to
+a product that can sell itself.</p></li>
+</ul>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="redesign-blog.html">Rethinking My Website and Blog</a></p>
-<p class="ablog-post-excerpt"><em>How we read and write shapes how we think</em></p>
+<li><p><strong>Enterprise:</strong> we target entire companies, probably talking to some IT
+architect, or a CTO.  They care about accelerating the company, and also
+about costs, security, and generally not causing a panic.</p>
+<ul class="simple">
+<li><p><strong>Marketing:</strong> focus on business value with a simpler technical message.
+Some online content but direct outreach.</p></li>
+<li><p><strong>Pricing:</strong> $100,000-$1,000,000s, probably after a POC and with some
+healthy support contract thrown in</p></li>
+<li><p><strong>Sales:</strong> this is a high contact sales process that takes many months.
+This requires a sizable and expensive team working full time on chasing
+down new deals and working those deals to completion.</p></li>
+</ul>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="think.html">Think for yourself</a></p>
-<p class="ablog-post-excerpt"><em>No one knows how to do your job.  Look for answers from within, not without.</em></p>
+</ol>
+<p>As a company we could play at any of these levels.  Dask has great community
+adoption and could leverage those users into a strong individual userbase (like
+GitHub).  Alternatively, we’re also heavily used inside of large organizations
+(banks, government, healthcare, etc.) that are used to paying millions of
+dollars for a product like ours, and so an Enterprise play could also make
+sense.</p>
+<p>Which market we go after affects our choices about sales and marketing.  What
+do we choose?</p>
+<p>Most of the money is in large enterprise sales.  It’s hard to find a company in
+our space (data infrastructure) bringing in hundreds of millions of dollars
+where most of that money doesn’t come from large enterprise contracts.  We have
+a few of these already, mostly focused around <a class="reference external" href="https://www.coiled.io/blog/enterprise-dask-support">Dask
+support</a>, and we like them.</p>
+<p>However, selling into these companies has a long lead time, long iteration
+cycles, and poor visibility/learning due to stringent security.  For this
+reason, we’ve focused on the less lucrative, but more informative individual
+and small teams groups.  This allows us to focus on a cloud SaaS product, which
+gives us a lot of visibility into usage, which we leverage to accelerate
+product velocity.</p>
+<p>Our thesis is that by starting with small teams we can more rapidly iterate
+towards a delightful experience, which we can then pivot to larger enterprise
+for real money.  Will that work?  🤷 I think so?</p>
+</section>
+<section id="what-team-is-best">
+<h2>What team is best?<a class="headerlink" href="#what-team-is-best" title="Permalink to this heading">#</a></h2>
+<p>Given this focus on individuals and small teams, what kind of GTM team do we
+need?  Our previous sales team had SDRs, account executives, sales engineers,
+customer support, customer success managers, and more.  This team made lots of
+sense for a large enterprise sales motion, but it may not make as much sense
+for individuals (no sense) and small teams (maybe some sense).</p>
+<section id="what-did-we-like-about-our-old-team">
+<h3>What did we like about our old team?<a class="headerlink" href="#what-did-we-like-about-our-old-team" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p><strong>Outreach:</strong> They reached out directly to potential customers</p>
+<p>Our marketing at the time was not good (it’s still not good).  Lots of
+people said “Of course we love Dask, but who’s Coiled?”.  The sales team,
+through direct outreach, was able to shore us up a bit here.</p>
+<p>This feels like a bandaid though.  Our marketing should be doing outreach for us.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="audio-visual.html">Audio-Visual Setup</a></p>
-<p class="ablog-post-excerpt"><em>HD is the new tall</em></p>
-<img alt="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" class="ablog-post-excerpt" src="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" />
+<li><p><strong>Explanation:</strong> They explained our product to customers</p>
+<p>Same as above, we didn’t describe ourselves well, and so prospects had a
+bunch of questions like “do you deploy in my cloud”, “are you secure”,
+“how does this compare to Databricks?”, and “how much will this cost me?”
+which our sales representatives were able to answer and bring people in.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="stability-bias.html">Stability Bias</a></p>
-<p class="ablog-post-excerpt">We often optimize more for current users than future users.</p>
+<li><p><strong>Onboarding:</strong> They helped customers onboard to the platform</p>
+<p>The platform had issues, and the sales engineers were able to set things up
+for the customers so that they could onboard and actually use the product.</p>
+<p>This is mostly handled today with the product (it’s much better) or with
+light touches from the engineering team itself.  I think that it’s good for
+the engineers to have this direct access.  I don’t think that I would want
+to change this today.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="meetings.html">Meetings</a></p>
-<p class="ablog-post-excerpt">I cancelled all my regular meetings and logged off of Slack.  It has made a
-huge difference.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="_images/calendar-full.png"><img alt="_images/calendar-full.png" class="ablog-post-excerpt" src="_images/calendar-full.png" style="width: 100%;" /></a>
+<li><p><strong>Customer Success:</strong> They helped customers use the platform to solve business problems</p>
+<p>Once the platform is running well for the customer, and they start really
+banging away with Dask, they eventually run into some problem with Dask or
+the PyData system generally.</p>
+<p>We don’t have a good answer for this today, and could become better.  Our
+OSS Dask engineers are asking for more customer exposure, and this could be
+a good fit, as long as we figure out how to make it informative rather than
+distracting, which is hard.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="offsites.html">Offsites</a></p>
-<p class="ablog-post-excerpt">I love remote work, but sometimes it sucks.  Offsites can help.</p>
+<li><p><strong>Tracking:</strong> They were organized about all of the prospects and customers and who needed
+what to move along</p>
+<p>There are lots of people using this platform, and we’re not mature enough
+where everyone gets to their ideal state (using us as much as possible as
+efficiently as possible) without help (really, no product is this mature).
+The sales team was somewhat organized here.</p>
+<p>We don’t have a good solution for this today.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="failure.html">Failure</a></p>
-<p class="ablog-post-excerpt">Most startups fail, and yet most CEOs project inevitable success.  What gives?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-best-practices.html">Best Practices</a></p>
-<p class="ablog-post-excerpt">After building a successful open source project I then started a company and made many mistakes.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="user-valued-work.html">User Valued Work</a></p>
-<p class="ablog-post-excerpt">We often need to balance prioritization between user-facing work and internal
-or developer-facing work.  It’s helpful to distinguish between these in
-conversations of prioritization and measuring success.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="over-grown.html">Over Grown</a></p>
-<p class="ablog-post-excerpt">I’ve intentionally shrunk Coiled from 40 to 20 people.
-This was painful, but we’re moving faster as a result.
-This article talks a little about the context around this.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="scipy-mission.html">SciPy Mission</a></p>
-<p class="ablog-post-excerpt">We just returned from the annual SciPy conference full of energy as usual.
-This conference is unique because it includes core maintainers from most of the
-core Python data projects (Jupyter, Pandas, Numpy, Scikit-Learn, Dask, Xarray,
-Numba, Matplotlib and many more).  It’s an accident of history that we all
-transitioned into software development from scientific careers.  It’s a
-wonderful community of science nerds that unexpectedly changed the world.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-revenue.html">Revenue</a></p>
-<p class="ablog-post-excerpt">VC funded startups are weird.
-They (rightly) care more about valuation than about revenue.
-Valuation depends on revenue, but only on very certain kinds of revenue.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="fast-review.html">Small Scope Reviews</a></p>
-<p class="ablog-post-excerpt">This is a <a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts">fast blogpost</a> please excuse the brevity.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="technical-lead.html">Tech Leads</a></p>
-<p class="ablog-post-excerpt">Tech lead is a role for senior engineers that provides some of the leverage of
-management, while avoiding most of the administrative burden.  It’s a fun role.
-This post talks about some positive behaviors to think about should you find
-yourself in this role.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="metrics.html">Startup Metrics</a></p>
-<p class="ablog-post-excerpt">Common open source software (OSS) / venture capital (VC) metrics are flawed.
-This surprises no one; metrics are hard.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://blog.dask.org/images/dask-weekly-users.png"><img alt="Dask weekly users on documentation" class="ablog-post-excerpt" src="https://blog.dask.org/images/dask-weekly-users.png" style="width: 100%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="tweet.html">Ideal Tweet</a></p>
-<p class="ablog-post-excerpt">Tweets, like all writing, should respect the reader through brevity and structure.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://matthewrocklin.com/blog/images/tweet-video.png"><img alt="https://matthewrocklin.com/blog/images/tweet-video.png" class="ablog-post-excerpt" src="https://matthewrocklin.com/blog/images/tweet-video.png" style="width: 50%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="brevity.html">Short attention span</a></p>
-<p class="ablog-post-excerpt">Speaking truth is easy.  Getting people to listen is hard.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="engineers-and-sales.html">Listen to sell</a></p>
-<p class="ablog-post-excerpt"><strong>Engineer:</strong> <em>Hey Boss, what should I know to more effectively sell our product?</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="senior-engineer.html">Senior Engineers</a></p>
-<p class="ablog-post-excerpt">Software development is both a highly technical and a highly creative process.
-Programmers are reasonably proud of their abilities and experience,
-much in the same way that expert artists or artisans can be proud of their work.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-short-blogposts.html">Short Blogposts</a></p>
-<p class="ablog-post-excerpt">I encourage my colleagues to write blogposts more frequently.
-This is for a few reasons:</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="avoid-indirection.html">Avoid Indirection</a></p>
-<p class="ablog-post-excerpt">This post argues for avoiding indirection in community code.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="maintainer.html">Maintainers</a></p>
-<p class="ablog-post-excerpt">What are the expectations and best practices for maintainers of open source software libraries?
-How can we do this better?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="slack-github.html">Why I Avoid Slack</a></p>
-<p class="ablog-post-excerpt">I avoid interacting on Slack, especially for technical conversations around
-open source software.  Instead, I encourage colleagues to have technical and
-design conversations on GitHub, or some other system that is public, permanent,
-searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
-(DRY) I’m writing up these thoughts as a blogpost.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://imgs.xkcd.com/comics/standards.png"><img alt="https://imgs.xkcd.com/comics/standards.png" class="ablog-post-excerpt" src="https://imgs.xkcd.com/comics/standards.png" style="width: 70%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="minimal-bug-reports.html">Craft Minimal Bug Reports</a></p>
-<p class="ablog-post-excerpt">Following up on a post on <a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">supporting users in open source</a>
-this post lists some suggestions on how to ask a maintainer to help you with a problem.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-dumb-code.html">Write Dumb Code</a></p>
-<p class="ablog-post-excerpt"><em>The best way you can contribute to an open source project is to remove lines of code from it.</em>
-<em>We should endeavor to write code that a novice programmer can easily
-understand without explanation or that a maintainer can understand without
-significant time investment.</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="biased-benchmarks.html">Biased Benchmarks</a></p>
-<p class="ablog-post-excerpt"><em>honesty is hard</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-tests.html">Write Tests</a></p>
-<p class="ablog-post-excerpt">Tests are important for community driven open source software.
-This post contains brief reasons why you should test your code, particularly if
-you submit changes to existing open source projects.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="shared-abstractions.html">Dictionaries v. Objects</a></p>
-<p class="ablog-post-excerpt"><em>a story of shared abstractions</em></p>
+<li><p><strong>Closing:</strong> They navigated organizations to find buyers</p>
+<p>When an individual without purchasing power arrives, the sales team was
+good at saying “Do you have the ability to buy our product?  No?  Who does?
+Can I ask you to set up an introduction?” and then once the sale was
+complete they helped to hound the customer’s internal bureaucracy to make
+sure that money flowed through.</p>
+<p>This is less important for small team sales than for enterprise customers,
+but there is still non-trivial value.  Today I / our director of finance
+does this.  It’s been ok but not great.</p>
 </li>
 </ul>
 </section>
+<section id="focus-on-marketing">
+<h3>Focus on Marketing<a class="headerlink" href="#focus-on-marketing" title="Permalink to this heading">#</a></h3>
+<p>A lot of the tasks above should have been automated (outreach, explanation,
+onboarding), but they weren’t.  We used people/conversations as a replacement
+for technology/writing.</p>
+<p>Mostly, we lacked a strong product marketing function and made up for it with a
+lot of hands-on outreach and explaining.  I’m entirely in-favor of doing
+hands-on work to learn, but we didn’t then translate those learnings into
+long-term assets that help <em>everyone</em> understand the value that we provide
+without having to tell them one-by-one.</p>
+<p>Because of this experience, this time around I’d like to focus on on product
+marketing, this includes assets like …</p>
+<ul class="simple">
+<li><p>Architecture diagrams / videos</p></li>
+<li><p>Build vs buy comparisons in a few common situations (individual, small
+team, larger more active team) and how we’re always the better choice</p></li>
+<li><p>Our Security model and FAQ about data privacy</p></li>
+<li><p>Common use cases</p></li>
+</ul>
+<p>Even if we were to hire out a sales leader for more outreach/tracking/closing
+I’d want to have these things first.  Otherwise I think our newly hired sales
+leader would be be spinning their wheels (and those are very expensive wheels).</p>
+</section>
+</section>
+<section id="question-self-serve-or-direct-sales">
+<h2>Question: self-serve or direct sales?<a class="headerlink" href="#question-self-serve-or-direct-sales" title="Permalink to this heading">#</a></h2>
+<p>I like the idea of self-serve.  The story goes like this, a user …:</p>
+<ul class="simple">
+<li><p>Learns about our product</p></li>
+<li><p>Uses our product for free and loves it</p></li>
+<li><p>Uses it enough to start paying money and can do that easily in the product
+with a credit card</p></li>
+<li><p>Uses it even more, to the extent where they need to get authorization and
+have an actual conversation</p></li>
+</ul>
+<p>Examples of this motion include GitHub, AWS, and Atlassian.  It’s great because
+you can focus on building an amazing user experience, rather than focusing all
+of your energy and money on sales.</p>
+<p>In principle this sounds great!  It speaks to my inner-engineer and
+community-oriented mindset.  However, almost no company in our space makes most
+of their money this way.  Most companies do direct outreach and sell a complete
+package to companies from the start.  The self-serve nature of the product ends
+up being useful for companies to quickly do proof-of-concept (POC) work, and
+for students, but that’s it.</p>
+<p>Self-serve feels right, but imprudent.  This is still an open question for me.</p>
+</section>
+<section id="question-straight-to-enterprise">
+<h2>Question: Straight to Enterprise?<a class="headerlink" href="#question-straight-to-enterprise" title="Permalink to this heading">#</a></h2>
+<p>Big companies use Dask.  We’re not like other early stage tech companies that
+are trying to get their name out there.  We regularly turn away big companies
+with lots of cash looking for a self-managed Dask management platform.  Maybe
+we should stop turning them away, and instead lean into this?</p>
+<p>This goes against the common wisdom of the day which says “go cloud”, “go
+broad”, and “go managed” which, from a learning and velocity perspective, I
+like.  But it does with the timeless wisdom of “go where the money is”.</p>
+<p>I intend to stay with Cloud SaaS, which kind of precludes Enterprise until we
+get a lot more mature / trusted.  However we’ll experiment with deploying our
+platform in a self-managed way in a couple of friendly customers to see what
+the experience is like.  This is an experiment and a distraction from focus,
+but I think a good one if we can do it well with the right partners.</p>
+</section>
+<section id="who-to-hire">
+<h2>Who to hire?<a class="headerlink" href="#who-to-hire" title="Permalink to this heading">#</a></h2>
+<p>Right now three of us in the company think broadly about the entire GTM strategy:</p>
+<ul class="simple">
+<li><p>me</p></li>
+<li><p>product owner / engineering manager</p></li>
+<li><p>finance director</p></li>
+</ul>
+<p>It’s good for the three of us to have this exposure (it informs how we do our
+normal jobs) but we’re all also pretty busy, and so are doing a suboptimal job
+of the GTM work.</p>
+<p>I think I want to hire a single high performing individual who can flex between
+product marketing and some salesmanship, as well as be organized and creative.
+Over time, once they’re successful, they’ll hire a team around them.</p>
+<p>How do we find such a wonderful person?  Classic sales roles are typically not
+sufficiently technical for a product like ours, and they tend to be a bit more
+mechanical.  Classic marketers tend to be creative, but lack the technical
+and sales experience.  Maybe a product marketing manager or a product manager?
+Our ideal GTM role doesn’t fit into any traditional job description.  Probably
+I’m looking for someone who has done a couple of these jobs, and is used to
+<a class="reference internal" href="think.html#think"><span class="std std-ref">early stage thinking</span></a>.</p>
+<p>Right now I’m talking to lots of people.  Do you know of someone like this?
+Please put us in touch!</p>
+</section>
+</section>
 
 <div class="section">
-   
+    
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="interviews.html">
+      <i class="fa fa-arrow-circle-left"></i> How I Conduct an Interview
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
 </div>
 
             </article>
@@ -645,13 +787,6 @@ you submit changes to existing open source projects.</p>
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="index.html" title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-          <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Matthew Rocklin</p>
-      </div>
-  </a>
 </div>
             </footer>
             
