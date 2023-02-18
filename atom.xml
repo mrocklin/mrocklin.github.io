@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-02-03T13:12:37.369911+00:00</updated>
+  <updated>2023-02-18T15:35:06.791423+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4270,5 +4270,103 @@ Please put us in touch!&lt;/p&gt;
     <summary>Where are we on product and GTM?  What are some open questions and what should
 we do to improve?</summary>
     <published>2023-02-01T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/performance-reviews.html</id>
+    <title>Performance Reviews</title>
+    <updated>2023-02-14T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="performance-reviews"&gt;
+
+&lt;p&gt;Feedback is critical for alignment and growth, but really awkward.&lt;/p&gt;
+&lt;p&gt;How should small, early stage companies handle performance reviews?
+This article gives some best practices from my perspective doing this a few
+times.  I’ll emphasize a couple of themes:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Give critical feedback, but from different voices than your own&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;People are different.  Treat them differently based on need.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;section id="formal-structure"&gt;
+&lt;h2&gt;Formal Structure&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;What are you doing well?  What could be improved?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Informal conversations are great.  You’re probably already doing them.
+Should you also do something formal and structured with pre-defined questions?&lt;/p&gt;
+&lt;p&gt;Almost always my answer to questions like this is “No. Adapt to the situation
+at hand.  Don’t defer to generic solutions.”  In this case though I think that
+formal pre-defined structures  is something that you can lean on to make
+critical feedback more palatable.&lt;/p&gt;
+&lt;p&gt;I typically structure the conversation around the following questions:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;What does the employee think is going well?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the employee think could be improved?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the company think is going well?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the company think could be improved?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the most generic structure I can think of that both&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;gets the employee to talk about things&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;reates an obvious space for critical feedback.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When you as a manager give feedback it’s now because you were asked to
+by the form.  “It’s not that I think you’re doing a bad job, it’s that I have
+to fill something out here to satisfy the form.  But while we’re on this
+subject, let’s talk about this critical feedback I just brought up”.&lt;/p&gt;
+&lt;p&gt;Formal structure makes things less personal between manager and employee.
+Usually I dislike the impersonal, but in the case of critical feedback the
+formalism takes the blame and opens up a blameless conversation between two
+people who really need to converse.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="solicit-feedback"&gt;
+&lt;h2&gt;Solicit Feedback&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Hi X, I’m collecting feedback for Y.  Can I ask you to send me a few sentences
+about what they’re doing well and where you think there might be room for
+improvement?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I like getting feedback from others around the employee.  This includes people
+that they manage (if they’re managers), their teammates, and other people not
+on their team, but who have some interaction with them.  I always ask for both
+positive and negative feedback, typically asynchronously (this is cheaper for
+everyone than scheduling a bunch of &lt;a class="reference internal" href="meetings.html#meetings"&gt;&lt;span class="std std-ref"&gt;meetings&lt;/span&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I then scramble that feedback (to avoid attribution) and share it with the
+employee just ahead of our performance review.  Typically I also identify and
+write down a few themes at the bottom of the doc that I identify.&lt;/p&gt;
+&lt;p&gt;This accomplishes a few things that I like:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Again, this is a mechanism to deliver valuable critical feedback to the
+employee in a way where it’s not you directly criticizing them.  Instead,
+you’re both analyzing a broader voice.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s a great opportunity to deliver a lot of positive feedback at the same
+time.  People love complimenting their colleagues to management.  This
+helps to provide the ultimate, multi-layered, feedback sandwich (lots of
+positive feedback wrapping some critical feedback).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It gives other teammates an opportunity to weigh in, and a sense that their
+voices are being heard.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;section id="timing"&gt;
+&lt;h2&gt;Timing&lt;/h2&gt;
+&lt;p&gt;Somewhere between monthly and yearly works for me.  I think that this depends a
+lot on the employee, how much they’re growing / experiencing new challenges,
+and on how often you all communicate.  If someone is stuck doing the same thing
+year after year and everyone is comfortable with it then frequent feedback
+probably isn’t necessary.  If someone is growing a lot and working between
+teams then frequent feedback probably makes more sense.&lt;/p&gt;
+&lt;p&gt;Doubling down on the last point there, successful employees probably need more
+frequent feedback, not less.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="outcomes"&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;I recommend taking notes, including any actions that either side should take.
+This may not seem that important during the meeting (typically people leave
+feedback sessions feeling more aligned, not less) but over time intentions will
+drift, and it can be helpful to point back to a document, especially if there
+is a recurring problem.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/performance-reviews.html" rel="alternate"/>
+    <summary>Feedback is critical for alignment and growth, but really awkward.</summary>
+    <published>2023-02-14T00:00:00+00:00</published>
   </entry>
 </feed>
