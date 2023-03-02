@@ -294,3 +294,28 @@ I'm looking for someone who has done a couple of these jobs, and is used to
 
 Right now I'm talking to lots of people.  Do you know of someone like this?
 Please put us in touch!
+
+Edit: Update
+------------
+
+Currently we're hypothesizing that we want folks with an "extrovert engineer"
+profile, which we expect to come from a background sales/field engineering,
+customer success, or product management.  This person would likely do the
+following starting out:
+
+1.  Talk to lots of prospects, understand their pain and questions (technical,
+    empathetic)
+2.  Ensure that we have good answers, and that we have good broadcast materials to answer those questions (good writer)
+3.  Try out a bunch of hacky growth experiments (creative and hungry)
+4.  Follow up with prospects (organized)
+5.  Close relatively small deals (we've found that this is pretty easy once
+    they're using the product, which has a generous free tier)
+
+We want someone who is conversant in our space (ramp up time is too long here).
+They don't need to be a hardcore distributed systems engineer, but should, for
+example, be comfortable talking about the relative merits of various file
+storage solutions (parquet, deltalake, snowflake) and knock beers together
+while griping about Kubernetes / cloud deployment pain (even if they don't have
+hands on experience there).
+
+If you know or are such a person then please get in touch.
