@@ -19,15 +19,15 @@ This article records my experience going through laser corrective eye surgery.  
 I went from deciding to explore this procedure to having my eyes lasered in about two weeks (this felt fast).  The procedure itself took only a couple of minutes.  In general I have no regrets and my eyesight today is good.
 
 *This post is long, rambling, and has nothing to do with my usual
-topica of startups and tech.  Most of my regular readers may wish to skip
+topics of startups and tech.  Most of my regular readers may wish to skip
 it.*
 
 Motivation
 ----------
 
-I’ve been wearing glasses since I was 10 or so.  I wore contacts for much of my twenties, but found them tiresome and switched back to glasses.  I’m 37 today.  I mostly wear contacts when I’m in a highly social situation like a date, going on a long drives and want sunglasses, or doing something physical where glasses are not advised, like swimming in the ocean.  When I wear contacts they eventually irritate my eyes, and so I generally am averse to wearing them.
+I’ve been wearing glasses since I was 10 years old.  I wore contacts for much of my twenties, but found them tiresome and switched back to glasses.  I’m 37 today.  I mostly wear contacts when I’m in a highly social situation, going on a long drive and want sunglasses, or doing something physical where glasses are not advised, like swimming in the ocean.  When I wear contacts they eventually irritate my eyes, and so avoid wearing them.
 
-LASIK / corrective eye surgery always weirded me out, and I was risk averse, so I never really considered it.  However, I’ve had a few friends recently who have done it and spoke about how easy it was.  I also had a couple weeks where work wasn't as engaging, and so I decided to ask my optometrist.  He said “Yup.  We recommend this group.  They’re quite good.”
+LASIK / corrective eye surgery always felt weird, and I am risk averse, so I never considered it.  However, I have a few friends who recently underwent the procedure and spoke highly of it.  I also had a couple weeks where work wasn't as engaging, and so I decided to ask my optometrist.  He said “Yup.  We recommend this group.  They’re quite good.”
 
 Day 0
 -----
@@ -41,12 +41,12 @@ I am not a doctor
 
 Your cornea is like clear skin with an epidermis and dermis.  Myopic eyes have corneas that are too pointy.  The solution is to laser down the dermis so that it’s less pointy.  What to do with the epidermis?  (actually called epithelial tissue)
 
-1. **LASIK:** let’s cut it open, fold the flap to the side, laser the inner part of the cornea, and then fold back the epithelial tissue when we’re done, sealing up the raw dermis so things heal within a day
-2. **PRK/ASA:** let's just laser it too.  It’ll grow back and we won't have to fuss with cutting.
+1. **LASIK:** let’s cut open a flap, fold it to one side to the side, laser down the inner part of the cornea/dermis, and then fold back the epithelial tissue flap when we’re done, sealing up the raw dermis so things heal within a day
+2. **PRK/ASA:** let's just laser the outer tissue too.  It’ll grow back and we won't have to fuss with cutting or flaps.
 
-PRK/ASA have fewer complications (no flap, no dry eyes, ...), but you endure feeling your epithelial tissue grow back over your cornea for about a week, which is an interesting experience.
+PRK/ASA have fewer complications (no flap, no dry eyes, ...), but you endure feeling your epithelial tissue grow back over your cornea for about a week, which is an interesting experience (more on this below).
 
-Personally, ASA spoke to me more.  My epithelial tissue was also thin, and so I wasn't a good candidate for LASIK anyway.
+Personally, ASA spoke to me more.  My epithelial tissue was also thin, and so I wasn't a good candidate for LASIK anyway 🎉.
 
 Valium
 ------
@@ -57,15 +57,15 @@ My family has a history of substance abuse, and I’m hesitant around any habit 
 
 I asked the doctor about it and he was pretty firm.  “You need to have Valium because we need all of your muscles relaxed, also we’re going to need to manipulate your head and such prior to the procedure and don't want you fighting us”.  I asked about a lower dose and he said “usually we give 25mg, but for you 20mg probably makes sense”  “How about 10mg or 15mg?  “  “No, that wouldn't really have any therapeutic effect”.
 
-OK, I went home, got the drugs at the pharmacy, and predictably, went on a web search spree about LASIK, Valium, and dosage.  After consulting the internet, my Ex (also a physician), well-respected medical databases like uptodate, and peers who had undergone the procedure.  I decided that my doctor was overly-cautious / wrong.
+OK, I went home, got the drugs at the pharmacy, and predictably, went on a web search spree about LASIK, Valium, and dosage.  After consulting the internet, my Ex (also a physician), well-respected medical databases like UpToDate, commercial sites for other laser eye centers, and peers who had undergone the procedure without Valium.  I decided that my doctor was overly-cautious / wrong.
 
-On the day of the surgery I made a mild fuss and became their second patient ever to undergo the procedure without Valium.  This made me very relaxed.
+On the day of the surgery I made a mild fuss and became their second patient to undergo the procedure without Valium.  I felt much better.
 
 Surgery itself
 --------------
 Fifteen minutes after having the Valium conversation I was in the operating room, doing my best to be super relaxed.
 
-I laid down, and this is the experience as best as I recall it a few days afterwards:
+This is the experience as best as I recall it a few days afterwards:
 
 1. I lay down on a table with a neck rest and optical equipment that swung over to be maybe  4-12 inches above my face
 2. I asked them to tell me what was going to happen and they gave a good description that helped me to anticipate everything, which helped a lot with any stress.
@@ -73,24 +73,23 @@ I laid down, and this is the experience as best as I recall it a few days afterw
 4. They put a cover over my left eye and then a metal thing to keep my right eye open
 5. They told me to look at the flashing light at the center of the device above me, which I did
 6. I saw a little cotton swab come into view and, presumably, touch my eye (although it was hard to feel at that point).
-7. Eventually the laser came on and the flashing light started going out of view.  I heard one of the operators say “ten seconds”, “5, 3 , 2, 1” and then it turned off.
+7. Eventually the laser came on and the flashing light started going out of view.  I heard one of the operators say “ten seconds”, “5, 3, 2, 1” and then it turned off.
    1. During that period the light went entirely away, presumably because my cornea was now a puddle of occluding goo.
    2. The swab came back, wiped my eye, and things looked sharp
    3. Also during that period the laser moved a bit side to side and I was told to track it.
    4. The swab happened once again, this time maybe with some pressure.
-8. They flushed my eye out with water, and things looked very harp
+8. They flushed my eye out with water, and things looked very sharp
 9. That eye was done
 10. Wash, rinse, repeat.
 
 
 The doctor then said “huh, that was fine without the Valium.  We didn't have any issues at all” to which I felt a stab of glory.
 
-During the procedure the operators are also constantly saying “you’re doing a very good job, which I know is silly, but helped a lot.  During the procedure you’re trying hard to keep looking at the flashing red light, hoping that you’re doing a good job.  Having someone say, even by rote “you’re doing a good job” is calming.   From time to time while watching the red light your attention gets pulled over to one side or the other and you say “oh crap, did I just burn my eye in a wrong way!”  but now,  apparently things were fine?  Let’s hope so.
+During the procedure the operators are also constantly saying “you’re doing a very good job", which I know is silly, but helped a lot.  During the procedure you’re trying hard to keep looking at the flashing red light, hoping that you’re doing a good job.  Having someone say, even by rote “you’re doing a good job” is calming.   From time to time while watching the red light your attention gets pulled over to one side or the other and you say “oh crap, did I just burn my eye in a wrong way?!”  but now,  apparently things were fine?  Let’s hope so.
 
-They told me to get up. I walked back to the waiting room, got my stuff, and was told that I was free to go.  I called an uber and headed home with instructions to sleep as much as I could, or at least keep my eyes closed.  (The Valium genuinely would have been helpful here).
+They told me to get up. I walked back to the waiting room, got my stuff, and was told that I was free to go.  I called a Lyft and headed home with instructions to sleep as much as I could, or at least keep my eyes closed.  (The Valium genuinely would have been helpful here).
 
-My vision was better.  I wouldn't have been safe to drive at that state, but certainly safe to navigate my home,read clocks, and generally be ok.  It’s supposed to improve to the point where I can drive in about a week.
-Home instructions
+My vision was better.  I wouldn't have been safe to drive in that state, but certainly safe to navigate my home, read clocks, and generally be ok.  It’s supposed to improve to the point where I can drive in about a week.
 
 After care
 ----------
@@ -99,14 +98,14 @@ I left with instructions on how to care for my eyes over the next week.  These i
 
 * Eye drops each hour to keep things moist, help them heal, and reduce discomfort
 * More eye drops three times a day to keep things from getting infected.  These sting a bit.
-* Goggles to wear when sleeping (mildly annoying) so that I don’t accidentally rub my eyes against a pillow or something
+* Goggles to wear when sleeping (mildly annoying) so that I don’t accidentally rub my eyes against a pillow
 * Sunglasses to wear anytime when outside for the first week
 * My eyes also had bandage contact lenses in them which I was supposed to leave in for five days, and then go to my optometrist to take them out.
 
 Day 1 recovery
 --------------
 
-I listened to podcasts, took a nap, and then did normal activities around the house the first day.  Everything felt pretty chill  “This is recovery?  Piece of cake”
+I listened to podcasts, took a nap, and then did normal activities around the house the first day.  Everything felt pretty chill  "This is recovery?  Piece of cake!"
 
 I had been told that discomfort would peak around day three.
 
@@ -115,12 +114,12 @@ I went to bed with my fancy new goggles feeling pretty good
 Day 2: 2am
 ----------
 
-There is very clearly a thing in my right eye.  No wait, they warned me about this.  There’s going to be lots of fluctuating and discomfort over this week.  This is in the set of things that they said could happen.  Time to try to go back to sleep.
+There is very clearly a thing in my right eye.  It feels like a grain of sand.  No wait, they warned me about this.  There’s going to be lots of fluctuating and discomfort over this week.  This is in the set of things that they said could happen.  Time to try to go back to sleep.
 
 Day 2 morning
 -------------
 
-I woke up and the feeling of a grain of sand in my right eye was gone (woo!).  Maybe things felt a little more irritated, but the eye drops helped.  I spent the day being pretty bored.  I took short walks outside but the wind felt not great (dry).  I did a little work, listened to TV / movies while giving my eyes a rest.  At one point I took a walk to the grocery store (25 minutes away)  Once I got there I decided that I wouldn't do that again, and took a Lyft back.
+I woke up and the feeling of a grain of sand in my right eye was gone 🎉.  Maybe things felt a little more irritated, but the eye drops helped.  I spent the day being pretty bored.  I took short walks outside but the wind felt not great (dry).  I did a little work, listened to TV / movies while giving my eyes a rest.  At one point I took a walk to the grocery store (25 minutes away)  Once I got there I decided that I wouldn't do that again, and took a Lyft back.
 
 Throughout the day discomfort rose to the level of chopping onions or bad seasonal allergies.  Annoying enough that I didn't want to start any serious pieces of work, but generally not bad.  I was able to read and write e-mails, but not many.  I took a couple of video calls.
 
@@ -132,15 +131,21 @@ Totally fine.  I’m used to the goggles now.
 Day 3 morning
 -------------
 
-Waking up my eyes feel slightly glued shut, as though there is some mucus or something that has been generated and dried.  There’s definitely a sense of mild burning.  Maybe we’ve moved up from onions to lemon juice or something.
+Waking up my eyes feel slightly glued shut, as though there is some mucus that has been generated and dried.  There’s definitely a sense of mild burning.  We’ve graduated from "chopping onions" to "lemon juice".
 
-Worst of all though, is that my eyes have crazy light sensitivity.  It’s actually really difficult to open them with the windows open.  I crack them open, go find my sunglasses, and proceed to close all of the blinds in the apartment.  I like the sunlight.  I’m in a corner unit with tons of windows, and I definitely don't invest in good blinds, which I now regret.  I write this now with my eyes closed typing blindly into google docs.  (I followed up afterwards to clean up various typos)
+Worst of all, my eyes are very light sensitive.  It’s difficult to open them with the windows open.  I crack open my eyes, go find my sunglasses, and proceed to close all of the blinds in the apartment.  I like the sunlight.  I’m in a corner unit with tons of windows, and I definitely don't invest in good blinds, which I now regret.  I write this now with my eyes closed typing blindly into google docs.  (I followed up afterwards to clean up all the typos)
 
 The lemon juice burning is still there, and the light sensitivity gets increasingly more uncomfortable when I keep my eyes open for any length of time.
 
-It’s now that I appreciate / understand a little bit of vision-impaired assistive technology (or lack thereof) in society.  My google home assistant is suddenly quite valuable for routine queries like “what time is it”.  Of course, when I ask it  “any tips for light sensitivity” it answers “I’ve sent some articles to your phone” which is not at all helpful.  My vision, when I use it, also worse than yesterday.  It’s hard for me to read text on my phone or the computer.
+It’s now that I appreciate / understand a little bit of vision-impaired
+assistive technology (or lack thereof) in society.  My google home assistant is
+suddenly quite valuable for routine queries like “what time is it”.  Of course,
+when I ask it  “any tips for light sensitivity” it answers “I’ve sent some
+articles to your phone” which is not at all helpful.  My vision, when I use it,
+is also worse than yesterday.  It’s hard for me to read text on my phone or the
+computer.
 
-Voice typing is apparently disabled on my phone for some reason.  After a while of trying I give up and switch to my laptop.  There’s no way I can navigate a settings menu in this state.
+Voice typing is disabled on my phone for some reason.  After a while of trying I give up and switch to my laptop.  There’s no way I can navigate a settings menu in this state.
 
 Mostly I spend the day with my eyes closed, puttering about the apartment.  It’s a consistently mildly uncomfortable day.  Not bad.  Not enough to regret the procedure, but certainly an interesting day.
 
@@ -156,7 +161,7 @@ Day 4 morning
 
 I can see!  Well, for five minutes anyway.  Waking up I gently test my eyes against the morning sunlight coming in the window and it … doesn't hurt.  As the sun rises though, and as my eyes fatigue I do learn that I’m not out of the woods yet.  The burning is mostly gone, but there’s an interesting fatigue/light sensitivity that persists when I use my eyes for any length of time.
 
-I go out on an adventurous walk.  It works as long as I keep my eyes shut 80% of the time.  At one point before crossing a busy pedestrian bridge I have to stop and rest my eyes before the daunting task of keeping them open during the crossing (a full ten seconds).  Over the day my eyes get better, and I’m more able to keep them open for longer without fatigue.
+I go out on an adventurous walk.  It works as long as I keep my eyes shut 80% of the time, blinking them open frequently to avoid hitting things.  At one point before crossing a busy pedestrian bridge I have to stop and rest my eyes for a minute before the daunting task of keeping them open during the crossing (a full ten seconds).  Over the day my eyes get better, and I’m more able to keep them open for longer without fatigue.
 
 I download audible and start an audiobook.  My podcast reservoir was running low.  That, combined with late afternoon walks in the low light (but when sunglasses don't seem entirely strange socially) make me feel almost normal.
 
