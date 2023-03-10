@@ -298,18 +298,31 @@ Please put us in touch!
 Edit: Update
 ------------
 
-Currently we're hypothesizing that we want folks with an "extrovert engineer"
-profile, which we expect to come from a background sales/field engineering,
-customer success, or product management.  This person would likely do the
-following starting out:
+Currently we're hypothesizing that we want a single strong performer who is
+comfortable doing the following activities starting out:
 
-1.  Talk to lots of prospects, understand their pain and questions (technical,
-    empathetic)
-2.  Ensure that we have good answers, and that we have good broadcast materials to answer those questions (good writer)
-3.  Try out a bunch of hacky growth experiments (creative and hungry)
-4.  Follow up with prospects (organized)
-5.  Close relatively small deals (we've found that this is pretty easy once
+1.  **Social**: Talk to lots of prospects, understand their pain and questions
+2.  **Technically Conversant**: need to be able to speak the language and
+    empathize with our current highly technical users
+2.  **Good Writer**: Ensure that we have good answers, and that we have good broadcast materials to answer those questions
+3.  **Creative and Hungry**: Try out a bunch of hacky experiments
+4.  **Organized**: Follow up with prospects
+5.  **Motivated**: Close relatively small deals (we've found that this is pretty easy once
     they're using the product, which has a generous free tier)
+
+Once this works they'll then need to hire people to do more of this, and
+empower them appropriately.  This usually means that they're years but not
+decades into their career.
+
+We're guessing that this comes from one of a couple possible profiles:
+
+1.  **Extrovert engineer**: comes from a background sales/field engineering,
+    customer success, or product management.  They used to be highly technical,
+    but are now as curious about building a sales and marketing motion as about
+    core technology.
+2.  **Technical Inside Sales Leader**: they started out in inside sales for a
+    related highly technical product (like Databricks).  They succeeded by
+    understanding and caring about their product.
 
 We want someone who is conversant in our space (ramp up time is too long here).
 They don't need to be a hardcore distributed systems engineer, but should, for

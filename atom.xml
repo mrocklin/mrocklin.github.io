@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-03-07T13:52:41.380845+00:00</updated>
+  <updated>2023-03-10T14:27:23.143075+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4266,18 +4266,30 @@ Please put us in touch!&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="edit-update"&gt;
 &lt;h2&gt;Edit: Update&lt;/h2&gt;
-&lt;p&gt;Currently we’re hypothesizing that we want folks with an “extrovert engineer”
-profile, which we expect to come from a background sales/field engineering,
-customer success, or product management.  This person would likely do the
-following starting out:&lt;/p&gt;
+&lt;p&gt;Currently we’re hypothesizing that we want a single strong performer who is
+comfortable doing the following activities starting out:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Talk to lots of prospects, understand their pain and questions (technical,
-empathetic)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ensure that we have good answers, and that we have good broadcast materials to answer those questions (good writer)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Try out a bunch of hacky growth experiments (creative and hungry)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Follow up with prospects (organized)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Close relatively small deals (we’ve found that this is pretty easy once
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Social&lt;/strong&gt;: Talk to lots of prospects, understand their pain and questions&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Technically Conversant&lt;/strong&gt;: need to be able to speak the language and
+empathize with our current highly technical users&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Good Writer&lt;/strong&gt;: Ensure that we have good answers, and that we have good broadcast materials to answer those questions&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Creative and Hungry&lt;/strong&gt;: Try out a bunch of hacky experiments&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Organized&lt;/strong&gt;: Follow up with prospects&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Motivated&lt;/strong&gt;: Close relatively small deals (we’ve found that this is pretty easy once
 they’re using the product, which has a generous free tier)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once this works they’ll then need to hire people to do more of this, and
+empower them appropriately.  This usually means that they’re years but not
+decades into their career.&lt;/p&gt;
+&lt;p&gt;We’re guessing that this comes from one of a couple possible profiles:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Extrovert engineer&lt;/strong&gt;: comes from a background sales/field engineering,
+customer success, or product management.  They used to be highly technical,
+but are now as curious about building a sales and marketing motion as about
+core technology.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Technical Inside Sales Leader&lt;/strong&gt;: they started out in inside sales for a
+related highly technical product (like Databricks).  They succeeded by
+understanding and caring about their product.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We want someone who is conversant in our space (ramp up time is too long here).
 They don’t need to be a hardcore distributed systems engineer, but should, for
