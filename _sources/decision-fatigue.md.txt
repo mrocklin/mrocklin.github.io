@@ -42,7 +42,7 @@ the group.  This I don't like as much.  Instead, I recommend the following phras
     *"Without input I would probably do the following ..."*
 
 With this phrasing you keep the burden on your shoulders,
-and merely ask the group for advice.  This is easy for others!  Everyone loves giving advice 🎉
+and merely ask the group for advice.  This is easy for others!  People love giving advice 🎉
 
 The second phrasing makes it easy for your colleagues to help without asking them to make a decision.
 You continue to carry the burden of glory/shame if things go well/poorly.
@@ -76,8 +76,8 @@ I suspect that people generally agree / find obvious what I wrote above.  The
 one thing I find isn't well understood is the interpretation of these two
 different phrases:
 
--   *"What do we want to do here?"*  (Burdens the team with the decision)
--   *"I'm figuring out what to do here and could use some advice"*  (Keeps the
+-   *"What do we want to do?"*  (Burdens the team with the decision)
+-   *"I'm figuring out what to do and could use some advice"*  (Keeps the
     burden on your shoulders)
 
 I really like it when people do the second thing.
