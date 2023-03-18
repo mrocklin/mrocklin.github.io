@@ -11,12 +11,12 @@ Decision Fatigue
 Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:
 
--   *"Where should we go to eat tonight?"*
+-   *"Where we want to eat tonight?"*
 -   *"Which of these five nearly-identical toothpaste brands is best for me?"*
--   *"Should I buy this fairly expensive item?"*
+-   *"Should I buy this expensive item?"*
 
-Decisions cause fatigue.  In a work setting we help our team by taking on
-the burden of making good decisions.
+These decisions cause fatigue.
+In a work setting we help our team by taking on the burden of making good decisions.
 
 When this comes up
 ------------------
@@ -42,7 +42,7 @@ the group.  This I don't like as much.  Instead, I recommend the following phras
     *"Without input I would probably do the following ..."*
 
 With this phrasing you keep the burden on your shoulders,
-and merely ask the group for advice.  This is easy!  Everyone loves giving advice 🎉
+and merely ask the group for advice.  This is easy for others!  Everyone loves giving advice 🎉
 
 The second phrasing makes it easy for your colleagues to help without asking them to make a decision.
 You continue to carry the burden of glory/shame if things go well/poorly.
