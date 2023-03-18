@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-03-18T18:29:12.618039+00:00</updated>
+  <updated>2023-03-18T18:33:42.987558+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4590,12 +4590,12 @@ computer.&lt;/p&gt;
 &lt;p&gt;Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“Where should we go to eat tonight?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;“Where we want to eat tonight?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;“Which of these five nearly-identical toothpaste brands is best for me?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“Should I buy this fairly expensive item?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;“Should I buy this expensive item?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Decisions cause fatigue.  In a work setting we help our team by taking on
-the burden of making good decisions.&lt;/p&gt;
+&lt;p&gt;These decisions cause fatigue.
+In a work setting we help our team by taking on the burden of making good decisions.&lt;/p&gt;
 &lt;section id="when-this-comes-up"&gt;
 &lt;h2&gt;When this comes up&lt;/h2&gt;
 &lt;p&gt;If I’ve directed you to this article it’s because you were in charge of
@@ -4616,7 +4616,7 @@ the group.  This I don’t like as much.  Instead, I recommend the following phr
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;With this phrasing you keep the burden on your shoulders,
-and merely ask the group for advice.  This is easy!  Everyone loves giving advice 🎉&lt;/p&gt;
+and merely ask the group for advice.  This is easy for others!  Everyone loves giving advice 🎉&lt;/p&gt;
 &lt;p&gt;The second phrasing makes it easy for your colleagues to help without asking them to make a decision.
 You continue to carry the burden of glory/shame if things go well/poorly.&lt;/p&gt;
 &lt;/section&gt;
