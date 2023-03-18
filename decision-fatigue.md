@@ -11,12 +11,11 @@ Decision Fatigue
 Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:
 
--   *"Where we want to eat tonight?"*
--   *"Which of these five nearly-identical toothpaste brands is best for me?"*
--   *"Should I buy this expensive item?"*
+-   *"Where do we want to eat tonight?"*
+-   *"Which toothpaste brand should I buy?"*
 
 These decisions cause fatigue.
-In a work setting we help our team by taking on the burden of making good decisions.
+At work we help our team by taking on the burden of making good decisions.
 
 When this comes up
 ------------------
@@ -31,7 +30,7 @@ a thing, ran into a roadblock, and then said one of the following:
 It's good that when you feel uncertain you ask for input.  Good job 👍.
 
 However, the phrasing of your question shifts the burden from your shoulders to
-the group.  This I don't like as much.  Instead, I recommend the following phrasing.
+the group.  This I don't like as much.  Instead, I recommend the following phrasing:
 
 -   *"I'm figuring out X, but I'm running into a problem and I could use some advice."*
 
@@ -39,7 +38,7 @@ the group.  This I don't like as much.  Instead, I recommend the following phras
 
     *"This is where I'm getting stuck ..."*
 
-    *"Without input I would probably do the following ..."*
+    *"Without input I would likely do the following ..."*
 
 With this phrasing you keep the burden on your shoulders,
 and merely ask the group for advice.  This is easy for others!  People love giving advice 🎉
@@ -72,12 +71,11 @@ control (and context) back up the chain of command and ask for different work.
 Final Thoughts
 --------------
 
-I suspect that people generally agree / find obvious what I wrote above.  The
-one thing I find isn't well understood is the interpretation of these two
+I suspect that some people generally agree / find obvious what I wrote above.
+The one thing I find isn't well understood is the interpretation of these two
 different phrases:
 
 -   *"What do we want to do?"*  (Burdens the team with the decision)
--   *"I'm figuring out what to do and could use some advice"*  (Keeps the
-    burden on your shoulders)
+-   *"I'm figuring out what to do and could use some advice"*  (Keeps the burden on the asker's shoulders)
 
 I really like it when people do the second thing.
