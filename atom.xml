@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-03-18T18:40:09.664133+00:00</updated>
+  <updated>2023-03-18T19:02:10.445835+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4590,12 +4590,11 @@ computer.&lt;/p&gt;
 &lt;p&gt;Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“Where we want to eat tonight?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“Which of these five nearly-identical toothpaste brands is best for me?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“Should I buy this expensive item?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;“Where do we want to eat tonight?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;“Which toothpaste brand should I buy?”&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These decisions cause fatigue.
-In a work setting we help our team by taking on the burden of making good decisions.&lt;/p&gt;
+At work we help our team by taking on the burden of making good decisions.&lt;/p&gt;
 &lt;section id="when-this-comes-up"&gt;
 &lt;h2&gt;When this comes up&lt;/h2&gt;
 &lt;p&gt;If I’ve directed you to this article it’s because you were in charge of
@@ -4607,12 +4606,12 @@ a thing, ran into a roadblock, and then said one of the following:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;It’s good that when you feel uncertain you ask for input.  Good job 👍.&lt;/p&gt;
 &lt;p&gt;However, the phrasing of your question shifts the burden from your shoulders to
-the group.  This I don’t like as much.  Instead, I recommend the following phrasing.&lt;/p&gt;
+the group.  This I don’t like as much.  Instead, I recommend the following phrasing:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;“I’m figuring out X, but I’m running into a problem and I could use some advice.”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;“Here is what I want to achieve …”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;“This is where I’m getting stuck …”&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;“Without input I would probably do the following …”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Without input I would likely do the following …”&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;With this phrasing you keep the burden on your shoulders,
@@ -4639,13 +4638,12 @@ control (and context) back up the chain of command and ask for different work.&l
 &lt;/section&gt;
 &lt;section id="final-thoughts"&gt;
 &lt;h2&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;I suspect that people generally agree / find obvious what I wrote above.  The
-one thing I find isn’t well understood is the interpretation of these two
+&lt;p&gt;I suspect that some people generally agree / find obvious what I wrote above.
+The one thing I find isn’t well understood is the interpretation of these two
 different phrases:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;“What do we want to do?”&lt;/em&gt;  (Burdens the team with the decision)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;“I’m figuring out what to do and could use some advice”&lt;/em&gt;  (Keeps the
-burden on your shoulders)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;“I’m figuring out what to do and could use some advice”&lt;/em&gt;  (Keeps the burden on the asker’s shoulders)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I really like it when people do the second thing.&lt;/p&gt;
 &lt;/section&gt;
