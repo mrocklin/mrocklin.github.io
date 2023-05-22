@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-03-18T19:02:10.445835+00:00</updated>
+  <updated>2023-05-22T14:58:15.087254+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -2956,7 +2956,7 @@ generic advisors invariably leads to mediocrity, which is death in early stage.&
 &lt;section id="hire-experienced-folks"&gt;
 &lt;h3&gt;Hire Experienced Folks&lt;/h3&gt;
 &lt;p&gt;You should certainly employ folks though, and you should listen to them.
-They should all be smart; ideally smarter than you.&lt;/p&gt;
+They should all be smart, ideally smarter than you.&lt;/p&gt;
 &lt;p&gt;You don’t want any interns or junior folks.  No one on your team has time to
 grow them.  You’d be doing them a disservice; early stage startups
 are a horrible place to start a career.  Junior folks need structure.  You want
@@ -3075,8 +3075,9 @@ success&lt;/p&gt;&lt;/li&gt;
 fail, including probably yours.  This is the sort of unreasonably high
 expectations that lead to burnout for you and corrosive behavior to the team.&lt;/p&gt;
 &lt;p&gt;You’re a human, and you’ve been a pretty successful human up until this point.
-You should probably keep doing whatever it was were doing before.  There’s no
-reason to completely change your behavior.  Instead, change the company to suit you.&lt;/p&gt;
+You should probably keep doing whatever it was you were doing before.  There’s
+no reason to completely change your behavior.  Instead, change the company to
+suit you.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="optimize-for-yourself"&gt;
 &lt;h3&gt;Optimize for yourself&lt;/h3&gt;
@@ -3117,7 +3118,7 @@ than any other entity.&lt;/p&gt;
 &lt;p&gt;Early stage companies shift a lot.  It’s likely that who you perceive to be
 your biggest competitor will shift considerably every few months.  This is
 because both you and they will be pivoting rapidly.&lt;/p&gt;
-&lt;p&gt;Given this, you shouldn’t optimize around them too much.&lt;/p&gt;
+&lt;p&gt;Given this, you shouldn’t optimize around them much.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="you-re-a-small-slice-of-a-growing-pie"&gt;
 &lt;h3&gt;You’re a small slice of a growing pie&lt;/h3&gt;
@@ -3853,7 +3854,7 @@ others who are conducting interviews, or for people who plan to interview with
 me (transparency is good).&lt;/p&gt;
 &lt;p&gt;My interviews are typically in 45 minute calendar slots.
 After saying “hi” and being friendly for a minute or two I lead the
-conversation through he following stages:&lt;/p&gt;
+conversation through the following stages:&lt;/p&gt;
 &lt;section id="i-talk-about-the-company-and-what-we-re-looking-for"&gt;
 &lt;h2&gt;I talk about the company and what we’re looking for&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This typically takes five minutes&lt;/em&gt;&lt;/p&gt;
