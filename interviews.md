@@ -19,7 +19,7 @@ me (transparency is good).
 
 My interviews are typically in 45 minute calendar slots.
 After saying "hi" and being friendly for a minute or two I lead the
-conversation through he following stages:
+conversation through the following stages:
 
 ## I talk about the company and what we're looking for
 

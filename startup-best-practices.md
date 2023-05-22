@@ -47,7 +47,7 @@ On Hiring
 ### Hire Experienced Folks
 
 You should certainly employ folks though, and you should listen to them.
-They should all be smart; ideally smarter than you.
+They should all be smart, ideally smarter than you.
 
 You don't want any interns or junior folks.  No one on your team has time to
 grow them.  You'd be doing them a disservice; early stage startups
@@ -180,8 +180,9 @@ fail, including probably yours.  This is the sort of unreasonably high
 expectations that lead to burnout for you and corrosive behavior to the team.
 
 You're a human, and you've been a pretty successful human up until this point.
-You should probably keep doing whatever it was were doing before.  There's no
-reason to completely change your behavior.  Instead, change the company to suit you.
+You should probably keep doing whatever it was you were doing before.  There's
+no reason to completely change your behavior.  Instead, change the company to
+suit you.
 
 
 ### Optimize for yourself
@@ -228,7 +229,7 @@ Early stage companies shift a lot.  It's likely that who you perceive to be
 your biggest competitor will shift considerably every few months.  This is
 because both you and they will be pivoting rapidly.
 
-Given this, you shouldn't optimize around them too much.
+Given this, you shouldn't optimize around them much.
 
 ### You're a small slice of a growing pie
 
