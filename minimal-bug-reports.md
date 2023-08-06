@@ -23,7 +23,7 @@ Doing this well is an incredible service to the community.
 Minimal Complete Verifiable Examples
 ------------------------------------
 
-I strongly recommend following Stack Overflow's guidelines on [Minimal Complete Verifiable Exmamples](https://stackoverflow.com/help/mcve).  I'll include brief highlights here:
+I strongly recommend following Stack Overflow's guidelines on [Minimal Complete Verifiable Examples](https://stackoverflow.com/help/mcve).  I'll include brief highlights here:
 
 *... code should be ...*
 
@@ -31,7 +31,7 @@ I strongly recommend following Stack Overflow's guidelines on [Minimal Complete 
 -  *Complete – Provide all parts needed to reproduce the problem*
 -  *Verifiable – Test the code you're about to provide to make sure it reproduces the problem*
 
-Lets be clear, this is *hard* and takes time.
+Let's be clear, this is *hard* and takes time.
 
 As a question-asker I find that creating an MCVE often takes 10-30 minutes for a simple problem.
 Fortunately this work is usually straightforward,
@@ -43,7 +43,7 @@ When answering questions I often point people to StackOverflow's MCVE document.
 They sometimes come back with a better-but-not-yet-minimal example.
 This post clarifies a few common issues.
 
-As an running example I'm going to use Pandas dataframe problems.
+As a running example I'm going to use Pandas dataframe problems.
 
 
 Don't post data
@@ -88,9 +88,9 @@ Actually don't include your data at all
 ---------------------------------------
 
 Actually, your data probably has lots of information that is very specific to
-your application.  Your eyes gloss over it but a maintainer doesn't know what
+your application.  Your eyes gloss over it, but a maintainer doesn't know what
 is relevant and what isn't, so it will take them time to digest it if you
-include it.  Instead see if you can reproduce your same failure with artificial
+include it. Instead, see if you can reproduce your same failure with artificial
 or random data.
 
 ### Don't
