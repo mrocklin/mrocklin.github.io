@@ -1,12 +1,12 @@
 ---
-title: Reddit v. Twitter
+title: Reddit, Twitter, and LinkedIn Comparison
 date: 2023-11-10
 blogpost: true
 author: Matthew Rocklin
 ---
 
-Reddit v. Twitter
-=================
+Reddit, Twitter, and LinkedIn Comparison
+========================================
 
 Historically I mostly used Twitter to broadcast my work.
 However, Twitter today is less effective than it once was.
