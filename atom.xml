@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-09-27T18:13:27.055295+00:00</updated>
+  <updated>2023-11-10T20:28:14.019637+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4654,5 +4654,107 @@ different phrases:&lt;/p&gt;
     <summary>Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:</summary>
     <published>2023-03-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/reddit.html</id>
+    <title>Reddit v. Twitter</title>
+    <updated>2023-11-10T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="reddit-v-twitter"&gt;
+
+&lt;p&gt;Historically I mostly used Twitter to broadcast my work.
+However, Twitter today is less effective than it once was.
+What’s the best alternative?&lt;/p&gt;
+&lt;p&gt;I recently published work on big data benchmarks and pushed out the same
+message on all of the following platforms.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/mrocklin/status/1721879714871316512"&gt;Twitter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.linkedin.com/posts/mrocklin_spark-dask-duckdb-polars-tpc-h-benchmarks-activity-7127650276966113280-4DTf?utm_source=share&amp;amp;utm_medium=member_desktop"&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://fosstodon.org/&amp;#64;mrocklin/111369552234850135"&gt;Mastodon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reddit (all of
+&lt;a class="reference external" href="https://www.reddit.com/r/dataengineering/comments/17puedp/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/"&gt;r/dataengineering&lt;/a&gt;,
+&lt;a class="reference external" href="https://www.reddit.com/r/datascience/comments/17qm6ob/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/"&gt;r/datascience&lt;/a&gt;, and
+&lt;a class="reference external" href="https://www.reddit.com/r/Python/comments/17pwxfn/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/"&gt;r/python&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This post quantifies the views and engagement I received on each.&lt;/p&gt;
+&lt;section id="results"&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;I care both that people see my initial message, and that they engage with it by
+actually watching the attached video/viewing the attached blogpost.&lt;/p&gt;
+&lt;p&gt;This is what&lt;/p&gt;
+&lt;table class="colwidths-auto table"&gt;
+&lt;thead&gt;
+&lt;tr class="row-odd"&gt;&lt;th class="head"&gt;&lt;p&gt;Source&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Views&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Upvotes&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Comments&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Click Through&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;Reddit&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;135,100&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;248&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;51&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;528&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;Twitter&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;18,600&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;169&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;4&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;461&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;LinkedIn&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;11,355&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;112&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;12&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;471&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img alt="images/social-views.svg" src="images/social-views.svg" width="45%" /&gt;&lt;img alt="images/social-clickthroughs.svg" src="images/social-clickthroughs.svg" width="45%" /&gt;&lt;/section&gt;
+&lt;section id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;A couple takeaways:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Reddit gets &lt;em&gt;way&lt;/em&gt; more readership and engagement than Twitter or LinkedIn.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Twitter and LinkedIn push readers to external links more effectively.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s actually pretty easy to just publish on all of them&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it!  Thanks for reading.  Below I include the message I published.  It
+went out as a general post on Reddit and LinkedIn, and as a stream of
+posts/replies on Twitter and Mastodon.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="the-message"&gt;
+&lt;h2&gt;The Message&lt;/h2&gt;
+&lt;p&gt;I pushed out this text on all three platforms.  On Twitter / Mastodon it was as
+a stream.  On Reddit / LinkedIn it was a single post.&lt;/p&gt;
+&lt;section id="spark-dask-duckdb-polars-tpc-h-benchmarks-at-scale"&gt;
+&lt;h3&gt;Spark, Dask, DuckDB, Polars: TPC-H Benchmarks at Scale&lt;/h3&gt;
+&lt;p&gt;I gave this talk at PyData NYC last week. It was fun working with devs from various projects (Dask, Arrow, Polars, Spark) in the week leading up to the event. Thought I’d share a re-recording of it here&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://youtu.be/wKH0-zs2g_U"&gt;youtu.be/wKH0-zs2g_U&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the result of a couple weeks of work comparing large data frameworks on benchmarks ranging in size 10GB to 10TB. No project wins. It’s really interesting analyzing results though.&lt;/p&gt;
+&lt;p&gt;DuckDB and Dask are the only projects that reliably finish things (although possibly Dask’s success here has to do with me knowing Dask better than the others). DuckDB is way faster at small scale (along with Polars). Dask and Spark are generally more robust and performant at large scale, mostly because they’re able to parallelize S3 access. Really-good-S3 access seems to be the way you win at real-world cloud performance.&lt;/p&gt;
+&lt;p&gt;Looking more deeply at Dask results, we’re wildly inefficient. There’s at least a 2x-5x performance increase to be had here. Given that Dask does about as well as any other project on cloud this really means that &lt;em&gt;no one&lt;/em&gt; has optimized cloud well yet.&lt;/p&gt;
+&lt;p&gt;This talk also goes into how we attempted to address bias (super hard to do in benchmarks). We had active collaborations with Polars and Spark people (made Polars quite a bit faster during this process actually). See &lt;a class="reference external" href="http://matthewrocklin.com/biased-benchmarks.html"&gt;https://matthewrocklin.com/biased-benchmarks.html&lt;/a&gt; for more thoughts.&lt;/p&gt;
+&lt;p&gt;This also shows the improvement Dask made in the last six months. Dask used to suck at benchmarks. Now it doesn’t win, but reliably places among the top. This is due to …&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Arrow strings&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;New shuffling algorithms&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Query optimization&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There’s a lot of work for projects like Dask and Polars to fix themselves up in this space. They’re both moving pretty fast right now. I’m curious to see how they progress in the next few months.&lt;/p&gt;
+&lt;p&gt;For future work I’d like to expand this out a bit beyond TPC-H. TPC-H is great because they’re fairly serious queries (lots of tables, lots of joins) and not micro-benchmarks. We could use broader coverage though. Any ideas?&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/reddit.html" rel="alternate"/>
+    <summary>Historically I mostly used Twitter to broadcast my work.
+However, Twitter today is less effective than it once was.
+What’s the best alternative?</summary>
+    <published>2023-11-10T00:00:00+00:00</published>
   </entry>
 </feed>
