@@ -15,10 +15,13 @@ What's the best alternative?
 I recently published work on big data benchmarks and pushed out the same
 message on all of the following platforms.
 
--  Twitter
--  LinkedIn
--  Mastodon
--  Reddit (all of r/dataengineering, r/datascience, and r/python)?
+-  [Twitter](https://twitter.com/mrocklin/status/1721879714871316512)
+-  [LinkedIn](https://www.linkedin.com/posts/mrocklin_spark-dask-duckdb-polars-tpc-h-benchmarks-activity-7127650276966113280-4DTf?utm_source=share&utm_medium=member_desktop)
+-  [Mastodon](https://fosstodon.org/@mrocklin/111369552234850135)
+-  Reddit (all of
+   [r/dataengineering](https://www.reddit.com/r/dataengineering/comments/17puedp/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/),
+   [r/datascience](https://www.reddit.com/r/datascience/comments/17qm6ob/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/), and
+   [r/python](https://www.reddit.com/r/Python/comments/17pwxfn/spark_dask_duckdb_polars_tpch_benchmarks_at_scale/))
 
 This post quantifies the views and engagement I received on each.
 
