@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-11-10T20:30:47.623097+00:00</updated>
+  <updated>2023-11-13T14:10:13.161400+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4683,7 +4683,6 @@ message on all of the following platforms.&lt;/p&gt;
 &lt;h2&gt;Results&lt;/h2&gt;
 &lt;p&gt;I care both that people see my initial message, and that they engage with it by
 actually watching the attached video/viewing the attached blogpost.&lt;/p&gt;
-&lt;p&gt;This is what&lt;/p&gt;
 &lt;table class="colwidths-auto table"&gt;
 &lt;thead&gt;
 &lt;tr class="row-odd"&gt;&lt;th class="head"&gt;&lt;p&gt;Source&lt;/p&gt;&lt;/th&gt;
@@ -4714,7 +4713,7 @@ actually watching the attached video/viewing the attached blogpost.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;img alt="_images/social-views.svg" src="_images/social-views.svg" width="45%" /&gt;&lt;img alt="_images/social-clickthroughs.svg" src="_images/social-clickthroughs.svg" width="45%" /&gt;&lt;/section&gt;
+&lt;img alt="_images/social-views.svg" src="_images/social-views.svg" /&gt;&lt;img alt="_images/social-clickthroughs.svg" src="_images/social-clickthroughs.svg" /&gt;&lt;/section&gt;
 &lt;section id="summary"&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;p&gt;A couple takeaways:&lt;/p&gt;

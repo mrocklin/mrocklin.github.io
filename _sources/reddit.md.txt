@@ -31,9 +31,6 @@ Results
 I care both that people see my initial message, and that they engage with it by
 actually watching the attached video/viewing the attached blogpost.
 
-This is what
-
-
 | Source     | Views      | Upvotes      | Comments       | Click Through  |
 | ---------- | ---------- | ------------ | -------------- | -------------- |
 | Reddit     |    135,100 |  248         |    51          |    528         |
@@ -41,8 +38,9 @@ This is what
 | LinkedIn   |     11,355 |  112         |    12          |    471         |
 
 
-<img src="images/social-views.svg" width="45%"/>
-<img src="images/social-clickthroughs.svg" width="45%"/>
+<img src="images/social-views.svg"/>
+
+<img src="images/social-clickthroughs.svg"/>
 
 Summary
 -------
