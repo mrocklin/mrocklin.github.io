@@ -50,8 +50,8 @@ for early-stage-oriented sales folks because ...
 
     It's a great opportunity for someone to say "I was the first salesperson on
     the ground and took them from $0 to $N million in two years" which is a
-    great way for someone to graduate from AE/SE to Head of Sales in their next
-    position.
+    great way for someone to graduate from AE/SE to VP of Sales in their next
+    position (or this one) and maximize lifetime income.
 
 Team Composition
 ----------------
@@ -93,8 +93,8 @@ Interviewing AEs is Hard
 ------------------------
 
 We've got good candiates for Field and Sales Engineers.  AEs are harder for us
-to connect to.  There are lots of great candidates out there, but it's been
-harder to come to a sense of conviction with an AE so far.
+to connect to though.  There are lots of great candidates out there, but it's
+been harder to come to a sense of conviction with an AE so far.
 
 My experience interviewing AEs so far has been that they say fairly generic
 things like:
@@ -108,20 +108,24 @@ things like:
 
 Everyone says these things, and while I wholeheartedly agree with these points,
 they don't differentiate a candidate, and they don't say anything specific
-about our situation, or even to ask questions about our situation that would
-let them answer things more effectively.  My assumption is that [early stage
-startups are different from each other](/think), and that what works for one is unlikely
-to transfer to another very easily.
+about our situation.   My assumption is that [early stage startups are
+different from each other](/think), and that what works for one is unlikely to
+transfer to another automatically.
 
 So, AEs that I interview, here's the cheat code:
 
 -   Assume that I know more about sales than a typical engineer
     (you can save time by not explaining basic concepts)
--   Get to a point in our conversation where we are conversing about strategy.
+
+-   Get to a point in our conversation where we are conversing about strategy
+    at a non-generic level.
+
     To do this you will likely need to ...
+
     -   Become a lot smarter about our situation pretty quickly,
-        this probably means asking useful questions
+        this probably means asking questions that are useful to you
     -   Pause ... and think
+
 -   If it looks like I want to say something, notice, and open some space.
     I'm very interested in how well we can communicate.
 
