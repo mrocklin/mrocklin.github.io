@@ -60,29 +60,30 @@ Ideally we want people who have three skills:
 
 1.  **Know how to sell stuff**
 
-    Knows how to empower champions, navigate an org chart, find economic
+    Know how to empower champions, navigate an org chart, find economic
     buyers, identify pain and goals, speak to that pain and those goals,
     negotiate with precurement and legal, etc..
 
 2.  **Know our space** (data infrastructure, open source, Python)
 
-    Familiar with Python/Spark/Cloud/Devops/Data/ML/...  So when someone says
-    that they're having trouble with Argo, know that that means "workflow
-    management" and direct them to the right solution.
+    Familiar with Python/Spark/Cloud/Devops/Data/ML/...  So for example when
+    someone says that they're having trouble with some technology, say Argo,
+    know that that means "workflow management" and direct them to the right
+    solution within our product.
 
     There's a lot of incidental complexity here that takes a while to learn.
 
 3.  **Are intellectually curious**, comfortable in startups,  and excited to be
     creative and invent new systems
 
-    There's really nothing in place to define how to do your job.  Hopefully
+    There's really nothing in place to define how to do the job.  Hopefully
     this excites rather than scares you.  Also, we have a distinct
     communication style (direct, critical, thoughtful) and hopefully you click
     with that.
 
-This person probably doesn't exist, so we'll happily settle for 2/3, and we'll
-just build a team to round things out.  Probably this team looks a little like
-...
+This person probably doesn't exist, so we'll happily settle for two out of
+three, and we'll just build a team to round things out.  Probably this team
+looks a little like ...
 
 -  Account Executive
 -  Sales Engineer
@@ -93,7 +94,7 @@ Interviewing AEs is Hard
 
 We've got good candiates for Field and Sales Engineers.  AEs are harder for us
 to connect to.  There are lots of great candidates out there, but it's been
-harder to come to a sense of conviction with someone, than with SEs / FEs.
+harder to come to a sense of conviction with an AE so far.
 
 My experience interviewing AEs so far has been that they say fairly generic
 things like:
@@ -101,33 +102,35 @@ things like:
 -  I'll succeed by finding the buyer, figuring out what their pain is, and then
    demonstrating how we solve that pain
 -  I did this with big name company X, where I built the relationship over many
-   months
+   months, and built the deal to $X million
 -  We shoould sell where the money is
 -  ...
 
 Everyone says these things, and while I wholeheartedly agree with these points,
-it's hard to get them to say anything specific about our situation, or even to
-ask questions about our situation that would let them answer things more
-effectively.
+they don't differentiate a candidate, and they don't say anything specific
+about our situation, or even to ask questions about our situation that would
+let them answer things more effectively.  My assumption is that [early stage
+startups are different from each other](/think), and that what works for one is unlikely
+to transfer to another very easily.
 
 So, AEs that I interview, here's the cheat code:
 
 -   Assume that I know more about sales than a typical engineer
-    (you don't need to explain basic concepts to me)
+    (you can save time by not explaining basic concepts)
 -   Get to a point in our conversation where we are conversing about strategy.
     To do this you will likely need to ...
-    -   become a lot smarter about our situation pretty quickly,
+    -   Become a lot smarter about our situation pretty quickly,
         this probably means asking useful questions
-    -   pause and think
+    -   Pause ... and think
 -   If it looks like I want to say something, notice, and open some space.
     I'm very interested in how well we can communicate.
 
 The number of otherwise qualified AEs that come in and give the impression that
 they have all the answers (despite not knowing much about our situation) is odd
 to me.  My *guess* is that they're assuming that I'm looking for someone to say
-"everything's going to be ok, I've got this" convincingly enough. To me
-saying that with conviction but without understanding our situation is a
-strongly negative signal.
+"everything's going to be ok, I've got this" convincingly enough and so that's
+their main/only message. However, to me saying that with conviction but without
+understanding our situation is a strongly negative signal.
 
 What I'm actually looking for is someone who can demonstrate that they're able
 to think and solve my problem specifically, not today, but over many months
