@@ -39,7 +39,19 @@ recent learnings:
 2.  After talking to customers, we realize that there are often much larger
     opportunities just behind the initial team that lands with us.
 
-Given this, we're hiring a sales team again.
+Given this, we're hiring a sales team again.  This should be a fun opportunity
+for early-stage-oriented sales folks because ...
+
+1.  **We have a solid pipeline of inbound leads.**
+
+    Our product mints new champions regularly.
+
+2.  **Our current sales numbers suck**, mostly because we haven't done anything.
+
+    It's a great opportunity for someone to say "I was the first salesperson on
+    the ground and took them from $0 to $N million in two years" which is a
+    great way for someone to graduate from AE/SE to Head of Sales in their next
+    position.
 
 Team Composition
 ----------------
