@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-04-29T12:39:55.207805+00:00</updated>
+  <updated>2024-04-29T17:25:03.875369+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4765,13 +4765,13 @@ What’s the best alternative?</summary>
     </author>
     <content type="html">&lt;section id="hiring-sales"&gt;
 
-&lt;p&gt;We’re restarting our sales organization a couple years after firing our old
-one.  It’s an interesting challenge finding just the right person.  This post
-goes into a bit of our history, what I’m looking for in an early sales hire,
-and my experience engaging with this process.&lt;/p&gt;
+&lt;p&gt;We’re relaunching our enterprise sales effort after improving product-market
+fit.  However, it’s an interesting challenge finding just the right person.
+This post goes into a bit of our history, what we’re looking for in an early
+sales hire, and my experience engaging with this process.&lt;/p&gt;
 &lt;p&gt;This post may interest you if …&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;You’re interviewing for a sales job with me and I’ve pointed you to this post&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’re interviewing for with me and I’ve pointed you to this post&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;You’re curious about startups generally&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;You want to recommend someone in your network (please do!)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -4780,10 +4780,11 @@ and my experience engaging with this process.&lt;/p&gt;
 &lt;p&gt;A couple years ago we had a sales team, but our product was bad and so the
 sales team was premature.  We fired them (and a bunch of other people) and
 focused on making a delightful product.&lt;/p&gt;
-&lt;p&gt;Because we didn’t have a sales team we focused on making a product that a user
-could on-board, use, and pay for all without talking to us.  Surprisingly, this
-worked, and today we have a nice machine that generates happy champions within
-small teams that pay low thousands of dollars per month (but rarely more).&lt;/p&gt;
+&lt;p&gt;Then, because we didn’t have a sales team we focused on making a product that a
+user could on-board, use, and pay for all without talking to us.  Surprisingly,
+this worked, and today we have a nice machine that generates happy champions
+within small teams that pay low thousands of dollars per month (but rarely
+more).&lt;/p&gt;
 &lt;p&gt;These people pay us money, but not that much.  We’ve been encouraged by two
 recent learnings:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -4909,10 +4910,10 @@ Honestly, if you’re really good then you can have my job :)&lt;/p&gt;
 &lt;/section&gt;
 </content>
     <link href="https://matthewrocklin.com/hiring-sales.html"/>
-    <summary>We’re restarting our sales organization a couple years after firing our old
-one.  It’s an interesting challenge finding just the right person.  This post
-goes into a bit of our history, what I’m looking for in an early sales hire,
-and my experience engaging with this process.</summary>
+    <summary>We’re relaunching our enterprise sales effort after improving product-market
+fit.  However, it’s an interesting challenge finding just the right person.
+This post goes into a bit of our history, what we’re looking for in an early
+sales hire, and my experience engaging with this process.</summary>
     <published>2024-04-29T00:00:00+00:00</published>
   </entry>
 </feed>

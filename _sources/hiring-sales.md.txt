@@ -9,14 +9,14 @@ author: Matthew Rocklin
 Hiring Sales
 ============
 
-We're restarting our sales organization a couple years after firing our old
-one.  It's an interesting challenge finding just the right person.  This post
-goes into a bit of our history, what I'm looking for in an early sales hire,
-and my experience engaging with this process.
+We're relaunching our enterprise sales effort after improving product-market
+fit.  However, it's an interesting challenge finding just the right person.
+This post goes into a bit of our history, what we're looking for in an early
+sales hire, and my experience engaging with this process.
 
 This post may interest you if ...
 
-1.  You're interviewing for a sales job with me and I've pointed you to this post
+1.  You're interviewing for with me and I've pointed you to this post
 2.  You're curious about startups generally
 3.  You want to recommend someone in your network (please do!)
 
@@ -27,10 +27,11 @@ A couple years ago we had a sales team, but our product was bad and so the
 sales team was premature.  We fired them (and a bunch of other people) and
 focused on making a delightful product.
 
-Because we didn't have a sales team we focused on making a product that a user
-could on-board, use, and pay for all without talking to us.  Surprisingly, this
-worked, and today we have a nice machine that generates happy champions within
-small teams that pay low thousands of dollars per month (but rarely more).
+Then, because we didn't have a sales team we focused on making a product that a
+user could on-board, use, and pay for all without talking to us.  Surprisingly,
+this worked, and today we have a nice machine that generates happy champions
+within small teams that pay low thousands of dollars per month (but rarely
+more).
 
 These people pay us money, but not that much.  We've been encouraged by two
 recent learnings:
