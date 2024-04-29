@@ -58,7 +58,7 @@ Team Composition
 
 Ideally we want people who have three skills:
 
-1.  **Know how to sell stuff**
+1.  **Know how to sell**
 
     Know how to empower champions, navigate an org chart, find economic
     buyers, identify pain and goals, speak to that pain and those goals,
@@ -103,7 +103,7 @@ things like:
    demonstrating how we solve that pain
 -  I did this with big name company X, where I built the relationship over many
    months, and built the deal to $X million
--  We shoould sell where the money is
+-  We should sell where the money is
 -  ...
 
 Everyone says these things, and while I wholeheartedly agree with these points,
@@ -151,7 +151,7 @@ questions by sales folks:
 
 -   **Q:** What is your runway?
 
-    **A:** We have a bit over two years, assuming we don't make any money
+    **A:** We have two-ish years of runway, assuming we don't make any money
 
 -   **Q:** What are your goals?
 
