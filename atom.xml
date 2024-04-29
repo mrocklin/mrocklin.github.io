@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2023-11-13T14:10:13.161400+00:00</updated>
+  <updated>2024-04-29T12:39:55.207805+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -108,7 +108,7 @@
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/shared-abstractions.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/shared-abstractions.html"/>
     <summary>a story of shared abstractions</summary>
     <published>2013-09-02T00:00:00+00:00</published>
   </entry>
@@ -262,7 +262,7 @@ a stressful situation, and gives you an air of professionalism.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/write-tests.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/write-tests.html"/>
     <summary>Tests are important for community driven open source software.
 This post contains brief reasons why you should test your code, particularly if
 you submit changes to existing open source projects.</summary>
@@ -439,7 +439,7 @@ proficiency.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/biased-benchmarks.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/biased-benchmarks.html"/>
     <summary>honesty is hard</summary>
     <published>2017-03-09T00:00:00+00:00</published>
   </entry>
@@ -533,7 +533,7 @@ experience.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/write-dumb-code.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/write-dumb-code.html"/>
     <summary>The best way you can contribute to an open source project is to remove lines of code from it.
 We should endeavor to write code that a novice programmer can easily
 understand without explanation or that a maintainer can understand without
@@ -852,7 +852,7 @@ how they like to support users.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/minimal-bug-reports.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/minimal-bug-reports.html"/>
     <summary>Following up on a post on supporting users in open source
 this post lists some suggestions on how to ask a maintainer to help you with a problem.</summary>
     <category term="Programming" label="Programming"/>
@@ -986,7 +986,7 @@ priorities.  Slack has many great uses, but I think that in-depth technical
 conversation and long-term planning aren’t among them.&lt;/p&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/slack-github.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/slack-github.html"/>
     <summary>I avoid interacting on Slack, especially for technical conversations around
 open source software.  Instead, I encourage colleagues to have technical and
 design conversations on GitHub, or some other system that is public, permanent,
@@ -1285,7 +1285,7 @@ forward.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/maintainer.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/maintainer.html"/>
     <summary>What are the expectations and best practices for maintainers of open source software libraries?
 How can we do this better?</summary>
     <published>2019-05-18T00:00:00+00:00</published>
@@ -1392,7 +1392,7 @@ that is felt more acutely by everyone reading the code except the original autho
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/avoid-indirection.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/avoid-indirection.html"/>
     <summary>This post argues for avoiding indirection in community code.</summary>
     <published>2019-06-23T00:00:00+00:00</published>
   </entry>
@@ -1485,7 +1485,7 @@ this.&lt;/p&gt;&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/write-short-blogposts.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/write-short-blogposts.html"/>
     <summary>I encourage my colleagues to write blogposts more frequently.
 This is for a few reasons:</summary>
     <published>2019-06-25T00:00:00+00:00</published>
@@ -1657,7 +1657,7 @@ technical, organizational, and emotional maturity.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/senior-engineer.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/senior-engineer.html"/>
     <summary>Software development is both a highly technical and a highly creative process.
 Programmers are reasonably proud of their abilities and experience,
 much in the same way that expert artists or artisans can be proud of their work.</summary>
@@ -1757,7 +1757,7 @@ product.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/engineers-and-sales.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/engineers-and-sales.html"/>
     <summary>Engineer: Hey Boss, what should I know to more effectively sell our product?</summary>
     <published>2019-12-05T00:00:00+00:00</published>
   </entry>
@@ -1992,7 +1992,7 @@ simultaneously shoving knowledge into their brain.&lt;/strong&gt;&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/brevity.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/brevity.html"/>
     <summary>Speaking truth is easy.  Getting people to listen is hard.</summary>
     <published>2020-07-13T00:00:00+00:00</published>
   </entry>
@@ -2075,7 +2075,7 @@ which I think eventually lead to improved engagement.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/tweet.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/tweet.html"/>
     <summary>Tweets, like all writing, should respect the reader through brevity and structure.</summary>
     <published>2020-08-18T00:00:00+00:00</published>
   </entry>
@@ -2178,7 +2178,7 @@ more community-supportive behaviors.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/metrics.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/metrics.html"/>
     <summary>Common open source software (OSS) / venture capital (VC) metrics are flawed.
 This surprises no one; metrics are hard.Dask weekly users on documentation</summary>
     <published>2020-10-28T00:00:00+00:00</published>
@@ -2338,7 +2338,7 @@ between these two positions.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/technical-lead.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/technical-lead.html"/>
     <summary>Tech lead is a role for senior engineers that provides some of the leverage of
 management, while avoiding most of the administrative burden.  It’s a fun role.
 This post talks about some positive behaviors to think about should you find
@@ -2488,7 +2488,7 @@ of scope creep, and often in directions that are not primary foci of the team.&l
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/fast-review.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/fast-review.html"/>
     <summary>This is a fast blogpost please excuse the brevity.</summary>
     <published>2022-03-26T00:00:00+00:00</published>
   </entry>
@@ -2618,7 +2618,7 @@ development they are.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/startup-revenue.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/startup-revenue.html"/>
     <summary>VC funded startups are weird.
 They (rightly) care more about valuation than about revenue.
 Valuation depends on revenue, but only on very certain kinds of revenue.</summary>
@@ -2774,7 +2774,7 @@ missions, like those mentioned above.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/scipy-mission.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/scipy-mission.html"/>
     <summary>We just returned from the annual SciPy conference full of energy as usual.
 This conference is unique because it includes core maintainers from most of the
 core Python data projects (Jupyter, Pandas, Numpy, Scikit-Learn, Dask, Xarray,
@@ -2849,7 +2849,7 @@ to thinking about users, technology, and communication.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/over-grown.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/over-grown.html"/>
     <summary>I’ve intentionally shrunk Coiled from 40 to 20 people.
 This was painful, but we’re moving faster as a result.
 This article talks a little about the context around this.</summary>
@@ -2911,7 +2911,7 @@ be a sign that the team lacks a strong prioritization function.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/user-valued-work.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/user-valued-work.html"/>
     <summary>We often need to balance prioritization between user-facing work and internal
 or developer-facing work.  It’s helpful to distinguish between these in
 conversations of prioritization and measuring success.</summary>
@@ -3146,7 +3146,7 @@ Building a thing that scales right from the start reduces your chance of eventua
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/startup-best-practices.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/startup-best-practices.html"/>
     <summary>After building a successful open source project I then started a company and made many mistakes.</summary>
     <published>2022-09-05T00:00:00+00:00</published>
   </entry>
@@ -3192,7 +3192,7 @@ which I appreciate.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/failure.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/failure.html"/>
     <summary>Most startups fail, and yet most CEOs project inevitable success.  What gives?</summary>
     <published>2022-09-05T00:00:00+00:00</published>
   </entry>
@@ -3351,7 +3351,7 @@ suggestions?” with an option to add your name&lt;/p&gt;&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/offsites.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/offsites.html"/>
     <summary>I love remote work, but sometimes it sucks.  Offsites can help.</summary>
     <published>2022-09-12T00:00:00+00:00</published>
   </entry>
@@ -3442,7 +3442,7 @@ begin experimenting heavily.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/meetings.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/meetings.html"/>
     <summary>I cancelled all my regular meetings and logged off of Slack.  It has made a
 huge difference.</summary>
     <published>2022-12-02T00:00:00+00:00</published>
@@ -3513,7 +3513,7 @@ satisfaction.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/stability-bias.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/stability-bias.html"/>
     <summary>We often optimize more for current users than future users.</summary>
     <published>2022-12-02T00:00:00+00:00</published>
   </entry>
@@ -3593,7 +3593,7 @@ so that you don’t have to deal with batteries&lt;/p&gt;&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/audio-visual.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/audio-visual.html"/>
     <summary>HD is the new tall</summary>
     <published>2022-12-18T00:00:00+00:00</published>
   </entry>
@@ -3651,7 +3651,7 @@ shamelessly.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/think.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/think.html"/>
     <summary>No one knows how to do your job.  Look for answers from within, not without.</summary>
     <published>2022-12-26T00:00:00+00:00</published>
   </entry>
@@ -3834,7 +3834,7 @@ I encourage you to give your own communication habits some consideration.&lt;/p&
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/redesign-blog.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/redesign-blog.html"/>
     <summary>How we read and write shapes how we think</summary>
     <published>2023-01-02T00:00:00+00:00</published>
   </entry>
@@ -4001,7 +4001,7 @@ last interview&lt;/p&gt;&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/interviews.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/interviews.html"/>
     <summary>Interviewing is hard.  It’s also important to do well.</summary>
     <published>2023-01-06T00:00:00+00:00</published>
   </entry>
@@ -4302,7 +4302,7 @@ hands on experience there).&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/saas-gtm.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/saas-gtm.html"/>
     <summary>Where are we on product and GTM?  What are some open questions and what should
 we do to improve?</summary>
     <published>2023-02-01T00:00:00+00:00</published>
@@ -4401,7 +4401,7 @@ is a recurring problem.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/performance-reviews.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/performance-reviews.html"/>
     <summary>Feedback is critical for alignment and growth, but really awkward.</summary>
     <published>2023-02-14T00:00:00+00:00</published>
   </entry>
@@ -4575,7 +4575,7 @@ computer.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/laser-eye-correction.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/laser-eye-correction.html"/>
     <summary>This article records my experience going through laser corrective eye surgery.  Typically folks get LASIK.  I got PRK/ASA instead, which is slightly more involved.  This will go through the following phases:</summary>
     <published>2023-03-06T00:00:00+00:00</published>
   </entry>
@@ -4650,7 +4650,7 @@ different phrases:&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/decision-fatigue.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/decision-fatigue.html"/>
     <summary>Making decisions is hard work, even if the decisions are low stakes.
 As proof consider the following questions from your ordinary life:</summary>
     <published>2023-03-18T00:00:00+00:00</published>
@@ -4750,10 +4750,169 @@ a stream.  On Reddit / LinkedIn it was a single post.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://matthewrocklin.com/reddit.html" rel="alternate"/>
+    <link href="https://matthewrocklin.com/reddit.html"/>
     <summary>Historically I mostly used Twitter to broadcast my work.
 However, Twitter today is less effective than it once was.
 What’s the best alternative?</summary>
     <published>2023-11-10T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/hiring-sales.html</id>
+    <title>Hiring Sales</title>
+    <updated>2024-04-29T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="hiring-sales"&gt;
+
+&lt;p&gt;We’re restarting our sales organization a couple years after firing our old
+one.  It’s an interesting challenge finding just the right person.  This post
+goes into a bit of our history, what I’m looking for in an early sales hire,
+and my experience engaging with this process.&lt;/p&gt;
+&lt;p&gt;This post may interest you if …&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;You’re interviewing for a sales job with me and I’ve pointed you to this post&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’re curious about startups generally&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You want to recommend someone in your network (please do!)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;section id="history"&gt;
+&lt;h2&gt;History&lt;/h2&gt;
+&lt;p&gt;A couple years ago we had a sales team, but our product was bad and so the
+sales team was premature.  We fired them (and a bunch of other people) and
+focused on making a delightful product.&lt;/p&gt;
+&lt;p&gt;Because we didn’t have a sales team we focused on making a product that a user
+could on-board, use, and pay for all without talking to us.  Surprisingly, this
+worked, and today we have a nice machine that generates happy champions within
+small teams that pay low thousands of dollars per month (but rarely more).&lt;/p&gt;
+&lt;p&gt;These people pay us money, but not that much.  We’ve been encouraged by two
+recent learnings:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;A little bit of customer support as they onboard greatly accelerates consumption&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After talking to customers, we realize that there are often much larger
+opportunities just behind the initial team that lands with us.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Given this, we’re hiring a sales team again.  This should be a fun opportunity
+for early-stage-oriented sales folks because …&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;We have a solid pipeline of inbound leads.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our product mints new champions regularly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Our current sales numbers suck&lt;/strong&gt;, mostly because we haven’t done anything.&lt;/p&gt;
+&lt;p&gt;It’s a great opportunity for someone to say “I was the first salesperson on
+the ground and took them from $0 to $N million in two years” which is a
+great way for someone to graduate from AE/SE to VP of Sales in their next
+position (or this one) and maximize lifetime income.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;section id="team-composition"&gt;
+&lt;h2&gt;Team Composition&lt;/h2&gt;
+&lt;p&gt;Ideally we want people who have three skills:&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Know how to sell&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Know how to empower champions, navigate an org chart, find economic
+buyers, identify pain and goals, speak to that pain and those goals,
+negotiate with precurement and legal, etc..&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Know our space&lt;/strong&gt; (data infrastructure, open source, Python)&lt;/p&gt;
+&lt;p&gt;Familiar with Python/Spark/Cloud/Devops/Data/ML/…  So for example when
+someone says that they’re having trouble with some technology, say Argo,
+know that that means “workflow management” and direct them to the right
+solution within our product.&lt;/p&gt;
+&lt;p&gt;There’s a lot of incidental complexity here that takes a while to learn.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Are intellectually curious&lt;/strong&gt;, comfortable in startups,  and excited to be
+creative and invent new systems&lt;/p&gt;
+&lt;p&gt;There’s really nothing in place to define how to do the job.  Hopefully
+this excites rather than scares you.  Also, we have a distinct
+communication style (direct, critical, thoughtful) and hopefully you click
+with that.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This person probably doesn’t exist, so we’ll happily settle for two out of
+three, and we’ll just build a team to round things out.  Probably this team
+looks a little like …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Account Executive&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sales Engineer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Field Engineer&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="interviewing-aes-is-hard"&gt;
+&lt;h2&gt;Interviewing AEs is Hard&lt;/h2&gt;
+&lt;p&gt;We’ve got good candiates for Field and Sales Engineers.  AEs are harder for us
+to connect to though.  There are lots of great candidates out there, but it’s
+been harder to come to a sense of conviction with an AE so far.&lt;/p&gt;
+&lt;p&gt;My experience interviewing AEs so far has been that they say fairly generic
+things like:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;I’ll succeed by finding the buyer, figuring out what their pain is, and then
+demonstrating how we solve that pain&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I did this with big name company X, where I built the relationship over many
+months, and built the deal to $X million&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We should sell where the money is&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;…&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Everyone says these things, and while I wholeheartedly agree with these points,
+they don’t differentiate a candidate, and they don’t say anything specific
+about our situation.   My assumption is that &lt;a class="reference internal" href="think.html"&gt;&lt;span class="doc std std-doc"&gt;early stage startups are
+different from each other&lt;/span&gt;&lt;/a&gt;, and that what works for one is unlikely to
+transfer to another automatically.&lt;/p&gt;
+&lt;p&gt;So, AEs that I interview, here’s the cheat code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Assume that I know more about sales than a typical engineer
+(you can save time by not explaining basic concepts)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Get to a point in our conversation where we are conversing about strategy
+at a non-generic level.&lt;/p&gt;
+&lt;p&gt;To do this you will likely need to …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Become a lot smarter about our situation pretty quickly,
+this probably means asking questions that are useful to you&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pause … and think&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If it looks like I want to say something, notice, and open some space.
+I’m very interested in how well we can communicate.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The number of otherwise qualified AEs that come in and give the impression that
+they have all the answers (despite not knowing much about our situation) is odd
+to me.  My &lt;em&gt;guess&lt;/em&gt; is that they’re assuming that I’m looking for someone to say
+“everything’s going to be ok, I’ve got this” convincingly enough and so that’s
+their main/only message. However, to me saying that with conviction but without
+understanding our situation is a strongly negative signal.&lt;/p&gt;
+&lt;p&gt;What I’m actually looking for is someone who can demonstrate that they’re able
+to think and solve my problem specifically, not today, but over many months
+after failing quickly many times and thinking through new strategies.  My
+assumption is that any answer you have today is likely wrong, so if you have
+strong conviction on that answer I’ll probably assume that you’re mentally
+inflexible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="faqs"&gt;
+&lt;h2&gt;FAQs&lt;/h2&gt;
+&lt;p&gt;To accelerate the interview process a bit, here are some frequently asked
+questions by sales folks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; What is your runway?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; We have two-ish years of runway, assuming we don’t make any money&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; What are your goals?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; I’d love to get to $5mm ARR in that time (but you tell me what you
+think is feasible, and we’ll adjust strategy together) probably with a
+mixture of small and large deals.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; How much room is there to grow?  (could I end up managing sales?)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; Yes, if you’re good.  I don’t promise anything though.
+Honestly, if you’re really good then you can have my job :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/hiring-sales.html"/>
+    <summary>We’re restarting our sales organization a couple years after firing our old
+one.  It’s an interesting challenge finding just the right person.  This post
+goes into a bit of our history, what I’m looking for in an early sales hire,
+and my experience engaging with this process.</summary>
+    <published>2024-04-29T00:00:00+00:00</published>
   </entry>
 </feed>
