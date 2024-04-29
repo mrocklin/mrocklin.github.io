@@ -16,7 +16,7 @@ sales hire, and my experience engaging with this process.
 
 This post may interest you if ...
 
-1.  You're interviewing for with me and I've pointed you to this post
+1.  You're interviewing with me and I've pointed you to this post
 2.  You're curious about startups generally
 3.  You want to recommend someone in your network (please do!)
 
