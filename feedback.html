@@ -12,7 +12,7 @@
   
 <meta property="og:url" content="https://matthewrocklin.com/feedback.html" />
   
-<meta property="og:description" content="Feedback is critical to doing good work as a team. Good feedback cultivates good work and professional growth. Bad feedback hurts quality and erodes relationships. In OSS I’m praised for reviews, b..." />
+<meta property="og:description" content="Feedback is critical to performing good work as a team. Good feedback cultivates quality work and professional growth. Bad feedback degrades quality and erodes relationships. In OSS I’m praised for..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
@@ -487,42 +487,43 @@
             <article class="bd-article" role="main">
                <section id="how-github-taught-me-to-micromanage">
 <h1>How GitHub taught me to Micromanage<a class="headerlink" href="#how-github-taught-me-to-micromanage" title="Permalink to this heading">#</a></h1>
-<p>Feedback is critical to doing good work as a team.
-Good feedback cultivates good work and professional growth.
-Bad feedback hurts quality and erodes relationships.</p>
+<p>Feedback is critical to performing good work as a team.
+Good feedback cultivates quality work and professional growth.
+Bad feedback degrades quality and erodes relationships.</p>
 <p>In OSS I’m praised for reviews, but in corporate settings I’m
 told that I micromanage.  I don’t dispute this; I’m working on it; thank you
-all for your patience with me.</p>
-<p>This article explains the origins of my practice, and hopefully provokes
-thought on the practice of giving and receiving feedback.  We start with
-with lessons learned from open source code review, and then shift to
-corporate settings and how these lessons fail to apply.</p>
+all for your patience.</p>
+<p>This article explains the origins of my feedback practice in open source,
+and hopefully provokes thought on the practice of giving and receiving
+feedback.  We start with with lessons learned from community code review, and
+then shift to corporate settings and how these lessons fail to apply.</p>
 <section id="open-source-code-reviews">
 <h2>Open Source Code Reviews<a class="headerlink" href="#open-source-code-reviews" title="Permalink to this heading">#</a></h2>
 <p>I first experienced transformative feedback when working in old-school open
 source communities.  These weren’t corporate environments.  These were a bunch
 of volunteers working together to build something awesome used by rest of the
 world.  There were no managers, no performance reviews, no video meetings, no
-meetings at all in fact.  There was just the work, which was the focus of all
+meetings at all in fact.  There was just the work, and the work was the focus of all
 communication.</p>
-<p>Work took three forms:</p>
+<p>The work took three forms:</p>
 <ol class="arabic simple">
 <li><p><strong>Issues:</strong> where we discussed concerns and considered technical designs as a group</p></li>
 <li><p><strong>Coding:</strong> where one person would write a solution to the proposed issue</p></li>
-<li><p><strong>Code Review:</strong> where anyone could drop in, review the code, and provide a
-ton of feedback.</p></li>
+<li><p><strong>Code Review:</strong> where anyone could drop in, review the code, and provide feedback.</p></li>
 </ol>
 <p>Most of the work was in <em>Code Review</em>, not <em>Coding</em> (writing code is a
 vanishingly small fraction software development) and so I spent several hours
 every day, for years, giving and receiving highly detailed feedback from fellow
 collaborators.  This is where we taught each other.  This is where we learned
-to align on mission and on style.  This is where we expressed humor and learned
+to align on mission and style.  This is where we expressed humor and learned
 about each others’ character and about our own.</p>
 <p>Let’s see an example</p>
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
-<p>Let’s talk about bad/ok/good feedback by reviewing the following simple code.</p>
+<p>In this example we see some simple proposed code below, and then consider
+bad/ok/good feedback on that code.</p>
+<p><strong>Proposed code</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
@@ -535,7 +536,7 @@ informative variable names.</em></p>
 <p><em>Please don’t use for loops.  They’re hard to understand.  Also, please use
 informative variable names.</em></p>
 <p><em>How about the following?</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing</span> <span class="n">records</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing_records</span><span class="p">])</span>
 </pre></div>
 </div>
 <p><strong>Good Review</strong></p>
@@ -546,7 +547,7 @@ to the reader what’s going on at a glance because they’re a more constrained
 construct.  (The same could be said for using <code class="docutils literal notranslate"><span class="pre">map</span></code>, but I rarely see that
 pattern in this codebase).</em></p>
 <p><em>How about this?</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing</span> <span class="n">records</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing_records</span><span class="p">])</span>
 </pre></div>
 </div>
 <p><em>Now, this practice can definitely get out of hand (I’ve seen some crazy nested
@@ -558,20 +559,19 @@ is strongly in favor of the list comprehension.</em></p>
 <p><em>Anecdotally, this is also the norm in this codebase.</em></p>
 <section id="analysis">
 <h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h3>
-<p>Let’s assess each piece of feedback and why I personlly think that they’re
+<p>Let’s assess each piece of feedback and why I personally think that they’re
 bad/ok/good.</p>
 <ul>
 <li><p><strong>Bad feedback</strong> critiques code, but doesn’t offer a better direction.</p>
 <p>Critique without constructive direction is just complaining,
-and adds to the author’s burden.</p>
+and adds constraint to the author without also helping with momentum.</p>
 </li>
 <li><p><strong>OK feedback</strong> provides direction.</p>
 <p>The reviewer works with the author to produce a better result.</p>
 </li>
 <li><p><strong>Good feedback</strong> educates the author.</p>
-<p>The reviewer works with the author to produce a better result,
-and to improve the author’s skills for the future.
-The good reviewer invests in the author.</p>
+<p>The reviewer works with the author to produce a better result.</p>
+<p>The reviewer works to also improve the author, an investment in their joint future.</p>
 </li>
 </ul>
 <p>The good feedback is thorough, especially given how trivial the code is, and
@@ -589,10 +589,10 @@ thing</em>.  It’s not like there was some important bug here.</p>
 <li><p>Align on conventions and process</p></li>
 </ol>
 <p>Personally, this is how I learned to write code.  This community and practice
-is the reason I’ve had success in my career, which has transformed my life.
-This community and practice is also my primary way to give back to fellow devs
-around the world.  I can see the positive impact I and others have had daily in
-the lives and success of colleagues I’ve known for decades.</p>
+is the reason for my success in career, which has transformed my life.  I am
+grateful.  This community and practice is also the primary way for me to give
+back to fellow devs around the world.  I can see the impact I and others have
+had daily in the lives and success of colleagues that I’ve known for decades.</p>
 </section>
 <section id="oss-idiosyncrasies">
 <h2>OSS Idiosyncrasies<a class="headerlink" href="#oss-idiosyncrasies" title="Permalink to this heading">#</a></h2>
@@ -600,13 +600,13 @@ the lives and success of colleagues I’ve known for decades.</p>
 (which I’ll get to next), I think that there are some interesting idiosyncrasies
 about this practice and people that are worth mentioning:</p>
 <ol class="arabic simple">
-<li><p><strong>Craftsmanship:</strong> The people involved care deeply about their craft of development</p></li>
-<li><p><strong>Volunteerism:</strong> Everyone was a volunteer, spending their personal time on this activity</p></li>
+<li><p><strong>Craftsmanship:</strong> These people care deeply about their craft</p></li>
+<li><p><strong>Volunteerism:</strong> Everyone is a volunteer, spending their personal time on this activity</p></li>
 <li><p><strong>Work Focus:</strong> All feedback and conversation is focused on the work,
 rather than on the person</p></li>
 <li><p><strong>Public:</strong> All feedback is fully public</p></li>
-<li><p><strong>Respect:</strong> Respect is assumed more broadly (people never have
-to work with people they don’t want to work with)</p></li>
+<li><p><strong>Respect:</strong> Respect is assumed broadly (we rarely volunteer with people
+that we don’t enjoy)</p></li>
 </ol>
 </section>
 <section id="corporate-contexts">
@@ -622,8 +622,7 @@ like this.  What I found were questions/concerns/problems like the following
 <ol class="arabic simple">
 <li><p>Why is the CEO correcting my grammar?</p></li>
 <li><p>If you want these changes, why not just edit the doc directly?</p></li>
-<li><p>This doc isn’t high priority, I don’t want to spend a lot of time in
-discussion here</p></li>
+<li><p>This doc isn’t high priority. Why do you want to talk about this so much?</p></li>
 <li><p>Why do you keep telling me how bad I am at writing?</p></li>
 </ol>
 <p>These questions confused me.  I realized that it was because that the implicit
@@ -635,7 +634,7 @@ message received behind my feedback was very different.</p>
 the first open source case than in the second corporate case.</p>
 <ul class="simple">
 <li><p><strong>Open Source:</strong> <em>I believe in you and your work.  I see potential for you to
-get <em>even</em> better and deeply want to invest my time to see that happen.</em></p></li>
+get even better at your craft and would be proud to invest my time to see that happen.</em></p></li>
 <li><p><strong>Corporate:</strong> You’re doing a bad job.  I’m going to explain, in minute
 detail, exactly what you did wrong, over and over again because I hate you
 and want you to suffer.</p></li>

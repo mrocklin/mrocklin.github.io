@@ -9,18 +9,18 @@ author: Matthew Rocklin
 How GitHub taught me to Micromanage
 ===================================
 
-Feedback is critical to doing good work as a team.
-Good feedback cultivates good work and professional growth.
-Bad feedback hurts quality and erodes relationships.
+Feedback is critical to performing good work as a team.
+Good feedback cultivates quality work and professional growth.
+Bad feedback degrades quality and erodes relationships.
 
 In OSS I'm praised for reviews, but in corporate settings I'm
 told that I micromanage.  I don't dispute this; I'm working on it; thank you
-all for your patience with me.
+all for your patience.
 
-This article explains the origins of my practice, and hopefully provokes
-thought on the practice of giving and receiving feedback.  We start with
-with lessons learned from open source code review, and then shift to
-corporate settings and how these lessons fail to apply.
+This article explains the origins of my feedback practice in open source,
+and hopefully provokes thought on the practice of giving and receiving
+feedback.  We start with with lessons learned from community code review, and
+then shift to corporate settings and how these lessons fail to apply.
 
 
 Open Source Code Reviews
@@ -30,21 +30,20 @@ I first experienced transformative feedback when working in old-school open
 source communities.  These weren't corporate environments.  These were a bunch
 of volunteers working together to build something awesome used by rest of the
 world.  There were no managers, no performance reviews, no video meetings, no
-meetings at all in fact.  There was just the work, which was the focus of all
+meetings at all in fact.  There was just the work, and the work was the focus of all
 communication.
 
-Work took three forms:
+The work took three forms:
 
 1.  **Issues:** where we discussed concerns and considered technical designs as a group
 2.  **Coding:** where one person would write a solution to the proposed issue
-3.  **Code Review:** where anyone could drop in, review the code, and provide a
-    ton of feedback.
+3.  **Code Review:** where anyone could drop in, review the code, and provide feedback.
 
 Most of the work was in *Code Review*, not *Coding* (writing code is a
 vanishingly small fraction software development) and so I spent several hours
 every day, for years, giving and receiving highly detailed feedback from fellow
 collaborators.  This is where we taught each other.  This is where we learned
-to align on mission and on style.  This is where we expressed humor and learned
+to align on mission and style.  This is where we expressed humor and learned
 about each others' character and about our own.
 
 Let's see an example
@@ -52,7 +51,10 @@ Let's see an example
 Example
 -------
 
-Let's talk about bad/ok/good feedback by reviewing the following simple code.
+In this example we see some simple proposed code below, and then consider
+bad/ok/good feedback on that code.
+
+**Proposed code**
 
 ```python
 x = 0
@@ -73,7 +75,7 @@ informative variable names.*
 *How about the following?*
 
 ```python
-total = sum([f(record) for record in housing records])
+total = sum([f(record) for record in housing_records])
 ```
 
 **Good Review**
@@ -89,7 +91,7 @@ pattern in this codebase).*
 *How about this?*
 
 ```python
-total = sum([f(record) for record in housing records])
+total = sum([f(record) for record in housing_records])
 ```
 
 *Now, this practice can definitely get out of hand (I've seen some crazy nested
@@ -103,13 +105,13 @@ is strongly in favor of the list comprehension.*
 
 ### Analysis
 
-Let's assess each piece of feedback and why I personlly think that they're
+Let's assess each piece of feedback and why I personally think that they're
 bad/ok/good.
 
 -  **Bad feedback** critiques code, but doesn't offer a better direction.
 
     Critique without constructive direction is just complaining,
-    and adds to the author's burden.
+    and adds constraint to the author without also helping with momentum.
 
 -  **OK feedback** provides direction.
 
@@ -117,9 +119,9 @@ bad/ok/good.
 
 -  **Good feedback** educates the author.
 
-    The reviewer works with the author to produce a better result,
-    and to improve the author's skills for the future.
-    The good reviewer invests in the author.
+    The reviewer works with the author to produce a better result.
+
+    The reviewer works to also improve the author, an investment in their joint future.
 
 The good feedback is thorough, especially given how trivial the code is, and
 especially given that the new solution and the old solution *do the same exact
@@ -138,10 +140,10 @@ We see then that code reviews serve a few different roles:
 3.  Align on conventions and process
 
 Personally, this is how I learned to write code.  This community and practice
-is the reason I've had success in my career, which has transformed my life.
-This community and practice is also my primary way to give back to fellow devs
-around the world.  I can see the positive impact I and others have had daily in
-the lives and success of colleagues I've known for decades.
+is the reason for my success in career, which has transformed my life.  I am
+grateful.  This community and practice is also the primary way for me to give
+back to fellow devs around the world.  I can see the impact I and others have
+had daily in the lives and success of colleagues that I've known for decades.
 
 
 OSS Idiosyncrasies
@@ -151,13 +153,13 @@ After thinking about this life experience and comparing it to corporate work
 (which I'll get to next), I think that there are some interesting idiosyncrasies
 about this practice and people that are worth mentioning:
 
-1.  **Craftsmanship:** The people involved care deeply about their craft of development
-2.  **Volunteerism:** Everyone was a volunteer, spending their personal time on this activity
+1.  **Craftsmanship:** These people care deeply about their craft
+2.  **Volunteerism:** Everyone is a volunteer, spending their personal time on this activity
 3.  **Work Focus:** All feedback and conversation is focused on the work,
     rather than on the person
 4.  **Public:** All feedback is fully public
-5.  **Respect:** Respect is assumed more broadly (people never have
-    to work with people they don't want to work with)
+5.  **Respect:** Respect is assumed broadly (we rarely volunteer with people
+    that we don't enjoy)
 
 
 Corporate contexts
@@ -177,8 +179,7 @@ like this.  What I found were questions/concerns/problems like the following
 
 1.  Why is the CEO correcting my grammar?
 2.  If you want these changes, why not just edit the doc directly?
-3.  This doc isn't high priority, I don't want to spend a lot of time in
-    discussion here
+3.  This doc isn't high priority. Why do you want to talk about this so much?
 4.  Why do you keep telling me how bad I am at writing?
 
 These questions confused me.  I realized that it was because that the implicit
@@ -191,7 +192,7 @@ There was a major difference in the implicit message that is being received in
 the first open source case than in the second corporate case.
 
 -  **Open Source:** *I believe in you and your work.  I see potential for you to
-   get *even* better and deeply want to invest my time to see that happen.*
+   get even better at your craft and would be proud to invest my time to see that happen.*
 
 -  **Corporate:** You're doing a bad job.  I'm going to explain, in minute
    detail, exactly what you did wrong, over and over again because I hate you

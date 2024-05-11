@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-05-11T13:29:18.470587+00:00</updated>
+  <updated>2024-05-11T13:48:46.208709+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4925,42 +4925,43 @@ sales hire, and my experience engaging with this process.</summary>
     </author>
     <content type="html">&lt;section id="how-github-taught-me-to-micromanage"&gt;
 
-&lt;p&gt;Feedback is critical to doing good work as a team.
-Good feedback cultivates good work and professional growth.
-Bad feedback hurts quality and erodes relationships.&lt;/p&gt;
+&lt;p&gt;Feedback is critical to performing good work as a team.
+Good feedback cultivates quality work and professional growth.
+Bad feedback degrades quality and erodes relationships.&lt;/p&gt;
 &lt;p&gt;In OSS I’m praised for reviews, but in corporate settings I’m
 told that I micromanage.  I don’t dispute this; I’m working on it; thank you
-all for your patience with me.&lt;/p&gt;
-&lt;p&gt;This article explains the origins of my practice, and hopefully provokes
-thought on the practice of giving and receiving feedback.  We start with
-with lessons learned from open source code review, and then shift to
-corporate settings and how these lessons fail to apply.&lt;/p&gt;
+all for your patience.&lt;/p&gt;
+&lt;p&gt;This article explains the origins of my feedback practice in open source,
+and hopefully provokes thought on the practice of giving and receiving
+feedback.  We start with with lessons learned from community code review, and
+then shift to corporate settings and how these lessons fail to apply.&lt;/p&gt;
 &lt;section id="open-source-code-reviews"&gt;
 &lt;h2&gt;Open Source Code Reviews&lt;/h2&gt;
 &lt;p&gt;I first experienced transformative feedback when working in old-school open
 source communities.  These weren’t corporate environments.  These were a bunch
 of volunteers working together to build something awesome used by rest of the
 world.  There were no managers, no performance reviews, no video meetings, no
-meetings at all in fact.  There was just the work, which was the focus of all
+meetings at all in fact.  There was just the work, and the work was the focus of all
 communication.&lt;/p&gt;
-&lt;p&gt;Work took three forms:&lt;/p&gt;
+&lt;p&gt;The work took three forms:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Issues:&lt;/strong&gt; where we discussed concerns and considered technical designs as a group&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Coding:&lt;/strong&gt; where one person would write a solution to the proposed issue&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Code Review:&lt;/strong&gt; where anyone could drop in, review the code, and provide a
-ton of feedback.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Code Review:&lt;/strong&gt; where anyone could drop in, review the code, and provide feedback.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Most of the work was in &lt;em&gt;Code Review&lt;/em&gt;, not &lt;em&gt;Coding&lt;/em&gt; (writing code is a
 vanishingly small fraction software development) and so I spent several hours
 every day, for years, giving and receiving highly detailed feedback from fellow
 collaborators.  This is where we taught each other.  This is where we learned
-to align on mission and on style.  This is where we expressed humor and learned
+to align on mission and style.  This is where we expressed humor and learned
 about each others’ character and about our own.&lt;/p&gt;
 &lt;p&gt;Let’s see an example&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="example"&gt;
 &lt;h2&gt;Example&lt;/h2&gt;
-&lt;p&gt;Let’s talk about bad/ok/good feedback by reviewing the following simple code.&lt;/p&gt;
+&lt;p&gt;In this example we see some simple proposed code below, and then consider
+bad/ok/good feedback on that code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposed code&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;element&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;element&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -4973,7 +4974,7 @@ informative variable names.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Please don’t use for loops.  They’re hard to understand.  Also, please use
 informative variable names.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;How about the following?&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;record&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;housing&lt;/span&gt; &lt;span class="n"&gt;records&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;record&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;housing_records&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Good Review&lt;/strong&gt;&lt;/p&gt;
@@ -4984,7 +4985,7 @@ to the reader what’s going on at a glance because they’re a more constrained
 construct.  (The same could be said for using &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;map&lt;/span&gt;&lt;/code&gt;, but I rarely see that
 pattern in this codebase).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;How about this?&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;record&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;housing&lt;/span&gt; &lt;span class="n"&gt;records&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;record&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;housing_records&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;em&gt;Now, this practice can definitely get out of hand (I’ve seen some crazy nested
@@ -4996,20 +4997,19 @@ is strongly in favor of the list comprehension.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Anecdotally, this is also the norm in this codebase.&lt;/em&gt;&lt;/p&gt;
 &lt;section id="analysis"&gt;
 &lt;h3&gt;Analysis&lt;/h3&gt;
-&lt;p&gt;Let’s assess each piece of feedback and why I personlly think that they’re
+&lt;p&gt;Let’s assess each piece of feedback and why I personally think that they’re
 bad/ok/good.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Bad feedback&lt;/strong&gt; critiques code, but doesn’t offer a better direction.&lt;/p&gt;
 &lt;p&gt;Critique without constructive direction is just complaining,
-and adds to the author’s burden.&lt;/p&gt;
+and adds constraint to the author without also helping with momentum.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;OK feedback&lt;/strong&gt; provides direction.&lt;/p&gt;
 &lt;p&gt;The reviewer works with the author to produce a better result.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Good feedback&lt;/strong&gt; educates the author.&lt;/p&gt;
-&lt;p&gt;The reviewer works with the author to produce a better result,
-and to improve the author’s skills for the future.
-The good reviewer invests in the author.&lt;/p&gt;
+&lt;p&gt;The reviewer works with the author to produce a better result.&lt;/p&gt;
+&lt;p&gt;The reviewer works to also improve the author, an investment in their joint future.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The good feedback is thorough, especially given how trivial the code is, and
@@ -5027,10 +5027,10 @@ thing&lt;/em&gt;.  It’s not like there was some important bug here.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Align on conventions and process&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Personally, this is how I learned to write code.  This community and practice
-is the reason I’ve had success in my career, which has transformed my life.
-This community and practice is also my primary way to give back to fellow devs
-around the world.  I can see the positive impact I and others have had daily in
-the lives and success of colleagues I’ve known for decades.&lt;/p&gt;
+is the reason for my success in career, which has transformed my life.  I am
+grateful.  This community and practice is also the primary way for me to give
+back to fellow devs around the world.  I can see the impact I and others have
+had daily in the lives and success of colleagues that I’ve known for decades.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="oss-idiosyncrasies"&gt;
 &lt;h2&gt;OSS Idiosyncrasies&lt;/h2&gt;
@@ -5038,13 +5038,13 @@ the lives and success of colleagues I’ve known for decades.&lt;/p&gt;
 (which I’ll get to next), I think that there are some interesting idiosyncrasies
 about this practice and people that are worth mentioning:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Craftsmanship:&lt;/strong&gt; The people involved care deeply about their craft of development&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Volunteerism:&lt;/strong&gt; Everyone was a volunteer, spending their personal time on this activity&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Craftsmanship:&lt;/strong&gt; These people care deeply about their craft&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Volunteerism:&lt;/strong&gt; Everyone is a volunteer, spending their personal time on this activity&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Work Focus:&lt;/strong&gt; All feedback and conversation is focused on the work,
 rather than on the person&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Public:&lt;/strong&gt; All feedback is fully public&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Respect:&lt;/strong&gt; Respect is assumed more broadly (people never have
-to work with people they don’t want to work with)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Respect:&lt;/strong&gt; Respect is assumed broadly (we rarely volunteer with people
+that we don’t enjoy)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 &lt;section id="corporate-contexts"&gt;
@@ -5060,8 +5060,7 @@ like this.  What I found were questions/concerns/problems like the following
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;p&gt;Why is the CEO correcting my grammar?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If you want these changes, why not just edit the doc directly?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;This doc isn’t high priority, I don’t want to spend a lot of time in
-discussion here&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This doc isn’t high priority. Why do you want to talk about this so much?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Why do you keep telling me how bad I am at writing?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;These questions confused me.  I realized that it was because that the implicit
@@ -5073,7 +5072,7 @@ message received behind my feedback was very different.&lt;/p&gt;
 the first open source case than in the second corporate case.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Open Source:&lt;/strong&gt; &lt;em&gt;I believe in you and your work.  I see potential for you to
-get &lt;em&gt;even&lt;/em&gt; better and deeply want to invest my time to see that happen.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+get even better at your craft and would be proud to invest my time to see that happen.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Corporate:&lt;/strong&gt; You’re doing a bad job.  I’m going to explain, in minute
 detail, exactly what you did wrong, over and over again because I hate you
 and want you to suffer.&lt;/p&gt;&lt;/li&gt;
@@ -5140,9 +5139,9 @@ developing a strong culture of constant constructive feedback&lt;/p&gt;&lt;/li&g
 &lt;/section&gt;
 </content>
     <link href="https://matthewrocklin.com/feedback.html"/>
-    <summary>Feedback is critical to doing good work as a team.
-Good feedback cultivates good work and professional growth.
-Bad feedback hurts quality and erodes relationships.</summary>
+    <summary>Feedback is critical to performing good work as a team.
+Good feedback cultivates quality work and professional growth.
+Bad feedback degrades quality and erodes relationships.</summary>
     <published>2024-05-11T00:00:00+00:00</published>
   </entry>
 </feed>
