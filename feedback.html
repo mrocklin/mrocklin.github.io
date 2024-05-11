@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Hiring Sales" />
+<meta property="og:title" content="The comedy and tragedy of detailed feedback" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/hiring-sales.html" />
+<meta property="og:url" content="https://matthewrocklin.com/feedback.html" />
   
-<meta property="og:description" content="We’re relaunching our enterprise sales effort after improving product-market fit. However, it’s an interesting challenge finding just the right person. This post goes into a bit of our history, wha..." />
+<meta property="og:description" content="Feedback is critical to doing good work as a team. Good feedback cultivates good work and professional growth. Bad feedback hurts quality and erodes relationships. In OSS I’m praised for reviews, b..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Hiring Sales" />
+<meta property="og:image:alt" content="How GitHub taught me to Micromanage" />
   
-    <title>Hiring Sales &#8212; Matthew Rocklin</title>
+    <title>How GitHub taught me to Micromanage &#8212; Matthew Rocklin</title>
   
   
   
@@ -61,7 +61,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'hiring-sales';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'feedback';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -401,7 +401,7 @@
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
 <p aria-level="2" class="caption" role="heading">
   <span class="caption-text">
-    <i>Originally authored 2024-04-29</i>
+    <i>Originally authored 2024-05-11</i>
   </span>
 </p>
 <hr/>
@@ -485,149 +485,219 @@
 
 
             <article class="bd-article" role="main">
-               <section id="hiring-sales">
-<h1>Hiring Sales<a class="headerlink" href="#hiring-sales" title="Permalink to this heading">#</a></h1>
-<p>We’re relaunching our enterprise sales effort after improving product-market
-fit.  However, it’s an interesting challenge finding just the right person.
-This post goes into a bit of our history, what we’re looking for in an early
-sales hire, and my experience engaging with this process.</p>
-<p>This post may interest you if …</p>
+               <section id="how-github-taught-me-to-micromanage">
+<h1>How GitHub taught me to Micromanage<a class="headerlink" href="#how-github-taught-me-to-micromanage" title="Permalink to this heading">#</a></h1>
+<p>Feedback is critical to doing good work as a team.
+Good feedback cultivates good work and professional growth.
+Bad feedback hurts quality and erodes relationships.</p>
+<p>In OSS I’m praised for reviews, but in corporate settings I’m
+told that I micromanage.  I don’t dispute this; I’m working on it; thank you
+all for your patience with me.</p>
+<p>This article explains the origins of my practice, and hopefully provokes
+thought on the practice of giving and receiving feedback.  We start with
+with lessons learned from open source code review, and then shift to
+corporate settings and how these lessons fail to apply.</p>
+<section id="open-source-code-reviews">
+<h2>Open Source Code Reviews<a class="headerlink" href="#open-source-code-reviews" title="Permalink to this heading">#</a></h2>
+<p>I first experienced transformative feedback when working in old-school open
+source communities.  These weren’t corporate environments.  These were a bunch
+of volunteers working together to build something awesome used by rest of the
+world.  There were no managers, no performance reviews, no video meetings, no
+meetings at all in fact.  There was just the work, which was the focus of all
+communication.</p>
+<p>Work took three forms:</p>
 <ol class="arabic simple">
-<li><p>You’re interviewing with me and I’ve pointed you to this post</p></li>
-<li><p>You’re curious about startups generally</p></li>
-<li><p>You want to recommend someone in your network (please do!)</p></li>
+<li><p><strong>Issues:</strong> where we discussed concerns and considered technical designs as a group</p></li>
+<li><p><strong>Coding:</strong> where one person would write a solution to the proposed issue</p></li>
+<li><p><strong>Code Review:</strong> where anyone could drop in, review the code, and provide a
+ton of feedback.</p></li>
 </ol>
-<section id="history">
-<h2>History<a class="headerlink" href="#history" title="Permalink to this heading">#</a></h2>
-<p>A couple years ago we had a sales team, but our product was bad and so the
-sales team was premature.  We fired them (and a bunch of other people) and
-focused on making a delightful product.</p>
-<p>Then, because we didn’t have a sales team we focused on making a product that a
-user could on-board, use, and pay for all without talking to us.  Surprisingly,
-this worked, and today we have a nice machine that generates happy champions
-within small teams that pay low thousands of dollars per month (but rarely
-more).</p>
-<p>These people pay us money, but not that much.  We’ve been encouraged by two
-recent learnings:</p>
+<p>Most of the work was in <em>Code Review</em>, not <em>Coding</em> (writing code is a
+vanishingly small fraction software development) and so I spent several hours
+every day, for years, giving and receiving highly detailed feedback from fellow
+collaborators.  This is where we taught each other.  This is where we learned
+to align on mission and on style.  This is where we expressed humor and learned
+about each others’ character and about our own.</p>
+<p>Let’s see an example</p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
+<p>Let’s talk about bad/ok/good feedback by reviewing the following simple code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Bad Review</strong></p>
+<p><em>Please don’t use for loops.  They’re hard to understand.  Also please use
+informative variable names.</em></p>
+<p><strong>OK Review</strong></p>
+<p><em>Please don’t use for loops.  They’re hard to understand.  Also, please use
+informative variable names.</em></p>
+<p><em>How about the following?</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing</span> <span class="n">records</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>Good Review</strong></p>
+<p><em>I suggest that we avoid explicit for loops here.  I think that a list
+comprehension would be a better fit.</em></p>
+<p><em>This is a bit subjective, I find that list comprehensions make it more clear
+to the reader what’s going on at a glance because they’re a more constrained
+construct.  (The same could be said for using <code class="docutils literal notranslate"><span class="pre">map</span></code>, but I rarely see that
+pattern in this codebase).</em></p>
+<p><em>How about this?</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">housing</span> <span class="n">records</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><em>Now, this practice can definitely get out of hand (I’ve seen some crazy nested
+list comprehensions) so there’s a tradeoff between using common explicit
+technologies like for loops (easy to reason about, but you have to read them)
+and using patterns like list comprehensions (tricky when large, but immediately
+recognizable if simple). I think that for simple cases like this the tradeoff
+is strongly in favor of the list comprehension.</em></p>
+<p><em>Anecdotally, this is also the norm in this codebase.</em></p>
+<section id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h3>
+<p>Let’s assess each piece of feedback and why I personlly think that they’re
+bad/ok/good.</p>
+<ul>
+<li><p><strong>Bad feedback</strong> critiques code, but doesn’t offer a better direction.</p>
+<p>Critique without constructive direction is just complaining,
+and adds to the author’s burden.</p>
+</li>
+<li><p><strong>OK feedback</strong> provides direction.</p>
+<p>The reviewer works with the author to produce a better result.</p>
+</li>
+<li><p><strong>Good feedback</strong> educates the author.</p>
+<p>The reviewer works with the author to produce a better result,
+and to improve the author’s skills for the future.
+The good reviewer invests in the author.</p>
+</li>
+</ul>
+<p>The good feedback is thorough, especially given how trivial the code is, and
+especially given that the new solution and the old solution <em>do the same exact
+thing</em>.  It’s not like there was some important bug here.</p>
+<p>The main reason for good feedback is to invest in the author.</p>
+</section>
+</section>
+<section id="role-of-code-review">
+<h2>Role of Code Review<a class="headerlink" href="#role-of-code-review" title="Permalink to this heading">#</a></h2>
+<p>We see then that code reviews serve a few different roles:</p>
 <ol class="arabic simple">
-<li><p>A little bit of customer support as they onboard greatly accelerates consumption</p></li>
-<li><p>After talking to customers, we realize that there are often much larger
-opportunities just behind the initial team that lands with us.</p></li>
+<li><p>Ensure quality work</p></li>
+<li><p>Teach fellow developers</p></li>
+<li><p>Align on conventions and process</p></li>
 </ol>
-<p>Given this, we’re hiring a sales team again.  This should be a fun opportunity
-for early-stage-oriented sales folks because …</p>
-<ol class="arabic">
-<li><p><strong>We have a solid pipeline of inbound leads.</strong></p>
-<p>Our product mints new champions regularly.</p>
-</li>
-<li><p><strong>Our current sales numbers suck</strong>, mostly because we haven’t done anything.</p>
-<p>It’s a great opportunity for someone to say “I was the first salesperson on
-the ground and took them from $0 to $N million in two years” which is a
-great way for someone to graduate from AE/SE to VP of Sales in their next
-position (or this one) and maximize lifetime income.</p>
-</li>
+<p>Personally, this is how I learned to write code.  This community and practice
+is the reason I’ve had success in my career, which has transformed my life.
+This community and practice is also my primary way to give back to fellow devs
+around the world.  I can see the positive impact I and others have had daily in
+the lives and success of colleagues I’ve known for decades.</p>
+</section>
+<section id="oss-idiosyncrasies">
+<h2>OSS Idiosyncrasies<a class="headerlink" href="#oss-idiosyncrasies" title="Permalink to this heading">#</a></h2>
+<p>After thinking about this life experience and comparing it to corporate work
+(which I’ll get to next), I think that there are some interesting idiosyncrasies
+about this practice and people that are worth mentioning:</p>
+<ol class="arabic simple">
+<li><p><strong>Craftsmanship:</strong> The people involved care deeply about their craft of development</p></li>
+<li><p><strong>Volunteerism:</strong> Everyone was a volunteer, spending their personal time on this activity</p></li>
+<li><p><strong>Work Focus:</strong> All feedback and conversation is focused on the work,
+rather than on the person</p></li>
+<li><p><strong>Public:</strong> All feedback is fully public</p></li>
+<li><p><strong>Respect:</strong> Respect is assumed more broadly (people never have
+to work with people they don’t want to work with)</p></li>
 </ol>
 </section>
-<section id="team-composition">
-<h2>Team Composition<a class="headerlink" href="#team-composition" title="Permalink to this heading">#</a></h2>
-<p>Ideally we want people who have three skills:</p>
-<ol class="arabic">
-<li><p><strong>Know how to sell</strong></p>
-<p>Know how to empower champions, navigate an org chart, find economic
-buyers, identify pain and goals, speak to that pain and those goals,
-negotiate with precurement and legal, etc..</p>
-</li>
-<li><p><strong>Know our space</strong> (data infrastructure, open source, Python)</p>
-<p>Familiar with Python/Spark/Cloud/Devops/Data/ML/…  So for example when
-someone says that they’re having trouble with some technology, say Argo,
-know that that means “workflow management” and direct them to the right
-solution within our product.</p>
-<p>There’s a lot of incidental complexity here that takes a while to learn.</p>
-</li>
-<li><p><strong>Are intellectually curious</strong>, comfortable in startups,  and excited to be
-creative and invent new systems</p>
-<p>There’s really nothing in place to define how to do the job.  Hopefully
-this excites rather than scares you.  Also, we have a distinct
-communication style (direct, critical, thoughtful) and hopefully you click
-with that.</p>
-</li>
+<section id="corporate-contexts">
+<h2>Corporate contexts<a class="headerlink" href="#corporate-contexts" title="Permalink to this heading">#</a></h2>
+<p><em>Why the heck is the CEO correcting my grammar!?</em></p>
+<p>This same approach of highly detailed and thoughtful review does not transfer
+well to corporate contexts in my experience.  As an example, let’s consider the
+following exchange over a google doc:</p>
+<img alt="_images/google-doc-review.png" src="_images/google-doc-review.png" />
+<p>When I first transitioned from OSS dev to CEO at a startup I did <em>lots</em> of review
+like this.  What I found were questions/concerns/problems like the following
+(all of which are valid in hindsight)</p>
+<ol class="arabic simple">
+<li><p>Why is the CEO correcting my grammar?</p></li>
+<li><p>If you want these changes, why not just edit the doc directly?</p></li>
+<li><p>This doc isn’t high priority, I don’t want to spend a lot of time in
+discussion here</p></li>
+<li><p>Why do you keep telling me how bad I am at writing?</p></li>
 </ol>
-<p>This person probably doesn’t exist, so we’ll happily settle for two out of
-three, and we’ll just build a team to round things out.  Probably this team
-looks a little like …</p>
-<ul class="simple">
-<li><p>Account Executive</p></li>
-<li><p>Sales Engineer</p></li>
-<li><p>Field Engineer</p></li>
-</ul>
+<p>These questions confused me.  I realized that it was because that the implicit
+message received behind my feedback was very different.</p>
 </section>
-<section id="interviewing-aes-is-hard">
-<h2>Interviewing AEs is Hard<a class="headerlink" href="#interviewing-aes-is-hard" title="Permalink to this heading">#</a></h2>
-<p>We’ve got good candiates for Field and Sales Engineers.  AEs are harder for us
-to connect to though.  There are lots of great candidates out there, but it’s
-been harder to come to a sense of conviction with an AE so far.</p>
-<p>My experience interviewing AEs so far has been that they say fairly generic
-things like:</p>
+<section id="implicit-messages">
+<h2>Implicit messages<a class="headerlink" href="#implicit-messages" title="Permalink to this heading">#</a></h2>
+<p>There was a major difference in the implicit message that is being received in
+the first open source case than in the second corporate case.</p>
 <ul class="simple">
-<li><p>I’ll succeed by finding the buyer, figuring out what their pain is, and then
-demonstrating how we solve that pain</p></li>
-<li><p>I did this with big name company X, where I built the relationship over many
-months, and built the deal to $X million</p></li>
-<li><p>We should sell where the money is</p></li>
-<li><p>…</p></li>
+<li><p><strong>Open Source:</strong> <em>I believe in you and your work.  I see potential for you to
+get <em>even</em> better and deeply want to invest my time to see that happen.</em></p></li>
+<li><p><strong>Corporate:</strong> You’re doing a bad job.  I’m going to explain, in minute
+detail, exactly what you did wrong, over and over again because I hate you
+and want you to suffer.</p></li>
 </ul>
-<p>Everyone says these things, and while I wholeheartedly agree with these points,
-they don’t differentiate a candidate, and they don’t say anything specific
-about our situation.   My assumption is that <a class="reference internal" href="think.html"><span class="doc std std-doc">early stage startups are
-different from each other</span></a>, and that what works for one is unlikely to
-transfer to another automatically.</p>
-<p>So, AEs that I interview, here’s the cheat code:</p>
+<p>What before was a supportive behavior is now an abusive one.
+Everything depends on context.</p>
+<p><em>Note: to be clear, this miscommunication isn’t the receiever’s fault.  We as
+reviewers need to better model our context so we can anticipate how
+feedback will be received.</em></p>
+</section>
+<section id="corporate-mindset">
+<h2>Corporate Mindset<a class="headerlink" href="#corporate-mindset" title="Permalink to this heading">#</a></h2>
+<p>This negative reception feels more reasonable when you consider the mindset and
+context in which this work is done.  Referring back to the OSS Mindset above,
+let’s compare with corporate.</p>
 <ul>
-<li><p>Assume that I know more about sales than a typical engineer
-(you can save time by not explaining basic concepts)</p></li>
-<li><p>Get to a point in our conversation where we are conversing about strategy
-at a non-generic level.</p>
-<p>To do this you will likely need to …</p>
-<ul class="simple">
-<li><p>Become a lot smarter about our situation pretty quickly,
-this probably means asking questions that are useful to you</p></li>
-<li><p>Pause … and think</p></li>
-</ul>
+<li><p><strong>Honing a craft:</strong> in old-school community OSS people cared <em>a lot</em> about
+getting better at development.  Micro-adjustments to our form were really
+valuable to us.  Development skill was a big part of our (or at least my) self-identity.</p>
+<p>Conversely in corporate few people care as deeply about the craft of
+writing, meeting facilitation, graphic design, etc..  Skillbuilding is nice,
+but it’s secondary to getting work done.  The assumption is that feedback is
+primarily focused on the job at hand, rather than on building our teammates.</p>
 </li>
-<li><p>If it looks like I want to say something, notice, and open some space.
-I’m very interested in how well we can communicate.</p></li>
+<li><p><strong>Assumed Respect:</strong> in volunteer OSS if people don’t like you they just ignore you.
+Anyone reviewing your work is doing so because they care and want to help
+you.</p>
+<p>This doesn’t hold in a corporate environment, where people are paid to help
+whether or not they like you.</p>
+</li>
 </ul>
-<p>The number of otherwise qualified AEs that come in and give the impression that
-they have all the answers (despite not knowing much about our situation) is odd
-to me.  My <em>guess</em> is that they’re assuming that I’m looking for someone to say
-“everything’s going to be ok, I’ve got this” convincingly enough and so that’s
-their main/only message. However, to me saying that with conviction but without
-understanding our situation is a strongly negative signal.</p>
-<p>What I’m actually looking for is someone who can demonstrate that they’re able
-to think and solve my problem specifically, not today, but over many months
-after failing quickly many times and thinking through new strategies.  My
-assumption is that any answer you have today is likely wrong, so if you have
-strong conviction on that answer I’ll probably assume that you’re mentally
-inflexible.</p>
+<p>This does beg the question though, what would a corporate environment look like
+where people cared deeply about things like meeting facilitation and slide
+design?  Probably the company would go quickly out of business, but it’s a fun
+thought to consider, and maybe apply a little bit of in our everyday life.</p>
 </section>
-<section id="faqs">
-<h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this heading">#</a></h2>
-<p>To accelerate the interview process a bit, here are some frequently asked
-questions by sales folks:</p>
-<ul>
-<li><p><strong>Q:</strong> What is your runway?</p>
-<p><strong>A:</strong> We have two-ish years of runway, assuming we don’t make any money</p>
-</li>
-<li><p><strong>Q:</strong> What are your goals?</p>
-<p><strong>A:</strong> I’d love to get to $5mm ARR in that time (but you tell me what you
-think is feasible, and we’ll adjust strategy together) probably with a
-mixture of small and large deals.</p>
-</li>
-<li><p><strong>Q:</strong> How much room is there to grow?  (could I end up managing sales?)</p>
-<p><strong>A:</strong> Yes, if you’re good.  I don’t promise anything though.
-Honestly, if you’re really good then you can have my job :)</p>
-</li>
+<section id="feedback-reception-budget">
+<h2>Feedback Reception Budget<a class="headerlink" href="#feedback-reception-budget" title="Permalink to this heading">#</a></h2>
+<p>And so, I’ve learned that a person can absorb only about one piece of feedback
+per interaction, and then only if it’s labeled very specifically as feedback
+with the best intentions, and wrapped delicately in a feedback sandwich.</p>
+<p>Because of this volume constraint, infrequent feedback must be more general and
+higher level, ideally accompanied by impersonal assets like a blogpost that the
+recipient of the feedback can read separately (this is partially why I write
+blogposts).</p>
+</section>
+<section id="but-please">
+<h2>But please …<a class="headerlink" href="#but-please" title="Permalink to this heading">#</a></h2>
+<p>For the love of god …</p>
+<ul class="simple">
+<li><p>Remove filler words like “really”, “very” or anything else that doesn’t change
+the meaning of a sentence</p></li>
+<li><p>Do not start meetings by asking everyone to introduce themselves</p></li>
+<li><p>Attach agendas to meetings ahead of time</p></li>
+<li><p>When making slides think about text contrast and use alignment guide-lines</p></li>
 </ul>
+<p>Thanks for listening, hopefully this article …</p>
+<ol class="arabic simple">
+<li><p>Helps people around me understand the implicit message behind my feedback</p></li>
+<li><p>Gives everyone desiring a spirit of craftsmanship more interest in
+developing a strong culture of constant constructive feedback</p></li>
+</ol>
 </section>
 </section>
 
@@ -637,20 +707,13 @@ Honestly, if you’re really good then you can have my job :)</p>
 <div class="section">
   <span style="float: left">
      
-    <a href="reddit.html">
-      <i class="fa fa-arrow-circle-left"></i> Reddit, Twitter, and LinkedIn Comparison
+    <a href="hiring-sales.html">
+      <i class="fa fa-arrow-circle-left"></i> Hiring Sales
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="feedback.html">
-      How GitHub taught me to Micromanage <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>
