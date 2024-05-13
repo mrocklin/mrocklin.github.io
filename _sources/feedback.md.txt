@@ -13,14 +13,10 @@ Feedback is critical to performing good work as a team.
 Good feedback cultivates quality work and professional growth.
 Bad feedback degrades quality and erodes relationships.
 
-In OSS I'm praised for reviews, but in corporate settings I'm
-told that I micromanage.  I don't dispute this; I'm working on it; thank you
-all for your patience.
-
-This article explains the origins of my feedback practice in open source,
-and hopefully provokes thought on the practice of giving and receiving
-feedback.  We start with with lessons learned from community code review, and
-then shift to corporate settings and how these lessons fail to apply.
+This article explains my experience of feedback in open source community code
+review, and the culture that emerged from intense detailed feedback.  Then we
+shift to corporate settings and see and how these lessons fail to apply
+cleanly.
 
 
 Open Source Code Reviews

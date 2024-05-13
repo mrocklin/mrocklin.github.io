@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-05-11T13:48:46.208709+00:00</updated>
+  <updated>2024-05-13T00:02:26.655937+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -4928,13 +4928,10 @@ sales hire, and my experience engaging with this process.</summary>
 &lt;p&gt;Feedback is critical to performing good work as a team.
 Good feedback cultivates quality work and professional growth.
 Bad feedback degrades quality and erodes relationships.&lt;/p&gt;
-&lt;p&gt;In OSS I’m praised for reviews, but in corporate settings I’m
-told that I micromanage.  I don’t dispute this; I’m working on it; thank you
-all for your patience.&lt;/p&gt;
-&lt;p&gt;This article explains the origins of my feedback practice in open source,
-and hopefully provokes thought on the practice of giving and receiving
-feedback.  We start with with lessons learned from community code review, and
-then shift to corporate settings and how these lessons fail to apply.&lt;/p&gt;
+&lt;p&gt;This article explains my experience of feedback in open source community code
+review, and the culture that emerged from intense detailed feedback.  Then we
+shift to corporate settings and see and how these lessons fail to apply
+cleanly.&lt;/p&gt;
 &lt;section id="open-source-code-reviews"&gt;
 &lt;h2&gt;Open Source Code Reviews&lt;/h2&gt;
 &lt;p&gt;I first experienced transformative feedback when working in old-school open
