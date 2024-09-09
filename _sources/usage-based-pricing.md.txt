@@ -9,6 +9,9 @@ category: startups
 Pivoting away from Usage Based Pricing
 ======================================
 
+<img src="https://i.imgflip.com/92vpi1.jpg" alt="Usage based pricing meme"
+width="50%" align="right"/>
+
 We're moving away from usage based pricing.
 
 This post talks about the pros and cons of usage based pricing in our

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-09-09T12:50:35.312647+00:00</updated>
+  <updated>2024-09-09T13:01:13.185348+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5150,6 +5150,7 @@ Bad feedback degrades quality and erodes relationships.</summary>
     </author>
     <content type="html">&lt;section id="pivoting-away-from-usage-based-pricing"&gt;
 
+&lt;p&gt;&lt;img alt="Usage based pricing meme" class="align-right" src="https://i.imgflip.com/92vpi1.jpg" style="width: 50%;" /&gt;&lt;/p&gt;
 &lt;p&gt;We’re moving away from usage based pricing.&lt;/p&gt;
 &lt;p&gt;This post talks about the pros and cons of usage based pricing in our
 situation, and then talks through alternatives.&lt;/p&gt;
@@ -5358,7 +5359,7 @@ more thinking on the user’s part, and more conversation on ours.&lt;/p&gt;&lt;
 &lt;/section&gt;
 </content>
     <link href="https://matthewrocklin.com/usage-based-pricing.html"/>
-    <summary>We’re moving away from usage based pricing.</summary>
+    <summary>Usage based pricing memeUsage based pricing meme</summary>
     <published>2024-09-04T00:00:00+00:00</published>
   </entry>
 </feed>
