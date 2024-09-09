@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-09-09T13:06:49.995229+00:00</updated>
+  <updated>2024-09-09T15:23:09.112389+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5207,11 +5207,11 @@ revenue 10-100x (misaligned priorities)&lt;/p&gt;&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;were paying $20,000 to AWS because you were so inefficient&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;were spending half an FTE maintaining that terrible  infrastructure&lt;/p&gt;
-&lt;p&gt;(costing $100,000/year)&lt;/p&gt;
+&lt;p&gt;(costing 50% * $200k == $100,000/year)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;had a data science team of five was spending 20% of their time fighting
 that terrible infrastructure&lt;/p&gt;
-&lt;p&gt;(costing 5 * 20% * $200k == $100,000 / year)&lt;/p&gt;
+&lt;p&gt;(costing 5 * 20% * $200k == $200,000 / year)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;couldn’t finish that project that was critical to your business
 and which you were just able to finish in a couple weeks since using us&lt;/p&gt;
@@ -5229,7 +5229,7 @@ you much more&lt;/p&gt;
 &lt;p&gt;There were two problems here:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;We captured only a small fraction&lt;/strong&gt; of the benefit we provided to users&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Users felt bad&lt;/strong&gt; about the small fraction that we do capture&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Users felt bad&lt;/strong&gt; about the small fraction that we did capture&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Something was clearly wrong here.  Users value our product beyond what
 they pay (they’re getting a great deal!) but they feel like they’re
@@ -5246,18 +5246,18 @@ work for others (like AWS or Databricks) but not for us?&lt;/p&gt;
 &lt;p&gt;Users often come in with $100,000 annual cloud bills, but after using the
 product realize they only need to spend $5,000-10,000.&lt;/p&gt;
 &lt;p&gt;The vast majority of cloud usage today is misuse and our product stops
-misuse.  This is great for the user, and bad for the cloud (🎉).  However,
-it’s also bad for us (under usage based pricing (😞))&lt;/p&gt;
+misuse.  Stopping misuse is great for the user (🎉) and bad for the cloud (🎉).
+However, it’s also bad for us (😞) under usage based pricing.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; is more prone to these 100x efficiency swings than other
-technologies, like SQL, where 2-10x is more common.&lt;/p&gt;
+technologies, like SQL, where 2-5x is more common.&lt;/p&gt;
 &lt;p&gt;Python can be either incredibly efficient or inefficient based on
-expertise.&lt;/p&gt;
-&lt;p&gt;Novices are less cost-prone with our product, both because of the product
-itself, and because of our incredible support team (more on this later)&lt;/p&gt;
-&lt;p&gt;We could stop giving good support (we’d probably earn more) but this
-doesn’t feel great.  There’s clearly a lot of value that we’d like to
-generate and capture.&lt;/p&gt;
+expertise.  With our product novices are less cost-prone, both because of
+the product itself, and because of our incredible support team (more on
+this later)&lt;/p&gt;
+&lt;p&gt;We could make the product worse or stop giving good support and we’d
+probably earn more but this doesn’t feel great.  There’s clearly a lot of
+value that we can generate and would like to capture.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;SMBs&lt;/strong&gt; for velocity reasons we mostly focus on Small and Medium
 Businesses (SMBs) rather than large enterprises.&lt;/p&gt;
