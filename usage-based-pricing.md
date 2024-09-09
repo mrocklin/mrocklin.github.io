@@ -11,8 +11,8 @@ Pivoting away from Usage Based Pricing
 
 We're moving away from usage based pricing.
 
-This post thinks through why.
-We don't end with a solution.  We end with an open problem.
+This post talks about the pros and cons of usage based pricing in our
+situation, and then talks through alternatives.
 
 Where we are today
 ------------------
@@ -22,11 +22,15 @@ People who follow my blog may recall that ...
 1.  We have a product people love
 2.  But we weren't selling it well
 3.  So we hired AEs (new!)
-4.  They're working out fantastically (new!)
+4.  They're working out fantastically well (new!)
 
-Now our biggest problem is figuring out pricing so that we capture
-a more of the value we generate for customers while also making them feel good
-about paying us.  This problem is tricky.
+Hooray 🎉!  The bottom of our funnel now flows decently and our revenue is
+dramatically increasing (easy to increase a lot when it's low 🙂)
+
+However, now we have a differet problem.  Pricing.  Today our biggest problem
+is figuring out pricing so that we capture a more of the value we generate for
+customers while also making them feel good about paying us.  This problem is
+tricky.
 
 Today, we do usage-based pricing.  This was good for a while, but ended up
 being a bit of a dead end for us.  Let's talk through why.
@@ -37,8 +41,8 @@ Why Usage Based Pricing was Great
 Previously, we charged $0.05 per CPU-Hour, the same as major clouds or
 Databricks.  We liked this when getting started for a few reasons.
 
--  **It’s simple** and it’s easy to understand quickly, no complex tables
--  **It’s standard** in our space so conversations proceed quickly
+-  **It’s simple** and it’s easy to understand quickly
+-  **It’s standard** in our space and so familiar to buyers
 -  **It starts small** so on-boarding isn't focused on financials
 -  **It’s on-par** with other things the customer is already paying for (the cloud in this case)
     so we know that they have budget for bills like this
@@ -55,15 +59,18 @@ Why Usage Based Pricing was Terrible (for us)
 
 There were a few fail cases:
 
--  Customers for whom we were critical infrastructure (high value) but whose usage was
+-  Customers for whom our product was critical infrastructure (high value) but whose usage was
    really small (low price)
 -  Customers where we optimized their workloads 10-100x, and so reduced our
    revenue 10-100x (misaligned priorities)
--  Customers who didn't like percentage increases on their usage
+-   Customers who didn't like percentage increases on their usage
+    (like how paying $10 /gallon for gas would feel bad, even if you only needed a little bit)
 
 Consider the following conversation as an example:
 
--  **Customer**: You charge a 100% markup.  That’s too high.  I was expecting closer to 30-40%.  I’m paying $2,000 monthly to AWS and $2,000 to you
+-  **Customer**: You charge a 100% markup.  That’s too high.
+
+    I was expecting closer to 30-40%.  I’m paying $2,000 monthly to AWS and $2,000 to you
 
 -  **Us**: Yes, but before using us you ...
 
@@ -78,22 +85,22 @@ Consider the following conversation as an example:
     -   couldn't finish that project that was critical to your business
         and which you were just able to finish in a couple weeks since using us
 
-        (priceless)
+        (the value of which only you can determine, but is probably high)
 
 -  **Customer**: Oh yeah, I guess that's right.  I guess this is worth the
    $2,000 you're asking for
 
--  **Us** actually, now that I think about it, we should probably be charging
+-  **Us:** actually, now that I think about it, we should probably be charging
    you much more
 
     (I never actually said this last part, but it was a frequent thought).
 
 There were two problems here:
 
-1.  **We capture only a small fraction** of the benefit we provide to users
-2.  **Users feel bad** about the small fraction that we do capture
+1.  **We captured only a small fraction** of the benefit we provided to users
+2.  **Users felt bad** about the small fraction that we do capture
 
-Something is clearly wrong here.  Users value our product beyond what
+Something was clearly wrong here.  Users value our product beyond what
 they pay (they’re getting a great deal!) but they feel like they’re
 getting screwed, and that's not good for anyone.
 
@@ -112,11 +119,9 @@ I have a few theories:
     Users often come in with $100,000 annual cloud bills, but after using the
     product realize they only need to spend $5,000-10,000.
 
-    The vast majority of cloud usage today is misuse.  Our product stops
-    misuse.
-    -   The user wins
-    -   The cloud loses.
-    -   We also lose (under usage-based pricing)
+    The vast majority of cloud usage today is misuse and our product stops
+    misuse.  This is great for the user, and bad for the cloud (🎉).  However,
+    it's also bad for us (under usage based pricing (😞))
 
 2.  **Python** is more prone to these 100x efficiency swings than other
     technologies, like SQL, where 2-10x is more common.
@@ -127,9 +132,9 @@ I have a few theories:
     Novices are less cost-prone with our product, both because of the product
     itself, and because of our incredible support team (more on this later)
 
-    We could stop giving good support this practice (we'd probably earn more)
-    but this doesn't feel great.  There's clearly a lot of value that we'd like
-    to generate and capture.
+    We could stop giving good support (we'd probably earn more) but this
+    doesn't feel great.  There's clearly a lot of value that we'd like to
+    generate and capture.
 
 3.  **SMBs** for velocity reasons we mostly focus on Small and Medium
     Businesses (SMBs) rather than large enterprises.
@@ -140,7 +145,7 @@ I have a few theories:
     with cloud cost, but rather human acceleration.
 
 After seeing the $100,000 -> $5,000 transition a few times and cursing the
-efficiency of our product we started rethinking how we price.
+efficiency of our product we started rethinking how we price the product.
 
 So let's look at some possible new solutions.  Before that though, let's talk
 briefly about what we sell.
@@ -164,45 +169,45 @@ scale more smoothly than before.  This is due to a couple of things:
     impact micro-consulting.  Unfortunately, the market isn't used to this.
 
 The product is hard to price because of the efficiency issues with Python
-(we often make people use 10x less and so shoot ourselves in the foot).
+(we often make people 10x more efficient and so shoot ourselves in the foot).
 
 The support is hard to price because we're trapped in between two things people
 are used to:
 
 1.  **Typical (bad) product support** most SaaS products have some support tier
-    that costs 20% on top of usage and offers access to a pretty mediocre
-    support experience.  I've personally never found value in SaaS support
-    teams.
+    that costs 20% on top of usage and offers access to a mediocre support
+    experience.  I've personally never found value in SaaS support teams.
 
     This is like what we do, but cheaper and worse.
 
 2.  **Professional Services** consulting firms charge by the hour to unblock
     customers.  This is much more valuable, but a way of working that's also
-    pretty distracting.
+    pretty distracting and that we're not set up to do (I'm done counting
+    hours).
 
     This is more like the value we provide, but operationally quite different
     (we dont bill hourly and we only work on what we want to).
 
-This experience is different enough to existing products that we need to be
-creative, but similar enough that we get pattern matched.
+Our support is similar enough that we get pattern matched to existing
+offerings, but different enough that those approaches don't make sense for us.
 
 Objectives for a good pricing scheme
 ------------------------------------
 
 So let's say we want to invent something new?  What are some objectives?
 
-1.  Easy to start using the product without worrying
+1.  **Easy to start** using the product without worrying
 
     (we want the customer to see the value of the product before thinking about money)
 
-2.  Total price matches the value the customer sees and can pay, so if a customer
+2.  **Total price** matches the value the customer sees and can pay, so if a customer
     ...
 
     -   is unable to pay anything (like a student) it should be free
     -   is getting a lot of value and is able to pay, it should cost a lot
         (but less than the value they experience)
 
-3.  Simple and straightforward to mentally connect price to value
+3.  **Mentally easy for the customer** to connect price to value
 
     We want the customer to be able to easily understand the price and connect
     it to the value they're getting.  So for example if most of our value is
@@ -211,7 +216,7 @@ So let's say we want to invent something new?  What are some objectives?
 What we're trying today
 -----------------------
 
-Today we're rolling out a change to our pricing.
+Today we're rolling out a change to [our pricing](https://www.coiled.io/pricing).
 
 -  **For basic/individual users not much changes**.  It's still usage-based which
    makes it easy to test things out without thinking too hard.  We are putting
@@ -229,6 +234,7 @@ Future work
 This feels better but still not great.
 
 -   It feels good that we're shifting to human-based pricing (to match the human-based value we think we generate)
--   But human-based value feels *squishy* and hard to quantify
+-   But human-based value feels *squishy* and hard to quantify, which requires
+    more thinking on the user's part, and more conversation on ours.
 
-We have our work cut out for us
+We have our work cut out for us.  I look forward to seeing how this lands.
