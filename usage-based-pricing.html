@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Articles" />
+<meta property="og:title" content="Pivoting away from Usage Based Pricing" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/articles.html" />
+<meta property="og:url" content="https://matthewrocklin.com/usage-based-pricing.html" />
   
-<meta property="og:description" content="Usage Based Pricing We’re moving away from usage based pricing., How GitHub taught me to Micromanage Feedback is critical to performing good work as a team. Good feedback cultivates quality work an..." />
+<meta property="og:description" content="We’re moving away from usage based pricing. This post talks about the pros and cons of usage based pricing in our situation, and then talks through alternatives. Where we are today: People who foll..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Articles" />
+<meta property="og:image:alt" content="Pivoting away from Usage Based Pricing" />
   
-    <title>Articles &#8212; Matthew Rocklin</title>
+    <title>Pivoting away from Usage Based Pricing &#8212; Matthew Rocklin</title>
   
   
   
@@ -61,11 +61,10 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'articles';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usage-based-pricing';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Matthew Rocklin" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en"> 
 <link
@@ -170,8 +169,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -302,8 +301,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -400,6 +399,12 @@
   <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item">  <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+<p aria-level="2" class="caption" role="heading">
+  <span class="caption-text">
+    <i>Originally authored 2024-09-04</i>
+  </span>
+</p>
+<hr/>
 
   <p class="bd-links__title" role="heading" aria-level="1">
     Best Of
@@ -480,171 +485,232 @@
 
 
             <article class="bd-article" role="main">
-               <section id="articles">
-<h1>Articles<a class="headerlink" href="#articles" title="Permalink to this heading">#</a></h1>
-<ul class="postlist-style-none postlist">
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="usage-based-pricing.html">Usage Based Pricing</a></p>
-<p class="ablog-post-excerpt">We’re moving away from usage based pricing.</p>
+               <section id="pivoting-away-from-usage-based-pricing">
+<h1>Pivoting away from Usage Based Pricing<a class="headerlink" href="#pivoting-away-from-usage-based-pricing" title="Permalink to this heading">#</a></h1>
+<p>We’re moving away from usage based pricing.</p>
+<p>This post talks about the pros and cons of usage based pricing in our
+situation, and then talks through alternatives.</p>
+<section id="where-we-are-today">
+<h2>Where we are today<a class="headerlink" href="#where-we-are-today" title="Permalink to this heading">#</a></h2>
+<p>People who follow my blog may recall that …</p>
+<ol class="arabic simple">
+<li><p>We have a product people love</p></li>
+<li><p>But we weren’t selling it well</p></li>
+<li><p>So we hired AEs (new!)</p></li>
+<li><p>They’re working out fantastically well (new!)</p></li>
+</ol>
+<p>Hooray 🎉!  The bottom of our funnel now flows decently and our revenue is
+dramatically increasing (easy to increase a lot when it’s low 🙂)</p>
+<p>However, now we have a differet problem.  Pricing.  Today our biggest problem
+is figuring out pricing so that we capture a more of the value we generate for
+customers while also making them feel good about paying us.  This problem is
+tricky.</p>
+<p>Today, we do usage-based pricing.  This was good for a while, but ended up
+being a bit of a dead end for us.  Let’s talk through why.</p>
+</section>
+<section id="why-usage-based-pricing-was-great">
+<h2>Why Usage Based Pricing was Great<a class="headerlink" href="#why-usage-based-pricing-was-great" title="Permalink to this heading">#</a></h2>
+<p>Previously, we charged $0.05 per CPU-Hour, the same as major clouds or
+Databricks.  We liked this when getting started for a few reasons.</p>
+<ul class="simple">
+<li><p><strong>It’s simple</strong> and it’s easy to understand quickly</p></li>
+<li><p><strong>It’s standard</strong> in our space and so familiar to buyers</p></li>
+<li><p><strong>It starts small</strong> so on-boarding isn’t focused on financials</p></li>
+<li><p><strong>It’s on-par</strong> with other things the customer is already paying for (the cloud in this case)
+so we know that they have budget for bills like this</p></li>
+<li><p><strong>It’s unbounded</strong> so if a company does really really well, we can make a lot of money</p></li>
+</ul>
+<p>Mostly it was a simple default choice, and a good basis for a pricing scheme.
+It’s minimally scary, and so good at getting people in the door.</p>
+<p>But eventually it broke down.  Let’s talk about how, and then we’ll talk about what we do today.</p>
+</section>
+<section id="why-usage-based-pricing-was-terrible-for-us">
+<h2>Why Usage Based Pricing was Terrible (for us)<a class="headerlink" href="#why-usage-based-pricing-was-terrible-for-us" title="Permalink to this heading">#</a></h2>
+<p>There were a few fail cases:</p>
+<ul class="simple">
+<li><p>Customers for whom our product was critical infrastructure (high value) but whose usage was
+really small (low price)</p></li>
+<li><p>Customers where we optimized their workloads 10-100x, and so reduced our
+revenue 10-100x (misaligned priorities)</p></li>
+<li><p>Customers who didn’t like percentage increases on their usage
+(like how paying $10 /gallon for gas would feel bad, even if you only needed a little bit)</p></li>
+</ul>
+<p>Consider the following conversation as an example:</p>
+<ul>
+<li><p><strong>Customer</strong>: You charge a 100% markup.  That’s too high.</p>
+<p>I was expecting closer to 30-40%.  I’m paying $2,000 monthly to AWS and $2,000 to you</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="feedback.html">How GitHub taught me to Micromanage</a></p>
-<p class="ablog-post-excerpt">Feedback is critical to performing good work as a team.
-Good feedback cultivates quality work and professional growth.
-Bad feedback degrades quality and erodes relationships.</p>
-<img alt="_images/google-doc-review.png" class="ablog-post-excerpt" src="_images/google-doc-review.png" />
+<li><p><strong>Us</strong>: Yes, but before using us you …</p>
+<ul>
+<li><p>were paying $20,000 to AWS because you were so inefficient</p></li>
+<li><p>were spending half an FTE maintaining that terrible  infrastructure</p>
+<p>(costing $100,000/year)</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="hiring-sales.html">Hiring Sales</a></p>
-<p class="ablog-post-excerpt">We’re relaunching our enterprise sales effort after improving product-market
-fit.  However, it’s an interesting challenge finding just the right person.
-This post goes into a bit of our history, what we’re looking for in an early
-sales hire, and my experience engaging with this process.</p>
+<li><p>had a data science team of five was spending 20% of their time fighting
+that infrastructure</p>
+<p>(costing 5 * 20% * $200k == $100,000 / year)</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="reddit.html">Reddit, Twitter, and LinkedIn Comparison</a></p>
-<p class="ablog-post-excerpt">Historically I mostly used Twitter to broadcast my work.
-However, Twitter today is less effective than it once was.
-What’s the best alternative?</p>
-<img alt="_images/social-views.svg" class="ablog-post-excerpt" src="_images/social-views.svg" /></li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="decision-fatigue.html">Decision Fatigue</a></p>
-<p class="ablog-post-excerpt">Making decisions is hard work, even if the decisions are low stakes.
-As proof consider the following questions from your ordinary life:</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="laser-eye-correction.html">Laser Eye Correction</a></p>
-<p class="ablog-post-excerpt">This article records my experience going through laser corrective eye surgery.  Typically folks get LASIK.  I got PRK/ASA instead, which is slightly more involved.  This will go through the following phases:</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="performance-reviews.html">Performance Reviews</a></p>
-<p class="ablog-post-excerpt">Feedback is critical for alignment and growth, but really awkward.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="saas-gtm.html">SaaS Go-to-Market</a></p>
-<p class="ablog-post-excerpt">Where are we on product and GTM?  What are some open questions and what should
-we do to improve?</p>
-<img alt="_images/example-customer-usage.png" class="ablog-post-excerpt" src="_images/example-customer-usage.png" />
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="interviews.html">How I Conduct an Interview</a></p>
-<p class="ablog-post-excerpt">Interviewing is hard.  It’s also important to do well.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="redesign-blog.html">Rethinking My Website and Blog</a></p>
-<p class="ablog-post-excerpt"><em>How we read and write shapes how we think</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="think.html">Think for yourself</a></p>
-<p class="ablog-post-excerpt"><em>No one knows how to do your job.  Look for answers from within, not without.</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="audio-visual.html">Audio-Visual Setup</a></p>
-<p class="ablog-post-excerpt"><em>HD is the new tall</em></p>
-<img alt="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" class="ablog-post-excerpt" src="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" />
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="stability-bias.html">Stability Bias</a></p>
-<p class="ablog-post-excerpt">We often optimize more for current users than future users.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="meetings.html">Meetings</a></p>
-<p class="ablog-post-excerpt">I cancelled all my regular meetings and logged off of Slack.  It has made a
-huge difference.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="_images/calendar-full.png"><img alt="_images/calendar-full.png" class="ablog-post-excerpt" src="_images/calendar-full.png" style="width: 100%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="offsites.html">Offsites</a></p>
-<p class="ablog-post-excerpt">I love remote work, but sometimes it sucks.  Offsites can help.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="failure.html">Failure</a></p>
-<p class="ablog-post-excerpt">Most startups fail, and yet most CEOs project inevitable success.  What gives?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-best-practices.html">Best Practices</a></p>
-<p class="ablog-post-excerpt">After building a successful open source project I then started a company and made many mistakes.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="user-valued-work.html">User Valued Work</a></p>
-<p class="ablog-post-excerpt">We often need to balance prioritization between user-facing work and internal
-or developer-facing work.  It’s helpful to distinguish between these in
-conversations of prioritization and measuring success.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="over-grown.html">Over Grown</a></p>
-<p class="ablog-post-excerpt">I’ve intentionally shrunk Coiled from 40 to 20 people.
-This was painful, but we’re moving faster as a result.
-This article talks a little about the context around this.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="scipy-mission.html">SciPy Mission</a></p>
-<p class="ablog-post-excerpt">We just returned from the annual SciPy conference full of energy as usual.
-This conference is unique because it includes core maintainers from most of the
-core Python data projects (Jupyter, Pandas, Numpy, Scikit-Learn, Dask, Xarray,
-Numba, Matplotlib and many more).  It’s an accident of history that we all
-transitioned into software development from scientific careers.  It’s a
-wonderful community of science nerds that unexpectedly changed the world.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-revenue.html">Revenue</a></p>
-<p class="ablog-post-excerpt">VC funded startups are weird.
-They (rightly) care more about valuation than about revenue.
-Valuation depends on revenue, but only on very certain kinds of revenue.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="fast-review.html">Small Scope Reviews</a></p>
-<p class="ablog-post-excerpt">This is a <a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts">fast blogpost</a> please excuse the brevity.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="technical-lead.html">Tech Leads</a></p>
-<p class="ablog-post-excerpt">Tech lead is a role for senior engineers that provides some of the leverage of
-management, while avoiding most of the administrative burden.  It’s a fun role.
-This post talks about some positive behaviors to think about should you find
-yourself in this role.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="metrics.html">Startup Metrics</a></p>
-<p class="ablog-post-excerpt">Common open source software (OSS) / venture capital (VC) metrics are flawed.
-This surprises no one; metrics are hard.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://blog.dask.org/images/dask-weekly-users.png"><img alt="Dask weekly users on documentation" class="ablog-post-excerpt" src="https://blog.dask.org/images/dask-weekly-users.png" style="width: 100%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="tweet.html">Ideal Tweet</a></p>
-<p class="ablog-post-excerpt">Tweets, like all writing, should respect the reader through brevity and structure.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://matthewrocklin.com/blog/images/tweet-video.png"><img alt="https://matthewrocklin.com/blog/images/tweet-video.png" class="ablog-post-excerpt" src="https://matthewrocklin.com/blog/images/tweet-video.png" style="width: 50%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="brevity.html">Short attention span</a></p>
-<p class="ablog-post-excerpt">Speaking truth is easy.  Getting people to listen is hard.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="engineers-and-sales.html">Listen to sell</a></p>
-<p class="ablog-post-excerpt"><strong>Engineer:</strong> <em>Hey Boss, what should I know to more effectively sell our product?</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="senior-engineer.html">Senior Engineers</a></p>
-<p class="ablog-post-excerpt">Software development is both a highly technical and a highly creative process.
-Programmers are reasonably proud of their abilities and experience,
-much in the same way that expert artists or artisans can be proud of their work.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-short-blogposts.html">Short Blogposts</a></p>
-<p class="ablog-post-excerpt">I encourage my colleagues to write blogposts more frequently.
-This is for a few reasons:</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="avoid-indirection.html">Avoid Indirection</a></p>
-<p class="ablog-post-excerpt">This post argues for avoiding indirection in community code.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="maintainer.html">Maintainers</a></p>
-<p class="ablog-post-excerpt">What are the expectations and best practices for maintainers of open source software libraries?
-How can we do this better?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="slack-github.html">Why I Avoid Slack</a></p>
-<p class="ablog-post-excerpt">I avoid interacting on Slack, especially for technical conversations around
-open source software.  Instead, I encourage colleagues to have technical and
-design conversations on GitHub, or some other system that is public, permanent,
-searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
-(DRY) I’m writing up these thoughts as a blogpost.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://imgs.xkcd.com/comics/standards.png"><img alt="https://imgs.xkcd.com/comics/standards.png" class="ablog-post-excerpt" src="https://imgs.xkcd.com/comics/standards.png" style="width: 70%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="minimal-bug-reports.html">Craft Minimal Bug Reports</a></p>
-<p class="ablog-post-excerpt">Following up on a post on <a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">supporting users in open source</a>
-this post lists some suggestions on how to ask a maintainer to help you with a problem.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-dumb-code.html">Write Dumb Code</a></p>
-<p class="ablog-post-excerpt"><em>The best way you can contribute to an open source project is to remove lines of code from it.</em>
-<em>We should endeavor to write code that a novice programmer can easily
-understand without explanation or that a maintainer can understand without
-significant time investment.</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="biased-benchmarks.html">Biased Benchmarks</a></p>
-<p class="ablog-post-excerpt"><em>honesty is hard</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-tests.html">Write Tests</a></p>
-<p class="ablog-post-excerpt">Tests are important for community driven open source software.
-This post contains brief reasons why you should test your code, particularly if
-you submit changes to existing open source projects.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="shared-abstractions.html">Dictionaries v. Objects</a></p>
-<p class="ablog-post-excerpt"><em>a story of shared abstractions</em></p>
+<li><p>couldn’t finish that project that was critical to your business
+and which you were just able to finish in a couple weeks since using us</p>
+<p>(the value of which only you can determine, but is probably high)</p>
 </li>
 </ul>
+</li>
+<li><p><strong>Customer</strong>: Oh yeah, I guess that’s right.  I guess this is worth the
+$2,000 you’re asking for</p></li>
+<li><p><strong>Us:</strong> actually, now that I think about it, we should probably be charging
+you much more</p>
+<p>(I never actually said this last part, but it was a frequent thought).</p>
+</li>
+</ul>
+<p>There were two problems here:</p>
+<ol class="arabic simple">
+<li><p><strong>We captured only a small fraction</strong> of the benefit we provided to users</p></li>
+<li><p><strong>Users felt bad</strong> about the small fraction that we do capture</p></li>
+</ol>
+<p>Something was clearly wrong here.  Users value our product beyond what
+they pay (they’re getting a great deal!) but they feel like they’re
+getting screwed, and that’s not good for anyone.</p>
+<p>I’ve learned that pricing is as much about psychology as about aligning cost and value.</p>
+</section>
+<section id="why-did-this-not-work-out-for-us">
+<h2>Why did this not work out for us?<a class="headerlink" href="#why-did-this-not-work-out-for-us" title="Permalink to this heading">#</a></h2>
+<p>Usage-based pricing is the norm for computational cloud products.  Why does it
+work for others (like AWS or Databricks) but not for us?</p>
+<p>I have a few theories:</p>
+<ol class="arabic">
+<li><p><strong>Efficiency</strong> we’re just much better at making users efficient.</p>
+<p>Users often come in with $100,000 annual cloud bills, but after using the
+product realize they only need to spend $5,000-10,000.</p>
+<p>The vast majority of cloud usage today is misuse and our product stops
+misuse.  This is great for the user, and bad for the cloud (🎉).  However,
+it’s also bad for us (under usage based pricing (😞))</p>
+</li>
+<li><p><strong>Python</strong> is more prone to these 100x efficiency swings than other
+technologies, like SQL, where 2-10x is more common.</p>
+<p>Python can be either incredibly efficient or inefficient based on
+expertise.</p>
+<p>Novices are less cost-prone with our product, both because of the product
+itself, and because of our incredible support team (more on this later)</p>
+<p>We could stop giving good support (we’d probably earn more) but this
+doesn’t feel great.  There’s clearly a lot of value that we’d like to
+generate and capture.</p>
+</li>
+<li><p><strong>SMBs</strong> for velocity reasons we mostly focus on Small and Medium
+Businesses (SMBs) rather than large enterprises.</p>
+<p>SMBs tend to value human performance more than cloud spend (humans and
+speed are more expensive than cloud at this scale).  Maybe our focus here
+puts us in a strange place where the main value we provide isn’t aliged
+with cloud cost, but rather human acceleration.</p>
+</li>
+</ol>
+<p>After seeing the $100,000 -&gt; $5,000 transition a few times and cursing the
+efficiency of our product we started rethinking how we price the product.</p>
+<p>So let’s look at some possible new solutions.  Before that though, let’s talk
+briefly about what we sell.</p>
+</section>
+<section id="what-do-we-sell">
+<h2>What do we sell?<a class="headerlink" href="#what-do-we-sell" title="Permalink to this heading">#</a></h2>
+<p>In general people like using Coiled because they get to operate at larger
+scale more smoothly than before.  This is due to a couple of things:</p>
+<ul>
+<li><p><strong>Product:</strong> the Coiled product is powerful and has a UX that feels good
+to Python data devs.  It’s a powerful tool that’s comfortable to wield.</p></li>
+<li><p><strong>Support:</strong> the product also tells <em>us</em> a lot about what users do, and our
+support team reaches out proactively as we see users struggle.
+One Coiled support engineer easily unblocks a dozen users daily.</p>
+<p>Users <em>love</em> our support team, and describe it as unlike anything else
+they’ve experienced.
+It’s like we’ve constructed a platform that enables us to do lots of high
+impact micro-consulting.  Unfortunately, the market isn’t used to this.</p>
+</li>
+</ul>
+<p>The product is hard to price because of the efficiency issues with Python
+(we often make people 10x more efficient and so shoot ourselves in the foot).</p>
+<p>The support is hard to price because we’re trapped in between two things people
+are used to:</p>
+<ol class="arabic">
+<li><p><strong>Typical (bad) product support</strong> most SaaS products have some support tier
+that costs 20% on top of usage and offers access to a mediocre support
+experience.  I’ve personally never found value in SaaS support teams.</p>
+<p>This is like what we do, but cheaper and worse.</p>
+</li>
+<li><p><strong>Professional Services</strong> consulting firms charge by the hour to unblock
+customers.  This is much more valuable, but a way of working that’s also
+pretty distracting and that we’re not set up to do (I’m done counting
+hours).</p>
+<p>This is more like the value we provide, but operationally quite different
+(we dont bill hourly and we only work on what we want to).</p>
+</li>
+</ol>
+<p>Our support is similar enough that we get pattern matched to existing
+offerings, but different enough that those approaches don’t make sense for us.</p>
+</section>
+<section id="objectives-for-a-good-pricing-scheme">
+<h2>Objectives for a good pricing scheme<a class="headerlink" href="#objectives-for-a-good-pricing-scheme" title="Permalink to this heading">#</a></h2>
+<p>So let’s say we want to invent something new?  What are some objectives?</p>
+<ol class="arabic">
+<li><p><strong>Easy to start</strong> using the product without worrying</p>
+<p>(we want the customer to see the value of the product before thinking about money)</p>
+</li>
+<li><p><strong>Total price</strong> matches the value the customer sees and can pay, so if a customer
+…</p>
+<ul class="simple">
+<li><p>is unable to pay anything (like a student) it should be free</p></li>
+<li><p>is getting a lot of value and is able to pay, it should cost a lot
+(but less than the value they experience)</p></li>
+</ul>
+</li>
+<li><p><strong>Mentally easy for the customer</strong> to connect price to value</p>
+<p>We want the customer to be able to easily understand the price and connect
+it to the value they’re getting.  So for example if most of our value is
+accelerating their people, then we should charge per person.</p>
+</li>
+</ol>
+</section>
+<section id="what-we-re-trying-today">
+<h2>What we’re trying today<a class="headerlink" href="#what-we-re-trying-today" title="Permalink to this heading">#</a></h2>
+<p>Today we’re rolling out a change to <a class="reference external" href="https://www.coiled.io/pricing">our pricing</a>.</p>
+<ul class="simple">
+<li><p><strong>For basic/individual users not much changes</strong>.  It’s still usage-based which
+makes it easy to test things out without thinking too hard.  We are putting
+some seat-caps on this tier though.</p></li>
+<li><p><strong>For larger teams we switch to usage + seat based pricing.</strong>  We charge
+some very small percentage of an FTE cost per seat.  This is big enough to
+be meaningful to us, while small enough that when the customer asks
+themselves “How much more efficient is my team with this tool?” they come up
+with an answer that is far larger than the percentage we charge.</p></li>
+</ul>
+</section>
+<section id="future-work">
+<h2>Future work<a class="headerlink" href="#future-work" title="Permalink to this heading">#</a></h2>
+<p>This feels better but still not great.</p>
+<ul class="simple">
+<li><p>It feels good that we’re shifting to human-based pricing (to match the human-based value we think we generate)</p></li>
+<li><p>But human-based value feels <em>squishy</em> and hard to quantify, which requires
+more thinking on the user’s part, and more conversation on ours.</p></li>
+</ul>
+<p>We have our work cut out for us.  I look forward to seeing how this lands.</p>
+</section>
 </section>
 
 <div class="section">
-   
+    
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="feedback.html">
+      <i class="fa fa-arrow-circle-left"></i> How GitHub taught me to Micromanage
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
 </div>
 
             </article>
@@ -676,13 +742,6 @@ you submit changes to existing open source projects.</p>
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="index.html" title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-          <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Matthew Rocklin</p>
-      </div>
-  </a>
 </div>
             </footer>
             
