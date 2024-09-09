@@ -79,11 +79,11 @@ Consider the following conversation as an example:
     -   were paying $20,000 to AWS because you were so inefficient
     -   were spending half an FTE maintaining that terrible  infrastructure
 
-        (costing $100,000/year)
+        (costing 50% * $200k == $100,000/year)
     -   had a data science team of five was spending 20% of their time fighting
         that terrible infrastructure
 
-        (costing 5 * 20% * $200k == $100,000 / year)
+        (costing 5 * 20% * $200k == $200,000 / year)
     -   couldn't finish that project that was critical to your business
         and which you were just able to finish in a couple weeks since using us
 
@@ -100,7 +100,7 @@ Consider the following conversation as an example:
 There were two problems here:
 
 1.  **We captured only a small fraction** of the benefit we provided to users
-2.  **Users felt bad** about the small fraction that we do capture
+2.  **Users felt bad** about the small fraction that we did capture
 
 Something was clearly wrong here.  Users value our product beyond what
 they pay (they’re getting a great deal!) but they feel like they’re
@@ -122,21 +122,20 @@ I have a few theories:
     product realize they only need to spend $5,000-10,000.
 
     The vast majority of cloud usage today is misuse and our product stops
-    misuse.  This is great for the user, and bad for the cloud (🎉).  However,
-    it's also bad for us (under usage based pricing (😞))
+    misuse.  Stopping misuse is great for the user (🎉) and bad for the cloud (🎉).
+    However, it's also bad for us (😞) under usage based pricing.
 
 2.  **Python** is more prone to these 100x efficiency swings than other
-    technologies, like SQL, where 2-10x is more common.
+    technologies, like SQL, where 2-5x is more common.
 
     Python can be either incredibly efficient or inefficient based on
-    expertise.
+    expertise.  With our product novices are less cost-prone, both because of
+    the product itself, and because of our incredible support team (more on
+    this later)
 
-    Novices are less cost-prone with our product, both because of the product
-    itself, and because of our incredible support team (more on this later)
-
-    We could stop giving good support (we'd probably earn more) but this
-    doesn't feel great.  There's clearly a lot of value that we'd like to
-    generate and capture.
+    We could make the product worse or stop giving good support and we'd
+    probably earn more but this doesn't feel great.  There's clearly a lot of
+    value that we can generate and would like to capture.
 
 3.  **SMBs** for velocity reasons we mostly focus on Small and Medium
     Businesses (SMBs) rather than large enterprises.
