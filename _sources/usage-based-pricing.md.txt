@@ -28,12 +28,11 @@ People who follow my blog may recall that ...
 4.  They're working out fantastically well (new!)
 
 Hooray 🎉!  The bottom of our funnel now flows decently and our revenue is
-dramatically increasing (easy to increase a lot when it's low 🙂)
+dramatically increasing (easy to increase dramatically when it starts low 🙂)
 
-However, now we have a differet problem.  Pricing.  Today our biggest problem
-is figuring out pricing so that we capture a more of the value we generate for
-customers while also making them feel good about paying us.  This problem is
-tricky.
+However, now we have a differet problem.  Pricing!  Today our biggest problem
+is figuring out how to capture more of the value we generate for customers
+while also making them feel good about paying us.  This problem is tricky.
 
 Today, we do usage-based pricing.  This was good for a while, but ended up
 being a bit of a dead end for us.  Let's talk through why.
@@ -67,7 +66,7 @@ There were a few fail cases:
 -  Customers where we optimized their workloads 10-100x, and so reduced our
    revenue 10-100x (misaligned priorities)
 -   Customers who didn't like percentage increases on their usage
-    (like how paying $10 /gallon for gas would feel bad, even if you only needed a little bit)
+    (like how paying $10 for a bottle of water feels bad at an event)
 
 Consider the following conversation as an example:
 
@@ -82,13 +81,13 @@ Consider the following conversation as an example:
 
         (costing $100,000/year)
     -   had a data science team of five was spending 20% of their time fighting
-        that infrastructure
+        that terrible infrastructure
 
         (costing 5 * 20% * $200k == $100,000 / year)
     -   couldn't finish that project that was critical to your business
         and which you were just able to finish in a couple weeks since using us
 
-        (the value of which only you can determine, but is probably high)
+        (the value of which only you can determine, but is probably higher than the rest)
 
 -  **Customer**: Oh yeah, I guess that's right.  I guess this is worth the
    $2,000 you're asking for

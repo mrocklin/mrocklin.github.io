@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-09-09T13:01:13.185348+00:00</updated>
+  <updated>2024-09-09T13:05:46.085403+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5164,11 +5164,10 @@ situation, and then talks through alternatives.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;They’re working out fantastically well (new!)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Hooray 🎉!  The bottom of our funnel now flows decently and our revenue is
-dramatically increasing (easy to increase a lot when it’s low 🙂)&lt;/p&gt;
-&lt;p&gt;However, now we have a differet problem.  Pricing.  Today our biggest problem
-is figuring out pricing so that we capture a more of the value we generate for
-customers while also making them feel good about paying us.  This problem is
-tricky.&lt;/p&gt;
+dramatically increasing (easy to increase dramatically when it starts low 🙂)&lt;/p&gt;
+&lt;p&gt;However, now we have a differet problem.  Pricing!  Today our biggest problem
+is figuring out how to capture more of the value we generate for customers
+while also making them feel good about paying us.  This problem is tricky.&lt;/p&gt;
 &lt;p&gt;Today, we do usage-based pricing.  This was good for a while, but ended up
 being a bit of a dead end for us.  Let’s talk through why.&lt;/p&gt;
 &lt;/section&gt;
@@ -5197,7 +5196,7 @@ really small (low price)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Customers where we optimized their workloads 10-100x, and so reduced our
 revenue 10-100x (misaligned priorities)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Customers who didn’t like percentage increases on their usage
-(like how paying $10 /gallon for gas would feel bad, even if you only needed a little bit)&lt;/p&gt;&lt;/li&gt;
+(like how paying $10 for a bottle of water feels bad at an event)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Consider the following conversation as an example:&lt;/p&gt;
 &lt;ul&gt;
@@ -5211,12 +5210,12 @@ revenue 10-100x (misaligned priorities)&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;(costing $100,000/year)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;had a data science team of five was spending 20% of their time fighting
-that infrastructure&lt;/p&gt;
+that terrible infrastructure&lt;/p&gt;
 &lt;p&gt;(costing 5 * 20% * $200k == $100,000 / year)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;couldn’t finish that project that was critical to your business
 and which you were just able to finish in a couple weeks since using us&lt;/p&gt;
-&lt;p&gt;(the value of which only you can determine, but is probably high)&lt;/p&gt;
+&lt;p&gt;(the value of which only you can determine, but is probably higher than the rest)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
