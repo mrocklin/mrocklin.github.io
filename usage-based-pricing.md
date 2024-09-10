@@ -30,7 +30,7 @@ People who follow my blog may recall that ...
 Hooray 🎉!  The bottom of our funnel now flows decently and our revenue is
 dramatically increasing (easy to increase dramatically when it starts low 🙂)
 
-However, now we have a differet problem.  Pricing!  Today our biggest problem
+However, now we have a different problem.  Pricing!  Today our biggest problem
 is figuring out how to capture more of the value we generate for customers
 while also making them feel good about paying us.  This problem is tricky.
 
