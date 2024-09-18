@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Articles" />
+<meta property="og:title" content="What does Pangeo 2.0 Look Like?" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/articles.html" />
+<meta property="og:url" content="https://matthewrocklin.com/pangeo-2.0.html" />
   
-<meta property="og:description" content="What Does Pangeo 2.0 Look Like? In January 2018 I published a blogpost titled Pangeo: JupyterHub, Dask, and XArray on the Cloud, which introduced a new architecture for running scalable Python comp..." />
+<meta property="og:description" content="Past: In January 2018 I published a blogpost titled Pangeo: JupyterHub, Dask, and XArray on the Cloud, which introduced a new architecture for running scalable Python computations on the cloud usin..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Articles" />
+<meta property="og:image:alt" content="What does Pangeo 2.0 Look Like?" />
   
-    <title>Articles &#8212; Matthew Rocklin</title>
+    <title>What does Pangeo 2.0 Look Like? &#8212; Matthew Rocklin</title>
   
   
   
@@ -61,11 +61,10 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'articles';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pangeo-2.0';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Matthew Rocklin" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en"> 
 <link
@@ -170,8 +169,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -302,8 +301,8 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
                         Articles
                       </a>
                     </li>
@@ -400,6 +399,12 @@
   <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item">  <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+<p aria-level="2" class="caption" role="heading">
+  <span class="caption-text">
+    <i>Originally authored 2024-09-18</i>
+  </span>
+</p>
+<hr/>
 
   <p class="bd-links__title" role="heading" aria-level="1">
     Best Of
@@ -480,176 +485,193 @@
 
 
             <article class="bd-article" role="main">
-               <section id="articles">
-<h1>Articles<a class="headerlink" href="#articles" title="Permalink to this heading">#</a></h1>
-<ul class="postlist-style-none postlist">
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="pangeo-2.0.html">What Does Pangeo 2.0 Look Like?</a></p>
-<p class="ablog-post-excerpt">In January 2018 I published a blogpost titled <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/22/pangeo-2">Pangeo: JupyterHub, Dask, and XArray on the Cloud</a>, which introduced a new architecture for running scalable Python computations on the cloud using …</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png"><img alt="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" class="ablog-post-excerpt" src="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" style="width: 40%;" /></a>
+               <section id="what-does-pangeo-2-0-look-like">
+<h1>What does Pangeo 2.0 Look Like?<a class="headerlink" href="#what-does-pangeo-2-0-look-like" title="Permalink to this heading">#</a></h1>
+<a class="reference internal image-reference" href="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png"><img alt="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" src="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" style="width: 40%;" /></a>
+<section id="past">
+<h2>Past<a class="headerlink" href="#past" title="Permalink to this heading">#</a></h2>
+<p>In January 2018 I published a blogpost titled <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/22/pangeo-2">Pangeo: JupyterHub, Dask, and XArray on the Cloud</a>, which introduced a new architecture for running scalable Python computations on the cloud using …</p>
+<ul class="simple">
+<li><p>GCP</p></li>
+<li><p>Kubernetes</p></li>
+<li><p>Dask + Xarray</p></li>
+<li><p>Dask-Kubernetes (actually named Daskernetes at the time)</p></li>
+<li><p>Zarr (a brand new file format at the time)</p></li>
+</ul>
+<p>This architecture was unveiled during an AMS workshop keynote, the 3-minute demo video of which is still available if you want a blast from the past:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rSOJKbfNBNk?si=7yM7Fi1VIxLvGGcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>This coordinated work from many people.</p>
+<section id="what-was-great-about-the-pangeo-stack">
+<h3>What was great about the Pangeo stack<a class="headerlink" href="#what-was-great-about-the-pangeo-stack" title="Permalink to this heading">#</a></h3>
+<p>This effort was impressive, and showed that it was possible to …</p>
+<ul class="simple">
+<li><p>Do large scale multi-dimensional distributed computing</p></li>
+<li><p>… from Python</p></li>
+<li><p>… on the cloud</p></li>
+<li><p>… interactively</p></li>
+<li><p>… for anyone with access to the internet</p></li>
+</ul>
+<p>This was quite different from the standard at the time in the scientific/geo space, which was MPI codes or batch jobs run on supercomputers.  The Pangeo effort upended the status-quo at many scientific and government agencies trying to enable access and analytics on larger scale data.</p>
+</section>
+<section id="what-was-terrible-about-the-pangeo-stack">
+<h3>What was terrible about the Pangeo stack<a class="headerlink" href="#what-was-terrible-about-the-pangeo-stack" title="Permalink to this heading">#</a></h3>
+<p>Unfortunately, there were challenges with this stack:</p>
+<ol class="arabic">
+<li><p><strong>Kubernetes:</strong> It required expertise of Kubernetes, and that expertise was rare</p>
+<p><em>“What’s a pod?  Is it a Docker?  How do I upload a pod?”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="usage-based-pricing.html">Usage Based Pricing</a></p>
-<p class="ablog-post-excerpt">We’re moving away from usage based pricing.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://i.imgflip.com/92vpi1.jpg"><img alt="Usage based pricing meme" class="ablog-post-excerpt align-center" src="https://i.imgflip.com/92vpi1.jpg" style="width: 40%;" /></a>
+<li><p><strong>Costs:</strong> Controlling access and costs and usage was impossible</p>
+<p><em>“I want my graduate students to use this, but I’m worried they’ll go beyond my budget”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="feedback.html">How GitHub taught me to Micromanage</a></p>
-<p class="ablog-post-excerpt">Feedback is critical to performing good work as a team.
-Good feedback cultivates quality work and professional growth.
-Bad feedback degrades quality and erodes relationships.</p>
-<img alt="_images/google-doc-review.png" class="ablog-post-excerpt" src="_images/google-doc-review.png" />
+<li><p><strong>Maintenance:</strong> It was difficult to deploy and maintain</p>
+<p><em>“How do I tune my cloud autoscaler?  Actually, what is a cloud auto-scaler?”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="hiring-sales.html">Hiring Sales</a></p>
-<p class="ablog-post-excerpt">We’re relaunching our enterprise sales effort after improving product-market
-fit.  However, it’s an interesting challenge finding just the right person.
-This post goes into a bit of our history, what we’re looking for in an early
-sales hire, and my experience engaging with this process.</p>
+<li><p><strong>Regular Jobs:</strong> It failed to address non-interactive use cases</p>
+<p><em>“My notebook is great, but how do I run this job every day?”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="reddit.html">Reddit, Twitter, and LinkedIn Comparison</a></p>
-<p class="ablog-post-excerpt">Historically I mostly used Twitter to broadcast my work.
-However, Twitter today is less effective than it once was.
-What’s the best alternative?</p>
-<img alt="_images/social-views.svg" class="ablog-post-excerpt" src="_images/social-views.svg" /></li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="decision-fatigue.html">Decision Fatigue</a></p>
-<p class="ablog-post-excerpt">Making decisions is hard work, even if the decisions are low stakes.
-As proof consider the following questions from your ordinary life:</p>
+<li><p><strong>Rigidity:</strong> It assumed a uniform development environment</p>
+<p><em>“I want to use the newest version of scikit-learn, but the Docker image has an old version”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="laser-eye-correction.html">Laser Eye Correction</a></p>
-<p class="ablog-post-excerpt">This article records my experience going through laser corrective eye surgery.  Typically folks get LASIK.  I got PRK/ASA instead, which is slightly more involved.  This will go through the following phases:</p>
+<li><p><strong>Multi-cloud:</strong> It didn’t work across regions or clouds</p>
+<p><em>“How do I access my collaborator’s data in Europe?”</em></p>
+<p><em>“Does this work on Azure?”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="performance-reviews.html">Performance Reviews</a></p>
-<p class="ablog-post-excerpt">Feedback is critical for alignment and growth, but really awkward.</p>
+<li><p><strong>Storage:</strong> File formats were still wonky</p>
+<p><em>“Zarr seems cool, but we’re still using NetCDF.</em></p>
+<p><em>Also, my data keeps updating, can Zarr expand like this?”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="saas-gtm.html">SaaS Go-to-Market</a></p>
-<p class="ablog-post-excerpt">Where are we on product and GTM?  What are some open questions and what should
-we do to improve?</p>
-<img alt="_images/example-customer-usage.png" class="ablog-post-excerpt" src="_images/example-customer-usage.png" />
+<li><p><strong>Scale:</strong> Scale was still an issue</p>
+<p><em>“This works great on 200 GiB, but when I move to the full dataset my workers start running out of memory”</em></p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="interviews.html">How I Conduct an Interview</a></p>
-<p class="ablog-post-excerpt">Interviewing is hard.  It’s also important to do well.</p>
+<li><p><strong>Personnel:</strong> It required people to keep it alive, and no one was paid to do so</p></li>
+</ol>
+<p>There were incremental improvements in the components of the stack.  Dask-gateway replaced dask-kubernetes.  Zarr became more common.  Dask and Xarray both improved in scale.  There were also many extensions of it, with new libraries built on top of Xarray and a wonderful growth in community engagement.</p>
+<p>However overall <strong>this deployment architecture was a technological dead end</strong> (at least in my opinion as original architect).  Personally I’m <strong>proud that we were able to generate so much enthusiasm</strong> (most of the credit here due to Ryan Abernathey, Rich Signell, and others who pushed the Pangeo stack within scientific circles) but mildly ashamed of the architecture itself.  It’s easy to build a cool demo with the Pangeo stack, but difficult to actually solve the computational and business needs of larger organizations.  <strong>The Pangeo stack was fantastic demo-ware</strong>.</p>
+</section>
+</section>
+<section id="present">
+<h2>Present<a class="headerlink" href="#present" title="Permalink to this heading">#</a></h2>
+<p>Since 2018, there have been several re-imaginings of this stack.  There are full-platform options (everything included, but not particularly powerful) and some tool-specific options (innovative and powerful, but require assembly).  Let’s list a few in each category:</p>
+<section id="full-platform-options">
+<h3>Full Platform Options<a class="headerlink" href="#full-platform-options" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>2I2C</strong> is a classic Kubernetes + JupyterHub architecture similar to what we built in 2018 (pure OSS), but sold with a service to set up and maintain it for organizations that don’t happen to keep a Kuberentes and cloud expert on staff.</p></li>
+<li><p><strong>Nebari</strong> (née QHub) is a better architected execution of the same components, and with more components (workflow managers, editors, …)  Nebari is pure OSS and deployed using git-ops, but recognizing that people need help (OSS isn’t free to maintain) Nebari is often sold with services from Quansight who maintains it.</p></li>
+<li><p><strong>Saturn</strong> took the same UX with Jupyter and Dask (and others tools), but dropped dask-gateway and JupyterHub, and instead added in a proper database-backed web application.  Saturn is a commercial SaaS product with one professionally managed central control plane that can be used anywhere.</p></li>
+</ul>
+</section>
+<section id="innovative-and-tool-specific-options">
+<h3>Innovative and Tool-Specific Options<a class="headerlink" href="#innovative-and-tool-specific-options" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p><strong>Coiled (compute)</strong> is what I and people around me built.</p>
+<p>Coiled focuses computation exclusively, while also including all of the user management and cost controls that were missing in Pangeo.  Coiled doesn’t serve Jupyter or store data.  Instead, it works with other tools users already have, running from anywhere people run Python (most notably, their existing laptop).</p>
+<p>I’ll claim (perhaps with hubris) that Coiled is among most high-end Python cloud compute platforms on the market today.  This product was built with creativity and soul, and delivers a developer experience that I’m proud of (and user praise seems to back this perspective).</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="redesign-blog.html">Rethinking My Website and Blog</a></p>
-<p class="ablog-post-excerpt"><em>How we read and write shapes how we think</em></p>
+<li><p><strong>Arraylake (storage)</strong> is what Ryan Abernathey and Joe Hamman (the other two primary Pangeo architects) built at Earthmover.</p>
+<p>Arraylake is a data lake platform built around the Zarr data model which incorporates many database-style features, such as ACID transactions, data version control, fine-grained access controls, and a built-in data catalog.  A bit like Zarr + Git, or Delta Lake if you’re familiar with the dataframe storage space, Arraylake solves many of the data management challenges we experienced in the first iteration of Pangeo.</p>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="think.html">Think for yourself</a></p>
-<p class="ablog-post-excerpt"><em>No one knows how to do your job.  Look for answers from within, not without.</em></p>
+<li><p><strong>Other tooling</strong> like workflow managers (Prefect, Dagster), code editors (VS Code), ML/AI tooling (PyTorch, LLMs) and more have come online.  The data infrastructure world today is a vibrant and mercurial environment.</p></li>
+</ul>
+</section>
+<section id="status">
+<h3>Status<a class="headerlink" href="#status" title="Permalink to this heading">#</a></h3>
+<p>Today I see a few things:</p>
+<ul class="simple">
+<li><p><strong>Coiled and Earthmover</strong> deliver an innovative top-shelf experience to some geospatial users, but not many.  Those users tend to be early adopters and low-bureaucracy users like startups rather than older and larger organizations like NASA, weather agencies, and the energy majors.</p></li>
+<li><p><strong>Home Grown Pangeo 1.0 deployments</strong> still get proposed within large agencies by IT groups who want to solve the data accessibility problem, but don’t land well on completion.</p></li>
+<li><p><strong>2I2C and Nabari deployments</strong> are used in more on-prem-ish environments where SaaS isn’t welcome, but end up delivering mostly a JupyterHub+ experience.  While users report enjoying the cloud notebook capability, I haven’t seen an organization succeed with scalable/distributed computing with these platforms in practice.</p></li>
+<li><p><strong>Single large VMs</strong> tend to be standard.  While simple, this often means that users don’t do full-dataset computations and, ironically, have crazy high cloud bills (single large VMs tend to be set up in a way that they stay on forever, which can be startlingly expensive).</p></li>
+</ul>
+</section>
+<section id="community-developments">
+<h3>Community Developments<a class="headerlink" href="#community-developments" title="Permalink to this heading">#</a></h3>
+<p>There has also been a lot of wonderful work in building community around Pangeo, with a thriving <a class="reference external" href="https://discourse.pangeo.io/">discourse forum</a>, numerous third-party packages like xbatcher, xradar, rechunker, etc.., educational groups like <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, and more.</p>
+<p>While core technological innovation has struggled, there’s been a lot of innovation on the human side.</p>
+<p>We’re at a strange place where we have a compelling POC (thanks Pangeo 1.0!) that’s motivated a lot of people to act, but no great place for them to go just yet.  We also have an encouraging set of next-generation products (Coiled, Arraylake, Prefect, …) pointing the way to a bright future, but nothing that a mature organization can easily pull off the shelf. Procuring and integrating services from multiple different SaaS vendors comes with its own set of headaches.</p>
+</section>
+</section>
+<section id="future">
+<h2>Future<a class="headerlink" href="#future" title="Permalink to this heading">#</a></h2>
+<p>So what should we do here?  What does the Pangeo 2.0 platform look like?  Ryan Abernathey and I were discussing this topic last week over drinks and started shooting lots of ideas at each other.</p>
+<p>Is it just Coiled with notebooks and regular jobs?<br/>
+Arraylake but with online update algorithms?<br/>
+Does Saturn do everything people need?<br/>
+Maybe it has to be on-prem like Nebari for government folks, but with a proper user database?  Can we get government on Cloud SaaS?<br/>
+Maybe there are many different architectures for different kinds of applications and so organizations are fated to DIY?</p>
+<p>I’ll give some of my opinionated constraints below.  I think that we got some things right with Coiled:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-raw-cloud-architecture"><strong>Raw-cloud architecture</strong></a> rather than Kubernetes</p></li>
+<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-environment-synchronization"><strong>Environment synchronization</strong></a> rather than Docker images</p></li>
+<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/costs/index.html"><strong>Cost controls</strong></a> <strong>and <a class="reference external" href="https://docs.coiled.io/user_guide/users/index.html">user management</a> in a database</strong>, rather than JupyterHub/Kubernetes</p></li>
+<li><p><strong>Centrally managed SaaS product</strong> with one set of operators, rather than several instances of the same stack</p></li>
+<li><p><strong>Trivial integrations</strong> with other tools (our integration is just <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">coiled</span></code> in a Python prompt)</p></li>
+</ul>
+<p>But maybe we got some things wrong:</p>
+<ul class="simple">
+<li><p><strong>Notebooks:</strong> while I still believe that notebooks and computation should be separable (it’s important to drive computations from things-other-than-notebooks) I now realize that single-node cloud notebooks are sometimes valuable, especially for organizations who want to deliver a more curated and homogenous experience to a population of non-power-users.  (I tend to overweight the experience of power-users)</p></li>
+<li><p><strong>Regular Batch Jobs:</strong> while I still believe in integrating with best-in-class workflow orchestration products like Prefect/Dagster, some organizations want something trivial baked-in, particularly when migrating from an on-prem HPC-style environment</p></li>
+<li><p><strong>SaaS:</strong> I’m actually still pretty convinced that this is the right way forward.  SaaS within government agencies has proven a major source of friction, but the development velocity is just so much faster.</p></li>
+</ul>
+<p>Additionally, I’ll follow with some perhaps unpopular organizational perspectives:</p>
+<ul class="simple">
+<li><p><strong>Deployment Infrastructure should be SaaS rather tha OSS</strong></p>
+<ul>
+<li><p>Faster iteration (we can release daily rather than monthly)</p></li>
+<li><p>Better visibility (we can see every failure, often before users do)</p></li>
+<li><p>Maintenance costs are a tiny fraction when shared among different user groups
+(we service hundreds of companies with a tiny cloud dev staff)</p></li>
+</ul>
 </li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="audio-visual.html">Audio-Visual Setup</a></p>
-<p class="ablog-post-excerpt"><em>HD is the new tall</em></p>
-<img alt="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" class="ablog-post-excerpt" src="https://lh3.googleusercontent.com/pw/AL9nZEXNWAQEN8auF4Y1OSC-7XZ9sM-sd39AisUDl9sH3c7UEsHAR3nWmdMI7xvwDCsdtd89ox-4mQMiDQMOz_ezwpMhhkpor8KiujbkHSJdKY_9rVzJyDHwom3snXzxfX2Vx94CHLR4E0C0PUANGRd2N964=w3024-h1702-no?authuser=0" />
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="stability-bias.html">Stability Bias</a></p>
-<p class="ablog-post-excerpt">We often optimize more for current users than future users.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="meetings.html">Meetings</a></p>
-<p class="ablog-post-excerpt">I cancelled all my regular meetings and logged off of Slack.  It has made a
-huge difference.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="_images/calendar-full.png"><img alt="_images/calendar-full.png" class="ablog-post-excerpt" src="_images/calendar-full.png" style="width: 100%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="offsites.html">Offsites</a></p>
-<p class="ablog-post-excerpt">I love remote work, but sometimes it sucks.  Offsites can help.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="failure.html">Failure</a></p>
-<p class="ablog-post-excerpt">Most startups fail, and yet most CEOs project inevitable success.  What gives?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-best-practices.html">Best Practices</a></p>
-<p class="ablog-post-excerpt">After building a successful open source project I then started a company and made many mistakes.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="user-valued-work.html">User Valued Work</a></p>
-<p class="ablog-post-excerpt">We often need to balance prioritization between user-facing work and internal
-or developer-facing work.  It’s helpful to distinguish between these in
-conversations of prioritization and measuring success.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="over-grown.html">Over Grown</a></p>
-<p class="ablog-post-excerpt">I’ve intentionally shrunk Coiled from 40 to 20 people.
-This was painful, but we’re moving faster as a result.
-This article talks a little about the context around this.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="scipy-mission.html">SciPy Mission</a></p>
-<p class="ablog-post-excerpt">We just returned from the annual SciPy conference full of energy as usual.
-This conference is unique because it includes core maintainers from most of the
-core Python data projects (Jupyter, Pandas, Numpy, Scikit-Learn, Dask, Xarray,
-Numba, Matplotlib and many more).  It’s an accident of history that we all
-transitioned into software development from scientific careers.  It’s a
-wonderful community of science nerds that unexpectedly changed the world.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="startup-revenue.html">Revenue</a></p>
-<p class="ablog-post-excerpt">VC funded startups are weird.
-They (rightly) care more about valuation than about revenue.
-Valuation depends on revenue, but only on very certain kinds of revenue.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="fast-review.html">Small Scope Reviews</a></p>
-<p class="ablog-post-excerpt">This is a <a class="reference external" href="https://matthewrocklin.com/blog/work/2019/06/25/write-short-blogposts">fast blogpost</a> please excuse the brevity.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="technical-lead.html">Tech Leads</a></p>
-<p class="ablog-post-excerpt">Tech lead is a role for senior engineers that provides some of the leverage of
-management, while avoiding most of the administrative burden.  It’s a fun role.
-This post talks about some positive behaviors to think about should you find
-yourself in this role.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="metrics.html">Startup Metrics</a></p>
-<p class="ablog-post-excerpt">Common open source software (OSS) / venture capital (VC) metrics are flawed.
-This surprises no one; metrics are hard.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://blog.dask.org/images/dask-weekly-users.png"><img alt="Dask weekly users on documentation" class="ablog-post-excerpt" src="https://blog.dask.org/images/dask-weekly-users.png" style="width: 100%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="tweet.html">Ideal Tweet</a></p>
-<p class="ablog-post-excerpt">Tweets, like all writing, should respect the reader through brevity and structure.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://matthewrocklin.com/blog/images/tweet-video.png"><img alt="https://matthewrocklin.com/blog/images/tweet-video.png" class="ablog-post-excerpt" src="https://matthewrocklin.com/blog/images/tweet-video.png" style="width: 50%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="brevity.html">Short attention span</a></p>
-<p class="ablog-post-excerpt">Speaking truth is easy.  Getting people to listen is hard.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="engineers-and-sales.html">Listen to sell</a></p>
-<p class="ablog-post-excerpt"><strong>Engineer:</strong> <em>Hey Boss, what should I know to more effectively sell our product?</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="senior-engineer.html">Senior Engineers</a></p>
-<p class="ablog-post-excerpt">Software development is both a highly technical and a highly creative process.
-Programmers are reasonably proud of their abilities and experience,
-much in the same way that expert artists or artisans can be proud of their work.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-short-blogposts.html">Short Blogposts</a></p>
-<p class="ablog-post-excerpt">I encourage my colleagues to write blogposts more frequently.
-This is for a few reasons:</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="avoid-indirection.html">Avoid Indirection</a></p>
-<p class="ablog-post-excerpt">This post argues for avoiding indirection in community code.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="maintainer.html">Maintainers</a></p>
-<p class="ablog-post-excerpt">What are the expectations and best practices for maintainers of open source software libraries?
-How can we do this better?</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="slack-github.html">Why I Avoid Slack</a></p>
-<p class="ablog-post-excerpt">I avoid interacting on Slack, especially for technical conversations around
-open source software.  Instead, I encourage colleagues to have technical and
-design conversations on GitHub, or some other system that is public, permanent,
-searchable, and cross-referenceable.  In the spirit of Don’t Repeat Yourself
-(DRY) I’m writing up these thoughts as a blogpost.</p>
-<a class="ablog-post-excerpt reference internal image-reference" href="https://imgs.xkcd.com/comics/standards.png"><img alt="https://imgs.xkcd.com/comics/standards.png" class="ablog-post-excerpt" src="https://imgs.xkcd.com/comics/standards.png" style="width: 70%;" /></a>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="minimal-bug-reports.html">Craft Minimal Bug Reports</a></p>
-<p class="ablog-post-excerpt">Following up on a post on <a class="reference external" href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">supporting users in open source</a>
-this post lists some suggestions on how to ask a maintainer to help you with a problem.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-dumb-code.html">Write Dumb Code</a></p>
-<p class="ablog-post-excerpt"><em>The best way you can contribute to an open source project is to remove lines of code from it.</em>
-<em>We should endeavor to write code that a novice programmer can easily
-understand without explanation or that a maintainer can understand without
-significant time investment.</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="biased-benchmarks.html">Biased Benchmarks</a></p>
-<p class="ablog-post-excerpt"><em>honesty is hard</em></p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="write-tests.html">Write Tests</a></p>
-<p class="ablog-post-excerpt">Tests are important for community driven open source software.
-This post contains brief reasons why you should test your code, particularly if
-you submit changes to existing open source projects.</p>
-</li>
-<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="shared-abstractions.html">Dictionaries v. Objects</a></p>
-<p class="ablog-post-excerpt"><em>a story of shared abstractions</em></p>
+<li><p><strong>For-profit companies</strong> move faster than the community</p>
+<ul>
+<li><p>Most organizations mostly care about if it works, rather than who builds it</p></li>
+</ul>
 </li>
 </ul>
+<p>However, I still have lots of questions:</p>
+<ul class="simple">
+<li><p><strong>What key activities and pain points are people looking to solve today?</strong>
+What features do you need?</p>
+<ul>
+<li><p>Dask / Xarray features?</p></li>
+<li><p>User / cost / administration features?</p></li>
+<li><p>Notebooks in the cloud?</p></li>
+<li><p>Better Scalability?</p></li>
+<li><p>Batch jobs / workflow orchestration?</p></li>
+<li><p>Databases and data catalogs?</p></li>
+</ul>
+</li>
+<li><p><strong>How do geo-specific organizations buy software?</strong></p>
+<ul>
+<li><p>Do you buy software or do you build everything yourself?</p></li>
+<li><p>Do you deploy SaaS or do things have to be installed on-prem or in fully-isolated cloud VPCs?</p></li>
+<li><p>Who makes these decisions?  What do they care about?</p></li>
+<li><p>How do science users impact this decision-making process?</p></li>
+</ul>
+</li>
+</ul>
+<p>If you’ve made it to the end of this post then I could use your help answering these questions.  If you or someone you know works at an institution that buys this kind of software and are open to a 30 minute conversation, then I’d like to probe your brain with a few questions like these and gather your perspective.</p>
+<p>Send me an e-mail at <a class="reference external" href="mailto:pangeo-2-discovery&#37;&#52;&#48;coiled&#46;io">pangeo-2<span>&#46;</span>0-discovery<span>&#64;</span>coiled<span>&#46;</span>io</a> and I’ll schedule a chat this week.</p>
+</section>
 </section>
 
 <div class="section">
-   
+    
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="usage-based-pricing.html">
+      <i class="fa fa-arrow-circle-left"></i> Usage Based Pricing
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
 </div>
 
             </article>
@@ -681,13 +703,6 @@ you submit changes to existing open source projects.</p>
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="index.html" title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-          <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Matthew Rocklin</p>
-      </div>
-  </a>
 </div>
             </footer>
             

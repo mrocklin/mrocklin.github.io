@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-09-10T23:21:13.477000+00:00</updated>
+  <updated>2024-09-18T14:16:23.724580+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5360,5 +5360,186 @@ more thinking on the user’s part, and more conversation on ours.&lt;/p&gt;&lt;
     <link href="https://matthewrocklin.com/usage-based-pricing.html"/>
     <summary>We’re moving away from usage based pricing.Usage based pricing meme</summary>
     <published>2024-09-04T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/pangeo-2.0.html</id>
+    <title>What Does Pangeo 2.0 Look Like?</title>
+    <updated>2024-09-18T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="what-does-pangeo-2-0-look-like"&gt;
+
+&lt;img alt="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" src="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" style="width: 40%;" /&gt;
+&lt;section id="past"&gt;
+&lt;h2&gt;Past&lt;/h2&gt;
+&lt;p&gt;In January 2018 I published a blogpost titled &lt;a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/22/pangeo-2"&gt;Pangeo: JupyterHub, Dask, and XArray on the Cloud&lt;/a&gt;, which introduced a new architecture for running scalable Python computations on the cloud using …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;GCP&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dask + Xarray&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dask-Kubernetes (actually named Daskernetes at the time)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zarr (a brand new file format at the time)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This architecture was unveiled during an AMS workshop keynote, the 3-minute demo video of which is still available if you want a blast from the past:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rSOJKbfNBNk?si=7yM7Fi1VIxLvGGcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;This coordinated work from many people.&lt;/p&gt;
+&lt;section id="what-was-great-about-the-pangeo-stack"&gt;
+&lt;h3&gt;What was great about the Pangeo stack&lt;/h3&gt;
+&lt;p&gt;This effort was impressive, and showed that it was possible to …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Do large scale multi-dimensional distributed computing&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;… from Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;… on the cloud&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;… interactively&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;… for anyone with access to the internet&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This was quite different from the standard at the time in the scientific/geo space, which was MPI codes or batch jobs run on supercomputers.  The Pangeo effort upended the status-quo at many scientific and government agencies trying to enable access and analytics on larger scale data.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="what-was-terrible-about-the-pangeo-stack"&gt;
+&lt;h3&gt;What was terrible about the Pangeo stack&lt;/h3&gt;
+&lt;p&gt;Unfortunately, there were challenges with this stack:&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Kubernetes:&lt;/strong&gt; It required expertise of Kubernetes, and that expertise was rare&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“What’s a pod?  Is it a Docker?  How do I upload a pod?”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Costs:&lt;/strong&gt; Controlling access and costs and usage was impossible&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“I want my graduate students to use this, but I’m worried they’ll go beyond my budget”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Maintenance:&lt;/strong&gt; It was difficult to deploy and maintain&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“How do I tune my cloud autoscaler?  Actually, what is a cloud auto-scaler?”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Regular Jobs:&lt;/strong&gt; It failed to address non-interactive use cases&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“My notebook is great, but how do I run this job every day?”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Rigidity:&lt;/strong&gt; It assumed a uniform development environment&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“I want to use the newest version of scikit-learn, but the Docker image has an old version”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Multi-cloud:&lt;/strong&gt; It didn’t work across regions or clouds&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“How do I access my collaborator’s data in Europe?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Does this work on Azure?”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Storage:&lt;/strong&gt; File formats were still wonky&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Zarr seems cool, but we’re still using NetCDF.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, my data keeps updating, can Zarr expand like this?”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Scale:&lt;/strong&gt; Scale was still an issue&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“This works great on 200 GiB, but when I move to the full dataset my workers start running out of memory”&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Personnel:&lt;/strong&gt; It required people to keep it alive, and no one was paid to do so&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There were incremental improvements in the components of the stack.  Dask-gateway replaced dask-kubernetes.  Zarr became more common.  Dask and Xarray both improved in scale.  There were also many extensions of it, with new libraries built on top of Xarray and a wonderful growth in community engagement.&lt;/p&gt;
+&lt;p&gt;However overall &lt;strong&gt;this deployment architecture was a technological dead end&lt;/strong&gt; (at least in my opinion as original architect).  Personally I’m &lt;strong&gt;proud that we were able to generate so much enthusiasm&lt;/strong&gt; (most of the credit here due to Ryan Abernathey, Rich Signell, and others who pushed the Pangeo stack within scientific circles) but mildly ashamed of the architecture itself.  It’s easy to build a cool demo with the Pangeo stack, but difficult to actually solve the computational and business needs of larger organizations.  &lt;strong&gt;The Pangeo stack was fantastic demo-ware&lt;/strong&gt;.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="present"&gt;
+&lt;h2&gt;Present&lt;/h2&gt;
+&lt;p&gt;Since 2018, there have been several re-imaginings of this stack.  There are full-platform options (everything included, but not particularly powerful) and some tool-specific options (innovative and powerful, but require assembly).  Let’s list a few in each category:&lt;/p&gt;
+&lt;section id="full-platform-options"&gt;
+&lt;h3&gt;Full Platform Options&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;2I2C&lt;/strong&gt; is a classic Kubernetes + JupyterHub architecture similar to what we built in 2018 (pure OSS), but sold with a service to set up and maintain it for organizations that don’t happen to keep a Kuberentes and cloud expert on staff.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Nebari&lt;/strong&gt; (née QHub) is a better architected execution of the same components, and with more components (workflow managers, editors, …)  Nebari is pure OSS and deployed using git-ops, but recognizing that people need help (OSS isn’t free to maintain) Nebari is often sold with services from Quansight who maintains it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Saturn&lt;/strong&gt; took the same UX with Jupyter and Dask (and others tools), but dropped dask-gateway and JupyterHub, and instead added in a proper database-backed web application.  Saturn is a commercial SaaS product with one professionally managed central control plane that can be used anywhere.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="innovative-and-tool-specific-options"&gt;
+&lt;h3&gt;Innovative and Tool-Specific Options&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Coiled (compute)&lt;/strong&gt; is what I and people around me built.&lt;/p&gt;
+&lt;p&gt;Coiled focuses computation exclusively, while also including all of the user management and cost controls that were missing in Pangeo.  Coiled doesn’t serve Jupyter or store data.  Instead, it works with other tools users already have, running from anywhere people run Python (most notably, their existing laptop).&lt;/p&gt;
+&lt;p&gt;I’ll claim (perhaps with hubris) that Coiled is among most high-end Python cloud compute platforms on the market today.  This product was built with creativity and soul, and delivers a developer experience that I’m proud of (and user praise seems to back this perspective).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Arraylake (storage)&lt;/strong&gt; is what Ryan Abernathey and Joe Hamman (the other two primary Pangeo architects) built at Earthmover.&lt;/p&gt;
+&lt;p&gt;Arraylake is a data lake platform built around the Zarr data model which incorporates many database-style features, such as ACID transactions, data version control, fine-grained access controls, and a built-in data catalog.  A bit like Zarr + Git, or Delta Lake if you’re familiar with the dataframe storage space, Arraylake solves many of the data management challenges we experienced in the first iteration of Pangeo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Other tooling&lt;/strong&gt; like workflow managers (Prefect, Dagster), code editors (VS Code), ML/AI tooling (PyTorch, LLMs) and more have come online.  The data infrastructure world today is a vibrant and mercurial environment.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="status"&gt;
+&lt;h3&gt;Status&lt;/h3&gt;
+&lt;p&gt;Today I see a few things:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Coiled and Earthmover&lt;/strong&gt; deliver an innovative top-shelf experience to some geospatial users, but not many.  Those users tend to be early adopters and low-bureaucracy users like startups rather than older and larger organizations like NASA, weather agencies, and the energy majors.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Home Grown Pangeo 1.0 deployments&lt;/strong&gt; still get proposed within large agencies by IT groups who want to solve the data accessibility problem, but don’t land well on completion.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;2I2C and Nabari deployments&lt;/strong&gt; are used in more on-prem-ish environments where SaaS isn’t welcome, but end up delivering mostly a JupyterHub+ experience.  While users report enjoying the cloud notebook capability, I haven’t seen an organization succeed with scalable/distributed computing with these platforms in practice.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Single large VMs&lt;/strong&gt; tend to be standard.  While simple, this often means that users don’t do full-dataset computations and, ironically, have crazy high cloud bills (single large VMs tend to be set up in a way that they stay on forever, which can be startlingly expensive).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="community-developments"&gt;
+&lt;h3&gt;Community Developments&lt;/h3&gt;
+&lt;p&gt;There has also been a lot of wonderful work in building community around Pangeo, with a thriving &lt;a class="reference external" href="https://discourse.pangeo.io/"&gt;discourse forum&lt;/a&gt;, numerous third-party packages like xbatcher, xradar, rechunker, etc.., educational groups like &lt;a class="reference external" href="https://projectpythia.org/"&gt;Project Pythia&lt;/a&gt;, and more.&lt;/p&gt;
+&lt;p&gt;While core technological innovation has struggled, there’s been a lot of innovation on the human side.&lt;/p&gt;
+&lt;p&gt;We’re at a strange place where we have a compelling POC (thanks Pangeo 1.0!) that’s motivated a lot of people to act, but no great place for them to go just yet.  We also have an encouraging set of next-generation products (Coiled, Arraylake, Prefect, …) pointing the way to a bright future, but nothing that a mature organization can easily pull off the shelf. Procuring and integrating services from multiple different SaaS vendors comes with its own set of headaches.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="future"&gt;
+&lt;h2&gt;Future&lt;/h2&gt;
+&lt;p&gt;So what should we do here?  What does the Pangeo 2.0 platform look like?  Ryan Abernathey and I were discussing this topic last week over drinks and started shooting lots of ideas at each other.&lt;/p&gt;
+&lt;p&gt;Is it just Coiled with notebooks and regular jobs?&lt;br/&gt;
+Arraylake but with online update algorithms?&lt;br/&gt;
+Does Saturn do everything people need?&lt;br/&gt;
+Maybe it has to be on-prem like Nebari for government folks, but with a proper user database?  Can we get government on Cloud SaaS?&lt;br/&gt;
+Maybe there are many different architectures for different kinds of applications and so organizations are fated to DIY?&lt;/p&gt;
+&lt;p&gt;I’ll give some of my opinionated constraints below.  I think that we got some things right with Coiled:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-raw-cloud-architecture"&gt;&lt;strong&gt;Raw-cloud architecture&lt;/strong&gt;&lt;/a&gt; rather than Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-environment-synchronization"&gt;&lt;strong&gt;Environment synchronization&lt;/strong&gt;&lt;/a&gt; rather than Docker images&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://docs.coiled.io/user_guide/costs/index.html"&gt;&lt;strong&gt;Cost controls&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;and &lt;a class="reference external" href="https://docs.coiled.io/user_guide/users/index.html"&gt;user management&lt;/a&gt; in a database&lt;/strong&gt;, rather than JupyterHub/Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Centrally managed SaaS product&lt;/strong&gt; with one set of operators, rather than several instances of the same stack&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Trivial integrations&lt;/strong&gt; with other tools (our integration is just &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;import&lt;/span&gt; &lt;span class="pre"&gt;coiled&lt;/span&gt;&lt;/code&gt; in a Python prompt)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But maybe we got some things wrong:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Notebooks:&lt;/strong&gt; while I still believe that notebooks and computation should be separable (it’s important to drive computations from things-other-than-notebooks) I now realize that single-node cloud notebooks are sometimes valuable, especially for organizations who want to deliver a more curated and homogenous experience to a population of non-power-users.  (I tend to overweight the experience of power-users)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Regular Batch Jobs:&lt;/strong&gt; while I still believe in integrating with best-in-class workflow orchestration products like Prefect/Dagster, some organizations want something trivial baked-in, particularly when migrating from an on-prem HPC-style environment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;SaaS:&lt;/strong&gt; I’m actually still pretty convinced that this is the right way forward.  SaaS within government agencies has proven a major source of friction, but the development velocity is just so much faster.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, I’ll follow with some perhaps unpopular organizational perspectives:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Deployment Infrastructure should be SaaS rather tha OSS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Faster iteration (we can release daily rather than monthly)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Better visibility (we can see every failure, often before users do)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Maintenance costs are a tiny fraction when shared among different user groups
+(we service hundreds of companies with a tiny cloud dev staff)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;For-profit companies&lt;/strong&gt; move faster than the community&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Most organizations mostly care about if it works, rather than who builds it&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, I still have lots of questions:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;What key activities and pain points are people looking to solve today?&lt;/strong&gt;
+What features do you need?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Dask / Xarray features?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;User / cost / administration features?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Notebooks in the cloud?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Better Scalability?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Batch jobs / workflow orchestration?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Databases and data catalogs?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;How do geo-specific organizations buy software?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Do you buy software or do you build everything yourself?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you deploy SaaS or do things have to be installed on-prem or in fully-isolated cloud VPCs?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Who makes these decisions?  What do they care about?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How do science users impact this decision-making process?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you’ve made it to the end of this post then I could use your help answering these questions.  If you or someone you know works at an institution that buys this kind of software and are open to a 30 minute conversation, then I’d like to probe your brain with a few questions like these and gather your perspective.&lt;/p&gt;
+&lt;p&gt;Send me an e-mail at &lt;a class="reference external" href="mailto:pangeo-2-discovery&amp;#37;&amp;#52;&amp;#48;coiled&amp;#46;io"&gt;pangeo-2&lt;span&gt;&amp;#46;&lt;/span&gt;0-discovery&lt;span&gt;&amp;#64;&lt;/span&gt;coiled&lt;span&gt;&amp;#46;&lt;/span&gt;io&lt;/a&gt; and I’ll schedule a chat this week.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/pangeo-2.0.html"/>
+    <summary>In January 2018 I published a blogpost titled Pangeo: JupyterHub, Dask, and XArray on the Cloud, which introduced a new architecture for running scalable Python computations on the cloud using …</summary>
+    <published>2024-09-18T00:00:00+00:00</published>
   </entry>
 </feed>
