@@ -86,7 +86,7 @@ Unfortunately, there were challenges with this stack:
 
 There were incremental improvements in the components of the stack.  Dask-gateway replaced dask-kubernetes.  Zarr became more common.  Dask and Xarray both improved in scale.  There were also many extensions of it, with new libraries built on top of Xarray and a wonderful growth in community engagement.
 
-However overall **this deployment architecture was a technological dead end** (at least in my opinion as original architect).  Personally I’m **proud that we were able to generate so much enthusiasm** (most of the credit here due to Ryan Abernathey, Rich Signell, and others who pushed the Pangeo stack within scientific circles) but mildly ashamed of the architecture itself.  It’s easy to build a cool demo with the Pangeo stack, but difficult to actually solve the computational and business needs of larger organizations.  **The Pangeo stack was fantastic demo-ware**.
+However overall **this deployment architecture was a technological dead end** (at least in my opinion as original architect).  Personally I’m **proud that we were able to generate so much enthusiasm** (most of the credit here due to Ryan Abernathey, Rich Signell, and others who pushed the Pangeo stack within scientific circles) but mildly ashamed of the architecture itself.  It’s easy to build a cool demo with the Pangeo stack, but difficult to actually solve the computational and business needs of larger organizations.  My experience has been that **the Pangeo stack was fantastic demo-ware**.
 
 ## Present
 
