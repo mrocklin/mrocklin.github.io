@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-09-20T04:40:34.942342+00:00</updated>
+  <updated>2024-09-25T16:49:01.897560+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5541,5 +5541,91 @@ What features do you need?&lt;/p&gt;
     <link href="https://matthewrocklin.com/pangeo-2.0.html"/>
     <summary>In January 2018 I published a blogpost titled Pangeo: JupyterHub, Dask, and XArray on the Cloud, which introduced a new architecture for running scalable Python computations on the cloud using …</summary>
     <published>2024-09-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/leverage.html</id>
+    <title>How I Almost Quit My Job, and How Being Selfish Saved Me</title>
+    <updated>2024-09-20T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="how-i-almost-quit-my-job-and-how-being-selfish-saved-me"&gt;
+
+&lt;p&gt;&lt;em&gt;Every human being has a basic instinct to help each other out&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;– Mark Watney, The Martian&lt;/em&gt;&lt;/p&gt;
+&lt;section id="leverage-and-the-loss-of-ego"&gt;
+&lt;h2&gt;Leverage and the loss of ego&lt;/h2&gt;
+&lt;p&gt;Positions of leverage feel great, but result in self-sacrifice and burnout.&lt;/p&gt;
+&lt;p&gt;When in a position of leverage, a small amount of your work helps others a
+great deal.  Sacrificing minutes of your time saves days of someone else’s, &lt;strong&gt;so
+of course you sacrifice.  You’d be a monster not to&lt;/strong&gt;.  Sacrificing for others is
+part of being a human; we’re social creatures and helping others is deeply
+rooted in our DNA.&lt;/p&gt;
+&lt;p&gt;And helping other people feels great!  Especially when it’s so easy.
+&lt;strong&gt;This feeling makes you work long hours&lt;/strong&gt;, and squeeze extra time from the odd
+corners of your day, helping unblock as many people as you can.  Unfortunately,
+your personal life and ego can fade in service of your project.&lt;/p&gt;
+&lt;p&gt;Sometimes this fade results in repressive or self-destructive behaviors&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;“I’ve put on a few pounds sure, but I don’t really have time to go running
+with this new project starting”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“Yes, this person’s behavior makes lose sleep, but if I show how I feel
+it’ll cause chaos because of my position”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“My partner doesn’t like it when I work after they come home, but there’s a
+really important project going on, and all they’re doing is watching TV.”&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are natural release mechanisms like venting anger or taking time off that
+stop making sense day-to-day when you’re in a position of leverage.  Your time
+and position are too important.  When these release mechanisms no longer make
+sense day-to-day, your &lt;strong&gt;leverage swallows part of your identity&lt;/strong&gt; and, eventually,
+you break (or at least I do).&lt;/p&gt;
+&lt;p&gt;This breaking point is an interesting moment because it’s at this point where
+the entire project is at risk unless you fix a very important problem,
+yourself.&lt;/p&gt;
+&lt;p&gt;You can’t fix yourself through more sacrifice.  &lt;strong&gt;You can only fix things by
+selfishly prioritizing your needs.&lt;/strong&gt;  This is a rare moment in life where egotism
+and altruism are perfectly aligned.&lt;/p&gt;
+&lt;p&gt;This is the moment when you say “Fuck it” to your colleagues and go to the
+beach for a month (or your equivalent desire) because it’s either that or
+you and the whole system break down.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="personal-examples"&gt;
+&lt;h2&gt;Personal Examples&lt;/h2&gt;
+&lt;p&gt;I’ve almost quit my job (running an early-stage tech company) several times in
+the last five years.  Rather than actually quit, I’ve instead decided to make
+changes like the following:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;I have &lt;a class="reference internal" href="meetings.html#meetings"&gt;&lt;span class="std std-ref"&gt;no recurring meetings&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I don’t &lt;a class="reference internal" href="slack-github.html#slack-github"&gt;&lt;span class="std std-ref"&gt;log into Slack&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I’ve checked out of work for a month, focusing more on running and yoga
+than customers or team morale&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I’ve bailed on conference talks and company travel for six months&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I’ve asked colleagues cancel their work trips to help me with mine&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These actions are &lt;strong&gt;selfish&lt;/strong&gt;, but they’ve also &lt;strong&gt;improved my life
+tremendously&lt;/strong&gt; and &lt;strong&gt;saved my relationship with work&lt;/strong&gt;, giving me the space to
+continue high-leverage work.  If I didn’t figure out these creative ways to be
+selfish, I would have broken and everything else would have broken for others
+around me.&lt;/p&gt;
+&lt;p&gt;Every time I made a change, I came back with more energy and more impact.
+These changes improved everyones’ outcomes, not just my own.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="optimize-for-yourself-creatively"&gt;
+&lt;h2&gt;Optimize for Yourself, Creatively&lt;/h2&gt;
+&lt;p&gt;No one has full freedom over their worklife,
+&lt;strong&gt;but everyone has &lt;em&gt;a lot of freedom&lt;/em&gt;&lt;/strong&gt;, far more than they exercise.&lt;/p&gt;
+&lt;p&gt;Most founders and other leaders I run into are stressed out.
+Most question their relationship to work.  My advice to them (and to you) is to
+&lt;strong&gt;be selfish, creatively&lt;/strong&gt;.  Don’t just stop doing work or helping others;
+figure out very specifically what you want and &lt;strong&gt;design work around what you
+want&lt;/strong&gt;.  The higher the leverage of your work, the more power you have to
+tailor your work life to suit your needs.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/leverage.html"/>
+    <summary>Every human being has a basic instinct to help each other out&lt;br/&gt;
+– Mark Watney, The Martian</summary>
+    <published>2024-09-20T00:00:00+00:00</published>
   </entry>
 </feed>

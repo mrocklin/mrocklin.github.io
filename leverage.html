@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="What does Pangeo 2.0 Look Like?" />
+<meta property="og:title" content="How I Almost Quit My Job, and How Being Selfish Saved Me" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/pangeo-2.0.html" />
+<meta property="og:url" content="https://matthewrocklin.com/leverage.html" />
   
-<meta property="og:description" content="Past: In January 2018 I published a blogpost titled Pangeo: JupyterHub, Dask, and XArray on the Cloud, which introduced a new architecture for running scalable Python computations on the cloud usin..." />
+<meta property="og:description" content="Every human being has a basic instinct to help each other out – Mark Watney, The Martian Leverage and the loss of ego: Positions of leverage feel great, but result in self-sacrifice and burnout. Wh..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="What does Pangeo 2.0 Look Like?" />
+<meta property="og:image:alt" content="How I Almost Quit My Job, and How Being Selfish Saved Me" />
   
-    <title>What does Pangeo 2.0 Look Like? &#8212; Matthew Rocklin</title>
+    <title>How I Almost Quit My Job, and How Being Selfish Saved Me &#8212; Matthew Rocklin</title>
   
   
   
@@ -61,7 +61,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pangeo-2.0';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'leverage';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -404,7 +404,7 @@
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
 <p aria-level="2" class="caption" role="heading">
   <span class="caption-text">
-    <i>Originally authored 2024-09-18</i>
+    <i>Originally authored 2024-09-20</i>
   </span>
 </p>
 <hr/>
@@ -488,173 +488,77 @@
 
 
             <article class="bd-article" role="main">
-               <section id="what-does-pangeo-2-0-look-like">
-<h1>What does Pangeo 2.0 Look Like?<a class="headerlink" href="#what-does-pangeo-2-0-look-like" title="Permalink to this heading">#</a></h1>
-<a class="reference internal image-reference" href="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png"><img alt="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" src="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" style="width: 40%;" /></a>
-<section id="past">
-<h2>Past<a class="headerlink" href="#past" title="Permalink to this heading">#</a></h2>
-<p>In January 2018 I published a blogpost titled <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/22/pangeo-2">Pangeo: JupyterHub, Dask, and XArray on the Cloud</a>, which introduced a new architecture for running scalable Python computations on the cloud using …</p>
+               <section id="how-i-almost-quit-my-job-and-how-being-selfish-saved-me">
+<h1>How I Almost Quit My Job, and How Being Selfish Saved Me<a class="headerlink" href="#how-i-almost-quit-my-job-and-how-being-selfish-saved-me" title="Permalink to this heading">#</a></h1>
+<p><em>Every human being has a basic instinct to help each other out</em><br/>
+<em>– Mark Watney, The Martian</em></p>
+<section id="leverage-and-the-loss-of-ego">
+<h2>Leverage and the loss of ego<a class="headerlink" href="#leverage-and-the-loss-of-ego" title="Permalink to this heading">#</a></h2>
+<p>Positions of leverage feel great, but result in self-sacrifice and burnout.</p>
+<p>When in a position of leverage, a small amount of your work helps others a
+great deal.  Sacrificing minutes of your time saves days of someone else’s, <strong>so
+of course you sacrifice.  You’d be a monster not to</strong>.  Sacrificing for others is
+part of being a human; we’re social creatures and helping others is deeply
+rooted in our DNA.</p>
+<p>And helping other people feels great!  Especially when it’s so easy.
+<strong>This feeling makes you work long hours</strong>, and squeeze extra time from the odd
+corners of your day, helping unblock as many people as you can.  Unfortunately,
+your personal life and ego can fade in service of your project.</p>
+<p>Sometimes this fade results in repressive or self-destructive behaviors</p>
 <ul class="simple">
-<li><p>GCP</p></li>
-<li><p>Kubernetes</p></li>
-<li><p>Dask + Xarray</p></li>
-<li><p>Dask-Kubernetes (actually named Daskernetes at the time)</p></li>
-<li><p>Zarr (a brand new file format at the time)</p></li>
+<li><p>“I’ve put on a few pounds sure, but I don’t really have time to go running
+with this new project starting”</p></li>
+<li><p>“Yes, this person’s behavior makes lose sleep, but if I show how I feel
+it’ll cause chaos because of my position”</p></li>
+<li><p>“My partner doesn’t like it when I work after they come home, but there’s a
+really important project going on, and all they’re doing is watching TV.”</p></li>
 </ul>
-<p>This architecture was unveiled during an AMS workshop keynote, the 3-minute demo video of which is still available if you want a blast from the past:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rSOJKbfNBNk?si=7yM7Fi1VIxLvGGcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>This coordinated work from many people.</p>
-<section id="what-was-great-about-the-pangeo-stack">
-<h3>What was great about the Pangeo stack<a class="headerlink" href="#what-was-great-about-the-pangeo-stack" title="Permalink to this heading">#</a></h3>
-<p>This effort was impressive, and showed that it was possible to …</p>
-<ul class="simple">
-<li><p>Do large scale multi-dimensional distributed computing</p></li>
-<li><p>… from Python</p></li>
-<li><p>… on the cloud</p></li>
-<li><p>… interactively</p></li>
-<li><p>… for anyone with access to the internet</p></li>
-</ul>
-<p>This was quite different from the standard at the time in the scientific/geo space, which was MPI codes or batch jobs run on supercomputers.  The Pangeo effort upended the status-quo at many scientific and government agencies trying to enable access and analytics on larger scale data.</p>
+<p>There are natural release mechanisms like venting anger or taking time off that
+stop making sense day-to-day when you’re in a position of leverage.  Your time
+and position are too important.  When these release mechanisms no longer make
+sense day-to-day, your <strong>leverage swallows part of your identity</strong> and, eventually,
+you break (or at least I do).</p>
+<p>This breaking point is an interesting moment because it’s at this point where
+the entire project is at risk unless you fix a very important problem,
+yourself.</p>
+<p>You can’t fix yourself through more sacrifice.  <strong>You can only fix things by
+selfishly prioritizing your needs.</strong>  This is a rare moment in life where egotism
+and altruism are perfectly aligned.</p>
+<p>This is the moment when you say “Fuck it” to your colleagues and go to the
+beach for a month (or your equivalent desire) because it’s either that or
+you and the whole system break down.</p>
 </section>
-<section id="what-was-terrible-about-the-pangeo-stack">
-<h3>What was terrible about the Pangeo stack<a class="headerlink" href="#what-was-terrible-about-the-pangeo-stack" title="Permalink to this heading">#</a></h3>
-<p>Unfortunately, there were challenges with this stack:</p>
-<ol class="arabic">
-<li><p><strong>Kubernetes:</strong> It required expertise of Kubernetes, and that expertise was rare</p>
-<p><em>“What’s a pod?  Is it a Docker?  How do I upload a pod?”</em></p>
-</li>
-<li><p><strong>Costs:</strong> Controlling access and costs and usage was impossible</p>
-<p><em>“I want my graduate students to use this, but I’m worried they’ll go beyond my budget”</em></p>
-</li>
-<li><p><strong>Maintenance:</strong> It was difficult to deploy and maintain</p>
-<p><em>“How do I tune my cloud autoscaler?  Actually, what is a cloud auto-scaler?”</em></p>
-</li>
-<li><p><strong>Regular Jobs:</strong> It failed to address non-interactive use cases</p>
-<p><em>“My notebook is great, but how do I run this job every day?”</em></p>
-</li>
-<li><p><strong>Rigidity:</strong> It assumed a uniform development environment</p>
-<p><em>“I want to use the newest version of scikit-learn, but the Docker image has an old version”</em></p>
-</li>
-<li><p><strong>Multi-cloud:</strong> It didn’t work across regions or clouds</p>
-<p><em>“How do I access my collaborator’s data in Europe?”</em></p>
-<p><em>“Does this work on Azure?”</em></p>
-</li>
-<li><p><strong>Storage:</strong> File formats were still wonky</p>
-<p><em>“Zarr seems cool, but we’re still using NetCDF.</em></p>
-<p><em>Also, my data keeps updating, can Zarr expand like this?”</em></p>
-</li>
-<li><p><strong>Scale:</strong> Scale was still an issue</p>
-<p><em>“This works great on 200 GiB, but when I move to the full dataset my workers start running out of memory”</em></p>
-</li>
-<li><p><strong>Personnel:</strong> It required people to keep it alive, and no one was paid to do so</p></li>
+<section id="personal-examples">
+<h2>Personal Examples<a class="headerlink" href="#personal-examples" title="Permalink to this heading">#</a></h2>
+<p>I’ve almost quit my job (running an early-stage tech company) several times in
+the last five years.  Rather than actually quit, I’ve instead decided to make
+changes like the following:</p>
+<ol class="arabic simple">
+<li><p>I have <a class="reference internal" href="meetings.html#meetings"><span class="std std-ref">no recurring meetings</span></a></p></li>
+<li><p>I don’t <a class="reference internal" href="slack-github.html#slack-github"><span class="std std-ref">log into Slack</span></a></p></li>
+<li><p>I’ve checked out of work for a month, focusing more on running and yoga
+than customers or team morale</p></li>
+<li><p>I’ve bailed on conference talks and company travel for six months</p></li>
+<li><p>I’ve asked colleagues cancel their work trips to help me with mine</p></li>
 </ol>
-<p>There were incremental improvements in the components of the stack.  Dask-gateway replaced dask-kubernetes.  Zarr became more common.  Dask and Xarray both improved in scale.  There were also many extensions of it, with new libraries built on top of Xarray and a wonderful growth in community engagement.</p>
-<p>However overall <strong>this deployment architecture was a technological dead end</strong> (at least in my opinion as original architect).  Personally I’m <strong>proud that we were able to generate so much enthusiasm</strong> (most of the credit here due to Ryan Abernathey, Rich Signell, and others who pushed the Pangeo stack within scientific circles) but mildly ashamed of the architecture itself.  It’s easy to build a cool demo with the Pangeo stack, but difficult to actually solve the computational and business needs of larger organizations.  My experience has been that <strong>the Pangeo stack was fantastic demo-ware</strong>.</p>
+<p>These actions are <strong>selfish</strong>, but they’ve also <strong>improved my life
+tremendously</strong> and <strong>saved my relationship with work</strong>, giving me the space to
+continue high-leverage work.  If I didn’t figure out these creative ways to be
+selfish, I would have broken and everything else would have broken for others
+around me.</p>
+<p>Every time I made a change, I came back with more energy and more impact.
+These changes improved everyones’ outcomes, not just my own.</p>
 </section>
-</section>
-<section id="present">
-<h2>Present<a class="headerlink" href="#present" title="Permalink to this heading">#</a></h2>
-<p>Since 2018, there have been several re-imaginings of this stack.  There are full-platform options (everything included, but not particularly powerful) and some tool-specific options (innovative and powerful, but require assembly).  Let’s list a few in each category:</p>
-<section id="full-platform-options">
-<h3>Full Platform Options<a class="headerlink" href="#full-platform-options" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>2I2C</strong> is a classic Kubernetes + JupyterHub architecture similar to what we built in 2018 (pure OSS), but sold with a service to set up and maintain it for organizations that don’t happen to keep a Kuberentes and cloud expert on staff.</p></li>
-<li><p><strong>Nebari</strong> (née QHub) is a better architected execution of the same components, and with more components (workflow managers, editors, …)  Nebari is pure OSS and deployed using git-ops, but recognizing that people need help (OSS isn’t free to maintain) Nebari is often sold with services from Quansight who maintains it.</p></li>
-<li><p><strong>Saturn</strong> took the same UX with Jupyter and Dask (and others tools), but dropped dask-gateway and JupyterHub, and instead added in a proper database-backed web application.  Saturn is a commercial SaaS product with one professionally managed central control plane that can be used anywhere.</p></li>
-</ul>
-</section>
-<section id="innovative-and-tool-specific-options">
-<h3>Innovative and Tool-Specific Options<a class="headerlink" href="#innovative-and-tool-specific-options" title="Permalink to this heading">#</a></h3>
-<ul>
-<li><p><strong>Coiled (compute)</strong> is what I and people around me built.</p>
-<p>Coiled focuses computation exclusively, while also including all of the user management and cost controls that were missing in Pangeo.  Coiled doesn’t serve Jupyter or store data.  Instead, it works with other tools users already have, running from anywhere people run Python (most notably, their existing laptop).</p>
-<p>I’ll claim (perhaps with hubris) that Coiled is among most high-end Python cloud compute platforms on the market today.  This product was built with creativity and soul, and delivers a developer experience that I’m proud of (and user praise seems to back this perspective).</p>
-</li>
-<li><p><strong>Arraylake (storage)</strong> is what Ryan Abernathey and Joe Hamman (the other two primary Pangeo architects) built at Earthmover.</p>
-<p>Arraylake is a data lake platform built around the Zarr data model which incorporates many database-style features, such as ACID transactions, data version control, fine-grained access controls, and a built-in data catalog.  A bit like Zarr + Git, or Delta Lake if you’re familiar with the dataframe storage space, Arraylake solves many of the data management challenges we experienced in the first iteration of Pangeo.</p>
-</li>
-<li><p><strong>Other tooling</strong> like workflow managers (Prefect, Dagster), code editors (VS Code), ML/AI tooling (PyTorch, LLMs) and more have come online.  The data infrastructure world today is a vibrant and mercurial environment.</p></li>
-</ul>
-</section>
-<section id="status">
-<h3>Status<a class="headerlink" href="#status" title="Permalink to this heading">#</a></h3>
-<p>Today I see a few things:</p>
-<ul class="simple">
-<li><p><strong>Coiled and Earthmover</strong> deliver an innovative top-shelf experience to some geospatial users, but not many.  Those users tend to be early adopters and low-bureaucracy users like startups rather than older and larger organizations like NASA, weather agencies, and the energy majors.</p></li>
-<li><p><strong>Home Grown Pangeo 1.0 deployments</strong> still get proposed within large agencies by IT groups who want to solve the data accessibility problem, but don’t land well on completion.</p></li>
-<li><p><strong>2I2C and Nabari deployments</strong> are used in more on-prem-ish environments where SaaS isn’t welcome, but end up delivering mostly a JupyterHub+ experience.  While users report enjoying the cloud notebook capability, I haven’t seen an organization succeed with scalable/distributed computing with these platforms in practice.</p></li>
-<li><p><strong>Single large VMs</strong> tend to be standard.  While simple, this often means that users don’t do full-dataset computations and, ironically, have crazy high cloud bills (single large VMs tend to be set up in a way that they stay on forever, which can be startlingly expensive).</p></li>
-</ul>
-</section>
-<section id="community-developments">
-<h3>Community Developments<a class="headerlink" href="#community-developments" title="Permalink to this heading">#</a></h3>
-<p>There has also been a lot of wonderful work in building community around Pangeo, with a thriving <a class="reference external" href="https://discourse.pangeo.io/">discourse forum</a>, numerous third-party packages like xbatcher, xradar, rechunker, etc.., educational groups like <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, and more.</p>
-<p>While core technological innovation has struggled, there’s been a lot of innovation on the human side.</p>
-<p>We’re at a strange place where we have a compelling POC (thanks Pangeo 1.0!) that’s motivated a lot of people to act, but no great place for them to go just yet.  We also have an encouraging set of next-generation products (Coiled, Arraylake, Prefect, …) pointing the way to a bright future, but nothing that a mature organization can easily pull off the shelf. Procuring and integrating services from multiple different SaaS vendors comes with its own set of headaches.</p>
-</section>
-</section>
-<section id="future">
-<h2>Future<a class="headerlink" href="#future" title="Permalink to this heading">#</a></h2>
-<p>So what should we do here?  What does the Pangeo 2.0 platform look like?  Ryan Abernathey and I were discussing this topic last week over drinks and started shooting lots of ideas at each other.</p>
-<p>Is it just Coiled with notebooks and regular jobs?<br/>
-Arraylake but with online update algorithms?<br/>
-Does Saturn do everything people need?<br/>
-Maybe it has to be on-prem like Nebari for government folks, but with a proper user database?  Can we get government on Cloud SaaS?<br/>
-Maybe there are many different architectures for different kinds of applications and so organizations are fated to DIY?</p>
-<p>I’ll give some of my opinionated constraints below.  I think that we got some things right with Coiled:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-raw-cloud-architecture"><strong>Raw-cloud architecture</strong></a> rather than Kubernetes</p></li>
-<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/why.html#how-environment-synchronization"><strong>Environment synchronization</strong></a> rather than Docker images</p></li>
-<li><p><a class="reference external" href="https://docs.coiled.io/user_guide/costs/index.html"><strong>Cost controls</strong></a> <strong>and <a class="reference external" href="https://docs.coiled.io/user_guide/users/index.html">user management</a> in a database</strong>, rather than JupyterHub/Kubernetes</p></li>
-<li><p><strong>Centrally managed SaaS product</strong> with one set of operators, rather than several instances of the same stack</p></li>
-<li><p><strong>Trivial integrations</strong> with other tools (our integration is just <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">coiled</span></code> in a Python prompt)</p></li>
-</ul>
-<p>But maybe we got some things wrong:</p>
-<ul class="simple">
-<li><p><strong>Notebooks:</strong> while I still believe that notebooks and computation should be separable (it’s important to drive computations from things-other-than-notebooks) I now realize that single-node cloud notebooks are sometimes valuable, especially for organizations who want to deliver a more curated and homogenous experience to a population of non-power-users.  (I tend to overweight the experience of power-users)</p></li>
-<li><p><strong>Regular Batch Jobs:</strong> while I still believe in integrating with best-in-class workflow orchestration products like Prefect/Dagster, some organizations want something trivial baked-in, particularly when migrating from an on-prem HPC-style environment</p></li>
-<li><p><strong>SaaS:</strong> I’m actually still pretty convinced that this is the right way forward.  SaaS within government agencies has proven a major source of friction, but the development velocity is just so much faster.</p></li>
-</ul>
-<p>Additionally, I’ll follow with some perhaps unpopular organizational perspectives:</p>
-<ul class="simple">
-<li><p><strong>Deployment Infrastructure should be SaaS rather tha OSS</strong></p>
-<ul>
-<li><p>Faster iteration (we can release daily rather than monthly)</p></li>
-<li><p>Better visibility (we can see every failure, often before users do)</p></li>
-<li><p>Maintenance costs are a tiny fraction when shared among different user groups
-(we service hundreds of companies with a tiny cloud dev staff)</p></li>
-</ul>
-</li>
-<li><p><strong>For-profit companies</strong> move faster than the community</p>
-<ul>
-<li><p>Most organizations mostly care about if it works, rather than who builds it</p></li>
-</ul>
-</li>
-</ul>
-<p>However, I still have lots of questions:</p>
-<ul class="simple">
-<li><p><strong>What key activities and pain points are people looking to solve today?</strong>
-What features do you need?</p>
-<ul>
-<li><p>Dask / Xarray features?</p></li>
-<li><p>User / cost / administration features?</p></li>
-<li><p>Notebooks in the cloud?</p></li>
-<li><p>Better Scalability?</p></li>
-<li><p>Batch jobs / workflow orchestration?</p></li>
-<li><p>Databases and data catalogs?</p></li>
-</ul>
-</li>
-<li><p><strong>How do geo-specific organizations buy software?</strong></p>
-<ul>
-<li><p>Do you buy software or do you build everything yourself?</p></li>
-<li><p>Do you deploy SaaS or do things have to be installed on-prem or in fully-isolated cloud VPCs?</p></li>
-<li><p>Who makes these decisions?  What do they care about?</p></li>
-<li><p>How do science users impact this decision-making process?</p></li>
-</ul>
-</li>
-</ul>
-<p>If you’ve made it to the end of this post then I could use your help answering these questions.  If you or someone you know works at an institution that buys this kind of software and are open to a 30 minute conversation, then I’d like to probe your brain with a few questions like these and gather your perspective.</p>
-<p>Send me an e-mail at <a class="reference external" href="mailto:pangeo-2-discovery&#37;&#52;&#48;coiled&#46;io">pangeo-2<span>&#46;</span>0-discovery<span>&#64;</span>coiled<span>&#46;</span>io</a> and I’ll schedule a chat this week.</p>
+<section id="optimize-for-yourself-creatively">
+<h2>Optimize for Yourself, Creatively<a class="headerlink" href="#optimize-for-yourself-creatively" title="Permalink to this heading">#</a></h2>
+<p>No one has full freedom over their worklife,
+<strong>but everyone has <em>a lot of freedom</em></strong>, far more than they exercise.</p>
+<p>Most founders and other leaders I run into are stressed out.
+Most question their relationship to work.  My advice to them (and to you) is to
+<strong>be selfish, creatively</strong>.  Don’t just stop doing work or helping others;
+figure out very specifically what you want and <strong>design work around what you
+want</strong>.  The higher the leverage of your work, the more power you have to
+tailor your work life to suit your needs.</p>
 </section>
 </section>
 
@@ -664,20 +568,13 @@ What features do you need?</p>
 <div class="section">
   <span style="float: left">
      
-    <a href="usage-based-pricing.html">
-      <i class="fa fa-arrow-circle-left"></i> Usage Based Pricing
+    <a href="pangeo-2.0.html">
+      <i class="fa fa-arrow-circle-left"></i> What Does Pangeo 2.0 Look Like?
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="leverage.html">
-      How I Almost Quit My Job, and How Being Selfish Saved Me <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>
