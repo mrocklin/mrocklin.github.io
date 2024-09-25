@@ -38,9 +38,9 @@ Sometimes this fade results in repressive or self-destructive behaviors
 
 There are natural release mechanisms like venting anger or taking time off that
 stop making sense day-to-day when you're in a position of leverage.  Your time
-and position are too important.  When these release mechanisms no longer make
-sense day-to-day, your **leverage swallows part of your identity** and, eventually,
-you break (or at least I do).
+and position are too important to let loose.  When these release mechanisms no
+longer make sense day-to-day, your **leverage swallows part of your identity**
+and, eventually, you break (or at least I do).
 
 This breaking point is an interesting moment because it's at this point where
 the entire project is at risk unless you fix a very important problem,
@@ -48,11 +48,14 @@ yourself.
 
 You can't fix yourself through more sacrifice.  **You can only fix things by
 selfishly prioritizing your needs.**  This is a rare moment in life where egotism
-and altruism are perfectly aligned.
+and altruism are perfectly aligned.  However, prioritizing your needs doesn't
+mean "do less work".  Often you can achieve far more effective interventions
+than just "work less".  You can **reshape your relationship to work in more
+creative ways** than by just stopping.
 
-This is the moment when you say "Fuck it" to your colleagues and go to the
-beach for a month (or your equivalent desire) because it's either that or
-you and the whole system break down.
+This is the moment when you say "Fuck it" to your colleagues and start working
+from the beach or while motorcycling across America (or whatever).  It's either
+that or you and the whole system break down.
 
 ## Personal Examples
 
