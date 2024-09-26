@@ -68,7 +68,6 @@ changes like the following:
 3.  I've checked out of work for a month, focusing more on running and yoga
     than customers or team morale
 4.  I've bailed on conference talks and company travel for six months
-5.  I've asked colleagues cancel their work trips to help me with mine
 
 These actions are **selfish**, but they've also **improved my life
 tremendously** and **saved my relationship with work**, giving me the space to
