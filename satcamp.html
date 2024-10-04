@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="SatCamp Retrospective" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="https://matthewrocklin.com/satcamp.html" />
+  
+<meta property="og:description" content="This week I attended SatCamp, a small unconference focused on the Satellite / Earth Observation / Remote sensing industry held in Boulder Colorado. SatCamp was a wonderful collection of imagery ner..." />
+  
+<meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
+  
+<meta property="og:image:alt" content="SatCamp Retrospective" />
+  
+    <title>SatCamp Retrospective &#8212; Matthew Rocklin</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-ZCP1VCVST7"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-ZCP1VCVST7');
+            </script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'satcamp';</script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+<!-- plausible -->
+<script defer data-domain="matthewrocklin.com" src="https://plausible.io/js/script.outbound-links.js"></script>
+
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="./atom.xml"
+  title="Matthew Rocklin's Working Notes"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">Matthew Rocklin</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
+                        Articles
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://matthewrocklin.com/blog">
+                        Old Blog
+                      </a>
+                    </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
+      
+      
+      <div class="navbar-end-item">
+        
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/mrocklin/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/mrocklin" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@mrocklin" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-mastodon"></i></span>
+            <label class="sr-only">Mastodon</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://matthewrocklin.com/atom.xml" title="Atom Feed" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-solid fa-rss"></i></span>
+            <label class="sr-only">Atom Feed</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="articles.html">
+                        Articles
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://matthewrocklin.com/blog">
+                        Old Blog
+                      </a>
+                    </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search ..." aria-label="Search ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/mrocklin/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/mrocklin" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@mrocklin" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-mastodon"></i></span>
+            <label class="sr-only">Mastodon</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://matthewrocklin.com/atom.xml" title="Atom Feed" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-solid fa-rss"></i></span>
+            <label class="sr-only">Atom Feed</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Best Of
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading"><span class="caption-text">Startups</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="startup-best-practices.html">Best Practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="think.html">Think for yourself</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meetings.html">Meetings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offsites.html">Offsites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startup-revenue.html">Revenue Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="failure.html">Failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Writing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="redesign-blog.html">Redesigning my Blog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audio-visual.html">Audio-Visual Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="brevity.html">Short Attention Span</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write-short-blogposts.html">Short Blogposts</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Engineering</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="scipy-mission.html">SciPy Mission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintainer.html">Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slack-github.html">Why I Avoid Slack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="senior-engineer.html">Senior Engineers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stability-bias.html">Stability Bias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical-lead.html">Tech Leads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="engineers-and-sales.html">Listen to Sell</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="minimal-bug-reports.html">Craft Minimal Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="avoid-indirection.html">Avoid Indirection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biased-benchmarks.html">Biased Benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write-dumb-code.html">Write Dumb Code</a></li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+
+
+
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+  
+  <div id="rtd-footer-container"></div>
+
+      </div>
+      <main id="main-content" class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+
+
+            <article class="bd-article" role="main">
+               <section id="satcamp-retrospective">
+<h1>SatCamp Retrospective<a class="headerlink" href="#satcamp-retrospective" title="Permalink to this heading">#</a></h1>
+<p>This week I attended <a class="reference external" href="https://satcamp.xyz">SatCamp</a>, a small unconference focused on the Satellite / Earth Observation / Remote sensing industry held in Boulder Colorado.</p>
+<p><a class="reference internal" href="https://satcamp.xyz/assets/sat-camp-logo-digital-9b59f29d.png"><img alt="https://satcamp.xyz/assets/sat-camp-logo-digital-9b59f29d.png" src="https://satcamp.xyz/assets/sat-camp-logo-digital-9b59f29d.png" style="width: 50%;" /></a></p>
+<p>SatCamp was a wonderful collection of imagery nerds talking about technology, public good, cloud performance, and business models, all while hiking/biking/trail running in the Boulder foothills.  (This is the most fit collection of humans I’ve met at a business conference).</p>
+<p>I was a bit of an outsider at this conference, so I thought I’d write up an outsider perspective in hopes of giving other people like me a sense for this industry and community.</p>
+<p><strong>Disclaimer</strong>: *I am not an expert and don’t know this space well.  The
+thoughts below are only a first impression.”</p>
+<section id="big-opportunity-immature-market">
+<h2>Big Opportunity / Immature Market<a class="headerlink" href="#big-opportunity-immature-market" title="Permalink to this heading">#</a></h2>
+<section id="potential">
+<h3>Potential<a class="headerlink" href="#potential" title="Permalink to this heading">#</a></h3>
+<p>Satellite imagery’s potential value is incredible.  We have these technological marvels watching the earth and observing change day to day.  Satellites can help us answer questions like …</p>
+<ol class="arabic simple">
+<li><p>How is this field of potatoes doing on my farm?</p></li>
+<li><p>Which of these houses would gain the most from solar panels?</p></li>
+<li><p>Is this road clear of water so that disaster relief can finally reach this flooded region?</p></li>
+<li><p>Can we send insurance payments immediately after a disaster instead of waiting months for an assessor to arrive?</p></li>
+<li><p>… and of course … How many people are at this military training camp?</p></li>
+</ol>
+</section>
+<section id="struggle">
+<h3>Struggle<a class="headerlink" href="#struggle" title="Permalink to this heading">#</a></h3>
+<p>However despite the huge potential, companies in this space seem to be struggling.  Giants like Maxar were recently taken private by private equity at a distressed valuation of $6bn (for context Shell’s annual revenue is $300bn / year, a rate of roughly one Maxar valuation per week).  High profile tech companies like Planet Labs make about $200m per year, and recently underwent personnel contraction.  Those are the success stories who were present.  Not present included ESRI, which people here refer to with the same gravity as Lord Voldemort.  They’re a bit more valuable and profitable than Maxar, but not much.</p>
+<p>There are hundreds of small climate tech companies who do things like track carbon credits or help companies understand climate risk, all of whom seem to struggle and many of whom are expected to close up shop in the next couple years.</p>
+</section>
+<section id="from-pixels-to-business-value">
+<h3>From Pixels to Business Value<a class="headerlink" href="#from-pixels-to-business-value" title="Permalink to this heading">#</a></h3>
+<p>My sense is that it’s not clear how to convert pixels in a satellite image to business value.  There are many possible applications, but relatively few obvious scalable ones.  Any institution wanting to get business value has to go all the way from raw satellite imagery to business value on their own, and that’s hard.</p>
+<p>In most industries there’s a collection of companies ranging from the broad and horizontal infrastructure products (think DataBricks), to the more vertically specific products (think the thousands of MLOps companies),  and finally to the last-mile consultants, all of whom convert data into insight and value by working together.  Satellite imagery / remote sensing / earth observation doesn’t have that ecosystem yet.  We have consultants who read data directly from AWS without any real tooling support.</p>
+<p>It’s actually kinda bonkers how much data is available today for how immature
+this market is.</p>
+<p>There are some horizontal product companies, but they seem to struggle to demonstrate real value on their own.  Product revenue seems small in this vertical.</p>
+</section>
+<section id="consulting-companies-do-ok">
+<h3>Consulting Companies do OK<a class="headerlink" href="#consulting-companies-do-ok" title="Permalink to this heading">#</a></h3>
+<p>There are a few consulting agencies in this space (Development Seed and SparkGeo were well represented at the conference, along with a few independent consultants), and they all seemed to do fine.  They have to be technically capable,  ranging experience from cloud infrastructure, to data science, to understanding verticals like insurance or agriculture.  These groups seemed to be the most collected and respected at the event.</p>
+<p>The consultants seemed to have “figured it out” while everyone else was struggling.</p>
+</section>
+<section id="exception-government-and-defense">
+<h3>Exception: Government and Defense<a class="headerlink" href="#exception-government-and-defense" title="Permalink to this heading">#</a></h3>
+<p>The one exception to “No one knows how to make money here” seems to be those companies targeting Defense and civilian government (like NASA).  The larger enterprises (Maxar, Planet) mostly target defense today.  The US-based consultancies (DevSeed/Element84) largely target civilian government.</p>
+<p>The US Government seems to highly value observing the earth and its people.</p>
+</section>
+<section id="future">
+<h3>Future?<a class="headerlink" href="#future" title="Permalink to this heading">#</a></h3>
+<p>My sense is that there <em>is</em> significant value here, but that it’ll take a while for an symbiotic ecosystem of product and consulting companies to grow up and learn to better deliver business value.</p>
+<p>This feels like the Internet before web search or Oil before the automobile.  Amazing potential, but it’s not clear what to actually do with it today.</p>
+<p>There’s a ton of potential here.  I don’t know if there’s a first mover
+advantage, or if several companies need to try-and-die here, fertilizing the soil before someone can finally thrive.</p>
+</section>
+</section>
+<section id="tight-community">
+<h2>Tight Community<a class="headerlink" href="#tight-community" title="Permalink to this heading">#</a></h2>
+<p>This community feels the way Scientific Python felt before we got popular.  Everyone is super passionate.  Everyone knows each other.  Everyone is really kind and supportive.  Everyone wants to change the world.  It was a great vibe.</p>
+<p>Mostly it made me miss the days before Python was flooded with money and success (not that I’m complaining about the money and success).</p>
+<p>There was some impractical idealism, but there were also strong and respected voices speaking out for practicality.  It was refreshing hearing people speak so much about business models and what they as a community could do to change things, rather than only wishful thinking about how larger third parties should act.</p>
+</section>
+<section id="small-conference-format-was-great">
+<h2>Small Conference Format was Great<a class="headerlink" href="#small-conference-format-was-great" title="Permalink to this heading">#</a></h2>
+<p>This event had a great form factor.</p>
+<p>It was capped at 100 people, had only lightning talks and panels, and had a lot of unstructured and outdoor time.  It was also a pretty specific community.  Ticket prices were modest and my sense is that it wasn’t as hard as a proper conference to pull off (not to diminish the effort of the organizers, who were great).</p>
+<p>I think the world could probably use more low-stakes and hyper-specific workshops to complement the broad and large events that dominate most work travel today.  We ran a Dask developers invite-only workshop a few years ago with about 50 people and it felt a little like that.  Great energy.</p>
+</section>
+<section id="technology-needs">
+<h2>Technology Needs<a class="headerlink" href="#technology-needs" title="Permalink to this heading">#</a></h2>
+<p>From my perspective as someone who cares about Python+Parallelism+Cloud, mostly this community just needs embarrassingly parallel cloud computing with relatively simple processing.  Even the sophistication of distributed Xarray often feels like overkill here.  I mostly heard people talk about AWS tools like Lambda and Batch, and workflow managers like Prefect and Flyte.</p>
+<p>They’re definitely inefficient.  When asked my favorite question “How much do you think it costs to process 1TB of cloud data” answers ranged in the $20-50 range (real answer is $0.10) which matches my experience with other semi-technical groups.</p>
+<p>While many people have access to large scale cloud computing, they mostly have over-engineered systems around Kubernetes or cobbled together AWS architectures, typically that reduce to just AWS Batch-or-Lambda.</p>
+<p>When showed Coiled demos people were generally blown away, mostly by ease of use, simplicity of architecture, and cost efficiency.  The sophisticated task graph stuff or ML libraries didn’t matter much.</p>
+</section>
+<section id="final-thoughts">
+<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this heading">#</a></h2>
+<p>I had a good time (people were great) and learned a lot (people should attend
+events adjacent to their space more often).  I’m oddly both more and less
+enthusiastic about engaging this community than I was before.</p>
+</section>
+<section id="photos">
+<h2>Photos<a class="headerlink" href="#photos" title="Permalink to this heading">#</a></h2>
+<p>Thanks to the folks who took these.</p>
+<a class="reference internal image-reference" href="_images/2.jpg"><img alt="_images/2.jpg" src="_images/2.jpg" style="width: 55%;" /></a>
+<a class="reference internal image-reference" href="_images/1.jpg"><img alt="_images/1.jpg" src="_images/1.jpg" style="width: 35%;" /></a>
+<a class="reference internal image-reference" href="_images/4.jpg"><img alt="_images/4.jpg" src="_images/4.jpg" style="width: 28%;" /></a>
+<a class="reference internal image-reference" href="_images/3.jpg"><img alt="_images/3.jpg" src="_images/3.jpg" style="width: 62%;" /></a>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+            </article>
+            
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="mrocklin/mrocklin.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
+        data-category="Giscus"
+        data-category-id="DIC_kwDOADPtac4CTY1R"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, Matthew Rocklin.<br>
+
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
