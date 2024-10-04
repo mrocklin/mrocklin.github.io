@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-10-04T23:23:42.172319+00:00</updated>
+  <updated>2024-10-04T23:36:22.920645+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5629,5 +5629,103 @@ tailor your work life to suit your needs.&lt;/p&gt;
     <summary>Every human being has a basic instinct to help each other out&lt;br/&gt;
 – Mark Watney, The Martian</summary>
     <published>2024-09-20T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/satcamp.html</id>
+    <title>SatCamp Retrospective</title>
+    <updated>2024-10-04T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="satcamp-retrospective"&gt;
+
+&lt;p&gt;This week I attended &lt;a class="reference external" href="https://satcamp.xyz"&gt;SatCamp&lt;/a&gt;, a small unconference focused on the Satellite / Earth Observation / Remote sensing industry held in Boulder Colorado.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="https://satcamp.xyz/assets/sat-camp-logo-digital-9b59f29d.png" src="https://satcamp.xyz/assets/sat-camp-logo-digital-9b59f29d.png" style="width: 50%;" /&gt;&lt;/p&gt;
+&lt;p&gt;SatCamp was a wonderful collection of imagery nerds talking about technology, public good, cloud performance, and business models, all while hiking/biking/trail running in the Boulder foothills.  (This is the most fit collection of humans I’ve met at a business conference).&lt;/p&gt;
+&lt;p&gt;I was a bit of an outsider at this conference, so I thought I’d write up an outsider perspective in hopes of giving other people like me a sense for this industry and community.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: *I am not an expert and don’t know this space well.  The
+thoughts below are only a first impression.”&lt;/p&gt;
+&lt;section id="big-opportunity-immature-market"&gt;
+&lt;h2&gt;Big Opportunity / Immature Market&lt;/h2&gt;
+&lt;section id="potential"&gt;
+&lt;h3&gt;Potential&lt;/h3&gt;
+&lt;p&gt;Satellite imagery’s potential value is incredible.  We have these technological marvels watching the earth and observing change day to day.  Satellites can help us answer questions like …&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;How is this field of potatoes doing on my farm?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Which of these houses would gain the most from solar panels?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is this road clear of water so that disaster relief can finally reach this flooded region?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Can we send insurance payments immediately after a disaster instead of waiting months for an assessor to arrive?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;… and of course … How many people are at this military training camp?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;section id="struggle"&gt;
+&lt;h3&gt;Struggle&lt;/h3&gt;
+&lt;p&gt;However despite the huge potential, companies in this space seem to be struggling.  Giants like Maxar were recently taken private by private equity at a distressed valuation of $6bn (for context Shell’s annual revenue is $300bn / year, a rate of roughly one Maxar valuation per week).  High profile tech companies like Planet Labs make about $200m per year, and recently underwent personnel contraction.  Those are the success stories who were present.  Not present included ESRI, which people here refer to with the same gravity as Lord Voldemort.  They’re a bit more valuable and profitable than Maxar, but not much.&lt;/p&gt;
+&lt;p&gt;There are hundreds of small climate tech companies who do things like track carbon credits or help companies understand climate risk, all of whom seem to struggle and many of whom are expected to close up shop in the next couple years.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="from-pixels-to-business-value"&gt;
+&lt;h3&gt;From Pixels to Business Value&lt;/h3&gt;
+&lt;p&gt;My sense is that it’s not clear how to convert pixels in a satellite image to business value.  There are many possible applications, but relatively few obvious scalable ones.  Any institution wanting to get business value has to go all the way from raw satellite imagery to business value on their own, and that’s hard.&lt;/p&gt;
+&lt;p&gt;In most industries there’s a collection of companies ranging from the broad and horizontal infrastructure products (think DataBricks), to the more vertically specific products (think the thousands of MLOps companies),  and finally to the last-mile consultants, all of whom convert data into insight and value by working together.  Satellite imagery / remote sensing / earth observation doesn’t have that ecosystem yet.  We have consultants who read data directly from AWS without any real tooling support.&lt;/p&gt;
+&lt;p&gt;It’s actually kinda bonkers how much data is available today for how immature
+this market is.&lt;/p&gt;
+&lt;p&gt;There are some horizontal product companies, but they seem to struggle to demonstrate real value on their own.  Product revenue seems small in this vertical.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="consulting-companies-do-ok"&gt;
+&lt;h3&gt;Consulting Companies do OK&lt;/h3&gt;
+&lt;p&gt;There are a few consulting agencies in this space (Development Seed and SparkGeo were well represented at the conference, along with a few independent consultants), and they all seemed to do fine.  They have to be technically capable,  ranging experience from cloud infrastructure, to data science, to understanding verticals like insurance or agriculture.  These groups seemed to be the most collected and respected at the event.&lt;/p&gt;
+&lt;p&gt;The consultants seemed to have “figured it out” while everyone else was struggling.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="exception-government-and-defense"&gt;
+&lt;h3&gt;Exception: Government and Defense&lt;/h3&gt;
+&lt;p&gt;The one exception to “No one knows how to make money here” seems to be those companies targeting Defense and civilian government (like NASA).  The larger enterprises (Maxar, Planet) mostly target defense today.  The US-based consultancies (DevSeed/Element84) largely target civilian government.&lt;/p&gt;
+&lt;p&gt;The US Government seems to highly value observing the earth and its people.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="future"&gt;
+&lt;h3&gt;Future?&lt;/h3&gt;
+&lt;p&gt;My sense is that there &lt;em&gt;is&lt;/em&gt; significant value here, but that it’ll take a while for an symbiotic ecosystem of product and consulting companies to grow up and learn to better deliver business value.&lt;/p&gt;
+&lt;p&gt;This feels like the Internet before web search or Oil before the automobile.  Amazing potential, but it’s not clear what to actually do with it today.&lt;/p&gt;
+&lt;p&gt;There’s a ton of potential here.  I don’t know if there’s a first mover
+advantage, or if several companies need to try-and-die here, fertilizing the soil before someone can finally thrive.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="tight-community"&gt;
+&lt;h2&gt;Tight Community&lt;/h2&gt;
+&lt;p&gt;This community feels the way Scientific Python felt before we got popular.  Everyone is super passionate.  Everyone knows each other.  Everyone is really kind and supportive.  Everyone wants to change the world.  It was a great vibe.&lt;/p&gt;
+&lt;p&gt;Mostly it made me miss the days before Python was flooded with money and success (not that I’m complaining about the money and success).&lt;/p&gt;
+&lt;p&gt;There was some impractical idealism, but there were also strong and respected voices speaking out for practicality.  It was refreshing hearing people speak so much about business models and what they as a community could do to change things, rather than only wishful thinking about how larger third parties should act.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="small-conference-format-was-great"&gt;
+&lt;h2&gt;Small Conference Format was Great&lt;/h2&gt;
+&lt;p&gt;This event had a great form factor.&lt;/p&gt;
+&lt;p&gt;It was capped at 100 people, had only lightning talks and panels, and had a lot of unstructured and outdoor time.  It was also a pretty specific community.  Ticket prices were modest and my sense is that it wasn’t as hard as a proper conference to pull off (not to diminish the effort of the organizers, who were great).&lt;/p&gt;
+&lt;p&gt;I think the world could probably use more low-stakes and hyper-specific workshops to complement the broad and large events that dominate most work travel today.  We ran a Dask developers invite-only workshop a few years ago with about 50 people and it felt a little like that.  Great energy.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="technology-needs"&gt;
+&lt;h2&gt;Technology Needs&lt;/h2&gt;
+&lt;p&gt;From my perspective as someone who cares about Python+Parallelism+Cloud, mostly this community just needs embarrassingly parallel cloud computing with relatively simple processing.  Even the sophistication of distributed Xarray often feels like overkill here.  I mostly heard people talk about AWS tools like Lambda and Batch, and workflow managers like Prefect and Flyte.&lt;/p&gt;
+&lt;p&gt;They’re definitely inefficient.  When asked my favorite question “How much do you think it costs to process 1TB of cloud data” answers ranged in the $20-50 range (real answer is $0.10) which matches my experience with other semi-technical groups.&lt;/p&gt;
+&lt;p&gt;While many people have access to large scale cloud computing, they mostly have over-engineered systems around Kubernetes or cobbled together AWS architectures, typically that reduce to just AWS Batch-or-Lambda.&lt;/p&gt;
+&lt;p&gt;When showed Coiled demos people were generally blown away, mostly by ease of use, simplicity of architecture, and cost efficiency.  The sophisticated task graph stuff or ML libraries didn’t matter much.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="final-thoughts"&gt;
+&lt;h2&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I had a good time (people were great) and learned a lot (people should attend
+events adjacent to their space more often).  I’m oddly both more and less
+enthusiastic about engaging this community than I was before.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="photos"&gt;
+&lt;h2&gt;Photos&lt;/h2&gt;
+&lt;p&gt;Thanks to the folks who took these.&lt;/p&gt;
+&lt;img alt="_images/2.jpg" src="_images/2.jpg" style="width: 55%;" /&gt;
+&lt;img alt="_images/1.jpg" src="_images/1.jpg" style="width: 35%;" /&gt;
+&lt;img alt="_images/4.jpg" src="_images/4.jpg" style="width: 28%;" /&gt;
+&lt;img alt="_images/3.jpg" src="_images/3.jpg" style="width: 62%;" /&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/satcamp.html"/>
+    <summary>This week I attended SatCamp, a small unconference focused on the Satellite / Earth Observation / Remote sensing industry held in Boulder Colorado.</summary>
+    <published>2024-10-04T00:00:00+00:00</published>
   </entry>
 </feed>

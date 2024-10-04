@@ -1,3 +1,11 @@
+---
+title: SatCamp Retrospective
+date: 2024-10-04
+description: The Earth observation ecosystem from an outsider's perspective
+blogpost: true
+author: Matthew Rocklin
+---
+
 # SatCamp Retrospective
 
 
