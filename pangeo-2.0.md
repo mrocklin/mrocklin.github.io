@@ -10,8 +10,6 @@ author: Matthew Rocklin
 What does Pangeo 2.0 Look Like?
 ===============================
 
-<img src="https://global.discourse-cdn.com/standard14/uploads/pangeo/original/1X/657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4.png" width="40%" />
-
 
 Past
 ----
