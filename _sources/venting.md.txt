@@ -1,6 +1,6 @@
 ---
 title: Venting and Constructive Communication
-date: 2024-10-26
+date: 2024-10-25
 description: To Vent is Human
 blogpost: true
 author: Matthew Rocklin
