@@ -27,14 +27,14 @@ When I'm at my best I have a mental model of the person I'm speaking with.
 -  If they don't speak my language well, I'll use simple language and speak clearly
 -  If they're struggling emotionally, I'll avoid anything critical, nod my head, and listen actively
 
-Effective language is targets the listener.  It's not the words we want to say.
-It's the words that we think will be most effective at influencing their mind.
-Having a good mental model of our partner helps us craft useful language.
+Effective language targets the listener.  It's not the words that we want to say.
+It's the words that we think will be most effective at influencing our partner.
+Having a good mental model of our partner helps us craft effective language.
 
-Ideally when I want to influence someone (say, get them to add a feature to a product) I first check my words against my mental model of that person and come up with the right words to engage them in particular.
+Ideally when I want to influence someone (say, get them to add a feature to a product) I first check my words against my mental model of that person and come up with the right words to engage them in particular.  I then hope my model is accurate.
 
-To be clear, I'm pretty bad at this; but this is what I strive towards, and is
-my standard for "constructive communication".
+To be clear, I'm pretty bad at this; but this is what I strive towards, and
+this is my standard for "constructive communication".
 
 Venting
 -------
@@ -45,24 +45,26 @@ I'll see unconstructive language like the following:
 
 *"Do you really think that was a good idea?"*<br/>
 *"This is a really badly done"*<br/>
+*"This direction is obviously going nowhere"*<br/>
 
-These things might be *true* but they're usually not *constructive*.
-If we ask the person who said this (or ourselves, if we are that person) a few
-questions, it quickly becomes clear that we're not serving our own interests:
+These things might even be *true* but they're usually not *constructive*.
+
+If we ask the person who said this a few questions (or ask ourselves, if we are that person),
+it quickly becomes clear that we're not serving our own interests:
 
 -   **Q:** What is your goal here?<br/>
     **A:** To get them to change their behavior
 -   **Q:** How do you think what you've just said/written will land with them?<br/>
     **A:** ... I guess it'll make them upset ... but they're wrong!
 -   **Q:** Do you think that that's more likely to make them change their behavior?<br/>
-    **A:** Yeah ok, obviously not
+    **A:** Yeah ok, probably not
 
 Obviously no one ever has this conversation, but it's a good check for us to do on ourselves.
 
 -   **Q:** Do we think that the thing we just said serves our interest?
 
     **If yes:** it's constructive, and in service of our goals<br/>
-    **If no:** it's probably just venting, and we're sacrificing our relationship (and thus any future ability to affect change) for immediate gratification
+    **If no:** it's probably just venting, and we're sacrificing our relationship (and thus any future ability to affect change) for immediate gratification of our frustration
 
 We all vent.  Everyone.  Me.  You.  The Pope.  Even Barack Obama vents.
 
@@ -85,7 +87,7 @@ yourself or your own group.  While some ICs might not be expected to maintain
 relationships across the company, managers and company leaders certainly are.
 
 Relationship building is a requirement for climbing an organizational chart,
-and venting damages relationships.
+and venting runs counter to that goal.
 
 There's Gold Behind the Vent
 ----------------------------
@@ -93,19 +95,23 @@ There's Gold Behind the Vent
 But venting does have real value.  There's some idea behind the vent that's
 causing you stress.  Your gut is telling you something important and valuable.
 
-The mark of a real leader is someone who can feel those raw frustrations, vent
-internally, ask *"What am I feeling  here?"*, and then identify the constructive idea behind the vent, and finally think how to constructively communicate that idea to one's colleagues.
+The mark of a real leader is someone who can feel those raw frustrations
+acutely, vent internally, ask *"What am I feeling  here?"*, and then identify
+the constructive idea behind the vent. Finally, effective communicators think
+how to constructively communicate that idea to one's colleagues in a way that
+they will connect with.
 
 This is super hard.  If it feels impossible then that's probably a signal that
-you need two things first:
+you need to do two things first:
 
-1.  A better relationship with the person with whom you need to communicate
+1.  **Build a better relationship** with your partner
 
     Grab a beer.  Talk about their kids.  Anything just to jointly establish
     that you're both reasonable people.  Don't push work topics too early.
 
-2.  A better mental model of the person so that you can shape your message not
-    as you most want to say it, but as you think they're most likely able to
-    receive it
+2.  **Build a better mental model** of your partner
+
+    This way you can shape your message not as you most want to say it, but as
+    you think they're most likely able to receive it
 
 This takes time.  It's an investment.  It absolutely pays off.

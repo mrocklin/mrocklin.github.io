@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-10-25T23:09:02.101221+00:00</updated>
+  <updated>2024-10-25T23:20:16.509169+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5750,12 +5750,12 @@ This post explores and tries to name this universal experience.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;If they don’t speak my language well, I’ll use simple language and speak clearly&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If they’re struggling emotionally, I’ll avoid anything critical, nod my head, and listen actively&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Effective language is targets the listener.  It’s not the words we want to say.
-It’s the words that we think will be most effective at influencing their mind.
-Having a good mental model of our partner helps us craft useful language.&lt;/p&gt;
-&lt;p&gt;Ideally when I want to influence someone (say, get them to add a feature to a product) I first check my words against my mental model of that person and come up with the right words to engage them in particular.&lt;/p&gt;
-&lt;p&gt;To be clear, I’m pretty bad at this; but this is what I strive towards, and is
-my standard for “constructive communication”.&lt;/p&gt;
+&lt;p&gt;Effective language targets the listener.  It’s not the words that we want to say.
+It’s the words that we think will be most effective at influencing our partner.
+Having a good mental model of our partner helps us craft effective language.&lt;/p&gt;
+&lt;p&gt;Ideally when I want to influence someone (say, get them to add a feature to a product) I first check my words against my mental model of that person and come up with the right words to engage them in particular.  I then hope my model is accurate.&lt;/p&gt;
+&lt;p&gt;To be clear, I’m pretty bad at this; but this is what I strive towards, and
+this is my standard for “constructive communication”.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="venting"&gt;
 &lt;h2&gt;Venting&lt;/h2&gt;
@@ -5763,23 +5763,24 @@ my standard for “constructive communication”.&lt;/p&gt;
 back at my own disputes) I’ll look at e-mails or listen to people talk and
 I’ll see unconstructive language like the following:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;“Do you really think that was a good idea?”&lt;/em&gt;&lt;br/&gt;
-&lt;em&gt;“This is a really badly done”&lt;/em&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;These things might be &lt;em&gt;true&lt;/em&gt; but they’re usually not &lt;em&gt;constructive&lt;/em&gt;.
-If we ask the person who said this (or ourselves, if we are that person) a few
-questions, it quickly becomes clear that we’re not serving our own interests:&lt;/p&gt;
+&lt;em&gt;“This is a really badly done”&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;“This direction is obviously going nowhere”&lt;/em&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;These things might even be &lt;em&gt;true&lt;/em&gt; but they’re usually not &lt;em&gt;constructive&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If we ask the person who said this a few questions (or ask ourselves, if we are that person),
+it quickly becomes clear that we’re not serving our own interests:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; What is your goal here?&lt;br/&gt;
 &lt;strong&gt;A:&lt;/strong&gt; To get them to change their behavior&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; How do you think what you’ve just said/written will land with them?&lt;br/&gt;
 &lt;strong&gt;A:&lt;/strong&gt; … I guess it’ll make them upset … but they’re wrong!&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Do you think that that’s more likely to make them change their behavior?&lt;br/&gt;
-&lt;strong&gt;A:&lt;/strong&gt; Yeah ok, obviously not&lt;/p&gt;&lt;/li&gt;
+&lt;strong&gt;A:&lt;/strong&gt; Yeah ok, probably not&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Obviously no one ever has this conversation, but it’s a good check for us to do on ourselves.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Do we think that the thing we just said serves our interest?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If yes:&lt;/strong&gt; it’s constructive, and in service of our goals&lt;br/&gt;
-&lt;strong&gt;If no:&lt;/strong&gt; it’s probably just venting, and we’re sacrificing our relationship (and thus any future ability to affect change) for immediate gratification&lt;/p&gt;
+&lt;strong&gt;If no:&lt;/strong&gt; it’s probably just venting, and we’re sacrificing our relationship (and thus any future ability to affect change) for immediate gratification of our frustration&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We all vent.  Everyone.  Me.  You.  The Pope.  Even Barack Obama vents.&lt;/p&gt;
@@ -5799,24 +5800,28 @@ unable to collaborate effectively, and you’ll only ever be as strong as
 yourself or your own group.  While some ICs might not be expected to maintain
 relationships across the company, managers and company leaders certainly are.&lt;/p&gt;
 &lt;p&gt;Relationship building is a requirement for climbing an organizational chart,
-and venting damages relationships.&lt;/p&gt;
+and venting runs counter to that goal.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="there-s-gold-behind-the-vent"&gt;
 &lt;h2&gt;There’s Gold Behind the Vent&lt;/h2&gt;
 &lt;p&gt;But venting does have real value.  There’s some idea behind the vent that’s
 causing you stress.  Your gut is telling you something important and valuable.&lt;/p&gt;
-&lt;p&gt;The mark of a real leader is someone who can feel those raw frustrations, vent
-internally, ask &lt;em&gt;“What am I feeling  here?”&lt;/em&gt;, and then identify the constructive idea behind the vent, and finally think how to constructively communicate that idea to one’s colleagues.&lt;/p&gt;
+&lt;p&gt;The mark of a real leader is someone who can feel those raw frustrations
+acutely, vent internally, ask &lt;em&gt;“What am I feeling  here?”&lt;/em&gt;, and then identify
+the constructive idea behind the vent. Finally, effective communicators think
+how to constructively communicate that idea to one’s colleagues in a way that
+they will connect with.&lt;/p&gt;
 &lt;p&gt;This is super hard.  If it feels impossible then that’s probably a signal that
-you need two things first:&lt;/p&gt;
+you need to do two things first:&lt;/p&gt;
 &lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p&gt;A better relationship with the person with whom you need to communicate&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Build a better relationship&lt;/strong&gt; with your partner&lt;/p&gt;
 &lt;p&gt;Grab a beer.  Talk about their kids.  Anything just to jointly establish
 that you’re both reasonable people.  Don’t push work topics too early.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A better mental model of the person so that you can shape your message not
-as you most want to say it, but as you think they’re most likely able to
-receive it&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Build a better mental model&lt;/strong&gt; of your partner&lt;/p&gt;
+&lt;p&gt;This way you can shape your message not as you most want to say it, but as
+you think they’re most likely able to receive it&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This takes time.  It’s an investment.  It absolutely pays off.&lt;/p&gt;
 &lt;/section&gt;
