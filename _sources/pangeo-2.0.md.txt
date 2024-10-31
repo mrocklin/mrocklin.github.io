@@ -102,7 +102,7 @@ Since 2018, there have been several re-imaginings of this stack.  There are full
 
 - **Coiled (compute)** is what I and people around me built.
 
-  Coiled focuses computation exclusively, while also including all of the user management and cost controls that were missing in Pangeo.  Coiled doesn’t serve Jupyter or store data.  Instead, it works with other tools users already have, running from anywhere people run Python (most notably, their existing laptop).
+  Coiled focuses exlusively on computation, while also including all of the user management and cost controls that were missing in Pangeo.  Coiled doesn’t serve Jupyter or store data.  Instead, it works with other tools users already have, running from anywhere people run Python (most notably, their existing laptop).
 
   I’ll claim (perhaps with hubris) that Coiled is among most high-end Python cloud compute platforms on the market today.  This product was built with creativity and soul, and delivers a developer experience that I’m proud of (and user praise seems to back this perspective).
 
@@ -158,7 +158,7 @@ But maybe we got some things wrong:
 
 Additionally, I’ll follow with some perhaps unpopular organizational perspectives:
 
-- **Deployment Infrastructure should be SaaS rather tha OSS**
+- **Deployment Infrastructure should be SaaS rather than OSS**
   - Faster iteration (we can release daily rather than monthly)
   - Better visibility (we can see every failure, often before users do)
   - Maintenance costs are a tiny fraction when shared among different user groups
