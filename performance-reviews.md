@@ -43,7 +43,7 @@ I typically structure the conversation around the following questions:
 This is the most generic structure I can think of that both
 
 1.  gets the employee to talk about things
-2.  reates an obvious space for critical feedback.
+2.  creates a space for critical feedback.
 
 When you as a manager give feedback it's now because you were asked to
 by the form.  "It's not that I think you're doing a bad job, it's that I have
