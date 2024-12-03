@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-03T23:12:14.226912+00:00</updated>
+  <updated>2024-12-03T23:16:19.579479+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5937,7 +5937,12 @@ In theory, they deliver on this promise.&lt;/p&gt;
 &lt;p&gt;They store songs, let you play them, fast forward, rewind, and show you what’s going on.  On paper they do everything the iPod will do, and yet market penetration was tiny, less than 1% of what it would be.  Looking at the lack of success of these products you’d conclude that humans don’t like listening to music.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The majority of people who would have wanted an MP3 player didn’t use any of these products.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Eventually, the iPod was released, and it changed our listening habits forever&lt;/p&gt;
-&lt;img alt="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" src="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" style="width: 70%;" /&gt;
+&lt;figure class="align-default" id="id1"&gt;
+&lt;img alt="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" src="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" /&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;iPod Generation One delivered the same functionality, just designed for everyone.&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="compute-technology-has-outpaced-ux-and-adoption"&gt;

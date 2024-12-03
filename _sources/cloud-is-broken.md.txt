@@ -4,6 +4,7 @@ date: 2024-12-03
 description: Let's strive towards excellence on boring problems
 blogpost: true
 author: Matthew Rocklin
+image: 3
 ---
 
 # Cloud Computing is Broken
@@ -112,7 +113,10 @@ They store songs, let you play them, fast forward, rewind, and show you what’s
 
 Eventually, the iPod was released, and it changed our listening habits forever
 
-<img src="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" width="70%" />
+```{figure} https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845
+
+iPod Generation One delivered the same functionality, just designed for everyone.
+```
 
 Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.
 
