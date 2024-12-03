@@ -11,7 +11,7 @@ image: 3
 
 ```{admonition} Famous Quote
 
-*This AWS API is so intuitive it’s fucking awesome.  My entire team uses it*
+*This AWS API is so intuitive it’s fucking awesome.  My entire team uses it.*
 
 *-– no one ever*
 ```
@@ -97,11 +97,13 @@ Anyone above the age of 35 knows this history.  Recall the RIO 500 and Archos Ju
 :::{grid-item} **Archos Jukebox**
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg
+:width: "70%"
 ```
 :::
 
 :::{grid-item} **Rio 500**
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg
+:width: "73%"
 ```
 
 :::
@@ -113,7 +115,8 @@ They store songs, let you play them, fast forward, rewind, and show you what’s
 
 Eventually, the iPod was released, and it changed our listening habits forever
 
-```{figure} https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845
+```{figure} images/ipod.png
+:width: "60%"
 
 iPod Generation One delivered the same functionality, just designed for everyone.
 ```
