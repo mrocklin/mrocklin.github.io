@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-03T23:08:08.615840+00:00</updated>
+  <updated>2024-12-03T23:12:14.226912+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5831,5 +5831,145 @@ you think they’re most likely able to receive it&lt;/p&gt;
     <summary>Constructive conversation and venting are mostly distinguished by asking
 ourselves</summary>
     <published>2024-10-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/cloud-is-broken.html</id>
+    <title>Cloud Computing is Broken</title>
+    <updated>2024-12-03T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="cloud-computing-is-broken"&gt;
+
+&lt;div class="admonition-famous-quote admonition"&gt;
+&lt;p class="admonition-title"&gt;Famous Quote&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This AWS API is so intuitive it’s fucking awesome.  My entire team uses it&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;-– no one ever&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;section id="introduction"&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Recently I was chatting with an investor about the market and they asked:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;What do you see coming&lt;/strong&gt; for the world of Data/Cloud/Compute Infrastructure?&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;Is there some new dataframe library?&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;LLM applications?&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;What hunger are you seeing on the ground?&lt;/em&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;My answer, after thinking about it for a while, was this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;&lt;em&gt;Boring shit.&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;The people I talk to struggle most with the &lt;strong&gt;basics of cloud computing.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;This article explores this answer in more depth, drawing on undelivered promises, and the launch of the iPod.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="promise-of-cloud-computing-undelivered"&gt;
+&lt;h2&gt;Promise of Cloud Computing, Undelivered&lt;/h2&gt;
+&lt;p&gt;The promise of cloud computing for data developers goes like this:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Infinite scalability&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Any place any time&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Turned on in about a minute&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pay for only what you use&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;No need to maintain hardware&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This promise is valuable to companies today.  Developers want this.  Companies need this.  Especially those people for whom SQL doesn’t suffice and who have to roll their own computations.&lt;/p&gt;
+&lt;p&gt;Yet most developers we see either don’t use the cloud, or don’t use it well.
+We see two common architectures today:&lt;/p&gt;
+&lt;div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils"&gt;
+&lt;div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils"&gt;
+&lt;div class="sd-col sd-d-flex-column docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Overused Big VM&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;They get one Big VM&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They leave it on all the time&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Maintenance needs are surprisingly demanding&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s really expensive&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="sd-col sd-d-flex-column docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Underused Kubernetes Cluster&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;They deploy Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Experts use it for 1-2 applications&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Normal users never really get on board&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Maintenance costs and non-use eventually kill it&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;What people want is simple.  They want to turn on a bunch of computers, run arbitrary code on those computers, have those computers turn off reliably, and eventually get logs easily.  They want user and cost management without having to set much up.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="dont-aws-databricks-sagemaker-already-provide-these-features"&gt;
+&lt;h2&gt;Don’t AWS/Databricks/Sagemaker already provide these features?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;But this stuff already exists, right?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On paper, yes.  AWS Batch/Lambda, Databricks jobs, Snowflake’s Snowpark all provide arbitrary code execution on lots of ephemeral machines with exactly those features.
+In theory, they deliver on this promise.&lt;/p&gt;
+&lt;p&gt;However in practice we don’t see this.  People are still rolling their own with the EC2 and EKS APIs.  I’ll bet that if you surveyed data professionals in organizations with access to modern compute platforms you’d find that the majority who would want to use such a tool don’t use them regularly. I’d guess penetration is in the 10-20% range.&lt;/p&gt;
+&lt;p&gt;Providing functionality is easy.  Making functionality useful is hard.&lt;/p&gt;
+&lt;p&gt;Cloud computing today is like MP3 players before the iPod.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Huge potential demand (mp3s were everywhere)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Theoretical delivery of that product (many products on the market)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Complete market failure to actually deliver on the promise.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="mp3-players-and-the-ipod"&gt;
+&lt;h2&gt;MP3 Players and the iPod&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;MP3 players existed, but only kinda.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Imagine you’re Steve Jobs and you want to propose the iPod in year 2000.  Your marketing team tells you that the iPod isn’t innovative.  Loads of MP3 players are already on the market and doing poorly.&lt;/p&gt;
+&lt;p&gt;Anyone above the age of 35 knows this history.  Recall the RIO 500 and Archos Jukebox.&lt;/p&gt;
+&lt;div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils"&gt;
+&lt;div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils"&gt;
+&lt;div class="sd-col sd-d-flex-column docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Archos Jukebox&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class="align-default"&gt;
+&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div class="sd-col sd-d-flex-column docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Rio 500&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class="align-default"&gt;
+&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;They store songs, let you play them, fast forward, rewind, and show you what’s going on.  On paper they do everything the iPod will do, and yet market penetration was tiny, less than 1% of what it would be.  Looking at the lack of success of these products you’d conclude that humans don’t like listening to music.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The majority of people who would have wanted an MP3 player didn’t use any of these products.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Eventually, the iPod was released, and it changed our listening habits forever&lt;/p&gt;
+&lt;img alt="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" src="https://static.wikia.nocookie.net/ipod/images/f/fd/IPod_1G_views.jpg/revision/latest?cb=20210212115845" style="width: 70%;" /&gt;
+&lt;p&gt;Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="compute-technology-has-outpaced-ux-and-adoption"&gt;
+&lt;h2&gt;Compute Technology has Outpaced UX and Adoption&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;We as a technology movement have gotten ahead of ourselves.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I believe in the innovation of the Startup + VC process.  Yet I think that in striving to climb the technology sophistication ladder (cloud computing -&amp;gt; ML -&amp;gt; Model management -&amp;gt; LLMs -&amp;gt; Agentic systems) we’ve outpaced our users and their ability to follow us.&lt;/p&gt;
+&lt;p&gt;We’ve chased the few truly sophisticated users out there, the geeky early adopters, rather than the majority of ignorant humans we should be serving.  We’ve been building for Steve Wozniak.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hFD3tZSB7l4?si=kG3kKKMYgPclekjQ&amp;amp;start=183" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Watch 50s of the video above about Steve’s cool watch. &lt;br/&gt;
+Then see ChatGPT explain how to run “Hello, world” on AWS Batch below.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Xk_lEt_08Hs?si=7yM7Fi1VIxLvGGcx" title="YouTube video player" frameborder="0"               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;No compassionate human can watch that and think “Yes, the potential of the cloud has been realized”.&lt;br/&gt;
+We’re not done innovating yet.  There’s more to do.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="where-does-this-lead-us"&gt;
+&lt;h2&gt;Where does this lead us?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Let’s strive towards excellence on boring problems&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I think that there’s huge untapped potential in solving some of these boring
+problems well.  This work is hard and finicky, but I think the data
+infrastructure space has pushed sufficiently far ahead that we’ve built up
+substantial potential behind our frontier.&lt;/p&gt;
+&lt;p&gt;I’d love to see UX become as strong a focus as AI for the industry.  I’d encourage technology leaders everywhere to ask the following question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;What important and common problems today lack products that inspire rabid loyalty?&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;Those problems may be ripe for iPod-style solutions.&lt;br/&gt;
+Cloud and compute platforms are certainly among them.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/cloud-is-broken.html"/>
+    <summary>This AWS API is so intuitive it’s fucking awesome.  My entire team uses it</summary>
+    <published>2024-12-03T00:00:00+00:00</published>
   </entry>
 </feed>
