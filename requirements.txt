@@ -9,3 +9,4 @@ sphinx-panels
 sphinxcontrib-bibtex
 sphinxext-opengraph==0.6
 sphinxext-rediraffe
+sphinx-design==0.3.0

@@ -13,6 +13,7 @@ extensions = [
     # "sphinxcontrib.bibtex",
     "sphinxext.opengraph",
     "sphinxext.rediraffe",
+    "sphinx_design",
 ]
 
 templates_path = ["_templates"]

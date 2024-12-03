@@ -1,3 +1,11 @@
+---
+title: Cloud Computing is Broken
+date: 2024-12-03
+description: Let's strive towards excellence on boring problems
+blogpost: true
+author: Matthew Rocklin
+---
+
 # Cloud Computing is Broken
 
 ```{admonition} Famous Quote
