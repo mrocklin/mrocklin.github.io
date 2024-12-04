@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-04T01:11:47.905010+00:00</updated>
+  <updated>2024-12-04T01:31:50.453625+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5843,7 +5843,7 @@ ourselves</summary>
 
 &lt;div class="admonition-famous-quote admonition"&gt;
 &lt;p class="admonition-title"&gt;Famous Quote&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This AWS API is so intuitive it’s fucking awesome.  My entire team uses it.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This AWS API is so intuitive it’s awesome.  My whole team uses it.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;-– no one ever&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;section id="introduction"&gt;
@@ -5974,7 +5974,7 @@ Cloud and compute platforms are certainly among them.&lt;/p&gt;
 &lt;/section&gt;
 </content>
     <link href="https://matthewrocklin.com/cloud-is-broken.html"/>
-    <summary>This AWS API is so intuitive it’s fucking awesome.  My entire team uses it.</summary>
+    <summary>This AWS API is so intuitive it’s awesome.  My whole team uses it.</summary>
     <published>2024-12-03T00:00:00+00:00</published>
   </entry>
 </feed>

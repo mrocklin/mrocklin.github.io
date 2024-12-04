@@ -11,7 +11,7 @@ image: 3
 
 ```{admonition} Famous Quote
 
-*This AWS API is so intuitive it’s fucking awesome.  My entire team uses it.*
+*This AWS API is so intuitive it’s awesome.  My whole team uses it.*
 
 *-– no one ever*
 ```
