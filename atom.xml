@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-03T23:25:29.971025+00:00</updated>
+  <updated>2024-12-04T01:11:47.905010+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5921,15 +5921,15 @@ In theory, they deliver on this promise.&lt;/p&gt;
 &lt;div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils"&gt;
 &lt;div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils"&gt;
 &lt;div class="sd-col sd-d-flex-column docutils"&gt;
-&lt;p&gt;&lt;strong&gt;Archos Jukebox&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class="align-default"&gt;
-&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" style="width: 70%;" /&gt;
-&lt;/figure&gt;
-&lt;/div&gt;
-&lt;div class="sd-col sd-d-flex-column docutils"&gt;
 &lt;p&gt;&lt;strong&gt;Rio 500&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class="align-default"&gt;
 &lt;img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" style="width: 73%;" /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div class="sd-col sd-d-flex-column docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Archos Jukebox&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class="align-default"&gt;
+&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" style="width: 70%;" /&gt;
 &lt;/figure&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5940,7 +5940,7 @@ In theory, they deliver on this promise.&lt;/p&gt;
 &lt;figure class="align-default" id="id1"&gt;
 &lt;img alt="_images/ipod.png" src="_images/ipod.png" style="width: 60%;" /&gt;
 &lt;figcaption&gt;
-&lt;p&gt;&lt;span class="caption-text"&gt;iPod Generation One delivered the same functionality, just designed for everyone.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;iPod Generation One delivered the same functionality, but designed well enough for everyone to want.&lt;/span&gt;&lt;/p&gt;
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.&lt;/p&gt;
