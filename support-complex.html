@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Cloud Computing is Broken" />
+<meta property="og:title" content="Python Support is Socially Complex" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/cloud-is-broken.html" />
+<meta property="og:url" content="https://matthewrocklin.com/support-complex.html" />
   
-<meta property="og:description" content="Introduction: Recently I was chatting with an investor about the market and they asked: What do you see coming for the world of Data/Cloud/Compute Infrastructure? Is there some new dataframe librar..." />
+<meta property="og:description" content="Supporting a Python product is difficult because it’s hard to draw a line between your product and the rest of the ecosystem. This creates confusion, especially when it comes to triage and attribut..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Cloud Computing is Broken" />
+<meta property="og:image:alt" content="Python Support is Socially Complex" />
   
-    <title>Cloud Computing is Broken &#8212; Matthew Rocklin</title>
+    <title>Python Support is Socially Complex &#8212; Matthew Rocklin</title>
   
   
   
@@ -63,7 +63,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'cloud-is-broken';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'support-complex';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -406,7 +406,7 @@
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
 <p aria-level="2" class="caption" role="heading">
   <span class="caption-text">
-    <i>Originally authored 2024-12-03</i>
+    <i>Originally authored 2024-12-09</i>
   </span>
 </p>
 <hr/>
@@ -490,137 +490,62 @@
 
 
             <article class="bd-article" role="main">
-               <section id="cloud-computing-is-broken">
-<h1>Cloud Computing is Broken<a class="headerlink" href="#cloud-computing-is-broken" title="Permalink to this heading">#</a></h1>
-<div class="admonition-famous-quote admonition">
-<p class="admonition-title">Famous Quote</p>
-<p><em>This AWS API is so intuitive it’s awesome.  My whole team uses it.</em></p>
-<p><em>-– no one ever</em></p>
-</div>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>Recently I was chatting with an investor about the market and they asked:</p>
-<blockquote>
-<div><p><em><strong>What do you see coming</strong> for the world of Data/Cloud/Compute Infrastructure?</em><br/>
-<em>Is there some new dataframe library?</em><br/>
-<em>LLM applications?</em><br/>
-<em>What hunger are you seeing on the ground?</em><br/></p>
-</div></blockquote>
-<p>My answer, after thinking about it for a while, was this:</p>
-<blockquote>
-<div><p><em>Boring shit.</em><br/>
-<em>The people I talk to struggle most with the <strong>basics of cloud computing.</strong></em></p>
-</div></blockquote>
-<p>This article explores this answer in more depth, drawing on undelivered promises, and the launch of the iPod.</p>
+               <section id="python-support-is-socially-complex">
+<h1>Python Support is Socially Complex<a class="headerlink" href="#python-support-is-socially-complex" title="Permalink to this heading">#</a></h1>
+<p>Supporting a Python product is difficult because it’s hard to draw a line between your product and the rest of the ecosystem.  This creates confusion, especially when it comes to triage and attributing failure to one product or another.</p>
+<p>When a complex product like a Python-based data workflow fails, most of the work in fixing it is in diagnosing the problem.  When the product is self-contained and supported by one company, like a car for example, it’s clear whose responsibility it is to diagnose and fix the problem.</p>
+<p>However, when a product is complex and ownership is jointly distributed among many different responsible entities, diagnostics become fraught.  No individual entity has clear responsibility to solve any particular problem, and no entity has responsibility to triage the problem as a whole.</p>
+<section id="easy-case">
+<h2>Easy Case<a class="headerlink" href="#easy-case" title="Permalink to this heading">#</a></h2>
+<p>When you buy a self-contained product, like a car, it’s obvious when a part becomes defective whose fault it is.  The entire car was assembled by the same manufacturer which takes full responsibility over all parts, so it’s clearly something to do with their work.</p>
+<p><strong>Problem:</strong> Have an issue with your car under warranty?<br/>
+<strong>Solution:</strong> Take it to the dealer.</p>
 </section>
-<section id="promise-of-cloud-computing-undelivered">
-<h2>Promise of Cloud Computing, Undelivered<a class="headerlink" href="#promise-of-cloud-computing-undelivered" title="Permalink to this heading">#</a></h2>
-<p>The promise of cloud computing for data developers goes like this:</p>
-<ul class="simple">
-<li><p>Infinite scalability</p></li>
-<li><p>Any place any time</p></li>
-<li><p>Turned on in about a minute</p></li>
-<li><p>Pay for only what you use</p></li>
-<li><p>No need to maintain hardware</p></li>
-</ul>
-<p>This promise is valuable to companies today.  Developers want this.  Companies need this.  Especially those people for whom SQL doesn’t suffice and who have to roll their own computations.</p>
-<p>Yet most developers we see either don’t use the cloud, or don’t use it well.
-We see two common architectures today:</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<p><strong>Overused Big VM</strong></p>
-<ul class="simple">
-<li><p>They get one Big VM</p></li>
-<li><p>They leave it on all the time</p></li>
-<li><p>Maintenance needs are surprisingly demanding</p></li>
-<li><p>It’s really expensive</p></li>
-</ul>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<p><strong>Underused Kubernetes Cluster</strong></p>
-<ul class="simple">
-<li><p>They deploy Kubernetes</p></li>
-<li><p>Experts use it for 1-2 applications</p></li>
-<li><p>Normal users never really get on board</p></li>
-<li><p>Maintenance costs and non-use eventually kill it</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p>What people want is simple.  They want to turn on a bunch of computers, run arbitrary code on those computers, have those computers turn off reliably, and eventually get logs easily.  They want user and cost management without having to set much up.</p>
+<section id="difficult-case">
+<h2>Difficult case<a class="headerlink" href="#difficult-case" title="Permalink to this heading">#</a></h2>
+<p>But in an ecosystem like Python, you use hundreds of tools simultaneously, each of which has complex interactions with each other, and each of which is managed by a different team.  It becomes difficult to attribute a particular failure to any particular tool.  The burden of diagnosis is on you.</p>
+<p>This is like if you didn’t buy your car from a manufacturer like Honda or Ford, but instead assembled it piece by piece, having purchased parts from individual factories.  No individual factory is going to do the work to figure out why your car died until you prove that it was their part that was at fault.</p>
+<p><strong>Problem:</strong> Have an issue with the complex jumble of software systems you’ve glued together?<br/>
+<strong>Solution:</strong> 😩</p>
+<p>As an example, here is a recent support request and response from our support team:</p>
+<section id="example-support-request">
+<h3>Example: Support Request<a class="headerlink" href="#example-support-request" title="Permalink to this heading">#</a></h3>
+<p><em>I’m trying to get started with your product, however after pip installing I get the following error:</em></p>
+<p><em>raise ClientConnectorCertificateError(req.connection_key, exc) from exc aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host <a class="reference external" href="http://cloud.coiled.io:443/">cloud.coiled.io:443</a> ssl:True [SSLCertVerificationError: (1, ‘[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)’)]</em></p>
+<p><em>Could you let me know if you have a suggested solution to try? Thanks!</em></p>
 </section>
-<section id="dont-aws-databricks-sagemaker-already-provide-these-features">
-<h2>Don’t AWS/Databricks/Sagemaker already provide these features?<a class="headerlink" href="#dont-aws-databricks-sagemaker-already-provide-these-features" title="Permalink to this heading">#</a></h2>
-<p><em>But this stuff already exists, right?</em></p>
-<p>On paper, yes.  AWS Batch/Lambda, Databricks jobs, Snowflake’s Snowpark all provide arbitrary code execution on lots of ephemeral machines with exactly those features.
-In theory, they deliver on this promise.</p>
-<p>However in practice we don’t see this.  People are still rolling their own with the EC2 and EKS APIs.  I’ll bet that if you surveyed data professionals in organizations with access to modern compute platforms you’d find that the majority who would want to use such a tool don’t use them regularly. I’d guess penetration is in the 10-20% range.</p>
-<p>Providing functionality is easy.  Making functionality useful is hard.</p>
-<p>Cloud computing today is like MP3 players before the iPod.</p>
-<ul class="simple">
-<li><p>Huge potential demand (mp3s were everywhere)</p></li>
-<li><p>Theoretical delivery of that product (many products on the market)</p></li>
-<li><p>Complete market failure to actually deliver on the promise.</p></li>
-</ul>
+<section id="example-support-response">
+<h3>Example: Support Response<a class="headerlink" href="#example-support-response" title="Permalink to this heading">#</a></h3>
+<p>… after some other back-and-forth with the user diagnosing their situation …</p>
+<p><em>It looks to me like HTTPS is broken for your local install of Python - I don’t think it’s related to our product.  For example, I expect this would fail in the same way (you can check):</em></p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">request</span>
+<span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;https://google.com&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><em>We generally suggest that folks not use the “built-in” MacOS install of Python for this kind of work. Installing Python with <a class="reference external" href="https://docs.anaconda.com/miniconda/">miniconda</a> is my favorite option, but I’d probably need to know more about how folks on your team usually work with Python to make a good suggestion.</em></p>
 </section>
-<section id="mp3-players-and-the-ipod">
-<h2>MP3 Players and the iPod<a class="headerlink" href="#mp3-players-and-the-ipod" title="Permalink to this heading">#</a></h2>
-<p><em>MP3 players existed, but only kinda.</em></p>
-<p>Imagine you’re Steve Jobs and you want to propose the iPod in year 2000.  Your marketing team tells you that the iPod isn’t innovative.  Loads of MP3 players are already on the market and doing poorly.</p>
-<p>Anyone above the age of 35 knows this history.  Recall the RIO 500 and Archos Jukebox.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<p><strong>Rio 500</strong></p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg" style="width: 73%;" /></a>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<p><strong>Archos Jukebox</strong></p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg" style="width: 70%;" /></a>
-</figure>
-</div>
-</div>
-</div>
-<p>They store songs, let you play them, fast forward, rewind, and show you what’s going on.  On paper they do everything the iPod will do, and yet market penetration was tiny, less than 1% of what it would be.  Looking at the lack of success of these products you’d conclude that humans don’t like listening to music.</p>
-<p><em>The majority of people who would have wanted an MP3 player didn’t use any of these products.</em></p>
-<p>Eventually, the iPod was released, and it changed our listening habits forever</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="_images/ipod.png"><img alt="_images/ipod.png" src="_images/ipod.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-text">iPod Generation One delivered the same functionality, but designed well enough for everyone to want.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.</p>
+<section id="example-analysis">
+<h3>Example: Analysis<a class="headerlink" href="#example-analysis" title="Permalink to this heading">#</a></h3>
+<p>The user’s failure has absolutely nothing to do with our product, and yet we spent non-trivial time tracking down what was going on.  From the perspective of the people providing support, this felt like an abuse of the support relationship.</p>
+<p>However, at the same time, the user is unlikely to be able to diagnose an issue like this on their own (SSL errors are not often taught in data-scientist school) and on the surface it totally appears to be related to our product.  It’s both totally reasonable for them to want help from us, and totally reasonable for us to refuse to help.  This causes tension on both sides.  This raises the question …</p>
+<p><strong>Question:</strong> Whose responsibility is it to triage complex issues?<br/>
+<strong>Answer:</strong> Unfortunately, no one.  For users, this sucks.</p>
 </section>
-<section id="compute-technology-has-outpaced-ux-and-adoption">
-<h2>Compute Technology has Outpaced UX and Adoption<a class="headerlink" href="#compute-technology-has-outpaced-ux-and-adoption" title="Permalink to this heading">#</a></h2>
-<p><em>We as a technology movement have gotten ahead of ourselves.</em></p>
-<p>I believe in the innovation of the Startup + VC process.  Yet I think that in striving to climb the technology sophistication ladder (cloud computing -&gt; ML -&gt; Model management -&gt; LLMs -&gt; Agentic systems) we’ve outpaced our users and their ability to follow us.</p>
-<p>We’ve chased the few truly sophisticated users out there, the geeky early adopters, rather than the majority of ignorant humans we should be serving.  We’ve been building for Steve Wozniak.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hFD3tZSB7l4?si=kG3kKKMYgPclekjQ&amp;start=183" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>Watch 50s of the video above about Steve’s cool watch. <br/>
-Then see ChatGPT explain how to run “Hello, world” on AWS Batch below.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xk_lEt_08Hs?si=7yM7Fi1VIxLvGGcx" title="YouTube video player" frameborder="0"               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>No compassionate human can watch that and think “Yes, the potential of the cloud has been realized”.<br/>
-We’re not done innovating yet.  There’s more to do.</p>
 </section>
-<section id="where-does-this-lead-us">
-<h2>Where does this lead us?<a class="headerlink" href="#where-does-this-lead-us" title="Permalink to this heading">#</a></h2>
-<p><em>Let’s strive towards excellence on boring problems</em></p>
-<p>I think that there’s huge untapped potential in solving some of these boring
-problems well.  This work is hard and finicky, but I think the data
-infrastructure space has pushed sufficiently far ahead that we’ve built up
-substantial potential behind our frontier.</p>
-<p>I’d love to see UX become as strong a focus as AI for the industry.  I’d encourage technology leaders everywhere to ask the following question:</p>
-<blockquote>
-<div><p>What important and common problems today lack products that inspire rabid loyalty?</p>
-</div></blockquote>
-<p>Those problems may be ripe for iPod-style solutions.<br/>
-Cloud and compute platforms are certainly among them.</p>
+<section id="what-can-you-do">
+<h2>What can you do?<a class="headerlink" href="#what-can-you-do" title="Permalink to this heading">#</a></h2>
+<p>Really big companies buy “Data Science” from large integrators and those large integrators take on responsibility.  However, in my experience, the support they offer is simplistic and rarely helpful.</p>
+<p>More often, teams depend on the good will of support teams of the individual products they buy, along with lots of effort from within their own team.  This isn’t great, but can be ok if you’re both hardworking and nice about asking for help.</p>
+<p><strong>Main lesson:</strong> Be hardworking and ask nicely.</p>
+<p>Support teams are made of people, and people everywhere enjoy helping other people (we’re genetically programmed to do this) especially people who have put in the work and are nice.</p>
+<p>See <a class="reference external" href="https://matthewrocklin.com/minimal-bug-reports.html">Craft Minimal Bug Reports</a>, which gives tips on how to nicely ask for help in an OSS context.</p>
+</section>
+<section id="our-approach">
+<h2>Our approach<a class="headerlink" href="#our-approach" title="Permalink to this heading">#</a></h2>
+<p>We try to be nice and help when we have time (as happened in the SSL example above) but we assume no formal responsibility to help with problems that aren’t clearly the sole fault of our software.</p>
+<p>Sometimes people get upset when we don’t spend the time to diagnose ambiguous issues and we all have to live with that outcome.  In those cases we typically back off from that client, or point them to this post to better clarify our understanding of support expectations.  Sometimes that leads to the client backing away (they need more consultative help) and sometimes it leads to a deeper paid support relationship.</p>
+<p>Programming is cool because you can glue together lots of different systems and get a totally new and wonderful system out.  That’s also what makes programming really hard though.  Gluing together systems that were never designed to work together results in all sorts of unexpected interactions, and <em>Interactions</em> are the hard part of systems development.</p>
+<p>We’re here to help navigate, but ultimately you’re responsible for the system you construct.</p>
 </section>
 </section>
 
@@ -630,20 +555,13 @@ Cloud and compute platforms are certainly among them.</p>
 <div class="section">
   <span style="float: left">
      
-    <a href="venting.html">
-      <i class="fa fa-arrow-circle-left"></i> Venting and Constructive Communication
+    <a href="cloud-is-broken.html">
+      <i class="fa fa-arrow-circle-left"></i> Cloud Computing is Broken
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="support-complex.html">
-      Python Support is Socially Complex <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>

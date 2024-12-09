@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-04T01:31:50.453625+00:00</updated>
+  <updated>2024-12-09T17:55:56.975074+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -5976,5 +5976,75 @@ Cloud and compute platforms are certainly among them.&lt;/p&gt;
     <link href="https://matthewrocklin.com/cloud-is-broken.html"/>
     <summary>This AWS API is so intuitive it’s awesome.  My whole team uses it.</summary>
     <published>2024-12-03T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/support-complex.html</id>
+    <title>Python Support is Socially Complex</title>
+    <updated>2024-12-09T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="python-support-is-socially-complex"&gt;
+
+&lt;p&gt;Supporting a Python product is difficult because it’s hard to draw a line between your product and the rest of the ecosystem.  This creates confusion, especially when it comes to triage and attributing failure to one product or another.&lt;/p&gt;
+&lt;p&gt;When a complex product like a Python-based data workflow fails, most of the work in fixing it is in diagnosing the problem.  When the product is self-contained and supported by one company, like a car for example, it’s clear whose responsibility it is to diagnose and fix the problem.&lt;/p&gt;
+&lt;p&gt;However, when a product is complex and ownership is jointly distributed among many different responsible entities, diagnostics become fraught.  No individual entity has clear responsibility to solve any particular problem, and no entity has responsibility to triage the problem as a whole.&lt;/p&gt;
+&lt;section id="easy-case"&gt;
+&lt;h2&gt;Easy Case&lt;/h2&gt;
+&lt;p&gt;When you buy a self-contained product, like a car, it’s obvious when a part becomes defective whose fault it is.  The entire car was assembled by the same manufacturer which takes full responsibility over all parts, so it’s clearly something to do with their work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Have an issue with your car under warranty?&lt;br/&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Take it to the dealer.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="difficult-case"&gt;
+&lt;h2&gt;Difficult case&lt;/h2&gt;
+&lt;p&gt;But in an ecosystem like Python, you use hundreds of tools simultaneously, each of which has complex interactions with each other, and each of which is managed by a different team.  It becomes difficult to attribute a particular failure to any particular tool.  The burden of diagnosis is on you.&lt;/p&gt;
+&lt;p&gt;This is like if you didn’t buy your car from a manufacturer like Honda or Ford, but instead assembled it piece by piece, having purchased parts from individual factories.  No individual factory is going to do the work to figure out why your car died until you prove that it was their part that was at fault.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Have an issue with the complex jumble of software systems you’ve glued together?&lt;br/&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; 😩&lt;/p&gt;
+&lt;p&gt;As an example, here is a recent support request and response from our support team:&lt;/p&gt;
+&lt;section id="example-support-request"&gt;
+&lt;h3&gt;Example: Support Request&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I’m trying to get started with your product, however after pip installing I get the following error:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;raise ClientConnectorCertificateError(req.connection_key, exc) from exc aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host &lt;a class="reference external" href="http://cloud.coiled.io:443/"&gt;cloud.coiled.io:443&lt;/a&gt; ssl:True [SSLCertVerificationError: (1, ‘[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)’)]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Could you let me know if you have a suggested solution to try? Thanks!&lt;/em&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="example-support-response"&gt;
+&lt;h3&gt;Example: Support Response&lt;/h3&gt;
+&lt;p&gt;… after some other back-and-forth with the user diagnosing their situation …&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It looks to me like HTTPS is broken for your local install of Python - I don’t think it’s related to our product.  For example, I expect this would fail in the same way (you can check):&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight-py notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;urllib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;
+&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://google.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;We generally suggest that folks not use the “built-in” MacOS install of Python for this kind of work. Installing Python with &lt;a class="reference external" href="https://docs.anaconda.com/miniconda/"&gt;miniconda&lt;/a&gt; is my favorite option, but I’d probably need to know more about how folks on your team usually work with Python to make a good suggestion.&lt;/em&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="example-analysis"&gt;
+&lt;h3&gt;Example: Analysis&lt;/h3&gt;
+&lt;p&gt;The user’s failure has absolutely nothing to do with our product, and yet we spent non-trivial time tracking down what was going on.  From the perspective of the people providing support, this felt like an abuse of the support relationship.&lt;/p&gt;
+&lt;p&gt;However, at the same time, the user is unlikely to be able to diagnose an issue like this on their own (SSL errors are not often taught in data-scientist school) and on the surface it totally appears to be related to our product.  It’s both totally reasonable for them to want help from us, and totally reasonable for us to refuse to help.  This causes tension on both sides.  This raises the question …&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; Whose responsibility is it to triage complex issues?&lt;br/&gt;
+&lt;strong&gt;Answer:&lt;/strong&gt; Unfortunately, no one.  For users, this sucks.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="what-can-you-do"&gt;
+&lt;h2&gt;What can you do?&lt;/h2&gt;
+&lt;p&gt;Really big companies buy “Data Science” from large integrators and those large integrators take on responsibility.  However, in my experience, the support they offer is simplistic and rarely helpful.&lt;/p&gt;
+&lt;p&gt;More often, teams depend on the good will of support teams of the individual products they buy, along with lots of effort from within their own team.  This isn’t great, but can be ok if you’re both hardworking and nice about asking for help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main lesson:&lt;/strong&gt; Be hardworking and ask nicely.&lt;/p&gt;
+&lt;p&gt;Support teams are made of people, and people everywhere enjoy helping other people (we’re genetically programmed to do this) especially people who have put in the work and are nice.&lt;/p&gt;
+&lt;p&gt;See &lt;a class="reference external" href="https://matthewrocklin.com/minimal-bug-reports.html"&gt;Craft Minimal Bug Reports&lt;/a&gt;, which gives tips on how to nicely ask for help in an OSS context.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="our-approach"&gt;
+&lt;h2&gt;Our approach&lt;/h2&gt;
+&lt;p&gt;We try to be nice and help when we have time (as happened in the SSL example above) but we assume no formal responsibility to help with problems that aren’t clearly the sole fault of our software.&lt;/p&gt;
+&lt;p&gt;Sometimes people get upset when we don’t spend the time to diagnose ambiguous issues and we all have to live with that outcome.  In those cases we typically back off from that client, or point them to this post to better clarify our understanding of support expectations.  Sometimes that leads to the client backing away (they need more consultative help) and sometimes it leads to a deeper paid support relationship.&lt;/p&gt;
+&lt;p&gt;Programming is cool because you can glue together lots of different systems and get a totally new and wonderful system out.  That’s also what makes programming really hard though.  Gluing together systems that were never designed to work together results in all sorts of unexpected interactions, and &lt;em&gt;Interactions&lt;/em&gt; are the hard part of systems development.&lt;/p&gt;
+&lt;p&gt;We’re here to help navigate, but ultimately you’re responsible for the system you construct.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/support-complex.html"/>
+    <summary>Supporting a Python product is difficult because it’s hard to draw a line between your product and the rest of the ecosystem.  This creates confusion, especially when it comes to triage and attributing failure to one product or another.</summary>
+    <published>2024-12-09T00:00:00+00:00</published>
   </entry>
 </feed>
