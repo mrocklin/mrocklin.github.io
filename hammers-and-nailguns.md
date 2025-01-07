@@ -39,13 +39,12 @@ In reality they do very different things:
 
 -  **The hammer whacks things.**  Those things can be nails, but they can also be wrenches, or rusty bolts, or drywall, or heck, even a zombie’s head.
 
-The hammer is a more *simple* tool and the intention behind its design is more *humble*.  The hammer's design doesn't assume it knows what we want to do.
-
 I own a hammer, not a nailgun.  I use it for all sorts of things (most recently
 to tap in drywall anchors).  I can’t recall the last time I actually nailed
 something with it.  Nailguns are better at nailing things, but it’s rare that
 that’s exactly what I want.  Nailguns make enough assumptions about what I want
-to do that they’re rarely the right tool for me.
+to do that they’re rarely the right tool for me.  The hammer's design is more
+*humble*; it doesn't assume much about how I want to use it.
 
 Home improvement, like Python, is a place where all sorts of strange problems
 arise, and it’s great to have simple and flexible tools that extend our natural
@@ -83,5 +82,5 @@ rarely responds to our needs that quickly, and by the time it does it's usually
 someone else's problem.
 
 Simple tools with humble opinions like hammers are what I reach for when I
-face a new problem.  They're difficult to justify in words, but I couldn't
-live without them.
+face a new problem.  They're difficult to justify in words, but they're always
+easy and effective at getting the job done.
