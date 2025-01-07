@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-01-07T03:15:06.473070+00:00</updated>
+  <updated>2025-01-07T03:19:49.337708+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -6076,12 +6076,12 @@ In reality they do very different things:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;The nail gun puts nails into wood.&lt;/strong&gt;  The nailgun is 10x better than a hammer at doing this.  If we have to nail 1000 nails then we should definitely get a nail gun.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;The hammer whacks things.&lt;/strong&gt;  Those things can be nails, but they can also be wrenches, or rusty bolts, or drywall, or heck, even a zombie’s head.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The hammer is a more &lt;em&gt;simple&lt;/em&gt; tool and the intention behind its design is more &lt;em&gt;humble&lt;/em&gt;.  The hammer’s design doesn’t assume it knows what we want to do.&lt;/p&gt;
 &lt;p&gt;I own a hammer, not a nailgun.  I use it for all sorts of things (most recently
 to tap in drywall anchors).  I can’t recall the last time I actually nailed
 something with it.  Nailguns are better at nailing things, but it’s rare that
 that’s exactly what I want.  Nailguns make enough assumptions about what I want
-to do that they’re rarely the right tool for me.&lt;/p&gt;
+to do that they’re rarely the right tool for me.  The hammer’s design is more
+&lt;em&gt;humble&lt;/em&gt;; it doesn’t assume much about how I want to use it.&lt;/p&gt;
 &lt;p&gt;Home improvement, like Python, is a place where all sorts of strange problems
 arise, and it’s great to have simple and flexible tools that extend our natural
 abilities (like whacking things) in any situation.&lt;/p&gt;
