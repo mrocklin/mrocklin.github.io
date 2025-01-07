@@ -82,5 +82,5 @@ rarely responds to our needs that quickly, and by the time it does it's usually
 someone else's problem.
 
 Simple tools with humble opinions like hammers are what I reach for when I
-face a new problem.  They're difficult to justify in words, but I couldn't
-live without them.
+face a new problem.  They're difficult to justify in words, but they're always
+easy and effective at getting the job done.

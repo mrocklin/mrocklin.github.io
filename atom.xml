@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-01-07T03:19:49.337708+00:00</updated>
+  <updated>2025-01-07T03:21:49.082635+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -6110,8 +6110,8 @@ course for any problem we would prefer a purpose built tool, but the market
 rarely responds to our needs that quickly, and by the time it does it’s usually
 someone else’s problem.&lt;/p&gt;
 &lt;p&gt;Simple tools with humble opinions like hammers are what I reach for when I
-face a new problem.  They’re difficult to justify in words, but I couldn’t
-live without them.&lt;/p&gt;
+face a new problem.  They’re difficult to justify in words, but they’re always
+easy and effective at getting the job done.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
