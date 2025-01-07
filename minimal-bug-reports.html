@@ -527,7 +527,7 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 <section id="don-t">
 <h3>Don’t<a class="headerlink" href="#don-t" title="Permalink to this heading">#</a></h3>
 <p>I’ve uploaded my data to Dropbox and you can get it here: <span class="xref myst">my-data.csv.gz</span></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;my-data.csv.gz&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -535,7 +535,7 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 <section id="do">
 <h3>Do<a class="headerlink" href="#do" title="Permalink to this heading">#</a></h3>
 <p>You should be able to copy-paste the following to get enough of my data to cause the problem:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
     <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
@@ -559,7 +559,7 @@ or random data.</p>
 <section id="id1">
 <h3>Don’t<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Here is enough of my data to reproduce the problem</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2017-02-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-01-01&#39;</span><span class="p">],</span>
     <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice Anders&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob Baker&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie Chaplin&#39;</span><span class="p">],</span>
@@ -578,7 +578,7 @@ or random data.</p>
 but we can reproduce the problem with this simpler dataset.
 Notice that the dates are <em>out of order</em> in this data (2000-01-02 comes after 2000-01-03).
 I found that this was critical to reproducing the error.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;account-start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
     <span class="s1">&#39;db-id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
@@ -601,7 +601,7 @@ Do the columns need to be named as you have them now or could they be just “A�
 or descriptive of the types within?</p>
 <section id="id3">
 <h3>Do<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;datetime&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2000-01-03&#39;</span><span class="p">,</span> <span class="s1">&#39;2000-01-02&#39;</span><span class="p">],</span>
     <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>

@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Avoid Indirection" />
+<meta property="og:title" content="Hammers and Nailguns" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="https://matthewrocklin.com/avoid-indirection.html" />
+<meta property="og:url" content="https://matthewrocklin.com/hammers-and-nailguns.html" />
   
-<meta property="og:description" content="This post argues for avoiding indirection in community code. We are taught to hide away details: I often see code where authors abstract away details by placing them in some external function. Here..." />
+<meta property="og:description" content="People often ask me, “What is your tool for?” They want an answer like “AI” or “ETL” or “Training Models”. They want a clean and specific application for easy comparison. I, of course, do not give ..." />
   
 <meta property="og:image" content="https://matthewrocklin.com/_static/profile.jpg" />
   
-<meta property="og:image:alt" content="Avoid Indirection" />
+<meta property="og:image:alt" content="Hammers and Nailguns" />
   
-    <title>Avoid Indirection &#8212; Matthew Rocklin</title>
+    <title>Hammers and Nailguns &#8212; Matthew Rocklin</title>
   
   
   
@@ -63,7 +63,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-ZCP1VCVST7');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'avoid-indirection';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'hammers-and-nailguns';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -406,7 +406,7 @@
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
 <p aria-level="2" class="caption" role="heading">
   <span class="caption-text">
-    <i>Originally authored 2019-06-23</i>
+    <i>Originally authored 2025-01-06</i>
   </span>
 </p>
 <hr/>
@@ -490,98 +490,64 @@
 
 
             <article class="bd-article" role="main">
-               <section id="avoid-indirection">
-<h1>Avoid Indirection<a class="headerlink" href="#avoid-indirection" title="Permalink to this heading">#</a></h1>
-<p>This post argues for avoiding indirection in community code.</p>
-<section id="we-are-taught-to-hide-away-details">
-<h2>We are taught to hide away details<a class="headerlink" href="#we-are-taught-to-hide-away-details" title="Permalink to this heading">#</a></h2>
-<p>I often see code where authors abstract away details by placing them in some
-external function.  Here is a toy example:</p>
-<section id="before-indirection">
-<h3>Before indirection<a class="headerlink" href="#before-indirection" title="Permalink to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
-
-<span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">):</span>
-    <span class="n">do_something_with</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
+               <section id="hammers-and-nailguns">
+<h1>Hammers and Nailguns<a class="headerlink" href="#hammers-and-nailguns" title="Permalink to this heading">#</a></h1>
+<p>People often ask me, <em>“What is your tool for?”</em></p>
+<p>They want an answer like “AI” or “ETL” or “Training Models”. <br/>
+They want a clean and specific application for easy comparison.</p>
+<p>I, of course, do not give them that satisfaction.<br/>
+Instead I ask <em>“What is Python for?”</em> or <em>“What is the cloud for?”</em></p>
+<p><em><strong>Them:</strong></em> <em>Well, all sorts of different things.</em><br/>
+<em><strong>Me:</strong></em> <em>Exactly!</em></p>
+<p>Unfortunately, this answer sucks.</p>
+<section id="simple-tools-humble-opinions">
+<h2>Simple Tools, Humble Opinions<a class="headerlink" href="#simple-tools-humble-opinions" title="Permalink to this heading">#</a></h2>
+<p>The analogy I use here is of hammers and nailguns.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/hammer-nailgun.webp"><img alt="_images/hammer-nailgun.webp" src="_images/hammer-nailgun.webp" style="width: 60%;" /></a>
+</figure>
+<p>Nominally these tools do the same thing (nail things) <br/>
+In reality they do very different things:</p>
+<ul class="simple">
+<li><p><strong>The nail gun puts nails into wood.</strong>  The nailgun is 10x better than a hammer at doing this.  If we have to nail 1000 nails then we should definitely get a nail gun.</p></li>
+<li><p><strong>The hammer whacks things.</strong>  Those things can be nails, but they can also be wrenches, or rusty bolts, or drywall, or heck, even a zombie’s head.</p></li>
+</ul>
+<p>The hammer is a more <em>simple</em> tool and the intention behind its design is more <em>humble</em>.  The hammer’s design doesn’t assume it knows what we want to do.</p>
+<p>I own a hammer, not a nailgun.  I use it for all sorts of things (most recently
+to tap in drywall anchors).  I can’t recall the last time I actually nailed
+something with it.  Nailguns are better at nailing things, but it’s rare that
+that’s exactly what I want.  Nailguns make enough assumptions about what I want
+to do that they’re rarely the right tool for me.</p>
+<p>Home improvement, like Python, is a place where all sorts of strange problems
+arise, and it’s great to have simple and flexible tools that extend our natural
+abilities (like whacking things) in any situation.</p>
 </section>
-<section id="after-indirection">
-<h3>After indirection<a class="headerlink" href="#after-indirection" title="Permalink to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># main.py</span>
-
-<span class="k">if</span> <span class="n">is_foolike</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">do_something_with</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># utils.py</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">is_foolike</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>There are good reasons for this behavior:</p>
-<ol class="arabic simple">
-<li><p>If this code is repeated several times
-it can make things more compact</p></li>
-<li><p>If this code is repeated several times
-it creates a central place for that logic
-so that it can be changed centrally in the future</p></li>
-<li><p>It hides away details that may not be relevant to the main point of the function.
-It’s like a footnote in prose.</p></li>
-<li><p>It gives a name to a set of operations,
-using the function name as inline documentation</p></li>
-<li><p>If often feels cleaner and more abstract</p></li>
-</ol>
-<p>We’re taught to do this in school.
-Find some chunk of functionality,
-abstract it away,
-move on.</p>
+<section id="nailguns-are-easier-to-market">
+<h2>Nailguns are easier to market<a class="headerlink" href="#nailguns-are-easier-to-market" title="Permalink to this heading">#</a></h2>
+<p>Writing copy for nailguns is easy</p>
+<p><em><strong>Nailguns:</strong></em> <em>“Sink nails 10x faster, save time and energy!”</em></p>
+<p>Hammers are harder</p>
+<p><em><strong>Hammers:</strong></em> <em>“Whack things!  So useful!”</em></p>
+<p>Hammers have more applications and are far more commonly used.
+However the lack of a single “killer application” (just thousands of mundane
+ones) makes them awkward to pitch successfully.</p>
 </section>
-</section>
-<section id="the-case-to-avoid-indirection">
-<h2>The case to avoid indirection<a class="headerlink" href="#the-case-to-avoid-indirection" title="Permalink to this heading">#</a></h2>
-<p>However, there is also a cost to this behavior.
-When a new reader encounters this code,
-they need to jump between many function definitions in many files.
-This non-linear reading process requires more mental focus
-than reading linear code.</p>
-<p>This indirection isn’t as much of a problem during the writing process,
-the original author is focused on building up an abstraction model in their head,
-and so writing this abstraction into code makes sense and feels good.
-However, it’s much more of a problem when a reader is asked
-to inspect and understand a piece of code quickly.
-This happens in two important situations:</p>
-<ol class="arabic simple">
-<li><p><strong>During review</strong>, when a reviewer is asked to verify that code is
-sensible before it can be merged into the main project.
-That reviewer probably has about a tenth as much time to spend
-as the original author does on that code.</p></li>
-<li><p><strong>While debugging</strong> future issues.
-This code will eventually be involved in a bug and some completely
-different developer will have to glance at this code to figure out what’s going on.
-They’ll have to understand some small section this code within a few minutes
-to determine what is relevant.
-They won’t be able to invest the time to understand the full thought process behind it,
-and a web of function definitions can slow down this process considerably.</p></li>
-</ol>
-<p>Both review and debugging are far more often bottlenecks in modern community
-code than is original development.  Because of this, I often encourage
-developers to avoid abstraction, and “please inline this function definition”.</p>
-</section>
-<section id="but-functions-are-still-a-good-idea">
-<h2>But functions are still a good idea<a class="headerlink" href="#but-functions-are-still-a-good-idea" title="Permalink to this heading">#</a></h2>
-<p>Just to be clear,
-there are plenty of reasons to separate complex logic into multiple functions,
-particularly when there is repetition,
-or when some important policy is likely to change in the future.
-There is some balance to find here.</p>
-<p>Mostly, I want authors to be aware that there is a human cost to indirection
-that is felt more acutely by everyone reading the code except the original author.</p>
-</section>
-<section id="further-reading">
-<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
-<p>This post extends the broad theme in the post <a class="reference external" href="https://matthewrocklin.com/blog/work/2018/01/27/write-dumb-code">Write Dumb Code</a></p>
+<section id="i-like-hammers">
+<h2>I Like Hammers<a class="headerlink" href="#i-like-hammers" title="Permalink to this heading">#</a></h2>
+<p>As a craftsman (in both wood and code) I like hammers.  Hammers extend our
+natural abilities just a little (naturally our bodies can hit things, just not
+as hard).  They fit in our hands, are simple, and are intuitive to use in any
+situation.</p>
+<p>We especially need hammers in unpredictable situations, which is exactly where
+Python data devs live.  Python devs are the tip of an organizations
+problem-solving spear.  They always get asked to tackle the wacky new dataset
+or computational modality.  Their problems are always novel and untested.  Of
+course for any problem we would prefer a purpose built tool, but the market
+rarely responds to our needs that quickly, and by the time it does it’s usually
+someone else’s problem.</p>
+<p>Simple tools with humble opinions like hammers are what I reach for when I
+face a new problem.  They’re difficult to justify in words, but I couldn’t
+live without them.</p>
 </section>
 </section>
 
@@ -591,20 +557,13 @@ that is felt more acutely by everyone reading the code except the original autho
 <div class="section">
   <span style="float: left">
      
-    <a href="maintainer.html">
-      <i class="fa fa-arrow-circle-left"></i> Maintainers
+    <a href="support-complex.html">
+      <i class="fa fa-arrow-circle-left"></i> Python Support is Socially Complex
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="write-short-blogposts.html">
-      Short Blogposts <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>

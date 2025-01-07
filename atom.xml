@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2024-12-09T17:55:56.975074+00:00</updated>
+  <updated>2025-01-07T03:15:06.473070+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -22,8 +22,8 @@
 &lt;p&gt;Let’s borrow Shannon’s book example to compare two common options of data representation&lt;/p&gt;
 &lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; Book object &amp;quot;&lt;/span&gt;                                 &lt;span class="s2"&gt;&amp;quot; Plain Dictionary &amp;quot;&lt;/span&gt;
 
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Book&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;authors&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isbn&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;Book&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;authors&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isbn&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;authors&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;authors&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isbn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;isbn&lt;/span&gt;
@@ -56,7 +56,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The attribute syntax note is convenient but not a game-changer.  The ability to associate a set of functions with the object (and reuse these functions on inherited classes) is really where objects shine.  To emulate this behavior with core data structures you need to respect namespaces&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;bookpy&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;bookpy&lt;/span&gt;
 &lt;span class="n"&gt;bookpy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;book&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -72,7 +72,7 @@
 &lt;p&gt;But, like the object attribute syntax these are merely convenient.&lt;/p&gt;
 &lt;p&gt;The major reason to prefer core data structures is that they are an abstraction shared among all Python programmers.  As a result you can depend on standard code to &lt;em&gt;just work&lt;/em&gt; on your data.&lt;/p&gt;
 &lt;p&gt;For example we can serialize our data into JSON if, for example, we wanted to serialize it and send it over the internet.&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;json&lt;/span&gt;
 &lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;book&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
 &lt;span class="gp"&gt;... &lt;/span&gt;    &lt;span class="s2"&gt;&amp;quot;authors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Neil Gaiman&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
 &lt;span class="gp"&gt;... &lt;/span&gt;    &lt;span class="s2"&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;American Gods&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -83,7 +83,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;json&lt;/span&gt;&lt;/code&gt; library fails to transform our &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;book&lt;/span&gt;&lt;/code&gt; object however.&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;json&lt;/span&gt;
 &lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;book&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Book&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Neil Gaiman&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;American Gods&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;9780062113450&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;book&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="go"&gt;TypeError: &amp;lt;__main__.Book object at 0x10e4410&amp;gt; is not JSON serializable&lt;/span&gt;
@@ -584,7 +584,7 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 &lt;section id="don-t"&gt;
 &lt;h3&gt;Don’t&lt;/h3&gt;
 &lt;p&gt;I’ve uploaded my data to Dropbox and you can get it here: &lt;span class="xref myst"&gt;my-data.csv.gz&lt;/span&gt;&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;my-data.csv.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -592,7 +592,7 @@ Instead, try to see if you can reproduce the problem with just a few lines of da
 &lt;section id="do"&gt;
 &lt;h3&gt;Do&lt;/h3&gt;
 &lt;p&gt;You should be able to copy-paste the following to get enough of my data to cause the problem:&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;account-start&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2017-02-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2017-03-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2017-01-01&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;client&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Alice Anders&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Bob Baker&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Charlie Chaplin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
@@ -620,7 +620,7 @@ or random data.&lt;/p&gt;
 &lt;p&gt;Duplicate implicit target name: “don’t”.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Here is enough of my data to reproduce the problem&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;account-start&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2017-02-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2017-03-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2017-01-01&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;client&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Alice Anders&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Bob Baker&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Charlie Chaplin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
@@ -643,7 +643,7 @@ or random data.&lt;/p&gt;
 but we can reproduce the problem with this simpler dataset.
 Notice that the dates are &lt;em&gt;out of order&lt;/em&gt; in this data (2000-01-02 comes after 2000-01-03).
 I found that this was critical to reproducing the error.&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;account-start&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2000-01-01&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2000-01-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2000-01-02&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;db-id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
@@ -670,7 +670,7 @@ or descriptive of the types within?&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/runner/work/mrocklin.github.io/mrocklin.github.io/minimal-bug-reports.md&lt;/span&gt;, line 145); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Duplicate implicit target name: “do”.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;datetime&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2000-01-03&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2000-01-02&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -1323,7 +1323,7 @@ external function.  Here is a toy example:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# utils.py&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;is_foolike&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;is_foolike&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;startswith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;foo&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1969,11 +1969,11 @@ then proceed to work through projects with us behind them.&lt;/p&gt;
 &lt;div&gt;&lt;p&gt;Today we’re covering object oriented programming and classes.  A class looks
 like this:&lt;/p&gt;
 &lt;/div&gt;&lt;/blockquote&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Human&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;Human&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;
 
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;mate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;partner&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Human&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Child&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;mate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;partner&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Human&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Child&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="o"&gt;...&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -6012,7 +6012,7 @@ Cloud and compute platforms are certainly among them.&lt;/p&gt;
 &lt;h3&gt;Example: Support Response&lt;/h3&gt;
 &lt;p&gt;… after some other back-and-forth with the user diagnosing their situation …&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;It looks to me like HTTPS is broken for your local install of Python - I don’t think it’s related to our product.  For example, I expect this would fail in the same way (you can check):&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight-py notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;urllib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;
+&lt;div class="highlight-py notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;urllib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;
 &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://google.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -6046,5 +6046,77 @@ Cloud and compute platforms are certainly among them.&lt;/p&gt;
     <link href="https://matthewrocklin.com/support-complex.html"/>
     <summary>Supporting a Python product is difficult because it’s hard to draw a line between your product and the rest of the ecosystem.  This creates confusion, especially when it comes to triage and attributing failure to one product or another.</summary>
     <published>2024-12-09T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/hammers-and-nailguns.html</id>
+    <title>Hammers and Nailguns</title>
+    <updated>2025-01-06T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="hammers-and-nailguns"&gt;
+
+&lt;p&gt;People often ask me, &lt;em&gt;“What is your tool for?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;They want an answer like “AI” or “ETL” or “Training Models”. &lt;br/&gt;
+They want a clean and specific application for easy comparison.&lt;/p&gt;
+&lt;p&gt;I, of course, do not give them that satisfaction.&lt;br/&gt;
+Instead I ask &lt;em&gt;“What is Python for?”&lt;/em&gt; or &lt;em&gt;“What is the cloud for?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Them:&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;Well, all sorts of different things.&lt;/em&gt;&lt;br/&gt;
+&lt;em&gt;&lt;strong&gt;Me:&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;Exactly!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, this answer sucks.&lt;/p&gt;
+&lt;section id="simple-tools-humble-opinions"&gt;
+&lt;h2&gt;Simple Tools, Humble Opinions&lt;/h2&gt;
+&lt;p&gt;The analogy I use here is of hammers and nailguns.&lt;/p&gt;
+&lt;figure class="align-default"&gt;
+&lt;img alt="_images/hammer-nailgun.webp" src="_images/hammer-nailgun.webp" style="width: 60%;" /&gt;
+&lt;/figure&gt;
+&lt;p&gt;Nominally these tools do the same thing (nail things) &lt;br/&gt;
+In reality they do very different things:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The nail gun puts nails into wood.&lt;/strong&gt;  The nailgun is 10x better than a hammer at doing this.  If we have to nail 1000 nails then we should definitely get a nail gun.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The hammer whacks things.&lt;/strong&gt;  Those things can be nails, but they can also be wrenches, or rusty bolts, or drywall, or heck, even a zombie’s head.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The hammer is a more &lt;em&gt;simple&lt;/em&gt; tool and the intention behind its design is more &lt;em&gt;humble&lt;/em&gt;.  The hammer’s design doesn’t assume it knows what we want to do.&lt;/p&gt;
+&lt;p&gt;I own a hammer, not a nailgun.  I use it for all sorts of things (most recently
+to tap in drywall anchors).  I can’t recall the last time I actually nailed
+something with it.  Nailguns are better at nailing things, but it’s rare that
+that’s exactly what I want.  Nailguns make enough assumptions about what I want
+to do that they’re rarely the right tool for me.&lt;/p&gt;
+&lt;p&gt;Home improvement, like Python, is a place where all sorts of strange problems
+arise, and it’s great to have simple and flexible tools that extend our natural
+abilities (like whacking things) in any situation.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="nailguns-are-easier-to-market"&gt;
+&lt;h2&gt;Nailguns are easier to market&lt;/h2&gt;
+&lt;p&gt;Writing copy for nailguns is easy&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Nailguns:&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;“Sink nails 10x faster, save time and energy!”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hammers are harder&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Hammers:&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;“Whack things!  So useful!”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hammers have more applications and are far more commonly used.
+However the lack of a single “killer application” (just thousands of mundane
+ones) makes them awkward to pitch successfully.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="i-like-hammers"&gt;
+&lt;h2&gt;I Like Hammers&lt;/h2&gt;
+&lt;p&gt;As a craftsman (in both wood and code) I like hammers.  Hammers extend our
+natural abilities just a little (naturally our bodies can hit things, just not
+as hard).  They fit in our hands, are simple, and are intuitive to use in any
+situation.&lt;/p&gt;
+&lt;p&gt;We especially need hammers in unpredictable situations, which is exactly where
+Python data devs live.  Python devs are the tip of an organizations
+problem-solving spear.  They always get asked to tackle the wacky new dataset
+or computational modality.  Their problems are always novel and untested.  Of
+course for any problem we would prefer a purpose built tool, but the market
+rarely responds to our needs that quickly, and by the time it does it’s usually
+someone else’s problem.&lt;/p&gt;
+&lt;p&gt;Simple tools with humble opinions like hammers are what I reach for when I
+face a new problem.  They’re difficult to justify in words, but I couldn’t
+live without them.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/hammers-and-nailguns.html"/>
+    <summary>People often ask me, “What is your tool for?”</summary>
+    <published>2025-01-06T00:00:00+00:00</published>
   </entry>
 </feed>

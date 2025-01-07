@@ -499,8 +499,8 @@
 <p>Let’s borrow Shannon’s book example to compare two common options of data representation</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot; Book object &quot;</span>                                 <span class="s2">&quot; Plain Dictionary &quot;</span>
 
-<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">authors</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">isbn</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Book</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">authors</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">isbn</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">authors</span> <span class="o">=</span> <span class="n">authors</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">isbn</span> <span class="o">=</span> <span class="n">isbn</span>
@@ -533,7 +533,7 @@
 </li>
 </ul>
 <p>The attribute syntax note is convenient but not a game-changer.  The ability to associate a set of functions with the object (and reuse these functions on inherited classes) is really where objects shine.  To emulate this behavior with core data structures you need to respect namespaces</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bookpy</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">bookpy</span>
 <span class="n">bookpy</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -549,7 +549,7 @@
 <p>But, like the object attribute syntax these are merely convenient.</p>
 <p>The major reason to prefer core data structures is that they are an abstraction shared among all Python programmers.  As a result you can depend on standard code to <em>just work</em> on your data.</p>
 <p>For example we can serialize our data into JSON if, for example, we wanted to serialize it and send it over the internet.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">book</span> <span class="o">=</span> <span class="p">{</span>
 <span class="gp">... </span>    <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span>
@@ -560,7 +560,7 @@
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">json</span></code> library fails to transform our <code class="docutils literal notranslate"><span class="pre">book</span></code> object however.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">book</span> <span class="o">=</span> <span class="n">Book</span><span class="p">([</span><span class="s2">&quot;Neil Gaiman&quot;</span><span class="p">],</span> <span class="s2">&quot;American Gods&quot;</span><span class="p">,</span> <span class="s2">&quot;9780062113450&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
 <span class="go">TypeError: &lt;__main__.Book object at 0x10e4410&gt; is not JSON serializable</span>
