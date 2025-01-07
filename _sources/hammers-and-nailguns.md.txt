@@ -69,18 +69,18 @@ I Like Hammers
 --------------
 
 As a craftsman (in both wood and code) I like hammers.  Hammers extend our
-natural abilities just a little (naturally our bodies can hit things, just not
-as hard).  They fit in our hands, are simple, and are intuitive to use in any
-situation.
+natural abilities just a little (naturally our bodies know how to hit things,
+just not as hard).  Hammers fit in our hands, are simple, and are intuitive to
+use in any situation.
 
 We especially need hammers in unpredictable situations, which is exactly where
 Python data devs live.  Python devs are the tip of an organizations
 problem-solving spear.  They always get asked to tackle the wacky new dataset
-or computational modality.  Their problems are always novel and untested.  Of
+or computational method.  Their problems are often novel and untested.  Of
 course for any problem we would prefer a purpose built tool, but the market
 rarely responds to our needs that quickly, and by the time it does it's usually
 someone else's problem.
 
 Simple tools with humble opinions like hammers are what I reach for when I
 face a new problem.  They're difficult to justify in words, but they're always
-easy and effective at getting the job done.
+easy to use and effective at getting the job done.
