@@ -5,6 +5,8 @@ tagline: What is a tool for?
 date: 2025-01-06
 blogpost: true
 author: Matthew Rocklin
+image: 0
+og:image: _images/hammer-nailgun.webp
 ---
 
 Hammers and Nailguns
