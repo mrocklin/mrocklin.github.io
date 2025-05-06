@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-01-09T13:57:22.201605+00:00</updated>
+  <updated>2025-05-06T02:56:37.259265+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -6118,5 +6118,88 @@ easy to use and effective at getting the job done.&lt;/p&gt;
     <link href="https://matthewrocklin.com/hammers-and-nailguns.html"/>
     <summary>People often ask me, “What is your tool for?”</summary>
     <published>2025-01-06T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/transactionalism.html</id>
+    <title>Transactionalism vs Respect</title>
+    <updated>2025-05-05T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="transactionalism-vs-respect"&gt;
+
+&lt;p&gt;Consider these two statements:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Can I ask you for your help?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you help me I’ll pay you back.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Which would you rather hear?&lt;/p&gt;
+&lt;p&gt;I like the first.  It makes me feel like a person who helps people, rather than
+a person who’s trading favors.&lt;/p&gt;
+&lt;section id="context"&gt;
+&lt;h2&gt;Context&lt;/h2&gt;
+&lt;p&gt;This has come up recently in sales and marketing conversations.
+Often, we want something from people:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;We want them to visit our booth at a conference&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We want them to participate in a survey or customer interview&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We want them to tell their friends about us&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A typical marketing approach here is to &lt;em&gt;incentivize&lt;/em&gt; the behavior we want with
+some object of value in return.  This might be a bit of swag, or an entry to win
+a prize in a raffle, or an Amazon gift card.&lt;/p&gt;
+&lt;p&gt;It makes sense.  People like getting stuff.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="reaction"&gt;
+&lt;h2&gt;Reaction&lt;/h2&gt;
+&lt;p&gt;But these incentives never feel right to me.  They feel transactional.&lt;/p&gt;
+&lt;p&gt;As a developer this transactional relationship isn’t what I want with users,
+like I’m trying to buy respect.
+As a user it make me feel cheap, like my time is being bought.&lt;/p&gt;
+&lt;p&gt;Instead, I’m often quite happy to help out with a project under the right
+conditions:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Is the project interesting?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is it something I care about?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is it important to me?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Am &lt;em&gt;I&lt;/em&gt; important to &lt;em&gt;it&lt;/em&gt;?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yes?  Then of course I’d be delighted to help.  Helping to build something
+great is all the incentive I need.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="when-to-incentivize"&gt;
+&lt;h2&gt;When to Incentivize&lt;/h2&gt;
+&lt;p&gt;You should incentivize if you’re building something that people don’t care
+much about.  Conversely you should instead foster a spirit of collaboration
+when you’re building something great that the people you need care about a
+great deal.&lt;/p&gt;
+&lt;p&gt;If you’re building something great that people care about, then don’t act like
+you need to buy their time.  What’s more, trying to buy their time cheapens the
+relationship.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More than swag, people like respect.&lt;/strong&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="and-give-when-possible"&gt;
+&lt;h2&gt;And Give when Possible&lt;/h2&gt;
+&lt;p&gt;It’s still great to give stuff away though!&lt;/p&gt;
+&lt;p&gt;For example, at conferences we’ve been giving out this awesome Dask shirt:&lt;/p&gt;
+&lt;figure class="align-default"&gt;
+&lt;img alt="Dask Punk T-Shirts" src="_images/dask-punk-shirts.jpeg" style="width: 50%;" /&gt;
+&lt;/figure&gt;
+&lt;p&gt;I &lt;em&gt;love&lt;/em&gt; this shirt.  Good design.  Excellent pun, at least for those who were
+coming of age during Daft Punk.  I want everyone to have one!  So we made
+thousands and gave them away at conferences.  We didn’t ask people to give us
+their e-mail or have a conversation with us to get one or anything (indeed,
+some people were confused by this).  We just did it because we thought it was
+an awesome shirt and relatively cheap to do.&lt;/p&gt;
+&lt;p&gt;People &lt;em&gt;loved&lt;/em&gt; these shirts.  I’d reliably see people the second day walking
+around in them proudly.  Seeing that made me so happy.&lt;/p&gt;
+&lt;p&gt;This is the world I want to live in.  A world in which we avoid
+extraction and instead collaboratively build great things.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/transactionalism.html"/>
+    <summary>Consider these two statements:Dask Punk T-Shirts</summary>
+    <published>2025-05-05T00:00:00+00:00</published>
   </entry>
 </feed>
