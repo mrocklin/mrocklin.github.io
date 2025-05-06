@@ -110,3 +110,23 @@ pre {
 nav.bd-links li>a {
   padding: 0
 }
+
+/* Code block styling */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #191b1f;
+  font-family: "roboto-mono";
+}
+
+/* Content width control */
+.bd-main .bd-content .bd-article-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Ensure tables and other wide elements don't overflow */
+.bd-main .bd-content .bd-article-container img,
+.bd-main .bd-content .bd-article-container table {
+  max-width: 100%;
+  height: auto;
+}
