@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-05-06T03:01:24.179113+00:00</updated>
+  <updated>2025-05-07T12:45:45.755235+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -6201,5 +6201,114 @@ extraction and instead collaboratively build great things.&lt;/p&gt;
     <link href="https://matthewrocklin.com/transactionalism.html"/>
     <summary>Consider these two statements:Dask Punk T-Shirts</summary>
     <published>2025-05-05T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/organized-writing.html</id>
+    <title>Thoughtful Professional Writing</title>
+    <updated>2025-05-07T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="thoughtful-professional-writing"&gt;
+
+&lt;p&gt;The hard part about writing is thinking.&lt;/p&gt;
+&lt;p&gt;When we speak with each other, our language just flows as our thoughts come.
+It’s easy and doesn’t require much forethought.  Lips move at the speed of
+thought.  While easy, this also means that we’re not forced to organize our
+thoughts ahead of time, they just flow. This might be hard on our listener who
+now has to organize our thoughts as they listen to us talk.&lt;/p&gt;
+&lt;p&gt;Writing, especially writing in a constrained space, forces us to think more
+about the concepts we want to communicate, how best to organize them, and how
+to distill them into the simplest possible form.  This is hard, but it makes it
+easier on our reader, who is now presented with a more organized sequence of
+thoughts.&lt;/p&gt;
+&lt;section id="writing-at-work"&gt;
+&lt;h2&gt;Writing at Work&lt;/h2&gt;
+&lt;p&gt;At work we have a culture of written communication.  Almost all group meetings
+are preceded with a Google Doc, and many 1-1 meetings have notes sent ahead of
+time.  Personally I find this very useful:&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p&gt;It gives me space to think about the topic ahead of time&lt;/p&gt;
+&lt;p&gt;I like to think before making decisions, and I think much better outside of
+a time-pressured meeting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Google Doc comments enable concurrent questioning and discussion&lt;/p&gt;
+&lt;p&gt;It’s much easier to collect and address a high volume of comments and
+questions if they can happen at the same time.  We’re all able to read
+and comment on a doc simultaneously, while we can’t all share the
+speaking floor simultaneously.  This handles the easier / simpler
+questions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It makes it easy to broadcast context and decisions to others&lt;/p&gt;
+&lt;p&gt;Often people not in the meeting are curious about the decision made and the
+context and arguments that led to that decision.  It’s much easier to share
+that context to others if most of it is written down.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But most of all, the document shared ahead of time organizes the discussion.
+A good document collects relevant context that everyone should know.  It
+synthesizes the core tensions involved.  It lays out a few of the best options
+we could take.  It also includes some opinions and recommendations, and an
+analysis on why those recommendations might be good.  This organization quickly
+puts everyone in a good frame of mind, so that they can meaningfully contribute
+to effective decision-making.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="organized-thoughts"&gt;
+&lt;h2&gt;Organized Thoughts&lt;/h2&gt;
+&lt;p&gt;Of course it’s not writing that’s important here.  It’s how effectively we’re
+able to serve up context and organize thoughts for our colleagues.&lt;/p&gt;
+&lt;p&gt;There are other appraoches to this that can be just as effective, like a
+well-crafted slide deck.  There are also written appraoches that can be
+ineffective, like a very long and unorganized document that people are expected
+to slog thorugh.&lt;/p&gt;
+&lt;p&gt;For me, the value is in the following:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Concisely define the problem to be solved&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remind the readers of relevant context&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lay out some possible options&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All in about a page&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ahead of time so people have time to reflect&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is &lt;em&gt;hard&lt;/em&gt;.  It takes time and mental effort.  It’s also something that I
+really appreciate when my colleagues take on that burden.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="sports-analogy"&gt;
+&lt;h2&gt;Sports Analogy&lt;/h2&gt;
+&lt;p&gt;In Ultimate Frisbee there are several possible throws to move the disk up the
+field.  They differ in how easy they are to get past the defender guarding the
+thrower, and how easy they are to catch:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Forehand/backhand&lt;/strong&gt; throws are typical.  They’re difficult to get past the
+defender guarding the thrower, but if the thrower manages it then they’re
+pretty easy to catch.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hammer&lt;/strong&gt; throws are atypical.  They’re an overhand throw sent above the
+defender (and so easy to get past) but they fly upside down and are more
+difficult to catch.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good throwers typically restrict themselves to forehands and backhands.  They
+take on the burden of beating the defense and so make their throws easy for
+their teammates to catch.  More novice throwers often get flummoxed by their
+defender, and as the shot-clock winds down often resort to throwing hammers.
+This shifts the burden of the pass completion from the thrower to the receiever.&lt;/p&gt;
+&lt;p&gt;We expect more from the thrower because they have ten seconds (Ultimate’s
+shot-clock) to find a good passing opportunity, while receivers have only one
+chance to make a catch.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="final-thoughts"&gt;
+&lt;h2&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;In any communication or decision there’s a burden to organize thoughts.  This
+burden will be either on the speaker’s side or on the listener’s side.  Often,
+it’s the speaker who has more context of the situation.  In this case it’s
+considerate and often more efficient for the speaker to take on the burden of
+organizing their thoughts, rather than depend on the listeners.&lt;/p&gt;
+&lt;p&gt;I find that the best way to do this is through a concisely written document.  I
+find that this is hard and takes time, but most of that time is time spent
+&lt;em&gt;thinking&lt;/em&gt; which should be done anyway.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/organized-writing.html"/>
+    <summary>The hard part about writing is thinking.</summary>
+    <published>2025-05-07T00:00:00+00:00</published>
   </entry>
 </feed>
