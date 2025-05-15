@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-05-07T12:45:45.755235+00:00</updated>
+  <updated>2025-05-15T21:54:43.953123+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -820,9 +820,7 @@ ZeroDivisionError: division by zero
 &lt;/ol&gt;
 &lt;p&gt;Different projects handle this differently, but they usually have a page on
 their documentation about where to go for help.  This is often labeled
-“Community”, “Support” or “Where to ask for help”.  Here are the
-recommendations from the
-&lt;a class="reference external" href="https://pandas.pydata.org/community.html"&gt;Pandas community&lt;/a&gt;.&lt;/p&gt;
+“Community”, “Support” or “Where to ask for help”.&lt;/p&gt;
 &lt;p&gt;Generally it’s good to ask questions where many maintainers can see your
 question and help, and where other users can find your question and answer if
 they encounter a similar bug in the future.&lt;/p&gt;
