@@ -284,9 +284,7 @@ When raising issues you often have a few possible locations:
 
 Different projects handle this differently, but they usually have a page on
 their documentation about where to go for help.  This is often labeled
-"Community", "Support" or "Where to ask for help".  Here are the
-recommendations from the
-[Pandas community](https://pandas.pydata.org/community.html).
+"Community", "Support" or "Where to ask for help".
 
 Generally it's good to ask questions where many maintainers can see your
 question and help, and where other users can find your question and answer if
