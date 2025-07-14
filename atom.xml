@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://matthewrocklin.com</id>
   <title>Matthew Rocklin's Working Notes</title>
-  <updated>2025-05-15T21:54:43.953123+00:00</updated>
+  <updated>2025-07-14T13:30:51.240673+00:00</updated>
   <link href="https://matthewrocklin.com"/>
   <link href="https://matthewrocklin.com/./atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -6308,5 +6308,217 @@ find that this is hard and takes time, but most of that time is time spent
     <link href="https://matthewrocklin.com/organized-writing.html"/>
     <summary>The hard part about writing is thinking.</summary>
     <published>2025-05-07T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://matthewrocklin.com/camino.html</id>
+    <title>I Walked Across Spain</title>
+    <updated>2025-07-14T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Rocklin</name>
+    </author>
+    <content type="html">&lt;section id="i-walked-across-spain"&gt;
+
+&lt;p&gt;Last month I walked across Spain, east to west, following the historic &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Camino_de_Santiago"&gt;Camino de Santiago&lt;/a&gt;,
+a historic pilgrimage route travelled by thousands of people a year.  It was an experience.&lt;/p&gt;
+&lt;p&gt;Since returning lots of people have been asking me a seemingly simple question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;So how was the Camino?&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;And it’s been difficult for me to give a pithy answer that fits neatly into a conversation.
+This post is my attempt to solve that problem.  Here’s a written version of some reflections from my walk.&lt;/p&gt;
+&lt;section id="overlapping-experiences"&gt;
+&lt;h2&gt;Overlapping Experiences&lt;/h2&gt;
+&lt;p&gt;I think that the Camino is best understood as several overlapping experiences.  It is a …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Physical experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Social experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cultural experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Religious experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cloistered experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Humanist experience&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overlapping these experiences at the same time weaves a meaningfully different way of life than I’ve found elsewhere,
+neither in normal quotidian life, nor in vacations or other physical adventures.&lt;/p&gt;
+&lt;p&gt;I’ll briefly share my thoughts and personal experiences on each layer:&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="physical"&gt;
+&lt;h2&gt;Physical&lt;/h2&gt;
+&lt;p&gt;I walked the typical route of the Camino Frances, starting from the French border in Saint Jean Pied de Port.
+This crosses the Pyrenees on the first day
+(imagine being a downed WWII RAF pilot escaping occupied France into neutral Spain in some Hemmingway-era novel)
+and then continues 500 miles / 800 kilometers to Northwestern Spain, and the town of Santiago de Compostella.
+That’s roughly 20 marathons, back to back.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_French_Way.svg/1920px-The_French_Way.svg.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This is both easier than it sounds, and harder than it sounds.&lt;/p&gt;
+&lt;p&gt;Walking a long distance is actually pretty easy when it’s all you have to do for the day.
+You pick up a slow and natural pace and just keep at it.
+You’re carrying gear, but not much (the walk is supported with hostels and cafes along the way).
+The median walker is probably a retiree in their sixties who does about 20km a day.
+I’m a pretty fit 40-year-old and did anywhere from 20km-50km a day.  I finished in 27 days.&lt;/p&gt;
+&lt;p&gt;However, walking this distance is also a harder than it sounds because of accumulated stress.
+In normal life you’re active one day and play hard, and then the next you rest and recuperate.
+On the Camino you just keep going day after day.
+Your body accumulates stress and injuries but you adapt and walk through that stress, eventually reaching an equilibrium where you heal about as quickly as you injure yourself.
+People manage blisters, joint pain, swelling, plantar fascitis, diabetes, and more.&lt;/p&gt;
+&lt;p&gt;Personally, I fell and bruised my knee pretty badly the second day and then promptly did a lot of descent,
+which caused a highly inflamed knee that I walked on for about a week before it healed.
+Then after a couple weeks, my metatarsals / forefeet became inflamed which took some getting used to and slowed me down.
+I walked in minimalist footwear (Vibram-five-fingers) which is totally normal for me at home (I’ve worn them for close to 20 years and run barefoot regularly) but I had never experienced this much repetitive stress for this long, which made it all the more interesting to accomplish.&lt;/p&gt;
+&lt;p&gt;This level of endurance was a new kind of challenge for me, and discovering this level of resilience was a new kind of satisfaction.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="social"&gt;
+&lt;h2&gt;Social&lt;/h2&gt;
+&lt;p&gt;Physicality aside, socially the Camino is simultaneously a solitary and communal experience.&lt;/p&gt;
+&lt;section id="first-day"&gt;
+&lt;h3&gt;First day&lt;/h3&gt;
+&lt;p&gt;I arrived in France alone, and travelled to St Jean alone, and set off from my hotel in the pre-dawn morning alone
+(thanks for the early start Jetlag!).  But you cross paths with other walkers pretty quickly and stop and chat for a while.
+That first day included people like …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;An American teacher just starting her Summer break&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A Brazilian guy my age who spoke no English and about as bad of Spanish as mine, which made for jovial if halting conversation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A Swiss gentleman who had walked from Switzerland&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A Dutch woman taking a break from her cyber-security consultancy&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;An American couple, one of whom was deeply struggling with diabetes and blood sugar regulation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;An American family from Texas (parents, three daughters aged 16-19) that I met throughout the day (the daughters were faster than the parents)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;An Australian priest who had just finished graduate school&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;An American religious studies professor, recently retired&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A French retiree who had walked from a town much more deeply in France, and was finishing at the Spanish border (my first day on the Camino was his last)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You have easy chats and then walk on.  At the end of the day you all arrive at a big hostel where there are shared meals.  You eat together, drink together, and chat about the walk.  It was lovely.&lt;/p&gt;
+&lt;p&gt;Then you sleep (poorly), wake up, and do it all again.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="all-the-other-days"&gt;
+&lt;h3&gt;All the other days&lt;/h3&gt;
+&lt;p&gt;The Camino is a river of people.  Some people are fast, some are slow.  Some start early, some late.  Some are chatty, some mostly silent.  Everyone walks a little differently.&lt;/p&gt;
+&lt;p&gt;Emotionally you bond quickly with people (easy when you all struggle towards the same goal, suffering the same hardships) and you form groups.
+Over time, for various reasons those groups grow and shift and break.  People get injured and take rest days; people feel energy and burst forward; people start or stop their journey at different cities to get back to normal life.&lt;/p&gt;
+&lt;p&gt;There’s a tension between staying with people you’ve bonded with and walking in a way that suits you.
+It’s like life generally, just compressed.
+There’s a strong pull to stay with a familiar group, but ultimately everyone walks their own Camino.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="cultural"&gt;
+&lt;h2&gt;Cultural&lt;/h2&gt;
+&lt;p&gt;Spain is a wonderful host country for this kind of activity.
+The vibe is chill; the people are warm; the food is cheap.  It’s super accessible.
+That being said, the Camino is not an especially Spanish experience.&lt;/p&gt;
+&lt;p&gt;There are a few Spaniards walking the Camino, but not many,
+and most interactions with townspeople are practical in nature.
+And while the Camino stops is a few delightful cities (Burgos, Leon, Santiago, …)
+the majority of the time you’re out in countryside or in very small villages of 100 people or less.&lt;/p&gt;
+&lt;p&gt;To make this concrete, people often ask me “how was the food!?”
+to which my answer is “pretty terrible actually”.
+This isn’t a reflection on Spanish cuisine,
+but rather on the fact that we’re walking through tiny towns,
+and that Spanish restaurants open at 8pm and pilgrims are usually bedded down by 9pm.
+As a result most of my calories came in the form of bananas/nuts/sausages picked up at small grocery stores,
+Spanish tortilla (a potato based quiche dish) and non-alcoholic beer found in roadside bar/cafes
+(NA beer is delightfully ubiquitous in Spain, and the perfect mid-walk beverage).
+Dinner was typically prepared in a hostel by hostel staff who, while delightful, were not especially accomplished chefs.&lt;/p&gt;
+&lt;p&gt;Culturally the Camino is more of a globalist/international experience than a Spanish one.
+Linguistically there were a few groupings:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;English:&lt;/strong&gt; typically North American, Australian, and New Zealanders, as well as Germans and Dutch.  Maybe 40%?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;French:&lt;/strong&gt; on the Camino Frances there are a number of French speakers, maybe 20% at the beginning dropping to 10% by the end?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Spanish:&lt;/strong&gt; consisting of some Spaniards, but more Latin Americans, as well as Portuguese and Italian speakers, all of whom get by in an interesting (and incredibly easy to understand) Spanish patois&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Korean:&lt;/strong&gt; a surprising though delightful group, South Koreans made up maybe 5-10% of the pilgrims, and are by far the most represented East Asian country due to their stronger Christian heritage there.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Other:&lt;/strong&gt; some Japanese and Chinese (more-often Taiwanese).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While quite different and sometimes unable to communicate, these groups got along amazingly well.
+There’s a culture of understanding and charity on the Camino that’s universal.
+I received help and support (like blister care) from people I had just met and couldn’t speak to,
+and happily gave what I had to others.
+My claim to fame in terms of generosity was organizing an Amazon shipment of Lacrosse balls to give out along the trail (the one I brought from home was in incredibly high demand in hostels for foot massage).&lt;/p&gt;
+&lt;p&gt;Despite most pilgrims not being religious,
+the Camino’s culture was one of the better expressions of some Christian values I’ve experienced.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="religious"&gt;
+&lt;h2&gt;Religious&lt;/h2&gt;
+&lt;p&gt;The Camino de Santiago was and is an important religious pilgrimage.
+We’re walking to the site of the remains of Saint-James (or in Latin Sant-Iago), one of the twelve apostles.
+Christians have walked from their homes to the site of his remains for a thousand years (and then amazingly, also walked back).&lt;/p&gt;
+&lt;p&gt;I am not religious, and I’d say that the minority of pilgrims are today.
+But walking with the more devout pilgrims was a treat.
+Empathy is so natural on the Camino that you get to feel a little bit of their experience second-hand.&lt;/p&gt;
+&lt;p&gt;For those who were interested there was nightly mass to attend, historically relevant
+churches/cathedrals/hermitages/etc. to visit, monasteries to stay in, and so on.&lt;/p&gt;
+&lt;p&gt;I didn’t engage this layer much, but I appreciated its presence.
+Being among the religious pilgrims helped to make the walk more than just a big hike.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="humanist"&gt;
+&lt;h2&gt;Humanist&lt;/h2&gt;
+&lt;p&gt;The people walking the Camino come at interesting times of their lives.
+I met people who …&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;just retired&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;just quit their job&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;recently separated from a partner&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lost a loved one&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;were trying to lose weight&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;just given up a drug habit&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;just sent a loved one to rehab, and for the first time had time to themselves&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Generally the pilgrims are at interesting and reflective phases of life,
+and that brings some interesting energy to the crowd.
+Everyone is thoughtful and generally open to change in life.
+This cultivates both a level of empathy and emotional honesty that I found pervaded the experience.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="cloistered"&gt;
+&lt;h2&gt;Cloistered&lt;/h2&gt;
+&lt;p&gt;You’re so focused as a group on walking that you naturally detach from the broader world outside the Camino.
+This was surprisingly meaningful.&lt;/p&gt;
+&lt;p&gt;Like most people, I check my e-mail / the news / my phone actively throughout the day.
+This behavior goes well beyond “staying on top of work”;
+it has become a pretty strong compulsion for me (and for many of us I think).
+I don’t think it serves me well, but I’ve historically struggled to change the behavior in a lasting way.&lt;/p&gt;
+&lt;p&gt;Fortunately, on the Camino that desire to check in with the world disappeared entirely.
+The novelty and buzz of the world felt boring and unwelcome.
+I didn’t check my e-mail or the news for days at a time, not through intention and discipline, but through lack of interest.&lt;/p&gt;
+&lt;p&gt;Although when I finally did check the news I found that it had been a pretty intense few weeks for others.
+This period included both the LA immigration riots and the attacks on Iran.&lt;/p&gt;
+&lt;p&gt;This made me think more about the right level of active engagement one should do.
+I think that one should care about the world, but perhaps not at the cadence that is typical today.
+There’s a frequency and mania of staying on top of things that I don’t think meaningfully helps; and does considerable harm.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="lessons"&gt;
+&lt;h2&gt;Lessons&lt;/h2&gt;
+&lt;p&gt;The Camino was hard and like many hard things, it changes one’s perspective.&lt;/p&gt;
+&lt;p&gt;Upon returning people ask me:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;“What did you learn?”&lt;/p&gt;
+&lt;p&gt;“What did you take away?”&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;I’m not sure I learned a specific lesson,
+but I do think that stepping outside of my life and walking the Camino instilled a few behaviors or qualities that I appreciate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Introspective:&lt;/strong&gt; I’m more open to questioning larger parts of my life&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;“do I like living in my city?”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“is this particular relationship serving me?”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“would I prefer to stop attending this regular event?”&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;rather than going with the flow that past-me set up.  I’m more active in assessing what I do and do not appreciate, and more open to making more decisive changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Calm:&lt;/strong&gt; I think I’m more thoughtful and less frantic with how I engage with the wider world. Not meaningfully less engaged I don’t think; just a bit less manic about it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Satisfaction:&lt;/strong&gt; I seem a little more satisfied with life moment-by-moment.  The persistent nagging voice in my head saying things aren’t good enough seems a lot quieter today.  I take more naps and sit outside watching people more often.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s been a few weeks since I stopped walking and these traits so far have stuck around; which I find encouraging.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="call-to-action"&gt;
+&lt;h2&gt;Call to Action&lt;/h2&gt;
+&lt;p&gt;My age group (30s-50s) was generally absent on the Camino.&lt;/p&gt;
+&lt;p&gt;That makes sense; we’re in our most productive years.
+We’re raising kids and at the peak of our career
+and so reasonably find it difficult to take a month away.&lt;/p&gt;
+&lt;p&gt;However I encourage people to try.
+This might be an especially important time to step outside our lives and reflect on what we want from it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://matthewrocklin.com/camino.html"/>
+    <summary>Last month I walked across Spain, east to west, following the historic Camino de Santiago,
+a historic pilgrimage route travelled by thousands of people a year.  It was an experience.</summary>
+    <published>2025-07-14T00:00:00+00:00</published>
   </entry>
 </feed>
