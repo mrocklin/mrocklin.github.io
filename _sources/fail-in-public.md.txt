@@ -19,4 +19,4 @@ We know from every compelling story that **we connect to heroes during their str
 
 I suspect that this shift reflects broader cultural changes. The stakes today seem higher, and mistakes more costly, both economically and reputationally, so people naturally hedge and default to sharing only their wins.  **The safer it feels to only show success, the more isolated everyone becomes** in their struggles.  But we lose a sense of community and authentic connection that comes from shared vulnerability.  We also lose the sense of play.
 
-One fix to this is simple-but-hard; **be heroic and fail in public.** Share your ideas, experiments, failures, and successes all as they happen.  This requires courage, but it also turns a scary activity, failing, into something more resembling play.
+One solution is something we can all do more of (myself included), **fail heroically in public.**  We can share more messy  ideas, experiments, and failures as they happen.  This requires courage, but I suspect it'll also transform a scary activity into one more resembling play, scraped knees and all.
