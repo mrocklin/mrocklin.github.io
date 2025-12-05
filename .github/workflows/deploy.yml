@@ -24,6 +24,7 @@ jobs:
     - name: Build the site
       run: |
         mkdocs build
+        cp site/feed_rss_created.xml site/atom.xml
 
     - if: ${{ github.ref == 'refs/heads/main' }}
       name: GitHub Pages action
