@@ -1,4 +1,6 @@
 _build
+site/
+.venv/
 
 .ipynb_checkpoints
 .vscode

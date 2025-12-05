@@ -1,0 +1,50 @@
+# Articles
+
+- [Twitter, LinkedIn, and Failing in Public](fail-in-public.md) - 2025-07-23
+- [I Walked Across Spain](camino.md) - 2025-07-14
+- [Thoughtful Professional Writing](organized-writing.md) - 2025-05-07
+- [Transactionalism vs Respect](transactionalism.md) - 2025-05-05
+- [Hammers and Nailguns](hammers-and-nailguns.md) - 2025-01-06
+- [Python Support is Socially Complex](support-complex.md) - 2024-12-09
+- [Cloud Computing is Broken](cloud-is-broken.md) - 2024-12-03
+- [Venting and Constructive Communication](venting.md) - 2024-10-25
+- [SatCamp Retrospective](satcamp.md) - 2024-10-04
+- [How I Almost Quit My Job, and How Being Selfish Saved Me](leverage.md) - 2024-09-20
+- [What Does Pangeo 2.0 Look Like?](pangeo-2.0.md) - 2024-09-18
+- [Usage Based Pricing](usage-based-pricing.md) - 2024-09-04
+- [How GitHub taught me to Micromanage](feedback.md) - 2024-05-11
+- [Hiring Sales](hiring-sales.md) - 2024-04-29
+- [Reddit, Twitter, and LinkedIn Comparison](reddit.md) - 2023-11-10
+- [Decision Fatigue](decision-fatigue.md) - 2023-03-18
+- [Laser Eye Correction](laser-eye-correction.md) - 2023-03-06
+- [Performance Reviews](performance-reviews.md) - 2023-02-14
+- [SaaS Go-to-Market](saas-gtm.md) - 2023-02-01
+- [How I Conduct an Interview](interviews.md) - 2023-01-06
+- [Rethinking My Website and Blog](redesign-blog.md) - 2023-01-02
+- [Think for yourself](think.md) - 2022-12-26
+- [Audio-Visual Setup](audio-visual.md) - 2022-12-18
+- [Stability Bias](stability-bias.md) - 2022-12-02
+- [Meetings](meetings.md) - 2022-12-02
+- [Offsites](offsites.md) - 2022-09-12
+- [Failure](failure.md) - 2022-09-05
+- [Best Practices](startup-best-practices.md) - 2022-09-05
+- [User Valued Work](user-valued-work.md) - 2022-08-24
+- [Over Grown](over-grown.md) - 2022-08-09
+- [SciPy Mission](scipy-mission.md) - 2022-08-01
+- [Revenue](startup-revenue.md) - 2022-07-25
+- [Small Scope Reviews](fast-review.md) - 2022-03-26
+- [Tech Leads](technical-lead.md) - 2021-06-24
+- [Startup Metrics](metrics.md) - 2020-10-28
+- [Ideal Tweet](tweet.md) - 2020-08-18
+- [Short attention span](brevity.md) - 2020-07-13
+- [Listen to sell](engineers-and-sales.md) - 2019-12-05
+- [Senior Engineers](senior-engineer.md) - 2019-11-09
+- [Short Blogposts](write-short-blogposts.md) - 2019-06-25
+- [Avoid Indirection](avoid-indirection.md) - 2019-06-23
+- [Maintainers](maintainer.md) - 2019-05-18
+- [Why I Avoid Slack](slack-github.md) - 2019-02-28
+- [Craft Minimal Bug Reports](minimal-bug-reports.md) - 2018-02-28
+- [Write Dumb Code](write-dumb-code.md) - 2018-01-27
+- [Biased Benchmarks](biased-benchmarks.md) - 2017-03-09
+- [Write Tests](write-tests.md) - 2016-02-08
+- [Dictionaries v. Objects](shared-abstractions.md) - 2013-09-02

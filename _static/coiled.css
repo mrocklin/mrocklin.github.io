@@ -1,5 +1,0 @@
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #191b1f;
-  font-family: "roboto-mono";
-}

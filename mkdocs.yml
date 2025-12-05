@@ -1,0 +1,88 @@
+site_name: Matthew Rocklin
+site_url: https://matthewrocklin.com
+site_description: Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/favicon.ico
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  - rss:
+      date_from_meta:
+        as_creation: date
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mrocklin
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@mrocklin
+    - icon: material/rss
+      link: /feed_rss_created.xml
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - def_list
+
+nav:
+  - Home: index.md
+  - Best Of:
+    - Startups:
+      - Best Practices: startup-best-practices.md
+      - Think for Yourself: think.md
+      - Meetings: meetings.md
+      - Offsites: offsites.md
+      - Metrics: metrics.md
+      - Revenue Types: startup-revenue.md
+      - Failure: failure.md
+    - Writing:
+      - Redesigning Blog: redesign-blog.md
+      - Audio-Visual Setup: audio-visual.md
+      - Short Attention Span: brevity.md
+      - Short Blogposts: write-short-blogposts.md
+    - Engineering:
+      - SciPy Mission: scipy-mission.md
+      - Maintainers: maintainer.md
+      - Why I Avoid Slack: slack-github.md
+      - Senior Engineers: senior-engineer.md
+      - Stability Bias: stability-bias.md
+      - Tech Leads: technical-lead.md
+      - Listen to Sell: engineers-and-sales.md
+    - Programming:
+      - Craft Bug Reports: minimal-bug-reports.md
+      - Avoid Indirection: avoid-indirection.md
+      - Biased Benchmarks: biased-benchmarks.md
+      - Write Dumb Code: write-dumb-code.md
+  - All Articles: articles.md
