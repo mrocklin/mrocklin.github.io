@@ -27,9 +27,7 @@ Simple Tools, Humble Opinions
 
 The analogy I use here is of hammers and nailguns.
 
-```{figure} images/hammer-nailgun.webp
-:width: 60%
-```
+![](images/hammer-nailgun.webp){ width="60%" }
 
 Nominally these tools do the same thing (nail things) <br/>
 In reality they do very different things:

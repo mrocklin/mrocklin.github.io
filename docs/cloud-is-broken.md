@@ -8,12 +8,11 @@ author: Matthew Rocklin
 
 # Cloud Computing is Broken
 
-```{admonition} Famous Quote
+!!! quote "Famous Quote"
 
-*This AWS API is so intuitive it’s awesome.  My whole team uses it.*
+    *This AWS API is so intuitive it's awesome.  My whole team uses it.*
 
-*-– no one ever*
-```
+    *-– no one ever*
 
 ## Introduction
 
@@ -92,22 +91,9 @@ Imagine you’re Steve Jobs and you want to propose the iPod in year 2000.  Your
 
 Anyone above the age of 35 knows this history.  Recall the RIO 500 and Archos Jukebox.
 
-::::{grid} 1 1 2 2
-
-:::{grid-item} **Rio 500**
-```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg
-:width: "73%"
-```
-:::
-
-:::{grid-item} **Archos Jukebox**
-
-```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg
-:width: "70%"
-```
-:::
-
-::::
+| **Rio 500** | **Archos Jukebox** |
+|:-:|:-:|
+| ![Rio 500](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rio_500.jpg/1280px-Rio_500.jpg) | ![Archos Jukebox](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg/1280px-B%C3%A4rbar_mp3-spelare_Archos_typ_Jukebox_6000.jpg) |
 
 They store songs, let you play them, fast forward, rewind, and show you what’s going on.  On paper they do everything the iPod will do, and yet market penetration was tiny, less than 1% of what it would be.  Looking at the lack of success of these products you’d conclude that humans don’t like listening to music.
 
@@ -115,11 +101,9 @@ They store songs, let you play them, fast forward, rewind, and show you what’s
 
 Eventually, the iPod was released, and it changed our listening habits forever
 
-```{figure} images/ipod.png
-:width: "60%"
+![](images/ipod.png){ width="60%" }
 
-iPod Generation One delivered the same functionality, but designed well enough for everyone to want.
-```
+*iPod Generation One delivered the same functionality, but designed well enough for everyone to want.*
 
 Same exact functionality, just better in an indescribable and yet obvious way.  The combination of ease of use, pocketability, storage capacity, iTunes integration, and straight-up style made the iPod a must-have item years after equivalent products launched and failed to create and claim the market.
 

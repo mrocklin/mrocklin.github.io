@@ -24,7 +24,6 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
-    - toc.follow
     - search.suggest
     - search.highlight
   font:
@@ -36,6 +35,9 @@ plugins:
   - rss:
       date_from_meta:
         as_creation: date
+
+extra_css:
+  - stylesheets/custom.css
 
 extra:
   social:
@@ -57,32 +59,30 @@ markdown_extensions:
   - def_list
 
 nav:
-  - Home: index.md
-  - Best Of:
-    - Startups:
-      - Best Practices: startup-best-practices.md
-      - Think for Yourself: think.md
-      - Meetings: meetings.md
-      - Offsites: offsites.md
-      - Metrics: metrics.md
-      - Revenue Types: startup-revenue.md
-      - Failure: failure.md
-    - Writing:
-      - Redesigning Blog: redesign-blog.md
-      - Audio-Visual Setup: audio-visual.md
-      - Short Attention Span: brevity.md
-      - Short Blogposts: write-short-blogposts.md
-    - Engineering:
-      - SciPy Mission: scipy-mission.md
-      - Maintainers: maintainer.md
-      - Why I Avoid Slack: slack-github.md
-      - Senior Engineers: senior-engineer.md
-      - Stability Bias: stability-bias.md
-      - Tech Leads: technical-lead.md
-      - Listen to Sell: engineers-and-sales.md
-    - Programming:
-      - Craft Bug Reports: minimal-bug-reports.md
-      - Avoid Indirection: avoid-indirection.md
-      - Biased Benchmarks: biased-benchmarks.md
-      - Write Dumb Code: write-dumb-code.md
+  - Startups:
+    - Best Practices: startup-best-practices.md
+    - Think for Yourself: think.md
+    - Meetings: meetings.md
+    - Offsites: offsites.md
+    - Metrics: metrics.md
+    - Revenue Types: startup-revenue.md
+    - Failure: failure.md
+  - Writing:
+    - Redesigning Blog: redesign-blog.md
+    - Audio-Visual Setup: audio-visual.md
+    - Short Attention Span: brevity.md
+    - Short Blogposts: write-short-blogposts.md
+  - Engineering:
+    - SciPy Mission: scipy-mission.md
+    - Maintainers: maintainer.md
+    - Why I Avoid Slack: slack-github.md
+    - Senior Engineers: senior-engineer.md
+    - Stability Bias: stability-bias.md
+    - Tech Leads: technical-lead.md
+    - Listen to Sell: engineers-and-sales.md
+  - Programming:
+    - Craft Bug Reports: minimal-bug-reports.md
+    - Avoid Indirection: avoid-indirection.md
+    - Biased Benchmarks: biased-benchmarks.md
+    - Write Dumb Code: write-dumb-code.md
   - All Articles: articles.md

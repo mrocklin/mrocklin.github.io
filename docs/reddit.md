@@ -38,9 +38,9 @@ actually watching the attached video/viewing the attached blogpost.
 | LinkedIn   |     11,355 |  112         |    12          |    471         |
 
 
-<img src="images/social-views.svg"/>
+![](images/social-views.svg)
 
-<img src="images/social-clickthroughs.svg"/>
+![](images/social-clickthroughs.svg)
 
 Summary
 -------

@@ -167,7 +167,7 @@ This same approach of highly detailed and thoughtful review does not transfer
 well to corporate contexts in my experience.  As an example, let's consider the
 following exchange over a google doc:
 
-<img src="images/google-doc-review.png"/>
+![](images/google-doc-review.png)
 
 When I first transitioned from OSS dev to CEO at a startup I did *lots* of review
 like this.  What I found were questions/concerns/problems like the following

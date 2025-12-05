@@ -51,11 +51,11 @@ that I choose week-by-week to push forward what I'm working on.
 
 Here is my calendar for next week.  It's a blank slate:
 
-<img src="/images/calendar-empty.png" width="100%">
+![](images/calendar-empty.png){ width="100%" }
 
 And my calendar for this last week (I write this on Friday).  It's full:
 
-<img src="/images/calendar-full.png" width="100%">
+![](images/calendar-full.png){ width="100%" }
 
 I still *meet with people* but now these meetings are important.
 By Friday next week I expect my calendar for next week (first image) to be just as full as my

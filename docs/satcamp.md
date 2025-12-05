@@ -108,8 +108,8 @@ enthusiastic about engaging this community than I was before.
 
 Thanks to the folks who took these.
 
-<img src="images/satcamp/2.jpg" width="55%"/>
-<img src="images/satcamp/1.jpg" width="35%"/>
+![](images/satcamp/2.jpg){ width="55%" }
+![](images/satcamp/1.jpg){ width="35%" }
 
-<img src="images/satcamp/4.jpg" width="28%"/>
-<img src="images/satcamp/3.jpg" width="62%"/>
+![](images/satcamp/4.jpg){ width="28%" }
+![](images/satcamp/3.jpg){ width="62%" }

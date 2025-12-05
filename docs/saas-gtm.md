@@ -50,7 +50,7 @@ What's more, platform users started to use us more, and became happier.  Usage
 ticked up a couple months later and really started to take off recently as we
 spread within organizations.
 
-<img src="images/example-customer-usage.png">
+![](images/example-customer-usage.png)
 
 Whereas previously we were unbalanced with a bad product and good sales, now we
 have a good product and relatively little sales experience in the company.

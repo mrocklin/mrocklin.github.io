@@ -1,20 +1,14 @@
 # Matthew Rocklin
 
-<div class="grid cards" markdown>
+![](assets/profile-circle.png){ width="200px" align="right" }
 
--   ## Mission
+I maintain open source software for Python's data ecosystem.
 
-    I maintain open source software for Python's data ecosystem.
+I do this to increase accessibility to computation and in so doing accelerate science and inform policy decisions for the broader public.
 
-    I do this to increase accessibility to computation and in so doing accelerate science and inform policy decisions for the broader public.
+I am primarily known for [Dask](https://dask.org), a library for scalable computing with dynamic task scheduling.
 
--   ## Current Work
-
-    I am primarily known for [Dask](https://dask.org), a library for scalable computing with dynamic task scheduling.
-
-    I also run a startup company [Coiled](https://coiled.io).
-
-</div>
+I also run a startup company [Coiled](https://coiled.io).
 
 ---
 
