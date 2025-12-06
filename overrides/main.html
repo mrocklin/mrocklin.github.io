@@ -19,6 +19,17 @@
 
 {% block content %}
 {{ super() }}
+{% if page and page.meta and page.meta.date %}
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on {{ page.meta.date }}';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+{% endif %}
 
 {% if page and page.meta and page.meta.date %}
 <h2>Comments</h2>
