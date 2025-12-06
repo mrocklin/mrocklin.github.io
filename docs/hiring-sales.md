@@ -110,7 +110,7 @@ things like:
 Everyone says these things, and while I wholeheartedly agree with these points,
 they don't differentiate a candidate, and they don't say anything specific
 about our situation.   My assumption is that [early stage startups are
-different from each other](/think), and that what works for one is unlikely to
+different from each other](think.md), and that what works for one is unlikely to
 transfer to another automatically.
 
 So, AEs that I interview, here's the cheat code:

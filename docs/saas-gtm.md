@@ -290,7 +290,7 @@ mechanical.  Classic marketers tend to be creative, but lack the technical
 and sales experience.  Maybe a product marketing manager or a product manager?
 Our ideal GTM role doesn't fit into any traditional job description.  Probably
 I'm looking for someone who has done a couple of these jobs, and is used to
-[early stage thinking](think).
+[early stage thinking](think.md).
 
 Right now I'm talking to lots of people.  Do you know of someone like this?
 Please put us in touch!

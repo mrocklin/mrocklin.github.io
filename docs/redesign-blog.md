@@ -51,7 +51,7 @@ But I miss it for a few reasons
 
 ### Longer Attention Spans
 
-I write [short posts](write-short-blogposts) to a [short attention span](brevity).
+I write [short posts](write-short-blogposts.md) to a [short attention span](brevity.md).
 However, I think that the 280 character limit of Twitter goes too far.
 Twitter encourages punchy communication devoid of depth or complex thinking and
 forces lots of skimming.  I feel that my brain is largely inactive when on the web.
@@ -66,16 +66,16 @@ Blogging helps.
 I frequently point colleagues to posts I wrote years ago.
 Here are a few:
 
--   [Why I Avoid Slack](slack-github)
--   [Minimal Bug Reports](minimal-bug-reports)
--   [Biased Benchmarks](biased-benchmarks)
--   [Avoid Indirection](avoid-indirection)
+-   [Why I Avoid Slack](slack-github.md)
+-   [Minimal Bug Reports](minimal-bug-reports.md)
+-   [Biased Benchmarks](biased-benchmarks.md)
+-   [Avoid Indirection](avoid-indirection.md)
 
 And also some more recent posts I've made:
 
--   [Startup Best Practices](startup-best-practices)
--   [Startup Revenue](startup-revenue)
--   [Meetings](meetings)
+-   [Startup Best Practices](startup-best-practices.md)
+-   [Startup Revenue](startup-revenue.md)
+-   [Meetings](meetings.md)
 
 I value these posts 100x more than any Tweet because I get continuous value from them.
 I've shared these manually with hundreds of people,
@@ -119,9 +119,9 @@ Looking at my old blog there are two different categories of articles:
 
     Examples:
 
-    -   [Role of a maintainer](maintainer) aimed at people taking on
+    -   [Role of a maintainer](maintainer.md) aimed at people taking on
         developer/reviewer/maintainer roles in OSS
-    -   [Avoid Indirection](avoid-indirection) aimed at contributors to OSS
+    -   [Avoid Indirection](avoid-indirection.md) aimed at contributors to OSS
         projects.
 
 Both categories are important to how I work, but are typically served
@@ -140,7 +140,7 @@ I have to place them in the sidebar intentionally.  This whole site could be
 seen as **"documentation to working with matt".**
 
 At the same time, every post does have appropriate blog metadata to be included
-in the top-level [articles/](articles/) page, which lists things
+in the top-level [articles](articles.md) page, which lists things
 chronologically, as well as the [Atom/RSS feed](https://matthewrocklin.com/atom.xml).
 It's like a documentation site where every new page gets an RSS entry.
 

@@ -63,8 +63,8 @@ I've almost quit my job (running an early-stage tech company) several times in
 the last five years.  Rather than actually quit, I've instead decided to make
 changes like the following:
 
-1.  I have [no recurring meetings](meetings)
-2.  I don't [log into Slack](slack-github)
+1.  I have [no recurring meetings](meetings.md)
+2.  I don't [log into Slack](slack-github.md)
 3.  I've checked out of work for a month, focusing more on running and yoga
     than customers or team morale
 4.  I've bailed on conference talks and company travel for six months

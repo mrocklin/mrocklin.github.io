@@ -79,7 +79,7 @@ offsites, conferences, and generally making time when we're in the same area.
 
 In particular ...
 
--   We've been doing way more [team offsites](offsites) in the company.
+-   We've been doing way more [team offsites](offsites.md) in the company.
 -   While I've cancelled regular board meetings I've spent much more time in
     person with investors and we all feel way more aligned (they're on board
     with this approach)

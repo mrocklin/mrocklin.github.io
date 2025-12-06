@@ -67,7 +67,7 @@ I like getting feedback from others around the employee.  This includes people
 that they manage (if they're managers), their teammates, and other people not
 on their team, but who have some interaction with them.  I always ask for both
 positive and negative feedback, typically asynchronously (this is cheaper for
-everyone than scheduling a bunch of [meetings](meetings)).
+everyone than scheduling a bunch of [meetings](meetings.md)).
 
 I then scramble that feedback (to avoid attribution) and share it with the
 employee just ahead of our performance review.  Typically I also identify and
