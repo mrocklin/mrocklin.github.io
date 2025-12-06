@@ -26,9 +26,6 @@ theme:
     - navigation.expand
     - search.suggest
     - search.highlight
-  font:
-    text: Inter
-    code: JetBrains Mono
 
 plugins:
   - search

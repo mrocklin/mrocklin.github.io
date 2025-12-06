@@ -199,11 +199,14 @@
 .md-typeset h1 {
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--md-default-fg-color) !important;
+  margin-bottom: 0.5rem;
 }
 
 .md-typeset h2 {
   font-weight: 600;
   letter-spacing: -0.01em;
+  margin-top: 2.5rem;
 }
 
 /* Links - accent color, brighter on hover */
