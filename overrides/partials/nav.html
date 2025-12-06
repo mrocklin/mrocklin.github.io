@@ -1,0 +1,46 @@
+{% import "partials/nav-item.html" as item with context %}
+{% set class = "md-nav md-nav--primary" %}
+{% if "navigation.tabs" in features %}
+  {% set class = class ~ " md-nav--lifted" %}
+{% endif %}
+{% if "toc.integrate" in features %}
+  {% set class = class ~ " md-nav--integrated" %}
+{% endif %}
+<nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <!-- Sidebar header with name and controls -->
+  <div class="sidebar-header">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" class="sidebar-title">
+      {{ config.site_name }}
+    </a>
+    <div class="sidebar-controls">
+      <!-- Search -->
+      <label class="md-header__button md-icon sidebar-icon" for="__search" title="Search">
+        {% set icon = config.theme.icon.search or "material/magnify" %}
+        {% include ".icons/" ~ icon ~ ".svg" %}
+      </label>
+      <!-- Theme toggle -->
+      {% if config.theme.palette %}
+        {% if not config.theme.palette is mapping %}
+          {% for option in config.theme.palette %}
+            {% if option.toggle %}
+              <label class="md-header__button md-icon sidebar-icon" title="{{ option.toggle.name }}" for="__palette_{{ loop.index % loop.length }}">
+                {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+              </label>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+      <!-- RSS Feed -->
+      <a href="{{ 'feed_rss_created.xml' | url }}" class="sidebar-icon" title="RSS Feed">
+        {% include ".icons/material/rss.svg" %}
+      </a>
+    </div>
+  </div>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+    {% for nav_item in nav.items %}
+      {% set path = "__nav_" ~ loop.index %}
+      {{ item.render(nav_item, path, 1) }}
+    {% endfor %}
+  </ul>
+</nav>

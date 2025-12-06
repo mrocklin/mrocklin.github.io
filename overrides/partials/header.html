@@ -1,0 +1,17 @@
+<!-- Hidden header - keeps search and palette JS infrastructure -->
+<header class="md-header" data-md-component="header" style="position: absolute; height: 0; overflow: visible; visibility: visible;">
+  {% if config.theme.palette %}
+    {% if not config.theme.palette is mapping %}
+      {% include "partials/palette.html" %}
+    {% endif %}
+  {% endif %}
+  {% if not config.theme.palette is mapping %}
+    {% include "partials/javascripts/palette.html" %}
+  {% endif %}
+  {% if "material/search" in config.plugins %}
+    {% set search = config.plugins["material/search"] | attr("config") %}
+    {% if search.enabled %}
+      {% include "partials/search.html" %}
+    {% endif %}
+  {% endif %}
+</header>
