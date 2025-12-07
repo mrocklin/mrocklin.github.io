@@ -1,0 +1,1916 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+      
+      
+        <meta name="author" content="Matthew Rocklin">
+      
+      
+        <link rel="canonical" href="https://matthewrocklin.com/brevity/">
+      
+      
+        <link rel="prev" href="../audio-visual/">
+      
+      
+        <link rel="next" href="../write-short-blogposts/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Short attention span - Matthew Rocklin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#short-attention-span" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Hidden header - keeps search and palette JS infrastructure -->
+<header class="md-header" data-md-component="header" style="position: absolute; height: 0; overflow: visible; visibility: visible;">
+  
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+    
+  
+  
+    <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+  
+  
+    
+    
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+<!-- Mobile header - only visible on small screens -->
+<div class="mobile-header">
+  <label class="mobile-header__button" for="__drawer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+  </label>
+  <a href=".." class="mobile-header__title">
+    Matthew Rocklin
+  </a>
+  <div class="mobile-header__controls">
+    <label class="mobile-header__button" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+    </label>
+  </div>
+</div>
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <!-- Sidebar header with name and controls -->
+  <div class="sidebar-header">
+    <a href=".." class="sidebar-title">
+      Matthew Rocklin
+    </a>
+    <div class="sidebar-controls">
+      <!-- Search -->
+      <label class="md-header__button md-icon sidebar-icon" for="__search" title="Search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <!-- Theme toggle -->
+      
+        
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to dark mode" for="__palette_1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to light mode" for="__palette_0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+        
+      
+      <!-- RSS Feed -->
+      <a href="../feed.xml" class="sidebar-icon" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startups
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Startups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../think/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think for Yourself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offsites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offsites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-revenue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revenue Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redesign-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redesigning Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio-Visual Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Attention Span
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Attention Span
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ten-tips-for-keeping-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ten Tips for Keeping Attention
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ten Tips for Keeping Attention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tell-them-where-theyre-going" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Tell them where they're going
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-front-load-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Front-load content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-break-up-long-blocks-of-prose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Break up long blocks of prose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-deliver-lessons-after-earning-the-readers-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Deliver lessons after earning the reader's attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-teach-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Teach something.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-be-novel-avoid-boilerplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Be Novel. Avoid Boilerplate.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-stay-balanced-acknowledge-your-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Stay Balanced. Acknowledge Your Bias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-be-brutally-concise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Be Brutally Concise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-dont-fill-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Don't fill time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-personal-anecdote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra: Personal Anecdote
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-short-blogposts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Blogposts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scipy-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciPy Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slack-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why I Avoid Slack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../senior-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senior Engineers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stability-bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stability Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech Leads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineers-and-sales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listen to Sell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimal-bug-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Craft Bug Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-indirection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avoid Indirection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biased-benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biased Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-dumb-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Write Dumb Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ten-tips-for-keeping-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ten Tips for Keeping Attention
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ten Tips for Keeping Attention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tell-them-where-theyre-going" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Tell them where they're going
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-front-load-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Front-load content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-break-up-long-blocks-of-prose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Break up long blocks of prose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-deliver-lessons-after-earning-the-readers-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Deliver lessons after earning the reader's attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-teach-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Teach something.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-be-novel-avoid-boilerplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Be Novel. Avoid Boilerplate.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-stay-balanced-acknowledge-your-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Stay Balanced. Acknowledge Your Bias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-be-brutally-concise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Be Brutally Concise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-dont-fill-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Don't fill time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-personal-anecdote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra: Personal Anecdote
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+
+<h1 id="short-attention-span">Short Attention Span<a class="headerlink" href="#short-attention-span" title="Permanent link">&para;</a></h1>
+<p>Speaking truth is easy.  Getting people to listen is hard.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This post talks about communicating effectively to a short attention span.
+It lays out practical writing style advice to respect the reader through brevity.</p>
+<p>In particular, we discuss the construction and use of an <em>attention span budget</em>.</p>
+<h2 id="ten-tips-for-keeping-attention">Ten Tips for Keeping Attention<a class="headerlink" href="#ten-tips-for-keeping-attention" title="Permanent link">&para;</a></h2>
+<p>Let's go through the following ten tips to establish reader trust and build attention span:</p>
+<h3 id="1-tell-them-where-theyre-going">1.  Tell them where they're going<a class="headerlink" href="#1-tell-them-where-theyre-going" title="Permanent link">&para;</a></h3>
+<p><em>Uncertainty causes stress.  Reduce reader stress.</em></p>
+<p>Also, give them a roadmap in case they want to skip around.</p>
+<p>In this post we're going to cover the following tips:</p>
+<ol>
+<li>Tell them where they're going</li>
+<li>Front-load content and results</li>
+<li>Break up long blocks of prose</li>
+<li>Earn and then burn attention span</li>
+<li>Say important things</li>
+<li>Avoid boilerplate</li>
+<li>Acknowledge bias to build trust</li>
+<li>Be brutally concise</li>
+<li>Don't fill time</li>
+<li>A worked example</li>
+</ol>
+<h3 id="2-front-load-content">2. Front-load content<a class="headerlink" href="#2-front-load-content" title="Permanent link">&para;</a></h3>
+<p><em>Put the important bits first.</em></p>
+<p>More readers will start your post than will finish it, and those that finish it
+will skim.</p>
+<p>You'll notice that every section of this document includes a single line of
+text at the top of the section.  This is because I know that you will skim,
+and I want to make sure that you get the gist of my message, even if you don't
+stay around for the whole thing.</p>
+<p>Front-loading content helps us to earn the readers' attention,
+and helps make sure the reader gets our message,
+even if we don't achieve their attention for long.</p>
+<h3 id="3-break-up-long-blocks-of-prose">3. Break up long blocks of prose<a class="headerlink" href="#3-break-up-long-blocks-of-prose" title="Permanent link">&para;</a></h3>
+<p><em>Humans like variety.  Switch between different visual elements every few lines.</em></p>
+<p>By "visual elements" I mean things like the following:</p>
+<ol>
+<li>Paragraphs of normal prose</li>
+<li>Bulleted lists, like this one</li>
+<li><strong>Bold text</strong> on a single line, or an indented quote</li>
+<li>Code blocks (especially if you have colorful syntax highlighting)</li>
+</ol>
+<p>Paragraphs or lists longer than four lines are often skipped.
+However if you interleave paragraphs and bulleted sections,
+or include some bold text lines and code blocks in there then people
+find it more reasonable to go through, even if it's the exact same content.</p>
+<p><strong>Interleaving style is an easy way to break things up.</strong></p>
+<h3 id="4-deliver-lessons-after-earning-the-readers-attention">4. Deliver lessons after earning the reader's attention<a class="headerlink" href="#4-deliver-lessons-after-earning-the-readers-attention" title="Permanent link">&para;</a></h3>
+<p><em>Win the listener's respect before you ask for their time.</em></p>
+<p>I arrive at content excited.  I've already clicked on a post or entered a
+conference talk.  I've bought in.</p>
+<p>However, that excitement lasts about 20 seconds for a blog post or three
+minutes for a conference talk.  It is within that time that we need to hook the
+listener/reader and make them want to stay for longer.</p>
+<p>This looks different in different contexts:</p>
+<ol>
+<li>
+<p>In a conference talk I often start out with a live demo.
+    Most people save this for the end of the talk,
+    but to me that seems like a missed opportunity to earn attention quickly.</p>
+<p>By seeing a flashy demo the audience is riveted and super-curious about how you achieved it.
+They'll hang on every word to figure out your magic.</p>
+</li>
+<li>
+<p>In a blog post you might put important results up front in the summary,
+    or start with your primary image.
+    You can include these results or images later in the post as well after you've built context,
+    but giving them dessert before the meal can help get them excited.</p>
+</li>
+</ol>
+<p>As an analogy think about a child sitting down to play a game.  They'll listen
+for a little while to learn about the instructions, but you have to get playing
+within a few minutes, or else they get agitated and leave.  If you can
+manage it, design your game so that you can start playing right away.
+Then, once they're invested in the game and see that it's fun you can get
+pretty deep into the rules and they'll be excited to learn more.</p>
+<p>We have to earn the listener's attention before we can use it to teach them
+things.</p>
+<p>(<em>small pet peeve, when writing talk slides try to avoid placing an "About me"
+section at the front.  This burns one of your three minutes of starter
+attention span.  The audience probably didn't come to learn about you.</em>)</p>
+<h3 id="5-teach-something">5. Teach something.<a class="headerlink" href="#5-teach-something" title="Permanent link">&para;</a></h3>
+<p><em>Write for a reason.</em></p>
+<p>My most popular blog posts were written in a state of controlled rage.</p>
+<ol>
+<li><a href="https://matthewrocklin.com/blog/2019/02/28/slack-github">Why I Avoid Slack?</a></li>
+<li><a href="https://matthewrocklin.com/blog/2019/05/18/maintainer">The Role of a Maintainer</a></li>
+<li><a href="https://matthewrocklin.com/blog/work/2016/02/08/tests">Write tests.</a></li>
+</ol>
+<p>These were conversations that I had had hundreds of times and wanted to have no longer.
+I wanted to change the behaviors of people immediately around me.
+They weren't solving abstract problems or thinking broadly about what the world
+might be.  No.  They were tightly scoped and specific and borne of great
+internal turmoil.</p>
+<p>The key to a great blog post is to channel internal turmoil into a fair, balanced, and concise document.</p>
+<h3 id="6-be-novel-avoid-boilerplate">6.  Be Novel. Avoid Boilerplate.<a class="headerlink" href="#6-be-novel-avoid-boilerplate" title="Permanent link">&para;</a></h3>
+<p><em>Most content generated by companies today is low-information.  Don't copy their bad style.</em></p>
+<p>Marketing professionals today employ ghost writers who translate a relevant
+message into 1000 words.
+Here is an example:</p>
+<ul>
+<li><strong>Product Marketing team</strong>: <em>We just released our new machine learning product that helps companies meet their cyber security needs.  We would like to raise awareness.</em></li>
+<li><strong>Ghost writer</strong>: <em>Sure. 1000 word blog post coming right up</em></li>
+</ul>
+<p>This becomes a long post about the company's
+history, the history of cyber-security, how machine learning has been used to
+revolutionize other fields, and other things that readers have already read.
+More often than not it's a waste of time.</p>
+<p>If you're new to writing, then you might be tempted to copy what you see.
+This is safe, but I encourage you to develop your own style quickly.
+Be brief, be genuine, and rework the same content a few times and you'll
+kick the crap out of ghost content within a few tries.
+You don't need to "try to look like a blog post".</p>
+<p><em>This applies to slide presentations, talks, and everything else too</em></p>
+<h3 id="7-stay-balanced-acknowledge-your-bias">7.  Stay Balanced. Acknowledge Your Bias<a class="headerlink" href="#7-stay-balanced-acknowledge-your-bias" title="Permanent link">&para;</a></h3>
+<p><em>The best way to establish trust is to acknowledge your bias</em></p>
+<p><em>Well, hey, I get paid if you buy this thing, so you probably shouldn't trust me, but let's dive into it and you can come to your own conclusions.</em></p>
+<p>Honesty is disarming and a wonderful way to establish connection.
+It has the side benefit of being the right thing to do.</p>
+<p>My favorite example of this is our <a href="https://docs.dask.org/en/latest/spark.html">Dask vs Spark</a> documentation.
+It's informative and tries hard to be unbiased.
+It also ends with this line, which we've gotten repeated praise for:</p>
+<blockquote>
+<p>If you are looking to manage a terabyte or less of tabular CSV or JSON data, then you should forget both Spark and Dask and use Postgres or MongoDB.</p>
+</blockquote>
+<p>:)</p>
+<p>Also, staying balanced and honest will build self-respect.
+We're social animals, and being honest to our neighbors makes us feel fulfilled.</p>
+<h3 id="8-be-brutally-concise">8.  Be Brutally Concise<a class="headerlink" href="#8-be-brutally-concise" title="Permanent link">&para;</a></h3>
+<p><em>Every word costs attention.  Remove unnecessary words.</em></p>
+<h3 id="9-dont-fill-time">9.  Don't fill time<a class="headerlink" href="#9-dont-fill-time" title="Permanent link">&para;</a></h3>
+<p><em>When you're done, be done.  Everyone appreciates getting time back.</em></p>
+<h3 id="10-example">10. Example<a class="headerlink" href="#10-example" title="Permanent link">&para;</a></h3>
+<p>This is the last piece of material I was working on with a colleague about an upcoming webinar.
+We're going to show before and after:</p>
+<h4 id="before">Before<a class="headerlink" href="#before" title="Permanent link">&para;</a></h4>
+<p>This Thursday at 5pm ET, we’ll be piloting our very first YouTube Live stream here at Coiled!</p>
+<p>We’ll be talking about scalable computing, when you want to do it and when you don’t, and doing some live Python coding to show you how to</p>
+<ul>
+<li>Use Dask to scale up your pandas code to larger datasets locally, in order to utilize all your cores on your laptop or local workstation and</li>
+<li>Use Dask and Coiled to scale out your computation to a cluster on the cloud, when you need more cores than your laptop can provide.</li>
+</ul>
+<p>We’ll first chat about the general uses of distributed computing and how to figure out when you really need to use it (generally when you’re either RAM-bound or CPU-bound). We’ll then dive into using the now famous NYC taxi dataset and we’ll see how you can seamlessly move from pandas to dask to scale up computation, all within the comfortable environment of JupyterLab. The scalable dask code you write mimics the pandas API because, as we’ve written before, the social goal of dask was to “invent nothing” (we wanted to be as familiar as possible to what users already knew in the PyData stack).</p>
+<h4 id="after">After<a class="headerlink" href="#after" title="Permanent link">&para;</a></h4>
+<p>Join us for Coiled's first live stream!</p>
+<p>We'll cover both the opportunities and the challenges of scaling data science workloads with Pandas using a real-world example:</p>
+<ol>
+<li>Explore and clean a raw dataset with Pandas</li>
+<li>Scale this workload locally with Dask</li>
+<li>Scale this workload onto the cloud with Dask and Coiled</li>
+</ol>
+<p>Join us this Thursday 5pm US Eastern time as we encounter, triage,
+and resolve common challenges that come with scaling data science in the real world.</p>
+<h4 id="analysis">Analysis<a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h4>
+<p>We've lost some content, but everything is a lot tighter.
+The content that we lost wasn't critical to our objective of informing the
+reader that they should attend the webinar, or what the webinar would be about.</p>
+<h2 id="extra-personal-anecdote">Extra: Personal Anecdote<a class="headerlink" href="#extra-personal-anecdote" title="Permanent link">&para;</a></h2>
+<p><em>My first draft of this post had this section first, but I figured it wasn't
+that important, so I put it down here instead.  You can safely skip it.</em></p>
+<p>Teaching students taught me the value of writing to an attention budget.</p>
+<p>As a graduate student I taught computer science to technical non-majors
+(physics/math/econ students mostly).  Students participated in practical
+sessions in the computer lab where they would read a set of instructions and
+then proceed to work through projects with us behind them.</p>
+<p>The instructions looked like this:</p>
+<blockquote>
+<p>Today we're covering object oriented programming and classes.  A class looks
+like this:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Human</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">mate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">partner</span><span class="p">:</span> <span class="n">Human</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Child</span><span class="p">:</span>
+        <span class="o">...</span>
+</code></pre></div>
+<blockquote>
+<p>In our next exercise you will extend this class to ...</p>
+</blockquote>
+<p>And so on.  When I wrote bad instructions, all of the students would have lots
+of problems, and the lab was stressful for me.  When I wrote good instructions the
+students would be fine and I could relax and joke around with them (scientists
+who choose to learn programming are invariably great to be around).</p>
+<p>To be clear the difference between "good" and "bad" instructions wasn't in the
+content, it was whether or not the student actually read through all of the instructions.</p>
+<p><strong>Teaching is a game where you have to capture someone's attention while
+simultaneously shoving knowledge into their brain.</strong></p>
+<p><em>Thank you to <a href="https://hugobowne.github.io/">Hugo Bowne-Anderson</a> for his thoughtful remarks on this post</em></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2020-07-13';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+
+
+<h2>Comments</h2>
+<script src="https://giscus.app/client.js"
+    data-repo="mrocklin/mrocklin.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
+    data-category="Giscus"
+    data-category-id="DIC_kwDOADPtac4CTY1R"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/mrocklin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@mrocklin" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/feed.xml" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

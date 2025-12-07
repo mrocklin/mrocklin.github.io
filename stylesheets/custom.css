@@ -1,0 +1,308 @@
+/* Accent color - amber */
+:root {
+  --accent: #92400e;
+  --accent-hover: #b45309;
+}
+
+/* Body text */
+.md-typeset {
+  font-size: 15px;
+}
+
+/* Limit content width for readability */
+.md-content__inner {
+  max-width: 750px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.6rem 0.6rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.sidebar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+}
+
+.sidebar-controls .md-header__button {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.sidebar-controls .sidebar-icon {
+  opacity: 0.4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-controls .sidebar-icon:hover {
+  opacity: 1;
+}
+
+.sidebar-controls .sidebar-icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--md-default-fg-color);
+}
+
+/* Only show the active palette toggle */
+.sidebar-controls label[for="__palette_0"],
+.sidebar-controls label[for="__palette_1"] {
+  display: none;
+}
+[data-md-color-scheme="default"] .sidebar-controls label[for="__palette_1"],
+[data-md-color-scheme="slate"] .sidebar-controls label[for="__palette_0"] {
+  display: flex;
+}
+
+/* Hide header elements visually - we use sidebar icons instead */
+/* Keep elements in DOM for functionality, just hide visually */
+.md-header .md-search,
+.md-header .md-header__option {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* But allow search to expand when active */
+[data-md-toggle="search"]:checked ~ .md-header .md-search {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* Center the search modal */
+.md-search__inner {
+  position: fixed !important;
+  top: 15vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(90vw, 36rem) !important;
+  max-width: 36rem !important;
+  background: var(--md-default-bg-color) !important;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  z-index: 10 !important;
+  overflow: hidden;
+}
+
+.md-search__form {
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+
+.md-search__input {
+  width: 100% !important;
+}
+
+.md-search__output {
+  position: static !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.md-search-result__list {
+  max-width: none !important;
+}
+
+.md-search__scrollwrap {
+  width: 100% !important;
+}
+
+.md-search-result__article {
+  padding-left: 2.2rem !important;
+  padding-right: 2.2rem !important;
+}
+
+/* Mobile header - only visible on small screens */
+.mobile-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  background: var(--md-default-bg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  z-index: 3;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .mobile-header {
+    display: flex;
+  }
+  .md-content {
+    margin-top: 3rem;
+  }
+}
+
+.mobile-header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.mobile-header__button:hover {
+  opacity: 1;
+}
+
+.mobile-header__button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobile-header__title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+}
+
+.mobile-header__controls {
+  display: flex;
+  align-items: center;
+}
+
+/* Headings - tighter, bolder */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color) !important;
+  margin-bottom: 0.25rem;
+}
+
+/* Article date below title */
+.article-date {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+}
+
+/* Links - accent color, brighter on hover */
+.md-typeset a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.md-typeset a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+}
+
+/* Don't underline nav links */
+.md-nav a,
+.md-header a,
+.md-footer a {
+  border-bottom: none;
+}
+
+/* Sidebar */
+.md-nav {
+  font-size: 13px;
+}
+
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* Flatten sidebar indentation */
+.md-nav__list,
+.md-nav__item,
+.md-nav .md-nav,
+.md-nav .md-nav__list {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.md-nav__link {
+  padding-left: 0.6rem !important;
+  margin-left: 0 !important;
+  font-weight: 400;
+}
+
+/* Section headers - bold, primary color */
+.md-nav__item--nested > .md-nav__link,
+.md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  color: var(--md-default-fg-color) !important;
+}
+
+/* Add spacing between sidebar sections */
+.md-nav__item--nested,
+.md-nav__item--section {
+  margin-top: 1rem;
+}
+
+.md-nav__item--nested:first-child,
+.md-nav__item--section:first-child {
+  margin-top: 0;
+}
+
+/* Article links - muted unless active */
+.md-nav__item:not(.md-nav__item--nested):not(.md-nav__item--section) > .md-nav__link:not(.md-nav__link--active) {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-nav__link--active {
+  font-weight: 500;
+  color: var(--accent) !important;
+}
+
+/* Hide toggle arrows - sections always expanded */
+.md-nav__icon {
+  display: none;
+}
+
+/* Dark mode - pure black background, lighter accent */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #000;
+  --md-default-bg-color--light: #0a0a0a;
+  --accent: #d97706;
+  --accent-hover: #fbbf24;
+}
+

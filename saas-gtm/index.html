@@ -1,0 +1,1690 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+      
+      
+        <meta name="author" content="Matthew Rocklin">
+      
+      
+        <link rel="canonical" href="https://matthewrocklin.com/saas-gtm/">
+      
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>SaaS Go-to-Market - Matthew Rocklin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#saas-go-to-market" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Hidden header - keeps search and palette JS infrastructure -->
+<header class="md-header" data-md-component="header" style="position: absolute; height: 0; overflow: visible; visibility: visible;">
+  
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+    
+  
+  
+    <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+  
+  
+    
+    
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+<!-- Mobile header - only visible on small screens -->
+<div class="mobile-header">
+  <label class="mobile-header__button" for="__drawer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+  </label>
+  <a href=".." class="mobile-header__title">
+    Matthew Rocklin
+  </a>
+  <div class="mobile-header__controls">
+    <label class="mobile-header__button" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+    </label>
+  </div>
+</div>
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <!-- Sidebar header with name and controls -->
+  <div class="sidebar-header">
+    <a href=".." class="sidebar-title">
+      Matthew Rocklin
+    </a>
+    <div class="sidebar-controls">
+      <!-- Search -->
+      <label class="md-header__button md-icon sidebar-icon" for="__search" title="Search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <!-- Theme toggle -->
+      
+        
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to dark mode" for="__palette_1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to light mode" for="__palette_0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+        
+      
+      <!-- RSS Feed -->
+      <a href="../feed.xml" class="sidebar-icon" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startups
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Startups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../think/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think for Yourself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offsites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offsites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-revenue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revenue Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redesign-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redesigning Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio-Visual Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brevity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Attention Span
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-short-blogposts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Blogposts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scipy-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciPy Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slack-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why I Avoid Slack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../senior-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senior Engineers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stability-bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stability Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech Leads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineers-and-sales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listen to Sell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimal-bug-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Craft Bug Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-indirection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avoid Indirection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biased-benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biased Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-dumb-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Write Dumb Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        History
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customer Profile
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-team-is-best" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What team is best?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What team is best?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-did-we-like-about-our-old-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What did we like about our old team?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-on-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus on Marketing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-self-serve-or-direct-sales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question: self-serve or direct sales?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-straight-to-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question: Straight to Enterprise?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-to-hire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who to hire?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit: Update
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+
+<h1 id="saas-go-to-market">SaaS Go-to-Market<a class="headerlink" href="#saas-go-to-market" title="Permanent link">&para;</a></h1>
+<p>Where are we on product and GTM?  What are some open questions and what should
+we do to improve?</p>
+<p>This article gives a snapshot of where Coiled (Dask company) is on product
+development and sales and marketing / Go-to-Market (GTM).  It's mostly written
+with internal audience in mind, but should also be helpful for other early
+stage tech/SaaS companies as an example.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>Our product is now good enough that when people try it, they like it,
+eventually use more, and pay us real amounts of money.  🎉</p>
+<p>But we don't have many of these customers.  😔</p>
+<p>How do we get more? 🤔</p>
+<p>How did we get into this situation?  What should we do from here?</p>
+<h2 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h2>
+<p>For the first couple years of the company, the product kinda sucked.  That's
+ok!  We were still a baby company learning how to walk.  At the time we also
+had a mature sales organization that did its best to sell this kinda-sucky
+product.  This was inefficient and frustrating for all involved.</p>
+<p>In May of last year we let go of the sales team, and a couple months later we
+let go of the the folks in marketing who owned voice/messaging (this wasn't
+particularly strong either).  We became very engineering-forward as a company.
+The platform team became staffed only by very senior engineers who had full
+agency.</p>
+<p>This was great!  Our product evolved quickly, our Twitter account stopped
+sounding spammy, and our website started to make sense!</p>
+<p>What's more, platform users started to use us more, and became happier.  Usage
+ticked up a couple months later and really started to take off recently as we
+spread within organizations.</p>
+<p><img alt="" src="../images/example-customer-usage.png" /></p>
+<p>Whereas previously we were unbalanced with a bad product and good sales, now we
+have a good product and relatively little sales experience in the company.
+What should we do?  Try to go back to our previous state?  Maybe / maybe not.
+Let's explore our options.</p>
+<h2 id="customer-profile">Customer Profile<a class="headerlink" href="#customer-profile" title="Permanent link">&para;</a></h2>
+<p>The kind of GTM engine we build depends on the market that we're going after.
+This affects how we market ourselves, how we price the product, and what kind
+of sales team we build:</p>
+<p>What choices do we have?  Mostly we break down this choice by company/team size:</p>
+<ol>
+<li>
+<p><strong>Individuals:</strong> we target individual data professionals to use our platform,
+    kinda like Github does</p>
+<ul>
+<li><strong>Marketing:</strong> highly technical online content, maybe some events, focusing
+    on ease of use and accelerating work</li>
+<li><strong>Pricing:</strong> mostly free with a possibility of swiping a credit card for up
+    to a few hundred dollars a month (typically the budget for individual
+    data professionals)</li>
+<li><strong>Sales:</strong> no sales team, must be self-serve (we can't hand-hold
+    individuals, and sales teams will want commissions)</li>
+</ul>
+</li>
+<li>
+<p><strong>Small teams:</strong> we serve small teams of data professionals, talking mostly
+    to the team lead, who cares mostly about getting work done, but also has to
+    justify costs</p>
+<ul>
+<li><strong>Marketing:</strong> a mix of highly technical content with some business value
+    thrown in as well</li>
+<li><strong>Pricing:</strong> free tier is useful for trials, but we expect to charge a few
+    thousand a month, either with a corporate card or with a purchase order
+    (typically the budget for a team lead without getting higher approval)</li>
+<li><strong>Sales:</strong> maybe rely on a self-serve motion to get people in the door,
+    and then try to sell them to pre-commit to greater usage with
+    discounted rates.  This requires a lightweight sales team attached to
+    a product that can sell itself.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enterprise:</strong> we target entire companies, probably talking to some IT
+    architect, or a CTO.  They care about accelerating the company, and also
+    about costs, security, and generally not causing a panic.</p>
+<ul>
+<li><strong>Marketing:</strong> focus on business value with a simpler technical message.
+    Some online content but direct outreach.</li>
+<li><strong>Pricing:</strong> $100,000-$1,000,000s, probably after a POC and with some
+    healthy support contract thrown in</li>
+<li><strong>Sales:</strong> this is a high contact sales process that takes many months.
+    This requires a sizable and expensive team working full time on chasing
+    down new deals and working those deals to completion.</li>
+</ul>
+</li>
+</ol>
+<p>As a company we could play at any of these levels.  Dask has great community
+adoption and could leverage those users into a strong individual userbase (like
+GitHub).  Alternatively, we're also heavily used inside of large organizations
+(banks, government, healthcare, etc.) that are used to paying millions of
+dollars for a product like ours, and so an Enterprise play could also make
+sense.</p>
+<p>Which market we go after affects our choices about sales and marketing.  What
+do we choose?</p>
+<p>Most of the money is in large enterprise sales.  It's hard to find a company in
+our space (data infrastructure) bringing in hundreds of millions of dollars
+where most of that money doesn't come from large enterprise contracts.  We have
+a few of these already, mostly focused around <a href="https://www.coiled.io/blog/enterprise-dask-support">Dask
+support</a>, and we like them.</p>
+<p>However, selling into these companies has a long lead time, long iteration
+cycles, and poor visibility/learning due to stringent security.  For this
+reason, we've focused on the less lucrative, but more informative individual
+and small teams groups.  This allows us to focus on a cloud SaaS product, which
+gives us a lot of visibility into usage, which we leverage to accelerate
+product velocity.</p>
+<p>Our thesis is that by starting with small teams we can more rapidly iterate
+towards a delightful experience, which we can then pivot to larger enterprise
+for real money.  Will that work?  🤷 I think so?</p>
+<h2 id="what-team-is-best">What team is best?<a class="headerlink" href="#what-team-is-best" title="Permanent link">&para;</a></h2>
+<p>Given this focus on individuals and small teams, what kind of GTM team do we
+need?  Our previous sales team had SDRs, account executives, sales engineers,
+customer support, customer success managers, and more.  This team made lots of
+sense for a large enterprise sales motion, but it may not make as much sense
+for individuals (no sense) and small teams (maybe some sense).</p>
+<h3 id="what-did-we-like-about-our-old-team">What did we like about our old team?<a class="headerlink" href="#what-did-we-like-about-our-old-team" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Outreach:</strong> They reached out directly to potential customers</p>
+<p>Our marketing at the time was not good (it's still not good).  Lots of
+people said "Of course we love Dask, but who's Coiled?".  The sales team,
+through direct outreach, was able to shore us up a bit here.</p>
+<p>This feels like a bandaid though.  Our marketing should be doing outreach for us.</p>
+</li>
+<li>
+<p><strong>Explanation:</strong> They explained our product to customers</p>
+<p>Same as above, we didn't describe ourselves well, and so prospects had a
+bunch of questions like "do you deploy in my cloud", "are you secure",
+"how does this compare to Databricks?", and "how much will this cost me?"
+which our sales representatives were able to answer and bring people in.</p>
+</li>
+<li>
+<p><strong>Onboarding:</strong> They helped customers onboard to the platform</p>
+<p>The platform had issues, and the sales engineers were able to set things up
+for the customers so that they could onboard and actually use the product.</p>
+<p>This is mostly handled today with the product (it's much better) or with
+light touches from the engineering team itself.  I think that it's good for
+the engineers to have this direct access.  I don't think that I would want
+to change this today.</p>
+</li>
+<li>
+<p><strong>Customer Success:</strong> They helped customers use the platform to solve business problems</p>
+<p>Once the platform is running well for the customer, and they start really
+banging away with Dask, they eventually run into some problem with Dask or
+the PyData system generally.</p>
+<p>We don't have a good answer for this today, and could become better.  Our
+OSS Dask engineers are asking for more customer exposure, and this could be
+a good fit, as long as we figure out how to make it informative rather than
+distracting, which is hard.</p>
+</li>
+<li>
+<p><strong>Tracking:</strong> They were organized about all of the prospects and customers and who needed
+    what to move along</p>
+<p>There are lots of people using this platform, and we're not mature enough
+where everyone gets to their ideal state (using us as much as possible as
+efficiently as possible) without help (really, no product is this mature).
+The sales team was somewhat organized here.</p>
+<p>We don't have a good solution for this today.</p>
+</li>
+<li>
+<p><strong>Closing:</strong> They navigated organizations to find buyers</p>
+<p>When an individual without purchasing power arrives, the sales team was
+good at saying "Do you have the ability to buy our product?  No?  Who does?
+Can I ask you to set up an introduction?" and then once the sale was
+complete they helped to hound the customer's internal bureaucracy to make
+sure that money flowed through.</p>
+<p>This is less important for small team sales than for enterprise customers,
+but there is still non-trivial value.  Today I / our director of finance
+does this.  It's been ok but not great.</p>
+</li>
+</ul>
+<h3 id="focus-on-marketing">Focus on Marketing<a class="headerlink" href="#focus-on-marketing" title="Permanent link">&para;</a></h3>
+<p>A lot of the tasks above should have been automated (outreach, explanation,
+onboarding), but they weren't.  We used people/conversations as a replacement
+for technology/writing.</p>
+<p>Mostly, we lacked a strong product marketing function and made up for it with a
+lot of hands-on outreach and explaining.  I'm entirely in-favor of doing
+hands-on work to learn, but we didn't then translate those learnings into
+long-term assets that help <em>everyone</em> understand the value that we provide
+without having to tell them one-by-one.</p>
+<p>Because of this experience, this time around I'd like to focus on on product
+marketing, this includes assets like ...</p>
+<ul>
+<li>Architecture diagrams / videos</li>
+<li>Build vs buy comparisons in a few common situations (individual, small
+    team, larger more active team) and how we're always the better choice</li>
+<li>Our Security model and FAQ about data privacy</li>
+<li>Common use cases</li>
+</ul>
+<p>Even if we were to hire out a sales leader for more outreach/tracking/closing
+I'd want to have these things first.  Otherwise I think our newly hired sales
+leader would be be spinning their wheels (and those are very expensive wheels).</p>
+<h2 id="question-self-serve-or-direct-sales">Question: self-serve or direct sales?<a class="headerlink" href="#question-self-serve-or-direct-sales" title="Permanent link">&para;</a></h2>
+<p>I like the idea of self-serve.  The story goes like this, a user ...:</p>
+<ul>
+<li>Learns about our product</li>
+<li>Uses our product for free and loves it</li>
+<li>Uses it enough to start paying money and can do that easily in the product
+    with a credit card</li>
+<li>Uses it even more, to the extent where they need to get authorization and
+    have an actual conversation</li>
+</ul>
+<p>Examples of this motion include GitHub, AWS, and Atlassian.  It's great because
+you can focus on building an amazing user experience, rather than focusing all
+of your energy and money on sales.</p>
+<p>In principle this sounds great!  It speaks to my inner-engineer and
+community-oriented mindset.  However, almost no company in our space makes most
+of their money this way.  Most companies do direct outreach and sell a complete
+package to companies from the start.  The self-serve nature of the product ends
+up being useful for companies to quickly do proof-of-concept (POC) work, and
+for students, but that's it.</p>
+<p>Self-serve feels right, but imprudent.  This is still an open question for me.</p>
+<h2 id="question-straight-to-enterprise">Question: Straight to Enterprise?<a class="headerlink" href="#question-straight-to-enterprise" title="Permanent link">&para;</a></h2>
+<p>Big companies use Dask.  We're not like other early stage tech companies that
+are trying to get their name out there.  We regularly turn away big companies
+with lots of cash looking for a self-managed Dask management platform.  Maybe
+we should stop turning them away, and instead lean into this?</p>
+<p>This goes against the common wisdom of the day which says "go cloud", "go
+broad", and "go managed" which, from a learning and velocity perspective, I
+like.  But it does with the timeless wisdom of "go where the money is".</p>
+<p>I intend to stay with Cloud SaaS, which kind of precludes Enterprise until we
+get a lot more mature / trusted.  However we'll experiment with deploying our
+platform in a self-managed way in a couple of friendly customers to see what
+the experience is like.  This is an experiment and a distraction from focus,
+but I think a good one if we can do it well with the right partners.</p>
+<h2 id="who-to-hire">Who to hire?<a class="headerlink" href="#who-to-hire" title="Permanent link">&para;</a></h2>
+<p>Right now three of us in the company think broadly about the entire GTM strategy:</p>
+<ul>
+<li>me</li>
+<li>product owner / engineering manager</li>
+<li>finance director</li>
+</ul>
+<p>It's good for the three of us to have this exposure (it informs how we do our
+normal jobs) but we're all also pretty busy, and so are doing a suboptimal job
+of the GTM work.</p>
+<p>I think I want to hire a single high performing individual who can flex between
+product marketing and some salesmanship, as well as be organized and creative.
+Over time, once they're successful, they'll hire a team around them.</p>
+<p>How do we find such a wonderful person?  Classic sales roles are typically not
+sufficiently technical for a product like ours, and they tend to be a bit more
+mechanical.  Classic marketers tend to be creative, but lack the technical
+and sales experience.  Maybe a product marketing manager or a product manager?
+Our ideal GTM role doesn't fit into any traditional job description.  Probably
+I'm looking for someone who has done a couple of these jobs, and is used to
+<a href="../think/">early stage thinking</a>.</p>
+<p>Right now I'm talking to lots of people.  Do you know of someone like this?
+Please put us in touch!</p>
+<h2 id="edit-update">Edit: Update<a class="headerlink" href="#edit-update" title="Permanent link">&para;</a></h2>
+<p>Currently we're hypothesizing that we want a single strong performer who is
+comfortable doing the following activities starting out:</p>
+<ol>
+<li><strong>Social</strong>: Talk to lots of prospects, understand their pain and questions</li>
+<li><strong>Technically Conversant</strong>: need to be able to speak the language and
+    empathize with our current highly technical users</li>
+<li><strong>Good Writer</strong>: Ensure that we have good answers, and that we have good broadcast materials to answer those questions</li>
+<li><strong>Creative and Hungry</strong>: Try out a bunch of hacky experiments</li>
+<li><strong>Organized</strong>: Follow up with prospects</li>
+<li><strong>Motivated</strong>: Close relatively small deals (we've found that this is pretty easy once
+    they're using the product, which has a generous free tier)</li>
+</ol>
+<p>Once this works they'll then need to hire people to do more of this, and
+empower them appropriately.  This usually means that they're years but not
+decades into their career.</p>
+<p>We're guessing that this comes from one of a couple possible profiles:</p>
+<ol>
+<li><strong>Extrovert engineer</strong>: comes from a background sales/field engineering,
+    customer success, or product management.  They used to be highly technical,
+    but are now as curious about building a sales and marketing motion as about
+    core technology.</li>
+<li><strong>Technical Inside Sales Leader</strong>: they started out in inside sales for a
+    related highly technical product (like Databricks).  They succeeded by
+    understanding and caring about their product.</li>
+</ol>
+<p>We want someone who is conversant in our space (ramp up time is too long here).
+They don't need to be a hardcore distributed systems engineer, but should, for
+example, be comfortable talking about the relative merits of various file
+storage solutions (parquet, deltalake, snowflake) and knock beers together
+while griping about Kubernetes / cloud deployment pain (even if they don't have
+hands on experience there).</p>
+<p>If you know or are such a person then please get in touch.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2023-02-01';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+
+
+<h2>Comments</h2>
+<script src="https://giscus.app/client.js"
+    data-repo="mrocklin/mrocklin.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
+    data-category="Giscus"
+    data-category-id="DIC_kwDOADPtac4CTY1R"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/mrocklin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@mrocklin" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/feed.xml" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

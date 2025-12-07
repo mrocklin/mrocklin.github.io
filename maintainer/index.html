@@ -1,0 +1,1966 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+      
+      
+        <meta name="author" content="Matthew Rocklin">
+      
+      
+        <link rel="canonical" href="https://matthewrocklin.com/maintainer/">
+      
+      
+        <link rel="prev" href="../scipy-mission/">
+      
+      
+        <link rel="next" href="../slack-github/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Maintainers - Matthew Rocklin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#maintainers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Hidden header - keeps search and palette JS infrastructure -->
+<header class="md-header" data-md-component="header" style="position: absolute; height: 0; overflow: visible; visibility: visible;">
+  
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+    
+  
+  
+    <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+  
+  
+    
+    
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+<!-- Mobile header - only visible on small screens -->
+<div class="mobile-header">
+  <label class="mobile-header__button" for="__drawer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+  </label>
+  <a href=".." class="mobile-header__title">
+    Matthew Rocklin
+  </a>
+  <div class="mobile-header__controls">
+    <label class="mobile-header__button" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+    </label>
+  </div>
+</div>
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <!-- Sidebar header with name and controls -->
+  <div class="sidebar-header">
+    <a href=".." class="sidebar-title">
+      Matthew Rocklin
+    </a>
+    <div class="sidebar-controls">
+      <!-- Search -->
+      <label class="md-header__button md-icon sidebar-icon" for="__search" title="Search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <!-- Theme toggle -->
+      
+        
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to dark mode" for="__palette_1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to light mode" for="__palette_0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+        
+      
+      <!-- RSS Feed -->
+      <a href="../feed.xml" class="sidebar-icon" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startups
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Startups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../think/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think for Yourself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offsites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offsites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-revenue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revenue Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redesign-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redesigning Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio-Visual Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brevity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Attention Span
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-short-blogposts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Blogposts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scipy-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciPy Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#let-us-assume-external-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Let us Assume External Responsibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-maintainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Maintainer?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timely-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timely Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer-easy-questions-easily" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answer Easy Questions Easily
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-help-for-hard-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Find Help for Hard Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-follow-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        But follow up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritize-your-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritize your time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-used-to-a-lot-of-e-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get used to a lot of e-mail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-check-the-issue-tracker-periodically" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        But check the issue tracker periodically
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-let-reviewers-drag-things-out-too-long" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't let reviewers drag things out too long
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thank-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thank Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encourage-excellent-developers-to-review-and-allow-excellent-reviewers-to-maintain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encourage Excellent Developers to Review, and Allow Excellent Reviewers to Maintain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#take-a-vacation-but-tell-someone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Take a Vacation (But Tell Someone)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slack-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why I Avoid Slack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../senior-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senior Engineers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stability-bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stability Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech Leads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineers-and-sales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listen to Sell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimal-bug-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Craft Bug Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-indirection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avoid Indirection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biased-benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biased Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-dumb-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Write Dumb Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#let-us-assume-external-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Let us Assume External Responsibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-maintainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Maintainer?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timely-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timely Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer-easy-questions-easily" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answer Easy Questions Easily
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-help-for-hard-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Find Help for Hard Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-follow-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        But follow up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritize-your-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritize your time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-used-to-a-lot-of-e-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get used to a lot of e-mail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-check-the-issue-tracker-periodically" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        But check the issue tracker periodically
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-let-reviewers-drag-things-out-too-long" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't let reviewers drag things out too long
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thank-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thank Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encourage-excellent-developers-to-review-and-allow-excellent-reviewers-to-maintain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encourage Excellent Developers to Review, and Allow Excellent Reviewers to Maintain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#take-a-vacation-but-tell-someone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Take a Vacation (But Tell Someone)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+
+<h1 id="maintainers">Maintainers<a class="headerlink" href="#maintainers" title="Permanent link">&para;</a></h1>
+<p>What are the expectations and best practices for maintainers of open source software libraries?
+How can we do this better?</p>
+<p>This post frames the discussion and then follows with best practices based on my personal experience and opinions.  <em>I make no claim that these are correct.</em></p>
+<h2 id="let-us-assume-external-responsibility">Let us Assume External Responsibility<a class="headerlink" href="#let-us-assume-external-responsibility" title="Permanent link">&para;</a></h2>
+<p>First, the most common answer to this question is the following:</p>
+<ul>
+<li><strong>Q:</strong> <em>What are expectations on OSS maintainers?</em></li>
+<li><strong>A:</strong> <em>Nothing at all.  They're volunteers.</em></li>
+</ul>
+<p>However, let's assume for a moment that these maintainers are paid to maintain
+the project some modest amount, like 10 hours a week.</p>
+<p>How can they best spend this time?</p>
+<h2 id="what-is-a-maintainer">What is a Maintainer?<a class="headerlink" href="#what-is-a-maintainer" title="Permanent link">&para;</a></h2>
+<p>Next, let's disambiguate the role of <em>developer</em>, <em>reviewer</em>, and <em>maintainer</em></p>
+<ol>
+<li>
+<p><strong>Developers</strong> fix bugs and create features.  They write code and docs and
+    generally are agents of change in a software project.  There are often many
+    more developers than reviewers or maintainers.</p>
+</li>
+<li>
+<p><strong>Reviewers</strong> are known experts in a part of a project and are called on to
+    review the work of developers, mostly to make sure that the developers
+    don't break anything, but also to point them to related work, ensure common
+    development practices, and pass on institutional knowledge.  There are
+    often more developers than reviewers, and more reviewers than maintainers.</p>
+</li>
+<li>
+<p><strong>Maintainers</strong> are loosely aware of the entire project.
+    They track ongoing work and make sure that it gets reviewed and merged in a
+    timely manner.  They direct the orchestra of developers and reviewers,
+    making sure that they connect to each other appropriately, often serving
+    as dispatcher.</p>
+<p>Maintainers also have final responsibility.
+If no reviewer can be found for an important contribution, they review.
+If no developer can be found to fix an important bug, they develop.
+If something goes wrong, it's eventually the maintainer's fault.</p>
+</li>
+</ol>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<p>Now let's get into the best practices of a maintainer, again assuming the
+context that they are paid to do this about 25% time for a moderately busy
+software project (perhaps 10-50 issues/contributions per day).</p>
+<h3 id="timely-response">Timely Response<a class="headerlink" href="#timely-response" title="Permanent link">&para;</a></h3>
+<p><em>"Welcome Bob!  Nice question.  I'm currently a bit busy right now, but I
+think that if you look through <a href="">these notes</a> that they might point you in the
+right direction.  I should have time to check back here by Thursday."</em></p>
+<p>The maintainer is often the first person a new contributor meets.
+Like a concierge or greeter at a hotel or restaurant, it's good to say "Hi"
+when someone shows up, even if that's all you can say at that moment.</p>
+<p>When someone is raising an issue or contributing a patch, try to give them a
+response within 24 hours, <em>even if it's not a very helpful response</em>.  It's
+scary to ask something in public, and much scarier to try write code and
+contribute it to a project.  Acknowledging the contributor's question or work
+helps them to relax and feel welcome.</p>
+<h3 id="answer-easy-questions-easily">Answer Easy Questions Easily<a class="headerlink" href="#answer-easy-questions-easily" title="Permanent link">&para;</a></h3>
+<p><em>"Thanks for the question Bob.  I think that what you're looking for is
+described in <a href="">these docs</a>.  Also, in the future we welcome these sorts of
+questions on Stack Overflow."</em></p>
+<p>Answer simple questions quickly, and move on.</p>
+<p>After answering, you might also direct new users and contributors to places
+like Stack Overflow where they can ask questions in the future.</p>
+<h3 id="find-help-for-hard-problems">Find Help for Hard Problems<a class="headerlink" href="#find-help-for-hard-problems" title="Permanent link">&para;</a></h3>
+<p><em>"Hey Alice, you're an expert on X, would you mind checking this out?"</em></p>
+<p>You probably have a small team of expert reviewers to ask for help for tricky
+problems.  Get to know them well and use them.  It's not your job to solve
+every problem, and you probably don't have time anyway.  It's your job to make
+sure that the right reviewer sees the problem, and then track that it gets
+resolved.</p>
+<p>But also, don't <em>overuse</em> your reviewers.  Everyone has a tolerance for how
+much they're willing to help.  You may have to spread things out a little.
+Getting to know your reviewers personally and learning their interests can help
+you to make decisions about when and where to use them.</p>
+<h3 id="but-follow-up">But follow up<a class="headerlink" href="#but-follow-up" title="Permanent link">&para;</a></h3>
+<p><em>"Just checking in here.  It looks like Reviewer Alice has asked for X,
+Developer Bob is this something that you have time to do?  Also it looks like
+Developer Bob has a question about Y.  Reviewer Alice do you have any
+suggestions for Bob on this?"</em></p>
+<p>The reviewers you rely on are likely to swoop in, convey expertise, and then
+disappear back to their normal lives.  Thank them for their help, and don't
+rely on them to track the work to completion, that's your job.  You may have to
+direct conversation a bit.</p>
+<p>We often see the following timeline:</p>
+<ul>
+<li><strong>Developer:</strong> "Hi! I made a patch for X!"</li>
+<li><strong>Maintainer:</strong> "Welcome!  Nice patch!  Hey Reviewer, you know X really well,
+   could you take a look?"</li>
+<li><strong>Reviewer:</strong> "Hi Developer!  Great patch!  I found a bunch of things that
+   were wrong with it, but I think that you can probably fix them easily!"</li>
+<li><strong>Developer:</strong> "Oh yeah!  You're right, great, I've fixed everything you
+   said!"</li>
+<li>...</li>
+<li><em>silence</em></li>
+</ul>
+<p>At this point, jump in again!</p>
+<ul>
+<li><strong>Maintainer:</strong> "OK, it looks like you've handled everything that the
+   reviewer asked for.  Nice work!  Reviewer, anything else?  Otherwise, I plan
+   to merge this shortly"</li>
+</ul>
+<p>"Also, I notice that your code didn't pass the linter.  Please check out
+   this doc for how to run our auto-linter."
+-  <strong>Developer:</strong> "Done!"
+-  <strong>Maintainer:</strong> "OK, merging. Thanks Developer!"</p>
+<p>This situation is nice, but not ideal from the maintainer's perspective.
+Ideally the reviewer would finish things up, but often they don't.
+In some cases it might even be <em>their job</em> to finish things up,
+but even then, it's also <em>your job</em> to make sure that things finish up so if
+they don't show up, then it's on the maintainer.</p>
+<p><em>All responsibility eventually falls back onto the maintainer.</em></p>
+<h3 id="prioritize-your-time">Prioritize your time<a class="headerlink" href="#prioritize-your-time" title="Permanent link">&para;</a></h3>
+<p><em>"It'd be great if you could provide a minimal example as described
+<a href="https://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports">here</a>.
+Please let us know if you're able to manage this.  otherwise given time
+constraints I'm not sure what we can do to help further."</em></p>
+<p>Some contributors are awesome and do everything right.
+They ask questions with minimal reproducible examples.
+They provide well-tested code.
+Everything.  <a href="https://matthewrocklin.com/blog/work/2016/08/25/supporting-users">They're awesome.</a></p>
+<p>Others aren't as awesome.
+They ask for a lot of your time to help them solve problems that have
+little to do with your software.
+You probably can't solve every problem well, and working on their problems
+steals important time away that you could be spending improving documentation
+or process.</p>
+<p>Politely thank misinformed users and direct them towards
+standard documentation on expectations on asking questions and raising bug
+reports like <a href="https://stackoverflow.com/help/mcve">Stack Overflow's MCVE</a>
+or possibly <a href="https://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports">this post on crafting minimal bug
+reports</a></p>
+<h3 id="get-used-to-a-lot-of-e-mail">Get used to a lot of e-mail<a class="headerlink" href="#get-used-to-a-lot-of-e-mail" title="Permanent link">&para;</a></h3>
+<p><em>"Ah, the joy of e-mail filters"</em></p>
+<p>If you're tracking every conversation then you'll be getting hundreds of
+e-mails a day.  You don't need to read all of these in depth (this would take
+most of your 10 hours a week) but you probably should skim them.  Don't worry,
+with practice you can do this quickly.</p>
+<p>You certainly don't want this in your personal inbox, so you may want to invest
+a bit of time in organizing e-mail filters and labels.
+Personally I use GMail and with their filters and keyboard shortcuts I can
+usually blast through e-mail pretty quickly.  (Hooray for j/k Vim-style bindings in GMail)</p>
+<p>I check my Github inbox a few times a day.  It usually takes 20-30 minutes in
+the morning (due to all of the people active when I'm asleep) and 10 minutes
+during other times in the day.  I look forward to this time.  It's nice seeing
+a lot of people being productive.</p>
+<p>Mostly during this period I'm looking for anyone who is blocked, and if
+necessary I respond with something to help unblock them.</p>
+<h3 id="but-check-the-issue-tracker-periodically">But check the issue tracker periodically<a class="headerlink" href="#but-check-the-issue-tracker-periodically" title="Permanent link">&para;</a></h3>
+<p><em>"Whoops!  I totally dropped this!  Sorry!"</em></p>
+<p>You'll miss things.  People will force-push to Github (which triggers no alert)
+or the last person to reply to an issue will be you with no response. There are
+also just old issues and PRs that have slipped through and aren't coming up on
+your e-mail.</p>
+<p>So every day or two, it's good to go through all issues and PRs that have a
+glimmer of life in them and check in.  Often you'll find that someone has done
+work and the reviewer has left, or that the developer has just left.  Now is a
+good time to ask a gentle message</p>
+<p><em>Just checking in, what's the status here?</em></p>
+<p>Sometimes they'll be busy at work and will come back in a couple days.
+Sometimes they'll need a push in the right direction.
+Sometimes they'll disappear completely, and you have to decide whether to
+finish the work or let it linger.</p>
+<h3 id="weekends">Weekends<a class="headerlink" href="#weekends" title="Permanent link">&para;</a></h3>
+<p><em>"Now that I'm done with work for the week, I can finally finish up this PR.
+Wait, where did everybody go?"</em></p>
+<p>This is hard, but a lot of the developers aren't contributing as part of
+their day job, and so they work primarily on the weekends.  If they only work
+on the weekends and you only respond during the week then we're going to have
+very long iteration cycles, which is frustrating for everyone and unlikely to
+result in successful work.</p>
+<p>Personally I spend a bit of time in the morning and evening doing light
+maintenance.  That's a personal choice though.</p>
+<h3 id="dont-let-reviewers-drag-things-out-too-long">Don't let reviewers drag things out too long<a class="headerlink" href="#dont-let-reviewers-drag-things-out-too-long" title="Permanent link">&para;</a></h3>
+<p><em>"Can you just add one more thing?"</em></p>
+<p>Developers want to get their work in quickly.
+Reviewers sometimes want to ask lots of questions, make small suggestions,
+and sometimes have very long conversations.
+At some point you need to step in and ask for a definitive set of necessary changes.
+This gives the developer a sense of finality, a light at the end of the tunnel.</p>
+<p>Very long review periods are a common anti-behavior today, they are destructive to
+attracting new developers and contribute to reviewer burnout.  A reviewer
+should ideally iterate once or twice with a developer with in-depth comments
+and then we should be done.  This breaks down in a few ways:</p>
+<ol>
+<li><strong>The Slow Rollout:</strong> The reviewer provides a few small suggestions, waits
+    for changes, then provides a few more, and so on, resulting in many
+    iterations.</li>
+<li><strong>Serial Reviewers:</strong> After one reviewer finishes up, a second reviewer
+    arrives with their own set of requested changes.</li>
+<li><strong>Reviewer Disagreement:</strong> The two reviewers provide different suggestions
+    and the developer makes changes and undoes those changes based on who spoke
+    last.</li>
+<li><strong>Endless Discussion:</strong> The reviewers then engage in very long and detailed
+    technical conversation, scaring away the original developer.</li>
+</ol>
+<p>This is reviewer breakdown, and it's up to the maintainer to identify that
+it's happening, step in and say the following:</p>
+<p><em>OK, I think that what we have is a sufficient start.  I recommend that we
+merge what we have here and continue the rest of this conversation in a
+separate issue</em></p>
+<h3 id="thank-developers">Thank Developers<a class="headerlink" href="#thank-developers" title="Permanent link">&para;</a></h3>
+<p><em>"I appreciate all your work here.  In particular I'm really happy about these tests!"</em></p>
+<p>They look up to you.
+A small amount of praise from you can make their day and encourage them to
+continue contributing to open source.</p>
+<p>Also, as with normal life, if you can call out some specific thing that they
+did well it becomes more personal.</p>
+<h3 id="encourage-excellent-developers-to-review-and-allow-excellent-reviewers-to-maintain">Encourage Excellent Developers to Review, and Allow Excellent Reviewers to Maintain<a class="headerlink" href="#encourage-excellent-developers-to-review-and-allow-excellent-reviewers-to-maintain" title="Permanent link">&para;</a></h3>
+<p><em>"Hey Bob, this new work is similar to work that you've done before.  Any
+interest in taking a look?"</em></p>
+<p>Over time you will notice that a repeat developer returns to the project
+frequently, often to work on a particular topic.  When a new contribution
+arrives in that part of the code, you might intentionally invite the repeat
+developer to review that work.  You might invite them to become a reviewer.</p>
+<p>Similarly, when you find that a skilled reviewer frequently handles issues on
+their own, you should find ways to give them ownership over that section of the
+code.  Defer to their judgement.  Make sure that they have commit rights and
+the ability to publish new packages (if the code is separate enough to allow
+for that).  You should clear the way for them to become a maintainer.</p>
+<p>To be clear, I wouldn't encourage everyone.  Even very good developers can be
+bad reviewers or maintainers.  Bad reviewers can be unwelcoming and destructive
+to the process in a variety of ways.  This activity requires social skills
+that aren't universally held, regardless of programming skill.</p>
+<h3 id="take-a-vacation-but-tell-someone">Take a Vacation (But Tell Someone)<a class="headerlink" href="#take-a-vacation-but-tell-someone" title="Permanent link">&para;</a></h3>
+<p><em>"I'd like to checking out for a week.  Alice, would you mind keeping an eye on
+things?"</em></p>
+<p>Maintaining a project with a few peers is wonderful because it's easier for
+people to take breaks and attend to their mental health.  However, it's
+important to make people aware of your absence during vacations or illness.
+A quick word to a colleague about an absence, expected or otherwise, can help
+to keep things running smoothly.</p>
+<p><em>Many</em> OSS projects today have a single core maintainer.  This is hard on them
+and hard on the project (solo-maintainers tend to quickly become gruff).
+This post is designed with this problem in mind.
+Hopefully as we develop a vocabulary and conversation around the administrative
+sides of maintenance it will become easier to identify and encourage these
+behaviors in new maintainers.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p><em>"Thanks for taking the time"</em></p>
+<p>Maintaining a project is not about being a great developer or a clever
+reviewer.  It's about enabling others, removing road-blocks before they arise,
+and identifying and resolving difficult social situations.  It has much more to
+do with logistics, coordination, and social behaviors than it has to do with
+algorithms and version control.</p>
+<p>I have to admit, I'm not great at this, but I'm trying to become better.
+Maintaining a software project is a learned skill and takes effort.
+The reward can be significant though.</p>
+<p>A well maintained project is pleasant to work on and attracts a productive team
+of friendly developers and reviewers that support each other.  It's also a
+great way to learn more about how people use your software project than you
+ever could while writing code.  The activity of maintaining software gives you
+enough exposure to see where the project is headed and what's possible going
+forward.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2019-05-18';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+
+
+<h2>Comments</h2>
+<script src="https://giscus.app/client.js"
+    data-repo="mrocklin/mrocklin.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
+    data-category="Giscus"
+    data-category-id="DIC_kwDOADPtac4CTY1R"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/mrocklin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@mrocklin" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/feed.xml" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

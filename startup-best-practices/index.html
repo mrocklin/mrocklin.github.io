@@ -1,0 +1,2066 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+      
+      
+        <meta name="author" content="Matthew Rocklin">
+      
+      
+        <link rel="canonical" href="https://matthewrocklin.com/startup-best-practices/">
+      
+      
+      
+        <link rel="next" href="../think/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Best Practices - Matthew Rocklin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#best-practices" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Hidden header - keeps search and palette JS infrastructure -->
+<header class="md-header" data-md-component="header" style="position: absolute; height: 0; overflow: visible; visibility: visible;">
+  
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+    
+  
+  
+    <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+  
+  
+    
+    
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+<!-- Mobile header - only visible on small screens -->
+<div class="mobile-header">
+  <label class="mobile-header__button" for="__drawer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+  </label>
+  <a href=".." class="mobile-header__title">
+    Matthew Rocklin
+  </a>
+  <div class="mobile-header__controls">
+    <label class="mobile-header__button" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+    </label>
+  </div>
+</div>
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <!-- Sidebar header with name and controls -->
+  <div class="sidebar-header">
+    <a href=".." class="sidebar-title">
+      Matthew Rocklin
+    </a>
+    <div class="sidebar-controls">
+      <!-- Search -->
+      <label class="md-header__button md-icon sidebar-icon" for="__search" title="Search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <!-- Theme toggle -->
+      
+        
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to dark mode" for="__palette_1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+            
+              <label class="md-header__button md-icon sidebar-icon" title="Switch to light mode" for="__palette_0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+              </label>
+            
+          
+        
+      
+      <!-- RSS Feed -->
+      <a href="../feed.xml" class="sidebar-icon" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startups
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Startups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#most-advice-is-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Advice is Wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-hiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On Hiring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="On Hiring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hire-experienced-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Experienced Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-nimble-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Nimble Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-independent-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Independent Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Small
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-consistent-culture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Consistent Culture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fire-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fire People
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Investors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#take-the-money" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Take the Money
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcs-primary-value-is-money" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VCs primary value is money
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choose-people-who-understand-your-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose people who understand your space
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authenticity-and-mental-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authenticity and Mental Health
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authenticity and Mental Health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theres-no-recipe-to-being-a-ceo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There's no recipe to being a CEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimize-for-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimize for yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voice
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Voice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-competitors-pivot-quickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Early competitors pivot quickly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#youre-a-small-slice-of-a-growing-pie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        You're a small slice of a growing pie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../think/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think for Yourself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offsites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offsites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup-revenue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revenue Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redesign-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redesigning Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio-Visual Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brevity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Attention Span
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-short-blogposts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Short Blogposts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scipy-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciPy Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slack-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why I Avoid Slack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../senior-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senior Engineers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stability-bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stability Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech Leads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineers-and-sales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listen to Sell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimal-bug-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Craft Bug Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-indirection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avoid Indirection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biased-benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biased Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-dumb-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Write Dumb Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#most-advice-is-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Advice is Wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-hiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On Hiring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="On Hiring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hire-experienced-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Experienced Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-nimble-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Nimble Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-independent-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Independent Folks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Small
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hire-consistent-culture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hire Consistent Culture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fire-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fire People
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Investors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#take-the-money" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Take the Money
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcs-primary-value-is-money" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VCs primary value is money
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choose-people-who-understand-your-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose people who understand your space
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authenticity-and-mental-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authenticity and Mental Health
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authenticity and Mental Health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theres-no-recipe-to-being-a-ceo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There's no recipe to being a CEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimize-for-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimize for yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voice
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Voice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-competitors-pivot-quickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Early competitors pivot quickly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#youre-a-small-slice-of-a-growing-pie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        You're a small slice of a growing pie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+
+<h1 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h1>
+<p>After building a successful open source project I then started a company and made many mistakes.</p>
+<p>Some folks on this path foolishly ask for my advice.
+This article encodes some of that advice.</p>
+<p>It is intended for technical founders who have no experience building companies.</p>
+<h2 id="most-advice-is-wrong">Most Advice is Wrong<a class="headerlink" href="#most-advice-is-wrong" title="Permanent link">&para;</a></h2>
+<p>Many people will offer you advice:</p>
+<ul>
+<li>Investors</li>
+<li>Angel investors</li>
+<li>Business partners</li>
+<li>Fractional CTO/CMO/COO/CRO folks</li>
+<li>Other founders (like me)</li>
+</ul>
+<p>We're all mostly wrong.  That's not because we're dumb (we're mostly not dumb)
+but our experiences were valid for our situations, and they probably don't
+transfer over to yours.</p>
+<p>Early stage companies are all pretty unique, and it may be that there isn't a
+lot of transferability of knowledge.  Unfortunately, the wisest person
+for your situation is probably yourself.  You're going to feel pretty lost
+(that's ok, you are) but you should probably just follow your gut most of the
+time and see where that takes you.  Trying to integrate advice from lots of
+generic advisors invariably leads to mediocrity, which is death in early stage.</p>
+<p>Given that, I encourage you to read and then discount my advice below.</p>
+<h2 id="on-hiring">On Hiring<a class="headerlink" href="#on-hiring" title="Permanent link">&para;</a></h2>
+<h3 id="hire-experienced-folks">Hire Experienced Folks<a class="headerlink" href="#hire-experienced-folks" title="Permanent link">&para;</a></h3>
+<p>You should certainly employ folks though, and you should listen to them.
+They should all be smart, ideally smarter than you.</p>
+<p>You don't want any interns or junior folks.  No one on your team has time to
+grow them.  You'd be doing them a disservice; early stage startups
+are a horrible place to start a career.  Junior folks need structure.  You want
+people who are smarter than you.</p>
+<p>You've succeeded in finding someone when you can say "Oh, so-and-so has that
+problem, I don't need to think about it anymore."</p>
+<h3 id="hire-nimble-folks">Hire Nimble Folks<a class="headerlink" href="#hire-nimble-folks" title="Permanent link">&para;</a></h3>
+<p>So hire experienced people, hire people with opinions, but avoid people who have a plan.
+Your first ten plans will fail.  You need people who can acknowledge failure
+quickly and move on.</p>
+<p>Some experienced people make a living by going into early companies and running
+a well-known playbook.  This will be great for a month and then it will be
+wrong, but these people won't want to deviate from their playbook that
+frequently.  These playbooks will sound enticing; they allow you to offload
+responsibility for a time to an expert.  This is a lie though, you're still on
+the hook.</p>
+<p>You want people who are intellectually excited about pivoting once a month.</p>
+<h3 id="hire-independent-folks">Hire Independent Folks<a class="headerlink" href="#hire-independent-folks" title="Permanent link">&para;</a></h3>
+<p>Some people want to be told what to do.  They'll ask questions like "OK, what
+are my goals for the quarter".  These people are used to much more structure
+than you'll be ready to give to them.</p>
+<p>You want to hire people who can look at the entire situation and can come up
+with and change their own goals after chatting casually with you.
+You can't be guiding them the entire time.</p>
+<h3 id="hire-small">Hire Small<a class="headerlink" href="#hire-small" title="Permanent link">&para;</a></h3>
+<p>A team of five gets along well together.
+A team of thirty has a variety of issues:</p>
+<ul>
+<li>personality conflicts</li>
+<li>differences in culture</li>
+<li>they can't all fit in a room</li>
+<li>they need management structure (and will then start to care about titles
+    and hierarchy and such)</li>
+</ul>
+<p>Before long you'll find that instead of solving important problems you're
+spending all of your time managing a group of people.</p>
+<p>Given that you're going to fail ten times before you find the right path, it's
+best to keep the team pretty small.  They won't go as far, but it'll be way
+easier to bring everyone along as you explore the space.</p>
+<p>It's like walking down the street with friends.  Two people can walk pretty
+quickly even around obstacles, but thirty people walk really slowly and get
+bogged down when unexpected obstructions occur.  It's just hard to redirect the
+group of thirty without <em>a lot</em> of emotional work.</p>
+<p>Stay small until you have actual revenue that you think you can scale.
+Staying small will also enable you to pay for really good people.
+One really good person is worth more than five ok people, which are worth
+infinitely more than fifty junior people.</p>
+<p>You individually are probably faster than fifty junior people.</p>
+<h3 id="hire-consistent-culture">Hire Consistent Culture<a class="headerlink" href="#hire-consistent-culture" title="Permanent link">&para;</a></h3>
+<p>Do you care mostly about ...</p>
+<ul>
+<li>Making money?</li>
+<li>Changing the world?</li>
+<li>Building the best working culture?</li>
+</ul>
+<p>Pick one.</p>
+<p>Then make sure that everyone with hiring authority on the early team picks the same one.
+Otherwise you'll have to fire a bunch of people down the road.</p>
+<h3 id="fire-people">Fire People<a class="headerlink" href="#fire-people" title="Permanent link">&para;</a></h3>
+<p>This is a hard lesson to learn, but you'll know that you'll need to fire
+someone, and then you'll try for a few more months to make it work.  This will
+be bad for everyone and so very bad for the company.</p>
+<p>Fire early.  It'll suck, but everyone (including the firee) will be better
+afterwards.</p>
+<h2 id="investors">Investors<a class="headerlink" href="#investors" title="Permanent link">&para;</a></h2>
+<h3 id="take-the-money">Take the Money<a class="headerlink" href="#take-the-money" title="Permanent link">&para;</a></h3>
+<p>Investors may be offering you more money than you need.  That's ok.
+Take the money.  Money is useful.  It can be turned into good people, time to
+relax and regroup, experimentation, offloading dumb problems onto contractors,
+firing troublesome customers, etc..
+Don't worry about being overvalued.  Don't worry about overly high expectations.
+Just take the money.</p>
+<h3 id="vcs-primary-value-is-money">VCs primary value is money<a class="headerlink" href="#vcs-primary-value-is-money" title="Permanent link">&para;</a></h3>
+<p>VCs are smart, but they're also diffuse and thinking about many companies at
+once.  They're good to talk to to get broad perspective and also to make
+introductions, but their primary value is the money that they bring.  Their
+operating experts are smart, but they don't know your business well as well as
+you do and so you shouldn't depend on them to solve your problems.</p>
+<h3 id="choose-people-who-understand-your-space">Choose people who understand your space<a class="headerlink" href="#choose-people-who-understand-your-space" title="Permanent link">&para;</a></h3>
+<p>Even though they won't be able to help you, it's really nice to have people who
+understand what you're doing so that you don't have to explain everything to
+them.</p>
+<h2 id="authenticity-and-mental-health">Authenticity and Mental Health<a class="headerlink" href="#authenticity-and-mental-health" title="Permanent link">&para;</a></h2>
+<h3 id="theres-no-recipe-to-being-a-ceo">There's no recipe to being a CEO<a class="headerlink" href="#theres-no-recipe-to-being-a-ceo" title="Permanent link">&para;</a></h3>
+<p>Often folks feel stressed because they feel like they often need to behave in a
+certain way:</p>
+<ol>
+<li>You must have a clear and inspiring vision several years into the future</li>
+<li>You must know exactly how to execute on that vision</li>
+<li>You must present optimism to the team and to the world of your irrefutable
+    success</li>
+</ol>
+<p>Screw that.  No sane person has that much foresight/confidence.  Most startups
+fail, including probably yours.  This is the sort of unreasonably high
+expectations that lead to burnout for you and corrosive behavior to the team.</p>
+<p>You're a human, and you've been a pretty successful human up until this point.
+You should probably keep doing whatever it was you were doing before.  There's
+no reason to completely change your behavior.  Instead, change the company to
+suit you.</p>
+<h3 id="optimize-for-yourself">Optimize for yourself<a class="headerlink" href="#optimize-for-yourself" title="Permanent link">&para;</a></h3>
+<p>If you're successful then you're going to be the bottleneck of your company.
+It's ok if you optimize for yourself.</p>
+<ul>
+<li>Hate Slack?  Push the company to mailing lists and Github.</li>
+<li>Hate regularly scheduled meetings?  Push for asynchronous communication and ad-hoc meetings.</li>
+<li>Want to take some time off?  Define a vacation policy that suits your needs.</li>
+<li>Want to go to the beach?  Schedule the next offsite near the water.</li>
+</ul>
+<p>You're being selfish and that's ok.  It's also probably what's best for the company.</p>
+<h2 id="voice">Voice<a class="headerlink" href="#voice" title="Permanent link">&para;</a></h2>
+<h3 id="branding">Branding<a class="headerlink" href="#branding" title="Permanent link">&para;</a></h3>
+<p>Hire a group for this.  Your investors will have contacts.  Pay those
+contractors well.</p>
+<h3 id="messaging">Messaging<a class="headerlink" href="#messaging" title="Permanent link">&para;</a></h3>
+<p>Do this yourself.  You can find people to do this for you, but you'll spend a
+bunch of your time and energy explaining things to them, having them translate
+your words poorly to a lower common denominator, and then spend a bunch more
+time and energy struggling to make those words right.</p>
+<p>It's easier and better if you do this yourself for a while, and learn whatever
+you need along the way.</p>
+<h2 id="competition">Competition<a class="headerlink" href="#competition" title="Permanent link">&para;</a></h2>
+<p>You are your biggest competitor.  You're likely to slow yourself down far more
+than any other entity.</p>
+<h3 id="early-competitors-pivot-quickly">Early competitors pivot quickly<a class="headerlink" href="#early-competitors-pivot-quickly" title="Permanent link">&para;</a></h3>
+<p>Early stage companies shift a lot.  It's likely that who you perceive to be
+your biggest competitor will shift considerably every few months.  This is
+because both you and they will be pivoting rapidly.</p>
+<p>Given this, you shouldn't optimize around them much.</p>
+<h3 id="youre-a-small-slice-of-a-growing-pie">You're a small slice of a growing pie<a class="headerlink" href="#youre-a-small-slice-of-a-growing-pie" title="Permanent link">&para;</a></h3>
+<p>Activity in a space is good.  Conversation is good.
+It's sometimes harder to convince people to care about a problem than it is to
+convince them that your solution solves this problem well.  Competition helps
+here.</p>
+<h2 id="scale">Scale<a class="headerlink" href="#scale" title="Permanent link">&para;</a></h2>
+<p>A common refrain we hear is "but this won't scale".  This applies to early
+sales contracts, product ideas, technology choices, and so on.  It's ok.
+Your first job is to build something, not to build something scalable.
+<em>Eventually</em> the thing will need to scale, but you don't need to do that yet.</p>
+<p>Example: Tesla started with the Roadster, a fully electric sports car that cost
+$250,000.  About 2,500 were ever made.  This product didn't scale.  The
+market of people willing to pay that much for a car is small, and the
+manufacturing process wasn't smooth.  It didn't matter though, it allowed the
+company to experiment and iterate quickly so that they could then produce the
+Model 3 and think about scaling issues.</p>
+<p>It's ok to start out by just building the Roadster.
+First build a thing, then build a thing that scales.
+Building a thing that scales right from the start reduces your chance of eventual success.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2022-09-05';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+
+
+<h2>Comments</h2>
+<script src="https://giscus.app/client.js"
+    data-repo="mrocklin/mrocklin.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
+    data-category="Giscus"
+    data-category-id="DIC_kwDOADPtac4CTY1R"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/mrocklin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@mrocklin" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/feed.xml" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
