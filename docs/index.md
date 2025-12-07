@@ -2,18 +2,23 @@
 
 ![](assets/profile-circle.png){ width="200px" align="right" }
 
-I maintain open source software for Python's data ecosystem.
+Hello 👋!
 
-I do this to increase accessibility to computation and in so doing accelerate science and inform policy decisions for the broader public.
+My name is Matt, and I write software.
 
-I am primarily known for [Dask](https://dask.org), a library for scalable computing with dynamic task scheduling.
+I work in the open source Python data/compute ecosystem.<br/>
+I've worked on plenty, but I'm mostly known for the following:
 
-I also run a startup company [Coiled](https://coiled.io).
+-  [Dask](https://dask.org): a library for parallel computing
+-  [Coiled](https://coiled.io): a small startup around cloud deployment
+
+Along with working on various other projects, like `toolz`, `sympy`, `theano`, etc..
+
+I do this work both because it's fun, and to increase accessibility to computation, helping us and accelerate science and inform policy decisions for the broader public good.
 
 ---
 
-[Read Articles](articles.md){ .md-button .md-button--primary }
-
-[Old Blog](https://matthewrocklin.com/blog){ .md-button }
+I write about my work, both technical and human aspects.
+You can read about that on this site.
 
 <a rel="me" href="https://fosstodon.org/@mrocklin"> </a>
