@@ -1,0 +1,8 @@
+[project]
+name = "mrocklin-blog"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.7.0",
+    "mkdocs-rss-plugin>=1.17.0",
+]

@@ -43,7 +43,7 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@mrocklin
     - icon: material/rss
-      link: /feed_rss_created.xml
+      link: /feed.xml
 
 markdown_extensions:
   - toc:

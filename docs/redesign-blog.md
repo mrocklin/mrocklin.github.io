@@ -141,7 +141,7 @@ seen as **"documentation to working with matt".**
 
 At the same time, every post does have appropriate blog metadata to be included
 in the top-level [articles](articles.md) page, which lists things
-chronologically, as well as the [Atom/RSS feed](https://matthewrocklin.com/atom.xml).
+chronologically, as well as the [RSS feed](https://matthewrocklin.com/feed.xml).
 It's like a documentation site where every new page gets an RSS entry.
 
 ### Atom/RSS Feed
@@ -152,7 +152,7 @@ commenting/liking was an after thought.
 
 I don't use an RSS feed reader today, but I'd like to start again.
 I know that others do and so I'm resurrecting an Atom/RSS feed is at
-[https://matthewrocklin.com/atom.xml](https://matthewrocklin.com/atom.xml).
+[https://matthewrocklin.com/feed.xml](https://matthewrocklin.com/feed.xml).
 
 ### Flat directory structure
 
