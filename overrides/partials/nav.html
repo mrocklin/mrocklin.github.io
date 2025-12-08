@@ -43,4 +43,17 @@
       {{ item.render(nav_item, path, 1) }}
     {% endfor %}
   </ul>
+
+  <!-- Recent Articles -->
+  {% if recent_articles %}
+  <div class="recent-articles">
+    <div class="recent-articles-header">Recent</div>
+    <ul class="recent-articles-list">
+      {% for article in recent_articles %}
+      <li><a href="{{ article.url | url }}">{{ article.title }}</a></li>
+      {% endfor %}
+      <li class="more-articles"><a href="{{ 'articles/' | url }}">… More articles</a></li>
+    </ul>
+  </div>
+  {% endif %}
 </nav>

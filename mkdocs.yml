@@ -27,6 +27,9 @@ theme:
     - search.suggest
     - search.highlight
 
+hooks:
+  - hooks/recent_articles.py
+
 plugins:
   - search
   - rss:
@@ -56,30 +59,24 @@ markdown_extensions:
   - def_list
 
 nav:
-  - Startups:
-    - Best Practices: startup-best-practices.md
+  - Workplace:
+    - Startup Best Practices: startup-best-practices.md
     - Think for Yourself: think.md
-    - Meetings: meetings.md
-    - Offsites: offsites.md
-    - Metrics: metrics.md
-    - Revenue Types: startup-revenue.md
     - Failure: failure.md
-  - Writing:
-    - Redesigning Blog: redesign-blog.md
-    - Audio-Visual Setup: audio-visual.md
-    - Short Attention Span: brevity.md
-    - Short Blogposts: write-short-blogposts.md
+    - Meetings: meetings.md
+    - Brevity: brevity.md
+    - Feedback: feedback.md
+    - Why I Avoid Slack: slack-github.md
+    - Write Short Blogposts: write-short-blogposts.md
   - Engineering:
     - SciPy Mission: scipy-mission.md
-    - Maintainers: maintainer.md
-    - Why I Avoid Slack: slack-github.md
-    - Senior Engineers: senior-engineer.md
     - Stability Bias: stability-bias.md
-    - Tech Leads: technical-lead.md
+    - Maintainers: maintainer.md
+    - Senior Engineers: senior-engineer.md
     - Listen to Sell: engineers-and-sales.md
   - Programming:
     - Craft Bug Reports: minimal-bug-reports.md
     - Avoid Indirection: avoid-indirection.md
-    - Biased Benchmarks: biased-benchmarks.md
     - Write Dumb Code: write-dumb-code.md
-  - All Articles: articles.md
+  - Personal:
+    - I Walked across Spain: camino.md

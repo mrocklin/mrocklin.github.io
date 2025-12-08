@@ -8,3 +8,4 @@ site/
 .tox
 .nox
 .idea/
+hooks/__pycache__/
