@@ -65,11 +65,15 @@
 
 /* Only show the active palette toggle */
 .sidebar-controls label[for="__palette_0"],
-.sidebar-controls label[for="__palette_1"] {
+.sidebar-controls label[for="__palette_1"],
+.mobile-header__controls label[for="__palette_0"],
+.mobile-header__controls label[for="__palette_1"] {
   display: none;
 }
 [data-md-color-scheme="default"] .sidebar-controls label[for="__palette_1"],
-[data-md-color-scheme="slate"] .sidebar-controls label[for="__palette_0"] {
+[data-md-color-scheme="slate"] .sidebar-controls label[for="__palette_0"],
+[data-md-color-scheme="default"] .mobile-header__controls label[for="__palette_1"],
+[data-md-color-scheme="slate"] .mobile-header__controls label[for="__palette_0"] {
   display: flex;
 }
 
@@ -143,14 +147,9 @@
 /* Mobile header - only visible on small screens */
 .mobile-header {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 3rem;
   background: var(--md-default-bg-color);
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  z-index: 3;
   align-items: center;
   justify-content: space-between;
   padding: 0 0.5rem;
@@ -160,8 +159,8 @@
   .mobile-header {
     display: flex;
   }
-  .md-content {
-    margin-top: 3rem;
+  .sidebar-header {
+    display: none;
   }
   /* Flatten mobile nav - show all items, no drill-down */
   .md-nav--primary .md-nav:not(.md-nav--secondary) {
