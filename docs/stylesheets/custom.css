@@ -303,47 +303,15 @@
   display: none;
 }
 
-/* Recent articles section */
-.recent-articles {
+/* Recent articles section - uses nav markup, just adds separator */
+.recent-articles-section {
   margin-top: 1rem;
-  padding: 0 0.6rem;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
   padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
 }
 
-.recent-articles-header {
-  font-weight: 700;
-  font-size: 13px;
-  color: var(--md-default-fg-color);
-  margin-bottom: 0.5rem;
-}
-
-.recent-articles-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.recent-articles-list li {
-  margin-bottom: 0.25rem;
-}
-
-.recent-articles-list a {
-  font-size: 13px;
-  color: var(--md-default-fg-color--light);
-  text-decoration: none;
-}
-
-.recent-articles-list a:hover {
-  color: var(--accent);
-}
-
-.recent-articles-list .more-articles {
-  margin-top: 0.5rem;
-}
-
-.recent-articles-list .more-articles a {
-  font-weight: 500;
+.more-articles-link {
+  font-weight: 500 !important;
 }
 
 /* Article list page */
@@ -420,4 +388,3 @@ a.article-item:hover .article-title {
   --accent-hover: #d97706;
   --shadow-color: rgba(255, 255, 255, 0.35);
 }
-

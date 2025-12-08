@@ -44,16 +44,22 @@
     {% endfor %}
   </ul>
 
-  <!-- Recent Articles -->
+  <!-- Recent Articles - uses same nav markup for consistent styling -->
   {% if recent_articles %}
-  <div class="recent-articles">
-    <div class="recent-articles-header">Recent</div>
-    <ul class="recent-articles-list">
-      {% for article in recent_articles %}
-      <li><a href="{{ article.url | url }}">{{ article.title }}</a></li>
-      {% endfor %}
-      <li class="more-articles"><a href="{{ 'articles/' | url }}">… More articles</a></li>
-    </ul>
-  </div>
+  <ul class="md-nav__list recent-articles-section" data-md-scrollfix>
+    <li class="md-nav__item md-nav__item--section">
+      <span class="md-nav__link">Recent</span>
+      <ul class="md-nav__list">
+        {% for article in recent_articles %}
+        <li class="md-nav__item">
+          <a href="{{ article.url | url }}" class="md-nav__link">{{ article.title }}</a>
+        </li>
+        {% endfor %}
+        <li class="md-nav__item">
+          <a href="{{ 'articles/' | url }}" class="md-nav__link more-articles-link">… More articles</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
   {% endif %}
 </nav>
