@@ -163,6 +163,36 @@
   .md-content {
     margin-top: 3rem;
   }
+  /* Flatten mobile nav - show all items, no drill-down */
+  .md-nav--primary .md-nav:not(.md-nav--secondary) {
+    display: block !important;
+    overflow: visible !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    position: static !important;
+    transform: none !important;
+  }
+  .md-nav--primary .md-nav__title {
+    display: none !important;
+  }
+  .md-nav--primary .md-nav__toggle:not(#__toc) ~ .md-nav {
+    display: block !important;
+  }
+  /* Hide table of contents on mobile */
+  .md-nav--secondary {
+    display: none !important;
+  }
+  /* Make sidebar drawer scrollable */
+  .md-sidebar--primary {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .md-sidebar__scrollwrap {
+    overflow: visible !important;
+  }
+  .md-sidebar__inner {
+    overflow: visible !important;
+  }
 }
 
 .mobile-header__button {
