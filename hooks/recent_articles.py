@@ -4,7 +4,7 @@ import yaml
 from datetime import date
 
 def on_env(env, config, files):
-    """Add recent_articles to Jinja environment."""
+    """Add recent_articles and all_articles to Jinja environment."""
     docs_dir = config['docs_dir']
     articles = []
 
@@ -29,14 +29,19 @@ def on_env(env, config, files):
             d = front_matter['date']
             if isinstance(d, str):
                 d = date.fromisoformat(d)
+
+            description = front_matter.get('description') or front_matter.get('tagline') or ''
+
             articles.append({
                 'title': front_matter.get('title', f.src_path),
-                'url': f.src_path.replace('.md', '.html'),
+                'url': f.src_path.replace('.md', '/'),
                 'date': d,
+                'description': description,
             })
         except Exception:
             continue
 
     articles.sort(key=lambda x: x['date'], reverse=True)
     env.globals['recent_articles'] = articles[:5]
+    env.globals['all_articles'] = articles
     return env

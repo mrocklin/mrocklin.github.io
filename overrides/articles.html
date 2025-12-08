@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>Articles</h1>
+
+<div class="article-list">
+{% for article in all_articles %}
+  <a href="{{ article.url | url }}" class="article-item">
+    <div class="article-header">
+      <span class="article-title">{{ article.title }}</span>
+      <span class="article-date">{{ article.date.strftime('%Y-%m-%d') }}</span>
+    </div>
+    <div class="article-description">{{ article.description or '...' }}</div>
+  </a>
+{% endfor %}
+</div>
+{% endblock %}
