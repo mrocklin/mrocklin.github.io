@@ -1,12 +1,12 @@
 ---
-title: Best Practices
+title: Startup Advice
 date: 2022-09-05
 blogpost: true
 author: Matthew Rocklin
 category: startups
 ---
 
-Best Practices
+Startup Advice
 ==============
 
 After building a successful open source project I then started a company and made many mistakes.

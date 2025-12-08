@@ -60,21 +60,19 @@ markdown_extensions:
 
 nav:
   - Workplace:
-    - Startup Best Practices: startup-best-practices.md
     - Think for Yourself: think.md
+    - Startup Advice: startup-best-practices.md
     - Failure: failure.md
     - Meetings: meetings.md
     - Brevity: brevity.md
     - Feedback: feedback.md
+    - Listen to Sell: engineers-and-sales.md
     - Why I Avoid Slack: slack-github.md
     - Write Short Blogposts: write-short-blogposts.md
-  - Engineering:
+  - Open Source:
     - SciPy Mission: scipy-mission.md
     - Stability Bias: stability-bias.md
     - Maintainers: maintainer.md
-    - Senior Engineers: senior-engineer.md
-    - Listen to Sell: engineers-and-sales.md
-  - Programming:
     - Craft Bug Reports: minimal-bug-reports.md
     - Avoid Indirection: avoid-indirection.md
     - Write Dumb Code: write-dumb-code.md
