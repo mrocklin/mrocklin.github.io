@@ -1,7 +1,8 @@
 /* Accent color - amber */
 :root {
-  --accent: #92400e;
-  --accent-hover: #b45309;
+  --accent: #b45309;
+  --accent-hover: #d97706;
+  --shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Body text */
@@ -288,6 +289,10 @@
   color: var(--md-default-fg-color--light);
 }
 
+.md-nav__link:hover {
+  color: var(--accent) !important;
+}
+
 .md-nav__link--active {
   font-weight: 500;
   color: var(--accent) !important;
@@ -353,7 +358,7 @@ a.article-item {
 }
 
 a.article-item:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 a.article-item:hover .article-title {
@@ -395,7 +400,8 @@ a.article-item:hover .article-title {
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #000;
   --md-default-bg-color--light: #0a0a0a;
-  --accent: #d97706;
-  --accent-hover: #fbbf24;
+  --accent: #c2700c;
+  --accent-hover: #d97706;
+  --shadow-color: rgba(255, 255, 255, 0.35);
 }
 
