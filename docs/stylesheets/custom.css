@@ -65,15 +65,11 @@
 
 /* Only show the active palette toggle */
 .sidebar-controls label[for="__palette_0"],
-.sidebar-controls label[for="__palette_1"],
-.mobile-header__controls label[for="__palette_0"],
-.mobile-header__controls label[for="__palette_1"] {
+.sidebar-controls label[for="__palette_1"] {
   display: none;
 }
 [data-md-color-scheme="default"] .sidebar-controls label[for="__palette_1"],
-[data-md-color-scheme="slate"] .sidebar-controls label[for="__palette_0"],
-[data-md-color-scheme="default"] .mobile-header__controls label[for="__palette_1"],
-[data-md-color-scheme="slate"] .mobile-header__controls label[for="__palette_0"] {
+[data-md-color-scheme="slate"] .sidebar-controls label[for="__palette_0"] {
   display: flex;
 }
 
@@ -144,23 +140,40 @@
   padding-right: 2.2rem !important;
 }
 
-/* Mobile header - only visible on small screens */
-.mobile-header {
+/* Floating mobile menu button - only visible on small screens */
+.mobile-menu-button {
   display: none;
-  height: 3rem;
-  background: var(--md-default-bg-color);
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.mobile-menu-button:hover {
+  opacity: 1;
+}
+
+.mobile-menu-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--md-default-fg-color);
 }
 
 @media screen and (max-width: 76.1875em) {
-  .mobile-header {
+  .mobile-menu-button {
     display: flex;
   }
   .sidebar-header {
-    display: none;
+    padding-top: 1rem;
+  }
+  .sidebar-controls {
+    gap: 0.5rem;
   }
   /* Flatten mobile nav - show all items, no drill-down */
   .md-nav--primary .md-nav:not(.md-nav--secondary) {
@@ -192,37 +205,6 @@
   .md-sidebar__inner {
     overflow: visible !important;
   }
-}
-
-.mobile-header__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.mobile-header__button:hover {
-  opacity: 1;
-}
-
-.mobile-header__button svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.mobile-header__title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--md-default-fg-color) !important;
-  text-decoration: none;
-}
-
-.mobile-header__controls {
-  display: flex;
-  align-items: center;
 }
 
 /* Headings - tighter, bolder */
