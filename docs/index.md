@@ -21,4 +21,6 @@ I do this work both because it's fun, and to increase accessibility to computati
 I write about my work, both technical and human aspects.
 You can read about that on this site.
 
+[All Articles](articles.md){ .md-button }
+
 <a rel="me" href="https://fosstodon.org/@mrocklin"> </a>
