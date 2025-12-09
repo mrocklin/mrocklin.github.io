@@ -1037,23 +1037,44 @@ be a sign that the team lacks a strong prioritization function.</p>
 })();
 </script>
 
-
-
 <h2>Comments</h2>
-<script src="https://giscus.app/client.js"
-    data-repo="mrocklin/mrocklin.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDAzMTEz"
-    data-category="Giscus"
-    data-category-id="DIC_kwDOADPtac4CTY1R"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang="en"
-    crossorigin="anonymous"
-    async>
+<script>
+(function() {
+  function getGiscusTheme() {
+    var palette = document.body.getAttribute('data-md-color-scheme');
+    return palette === 'slate' ? 'dark' : 'light';
+  }
+
+  // Create giscus script with current theme
+  var script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'mrocklin/mrocklin.github.io');
+  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDAzMTEz');
+  script.setAttribute('data-category', 'Giscus');
+  script.setAttribute('data-category-id', 'DIC_kwDOADPtac4CTY1R');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', 'en');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+  document.currentScript.parentNode.appendChild(script);
+
+  // Update giscus when theme changes
+  var observer = new MutationObserver(function(mutations) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        'https://giscus.app'
+      );
+    }
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+})();
 </script>
 
 
