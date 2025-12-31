@@ -5,9 +5,11 @@ Personal blog of Matthew Rocklin built with MkDocs Material.
 ## Quick Reference
 
 ```bash
-uv run mkdocs serve          # Local dev server at http://127.0.0.1:8000
-uv run mkdocs build          # Build to site/
+make serve                   # Local dev server at http://127.0.0.1:8000
+make build                   # Build to site/
 ```
+
+Note: `make serve` uses `--livereload` flag to work around a Python 3.14 + Click bug.
 
 ## Architecture
 

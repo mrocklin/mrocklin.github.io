@@ -2,6 +2,11 @@ site_name: Matthew Rocklin
 site_url: https://matthewrocklin.com
 site_description: Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering
 
+watch:
+  - docs
+  - overrides
+  - hooks
+
 theme:
   name: material
   custom_dir: overrides
