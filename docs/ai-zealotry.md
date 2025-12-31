@@ -9,7 +9,12 @@ author: Matthew Rocklin
 # AI Zealotry
 
 I develop with AI today.  It's great.
-I think that people around me should use AI more for development.
+
+There are many articles you can read on why AI is great (or terrible) or how to
+use it.  This is mine.  I focus on the experience of a fairly senior engineer
+(and why we in particular should use it), on my experience operating within the
+OSS Python Data world, and on practical suggestions that I've found myself
+repeating to colleagues.
 
 This article contains learned lessons of two types:
 
@@ -20,7 +25,8 @@ We'll interleave these two.  I'm hopeful that this approach will make this more 
 
 ## Why AI
 
-Honestly, it's just really fun.
+AI development is more fun.  I do more of what I like (think, experiment, think
+more) and less of what I don't like (wrestle with computers).
 
 I feel both that I can move faster and operate in areas that were previously
 inaccessible to me (like frontend).
