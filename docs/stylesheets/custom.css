@@ -10,6 +10,30 @@
   font-size: 15px;
 }
 
+/* Tighter vertical spacing */
+.md-typeset p {
+  margin: 0.75em 0;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin: 0.75em 0 !important;
+}
+
+.md-typeset li {
+  margin-bottom: 0.25em !important;
+}
+
+/* Blockquotes - accent border, subtle styling */
+.md-typeset blockquote {
+  border-left: 2px solid color-mix(in srgb, var(--accent) 50%, transparent) !important;
+  padding-left: 0.6rem !important;
+  margin-left: 0 !important;
+  color: var(--md-default-fg-color--light) !important;
+  font-style: italic !important;
+  background: transparent !important;
+}
+
 /* Limit content width for readability */
 .md-content__inner {
   max-width: 750px;
