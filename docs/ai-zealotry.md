@@ -52,11 +52,12 @@ development.  Let's start by listing those concerns:
 These are super-valid concerns.  They're also concerns that I suspect came
 around when we developed compilers and people stopped writing assembly by hand,
 instead trusting programs like `gcc` to pump out instruction after instruction
-of shitty machine code.  We lost something as developers when we stopped writing
-assembly (there's a ton of understanding that most devs today just don't have)
-but we gained a ton too.  As in any transition it's our job to get as much as
-we can of the good, while losing as little as we can manage, and balance those
-two against each other.
+of shitty machine code.
+
+We lost a deeper understanding as developers when we stopped writing assembly
+but we gained a ton too.  As in any transition, we need to navigate the
+situation to capture the advantages while losing only a little, balancing the
+costs and benefits of a new technology.
 
 This article is how I've been navigating this transition personally.
 
@@ -66,12 +67,12 @@ Early in using Claude Code (or Cursor) many of my interactions were saying
 "Yes, it's ok to run that".  This was **frustrating and dehumanizing**.  Mostly my
 job was to enable AI, rather than the other way around.
 
-There are many tricks to resolve this (see below), but more broadly "stop doing
-simple shit" has been a mantra that I've found myself having to constantly come
+There are many tricks to resolve this (see below), but more broadly **"stop doing
+simple shit"** has been a mantra that I've found myself constantly coming
 back to. The more I reject simple tasks and add automation to my workflow, the
 higher an abstraction I'm able to climb to and the more effectively I'm able to
-work. Our goal in programming generally is to climb an abstraction ladder. This
-requires thought and consistent attention.
+work. Our goal in programming is to climb an abstraction ladder and gain more
+intellectual leverage. This requires thought and consistent attention.
 
 Fortunately AI can help with this.  If you complain and say "I'm always doing
 X" it'll suggest solutions like what I'll talk about below, but more tailored
@@ -149,15 +150,15 @@ fairly broad-yet-safe **permissions**, which is coming up next.
 ### Example Problem: Incomplete Permissions
 
 Even worse, Claude often asks for permission to do things that are just
-slightly different from what you've already granted.  For example:
+slightly different from what you've already granted.
+You allow `uv run pytest *`, but Claude keeps finding variants:
 
--  You give permission to run `uv run pytest *`
--  Claude decides to run `timeout 60 uv run pytest ...`
--  You give permission to run `timeout 60 uv run pytest *`
--  Claude decides to run `timeout 40 uv run pytest ...`
--  ... or `uv run pytest ... | head`
--  ... or `.venv/bin/pytest ...`
--  ... or ...
+```
+timeout 60 uv run pytest ...
+timeout 40 uv run pytest ...
+uv run pytest ... | head
+.venv/bin/pytest ...
+```
 
 Claude Code's permission language sucks.  It only supports prefixes, while we
 wish it could handle regexes, or maybe even just arbitrary Python code.
@@ -200,9 +201,9 @@ My personal favorite hooks though are these:
 ```
 
 They play subtle little sounds whenever Claude is either done, or needs input
-from me.  This lets me ignore Claude when it's busy.  I found that I was
-constantly checking back in with Claude to see if it was done, and that action
-was dehumanizing, so I automated it by asking Claude to play a sound.
+from me.  This lets me ignore Claude when it's busy.  Previously I found that I
+was constantly checking back in with Claude to see if it was done, and that
+action was dehumanizing, so I automated it by asking Claude to play a sound.
 
 Hooks are great.  There are more ways to provide structure (Skills, Commands)
 but I've found that Hooks are the most dependable, a great starting place, and
@@ -222,14 +223,15 @@ code far more quickly than we're able to read it**.  How should we handle
 review?  Everyone needs to figure this out for themselves, but my answer is
 "find other ways to build confidence".
 
-We do this today.  I review some human-written code very closely, and other
-code less closely.  Sometimes I rely on a combination of tests, familiarity
-of a well-known author, and glancing at the code to ensure that it's not
-crazy complicated before saying "sure, seems fine" and pressing the green
-button.  Trusting code without reading all of it isn't new, we're just now in a
-state where we need to review 10x more code, and so we need to get much better
-at establishing confidence that something works without paying human attention
-all the time.
+We already do this today with human-written code.  I review some code very
+closely, and other code less-so.  Sometimes I rely on a combination of tests,
+familiarity of a well-known author, and a quick glance at the code to before
+saying "sure, seems fine" and pressing the green button.
+
+Trusting code without reading all of it isn't new, we're just now in a state
+where we need to review 10x more code, and so we need to get much better at
+establishing confidence that something works without paying human attention all
+the time.
 
 We can augment our ability to write code with AI.  We can augment our ability
 to review code with AI too.
@@ -369,13 +371,18 @@ extent, we should all start operating more like the numpy community.
 ## Tip: plans/ and designs/ directories
 
 Reading on Reddit, I think that this is common, but I keep two directories in
-each repository, `designs/` which contains brief motivation and high level
-design of a feature, and `plans/` which contains ephemeral planning documents
-that the LLMs work through over many sessions as they implement a major
-feature.  Plans end up being very useful during development, while designs end
-up being useful to point other agents to in the future.  In longer lived
-projects I tend to migrate these towards `skills` and proper documentation, but
-I'm honestly still learning how I like to work here.
+each repository,
+
+-  `designs/` which contains brief motivation and high level design of a feature
+-  `plans/` which contains ephemeral planning documents that the LLMs work through over many sessions as they implement a major feature.
+
+Plans end up being very useful during development, while designs end
+up being useful to point other agents to in the future.
+
+In longer lived projects I've started to migrate away from `designs/` and
+towards using Claude Code's Skills (context that gets automatically loaded in
+based on the topic at hand) but I'm honestly still learning how I like to work
+here, so I don't have anything to say here with confidence.
 
 ## Big Idea: Take Long Walks
 
