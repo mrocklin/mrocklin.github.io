@@ -420,3 +420,28 @@ systems to make it robust and trustworthy, and all of that will make society
 better and our jobs way more fun.
 
 I'm looking forward to having way more fun.
+
+## Appendix: Permissions file
+
+After writing this a couple friends asked me for a copy of my regex/Python code
+that replaces Claude's permission system.  I'll include it below, but really,
+you don't need it.  Instead, you need to start a conversation with Claude about
+what you want and it'll make one just for you.
+
+Code is free these days.  Extending the "AI is like Compilers" analogy, asking
+for someone else's script is kind of like asking for someone else's compiled
+binary.  There's no need; just make it yourself.  It's trivial.
+
+Here was my original prompt to Claude Code:
+
+> I recently wrote this reddit post
+>
+> https://www.reddit.com/r/ClaudeAI/comments/1puqrvc/claude_code_annoyingly_asking_for_permissions/
+>
+> I'm wondering if you have any suggestions on how to resolve this?  Adding stuff to CLAUDE.md or permissions to settings.json doesn't seem to be working well enough.
+
+That, along with subsequent conversation as I've been working, resulted in
+[this Python script](https://gist.github.com/mrocklin/30099bcc5d02a6e7df373b4c259d95e9)
+
+But really, you're better off working with Claude to make one just for you.
+Code is free now.
