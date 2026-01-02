@@ -11,9 +11,9 @@ author: Matthew Rocklin
 I develop with AI today.  It's great.
 
 There are many articles you can read on why AI is great (or terrible) or how to
-use it.  This is mine.  I focus on the experience of a fairly senior engineer
-(and why we in particular should use it), on my experience operating within the
-OSS Python Data world, and on practical suggestions that I've found myself
+use it.  This is mine.  I focus on the experience of a senior engineer (and why
+we in particular should use AI), on my experience operating within the OSS
+Python Data world, and on practical suggestions that I've found myself
 repeating to colleagues.
 
 This article contains learned lessons of two types:
@@ -25,8 +25,8 @@ We'll interleave these two.  I'm hopeful that this approach will make this more 
 
 ## Why AI
 
-AI development is more fun.  I do more of what I like (think, experiment, think
-more) and less of what I don't like (wrestle with computers).
+AI development is more fun.  I do more of what I like (think, experiment,
+write) and less of what I don't like (wrestle with computers).
 
 I feel both that I can move faster and operate in areas that were previously
 inaccessible to me (like frontend).
@@ -36,15 +36,15 @@ Slop, and there's so much we can accomplish today.
 I like this quote from [this blog](https://www.stochasticlifestyle.com/a-guide-to-gen-ai-llm-vibecoding-for-expert-programmers/)
 > I get it, you’re too good to vibe code. You’re a senior developer who has been doing this for 20 years and knows the system like the back of your hand.
 
-> ...
+> [...]
 
 > No, you’re not too good to vibe code. In fact, you’re the only person who should be vibe coding.
 
 I think that really good engineers, the kind that think hard before writing,
-can have a tremendous amount of impact and fun while developing with AI.  I
-wouldn't ever want to go back.
+can have a tremendous impact and fun while developing with AI.  I
+wouldn't ever go back.
 
-## Why Not
+## Why Not AI
 
 That being said, there are some serious costs and reasonable reservations to AI
 development.  Let's start by listing those concerns:
@@ -53,7 +53,7 @@ development.  Let's start by listing those concerns:
 -   LLMs generate *a lot* of junk
 -   Writing code ourselves builds understanding
 -   Reviewing code for correctness is the slow part, not writing it
--   AI workflows are dehumanizing, just pressing "yes, allow" over and over again
+-   AI workflows can be dehumanizing when you just press "yes, allow" over and over again
 
 These are super-valid concerns.  They're also concerns that I suspect came
 around when we developed compilers and people stopped writing assembly by hand,
@@ -75,10 +75,11 @@ job was to enable AI, rather than the other way around.
 
 There are many tricks to resolve this (see below), but more broadly **"stop doing
 simple shit"** has been a mantra that I've found myself constantly coming
-back to. The more I reject simple tasks and add automation to my workflow, the
-higher an abstraction I'm able to climb to and the more effectively I'm able to
-work. Our goal in programming is to climb an abstraction ladder and gain more
-intellectual leverage. This requires thought and consistent attention.
+back to. The more I identify and reject simple tasks and add automation to my
+workflow, the higher an abstraction I'm able to climb to and the more
+effectively I'm able to work. Our goal in programming is to climb an
+abstraction ladder and gain more intellectual leverage. This requires thought
+and consistent attention.
 
 Fortunately AI can help with this.  If you complain and say "I'm always doing
 X" it'll suggest solutions like what I'll talk about below, but more tailored
@@ -91,7 +92,8 @@ AI developers, like human developers, benefit from structure.
 
 Most people start with an `AGENTS.md` or `CLAUDE.md` file.  This is a great
 start, but I find that the AI agent often forgets what's in there.  The real
-solution here (at least for Claude Code) is Hooks.
+solution for me here (at least for Claude Code) is
+[Hooks](https://code.claude.com/docs/en/hooks).
 
 First, let's outline a couple of annoyingly common problems.
 
@@ -101,7 +103,7 @@ Let's say you tell AI that you want to run tests with `uv`:
 
 > when running tests, use `uv run pytest tests`
 
-While this works sometimes, it often decides to run
+While this works sometimes, AI often decides to run
 
 ```
 $ pytest tests/
@@ -166,17 +168,18 @@ uv run pytest ... | head
 .venv/bin/pytest ...
 ```
 
-Claude Code's permission language sucks.  It only supports prefixes, while we
+Claude Code's permission language sucks.  It only supports prefixes, while I
 wish it could handle regexes, or maybe even just arbitrary Python code.
 
 ### Solution: Hooks for permissions
 
-I have a complex Python script as a hook which overrides the permission
+I have a [complex Python script](#appendix-permissions-file) as a hook which overrides the permission
 system.  It uses regexes, but also arbitrary Python code as logic.  This allows
 me to encode arbitrary combinations of rules.  It's great.
 
-On the rare occasion when Claude asks me for permission for something totally
-safe, I ask Claude to update the permission script accordingly.
+On the rare occasion when Claude asks me for permission for something new, I
+have a running Claude agent that thinks about this file and considers if it
+should update the permission script.
 
 
 ### Solution: Hooks for sounds
@@ -217,7 +220,7 @@ often augment any other structure that I put in place (like Skills).
 
 ## Big Idea: Build Confidence Without Looking at Code
 
-In a recent large PR of mine a somewhat frustrated reviewer said the following:
+In a recent large AI-assisted PR a frustrated reviewer said the following:
 
 > To me, this [size of PR] implies that either
 
@@ -232,15 +235,16 @@ review?  Everyone needs to figure this out for themselves, but my answer is
 We already do this today with human-written code.  I review some code very
 closely, and other code less-so.  Sometimes I rely on a combination of tests,
 familiarity of a well-known author, and a quick glance at the code to before
-saying "sure, seems fine" and pressing the green button.
+saying "sure, seems fine" and pressing the green button.  I might also ask
+"Have you thought of X" and see what they say.
 
 Trusting code without reading all of it isn't new, we're just now in a state
 where we need to review 10x more code, and so we need to get much better at
 establishing confidence that something works without paying human attention all
 the time.
 
-We can augment our ability to write code with AI.  We can augment our ability
-to review code with AI too.
+We can augment our ability to write code with AI.  **We can augment our ability
+to review code with AI too.**
 
 ## Tip: Self-review
 
@@ -256,20 +260,20 @@ benchmark I can type
 > How does this compare in performance to the old version?  I'm particularly
 > interested in memory use.
 
-And that's it.  If it's bad, the agent will say so (and then probably go work
-to make it good).
+And that's it.  If it's bad, the agent will say so (and then diligently work to
+make it good).
 
 ### Grilling
 
-Additionally, if I'm nervous about something subtle like "Is it possible this change
-might unexpectedly affect performance in this other feature?" then I'll ask the
+Additionally, if I'm nervous about something subtle like *"Is it possible this change
+might unexpectedly affect performance in this other feature?"* then I'll ask the
 AI exactly that question:
 
 > Is it possible this change might unexpectedly affect performance in this other feature?
 
 And it'll just go and investigate exactly that question.  Unlike human authors,
 the AI has no ego at stake in its work, and isn't in the least bit lazy.  It's
-our job to ask "have you thought of X" and its job to go learn if that might
+our job to ask *"Have you thought of X"* and its job to go learn if that might
 be an issue.  Don't trust its answer?  Ask it to prove it to you.
 
 AI has flaws, but it is diligent, and it lacks ego.  If you question it, it'll
@@ -307,17 +311,17 @@ they converge to a good solution as-well-or-better-than a senior human engineer
 
 Our job is to construct a system that gives them the right feedback at the
 right time, hopefully without our intervention.  This is the same job we have
-when we build human teams; now it's just more important to do well.
+when we build human teams; now it's just more impactful to do well.
 
 ## Cursor vs Terminal Tools
 
 I started AI development with Cursor.  It was great having the AI experience
 inside a VSCode-like editor, where I could see everything that was going on.
-When I saw terminal-based tools like Claude Code I
-thought "whoa, that doesn't seem sensible, I need to see what's going on".
+When I saw terminal-based tools like Claude Code I thought *"whoa, that doesn't
+seem sensible, I need to see what's going on".*
 
 Today I code with Claude Code, `git diff`, and occasionally `vim`.  I don't
-feel a need or desire to OK every change in the diff.  I've got more important
+feel a need to OK every change in the diff.  I've got more important
 things to do.  I suspect that you do too.
 
 ## Big Idea: Drop Python. Use Rust and TypeScript.
@@ -347,8 +351,8 @@ Python, where I still do most of my testing
 Regarding TypeScript, I still love easy interaction tools like `rich` and
 `textual`, but when the entire React ecosystem is a sentence away and when you
 get to use things like, you know, fonts, there's really no comparison.  Every
-computational developer should learn React, and we should put dashboards on
-everything.
+computational developer should learn the concepts underpinning React (or some
+other frontend framework), and we should put dashboards on everything.
 
 Of course, I still hook into Python for the ecosystem.  Everything is
 Python-importable and I still use the protocols and design patterns developed
@@ -370,9 +374,9 @@ When sticky problems arose, we were able to rely on the Numpy design documents
 (NEPs) which are excellent.
 
 The Numpy team **thought hard** and **wrote clearly**, two hallmarks of
-excellent developers.  This made the job of implementation relatively trivial.
+excellent developers.  This made the job of reimplementation relatively trivial.
 The Numpy development community is famous for doing this well.  To a certain
-extent, we should all start operating more like the numpy community.
+extent, we should all start operating more like the Numpy community.
 
 ## Tip: plans/ and designs/ directories
 
