@@ -423,3 +423,28 @@ a.article-item:hover .article-title {
   --accent-hover: #d97706;
   --shadow-color: rgba(255, 255, 255, 0.35);
 }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
