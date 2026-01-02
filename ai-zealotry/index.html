@@ -931,10 +931,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-not" class="md-nav__link">
+  <a href="#why-not-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Not
+        Why Not AI
       
     </span>
   </a>
@@ -1205,9 +1205,9 @@
 <h1 id="ai-zealotry">AI Zealotry<a class="headerlink" href="#ai-zealotry" title="Permanent link">&para;</a></h1>
 <p>I develop with AI today.  It's great.</p>
 <p>There are many articles you can read on why AI is great (or terrible) or how to
-use it.  This is mine.  I focus on the experience of a fairly senior engineer
-(and why we in particular should use it), on my experience operating within the
-OSS Python Data world, and on practical suggestions that I've found myself
+use it.  This is mine.  I focus on the experience of a senior engineer (and why
+we in particular should use AI), on my experience operating within the OSS
+Python Data world, and on practical suggestions that I've found myself
 repeating to colleagues.</p>
 <p>This article contains learned lessons of two types:</p>
 <ul>
@@ -1216,8 +1216,8 @@ repeating to colleagues.</p>
 </ul>
 <p>We'll interleave these two.  I'm hopeful that this approach will make this more fun.</p>
 <h2 id="why-ai">Why AI<a class="headerlink" href="#why-ai" title="Permanent link">&para;</a></h2>
-<p>AI development is more fun.  I do more of what I like (think, experiment, think
-more) and less of what I don't like (wrestle with computers).</p>
+<p>AI development is more fun.  I do more of what I like (think, experiment,
+write) and less of what I don't like (wrestle with computers).</p>
 <p>I feel both that I can move faster and operate in areas that were previously
 inaccessible to me (like frontend).
 Experienced developers should all be doing this.  We're good enough to avoid AI
@@ -1225,13 +1225,13 @@ Slop, and there's so much we can accomplish today.</p>
 <p>I like this quote from <a href="https://www.stochasticlifestyle.com/a-guide-to-gen-ai-llm-vibecoding-for-expert-programmers/">this blog</a></p>
 <blockquote>
 <p>I get it, you’re too good to vibe code. You’re a senior developer who has been doing this for 20 years and knows the system like the back of your hand.</p>
-<p>...</p>
+<p>[...]</p>
 <p>No, you’re not too good to vibe code. In fact, you’re the only person who should be vibe coding.</p>
 </blockquote>
 <p>I think that really good engineers, the kind that think hard before writing,
-can have a tremendous amount of impact and fun while developing with AI.  I
-wouldn't ever want to go back.</p>
-<h2 id="why-not">Why Not<a class="headerlink" href="#why-not" title="Permanent link">&para;</a></h2>
+can have a tremendous impact and fun while developing with AI.  I
+wouldn't ever go back.</p>
+<h2 id="why-not-ai">Why Not AI<a class="headerlink" href="#why-not-ai" title="Permanent link">&para;</a></h2>
 <p>That being said, there are some serious costs and reasonable reservations to AI
 development.  Let's start by listing those concerns:</p>
 <ul>
@@ -1239,7 +1239,7 @@ development.  Let's start by listing those concerns:</p>
 <li>LLMs generate <em>a lot</em> of junk</li>
 <li>Writing code ourselves builds understanding</li>
 <li>Reviewing code for correctness is the slow part, not writing it</li>
-<li>AI workflows are dehumanizing, just pressing "yes, allow" over and over again</li>
+<li>AI workflows can be dehumanizing when you just press "yes, allow" over and over again</li>
 </ul>
 <p>These are super-valid concerns.  They're also concerns that I suspect came
 around when we developed compilers and people stopped writing assembly by hand,
@@ -1256,10 +1256,11 @@ costs and benefits of a new technology.</p>
 job was to enable AI, rather than the other way around.</p>
 <p>There are many tricks to resolve this (see below), but more broadly <strong>"stop doing
 simple shit"</strong> has been a mantra that I've found myself constantly coming
-back to. The more I reject simple tasks and add automation to my workflow, the
-higher an abstraction I'm able to climb to and the more effectively I'm able to
-work. Our goal in programming is to climb an abstraction ladder and gain more
-intellectual leverage. This requires thought and consistent attention.</p>
+back to. The more I identify and reject simple tasks and add automation to my
+workflow, the higher an abstraction I'm able to climb to and the more
+effectively I'm able to work. Our goal in programming is to climb an
+abstraction ladder and gain more intellectual leverage. This requires thought
+and consistent attention.</p>
 <p>Fortunately AI can help with this.  If you complain and say "I'm always doing
 X" it'll suggest solutions like what I'll talk about below, but more tailored
 to your situation.</p>
@@ -1267,14 +1268,15 @@ to your situation.</p>
 <p>AI developers, like human developers, benefit from structure.</p>
 <p>Most people start with an <code>AGENTS.md</code> or <code>CLAUDE.md</code> file.  This is a great
 start, but I find that the AI agent often forgets what's in there.  The real
-solution here (at least for Claude Code) is Hooks.</p>
+solution for me here (at least for Claude Code) is
+<a href="https://code.claude.com/docs/en/hooks">Hooks</a>.</p>
 <p>First, let's outline a couple of annoyingly common problems.</p>
 <h3 id="example-problem-ignoring-instructions-in-claudemd">Example Problem: Ignoring instructions in CLAUDE.md<a class="headerlink" href="#example-problem-ignoring-instructions-in-claudemd" title="Permanent link">&para;</a></h3>
 <p>Let's say you tell AI that you want to run tests with <code>uv</code>:</p>
 <blockquote>
 <p>when running tests, use <code>uv run pytest tests</code></p>
 </blockquote>
-<p>While this works sometimes, it often decides to run</p>
+<p>While this works sometimes, AI often decides to run</p>
 <div class="highlight"><pre><span></span><code>$ pytest tests/
 command not found: pytest
 </code></pre></div>
@@ -1323,14 +1325,15 @@ timeout 40 uv run pytest ...
 uv run pytest ... | head
 .venv/bin/pytest ...
 </code></pre></div>
-<p>Claude Code's permission language sucks.  It only supports prefixes, while we
+<p>Claude Code's permission language sucks.  It only supports prefixes, while I
 wish it could handle regexes, or maybe even just arbitrary Python code.</p>
 <h3 id="solution-hooks-for-permissions">Solution: Hooks for permissions<a class="headerlink" href="#solution-hooks-for-permissions" title="Permanent link">&para;</a></h3>
-<p>I have a complex Python script as a hook which overrides the permission
+<p>I have a <a href="#appendix-permissions-file">complex Python script</a> as a hook which overrides the permission
 system.  It uses regexes, but also arbitrary Python code as logic.  This allows
 me to encode arbitrary combinations of rules.  It's great.</p>
-<p>On the rare occasion when Claude asks me for permission for something totally
-safe, I ask Claude to update the permission script accordingly.</p>
+<p>On the rare occasion when Claude asks me for permission for something new, I
+have a running Claude agent that thinks about this file and considers if it
+should update the permission script.</p>
 <h3 id="solution-hooks-for-sounds">Solution: Hooks for sounds<a class="headerlink" href="#solution-hooks-for-sounds" title="Permanent link">&para;</a></h3>
 <p>My personal favorite hooks though are these:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;Stop&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -1362,7 +1365,7 @@ action was dehumanizing, so I automated it by asking Claude to play a sound.</p>
 but I've found that Hooks are the most dependable, a great starting place, and
 often augment any other structure that I put in place (like Skills).</p>
 <h2 id="big-idea-build-confidence-without-looking-at-code">Big Idea: Build Confidence Without Looking at Code<a class="headerlink" href="#big-idea-build-confidence-without-looking-at-code" title="Permanent link">&para;</a></h2>
-<p>In a recent large PR of mine a somewhat frustrated reviewer said the following:</p>
+<p>In a recent large AI-assisted PR a frustrated reviewer said the following:</p>
 <blockquote>
 <p>To me, this [size of PR] implies that either</p>
 <ul>
@@ -1377,13 +1380,14 @@ review?  Everyone needs to figure this out for themselves, but my answer is
 <p>We already do this today with human-written code.  I review some code very
 closely, and other code less-so.  Sometimes I rely on a combination of tests,
 familiarity of a well-known author, and a quick glance at the code to before
-saying "sure, seems fine" and pressing the green button.</p>
+saying "sure, seems fine" and pressing the green button.  I might also ask
+"Have you thought of X" and see what they say.</p>
 <p>Trusting code without reading all of it isn't new, we're just now in a state
 where we need to review 10x more code, and so we need to get much better at
 establishing confidence that something works without paying human attention all
 the time.</p>
-<p>We can augment our ability to write code with AI.  We can augment our ability
-to review code with AI too.</p>
+<p>We can augment our ability to write code with AI.  <strong>We can augment our ability
+to review code with AI too.</strong></p>
 <h2 id="tip-self-review">Tip: Self-review<a class="headerlink" href="#tip-self-review" title="Permanent link">&para;</a></h2>
 <h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
 <p>Mostly I establish confidence on AI-generated work by investing heavily in
@@ -1395,18 +1399,18 @@ benchmark I can type</p>
 <p>How does this compare in performance to the old version?  I'm particularly
 interested in memory use.</p>
 </blockquote>
-<p>And that's it.  If it's bad, the agent will say so (and then probably go work
-to make it good).</p>
+<p>And that's it.  If it's bad, the agent will say so (and then diligently work to
+make it good).</p>
 <h3 id="grilling">Grilling<a class="headerlink" href="#grilling" title="Permanent link">&para;</a></h3>
-<p>Additionally, if I'm nervous about something subtle like "Is it possible this change
-might unexpectedly affect performance in this other feature?" then I'll ask the
+<p>Additionally, if I'm nervous about something subtle like <em>"Is it possible this change
+might unexpectedly affect performance in this other feature?"</em> then I'll ask the
 AI exactly that question:</p>
 <blockquote>
 <p>Is it possible this change might unexpectedly affect performance in this other feature?</p>
 </blockquote>
 <p>And it'll just go and investigate exactly that question.  Unlike human authors,
 the AI has no ego at stake in its work, and isn't in the least bit lazy.  It's
-our job to ask "have you thought of X" and its job to go learn if that might
+our job to ask <em>"Have you thought of X"</em> and its job to go learn if that might
 be an issue.  Don't trust its answer?  Ask it to prove it to you.</p>
 <p>AI has flaws, but it is diligent, and it lacks ego.  If you question it, it'll
 investigate thoroughly and critique its own work honestly.</p>
@@ -1434,14 +1438,14 @@ they converge to a good solution as-well-or-better-than a senior human engineer
 (that's my experience at least).</p>
 <p>Our job is to construct a system that gives them the right feedback at the
 right time, hopefully without our intervention.  This is the same job we have
-when we build human teams; now it's just more important to do well.</p>
+when we build human teams; now it's just more impactful to do well.</p>
 <h2 id="cursor-vs-terminal-tools">Cursor vs Terminal Tools<a class="headerlink" href="#cursor-vs-terminal-tools" title="Permanent link">&para;</a></h2>
 <p>I started AI development with Cursor.  It was great having the AI experience
 inside a VSCode-like editor, where I could see everything that was going on.
-When I saw terminal-based tools like Claude Code I
-thought "whoa, that doesn't seem sensible, I need to see what's going on".</p>
+When I saw terminal-based tools like Claude Code I thought <em>"whoa, that doesn't
+seem sensible, I need to see what's going on".</em></p>
 <p>Today I code with Claude Code, <code>git diff</code>, and occasionally <code>vim</code>.  I don't
-feel a need or desire to OK every change in the diff.  I've got more important
+feel a need to OK every change in the diff.  I've got more important
 things to do.  I suspect that you do too.</p>
 <h2 id="big-idea-drop-python-use-rust-and-typescript">Big Idea: Drop Python. Use Rust and TypeScript.<a class="headerlink" href="#big-idea-drop-python-use-rust-and-typescript" title="Permanent link">&para;</a></h2>
 <p>I deeply respect the philosophical position of Python, which I'll state as
@@ -1466,8 +1470,8 @@ Python, where I still do most of my testing</li>
 <p>Regarding TypeScript, I still love easy interaction tools like <code>rich</code> and
 <code>textual</code>, but when the entire React ecosystem is a sentence away and when you
 get to use things like, you know, fonts, there's really no comparison.  Every
-computational developer should learn React, and we should put dashboards on
-everything.</p>
+computational developer should learn the concepts underpinning React (or some
+other frontend framework), and we should put dashboards on everything.</p>
 <p>Of course, I still hook into Python for the ecosystem.  Everything is
 Python-importable and I still use the protocols and design patterns developed
 by the Python data community.  Those are the durable assets of Python.  Not the
@@ -1484,9 +1488,9 @@ mostly it was because:</p>
 <p>When sticky problems arose, we were able to rely on the Numpy design documents
 (NEPs) which are excellent.</p>
 <p>The Numpy team <strong>thought hard</strong> and <strong>wrote clearly</strong>, two hallmarks of
-excellent developers.  This made the job of implementation relatively trivial.
+excellent developers.  This made the job of reimplementation relatively trivial.
 The Numpy development community is famous for doing this well.  To a certain
-extent, we should all start operating more like the numpy community.</p>
+extent, we should all start operating more like the Numpy community.</p>
 <h2 id="tip-plans-and-designs-directories">Tip: plans/ and designs/ directories<a class="headerlink" href="#tip-plans-and-designs-directories" title="Permanent link">&para;</a></h2>
 <p>Reading on Reddit, I think that this is common, but I keep two directories in
 each repository,</p>
