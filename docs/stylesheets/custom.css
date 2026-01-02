@@ -3,6 +3,8 @@
   --accent: #b45309;
   --accent-hover: #d97706;
   --shadow-color: rgba(0, 0, 0, 0.15);
+  --page-bg: #f5f5f5;
+  --content-bg: #fff;
 }
 
 /* Body text */
@@ -421,7 +423,31 @@ a.article-item:hover .article-title {
   --md-default-bg-color--light: #0a0a0a;
   --accent: #c2700c;
   --accent-hover: #d97706;
-  --shadow-color: rgba(255, 255, 255, 0.35);
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --page-bg: #111;
+  --content-bg: #000;
+}
+
+/* Page background */
+.md-main {
+  background: var(--page-bg);
+}
+
+.md-main__inner {
+  margin-top: 0;
+}
+
+/* Content card */
+.md-content {
+  background: var(--content-bg);
+  max-width: 850px;
+  box-shadow: 0 1px 3px var(--shadow-color);
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+
+.md-sidebar__inner {
+  padding-top: 1.5rem;
 }
 
 /* Scrollbar styling */
