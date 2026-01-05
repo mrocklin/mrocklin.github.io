@@ -16,7 +16,9 @@ jobs:
       uses: astral-sh/setup-uv@v4
 
     - name: Install cairo for social cards
-      run: sudo apt-get install -y libcairo2-dev
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libcairo2-dev
 
     - name: Install dependencies
       run: uv sync
