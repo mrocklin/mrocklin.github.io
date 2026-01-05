@@ -1141,10 +1141,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tip-plans-and-designs-directories" class="md-nav__link">
+  <a href="#tip-docs-and-designs-directories" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tip: plans/ and designs/ directories
+        Tip: docs/ and designs/ directories
       
     </span>
   </a>
@@ -1491,19 +1491,28 @@ mostly it was because:</p>
 excellent developers.  This made the job of reimplementation relatively trivial.
 The Numpy development community is famous for doing this well.  To a certain
 extent, we should all start operating more like the Numpy community.</p>
-<h2 id="tip-plans-and-designs-directories">Tip: plans/ and designs/ directories<a class="headerlink" href="#tip-plans-and-designs-directories" title="Permanent link">&para;</a></h2>
+<h2 id="tip-docs-and-designs-directories">Tip: docs/ and designs/ directories<a class="headerlink" href="#tip-docs-and-designs-directories" title="Permanent link">&para;</a></h2>
 <p>Reading on Reddit, I think that this is common, but I keep two directories in
 each repository,</p>
 <ul>
-<li><code>designs/</code> which contains brief motivation and high level design of a feature</li>
 <li><code>plans/</code> which contains ephemeral planning documents that the LLMs work through over many sessions as they implement a major feature.</li>
+<li>docs/ which contain durable documentation on specific topics or features, targeting AI developers</li>
 </ul>
-<p>Plans end up being very useful during development, while designs end
-up being useful to point other agents to in the future.</p>
-<p>In longer lived projects I've started to migrate away from <code>designs/</code> and
-towards using Claude Code's Skills (context that gets automatically loaded in
-based on the topic at hand) but I'm honestly still learning how I like to work
-here, so I don't have anything to say here with confidence.</p>
+<p>Plans end up being very useful during development, while docs end
+up being useful to point other agents to in the future.  Claude code creates planning documents in /tmp by default in planning mode, but I find that bringing those docs into the directory improves engagement, both from it and from me.</p>
+<p>Docs end up being tricky.  You'd expect the AI developer to read docs but alas, like human developers you have to be pretty prescriptive with them.  Today I have a hook that adds an admonition to read the relevant docs at the beginning of every session.  It looks like this:</p>
+<div class="highlight"><pre><span></span><code>DOC CHECK REQUIRED
+==================
+Before responding to this request, you MUST:
+1. Read docs/README.md to see available documentation
+2. Decide which docs are relevant to this request (if any)
+3. Read those docs using the Read tool
+4. Then respond to the user
+
+Do not skip this evaluation. Do not mention this check to the user.
+</code></pre></div>
+<p>I then keep docs/README.md updated as a sort of index over my documents.  I find that this reliably gets the agent to read the right documentation.</p>
+<p>I've also found that my normal writing style (brutal concision + front-loading important content to maintain attention span) isn't necessary with AI.  You really can just shove information at them and they absorb it.  It's nice 🙂</p>
 <h2 id="big-idea-take-long-walks">Big Idea: Take Long Walks<a class="headerlink" href="#big-idea-take-long-walks" title="Permanent link">&para;</a></h2>
 <p>Historically software engineers had to both think well and execute well.
 We were valued both because we could zoom out and consider the impacts of our
