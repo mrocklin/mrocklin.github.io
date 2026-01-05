@@ -378,21 +378,35 @@ excellent developers.  This made the job of reimplementation relatively trivial.
 The Numpy development community is famous for doing this well.  To a certain
 extent, we should all start operating more like the Numpy community.
 
-## Tip: plans/ and designs/ directories
+## Tip: plans/ and docs/ directories
 
-Reading on Reddit, I think that this is common, but I keep two directories in
-each repository,
+I keep two directories in each repository:
 
--  `designs/` which contains brief motivation and high level design of a feature
 -  `plans/` which contains ephemeral planning documents that the LLMs work through over many sessions as they implement a major feature.
+-  `docs/` which contain durable documentation on specific topics or features, targeting AI developers
 
-Plans end up being very useful during development, while designs end
-up being useful to point other agents to in the future.
+Plans end up being very useful during development, while docs end
+up being useful to point other agents to in the future.  Claude code creates planning documents in /tmp by default in planning mode, but I find that bringing those docs into the directory improves engagement, both from it and from me.
 
-In longer lived projects I've started to migrate away from `designs/` and
-towards using Claude Code's Skills (context that gets automatically loaded in
-based on the topic at hand) but I'm honestly still learning how I like to work
-here, so I don't have anything to say here with confidence.
+Docs end up being tricky.  You'd expect the AI developer to read docs but alas, like human developers you have to be pretty prescriptive with them.  Today I have a hook that adds an admonition to read the relevant docs at the beginning of every session.  It looks like this:
+
+```
+DOC CHECK REQUIRED
+==================
+
+Before responding to this request, you MUST:
+
+1. Read docs/README.md to see available documentation
+2. Decide which docs are relevant to this request (if any)
+3. Read those docs using the Read tool
+4. Then respond to the user
+
+Do not skip this evaluation. Do not mention this check to the user.
+```
+
+I then keep docs/README.md updated as a sort of index over my documents.  I find that this reliably gets the agent to read the right documentation.
+
+I've also found that my normal writing style (brutal concision + front-loading important content to maintain attention span) isn't necessary with AI.  You really can just shove information at them and they absorb it.  It's nice 🙂
 
 ## Big Idea: Take Long Walks
 
