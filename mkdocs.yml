@@ -37,6 +37,9 @@ hooks:
 
 plugins:
   - search
+  - social:
+      cards_layout_dir: layouts
+      cards_layout: custom
   - rss:
       date_from_meta:
         as_creation: date

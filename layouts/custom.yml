@@ -1,0 +1,93 @@
+# Custom social card layout with profile image
+
+definitions:
+  - &background_color "#ffffff"
+  - &color "#000000"
+  - &font_family Roboto
+
+  - &site_name >-
+    {{ config.site_name }}
+
+  - &page_title >-
+    {{ page.meta.get("title", page.title) }}
+
+  - &page_description >-
+    {{ page.meta.get("description", config.site_description) | x }}
+
+  - &page_title_with_site_name >-
+    {%- if not page.is_homepage -%}
+      {{ page.meta.get("title", page.title) }} - {{ config.site_name }}
+    {%- else -%}
+      {{ config.site_name }}
+    {%- endif -%}
+
+tags:
+  og:type: website
+  og:title: *page_title_with_site_name
+  og:description: *page_description
+  og:image: "{{ image.url }}"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:url: "{{ page.canonical_url }}"
+  twitter:card: summary_large_image
+  twitter:title: *page_title_with_site_name
+  twitter:description: *page_description
+  twitter:image: "{{ image.url }}"
+
+size: { width: 1200, height: 630 }
+layers:
+
+  # White background
+  - background:
+      color: *background_color
+
+  # Amber accent strip on left edge
+  - size: { width: 8, height: 630 }
+    offset: { x: 0, y: 0 }
+    background:
+      color: "#d97706"
+
+  # Profile image on the right
+  - size: { width: 400, height: 630 }
+    offset: { x: 800, y: 0 }
+    background:
+      image: docs/assets/profile-black-white.png
+
+  # Site name
+  - size: { width: 700, height: 42 }
+    offset: { x: 64, y: 64 }
+    typography:
+      content: *site_name
+      color: *color
+      font:
+        family: *font_family
+        style: Bold
+
+  # Page title
+  - size: { width: 680, height: 280 }
+    offset: { x: 62, y: 140 }
+    typography:
+      content: *page_title
+      align: start
+      color: *color
+      line:
+        amount: 3
+        height: 1.25
+      font:
+        family: *font_family
+        style: Bold
+
+  # Page description
+  - size: { width: 680, height: 80 }
+    offset: { x: 64, y: 480 }
+    typography:
+      content: *page_description
+      align: start
+      color: "#666666"
+      line:
+        amount: 2
+        height: 1.5
+      font:
+        family: *font_family
+        style: Regular

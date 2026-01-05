@@ -1,18 +1,5 @@
 {% extends "base.html" %}
 
-{% block extrahead %}
-{{ super() }}
-{% if page %}
-<meta property="og:type" content="article" />
-<meta property="og:title" content="{{ page.title }} - {{ config.site_name }}" />
-<meta property="og:description" content="{{ page.meta.description | default(config.site_description) }}" />
-<meta property="og:url" content="{{ page.canonical_url }}" />
-<meta property="og:site_name" content="{{ config.site_name }}" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{{ page.title }} - {{ config.site_name }}" />
-<meta name="twitter:description" content="{{ page.meta.description | default(config.site_description) }}" />
-{% endif %}
-{% endblock %}
 
 {% block hero %}
 <!-- Floating hamburger menu - only visible on mobile -->
