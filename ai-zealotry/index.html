@@ -1141,10 +1141,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tip-docs-and-designs-directories" class="md-nav__link">
+  <a href="#tip-plans-and-docs-directories" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tip: docs/ and designs/ directories
+        Tip: plans/ and docs/ directories
       
     </span>
   </a>
@@ -1491,19 +1491,20 @@ mostly it was because:</p>
 excellent developers.  This made the job of reimplementation relatively trivial.
 The Numpy development community is famous for doing this well.  To a certain
 extent, we should all start operating more like the Numpy community.</p>
-<h2 id="tip-docs-and-designs-directories">Tip: docs/ and designs/ directories<a class="headerlink" href="#tip-docs-and-designs-directories" title="Permanent link">&para;</a></h2>
-<p>Reading on Reddit, I think that this is common, but I keep two directories in
-each repository,</p>
+<h2 id="tip-plans-and-docs-directories">Tip: plans/ and docs/ directories<a class="headerlink" href="#tip-plans-and-docs-directories" title="Permanent link">&para;</a></h2>
+<p>I keep two directories in each repository:</p>
 <ul>
 <li><code>plans/</code> which contains ephemeral planning documents that the LLMs work through over many sessions as they implement a major feature.</li>
-<li>docs/ which contain durable documentation on specific topics or features, targeting AI developers</li>
+<li><code>docs/</code> which contain durable documentation on specific topics or features, targeting AI developers</li>
 </ul>
 <p>Plans end up being very useful during development, while docs end
 up being useful to point other agents to in the future.  Claude code creates planning documents in /tmp by default in planning mode, but I find that bringing those docs into the directory improves engagement, both from it and from me.</p>
 <p>Docs end up being tricky.  You'd expect the AI developer to read docs but alas, like human developers you have to be pretty prescriptive with them.  Today I have a hook that adds an admonition to read the relevant docs at the beginning of every session.  It looks like this:</p>
 <div class="highlight"><pre><span></span><code>DOC CHECK REQUIRED
 ==================
+
 Before responding to this request, you MUST:
+
 1. Read docs/README.md to see available documentation
 2. Decide which docs are relevant to this request (if any)
 3. Read those docs using the Read tool
