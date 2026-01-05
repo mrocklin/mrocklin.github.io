@@ -1,6 +1,7 @@
 ---
 title: Small Scope Reviews
-tagline: The secret to happy devs
+tagline: The secret to happy devs.
+description: A fast review cycle is incredibly valuable. Distinguish obligatory comments that stop regressions from commendable ones that add enhancements. Better is the enemy of good.
 date: 2022-03-26
 blogpost: true
 author: Matthew Rocklin

@@ -1,7 +1,8 @@
 ---
 title: SatCamp Retrospective
 date: 2024-10-04
-description: The Earth observation ecosystem from an outsider's perspective
+tagline: The Earth observation ecosystem from an outsider's perspective.
+description: Satellite imagery's potential is incredible, but companies in this space are struggling. An outsider's first impressions from an unconference in Boulder.
 blogpost: true
 author: Matthew Rocklin
 ---

@@ -1,5 +1,7 @@
 ---
 title: Reddit, Twitter, and LinkedIn Comparison
+tagline: Twitter is less effective than it once was. What's the best alternative?
+description: I pushed the same message to Reddit, Twitter, LinkedIn, and Mastodon and tracked views and engagement. Reddit won by a mile.
 date: 2023-11-10
 blogpost: true
 author: Matthew Rocklin

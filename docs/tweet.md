@@ -1,5 +1,7 @@
 ---
 title: Ideal Tweet
+tagline: Tweets should respect the reader through brevity and structure.
+description: Start with a short single-line hook, then deliver actual novel content. People skim—get to the point immediately.
 date: 2020-08-18
 blogpost: true
 author: Matthew Rocklin

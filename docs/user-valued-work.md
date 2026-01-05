@@ -1,5 +1,7 @@
 ---
 title: User Valued Work
+tagline: Distinguishing user-facing work from developer-facing work.
+description: Developer-valued work is valuable, but only in that it makes us faster at delivering user-valued work. Keep that distinction clear when prioritizing.
 date: 2022-08-24
 blogpost: true
 author: Matthew Rocklin

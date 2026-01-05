@@ -1,6 +1,7 @@
 ---
 title: Avoid Indirection
-tagline: for human readability
+tagline: For human readability.
+description: Abstraction has costs. Every layer you add is another place readers have to look. Sometimes the clearest code is the most direct.
 date: 2019-06-23
 blogpost: true
 author: Matthew Rocklin

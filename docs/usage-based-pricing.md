@@ -1,5 +1,7 @@
 ---
 title: Usage Based Pricing
+tagline: We're moving away from usage based pricing.
+description: It was good for a while but became a dead end. The pros, cons, and alternatives for capturing value while making customers feel good about paying.
 date: 2024-09-04
 blogpost: true
 author: Matthew Rocklin

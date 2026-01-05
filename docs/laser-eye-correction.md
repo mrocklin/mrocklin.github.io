@@ -1,5 +1,7 @@
 ---
 title: Laser Eye Correction
+tagline: My experience with PRK/ASA surgery.
+description: From deciding to explore the procedure to having my eyes lasered in two weeks. Long, rambling, and nothing to do with startups or tech.
 date: 2023-03-06
 blogpost: true
 author: Matthew Rocklin

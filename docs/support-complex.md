@@ -1,7 +1,8 @@
 ---
 title: Python Support is Socially Complex
 date: 2024-12-09
-description: Ambiguity of responsibility makes support difficult for everyone
+tagline: Ambiguity of responsibility makes support difficult for everyone.
+description: When a Python workflow fails, most of the work is diagnosing whose fault it is. The ecosystem's distributed ownership means no one has clear responsibility.
 blogpost: true
 author: Matthew Rocklin
 ---

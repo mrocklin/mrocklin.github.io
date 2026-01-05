@@ -1,6 +1,7 @@
 ---
 title: Transactionalism vs Respect
-tagline: Why I hate swag
+tagline: Why I hate swag.
+description: "Can I ask for your help?" makes me feel like a person who helps people. "I'll pay you back" makes me feel like I'm trading favors. Incentives feel transactional.
 date: 2025-05-05
 blogpost: true
 author: Matthew Rocklin

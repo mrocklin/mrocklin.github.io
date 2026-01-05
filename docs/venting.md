@@ -1,7 +1,8 @@
 ---
 title: Venting and Constructive Communication
 date: 2024-10-25
-description: To Vent is Human
+tagline: To vent is human.
+description: Constructive conversation and venting differ by one question: "Will these words help me achieve my goal?" If no, we're probably venting.
 blogpost: true
 author: Matthew Rocklin
 ---

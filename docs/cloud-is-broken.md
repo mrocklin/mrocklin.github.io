@@ -1,7 +1,8 @@
 ---
 title: Cloud Computing is Broken
 date: 2024-12-03
-description: Let's strive towards excellence on boring problems
+tagline: Let's strive towards excellence on boring problems.
+description: What hunger am I seeing on the ground? Boring shit. People struggle most with the basics of cloud computing. The promise remains undelivered.
 blogpost: true
 author: Matthew Rocklin
 ---

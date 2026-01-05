@@ -1,6 +1,7 @@
 ---
 title: Hammers and Nailguns
 tagline: What is a tool for?
+description: A nailgun puts nails into wood. A hammer whacks things. Simple tools with humble opinions are more versatile than specialized ones.
 date: 2025-01-06
 blogpost: true
 author: Matthew Rocklin

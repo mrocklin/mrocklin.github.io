@@ -1,6 +1,7 @@
 ---
 title: Rethinking My Website and Blog
-og:title: Rethinking My Website and Blog
+tagline: How we read and write shapes how we think.
+description: I felt smarter and happier pre-Twitter. I'm turning back to blogging—optimizing for longer attention spans and mixing evergreen with timely content.
 date: 2023-01-02
 blogpost: true
 author: Matthew Rocklin

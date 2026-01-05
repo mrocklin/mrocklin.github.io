@@ -1,5 +1,7 @@
 ---
 title: Over Grown
+tagline: I intentionally shrunk Coiled from 40 to 20 people.
+description: Painful, but we moved faster as a result. More smart people doesn't make you go faster. Often the opposite.
 date: 2022-08-09
 blogpost: true
 author: Matthew Rocklin

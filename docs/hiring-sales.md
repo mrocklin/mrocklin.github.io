@@ -1,7 +1,8 @@
 ---
 title: Hiring Sales
 date: 2024-04-29
-description:
+tagline: Relaunching enterprise sales after improving product-market fit.
+description: We fired the sales team when our product was bad. Now it's good. Finding the right early sales hire is an interesting challenge.
 blogpost: true
 author: Matthew Rocklin
 ---

@@ -1,5 +1,7 @@
 ---
 title: Startup Advice
+tagline: I started a company and made many mistakes.
+description: Most advice is wrong—not because advisors are dumb, but because their experiences don't transfer. The wisest person for your situation is probably yourself.
 date: 2022-09-05
 blogpost: true
 author: Matthew Rocklin

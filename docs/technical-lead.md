@@ -1,5 +1,7 @@
 ---
 title: Tech Leads
+tagline: Leverage of management without the administrative burden.
+description: Tech leads steer efforts technically using soft power. It's a really fun role. Here are behaviors that make for a good one.
 date: 2021-06-24
 blogpost: true
 author: Matthew Rocklin

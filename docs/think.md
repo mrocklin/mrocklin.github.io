@@ -1,7 +1,8 @@
 ---
 title: Think for yourself
 og:title: Think for yourself
-tagline: ...
+tagline: No one knows how to do your job.
+description: In dynamic environments, historical advice often doesn't apply. Imposter syndrome is appropriate—but so is trusting your own thinking.
 date: 2022-12-26
 blogpost: true
 category: startups

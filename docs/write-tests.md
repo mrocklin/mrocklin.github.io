@@ -1,5 +1,7 @@
 ---
 title: Write Tests
+tagline: Tests are important for community-driven open source software.
+description: Testing feels like flossing—theoretically important. But if you contribute to long-term software with many collaborators, your tests will outlive your source code several times over.
 date: 2016-02-08
 blogpost: true
 author: Matthew Rocklin

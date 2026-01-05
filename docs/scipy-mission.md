@@ -1,7 +1,8 @@
 ---
 title: SciPy Mission
+tagline: A community of science nerds that unexpectedly changed the world.
+description: The SciPy community evolved from accelerating science, to enabling data understanding, to now—making people's lives more comfortable. The mission keeps growing.
 date: 2022-08-01
-tagline:
 tags: []
 blogpost: true
 author: Matthew Rocklin

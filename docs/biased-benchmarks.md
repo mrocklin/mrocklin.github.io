@@ -1,6 +1,7 @@
 ---
 title: Biased Benchmarks
-description: Honesty is hard
+tagline: Honesty is hard.
+description: Fair benchmarks are surprisingly difficult even with best intentions. We judge others by our objectives, fail to use their projects with expertise, and gravitate toward cases where we excel.
 date: 2017-03-09
 blogpost: true
 author: Matthew Rocklin

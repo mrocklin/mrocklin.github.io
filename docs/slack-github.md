@@ -1,5 +1,7 @@
 ---
 title: Why I Avoid Slack
+tagline: I encourage technical conversations on GitHub instead.
+description: Real-time chat makes everyone feel productive but does little for long-term consensus building. I prefer public, permanent, searchable, cross-referenceable discussions.
 date: 2019-02-28
 blogpost: true
 author: Matthew Rocklin

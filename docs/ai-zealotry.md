@@ -1,7 +1,8 @@
 ---
 title: AI Zealotry
 date: 2025-12-31
-description: How I write with AI today
+tagline: How I write with AI today.
+description: Senior engineers are best positioned to benefit from AI. We're good enough to avoid slop, and there's so much we can accomplish. I wouldn't go back.
 blogpost: true
 author: Matthew Rocklin
 ---

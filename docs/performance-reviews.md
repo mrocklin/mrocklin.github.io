@@ -1,5 +1,7 @@
 ---
 title: Performance Reviews
+tagline: Feedback is critical for alignment and growth, but really awkward.
+description: Give critical feedback from voices other than your own. People are different—treat them differently based on need.
 date: 2023-02-14
 blogpost: true
 author: Matthew Rocklin

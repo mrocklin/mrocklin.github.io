@@ -1,5 +1,7 @@
 ---
 title: Decision Fatigue
+tagline: Making decisions is hard work, even low-stakes ones.
+description: When you hit a roadblock, don't ask "what should we do?" Own the problem. Propose a solution. Help your team by carrying the weight yourself.
 date: 2023-03-18
 blogpost: true
 author: Matthew Rocklin

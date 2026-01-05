@@ -1,7 +1,8 @@
 ---
 title: What Does Pangeo 2.0 Look Like?
 date: 2024-09-18
-description: Past, present, and future of scalable geoscience in Python
+tagline: Past, present, and future of scalable geoscience in Python.
+description: In 2018 we unveiled a new architecture for scalable cloud Python. It was great, but also fragile and limited. What comes next?
 blogpost: true
 author: Matthew Rocklin
 ---

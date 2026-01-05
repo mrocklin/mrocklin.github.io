@@ -1,5 +1,7 @@
 ---
 title: Startup Metrics
+tagline: Common OSS and VC metrics are flawed.
+description: Hockey stick growth and GitHub stars sound great, but the reality is more nuanced. Dask took six years of listening and diligent community service.
 date: 2020-10-28
 blogpost: true
 author: Matthew Rocklin

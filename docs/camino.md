@@ -1,7 +1,8 @@
 ---
 title: I Walked Across Spain
 date: 2025-07-14
-description: Some notes on walking the Camino de Santiago
+tagline: Some notes on walking the Camino de Santiago.
+description: Reflections from 27 days and 500 miles across Spain. The overlapping physical, social, cultural, and spiritual layers that make this pilgrimage meaningfully different.
 blogpost: true
 author: Matthew Rocklin
 ---

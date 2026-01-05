@@ -1,6 +1,7 @@
 ---
 title: Dictionaries v. Objects
-description: a story of shared abstractions
+tagline: A story of shared abstractions.
+description: The mechanisms we choose to store and share data strongly impact the longevity of the code we write. When do we transition from dicts to custom classes?
 date:  2013-09-02
 blogpost: true
 author: Matthew Rocklin

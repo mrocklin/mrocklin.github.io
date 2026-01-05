@@ -1,6 +1,7 @@
 ---
 title: Short Blogposts
-tagline: reducing expectations for the win
+tagline: Reducing expectations for the win.
+description: I encourage colleagues to write blogposts frequently. It informs your community, increases visibility, and focuses you on work relevant to others.
 date: 2019-06-25
 blogpost: true
 author: Matthew Rocklin

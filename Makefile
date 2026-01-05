@@ -10,4 +10,4 @@ build:
 	uv run mkdocs build
 
 clean:
-	rm -rf site/
+	rm -rf site/ .cache/

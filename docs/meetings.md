@@ -1,5 +1,7 @@
 ---
 title: Meetings
+tagline: I cancelled all my regular meetings and logged off Slack.
+description: It made a huge difference. I learned that it's easy to spend energy on routine activities, think "I'm doing my job", and be completely wrong.
 date: 2022-12-02
 blogpost: true
 author: Matthew Rocklin

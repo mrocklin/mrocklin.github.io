@@ -1,5 +1,7 @@
 ---
 title: Offsites
+tagline: I love remote work, but sometimes it sucks.
+description: Remote teams accrue alignment debt and interpersonal friction. Offsites rapidly pay down that debt so everyone can go off and work independently again.
 date: 2022-09-12
 blogpost: true
 author: Matthew Rocklin

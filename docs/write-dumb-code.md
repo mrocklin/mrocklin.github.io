@@ -1,5 +1,7 @@
 ---
 title: Write Dumb Code
+tagline: The best contribution is removing lines of code.
+description: We should write code that novice programmers can understand without explanation. After maintaining code, I think differently about showing off what I know.
 date: 2018-01-27
 blogpost: true
 author: Matthew Rocklin

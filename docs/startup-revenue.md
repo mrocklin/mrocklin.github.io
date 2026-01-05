@@ -1,6 +1,8 @@
 ---
 title: Revenue
 og:title: Startup Revenue
+tagline: VC funded startups are weird.
+description: They care more about valuation than revenue, and only certain kinds of revenue matter. A taxonomy of good and bad revenue from selling open source software.
 date: 2022-07-25
 blogpost: true
 author: Matthew Rocklin

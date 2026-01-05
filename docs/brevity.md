@@ -1,6 +1,7 @@
 ---
 title: Short attention span
-tagline: Brevity is the soul of wit
+tagline: Brevity is the soul of wit.
+description: Speaking truth is easy. Getting people to listen is hard. Practical advice on respecting your reader through an attention span budget.
 date: 2020-07-13
 blogpost: true
 author: Matthew Rocklin

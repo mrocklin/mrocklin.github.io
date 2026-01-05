@@ -1,7 +1,8 @@
 ---
 title: Audio-Visual Setup
 date: 2022-12-18
-description: HD is the new tall
+tagline: HD is the new tall.
+description: How we present ourselves has unreasonable effectiveness on perception. An excellent Zoom setup costs $2000 and a day—anyone can achieve the unfair advantage that tall people have naturally.
 blogpost: true
 author: Matthew Rocklin
 category: writing

@@ -1,5 +1,7 @@
 ---
 title: Craft Minimal Bug Reports
+tagline: An incredible service to open source communities.
+description: Maintainers' willingness to help you for free is optional. Minimal, complete, verifiable examples take 10-30 minutes but dramatically increase your chances of getting help.
 tags: [Programming, scipy, Python]
 date: 2018-02-28
 blogpost: true

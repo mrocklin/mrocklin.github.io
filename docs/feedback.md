@@ -1,6 +1,7 @@
 ---
 title: How GitHub taught me to Micromanage
-og:title: The comedy and tragedy of detailed feedback
+tagline: The comedy and tragedy of detailed feedback.
+description: Open source code review taught me to give intense, detailed feedback. Then I became a manager and learned why that doesn't always translate.
 date: 2024-05-11
 blogpost: true
 author: Matthew Rocklin

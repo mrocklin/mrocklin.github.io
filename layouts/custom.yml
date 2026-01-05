@@ -11,6 +11,9 @@ definitions:
   - &page_title >-
     {{ page.meta.get("title", page.title) }}
 
+  - &page_tagline >-
+    {{ page.meta.get("tagline", "") | x }}
+
   - &page_description >-
     {{ page.meta.get("description", config.site_description) | x }}
 
@@ -78,16 +81,30 @@ layers:
         family: *font_family
         style: Bold
 
-  # Page description
-  - size: { width: 680, height: 80 }
-    offset: { x: 64, y: 480 }
+  # Tagline (bold, darker)
+  - size: { width: 680, height: 40 }
+    offset: { x: 64, y: 460 }
+    typography:
+      content: *page_tagline
+      align: start
+      color: "#333333"
+      line:
+        amount: 1
+        height: 1.5
+      font:
+        family: *font_family
+        style: Bold
+
+  # Page description (lighter, smaller)
+  - size: { width: 680, height: 60 }
+    offset: { x: 64, y: 510 }
     typography:
       content: *page_description
       align: start
       color: "#666666"
       line:
         amount: 2
-        height: 1.5
+        height: 1.4
       font:
         family: *font_family
         style: Regular

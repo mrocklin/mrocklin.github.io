@@ -1,6 +1,7 @@
 ---
 title: Stability Bias
-tagline: Optimizing for past and future users
+tagline: We optimize more for current users than future users.
+description: By not releasing due to regressions, we accept regressions in reverse. By not fixing confusing APIs, we confuse all future users. Stability has hidden costs.
 date: 2022-12-02
 blogpost: true
 author: Matthew Rocklin

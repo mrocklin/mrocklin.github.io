@@ -1,5 +1,7 @@
 ---
 title: SaaS Go-to-Market
+tagline: Our product is good enough that people like it and pay us. But we don't have many customers.
+description: A snapshot of where Coiled is on product and GTM, written for internal use but useful for other early-stage SaaS companies.
 date: 2023-02-01
 blogpost: true
 author: Matthew Rocklin

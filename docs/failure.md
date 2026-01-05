@@ -1,5 +1,7 @@
 ---
 title: Failure
+tagline: Most startups fail, yet most CEOs project inevitable success.
+description: Someone has to pay the psychological cost of uncertainty. I choose honesty, even when it has negative consequences.
 date: 2022-09-05
 blogpost: true
 author: Matthew Rocklin

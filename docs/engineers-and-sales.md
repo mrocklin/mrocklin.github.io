@@ -1,6 +1,7 @@
 ---
 title: Listen to sell
-tagline: A practical tip for for engineers in sales calls
+tagline: A practical tip for engineers in sales calls.
+description: Resist the urge to answer technical questions. We want to show off how things work, but we often dive too deep before understanding the customer's actual problem.
 date: 2019-12-05
 blogpost: true
 author: Matthew Rocklin

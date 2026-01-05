@@ -1,5 +1,7 @@
 ---
 title: How I Almost Quit My Job, and How Being Selfish Saved Me
+tagline: Positions of leverage feel great, but result in burnout.
+description: When a small amount of your work helps others a great deal, of course you sacrifice. You'd be a monster not to. But your ego can fade in service of your project.
 date: 2024-09-20
 blogpost: true
 author: Matthew Rocklin

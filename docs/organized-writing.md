@@ -1,6 +1,7 @@
 ---
 title: Thoughtful Professional Writing
-tagline: The hard part about writing is thinking
+tagline: The hard part about writing is thinking.
+description: Speaking flows at the speed of thought. Writing forces you to organize first. This is hard on you but easy on your reader.
 date: 2025-05-07
 blogpost: true
 author: Matthew Rocklin
