@@ -1,6 +1,6 @@
-# Matthew Rocklin
+![](assets/profile.png){ width="150px" align="right" }
 
-![](assets/profile-circle.png){ width="200px" align="right" }
+# Matthew Rocklin
 
 Hello 👋!
 
