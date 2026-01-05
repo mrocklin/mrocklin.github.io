@@ -9,8 +9,6 @@
         <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
       
       
-        <meta name="author" content="Matthew Rocklin">
-      
       
         <link rel="canonical" href="https://matthewrocklin.com/senior-engineer/">
       
@@ -28,7 +26,7 @@
     
     
       
-        <title>Senior Engineers - Matthew Rocklin</title>
+        <title>Senior engineer - Matthew Rocklin</title>
       
     
     
@@ -62,7 +60,20 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Senior engineer - Matthew Rocklin" />
+<meta property="og:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/senior-engineer.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://matthewrocklin.com/senior-engineer/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Senior engineer - Matthew Rocklin" />
+<meta property="twitter:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/senior-engineer.png" />
+</head>
   
   
     
@@ -872,10 +883,6 @@
         </li>
         
         <li class="md-nav__item">
-          <a href="../fail-in-public/" class="md-nav__link">Twitter, LinkedIn, and Failing in Public</a>
-        </li>
-        
-        <li class="md-nav__item">
           <a href="../camino/" class="md-nav__link">I Walked Across Spain</a>
         </li>
         
@@ -884,7 +891,11 @@
         </li>
         
         <li class="md-nav__item">
-          <a href="../transactionalism/" class="md-nav__link">Transactionalism vs Respect</a>
+          <a href="../hammers-and-nailguns/" class="md-nav__link">Hammers and Nailguns</a>
+        </li>
+        
+        <li class="md-nav__item">
+          <a href="../support-complex/" class="md-nav__link">Python Support is Socially Complex</a>
         </li>
         
         <li class="md-nav__item">
@@ -1047,6 +1058,15 @@
 
 
 
+<hr />
+<p>title: Senior Engineers
+tagline: There's no obvious scale to measure programmers.
+description: My criteria for senior engineers: handle vague requirements, seek context, connect with stakeholders, take ownership, communicate regularly, handle uncertainty, and take vacations.
+date: 2019-11-09
+blogpost: true
+author: Matthew Rocklin
+category: engineering</p>
+<hr />
 <h1 id="senior-engineers">Senior Engineers<a class="headerlink" href="#senior-engineers" title="Permanent link">&para;</a></h1>
 <p>Software development is both a highly technical and a highly creative process.
 Programmers are reasonably proud of their abilities and experience,
@@ -1195,65 +1215,12 @@ technical, organizational, and emotional maturity.</p>
 
 
 
-  
-  
-
 
 
 
 
 
                 
-
-<script>
-(function() {
-  var date = document.createElement('div');
-  date.className = 'article-date';
-  date.textContent = 'Written on 2019-11-09';
-  var h1 = document.querySelector('.md-content__inner h1');
-  if (h1) h1.after(date);
-})();
-</script>
-
-<h2>Comments</h2>
-<script>
-(function() {
-  function getGiscusTheme() {
-    var palette = document.body.getAttribute('data-md-color-scheme');
-    return palette === 'slate' ? 'dark' : 'light';
-  }
-
-  // Create giscus script with current theme
-  var script = document.createElement('script');
-  script.src = 'https://giscus.app/client.js';
-  script.setAttribute('data-repo', 'mrocklin/mrocklin.github.io');
-  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDAzMTEz');
-  script.setAttribute('data-category', 'Giscus');
-  script.setAttribute('data-category-id', 'DIC_kwDOADPtac4CTY1R');
-  script.setAttribute('data-mapping', 'pathname');
-  script.setAttribute('data-strict', '0');
-  script.setAttribute('data-reactions-enabled', '1');
-  script.setAttribute('data-emit-metadata', '0');
-  script.setAttribute('data-input-position', 'bottom');
-  script.setAttribute('data-theme', getGiscusTheme());
-  script.setAttribute('data-lang', 'en');
-  script.setAttribute('crossorigin', 'anonymous');
-  script.async = true;
-  document.currentScript.parentNode.appendChild(script);
-
-  // Update giscus when theme changes
-  var observer = new MutationObserver(function(mutations) {
-    var iframe = document.querySelector('iframe.giscus-frame');
-    if (iframe) {
-      iframe.contentWindow.postMessage(
-        { giscus: { setConfig: { theme: getGiscusTheme() } } },
-        'https://giscus.app'
-      );
-    }
-  });
-  observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
-})();
-</script>
 
 
               </article>

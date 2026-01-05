@@ -505,3 +505,8 @@ html {
 .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo { color: var(--hl-number); }
 .highlight .nb, .highlight .bp { color: var(--hl-builtin); }
 .highlight .o { color: var(--hl-operator); }
+
+/* Profile image */
+img[align="right"] {
+  border-radius: 4px;
+}
