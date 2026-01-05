@@ -6,8 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+        <meta name="description" content="LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public.">
       
+      
+        <meta name="author" content="Matthew Rocklin">
       
       
         <link rel="canonical" href="https://matthewrocklin.com/fail-in-public/">
@@ -26,7 +28,7 @@
     
     
       
-        <title>Fail in public - Matthew Rocklin</title>
+        <title>Twitter, LinkedIn, and Failing in Public - Matthew Rocklin</title>
       
     
     
@@ -62,16 +64,16 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Fail in public - Matthew Rocklin" />
-<meta property="og:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="og:title" content="Twitter, LinkedIn, and Failing in Public - Matthew Rocklin" />
+<meta property="og:description" content="LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public." />
 <meta property="og:image" content="https://matthewrocklin.com/assets/images/social/fail-in-public.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://matthewrocklin.com/fail-in-public/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Fail in public - Matthew Rocklin" />
-<meta property="twitter:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="twitter:title" content="Twitter, LinkedIn, and Failing in Public - Matthew Rocklin" />
+<meta property="twitter:description" content="LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public." />
 <meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/fail-in-public.png" />
 </head>
   
@@ -883,6 +885,10 @@
         </li>
         
         <li class="md-nav__item">
+          <a href="./" class="md-nav__link">Twitter, LinkedIn, and Failing in Public</a>
+        </li>
+        
+        <li class="md-nav__item">
           <a href="../camino/" class="md-nav__link">I Walked Across Spain</a>
         </li>
         
@@ -891,11 +897,7 @@
         </li>
         
         <li class="md-nav__item">
-          <a href="../hammers-and-nailguns/" class="md-nav__link">Hammers and Nailguns</a>
-        </li>
-        
-        <li class="md-nav__item">
-          <a href="../support-complex/" class="md-nav__link">Python Support is Socially Complex</a>
+          <a href="../transactionalism/" class="md-nav__link">Transactionalism vs Respect</a>
         </li>
         
         <li class="md-nav__item">
@@ -940,14 +942,6 @@
 
 
 
-<hr />
-<p>title: Twitter, LinkedIn, and Failing in Public
-tagline: What I miss about Twitter-that-was.
-description: LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public.
-date: 2025-07-23
-blogpost: true
-author: Matthew Rocklin</p>
-<hr />
 <h1 id="twitter-linkedin-and-failing-in-public">Twitter, LinkedIn, and Failing in Public<a class="headerlink" href="#twitter-linkedin-and-failing-in-public" title="Permanent link">&para;</a></h1>
 <p>Twitter is dead. Long live LinkedIn. Well, kinda.</p>
 <p>During Twitter's golden age, I loved seeing people work in public.  We shared half-formed ideas, debugged projects in real-time, and celebrated small wins alongside inevitable setbacks. <strong>Twitter's casual tone made it easier to be vulnerable about the messy nature of work</strong>.  Working in this way felt to me like playing with friends.</p>
@@ -962,12 +956,65 @@ author: Matthew Rocklin</p>
 
 
 
+  
+  
+
 
 
 
 
 
                 
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2025-07-23';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+<h2>Comments</h2>
+<script>
+(function() {
+  function getGiscusTheme() {
+    var palette = document.body.getAttribute('data-md-color-scheme');
+    return palette === 'slate' ? 'dark' : 'light';
+  }
+
+  // Create giscus script with current theme
+  var script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'mrocklin/mrocklin.github.io');
+  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDAzMTEz');
+  script.setAttribute('data-category', 'Giscus');
+  script.setAttribute('data-category-id', 'DIC_kwDOADPtac4CTY1R');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', 'en');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+  document.currentScript.parentNode.appendChild(script);
+
+  // Update giscus when theme changes
+  var observer = new MutationObserver(function(mutations) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        'https://giscus.app'
+      );
+    }
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+})();
+</script>
 
 
               </article>
