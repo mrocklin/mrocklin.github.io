@@ -1,7 +1,7 @@
 ---
 title: How I Conduct an Interview
 tagline: Interviewing is hard. It's also important to do well.
-description: My approach to 45-minute interviews: what I share, what I ask, and how I evaluate candidates. Useful for interviewers or anyone interviewing with me.
+description: "My approach to 45-minute interviews: what I share, what I ask, and how I evaluate candidates. Useful for interviewers or anyone interviewing with me."
 date: 2023-01-06
 blogpost: true
 author: Matthew Rocklin

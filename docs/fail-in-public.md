@@ -1,7 +1,7 @@
 ---
 title: Twitter, LinkedIn, and Failing in Public
 tagline: What I miss about Twitter-that-was.
-description: LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public.
+description: "LinkedIn shows only the final act. We connect to heroes during their struggles, not their victories. The solution: fail heroically in public."
 date: 2025-07-23
 blogpost: true
 author: Matthew Rocklin

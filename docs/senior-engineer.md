@@ -1,7 +1,7 @@
 ---
 title: Senior Engineers
 tagline: There's no obvious scale to measure programmers.
-description: My criteria for senior engineers: handle vague requirements, seek context, connect with stakeholders, take ownership, communicate regularly, handle uncertainty, and take vacations.
+description: "My criteria for senior engineers: handle vague requirements, seek context, connect with stakeholders, take ownership, communicate regularly, handle uncertainty, and take vacations."
 date: 2019-11-09
 blogpost: true
 author: Matthew Rocklin

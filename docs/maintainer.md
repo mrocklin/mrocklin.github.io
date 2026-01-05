@@ -1,7 +1,7 @@
 ---
 title: Maintainers
 tagline: What are the expectations on OSS maintainers?
-description: Best practices for open source maintenance: the difference between developers, reviewers, and maintainers, and how to spend your limited time well.
+description: "Best practices for open source maintenance: the difference between developers, reviewers, and maintainers, and how to spend your limited time well."
 date: 2019-05-18
 blogpost: true
 author: Matthew Rocklin

@@ -1,3 +1,9 @@
+---
+title: Working Notes
+tagline: Open source, startups, and engineering.
+description: I work in the Python data ecosystem, building tools like Dask and Coiled. I write about the technical and human aspects of this work.
+---
+
 ![](assets/profile.png){ width="150px" align="right" }
 
 # Matthew Rocklin
