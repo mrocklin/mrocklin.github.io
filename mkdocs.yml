@@ -51,6 +51,9 @@ extra_javascript:
   - javascripts/shortcuts.js
 
 extra:
+  analytics:
+    provider: google
+    property: G-ZCP1VCVST7
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mrocklin
