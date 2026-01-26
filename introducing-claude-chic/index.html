@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Constructive conversation and venting differ by one question: "Will these words help me achieve my goal?" If no, we're probably venting.">
+        <meta name="description" content="A Claude code drop-in with updated UX and multi-agent support">
       
       
         <meta name="author" content="Matthew Rocklin">
       
       
-        <link rel="canonical" href="https://matthewrocklin.com/venting/">
+        <link rel="canonical" href="https://matthewrocklin.com/introducing-claude-chic/">
       
       
       
@@ -28,7 +28,7 @@
     
     
       
-        <title>Venting and Constructive Communication - Matthew Rocklin</title>
+        <title>Introducing Claude Chic - Matthew Rocklin</title>
       
     
     
@@ -74,17 +74,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Venting and Constructive Communication - Matthew Rocklin" />
-<meta property="og:description" content="Constructive conversation and venting differ by one question: "Will these words help me achieve my goal?" If no, we're probably venting." />
-<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/venting.png" />
+<meta property="og:title" content="Introducing Claude Chic - Matthew Rocklin" />
+<meta property="og:description" content="A Claude code drop-in with updated UX and multi-agent support" />
+<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/introducing-claude-chic.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://matthewrocklin.com/venting/" />
+<meta property="og:url" content="https://matthewrocklin.com/introducing-claude-chic/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Venting and Constructive Communication - Matthew Rocklin" />
-<meta property="twitter:description" content="Constructive conversation and venting differ by one question: "Will these words help me achieve my goal?" If no, we're probably venting." />
-<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/venting.png" />
+<meta property="twitter:title" content="Introducing Claude Chic - Matthew Rocklin" />
+<meta property="twitter:description" content="A Claude code drop-in with updated UX and multi-agent support" />
+<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/introducing-claude-chic.png" />
 </head>
   
   
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#venting-and-constructive-communication" class="md-skip">
+        <a href="#introducing-claude-chic" class="md-skip">
           Skip to content
         </a>
       
@@ -891,7 +891,7 @@
       <ul class="md-nav__list">
         
         <li class="md-nav__item">
-          <a href="../introducing-claude-chic/" class="md-nav__link">Introducing Claude Chic</a>
+          <a href="./" class="md-nav__link">Introducing Claude Chic</a>
         </li>
         
         <li class="md-nav__item">
@@ -943,10 +943,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#have-a-mental-model-of-your-partner" class="md-nav__link">
+  <a href="#0-motivation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Have a Mental Model of Your Partner
+        0. Motivation
       
     </span>
   </a>
@@ -954,10 +954,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#venting" class="md-nav__link">
+  <a href="#1-style" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Venting
+        1. Style
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Style">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-git-worktrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Git Worktrees
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Git Worktrees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Experience
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cleaning up
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-multiple-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Multiple Agents
       
     </span>
   </a>
@@ -965,10 +1032,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#venting-isnt-professional" class="md-nav__link">
+  <a href="#4-quality-of-life" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Venting isn't professional
+        4. Quality of Life
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Quality of Life">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diff-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diff Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shell Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-to-other-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship to other projects
       
     </span>
   </a>
@@ -976,10 +1082,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#theres-gold-behind-the-vent" class="md-nav__link">
+  <a href="#alpha-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        There's Gold Behind the Vent
+        Alpha Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final thoughts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Video
       
     </span>
   </a>
@@ -1004,91 +1132,151 @@
 
 
 
-<h1 id="venting-and-constructive-communication">Venting and Constructive Communication<a class="headerlink" href="#venting-and-constructive-communication" title="Permanent link">&para;</a></h1>
-<p>Constructive conversation and venting are mostly distinguished by asking
-ourselves</p>
-<p><em>"Will these words help me achieve my goal?"</em></p>
-<p>If the answer is "no" then we're probably venting.
-This post explores and tries to name this universal experience.</p>
-<h2 id="have-a-mental-model-of-your-partner">Have a Mental Model of Your Partner<a class="headerlink" href="#have-a-mental-model-of-your-partner" title="Permanent link">&para;</a></h2>
-<p>When I'm at my best I have a mental model of the person I'm speaking with.</p>
+<h1 id="introducing-claude-chic">Introducing Claude Chic<a class="headerlink" href="#introducing-claude-chic" title="Permanent link">&para;</a></h1>
+<p><a href="/claudechic">Claude Chic</a> is an alternative Claude Code UI that provides the following:</p>
 <ul>
-<li>If they like sports, I'll use sports metaphors</li>
-<li>If they're in a rush, I'll be to the point</li>
-<li>If they don't speak my language well, I'll use simple language and speak clearly</li>
-<li>If they're struggling emotionally, I'll avoid anything critical, nod my head, and listen actively</li>
+<li><a href="#1-style"><strong>Style:</strong></a> visually organizes the message stream for legibility</li>
+<li><a href="#git-worktrees"><strong>Git Worktrees:</strong></a> organizes concurrent worktrees</li>
+<li><a href="#multiple-agents"><strong>Multiple Agents:</strong></a> runs many sessions from the same window</li>
+<li><a href="#quality-of-life"><strong>Quality of Life:</strong></a> loads of other features like diff viewer, shell commands, and more</li>
 </ul>
-<p>Effective language targets the listener.  It's not the words that we want to say.
-It's the words that we think will be most effective at influencing our partner.
-Having a good mental model of our partner helps us craft effective language.</p>
-<p>Ideally when I want to influence someone (say, get them to add a feature to a product) I first check my words against my mental model of that person and come up with the right words to engage them in particular.  I then hope my model is accurate.</p>
-<p>To be clear, I'm pretty bad at this; but this is what I strive towards, and
-this is my standard for "constructive communication".</p>
-<h2 id="venting">Venting<a class="headerlink" href="#venting" title="Permanent link">&para;</a></h2>
-<p>Conversely, when I intercede with colleagues having a dispute (or when I look
-back at my own disputes) I'll look at e-mails or listen to people talk and
-I'll see unconstructive language like the following:</p>
-<p><em>"Do you really think that was a good idea?"</em><br/>
-<em>"This is a really badly done"</em><br/>
-<em>"This direction is obviously going nowhere"</em><br/></p>
-<p>These things might even be <em>true</em> but they're usually not <em>constructive</em>.</p>
-<p>If we ask the person who said this a few questions (or ask ourselves, if we are that person),
-it quickly becomes clear that we're not serving our own interests:</p>
+<p>The official docs are <a href="/claudechic">here</a>, but I wanted to share my personal motivation and experience building this.</p>
+<p>Or, if you prefer to jump right in, Claude Chic can explain itself:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>claudechic<span class="w"> </span>/welcome
+</code></pre></div>
+<video src="https://github.com/user-attachments/assets/bbdae8ac-9ddb-455b-8282-b52cfb73c4e8" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<h2 id="0-motivation">0. Motivation<a class="headerlink" href="#0-motivation" title="Permanent link">&para;</a></h2>
+<p>I've been deep in AI joy/psychosis the last couple months.  The world is super fun right now.</p>
+<p>However, as AI speeds up my workflow I find new bottlenecks, and increasingly those bottlenecks are part of my interactions with Claude itself.  I wrote about this in <a href="/ai-zealotry">AI Zealotry</a>; AI can feel dehumanizing when our primary contribution is administrative, like granting permission.</p>
+<p>Beyond permissions, various administrative interactions with Claude became tiresome, and so I worked to improve what I could about the interface for my workflow so that I could feel more human.</p>
+<p>Claude Chic is an early result of that endeavor.</p>
+<h2 id="1-style">1. Style<a class="headerlink" href="#1-style" title="Permanent link">&para;</a></h2>
+<p>Claude is functionally great, but stylistically pretty terrible.</p>
+<p>Here's a screenshot of Claude Code:</p>
+<p><img alt="Claude Code" src="https://github.com/user-attachments/assets/e6caa10a-0696-43f3-a1f3-10d9f620a389" style="max-width: 100%" /></p>
+<p>I find this difficult to parse.  Everything feels muddled:</p>
 <ul>
-<li><strong>Q:</strong> What is your goal here?<br/>
-    <strong>A:</strong> To get them to change their behavior</li>
-<li><strong>Q:</strong> How do you think what you've just said/written will land with them?<br/>
-    <strong>A:</strong> ... I guess it'll make them upset ... but they're wrong!</li>
-<li><strong>Q:</strong> Do you think that that's more likely to make them change their behavior?<br/>
-    <strong>A:</strong> Yeah ok, probably not</li>
+<li><strong>No visual distinction</strong> between messages</li>
+<li><strong>Too wide</strong> for comfortable reading (moreso in full-screen)</li>
+<li><strong>Lost information</strong> - I want to dig into edits before they get summarized away</li>
 </ul>
-<p>Obviously no one ever has this conversation, but it's a good check for us to do on ourselves.</p>
-<ul>
-<li>
-<p><strong>Q:</strong> Do we think that the thing we just said serves our interest?</p>
-<p><strong>If yes:</strong> it's constructive, and in service of our goals<br/>
-<strong>If no:</strong> it's probably just venting, and we're sacrificing our relationship (and thus any future ability to affect change) for immediate gratification of our frustration</p>
-</li>
-</ul>
-<p>We all vent.  Everyone.  Me.  You.  The Pope.  Even Barack Obama vents.</p>
-<h2 id="venting-isnt-professional">Venting isn't professional<a class="headerlink" href="#venting-isnt-professional" title="Permanent link">&para;</a></h2>
-<p>Venting is not good, but it is normal.  Everyone is expected to vent sometimes.</p>
-<p>However, as you climb an organizational chart, you become less able to vent.
-If you manage people for example, you're not really allowed to vent to them all
-that much.  You can probably vent up the chain of command, but I find it's good
-to start with <em>"I just really need to vent right now, do you mind?"</em>.  The
-larger the crowd you're in (like a big meeting) you're less able to vent; you
-have to drive the conversation in a constructive direction.</p>
-<p>Also, venting damages relationships.  Success in organizations depends on one's
-ability to build and maintain relationships.  Without relationships you're
-unable to collaborate effectively, and you'll only ever be as strong as
-yourself or your own group.  While some ICs might not be expected to maintain
-relationships across the company, managers and company leaders certainly are.</p>
-<p>Relationship building is a requirement for climbing an organizational chart,
-and venting runs counter to that goal.</p>
-<h2 id="theres-gold-behind-the-vent">There's Gold Behind the Vent<a class="headerlink" href="#theres-gold-behind-the-vent" title="Permanent link">&para;</a></h2>
-<p>But venting does have real value.  There's some idea behind the vent that's
-causing you stress.  Your gut is telling you something important and valuable.</p>
-<p>The mark of a real leader is someone who can feel those raw frustrations
-acutely, vent internally, ask <em>"What am I feeling  here?"</em>, and then identify
-the constructive idea behind the vent. Finally, effective communicators think
-how to constructively communicate that idea to one's colleagues in a way that
-they will connect with.</p>
-<p>This is super hard.  If it feels impossible then that's probably a signal that
-you need to do two things first:</p>
+<p>We don't expect modern design in terminal applications, but maybe we should, especially with <a href="https://textual.textualize.io/">Textual</a>.</p>
+<p>Textual made it easy to design a skin for Claude code that was, for me, much easier to consume.</p>
+<h3 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Claude Code</label><label for="__tabbed_1_2">Claude Chic</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Claude Code" src="https://github.com/user-attachments/assets/e6caa10a-0696-43f3-a1f3-10d9f620a389" style="width: 100%" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Claude Chic" src="https://github.com/user-attachments/assets/229f3904-4dee-4f97-8fc7-d65fb78ac9cd" style="width: 100%" /></p>
+</div>
+</div>
+</div>
+<p>To me, Claude Chic organizes the conversation so my eyes can parse it immediately without feeling drowned.</p>
+<p>Tool use in particular is interesting.  There are <em>more</em> tool use lines in the Chic version (Claude code omits many tool use lines), but they don't get in the way, and each is expandable for full context.  Additionally, Markdown renders properly.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Claude Code</label><label for="__tabbed_2_2">Claude Chic</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Claude Code expanded" src="https://github.com/user-attachments/assets/c09c35af-8f62-417e-b7d9-f9bc0f78070a" style="width: 100%" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Claude Chic expanded" src="https://github.com/user-attachments/assets/ebdee1a5-9700-4149-8e97-1fbe420852ca" style="width: 100%" /></p>
+</div>
+</div>
+</div>
+<p>Key styling choices:</p>
 <ol>
-<li>
-<p><strong>Build a better relationship</strong> with your partner</p>
-<p>Grab a beer.  Talk about their kids.  Anything just to jointly establish
-that you're both reasonable people.  Don't push work topics too early.</p>
-</li>
-<li>
-<p><strong>Build a better mental model</strong> of your partner</p>
-<p>This way you can shape your message not as you most want to say it, but as
-you think they're most likely able to receive it</p>
-</li>
+<li><strong>Color:</strong> User (orange), Claude (blue), Tools (grey)</li>
+<li><strong>Expansion:</strong> Tool messages collapse by default, click to expand</li>
+<li><strong>Width:</strong> Constrained to 100 characters</li>
+<li><strong>Markdown:</strong> Proper rendering</li>
+<li><strong>Streaming:</strong> Responses appear as they generate</li>
 </ol>
-<p>This takes time.  It's an investment.  It absolutely pays off.</p>
+<p>To be honest, this ended up being a deeper rabbit hole than I anticipated.  Totally worth it though.  We're still early (definitely beta software), but it feels much better to me than Claude's default interface, or similar tools like Codex, Gemini, and other CLI tools.  Everyone should be using Textual for TUIs.</p>
+<h2 id="2-git-worktrees">2. Git Worktrees<a class="headerlink" href="#2-git-worktrees" title="Permanent link">&para;</a></h2>
+<p>Git worktrees are underused.  They let multiple Claude agents work on the same repository in parallel.</p>
+<p>Unfortunately, no one knows how they work.  We've all seen some article or Youtube video showing them in action, but in practice they're a foreign workflow.  That's ok; AI tooling is great at foreign workflows.</p>
+<h3 id="user-experience">User Experience<a class="headerlink" href="#user-experience" title="Permanent link">&para;</a></h3>
+<p>Previously, when I had a new idea it went on a TODO list while Claude finished its current task.  Ideas would linger on that TODO list for a <em>long</em> time, even simple and easy ones.  Coordinating the shared resource of the repository was an annoying bottleneck.</p>
+<p>Git worktrees solve this by marrying a git branch with a fresh copy of the repository directory.  When you clean up the branch the directory is removed as well:</p>
+<div class="highlight"><pre><span></span><code>~/projects/
+├── myrepo/            # Main worktree (main branch)
+├── myrepo-feature-1/  # Some feature you&#39;re working on
+├── myrepo-feature-2/  # Some feature you&#39;re working on
+├── ...
+└── myrepo-feature-n/  # Some feature you&#39;re working on
+</code></pre></div>
+<p>Now you can have <code>n</code> Claude agents working, one in each directory.  When you have a new idea, immediately create a new worktree and have Claude start on it:</p>
+<div class="highlight"><pre><span></span><code>/worktree my-idea
+</code></pre></div>
+<p>This creates a new worktree (directory + branch) and a new agent working in that directory.  The agent starts working concurrently while I go back to my previous task.  In practice I often have 2-10 of these going at once.</p>
+<p>Now I focus on whatever ongoing thread interests me most; Claude pushes the others forward.  I no longer wait for Claude; it waits for me.</p>
+<h3 id="cleaning-up">Cleaning up<a class="headerlink" href="#cleaning-up" title="Permanent link">&para;</a></h3>
+<p>Concurrent development means conflicts.  My git flow:</p>
+<ol>
+<li>Finish work in a branch, commit</li>
+<li>Rebase on our upstream branch.<ul>
+<li>Resolve any conflicts from recently merged work</li>
+</ul>
+</li>
+<li>Fast-forward merge branch into upstream</li>
+<li>Delete worktree</li>
+</ol>
+<p>Claude handles rebases and conflicts fine (and asks when it can't).  The workflow above is baked into <code>/worktree finish</code>.</p>
+<p>Now that all of my TODO items can run at once, worktrees shift the decision from "what thread should we start next?" to "which ongoing session most deserves my attention?"  This decision, coming later in the workflow, comes with more and richer information.</p>
+<h2 id="3-multiple-agents">3.  Multiple Agents<a class="headerlink" href="#3-multiple-agents" title="Permanent link">&para;</a></h2>
+<p>Multiple agents run concurrently in one session and can talk to each other.  Here they play chess:</p>
+<video src="https://github.com/user-attachments/assets/735ebc91-335e-4476-8fde-f49ce1df056a" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<p>Cute demo, but in practice I use multiple agents with prompts like the following:</p>
+<ul>
+<li><strong>Reviewing:</strong> "Start an agent to review our changes critically"</li>
+<li><strong>Research:</strong> "Start an agent to explore this topic"</li>
+<li><strong>Dogfooding:</strong> When adding a profiler, we spawned an agent to use it and suggest improvements back to the agent building it</li>
+</ul>
+<p>There are intense multi-agent systems out there like <a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">Gas Town</a> and <a href="https://github.com/code-yeongyu/oh-my-opencode">OhMyOpenCode</a>.  I haven't needed that level of automation yet, but I find this space interesting.</p>
+<h2 id="4-quality-of-life">4. Quality of Life<a class="headerlink" href="#4-quality-of-life" title="Permanent link">&para;</a></h2>
+<p>Other niceties: <code>/diff</code> mode, vim keybindings (<code>/vim</code>), shell commands (<code>!ls</code>, <code>!nvim README.md</code>) without leaving the app.</p>
+<h3 id="diff-review">Diff Review<a class="headerlink" href="#diff-review" title="Permanent link">&para;</a></h3>
+<p>Review uncommitted changes before asking Claude to commit:</p>
+<video src="https://github.com/user-attachments/assets/3c0c262b-2a23-4486-92c4-b97705a0819d" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<h3 id="shell-access">Shell Access<a class="headerlink" href="#shell-access" title="Permanent link">&para;</a></h3>
+<p>Run shell commands without leaving the UI:</p>
+<video src="https://github.com/user-attachments/assets/85f3dbe0-9a88-436e-aa9d-c1ba012c1f0e" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<h2 id="relationship-to-other-projects">Relationship to other projects<a class="headerlink" href="#relationship-to-other-projects" title="Permanent link">&para;</a></h2>
+<p>Related (and more mature) work:</p>
+<ul>
+<li>
+<p><strong>Claude Code:</strong> More robust.  Claude Chic uses the same <a href="https://github.com/anthropics/claude-agent-sdk-python"><code>claude-agent-sdk</code></a> logic as Claude Code.</p>
+</li>
+<li>
+<p><a href="https://opencode.ai/"><strong>OpenCode:</strong></a> Beautiful wrapper supporting any major LLM with its own agent logic.</p>
+</li>
+<li>
+<p><a href="https://willmcgugan.github.io/announcing-toad/"><strong>Toad</strong></a>: LLM CLI in Textual by <a href="https://willmcgugan.github.io/">Will McGugan</a>, Textual's creator.</p>
+</li>
+</ul>
+<h2 id="alpha-status">Alpha Status<a class="headerlink" href="#alpha-status" title="Permanent link">&para;</a></h2>
+<p>This software is <em>early</em>, and <em>full of bugs</em>.  It crashes regularly when we encounter new situations.  Even-so, I encourage adventurous <code>claude</code> users to put it through its paces and <a href="https://github.com/mrocklin/claudechic/issues/new">raise issues</a>.  Development on this project is (as of 2026-01-25) extremely fast.</p>
+<h2 id="final-thoughts">Final thoughts<a class="headerlink" href="#final-thoughts" title="Permanent link">&para;</a></h2>
+<p>For users: AI is fast; we need to avoid becoming Amdahl's bottleneck.  Our developer tooling warrants a lot of reimagining today.</p>
+<p>For LLM providers: Please check out Textual.  It's a great technology.  (I have no financial stake in Textual)</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># If you use uv</span>
+uvx<span class="w"> </span>claudechic<span class="w"> </span>/welcome
+
+<span class="c1"># If you use pip</span>
+pip<span class="w"> </span>install<span class="w"> </span>claudechic
+claudechic<span class="w"> </span>/welcome
+</code></pre></div>
+<h2 id="video">Video<a class="headerlink" href="#video" title="Permanent link">&para;</a></h2>
+<p>If you prefer video, here's one of me explaining this project:</p>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/2HcORToX5sU?autoplay=0&mute=0&loop=0&playlist=2HcORToX5sU" title="Claude Chic Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 
@@ -1112,7 +1300,7 @@ you think they're most likely able to receive it</p>
 (function() {
   var date = document.createElement('div');
   date.className = 'article-date';
-  date.textContent = 'Written on 2024-10-25';
+  date.textContent = 'Written on 2026-01-26';
   var h1 = document.querySelector('.md-content__inner h1');
   if (h1) h1.after(date);
 })();
