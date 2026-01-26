@@ -1152,7 +1152,7 @@
 <p>Beyond permissions, various administrative interactions with Claude became tiresome, and so I worked to improve what I could about the interface for my workflow so that I could feel more human.</p>
 <p>Claude Chic is an early result of that endeavor.</p>
 <h2 id="1-style">1. Style<a class="headerlink" href="#1-style" title="Permanent link">&para;</a></h2>
-<p>Claude is functionally great, but stylistically pretty terrible.</p>
+<p>Let's start with visual design.  Claude is functionally great, but stylistically pretty terrible.</p>
 <p>Here's a screenshot of Claude Code:</p>
 <p><img alt="Claude Code" src="https://github.com/user-attachments/assets/e6caa10a-0696-43f3-a1f3-10d9f620a389" style="max-width: 100%" /></p>
 <p>I find this difficult to parse.  Everything feels muddled:</p>
@@ -1164,6 +1164,7 @@
 <p>We don't expect modern design in terminal applications, but maybe we should, especially with <a href="https://textual.textualize.io/">Textual</a>.</p>
 <p>Textual made it easy to design a skin for Claude code that was, for me, much easier to consume.</p>
 <h3 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">&para;</a></h3>
+<p>To me, Claude Code looks muddled.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Claude Code</label><label for="__tabbed_1_2">Claude Chic</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1175,7 +1176,8 @@
 </div>
 </div>
 <p>To me, Claude Chic organizes the conversation so my eyes can parse it immediately without feeling drowned.</p>
-<p>Tool use in particular is interesting.  There are <em>more</em> tool use lines in the Chic version (Claude code omits many tool use lines), but they don't get in the way, and each is expandable for full context.  Additionally, Markdown renders properly.</p>
+<p>Tool use in particular is interesting.  There are <em>more</em> tool use lines in the Chic version (Claude code omits many tool use lines), but they don't get in the way, and each is expandable for full context.</p>
+<p>Additionally, Markdown renders properly.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Claude Code</label><label for="__tabbed_2_2">Claude Chic</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1197,10 +1199,10 @@
 <p>To be honest, this ended up being a deeper rabbit hole than I anticipated.  Totally worth it though.  We're still early (definitely beta software), but it feels much better to me than Claude's default interface, or similar tools like Codex, Gemini, and other CLI tools.  Everyone should be using Textual for TUIs.</p>
 <h2 id="2-git-worktrees">2. Git Worktrees<a class="headerlink" href="#2-git-worktrees" title="Permanent link">&para;</a></h2>
 <p>Git worktrees are underused.  They let multiple Claude agents work on the same repository in parallel.</p>
-<p>Unfortunately, no one knows how they work.  We've all seen some article or Youtube video showing them in action, but in practice they're a foreign workflow.  That's ok; AI tooling is great at foreign workflows.</p>
+<p>Unfortunately, none of us know how they work.  People I've spoken to have all seen an article or Youtube video showing them in action, but in practice they feel foreign.  That's ok; AI tooling is great at foreign workflows.</p>
 <h3 id="user-experience">User Experience<a class="headerlink" href="#user-experience" title="Permanent link">&para;</a></h3>
 <p>Previously, when I had a new idea it went on a TODO list while Claude finished its current task.  Ideas would linger on that TODO list for a <em>long</em> time, even simple and easy ones.  Coordinating the shared resource of the repository was an annoying bottleneck.</p>
-<p>Git worktrees solve this by marrying a git branch with a fresh copy of the repository directory.  When you clean up the branch the directory is removed as well:</p>
+<p>Git worktrees solve this by marrying a git branch with a fresh copy of the repository directory.</p>
 <div class="highlight"><pre><span></span><code>~/projects/
 ├── myrepo/            # Main worktree (main branch)
 ├── myrepo-feature-1/  # Some feature you&#39;re working on
@@ -1208,45 +1210,48 @@
 ├── ...
 └── myrepo-feature-n/  # Some feature you&#39;re working on
 </code></pre></div>
-<p>Now you can have <code>n</code> Claude agents working, one in each directory.  When you have a new idea, immediately create a new worktree and have Claude start on it:</p>
+<p>Now you can have <code>n</code> Claude agents working, one in each directory.  When I have a new idea, I create a new worktree and have Claude start on it immediately:</p>
 <div class="highlight"><pre><span></span><code>/worktree my-idea
+
+I want you to explore ...
 </code></pre></div>
-<p>This creates a new worktree (directory + branch) and a new agent working in that directory.  The agent starts working concurrently while I go back to my previous task.  In practice I often have 2-10 of these going at once.</p>
-<p>Now I focus on whatever ongoing thread interests me most; Claude pushes the others forward.  I no longer wait for Claude; it waits for me.</p>
+<p>This creates a new worktree (directory + branch) and a new agent working in that directory in the background.  The agent starts working concurrently while I go back to my main task.  In practice I have 2-10 of these going at once.</p>
+<p>Now I focus on whatever ongoing thread interests me most while Claude pushes the others forward.  I no longer wait for Claude; Claude waits for me.</p>
 <h3 id="cleaning-up">Cleaning up<a class="headerlink" href="#cleaning-up" title="Permanent link">&para;</a></h3>
-<p>Concurrent development means conflicts.  My git flow:</p>
+<p>With concurrent git development comes conflicts.  To address this, my git flow looks like the following:</p>
 <ol>
-<li>Finish work in a branch, commit</li>
-<li>Rebase on our upstream branch.<ul>
-<li>Resolve any conflicts from recently merged work</li>
-</ul>
-</li>
-<li>Fast-forward merge branch into upstream</li>
-<li>Delete worktree</li>
+<li><strong>Commit</strong> work in a branch</li>
+<li><strong>Rebase</strong> Rebase on our upstream branch (for linear history)</li>
+<li><strong>Resolve</strong> any conflicts</li>
+<li><strong>Fast-forward merge</strong> branch into upstream</li>
+<li><strong>Delete</strong> worktree</li>
 </ol>
-<p>Claude handles rebases and conflicts fine (and asks when it can't).  The workflow above is baked into <code>/worktree finish</code>.</p>
+<p>Claude handles rebases and conflicts fine (and asks when it can't), so the workflow above got baked into the <code>/worktree finish</code> command.  Concurrent git managemet is, for me, fully managed now.</p>
 <p>Now that all of my TODO items can run at once, worktrees shift the decision from "what thread should we start next?" to "which ongoing session most deserves my attention?"  This decision, coming later in the workflow, comes with more and richer information.</p>
 <h2 id="3-multiple-agents">3.  Multiple Agents<a class="headerlink" href="#3-multiple-agents" title="Permanent link">&para;</a></h2>
 <p>Multiple agents run concurrently in one session and can talk to each other.  Here they play chess:</p>
 <video src="https://github.com/user-attachments/assets/735ebc91-335e-4476-8fde-f49ce1df056a" autoplay loop muted playsinline style="max-width: 100%"></video>
 
-<p>Cute demo, but in practice I use multiple agents with prompts like the following:</p>
+<p>This is a cute demo, but in practice I use multiple agents with prompts like the following:</p>
 <ul>
 <li><strong>Reviewing:</strong> "Start an agent to review our changes critically"</li>
-<li><strong>Research:</strong> "Start an agent to explore this topic"</li>
-<li><strong>Dogfooding:</strong> When adding a profiler, we spawned an agent to use it and suggest improvements back to the agent building it</li>
+<li><strong>Research:</strong> "Start an agent to explore this topic further"</li>
+<li><strong>Dogfooding:</strong> Recently when adding a profiler, I spawned an agent to use it and suggest improvements back to the agent building it</li>
 </ul>
 <p>There are intense multi-agent systems out there like <a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">Gas Town</a> and <a href="https://github.com/code-yeongyu/oh-my-opencode">OhMyOpenCode</a>.  I haven't needed that level of automation yet, but I find this space interesting.</p>
 <h2 id="4-quality-of-life">4. Quality of Life<a class="headerlink" href="#4-quality-of-life" title="Permanent link">&para;</a></h2>
-<p>Other niceties: <code>/diff</code> mode, vim keybindings (<code>/vim</code>), shell commands (<code>!ls</code>, <code>!nvim README.md</code>) without leaving the app.</p>
+<p>Claude Chic comes with myriad other niceties like a <code>/diff</code> viewer, vim keybindings (<code>/vim</code>), shell commands (<code>!ls</code>, <code>!nvim README.md</code>), and more.</p>
 <h3 id="diff-review">Diff Review<a class="headerlink" href="#diff-review" title="Permanent link">&para;</a></h3>
 <p>Review uncommitted changes before asking Claude to commit:</p>
 <video src="https://github.com/user-attachments/assets/3c0c262b-2a23-4486-92c4-b97705a0819d" autoplay loop muted playsinline style="max-width: 100%"></video>
 
+<p>I used to switch back and forth to a terminal to run <code>git diff</code>.  Now I get something that I like more than <code>git diff</code> and without context switching.</p>
 <h3 id="shell-access">Shell Access<a class="headerlink" href="#shell-access" title="Permanent link">&para;</a></h3>
 <p>Run shell commands without leaving the UI:</p>
 <video src="https://github.com/user-attachments/assets/85f3dbe0-9a88-436e-aa9d-c1ba012c1f0e" autoplay loop muted playsinline style="max-width: 100%"></video>
 
+<p>I typically use this for <code>git log</code> and <code>vim</code>, but it's nice generally.</p>
+<p>There are loads more small features in Claude Chic, and more coming daily.  It's exciting to work on.</p>
 <h2 id="relationship-to-other-projects">Relationship to other projects<a class="headerlink" href="#relationship-to-other-projects" title="Permanent link">&para;</a></h2>
 <p>Related (and more mature) work:</p>
 <ul>
