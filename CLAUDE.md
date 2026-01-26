@@ -59,6 +59,17 @@ CSS is in `docs/stylesheets/custom.css`. Key design choices:
 - 750px max content width
 - Flat sidebar navigation (no indentation)
 
+## Writing Style
+
+When editing or reviewing Matthew's writing:
+
+- **Concise but human** — cut filler, but keep personality and warmth
+- **No repetition** — avoid repeating words in close proximity
+- **Tight structure** — front-load value; don't meander
+- **No redundancy** — headers and surrounding text shouldn't repeat each other
+- **Clear antecedents** — ambiguous pronouns weaken prose
+- **Honest early** — acknowledge limitations upfront
+
 ## Build/Deploy
 
 GitHub Actions deploys to GitHub Pages on push to `main`. The workflow:
