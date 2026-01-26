@@ -1,12 +1,15 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 Personal blog of Matthew Rocklin built with MkDocs Material.
 
 ## Quick Reference
 
 ```bash
-make serve                   # Local dev server at http://127.0.0.1:8000
-make build                   # Build to site/
+make serve    # Local dev server at http://127.0.0.1:8000
+make build    # Build to site/
+make clean    # Remove site/ and .cache/
 ```
 
 Note: `make serve` uses `--livereload` flag to work around a Python 3.14 + Click bug.
@@ -18,9 +21,12 @@ Note: `make serve` uses `--livereload` flag to work around a Python 3.14 + Click
 **Key directories**:
 - `docs/` - All content (markdown articles, images, CSS)
 - `overrides/` - Theme customizations (templates, partials)
-- `mkdocs.yml` - Site configuration and navigation
+- `hooks/` - MkDocs Python hooks
+- `layouts/` - Social card layout configuration
 
 **Customizations**: The site uses a minimal, reading-focused design. The Material theme's header is hidden; controls (search, theme toggle, RSS) are in the sidebar instead. See `overrides/partials/nav.html` and `docs/stylesheets/custom.css`.
+
+**Hook system**: `hooks/recent_articles.py` parses front matter from all articles and exposes `recent_articles` and `all_articles` to Jinja templates for sidebar display.
 
 ## Adding Articles
 
@@ -29,6 +35,8 @@ Note: `make serve` uses `--livereload` flag to work around a Python 3.14 + Click
    ---
    title: Article Title
    date: 2025-01-15
+   tagline: Short bold text for social cards
+   description: Longer description for SEO and social sharing
    ---
    ```
 
