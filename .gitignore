@@ -9,3 +9,6 @@ site/
 .nox
 .idea/
 hooks/__pycache__/
+
+.DS_Store
+.cache
