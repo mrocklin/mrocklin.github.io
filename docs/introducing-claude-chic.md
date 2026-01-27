@@ -184,6 +184,8 @@ Related (and more mature) work:
 
 -  [**Toad**](https://willmcgugan.github.io/announcing-toad/): LLM CLI in Textual by [Will McGugan](https://willmcgugan.github.io/), Textual's creator.
 
+-  [Conductor](https://docs.conductor.build/): Mac App that provides many of the same features (design, worktrees, multi-agent)
+
 ## Alpha Status
 
 This software is *early*, and *full of bugs*.  It crashes regularly when we encounter new situations.  Even-so, I encourage adventurous `claude` users to put it through its paces and [raise issues](https://github.com/mrocklin/claudechic/issues/new).  Development on this project is (as of 2026-01-25) extremely fast.
