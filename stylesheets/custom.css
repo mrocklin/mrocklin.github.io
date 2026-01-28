@@ -33,14 +33,16 @@
   margin-bottom: 0.25em !important;
 }
 
-/* Blockquotes - accent border, subtle styling */
+/* Blockquotes - emphasis styling */
 .md-typeset blockquote {
-  border-left: 2px solid color-mix(in srgb, var(--md-accent-fg-color) 50%, transparent) !important;
-  padding-left: 0.6rem !important;
+  border-left: 2px solid var(--md-accent-fg-color) !important;
+  padding: 0.2rem 0.6rem !important;
   margin-left: 0 !important;
-  color: var(--md-default-fg-color--light) !important;
+  color: var(--md-default-fg-color) !important;
+  font-weight: 500 !important;
   font-style: italic !important;
-  background: transparent !important;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 8%, var(--md-default-bg-color)) !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 
 /* Limit content width for readability */
