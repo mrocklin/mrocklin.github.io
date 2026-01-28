@@ -75,13 +75,15 @@ markdown_extensions:
   - def_list
 
 nav:
+  - AI:
+    - Claude Chic: introducing-claude-chic.md
+    - AI Zealotry: ai-zealotry.md
+    - Beginning Again: ai-beginners.md
   - Workplace:
     - Think for Yourself: think.md
     - Startup Advice: startup-best-practices.md
     - Failure: failure.md
     - Meetings: meetings.md
-    - Brevity: brevity.md
-    - Feedback: feedback.md
     - Listen to Sell: engineers-and-sales.md
     - Why I Avoid Slack: slack-github.md
     - Write Short Blogposts: write-short-blogposts.md
