@@ -513,6 +513,65 @@ img[align="right"] {
   border-radius: 4px;
 }
 
+/* FAQ/collapsible admonitions - minimal left border style */
+.md-typeset details.faq {
+  border: none !important;
+  border-left: 2px solid var(--md-accent-fg-color) !important;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 3%, var(--md-default-bg-color)) !important;
+  border-radius: 0 4px 4px 0 !important;
+  box-shadow: none !important;
+  padding: 0.4rem 0.6rem 0.4rem 1rem !important;
+  margin: 0.75em 0 !important;
+}
+
+.md-typeset details.faq:hover {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 6%, var(--md-default-bg-color)) !important;
+}
+
+.md-typeset details.faq > summary {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  padding-left: 1.2rem !important;
+  font-weight: 500 !important;
+  color: var(--md-default-fg-color) !important;
+  min-height: 0 !important;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Custom chevron indicator */
+.md-typeset details.faq > summary::before {
+  content: "›" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-60%) !important;
+  font-size: 1.1rem !important;
+  line-height: 1 !important;
+  font-weight: 400 !important;
+  color: var(--md-accent-fg-color) !important;
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  transition: transform 0.2s ease !important;
+}
+
+.md-typeset details.faq[open] > summary::before {
+  transform: translateY(-40%) translateX(2px) rotate(90deg) !important;
+}
+
+/* Hide the default chevron/icon */
+.md-typeset details.faq > summary::after {
+  display: none !important;
+}
+
+.md-typeset details.faq > summary .twemoji {
+  display: none !important;
+}
+
 /* Responsive video container */
 .video-container {
   position: relative;

@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Developer-valued work is valuable, but only in that it makes us faster at delivering user-valued work. Keep that distinction clear when prioritizing.">
+        <meta name="description" content="Exploring multi-agent AI workflows—what works, what doesn't, and lessons from playing Diplomacy with Claude agents.">
       
       
         <meta name="author" content="Matthew Rocklin">
       
       
-        <link rel="canonical" href="https://matthewrocklin.com/user-valued-work/">
+        <link rel="canonical" href="https://matthewrocklin.com/ai-multi-agent/">
       
       
       
@@ -28,7 +28,7 @@
     
     
       
-        <title>User Valued Work - Matthew Rocklin</title>
+        <title>Multi-Agent Workflows - Matthew Rocklin</title>
       
     
     
@@ -74,17 +74,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="User Valued Work - Matthew Rocklin" />
-<meta property="og:description" content="Developer-valued work is valuable, but only in that it makes us faster at delivering user-valued work. Keep that distinction clear when prioritizing." />
-<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/user-valued-work.png" />
+<meta property="og:title" content="Multi-Agent Workflows - Matthew Rocklin" />
+<meta property="og:description" content="Exploring multi-agent AI workflows—what works, what doesn't, and lessons from playing Diplomacy with Claude agents." />
+<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/ai-multi-agent.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://matthewrocklin.com/user-valued-work/" />
+<meta property="og:url" content="https://matthewrocklin.com/ai-multi-agent/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="User Valued Work - Matthew Rocklin" />
-<meta property="twitter:description" content="Developer-valued work is valuable, but only in that it makes us faster at delivering user-valued work. Keep that distinction clear when prioritizing." />
-<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/user-valued-work.png" />
+<meta property="twitter:title" content="Multi-Agent Workflows - Matthew Rocklin" />
+<meta property="twitter:description" content="Exploring multi-agent AI workflows—what works, what doesn't, and lessons from playing Diplomacy with Claude agents." />
+<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/ai-multi-agent.png" />
 </head>
   
   
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-valued-work" class="md-skip">
+        <a href="#multi-agent-swarms-initial-thoughts" class="md-skip">
           Skip to content
         </a>
       
@@ -980,7 +980,7 @@
       <ul class="md-nav__list">
         
         <li class="md-nav__item">
-          <a href="../ai-multi-agent/" class="md-nav__link">Multi-Agent Workflows</a>
+          <a href="./" class="md-nav__link">Multi-Agent Workflows</a>
         </li>
         
         <li class="md-nav__item">
@@ -1032,10 +1032,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#user-valued-work_1" class="md-nav__link">
+  <a href="#obviously-good-simple-multi-agent-workflows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User-valued work
+        Obviously Good Simple Multi-Agent Workflows
       
     </span>
   </a>
@@ -1043,10 +1043,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#developer-valued-work" class="md-nav__link">
+  <a href="#platform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Developer-valued work
+        Platform
       
     </span>
   </a>
@@ -1054,10 +1054,154 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#timing-and-judgement" class="md-nav__link">
+  <a href="#first-experiment-diplomacy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Timing and Judgement
+        First Experiment: Diplomacy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-experiment-session-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second Experiment: Session Viewer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Experiment: Session Viewer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-overall-experience-was-mediocre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The overall experience was mediocre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lessons Learned
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lessons Learned">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#separate-reviewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Separate Reviewer 👍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fresh-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fresh Perspective 👍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mythical-man-month-mythical-ai-minute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mythical Man Month ➡️ Mythical AI Minute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent Support 👍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#human-coordination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Human Coordination 🧠
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#human-oriented-ai-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Human-Oriented AI Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimenting-is-easy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experimenting is easy
       
     </span>
   </a>
@@ -1082,46 +1226,200 @@
 
 
 
-<h1 id="user-valued-work">User Valued Work<a class="headerlink" href="#user-valued-work" title="Permanent link">&para;</a></h1>
-<p>We often need to balance prioritization between user-facing work and internal
-or developer-facing work.  It's helpful to distinguish between these in
-conversations of prioritization and measuring success.</p>
-<h2 id="user-valued-work_1">User-valued work<a class="headerlink" href="#user-valued-work_1" title="Permanent link">&para;</a></h2>
-<p>This is work that directly affects users.  It solves their pain and gives them
-a delightful experience.  It includes work like the following:</p>
+<h1 id="multi-agent-swarms-initial-thoughts">Multi Agent Swarms: Initial Thoughts<a class="headerlink" href="#multi-agent-swarms-initial-thoughts" title="Permanent link">&para;</a></h1>
+<p>Like many of us, I read articles about systems like <a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">Gas
+Town</a> with a
+mixture of wonder and fear:</p>
+<blockquote>
+<p>I'm only using a few agents concurrently!  Am I falling behind?</p>
+</blockquote>
+<p>This is silly of course.  No one is behind because <a href="/ai-beginners">no one knows what they're
+doing yet</a>.</p>
+<p>Still though, I wanted to explore this topic, so I spent the last couple days
+playing with multi-agent workflows using <a href="/introducing-claude-chic">Claude
+Chic</a>.</p>
+<p>This article is long (sorry!) but here is a helpful TOC.  If you don't feel like a long read I recommend skipping to the <a href="#lessons-learned">Lessons Learned</a>.</p>
 <ol>
-<li>Features that solve user pain</li>
-<li>Features that delight users</li>
-<li>Documentation that many people read and engage with</li>
-<li>Directly answering user questions</li>
+<li><a href="#obviously-good-simple-multi-agent-workflows">Obviously Good Simple Multi-Agent Workflows</a></li>
+<li><a href="#platform">Platform</a></li>
+<li><a href="#first-experiment-diplomacy">First Experiment: Diplomacy</a></li>
+<li><a href="#second-experiment-session-viewer">Second Experiment: Session Viewer</a></li>
+<li><a href="#lessons-learned"><strong>Lessons Learned</strong></a> &lt;-- if you read only one section, read this</li>
+<li><a href="#experimenting-is-easy">Experimenting is easy</a></li>
 </ol>
-<h2 id="developer-valued-work">Developer-valued work<a class="headerlink" href="#developer-valued-work" title="Permanent link">&para;</a></h2>
-<p>This is work that mostly developers see.</p>
-<ol>
-<li>Paying down technical debt</li>
-<li>Fixing CI</li>
-<li>Writing well thought out technical documentation, even if it isn't widely read</li>
-<li>Discovering bugs or problems in the system</li>
-<li>Writing design documents</li>
-<li>Developing features behind a feature flag</li>
-<li>Developing features but not releasing them or releasing them only very recently so that most users don't have them yet</li>
-<li>Benchmarking to track success and avoid regressions</li>
-</ol>
-<p>Developer valued work is valuable, but only in that it makes us faster in
-delivering user-valued work to users.</p>
-<h2 id="timing-and-judgement">Timing and Judgement<a class="headerlink" href="#timing-and-judgement" title="Permanent link">&para;</a></h2>
-<p>We are judged as a team on user-valued work in the long term.
-Developer-valued work is good, but only in service of helping us to perform
-user-valued work more effectively.
-It's great to do developer-valued work for a week or a month, but beyond that
-it comes into question.</p>
-<p>In a professional context when upper-management judges the performance of a
-team, user-valued changes are typically what matter.  This matches how the
-public judges our work.</p>
-<p>Usually a well-functioning team will do both.  Focusing entirely on
-user-focused work tends to be a sign that the team is under short-term
-pressure.  Focusing entirely on developer-focused work for months at a time may
-be a sign that the team lacks a strong prioritization function.</p>
+<h2 id="obviously-good-simple-multi-agent-workflows">Obviously Good Simple Multi-Agent Workflows<a class="headerlink" href="#obviously-good-simple-multi-agent-workflows" title="Permanent link">&para;</a></h2>
+<p>Many of us use multi-agent systems in simple ways that are clearly a benefit:</p>
+<ul>
+<li>
+<p><strong>Plan then Build:</strong> People often have one session make a plan, and then clear out context and start building that plan with a new session.</p>
+<p>This has become common enough that I believe it's now the default in Claude Code.</p>
+</li>
+<li>
+<p><strong>Review:</strong> People ask another agent to review the work of an initial agent.  This tends to produce better results than having the original agent self-review.</p>
+<p>As Wes McKinney writes about <a href="https://www.roborev.io/">RoboRev</a>:</p>
+<blockquote>
+<p>Having a Claude Code session review its own work is so 2025.</p>
+</blockquote>
+</li>
+</ul>
+<p>There's something powerful about having two different agents think about the
+same problem and communicate about it, even if those two agents run sequentially, and even
+if they communicate by having a human copy-paste between them.</p>
+<h2 id="platform">Platform<a class="headerlink" href="#platform" title="Permanent link">&para;</a></h2>
+<p>I'm using my personal Claude TUI alternative, <a href="/introducing-claude-chic">Claude Chic</a>.
+Originally built for nicer style, it also has the feature set needed to support multi-agent swarms.</p>
+<ul>
+<li><strong>Start:</strong> Agents can start other agents</li>
+<li><strong>Send:</strong> Agents can send messages to other agents</li>
+<li><strong>Branch:</strong> Agents can create git worktrees</li>
+<li><strong>Merge:</strong> There's an automated commit / rebase / resolve-conflicts / merge loop that
+agents can follow</li>
+</ul>
+<p>I built these tools to help me with human-in-the-loop work, but it turns out
+they're all you need for multi-agent-swarm workflows.</p>
+<h2 id="first-experiment-diplomacy">First Experiment: Diplomacy<a class="headerlink" href="#first-experiment-diplomacy" title="Permanent link">&para;</a></h2>
+<p>In the initial demo of Claude Chic, I show Claude setting up a game of Chess against itself.</p>
+<video src="https://github.com/user-attachments/assets/735ebc91-335e-4476-8fde-f49ce1df056a" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<p>But then I thought</p>
+<ul>
+<li><strong>Q:</strong> "what's more intense than Chess?"
+    <strong>A:</strong> "Diplomacy"</li>
+</ul>
+<p>Diplomacy, if you're not familiar, is like "Risk on Steroids without Dice".
+It's a game of pure discussion and guile where seven players try to dominate
+1908 Europe.  Claude knows the game (of course) and so I asked it to set up a game among agents.</p>
+<video src="https://github.com/user-attachments/assets/38205b08-fd13-4b84-b153-9f98eab1d759" autoplay loop muted playsinline style="max-width: 100%"></video>
+
+<p>The gameplay was fascinating to watch.  Briefly:</p>
+<ul>
+<li>Game starts out tame and typical</li>
+<li>
+<p>Austria thinks it's doing well, but everyone betrays it</p>
+<p>Interestingly, the other players joke about Austria behind its back</p>
+</li>
+<li>
+<p>Russia dominates early on, supported by Turkey</p>
+</li>
+<li>
+<p>Germany, noticing Russia's rise, convinces everyone else to gang up against Russia</p>
+<p>The amount of inter-agent traffic in and out of the Germany agent during this period was intense.</p>
+</li>
+<li>
+<p>Russia, cowed, makes a deal with Germany to let it survive</p>
+</li>
+</ul>
+<p>Watching the agents play was no less fascinating than watching humans play, and
+resulted in behaviors I found surprising from AI:</p>
+<blockquote>
+<p>Multiple coordinating agents are capable of more sophisticated behavior than single agents</p>
+</blockquote>
+<p>Silly game, useful lesson.  I wanted to try things out in practice.</p>
+<h2 id="second-experiment-session-viewer">Second Experiment: Session Viewer<a class="headerlink" href="#second-experiment-session-viewer" title="Permanent link">&para;</a></h2>
+<p>I wanted to look at multi-agent sessions like the one I had just played, and so
+decided to have Claude(s) build a session viewer for me that I would turn into
+something with a shared timeline.</p>
+<p>I tried this three times with three different prompts, learning each time.
+Eventually we got to something like this without much human intervention:</p>
+<p><img alt="Simple Session Viewer" src="https://github.com/user-attachments/assets/247ad909-72ae-4365-8559-3e21d63153f6" /></p>
+<p>It's not great, but it works.</p>
+<h3 id="prompts">Prompts<a class="headerlink" href="#prompts" title="Permanent link">&para;</a></h3>
+<p>They're not beautiful, but here are the prompts I used.  You can tell how I learned from one into the next.</p>
+<details class="faq">
+<summary>First Try</summary>
+<p>I'm curious about trying an agent swarm technique in development. I was thinking as a project we might try adding a react electron version of this application.</p>
+<p>We'd want to have one agent (you) doing a lot of the orchestration, but we'd want other agents for planning, executing each task, reviewing, testing, etc.. You wouldn't do any work directly because you'd be conserving your context to control others.</p>
+<p>I want you to think hard about this and how to execute well.</p>
+</details>
+<details class="faq">
+<summary>Second Try: I encourage communication</summary>
+<p>Let's play with multi-agent swarm systems. As a project, I want to build a viewer for sessions. I'm thinking that this is probably a local application, maybe electron that takes a session file and renders it nicely. Eventually I'm going to want to render a few of these side-by-side (to better understand multi-agent systems), but I think that to start we probably just want to get to a milestone where we have an app that runs that can present a session nicely.</p>
+<p>For tech we're going to want react/shadcn/tailwind with zustand for state.</p>
+<p>For design we're going to want to copy our theme and styling here.</p>
+<p>For execution I think we probably want different agents for planning, building, and reviewing. Each building agent should also launch an agent to review its work as it gets close to done (or we should launch it if it forgets). Assuming we use worktrees we're going to want to merge work as it completes rather than all at once. Probably we want a separate integration agent for this. Agents should be encouraged to ask each other questions and collaborate. We shouldn't do much work in this agent. We need to preserve our context.</p>
+<p>Think about how best to organize this and then set it going.</p>
+</details>
+<details class="faq">
+<summary>Third try. I wanted to limit concurrency.</summary>
+<p>I'd like to experiment with agent swarms.</p>
+<p>As a project, I'd like us to build a session viewer that takes in a session, like the .jsonl file on the Desktop, and renders it similarly to how we do in the app, but with an electron app using react/tailwind/shadcn.</p>
+<p>As we work on things I want you to use different agents in different roles.</p>
+<ul>
+<li>For our architecture I suspect that we'll want an agent to make an overall plan,</li>
+<li>and then we'll want to break apart that plan into a set of tasks with dependencies that agents can work on independently.</li>
+<li>We won't want to start everything at once of course. We'll want to pay attention to laying a good foundation first and making sure it's good before moving on.</li>
+<li>As we can parallelize we will.</li>
+<li>Also, as any agent starts to finish up work they should use the /review skill to create another agent to review their efforts.</li>
+<li>When they're done they should use the finalize_worktree mcp command to work on merging their work to this upstream viewer branch, which will be the target of all of our work.</li>
+</ul>
+<p>You won't do much work, instead saving your context to help orchestrate the other agents.</p>
+<p>Think hard about how to do this well.</p>
+</details>
+<p>If I were to do this again, I think I would sequentialize the entire process.  Parallelism didn't buy much.</p>
+<h3 id="the-overall-experience-was-mediocre">The overall experience was mediocre<a class="headerlink" href="#the-overall-experience-was-mediocre" title="Permanent link">&para;</a></h3>
+<p>My experience with agentic swarms was so-so.  That's not surprising.  I'm new at it and bad at it.</p>
+<p>As Steve Yegge (famed multi-agent vibe coder) says:</p>
+<blockquote>
+<p>You will turn into Batman, but you can't just put on the suit and say "I'm Batman".</p>
+<p>You've got to learn how the tool-belt works</p>
+</blockquote>
+<p>My experience was learning that I'm definitely not Batman yet.</p>
+<h3 id="observations">Observations<a class="headerlink" href="#observations" title="Permanent link">&para;</a></h3>
+<p>The head agent delegated really well.  It understood that its context was
+precious and how to create agents to do work.  And the plan that was designed was fine.</p>
+<p>But parallel execution was generally pretty bad.  The agents did fine work, but
+they mostly ignored each other the first go around.  The second time I
+intentionally prompted the system to chat with peers about the work they were
+doing, and the third time I encouraged less parallelism.  Still though,
+lack of coordination resulted in lots of strangeness.</p>
+<p>On the plus side, the crap it produced was quickly cleaned up by more AI (the
+solution to AI problems is more AI).</p>
+<h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
+<p>As with any philosophy, we should neither accept nor reject it, but should take
+from it the parts that suit us.</p>
+<p>In that spirit, here are my current lessons on multi-agent behavior.</p>
+<h3 id="separate-reviewer">Separate Reviewer 👍<a class="headerlink" href="#separate-reviewer" title="Permanent link">&para;</a></h3>
+<p>Upon finishing work I used to ask Claude to review its own work:</p>
+<blockquote>
+<p>Let's review our recent changes and see if there is anything we can clean up or simplify</p>
+</blockquote>
+<p>Now I still do that, but I follow up with:</p>
+<blockquote>
+<p>Start another agent and ask it to review our work</p>
+</blockquote>
+<p>They're both quite useful.</p>
+<h3 id="fresh-perspective">Fresh Perspective 👍<a class="headerlink" href="#fresh-perspective" title="Permanent link">&para;</a></h3>
+<p>Agents get tired.  If an agent finishes an especially long session and its context is near 60-70% I'll often ask the reviewing agent to take over and implement the changes.</p>
+<p>It's better, of course, to avoid this with well-scoped work, just like a regular human developer.</p>
+<h3 id="mythical-man-month-mythical-ai-minute">Mythical Man Month ➡️ Mythical AI Minute<a class="headerlink" href="#mythical-man-month-mythical-ai-minute" title="Permanent link">&para;</a></h3>
+<p>Also like humans, sometimes teams don't perform as well as single developers.</p>
+<p>There's a real cost to coordination that needs to be outweighed by the benefits of speed.  AI agents are so fast that it's not clear to me when we'd want multiple agents working concurrently on the same code—most tasks finish before coordination overhead would pay off.</p>
+<p>My experiment would have been better with many agents, each agent running after the other finished.</p>
+<h3 id="agent-support">Agent Support 👍<a class="headerlink" href="#agent-support" title="Permanent link">&para;</a></h3>
+<p>Increasingly, the model I have for hard problems is to work with one key agent at a time, and fire off supporting agents to handle tangential work (research, review, performance testing).</p>
+<p>It's valuable to keep a key agent on task. (also like humans)</p>
+<h3 id="human-coordination">Human Coordination 🧠<a class="headerlink" href="#human-coordination" title="Permanent link">&para;</a></h3>
+<p>I am not (yet) a fan of YOLO Swarms.  I want to be involved.</p>
+<p>Said differently, all the work I'm doing is sufficiently important to me that I'm happy to pay attention to it.  I'm curious about how to best optimize my ability to pay attention to AI work.</p>
+<p>I don't think this is universally true.  For example during Dask's peak, OSS maintenance was such that I would have welcomed agents handling the first layer of support.  Very few of us are in that situation though.</p>
+<h3 id="human-oriented-ai-development">Human-Oriented AI Development<a class="headerlink" href="#human-oriented-ai-development" title="Permanent link">&para;</a></h3>
+<p>Working on Claude Chic has made me increasingly interested in how I work as a developer, and how to optimize that experience.  Rather than ask:</p>
+<blockquote>
+<p>How can I use multi-agent swarms?</p>
+</blockquote>
+<p>I am instead asking:</p>
+<blockquote>
+<p>What is holding me back right now?</p>
+<p>How can I best address that?</p>
+</blockquote>
+<p>Today the answer is around ergonomics and context management rather than concurrency (I feel I already have concurrency in abundance).  There are great multi-agent workflows I've mentioned above that I use daily.  I'm not yet a YOLO Swarm / Gas Town guy.</p>
+<p>I haven't really made up my mind though; I should experiment for more than 48 hours.</p>
+<h2 id="experimenting-is-easy">Experimenting is easy<a class="headerlink" href="#experimenting-is-easy" title="Permanent link">&para;</a></h2>
+<p>This is a blatant ad for <a href="/introducing-claude-chic">Claude Chic</a>, but it was pretty trivial to play with (admittedly bad) swarm architectures.</p>
+<p>Claude has enough of an understanding of swarms that, if you describe what you want and give it the ability to make agents that talk to each other (like Claude Chic does), then you can just start playing immediately.</p>
+<p>Regardless what you think about AI, and regardless how you think about
+full-auto multi-agent swarms, you should experiment with them.  They are,
+whatever else, quite interesting.</p>
 
 
 
@@ -1145,7 +1443,7 @@ be a sign that the team lacks a strong prioritization function.</p>
 (function() {
   var date = document.createElement('div');
   date.className = 'article-date';
-  date.textContent = 'Written on 2022-08-24';
+  date.textContent = 'Written on 2026-01-29';
   var h1 = document.querySelector('.md-content__inner h1');
   if (h1) h1.after(date);
 })();
