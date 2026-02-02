@@ -34,6 +34,7 @@ theme:
 
 hooks:
   - hooks/recent_articles.py
+  - hooks/rss_full_content.py
 
 plugins:
   - search
@@ -43,6 +44,7 @@ plugins:
   - rss:
       date_from_meta:
         as_creation: date
+      abstract_chars_count: -1
 
 extra_css:
   - stylesheets/custom.css
