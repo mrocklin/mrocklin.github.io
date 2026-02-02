@@ -1177,8 +1177,28 @@
 
 
 <h1 id="claude-chic-week-2">Claude Chic: Week 2<a class="headerlink" href="#claude-chic-week-2" title="Permanent link">&para;</a></h1>
-<p><em>This post was written by Claude and edited by Matthew.</em></p>
-<p>It's been one week since <a href="/introducing-claude-chic">introducing Claude Chic</a>, and development has been fun.  75 commits later, here's what's new:</p>
+<p><em>Unlike most of my writing, this post was largely written by Claude</em>:</p>
+<p>It's been one week since we <a href="/introducing-claude-chic">introduced Claude Chic</a>, and adoption and development since then have been fun.</p>
+<p>This week saw 75 commits from 7 contributors.  Broadly we saw the following themes:</p>
+<ul>
+<li>
+<p>Smoothing out UX rough edges</p>
+<p>When a project goes from single-user to many users there are always various rough edges to smooth out.  These included Linux and Windows keybindings, Native Windows support (not just WSL), bugs in <code>/resume</code> and <code>/plan</code>, and much more.</p>
+</li>
+<li>
+<p>Multi-agent workflows</p>
+<p>I've been exploring this space recently and seeing what I like and don't like.  I'll describe some things that I like and built into Claude Chic just below.</p>
+</li>
+<li>
+<p>Performance</p>
+<p>Running several long sessions concurrently stressed our use of Textual.  Various enhancments were made to smooth things out.</p>
+</li>
+<li>
+<p>Quality of Life</p>
+<p>There are many small things that we added like support for custom themes, small screen / mobile support, and more.</p>
+</li>
+</ul>
+<p>Now, let's dig into some highlights:</p>
 <h2 id="multi-agent-workflows">Multi-Agent Workflows<a class="headerlink" href="#multi-agent-workflows" title="Permanent link">&para;</a></h2>
 <p>The headline this week is new ways to use multiple agents together.  The idea: having Claude debate itself produces more thorough analysis.</p>
 <h3 id="plan-swarms">Plan Swarms<a class="headerlink" href="#plan-swarms" title="Permanent link">&para;</a></h3>
@@ -1241,7 +1261,7 @@
 <li>Various multi-agent stability improvements</li>
 </ul>
 <h2 id="whats-next">What's Next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>Last week was mostly about people other than me trying Claude Chic and reporting issues with their workflow.  I imagine next week will be the same.</p>
+<p>This past week was mostly about people other than me trying Claude Chic and reporting issues with their workflow.  I expect more of the same.</p>
 <p>Try it:</p>
 <div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>claudechic<span class="w"> </span>/welcome
 </code></pre></div>
