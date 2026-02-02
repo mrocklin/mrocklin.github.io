@@ -6,9 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+        <meta name="description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag">
       
       
+        <meta name="author" content="Matthew Rocklin">
+      
+      
+        <link rel="canonical" href="https://matthewrocklin.com/claude-chic-week-2/">
       
       
       
@@ -16,22 +20,22 @@
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="/feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
       
-      <link rel="icon" href="/assets/favicon.ico">
+      <link rel="icon" href="../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Matthew Rocklin</title>
+        <title>Claude Chic: Week 2 - Matthew Rocklin</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,9 +54,9 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/custom.css">
+      <link rel="stylesheet" href="../stylesheets/custom.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -68,7 +72,20 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Claude Chic: Week 2 - Matthew Rocklin" />
+<meta property="og:description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag" />
+<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/claude-chic-week-2.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://matthewrocklin.com/claude-chic-week-2/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Claude Chic: Week 2 - Matthew Rocklin" />
+<meta property="twitter:description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag" />
+<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/claude-chic-week-2.png" />
+</head>
   
   
     
@@ -85,6 +102,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#claude-chic-week-2" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -192,7 +214,7 @@
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <!-- Sidebar header with name and controls -->
   <div class="sidebar-header">
-    <a href="/." class="sidebar-title">
+    <a href=".." class="sidebar-title">
       Matthew Rocklin
     </a>
     <div class="sidebar-controls">
@@ -220,7 +242,7 @@
         
       
       <!-- RSS Feed -->
-      <a href="/feed.xml" class="sidebar-icon" title="RSS Feed">
+      <a href="../feed.xml" class="sidebar-icon" title="RSS Feed">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>
       </a>
     </div>
@@ -289,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/introducing-claude-chic/" class="md-nav__link">
+      <a href="../introducing-claude-chic/" class="md-nav__link">
         
   
   
@@ -317,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ai-zealotry/" class="md-nav__link">
+      <a href="../ai-zealotry/" class="md-nav__link">
         
   
   
@@ -345,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ai-beginners/" class="md-nav__link">
+      <a href="../ai-beginners/" class="md-nav__link">
         
   
   
@@ -434,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/think/" class="md-nav__link">
+      <a href="../think/" class="md-nav__link">
         
   
   
@@ -462,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/startup-best-practices/" class="md-nav__link">
+      <a href="../startup-best-practices/" class="md-nav__link">
         
   
   
@@ -490,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/failure/" class="md-nav__link">
+      <a href="../failure/" class="md-nav__link">
         
   
   
@@ -518,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/meetings/" class="md-nav__link">
+      <a href="../meetings/" class="md-nav__link">
         
   
   
@@ -546,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/engineers-and-sales/" class="md-nav__link">
+      <a href="../engineers-and-sales/" class="md-nav__link">
         
   
   
@@ -574,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/slack-github/" class="md-nav__link">
+      <a href="../slack-github/" class="md-nav__link">
         
   
   
@@ -602,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/write-short-blogposts/" class="md-nav__link">
+      <a href="../write-short-blogposts/" class="md-nav__link">
         
   
   
@@ -691,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/scipy-mission/" class="md-nav__link">
+      <a href="../scipy-mission/" class="md-nav__link">
         
   
   
@@ -719,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/stability-bias/" class="md-nav__link">
+      <a href="../stability-bias/" class="md-nav__link">
         
   
   
@@ -747,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/maintainer/" class="md-nav__link">
+      <a href="../maintainer/" class="md-nav__link">
         
   
   
@@ -775,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/minimal-bug-reports/" class="md-nav__link">
+      <a href="../minimal-bug-reports/" class="md-nav__link">
         
   
   
@@ -803,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/avoid-indirection/" class="md-nav__link">
+      <a href="../avoid-indirection/" class="md-nav__link">
         
   
   
@@ -831,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/write-dumb-code/" class="md-nav__link">
+      <a href="../write-dumb-code/" class="md-nav__link">
         
   
   
@@ -920,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/camino/" class="md-nav__link">
+      <a href="../camino/" class="md-nav__link">
         
   
   
@@ -958,27 +980,27 @@
       <ul class="md-nav__list">
         
         <li class="md-nav__item">
-          <a href="/claude-chic-week-2/" class="md-nav__link">Claude Chic: Week 2</a>
+          <a href="./" class="md-nav__link">Claude Chic: Week 2</a>
         </li>
         
         <li class="md-nav__item">
-          <a href="/ai-multi-agent/" class="md-nav__link">Multi-Agent Workflows</a>
+          <a href="../ai-multi-agent/" class="md-nav__link">Multi-Agent Workflows</a>
         </li>
         
         <li class="md-nav__item">
-          <a href="/ai-beginners/" class="md-nav__link">We're All Beginners Again</a>
+          <a href="../ai-beginners/" class="md-nav__link">We're All Beginners Again</a>
         </li>
         
         <li class="md-nav__item">
-          <a href="/introducing-claude-chic/" class="md-nav__link">Introducing Claude Chic</a>
+          <a href="../introducing-claude-chic/" class="md-nav__link">Introducing Claude Chic</a>
         </li>
         
         <li class="md-nav__item">
-          <a href="/ai-zealotry/" class="md-nav__link">AI Zealotry</a>
+          <a href="../ai-zealotry/" class="md-nav__link">AI Zealotry</a>
         </li>
         
         <li class="md-nav__item">
-          <a href="/articles/" class="md-nav__link more-articles-link">… More articles</a>
+          <a href="../articles/" class="md-nav__link more-articles-link">… More articles</a>
         </li>
       </ul>
     </li>
@@ -1000,6 +1022,143 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#multi-agent-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Agent Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Agent Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plan-swarms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan Swarms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review Agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Themes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-yolo-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The --yolo Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality of Life
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributors
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1012,7 +1171,178 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+
+                  
+
+
+
+<h1 id="claude-chic-week-2">Claude Chic: Week 2<a class="headerlink" href="#claude-chic-week-2" title="Permanent link">&para;</a></h1>
+<p><em>This post was written by Claude and edited by Matthew.</em></p>
+<p>It's been one week since <a href="/introducing-claude-chic">introducing Claude Chic</a>, and development has been fun.  75 commits later, here's what's new:</p>
+<h2 id="multi-agent-workflows">Multi-Agent Workflows<a class="headerlink" href="#multi-agent-workflows" title="Permanent link">&para;</a></h2>
+<p>The headline this week is new ways to use multiple agents together.  The idea: having Claude debate itself produces more thorough analysis.</p>
+<h3 id="plan-swarms">Plan Swarms<a class="headerlink" href="#plan-swarms" title="Permanent link">&para;</a></h3>
+<p><code>/plan-swarm</code> spawns multiple agents to debate implementation approaches before you commit to one:</p>
+<div class="highlight"><pre><span></span><code>/plan-swarm Add caching to the API layer
+</code></pre></div>
+<p>This spawns several agents, each exploring the problem from a different angle—one might advocate for Redis, another for in-memory caching, a third for a hybrid approach.  They present their cases to each other, debate, and often (but not always) come to consensus. You then pick the direction that resonates.</p>
+<h3 id="review-agents">Review Agents<a class="headerlink" href="#review-agents" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>/reviewer
+</code></pre></div>
+<p>This spawns an agent whose job is to critically examine your recent changes.  You mediate as they iterate toward agreement.</p>
+<h3 id="infrastructure">Infrastructure<a class="headerlink" href="#infrastructure" title="Permanent link">&para;</a></h3>
+<p>Full plan mode support landed via the SDK's <code>set_permission_mode</code>, with proper tool restrictions during planning and feedback when you reject a plan.</p>
+<h2 id="custom-themes">Custom Themes<a class="headerlink" href="#custom-themes" title="Permanent link">&para;</a></h2>
+<p>Claude Chic now supports user-defined themes.  The default dark theme works well on dark terminals, but many developers prefer light backgrounds.</p>
+<div class="highlight"><pre><span></span><code>/theme chic-light
+</code></pre></div>
+<p>Or define your own in <code>~/.claude/chic-theme.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;my-theme&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;colors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;user_border&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#ff6600&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;assistant_border&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#0066ff&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="the-yolo-flag">The <code>--yolo</code> Flag<a class="headerlink" href="#the-yolo-flag" title="Permanent link">&para;</a></h2>
+<p>For sandboxed environments where you trust the agent completely:</p>
+<div class="highlight"><pre><span></span><code>claudechic<span class="w"> </span>--yolo
+</code></pre></div>
+<p>(Or <code>--dangerously-skip-permissions</code> if you prefer verbosity.)</p>
+<p>This skips all permission prompts.  Use it in CI pipelines, Docker containers, or when you're feeling reckless.  The name is intentional—if you're using this flag, you should know what you're doing.</p>
+<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
+<p>Multi-agent swarms exposed performance bottlenecks.  Running 5-10 agents simultaneously revealed that we were doing far too much UI work for agents you weren't looking at.</p>
+<p>Key optimizations this week:</p>
+<ul>
+<li><strong>Deferred updates</strong>: Hidden ChatViews no longer process UI updates until you switch to them</li>
+<li><strong>Collapsed history</strong>: Old conversation turns collapse into lightweight placeholders</li>
+<li><strong>Lazy loading</strong>: Collapsible content only renders when expanded</li>
+<li><strong>CSS optimization</strong>: Reduced recalculation during agent switching</li>
+<li><strong>Spinner fix</strong>: The thinking indicator no longer triggers CSS recalc on every frame</li>
+</ul>
+<p>The result: swarms of agents run smoothly without the UI becoming a bottleneck.</p>
+<h2 id="quality-of-life">Quality of Life<a class="headerlink" href="#quality-of-life" title="Permanent link">&para;</a></h2>
+<p>Smaller improvements that add up:</p>
+<ul>
+<li><strong>Immediate feedback</strong>: Creating agents/worktrees shows instant visual response</li>
+<li><strong>Compact mode</strong>: UI adapts to small terminal heights</li>
+<li><strong>Cross-platform shortcuts</strong>: Keyboard bindings work consistently across Mac/Linux/Windows</li>
+<li><strong>Autocomplete</strong>: <code>/worktree</code> and <code>/agent</code> commands now autocomplete existing names</li>
+<li><strong>Horizontal scroll</strong>: Code blocks scroll horizontally instead of wrapping (#28)</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
+<p>The usual parade of fixes, including:</p>
+<ul>
+<li>Windows exit warnings (#31)</li>
+<li>Session path encoding to match Claude Code (#20)</li>
+<li>Crash when pasting long text</li>
+<li>Nested tools getting lost after switching agents</li>
+<li>Various multi-agent stability improvements</li>
+</ul>
+<h2 id="whats-next">What's Next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>Last week was mostly about people other than me trying Claude Chic and reporting issues with their workflow.  I imagine next week will be the same.</p>
+<p>Try it:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>claudechic<span class="w"> </span>/welcome
+</code></pre></div>
+<p>Or update if you already have it:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>tool<span class="w"> </span>upgrade<span class="w"> </span>claudechic
+</code></pre></div>
+<p><a href="https://github.com/mrocklin/claudechic">GitHub</a> | <a href="/claudechic">Docs</a></p>
+<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
+<p><strong>Code:</strong></p>
+<ul>
+<li><a href="https://github.com/avinewman">Avi Newman</a> - Windows compatibility</li>
+<li><a href="https://github.com/chr33z">Christopher Lamm</a> - plan mode fixes</li>
+<li><a href="https://github.com/dotsdl">David Dotson</a> - vim mode</li>
+<li><a href="https://github.com/jumptable">Laura Martin</a> - exit handling</li>
+<li><a href="https://github.com/surminus">surminus</a> - custom themes</li>
+<li><a href="https://github.com/theantichris">theantichris</a> - session path encoding, model settings</li>
+</ul>
+<p><strong>Issues &amp; Feedback:</strong></p>
+<ul>
+<li><a href="https://github.com/andrie">andrie</a> - WSL timeout</li>
+<li><a href="https://github.com/binduwavell">binduwavell</a> - subagents, small screen support</li>
+<li><a href="https://github.com/c0ffee0wl">c0ffee0wl</a> - auto-approve mode, collapsible tools</li>
+<li><a href="https://github.com/cderv">cderv</a> - Windows issues, worktree context, horizontal scroll</li>
+<li><a href="https://github.com/chandlervdw">chandlervdw</a> - MCP management</li>
+<li><a href="https://github.com/dcherian">dcherian</a> - keyboard shortcuts, agent switching, readline</li>
+<li><a href="https://github.com/GaborNyul">GaborNyul</a> - multiline input, SSO proxy</li>
+<li><a href="https://github.com/jeduden">jeduden</a> - paste crash</li>
+<li><a href="https://github.com/maartenbreddels">maartenbreddels</a> - branch name handling</li>
+<li><a href="https://github.com/quasiben">quasiben</a> - token doubling</li>
+<li><a href="https://github.com/rdubwiley09">rdubwiley09</a> - path defaults</li>
+<li><a href="https://github.com/sargunv">sargunv</a> - plan mode</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2026-02-02';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+<h2>Comments</h2>
+<script>
+(function() {
+  function getGiscusTheme() {
+    var palette = document.body.getAttribute('data-md-color-scheme');
+    return palette === 'slate' ? 'dark' : 'light';
+  }
+
+  // Create giscus script with current theme
+  var script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'mrocklin/mrocklin.github.io');
+  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDAzMTEz');
+  script.setAttribute('data-category', 'Giscus');
+  script.setAttribute('data-category-id', 'DIC_kwDOADPtac4CTY1R');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', 'en');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+  document.currentScript.parentNode.appendChild(script);
+
+  // Update giscus when theme changes
+  var observer = new MutationObserver(function(mutations) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        'https://giscus.app'
+      );
+    }
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+})();
+</script>
+
 
               </article>
             </div>
@@ -1087,12 +1417,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="/javascripts/shortcuts.js"></script>
+        <script src="../javascripts/shortcuts.js"></script>
       
     
   </body>
