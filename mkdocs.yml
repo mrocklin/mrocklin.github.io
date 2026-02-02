@@ -45,6 +45,7 @@ plugins:
       date_from_meta:
         as_creation: date
       abstract_chars_count: -1
+      match_path: "(?!index|articles).*"
 
 extra_css:
   - stylesheets/custom.css
