@@ -63,18 +63,23 @@ def on_post_build(config):
                 return item
             full_content = desc_match.group(1)
 
+            # Strip headerlink anchors (pilcrows)
+            full_content = re.sub(r'&lt;a class=&#34;headerlink&#34;.*?&lt;/a&gt;', '', full_content)
+
             # Create content:encoded element
             content_encoded = f'<content:encoded>{full_content}</content:encoded>'
 
-            # Replace description with frontmatter description if available
+            # Replace description with frontmatter description or stripped content
             if slug in descriptions:
                 new_desc = descriptions[slug].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-                item = re.sub(
-                    r'<description>.*?</description>',
-                    f'<description>{new_desc}</description>',
-                    item,
-                    flags=re.DOTALL
-                )
+            else:
+                new_desc = full_content  # Already has pilcrows stripped
+            item = re.sub(
+                r'<description>.*?</description>',
+                f'<description>{new_desc}</description>',
+                item,
+                flags=re.DOTALL
+            )
 
             # Insert content:encoded before </item>
             item = item.replace('</item>', f'{content_encoded}</item>')
