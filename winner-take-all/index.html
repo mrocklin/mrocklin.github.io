@@ -6,8 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering">
+        <meta name="description" content="AI makes software easy to build, eroding the winner-take-all dynamics that created tech giants. The future may look less like Google and more like clothing brands">
       
+      
+        <meta name="author" content="Matthew Rocklin">
       
       
         <link rel="canonical" href="https://matthewrocklin.com/winner-take-all/">
@@ -73,7 +75,7 @@
   
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Saying Goodbye to Winner-take-all Software - Matthew Rocklin" />
-<meta property="og:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="og:description" content="AI makes software easy to build, eroding the winner-take-all dynamics that created tech giants. The future may look less like Google and more like clothing brands" />
 <meta property="og:image" content="https://matthewrocklin.com/assets/images/social/winner-take-all.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -81,7 +83,7 @@
 <meta property="og:url" content="https://matthewrocklin.com/winner-take-all/" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="Saying Goodbye to Winner-take-all Software - Matthew Rocklin" />
-<meta property="twitter:description" content="Personal site of Matthew Rocklin - thoughts on open source, startups, and engineering" />
+<meta property="twitter:description" content="AI makes software easy to build, eroding the winner-take-all dynamics that created tech giants. The future may look less like Google and more like clothing brands" />
 <meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/winner-take-all.png" />
 </head>
   
@@ -1152,6 +1154,9 @@
 
 
 
+  
+  
+
 
 
   
@@ -1160,6 +1165,56 @@
 
 
                 
+
+<script>
+(function() {
+  var date = document.createElement('div');
+  date.className = 'article-date';
+  date.textContent = 'Written on 2025-12-31';
+  var h1 = document.querySelector('.md-content__inner h1');
+  if (h1) h1.after(date);
+})();
+</script>
+
+<h2>Comments</h2>
+<script>
+(function() {
+  function getGiscusTheme() {
+    var palette = document.body.getAttribute('data-md-color-scheme');
+    return palette === 'slate' ? 'dark' : 'light';
+  }
+
+  // Create giscus script with current theme
+  var script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'mrocklin/mrocklin.github.io');
+  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDAzMTEz');
+  script.setAttribute('data-category', 'Giscus');
+  script.setAttribute('data-category-id', 'DIC_kwDOADPtac4CTY1R');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', 'en');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+  document.currentScript.parentNode.appendChild(script);
+
+  // Update giscus when theme changes
+  var observer = new MutationObserver(function(mutations) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        'https://giscus.app'
+      );
+    }
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+})();
+</script>
 
 
               </article>
