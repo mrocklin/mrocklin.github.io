@@ -1,6 +1,6 @@
 ---
 title: Saying Goodbye to Winner-take-all Software
-date: 2025-12-31
+date: 2026-02-13
 tagline: We can all build our own GMail now
 description: AI makes software easy to build, eroding the winner-take-all dynamics that created tech giants. The future may look less like Google and more like clothing brands
 blogpost: true
