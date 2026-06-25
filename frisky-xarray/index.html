@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag">
+        <meta name="description" content="Let's run Xarray workloads on this new thing I built, Frisky, a Dask scheduler in Rust.">
       
       
         <meta name="author" content="Matthew Rocklin">
       
       
-        <link rel="canonical" href="https://matthewrocklin.com/claude-chic-week-2/">
+        <link rel="canonical" href="https://matthewrocklin.com/frisky-xarray/">
       
       
       
@@ -28,7 +28,7 @@
     
     
       
-        <title>Claude Chic: Week 2 - Matthew Rocklin</title>
+        <title>Frisky and Xarray Example - Matthew Rocklin</title>
       
     
     
@@ -74,17 +74,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Claude Chic: Week 2 - Matthew Rocklin" />
-<meta property="og:description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag" />
-<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/claude-chic-week-2.png" />
+<meta property="og:title" content="Frisky and Xarray Example - Matthew Rocklin" />
+<meta property="og:description" content="Let's run Xarray workloads on this new thing I built, Frisky, a Dask scheduler in Rust." />
+<meta property="og:image" content="https://matthewrocklin.com/assets/images/social/frisky-xarray.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://matthewrocklin.com/claude-chic-week-2/" />
+<meta property="og:url" content="https://matthewrocklin.com/frisky-xarray/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Claude Chic: Week 2 - Matthew Rocklin" />
-<meta property="twitter:description" content="A week of plan mode, custom themes, performance optimizations, and the --yolo flag" />
-<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/claude-chic-week-2.png" />
+<meta property="twitter:title" content="Frisky and Xarray Example - Matthew Rocklin" />
+<meta property="twitter:description" content="Let's run Xarray workloads on this new thing I built, Frisky, a Dask scheduler in Rust." />
+<meta property="twitter:image" content="https://matthewrocklin.com/assets/images/social/frisky-xarray.png" />
 </head>
   
   
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#claude-chic-week-2" class="md-skip">
+        <a href="#frisky-and-xarray-example" class="md-skip">
           Skip to content
         </a>
       
@@ -980,7 +980,7 @@
       <ul class="md-nav__list">
         
         <li class="md-nav__item">
-          <a href="../frisky-xarray/" class="md-nav__link">Frisky and Xarray Example</a>
+          <a href="./" class="md-nav__link">Frisky and Xarray Example</a>
         </li>
         
         <li class="md-nav__item">
@@ -996,7 +996,7 @@
         </li>
         
         <li class="md-nav__item">
-          <a href="./" class="md-nav__link">Claude Chic: Week 2</a>
+          <a href="../claude-chic-week-2/" class="md-nav__link">Claude Chic: Week 2</a>
         </li>
         
         <li class="md-nav__item">
@@ -1032,60 +1032,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#multi-agent-workflows" class="md-nav__link">
+  <a href="#pain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Multi-Agent Workflows
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Multi-Agent Workflows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#plan-swarms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plan Swarms
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#review-agents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Review Agents
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-themes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Themes
+        Pain
       
     </span>
   </a>
@@ -1093,10 +1043,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-yolo-flag" class="md-nav__link">
+  <a href="#solution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The --yolo Flag
+        Solution
       
     </span>
   </a>
@@ -1104,54 +1054,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
+  <a href="#try-it-out" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Performance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quality-of-life" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quality of Life
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bug Fixes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What's Next
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contributors
+        Try it out
       
     </span>
   </a>
@@ -1176,124 +1082,51 @@
 
 
 
-<h1 id="claude-chic-week-2">Claude Chic: Week 2<a class="headerlink" href="#claude-chic-week-2" title="Permanent link">&para;</a></h1>
-<p><em>Unlike most of my writing, this post was largely written by Claude</em>:</p>
-<p>It's been one week since we <a href="/introducing-claude-chic">introduced Claude Chic</a>, and adoption and development since then have been fun.</p>
-<p>This week saw 75 commits from 7 contributors.  Broadly we saw the following themes:</p>
+<h1 id="frisky-and-xarray-example">Frisky and Xarray Example<a class="headerlink" href="#frisky-and-xarray-example" title="Permanent link">&para;</a></h1>
+<p>A couple months ago I was doing some consulting work for a finance group that used Dask and Xarray at the ~10 TiB scale.  It was slow.  I decided to make it faster.</p>
+<p>What resulted was three weeks of AI development on a couple historical projects I had mothballed,</p>
 <ul>
-<li>
-<p>Smoothing out UX rough edges</p>
-<p>When a project goes from single-user to many users there are always various rough edges to smooth out.  These included Linux and Windows keybindings, Native Windows support (not just WSL), bugs in <code>/resume</code> and <code>/plan</code>, and much more.</p>
-</li>
-<li>
-<p>Multi-agent workflows</p>
-<p>I've been exploring this space recently and seeing what I like and don't like.  I'll describe some things that I like and built into Claude Chic just below.</p>
-</li>
-<li>
-<p>Performance</p>
-<p>Running several long sessions concurrently stressed our use of Textual.  Various enhancments were made to smooth things out.</p>
-</li>
-<li>
-<p>Quality of Life</p>
-<p>There are many small things that we added like support for custom themes, small screen / mobile support, and more.</p>
-</li>
+<li><a href="https://getfrisky.dev"><code>frisky</code></a>, a Rust implementation of the Dask scheduler</li>
+<li><a href="https://github.com/mrocklin/dask-array"><code>dask-array</code></a>, query optimization for dask arrays, and now also written in Rust</li>
 </ul>
-<p>Now, let's dig into some highlights:</p>
-<h2 id="multi-agent-workflows">Multi-Agent Workflows<a class="headerlink" href="#multi-agent-workflows" title="Permanent link">&para;</a></h2>
-<p>The headline this week is new ways to use multiple agents together.  The idea: having Claude debate itself produces more thorough analysis.</p>
-<h3 id="plan-swarms">Plan Swarms<a class="headerlink" href="#plan-swarms" title="Permanent link">&para;</a></h3>
-<p><code>/plan-swarm</code> spawns multiple agents to debate implementation approaches before you commit to one:</p>
-<div class="highlight"><pre><span></span><code>/plan-swarm Add caching to the API layer
-</code></pre></div>
-<p>This spawns several agents, each exploring the problem from a different angle—one might advocate for Redis, another for in-memory caching, a third for a hybrid approach.  They present their cases to each other, debate, and often (but not always) come to consensus. You then pick the direction that resonates.</p>
-<h3 id="review-agents">Review Agents<a class="headerlink" href="#review-agents" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/reviewer
-</code></pre></div>
-<p>This spawns an agent whose job is to critically examine your recent changes.  You mediate as they iterate toward agreement.</p>
-<h3 id="infrastructure">Infrastructure<a class="headerlink" href="#infrastructure" title="Permanent link">&para;</a></h3>
-<p>Full plan mode support landed via the SDK's <code>set_permission_mode</code>, with proper tool restrictions during planning and feedback when you reject a plan.</p>
-<h2 id="custom-themes">Custom Themes<a class="headerlink" href="#custom-themes" title="Permanent link">&para;</a></h2>
-<p>Claude Chic now supports user-defined themes.  The default dark theme works well on dark terminals, but many developers prefer light backgrounds.</p>
-<div class="highlight"><pre><span></span><code>/theme chic-light
-</code></pre></div>
-<p>Or define your own in <code>~/.claude/chic-theme.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;my-theme&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;colors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;user_border&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#ff6600&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;assistant_border&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#0066ff&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="the-yolo-flag">The <code>--yolo</code> Flag<a class="headerlink" href="#the-yolo-flag" title="Permanent link">&para;</a></h2>
-<p>For sandboxed environments where you trust the agent completely:</p>
-<div class="highlight"><pre><span></span><code>claudechic<span class="w"> </span>--yolo
-</code></pre></div>
-<p>(Or <code>--dangerously-skip-permissions</code> if you prefer verbosity.)</p>
-<p>This skips all permission prompts.  Use it in CI pipelines, Docker containers, or when you're feeling reckless.  The name is intentional—if you're using this flag, you should know what you're doing.</p>
-<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
-<p>Multi-agent swarms exposed performance bottlenecks.  Running 5-10 agents simultaneously revealed that we were doing far too much UI work for agents you weren't looking at.</p>
-<p>Key optimizations this week:</p>
+<p>Both are now available on PyPI and, when combined with git main versions of <code>dask</code> and <code>xarray</code>, form a system for Xarray computations that is high performance, and usually doesn't break :)</p>
+<h2 id="pain">Pain<a class="headerlink" href="#pain" title="Permanent link">&para;</a></h2>
+<p>If you suffer from the following, then this is for you:</p>
 <ul>
-<li><strong>Deferred updates</strong>: Hidden ChatViews no longer process UI updates until you switch to them</li>
-<li><strong>Collapsed history</strong>: Old conversation turns collapse into lightweight placeholders</li>
-<li><strong>Lazy loading</strong>: Collapsible content only renders when expanded</li>
-<li><strong>CSS optimization</strong>: Reduced recalculation during agent switching</li>
-<li><strong>Spinner fix</strong>: The thinking indicator no longer triggers CSS recalc on every frame</li>
+<li>Large task graphs (over a million)</li>
+<li>Long wait times before things happen on the dashboard</li>
+<li>Sensitivity to chunk size</li>
+<li>Rechunking generally</li>
 </ul>
-<p>The result: swarms of agents run smoothly without the UI becoming a bottleneck.</p>
-<h2 id="quality-of-life">Quality of Life<a class="headerlink" href="#quality-of-life" title="Permanent link">&para;</a></h2>
-<p>Smaller improvements that add up:</p>
-<ul>
-<li><strong>Immediate feedback</strong>: Creating agents/worktrees shows instant visual response</li>
-<li><strong>Compact mode</strong>: UI adapts to small terminal heights</li>
-<li><strong>Cross-platform shortcuts</strong>: Keyboard bindings work consistently across Mac/Linux/Windows</li>
-<li><strong>Autocomplete</strong>: <code>/worktree</code> and <code>/agent</code> commands now autocomplete existing names</li>
-<li><strong>Horizontal scroll</strong>: Code blocks scroll horizontally instead of wrapping (#28)</li>
-</ul>
-<h2 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
-<p>The usual parade of fixes, including:</p>
-<ul>
-<li>Windows exit warnings (#31)</li>
-<li>Session path encoding to match Claude Code (#20)</li>
-<li>Crash when pasting long text</li>
-<li>Nested tools getting lost after switching agents</li>
-<li>Various multi-agent stability improvements</li>
-</ul>
-<h2 id="whats-next">What's Next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>This past week was mostly about people other than me trying Claude Chic and reporting issues with their workflow.  I expect more of the same.</p>
-<p>Try it:</p>
-<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>claudechic<span class="w"> </span>/welcome
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
+<p>It's hard to convey everything that goes into making something fast.  I use "Rust!" above as a catch-all that people today seem to latch onto, but real performance has much more to do with thoroughness and diligent attention to detail over hundreds of iterations.  It goes well beyond a choice of language.</p>
+<p>I don't know how to capture that in words, so instead I'll just show you, and hope it comes across.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/aie_7ElUq9w?si=Md96L-kJ2hr4L06A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="try-it-out">Try it out<a class="headerlink" href="#try-it-out" title="Permanent link">&para;</a></h2>
+<p>Install these things:</p>
+<div class="highlight"><pre><span></span><code>frisky&gt;=0.3.0
+dask-array&gt;=0.3.0
+git+https://github.com/dask/dask@main
+git+https://github.com/pydata/xarray@main
 </code></pre></div>
-<p>Or update if you already have it:</p>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>tool<span class="w"> </span>upgrade<span class="w"> </span>claudechic
+<p>At the top of your Xarray code, run this to use the new <code>dask-array</code> package instead of <code>dask.array</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">dask_array.xarray</span><span class="w"> </span><span class="kn">import</span> <span class="n">register</span>
+<span class="n">register</span><span class="p">()</span>
 </code></pre></div>
-<p><a href="https://github.com/mrocklin/claudechic">GitHub</a> | <a href="/claudechic">Docs</a></p>
-<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
-<p><strong>Code:</strong></p>
-<ul>
-<li><a href="https://github.com/avinewman">Avi Newman</a> - Windows compatibility</li>
-<li><a href="https://github.com/chr33z">Christopher Lamm</a> - plan mode fixes</li>
-<li><a href="https://github.com/dotsdl">David Dotson</a> - vim mode</li>
-<li><a href="https://github.com/jumptable">Laura Martin</a> - exit handling</li>
-<li><a href="https://github.com/surminus">surminus</a> - custom themes</li>
-<li><a href="https://github.com/theantichris">theantichris</a> - session path encoding, model settings</li>
-</ul>
-<p><strong>Issues &amp; Feedback:</strong></p>
-<ul>
-<li><a href="https://github.com/andrie">andrie</a> - WSL timeout</li>
-<li><a href="https://github.com/binduwavell">binduwavell</a> - subagents, small screen support</li>
-<li><a href="https://github.com/c0ffee0wl">c0ffee0wl</a> - auto-approve mode, collapsible tools</li>
-<li><a href="https://github.com/cderv">cderv</a> - Windows issues, worktree context, horizontal scroll</li>
-<li><a href="https://github.com/chandlervdw">chandlervdw</a> - MCP management</li>
-<li><a href="https://github.com/dcherian">dcherian</a> - keyboard shortcuts, agent switching, readline</li>
-<li><a href="https://github.com/GaborNyul">GaborNyul</a> - multiline input, SSO proxy</li>
-<li><a href="https://github.com/jeduden">jeduden</a> - paste crash</li>
-<li><a href="https://github.com/maartenbreddels">maartenbreddels</a> - branch name handling</li>
-<li><a href="https://github.com/quasiben">quasiben</a> - token doubling</li>
-<li><a href="https://github.com/rdubwiley09">rdubwiley09</a> - path defaults</li>
-<li><a href="https://github.com/sargunv">sargunv</a> - plan mode</li>
-</ul>
+<p>And then around your Dask Client, do this to turn your Dask cluster into a Frisky cluster:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">frisky</span><span class="w"> </span><span class="kn">import</span> <span class="n">hijack</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">hijack</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+</code></pre></div>
+<p>And then run as normal.  Enjoy.</p>
+<p>If you don't have a Dask/Xarray workload handy, just run the Frisky demo:</p>
+<p><div class="highlight"><pre><span></span><code>$ frisky demo
+</code></pre></div>
+And report the inevitable issues at
+<a href="https://github.com/mrocklin/frisky-issues">github.com/mrocklin/frisky-issues</a></p>
+<p>Have fun!</p>
 
 
 
@@ -1317,7 +1150,7 @@
 (function() {
   var date = document.createElement('div');
   date.className = 'article-date';
-  date.textContent = 'Written on 2026-02-02';
+  date.textContent = 'Written on 2026-06-25';
   var h1 = document.querySelector('.md-content__inner h1');
   if (h1) h1.after(date);
 })();
