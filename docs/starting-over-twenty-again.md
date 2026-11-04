@@ -1,6 +1,6 @@
 ---
-title: Starting Over - Go Exploring
-tagline: We're all pretty dumb now so we'd better start learning again
+title: Starting Over - Twenty Again
+tagline: We're all pretty dumb now so we'd better start learning, no matter where we are in our career
 description: AI has made modern skills irrelevant in a way that makes 40-year-olds feel like 20-year-olds.  This can be a good thing.
 date: 2026-11-03
 blogpost: true
@@ -8,20 +8,20 @@ author: Matthew Rocklin
 category: ai
 ---
 
-Starting Over - Go Exploring
+Starting Over - Twenty Again
 ============================
 
 Every professional I know uses AI today.  We fall into two camps:
 
 1.  Excited as hell
-2.  Concerned about their future
+2.  Concerned about our future
 
 I'm excited as hell, and I think that you should be too, but I totally
-understand being concerned.  It's not clear that your job will exist next year.
-It's not clear that you will still have marketable skills.  You have no idea
-what you're going to do with your life.
+understand being concerned.  It's not clear that our job will exist next year.
+It's not clear that we will still have marketable skills.  We have no idea
+what we're going to do with our lives.
 
-This is OK!  You've been through this before!  This is life in your twenties.
+This is OK!  We've been through this before!  This is life in our twenties.
 
 When you're Twenty
 ------
@@ -41,7 +41,7 @@ You translate that expertise into a financially rewarding and stable job where
 you pump out productivity for lots of money.  You stop exploring and settle
 into a safe and satisfying career.
 
-We explored.  We learned.  Now we get to sit back and reap the fruits of a mature career.
+We explored.  We learned.  Now we get to sit back and reap the fruits of a mature career.  Right?
 
 Now you're Twenty Again
 ------------
@@ -51,14 +51,13 @@ No, our generation gets to be twenty twice!  This time with more grey hair!
 That's maybe OK though! It's a really interesting time to be exploratory.
 
 Remember that we're not competing with any senior professionals (everyone
-magically turned twenty at the same time) so no one knows what they're doing
-any better than you and we all get to reinvent ourselves and the world
-together.
+turned twenty at the same time) so no one knows what they're doing any better
+than you and we all get to reinvent ourselves and the world together.
 
 Advice
 ------
 
-Your job probably won't exist in a few years.
+Your job may not exist in a few years.
 
 You have two choices:
 
@@ -80,7 +79,7 @@ Taste
 I've given this spiel a few times, and I've gotten a response that rhymes with
 the following surprisingly often:
 
-> "Yeah, and we're still valuable because we taste developed over years"
+> "Yeah, and we're still valuable because we developed taste over years"
 
 To which my response is
 
